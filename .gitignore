@@ -1,0 +1,14 @@
+# Ignore runtime artifacts, logs, and large canonical data that shouldn't be in git
+canonical/registry_inputs/
+canonical/logs/
+_backups/
+venv/
+.venv/
+*.pyc
+__pycache__/
+.DS_Store
+*.tar.gz
+*.sqlite3
+*.db
+/.idea/
+.vscode/
