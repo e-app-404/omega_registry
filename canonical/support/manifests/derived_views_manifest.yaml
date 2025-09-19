@@ -1,0 +1,7 @@
+device_flatmap:
+  input: core.device_registry
+  source: scripts/flatten_device_registry.py
+  output: canonical/derived_views/device_flatmap.json
+  volatile: true
+  description: Flattened device view for enrichment (MAC/IP-level)
+# PATCH-FLATMAP-DEVICE-REGISTRY-V1

@@ -1,0 +1,123 @@
+# registry_output_profiles.yaml
+# Purpose: Define and govern tiered output schemas (slim, default, audit) for the omega registry pipeline.
+# Scope: Field-level inclusion logic, profile selection mechanisms, and _meta enrichment expectations.
+# Compliance: Backward-compatible with current emit logic, supports full audit trail preservation when enabled.
+# Acceptance Criteria:
+#   - Each profile defines a field allowlist or logic predicate.
+#   - Profiles are selectable via config/manifest.
+#   - _meta supports traceable per-field inference when audit is selected.
+#   - Documented schema reference is available for downstream use.
+
+output_profiles:
+  slim:
+    description: |
+      Minimal schema for performance-sensitive systems. Includes only essential fields for entity resolution and tiering.
+    allowlist:
+      - entity_id
+      - tier
+      - area_id
+      - platform
+      - device_id
+      - domain
+      - floor_id
+      - _meta
+    meta:
+      include:
+        ["tier_inference_origin", "join_health_score", "exemption_reason"]
+      per_field_inference: false
+    notes:
+      - "area_id and tier precedence: entity_registry > device_registry > heuristic > exemption (logic/template/virtual)"
+      - "device/manufacturer/serial fields are exempt for logic/template/virtual sensors; exemption is contractually valid and must be meta-annotated."
+      - "Canonical override sources for core fields are permitted and must be documented in _meta."
+  default:
+    description: |
+      Standard output for most downstream consumers. Includes key enrichment fields and trace metadata.
+    allowlist:
+      - entity_id
+      - tier
+      - area_id
+      - platform
+      - device_id
+      - domain
+      - floor_id
+      - config_entry_id
+      - name
+      - device_class
+      - unit_of_measurement
+      - entity_category
+      - original_name
+      - suggested_object_id
+      - voice_assistants
+      - created_at
+      - modified_at
+      - _meta
+    meta:
+      include:
+        [
+          "tier_inference_origin",
+          "join_health_score",
+          "inferred_fields",
+          "exemption_reason",
+        ]
+      per_field_inference: true
+    notes:
+      - "area_id and tier precedence: entity_registry > device_registry > heuristic > exemption (logic/template/virtual)"
+      - "device/manufacturer/serial fields are exempt for logic/template/virtual sensors; exemption is contractually valid and must be meta-annotated."
+      - "Canonical override sources for core fields are permitted and must be documented in _meta."
+  audit:
+    description: |
+      Full introspective view for validation, audit, and analytics. Includes all enrichment, trace, and provenance fields.
+    allowlist:
+      - entity_id
+      - tier
+      - area_id
+      - platform
+      - device_id
+      - domain
+      - floor_id
+      - config_entry_id
+      - name
+      - device_class
+      - unit_of_measurement
+      - entity_category
+      - original_name
+      - suggested_object_id
+      - voice_assistants
+      - created_at
+      - modified_at
+      - attributes_dict
+      - references_entities
+      - formula_type
+      - score_weight
+      - upstream_sources
+      - file_path
+      - trace_overlay
+      - join_origin
+      - enrichment_depth
+      - field_inheritance
+      - _meta
+    meta:
+      include: "*" # All meta fields
+      per_field_inference: true
+      join_chain_trace: true
+      confidence_scores: true
+      exemption_reason: true
+    notes:
+      - "area_id and tier precedence: entity_registry > device_registry > heuristic > exemption (logic/template/virtual)"
+      - "device/manufacturer/serial fields are exempt for logic/template/virtual sensors; exemption is contractually valid and must be meta-annotated."
+      - "Canonical override sources for core fields are permitted and must be documented in _meta."
+
+profile_selection:
+  mechanism: |
+    Output profile is selectable via config.yaml, manifest, or CLI argument (e.g., --output-profile=default).
+    If not specified, 'default' is used. Audit mode is required for full trace and provenance.
+
+schema_reference:
+  location: canonical/support/contracts/omega_registry_master.output_contract.yaml
+  description: |
+    All output fields, their types, and inference/join logic are documented in the referenced schema for downstream validation and integration.
+
+notes:
+  - All profiles are backward-compatible with current emit logic.
+  - Audit profile guarantees full traceability and field-level provenance for every entity.
+  - _meta enrichment is profile-dependent; audit mode enables maximum introspection.

@@ -1,0 +1,68 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/Users/evertappels/.ssh"
+		}
+	],
+	"settings": {
+		"git.enabled": false,
+		"git.autorefresh": false,
+		"git.autoRepositoryDetection": "openEditors",
+		"git.repositoryScanIgnoredFolders": [
+			"/Volumes/HA/share",
+			"/Users/evertappels/.ssh",
+			"zigbee2mqtt",
+			"www",
+			"tts",
+			".storage",
+			"reports",
+			"hestia/diagnostics",
+			"hestia/work",
+			"tmp"
+		],
+		"python.defaultInterpreterPath": "/Volumes/HA/config/.venv/bin/python",
+		"python.terminal.activateEnvironment": true,
+		"ruff.importStrategy": "useBundled",
+		"ruff.configuration": "pyproject.toml",
+		"files.exclude": {
+			"**/__pycache__": true,
+			"***.db": true,
+			"**/.DS_Store": true,
+			"**/.storage.git/objects.git/subtree-cache.storage.git": true,
+			"**/.storage.git": false,
+			"**/.git/**": false,
+			"**/.git": false,
+			"hestia/core/meta/gitdir-visible/**": false
+		},
+		"yaml.schemas": {
+			"https://raw.githubusercontent.com/USF-org/USF/refs/heads/main/usf.schema.json": "file:///Users/evertappels/Projects/registry_rehydration_local/canonical/support/contracts/canonical_omega_scaffold.yaml"
+		},
+		"yaml.schemaStore.enable": true,
+		"yaml.schemaStore.url": "https://www.schemastore.org/api/json/catalog.json",
+		"yaml.validate": true,
+		"yaml.format.enable": true,
+		"yaml.customTags": [
+			"!include",
+			"!include_dir_merge_named",
+			"!include_dir_merge_list",
+			"!include_dir_list",
+			"!include_dir_named",
+			"!secret",
+			"!env_var"
+		],
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.ruff": "explicit"
+		},
+		"ruff.organizeImports": true,
+		"python.analysis.typeCheckingMode": "basic",
+		"files.associations": {
+			"*.yaml": "home-assistant",
+			"*.jinja": "home-assistant",
+			"*.yml": "home-assistant"
+		},
+	}
+}

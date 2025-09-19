@@ -1,0 +1,215 @@
+# Canonical Tier Definitions for Omega Registry
+# This file is the single source of truth for tier assignment logic and documentation.
+# All match logic, patterns, and rules for tier inference are defined here.
+
+tier_definitions:
+  α:
+    name: "Signal Plane Tier"
+    symbol: "α"
+    function: "Raw, direct input from devices"
+    canonical_rule: |
+      If entity_category is not set or is "None" AND platform is not "template", "group", "sensor aggregation" AND entity is registered in core.entity_registry with a valid device_id → assign tier = α
+    match:
+      entity_ids: []
+      platforms:
+        ["mqtt", "command_line", "rest", "sun", "backup", "hassio", "sonos"]
+      entity_category: [null, "None"]
+      device_id: ".+"
+    required_fields: ["device_id"]
+    feeds_from: []
+    feeds_into: ["β", "η"]
+    annotations: ["tier", "canonical_id", "subsystem"]
+    validation:
+      directionality: "terminal_source"
+      regression_guard: true
+      override_aware: false
+
+  β:
+    name: "Abstraction Tier"
+    symbol: "β"
+    function: "Canonicalized signal abstraction"
+    canonical_rule: |
+      If platform is "template" or "derivative" OR entity references other entities in attributes (e.g. entity_id, source) → assign tier = β
+    match:
+      entity_ids: []
+      platforms: ["template", "derivative"]
+      references_entities: true
+      entity_id_patterns: [".*_β$", ".*_beta$"]
+    required_fields: ["tier", "canonical_id", "alpha_source"]
+    feeds_from: ["α"]
+    feeds_into: ["γ", "δ", "ζ"]
+    annotations: ["tier", "canonical_id", "upstream_sources"]
+    validation:
+      directionality: "unidirectional"
+      regression_guard: true
+      override_aware: true
+
+  γ:
+    name: "Computation / Scoring Tier"
+    symbol: "γ"
+    function: "Weighted inference logic"
+    canonical_rule: |
+      If attributes include "score_weight", "formula_type", or computation logic (e.g., gain_score, prediction_outcome) → assign tier = γ
+    match:
+      attributes_include:
+        ["score_weight", "formula_type", "gain_score", "prediction_outcome"]
+      entity_id_patterns: [".*_γ$", ".*_gamma$"]
+      file_path_patterns: ["**/sensors/gamma/**/*.yaml"]
+    required_fields: ["tier", "source_entity", "formula_type"]
+    feeds_from: ["β", "η"]
+    feeds_into: ["δ", "ε", "ζ"]
+    annotations: ["tier", "score_model", "confidence"]
+    validation:
+      bounded: true
+      regression_guard: true
+      override_aware: true
+      traceability: true
+      _meta.tier_inference_origin: "γ.canonical_rule"
+      disambiguation:
+        tier_priority: 2
+        conflict_resolution_hint: "Prefer γ if computation attributes present."
+
+  δ:
+    name: "Temporal Memory Tier"
+    symbol: "δ"
+    function: "Decay, smoothing, and signal persistence"
+    canonical_rule: |
+      If attributes include "decay_rate" or entity_id matches ".*_δ$" → assign tier = δ
+    match:
+      attributes_include: ["decay_rate"]
+      entity_id_patterns: [".*_δ$", ".*_delta$"]
+      file_path_patterns: ["**/sensors/delta/**/*.yaml"]
+    required_fields: ["tier", "source_entity", "decay_type"]
+    feeds_from: ["γ", "β"]
+    feeds_into: ["ε", "ζ"]
+    annotations: ["tier", "decay_strategy"]
+    validation:
+      decay_bounds: true
+      regression_guard: true
+      override_aware: true
+      traceability: true
+      _meta.tier_inference_origin: "δ.canonical_rule"
+      disambiguation:
+        tier_priority: 3
+        conflict_resolution_hint: "Prefer δ if decay attributes present."
+
+  ε:
+    name: "Validation Tier"
+    symbol: "ε"
+    function: "Validation, thresholding, suppression"
+    canonical_rule: |
+      If attributes include "threshold" or entity_id matches ".*_ε$" → assign tier = ε
+    match:
+      attributes_include: ["threshold"]
+      entity_id_patterns: [".*_ε$", ".*_epsilon$"]
+      file_path_patterns: ["**/sensors/epsilon/**/*.yaml"]
+    required_fields: ["tier", "source_entity", "threshold", "validation_type"]
+    feeds_from: ["δ", "γ"]
+    feeds_into: ["ζ"]
+    annotations: ["tier", "validator_id"]
+    validation:
+      threshold_required: true
+      fallback_required: true
+      traceability: true
+      _meta.tier_inference_origin: "ε.canonical_rule"
+      disambiguation:
+        tier_priority: 4
+        conflict_resolution_hint: "Prefer ε if threshold attributes present."
+
+  ζ:
+    name: "Decision Tier"
+    symbol: "ζ"
+    function: "Final high-level automations or room states"
+    canonical_rule: |
+      If entity_id matches ".*_ζ$" or file_path matches "**/sensors/zeta/**/*.yaml" → assign tier = ζ
+    match:
+      entity_id_patterns: [".*_ζ$", ".*_zeta$"]
+      file_path_patterns: ["**/sensors/zeta/**/*.yaml"]
+    required_fields: ["tier", "primary_source", "fallback_behavior"]
+    feeds_from: ["ε", "δ", "β"]
+    feeds_into: []
+    annotations: ["tier", "decision_path"]
+    validation:
+      fallback_required: true
+      silence_protection: true
+      override_support: true
+      traceability: true
+      _meta.tier_inference_origin: "ζ.canonical_rule"
+      disambiguation:
+        tier_priority: 5
+        conflict_resolution_hint: "Prefer ζ if decision/automation attributes present."
+
+  η:
+    name: "Aggregation / Merge Tier"
+    symbol: "η"
+    function: "Data synthesis across domains or protocols"
+    canonical_rule: |
+      If attributes include "merge_logic" and upstream_sources reference more than one entity → assign tier = η
+    match:
+      attributes_include: ["merge_logic", "upstream_sources"]
+      upstream_sources_count: ">1"
+      entity_id_patterns: [".*_η$", ".*_eta$"]
+      file_path_patterns: ["**/eta/**/*.yaml"]
+    required_fields: ["tier", "upstream_sources", "merge_logic"]
+    feeds_from: ["α", "β"]
+    feeds_into: ["γ", "δ"]
+    annotations: ["tier", "merge_strategy"]
+    validation:
+      directionality: "unidirectional"
+      override_aware: true
+      aggregation_mandatory: true
+      traceability: true
+      _meta.tier_inference_origin: "η.canonical_rule"
+
+  μ:
+    name: "Diagnostics Tier"
+    symbol: "μ"
+    function: "Tier integrity and drift diagnostics"
+    canonical_rule: |
+      If entity_category: diagnostic OR entity_id contains *_percent, *_load, *_uptime → assign tier = μ
+    match:
+      entity_category: ["diagnostic"]
+      entity_id_patterns:
+        ["*_percent*", "*_load*", "*_uptime*", "*_μ*", "*_mu*"]
+      attributes_include: ["diagnostic_type", "target_tier"]
+    required_fields: ["tier", "target_tier"]
+    feeds_from: ["*"]
+    feeds_into: []
+    annotations: ["tier", "health_scope"]
+    validation:
+      alert_on_failure: true
+      audit_log_required: true
+
+  σ:
+    name: "System Configuration Tier"
+    symbol: "σ"
+    function: "Mode settings, scenario switches, configuration overrides"
+    canonical_rule: |
+      If domain in input_* OR entity_id matches *_override, *_setting, *_mode → assign tier = σ
+    match:
+      domains: ["input_boolean", "input_text", "input_number"]
+      entity_id_patterns:
+        ["*_override*", "*_setting*", "*_mode*", "*_σ*", "*_sigma*"]
+      attributes_include: ["mode", "override_target"]
+    required_fields: ["tier", "scenario_id", "config_scope"]
+    feeds_from: []
+    feeds_into: ["γ", "ζ", "μ"]
+    annotations: ["tier", "override_scope", "config_context"]
+    validation:
+      override_tracing: true
+      impact_graph_enabled: true
+      loopback_guard: true
+
+  # Fallback tier for unmatched entities (optional)
+  unclassified:
+    name: "Unclassified Tier"
+    symbol: "?"
+    function: "Entities that do not match any canonical tier rules"
+    canonical_rule: |
+      If no tier rules match, assign to 'unclassified'.
+    match: {}
+    required_fields: []
+    feeds_from: []
+    feeds_into: []
+    annotations: []
+    validation: {}

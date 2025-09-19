@@ -1,0 +1,515 @@
+
+|
+AX3000 Gigabit Wi-Fi 6 Router
+Search
+TP-Link ID
+Log Out
+Network Map
+Internet
+Wireless
+HomeShield
+Advanced
+Internet
+Archer AX53	2.4G
+5G
+Mesh Devices		62Clients
+All (62)
+Connected Clients
+View Deny List
+Device Info	Real-time Rate	Tx/Rx Rate(Mbps)	Duration	Speed Limit	Block
+Apple-MaTuVu
+C8-69-CD-3E-41-B9
+192.168.0.112
+4.6Kb/s
+2.2Kb/s
+780 / 585
+4 Days 23 min
+---
+Broadlink-RM4-Pro
+E8-16-56-7D-90-42
+192.168.0.217
+0Kb/s
+0Kb/s
+54 / 54
+8 Days 2 h 27 min
+---
+Broadlink_RM3
+E8-16-56-70-69-E7
+192.168.0.136
+0Kb/s
+0Kb/s
+72 / 72
+8 h 42 min
+---
+C200
+F0-A7-31-CB-6D-51
+192.168.0.67
+0Kb/s
+0Kb/s
+72 / 72
+9 Days 6 h 40 min
+---
+DS220plus
+90-09-D0-3F-69-D9
+192.168.0.104
+0.06Kb/s
+0.06Kb/s
+---
+14 min
+---
+ESP_F34D4B
+10-52-1C-F3-4D-4B
+192.168.0.241
+0Kb/s
+0Kb/s
+72 / 6.0
+1 Day 17 h 50 min
+---
+Google-Home-Mini
+38-8B-59-68-AF-DB
+192.168.0.203
+0Kb/s
+0Kb/s
+292 / 292
+14 h 0 min
+---
+Google-Home-Mini
+44-07-0B-7A-06-DD
+192.168.0.15
+0.88Kb/s
+1.5Kb/s
+325 / 263
+14 h 14 min
+---
+H100
+A8-6E-84-70-D5-FC
+192.168.0.175
+0Kb/s
+7.0Kb/s
+57 / 72
+8 Days 17 h 2 min
+---
+H100
+9C-53-22-6A-30-5C
+192.168.0.221
+29.4Kb/s
+4.0Kb/s
+72 / 72
+1 Day 17 h 49 min
+---
+KP303
+98-25-4A-B9-EF-A1
+192.168.0.32
+2.6Kb/s
+0.52Kb/s
+72 / 72
+15 Days 20 h 44 min
+---
+L530
+78-8C-B5-99-8F-09
+192.168.0.189
+0.58Kb/s
+0Kb/s
+72 / 39
+8 Days 2 h 13 min
+---
+L900
+9C-53-22-BC-59-06
+192.168.0.220
+3.4Kb/s
+0.87Kb/s
+72 / 65
+15 Days 20 h 44 min
+---
+L900
+9C-53-22-BC-57-B1
+192.168.0.233
+1.2Kb/s
+0Kb/s
+72 / 72
+15 Days 20 h 44 min
+---
+L900
+9C-53-22-BC-56-8B
+192.168.0.116
+0.58Kb/s
+0Kb/s
+72 / 72
+15 Days 20 h 44 min
+---
+L930
+48-22-54-AB-74-63
+192.168.0.58
+0.58Kb/s
+0Kb/s
+72 / 1.0
+15 Days 20 h 44 min
+---
+Levoit-purifier
+CC-8D-A2-56-65-B8
+192.168.0.14
+0Kb/s
+0Kb/s
+72 / 72
+8 Days 2 h 55 min
+---
+Mac
+16-8C-50-A1-D9-80
+192.168.0.226
+0Kb/s
+0Kb/s
+1921 / 1201
+17 h 18 min
+---
+P100
+F0-A7-31-35-27-62
+192.168.0.224
+2.4Kb/s
+0.95Kb/s
+65 / 72
+15 Days 20 h 44 min
+---
+P100
+F0-A7-31-35-19-08
+192.168.0.36
+2.3Kb/s
+0.90Kb/s
+72 / 72
+15 Days 20 h 44 min
+---
+P110
+30-DE-4B-D0-BA-98
+192.168.0.71
+0.63Kb/s
+0.89Kb/s
+72 / 72
+13 Days 21 h 5 min
+---
+P110
+9C-53-22-75-10-26
+192.168.0.223
+3.7Kb/s
+1.9Kb/s
+72 / 39
+15 Days 20 h 44 min
+---
+PS4-454CD9
+A8-47-4A-0B-EB-C3
+192.168.0.125
+0Kb/s
+0Kb/s
+650 / 6.0
+1 h 3 min
+---
+PS5-B48865
+70-66-2A-84-B3-62
+192.168.0.161
+0Kb/s
+0Kb/s
+258 / 172
+1 h 55 min
+---
+Samsung
+C8-12-0B-E0-8E-4C
+192.168.0.135
+0.06Kb/s
+0.06Kb/s
+144 / 104
+3 h 32 min
+---
+SonosZP
+F0-F6-C1-F7-26-9F
+192.168.0.3
+0Kb/s
+0Kb/s
+---
+14 min
+---
+SonosZP
+C4-38-75-E2-BA-6C
+192.168.0.193
+0Kb/s
+0Kb/s
+---
+14 min
+---
+SonosZP
+38-42-0B-95-CE-50
+192.168.0.92
+0Kb/s
+0Kb/s
+---
+14 min
+---
+SonosZP
+C4-38-75-E2-BA-D6
+192.168.0.47
+0Kb/s
+0Kb/s
+---
+14 min
+---
+SonosZP
+C4-38-75-C7-95-08
+192.168.0.131
+0Kb/s
+0Kb/s
+780 / 585
+1 Day 17 h 50 min
+---
+SonosZP
+38-42-0B-95-BB-84
+192.168.0.155
+0Kb/s
+0Kb/s
+---
+14 min
+---
+SonosZP
+34-7E-5C-F6-31-6C
+192.168.0.201
+0Kb/s
+0Kb/s
+---
+2 min
+---
+SonosZP
+80-4A-F2-43-25-E4
+192.168.0.204
+0Kb/s
+0Kb/s
+---
+14 min
+---
+Tuya Smart Inc.
+1C-90-FF-9B-CC-AA
+192.168.0.188
+0Kb/s
+0Kb/s
+72 / 6.0
+8 h 6 min
+---
+Valetudo_RoboRockS5
+7C-49-EB-9A-35-15
+192.168.0.82
+0Kb/s
+0Kb/s
+65 / 39
+1 Day 14 h 32 min
+---
+ePhone-XS-2
+A6-09-17-10-0A-86
+192.168.0.10
+4.4Kb/s
+2.9Kb/s
+650 / 263
+1 h 0 min
+---
+ePhone-uk
+88-20-0D-93-42-40
+192.168.0.174
+0Kb/s
+0Kb/s
+172 / 97
+4 h 1 min
+---
+homeassistant
+2C-CF-67-65-F8-FE
+192.168.0.129
+9.1Kb/s
+43.0Kb/s
+---
+14 min
+---
+hubv3-04021275652
+68-3A-48-13-7E-88
+192.168.0.43
+0.06Kb/s
+0.06Kb/s
+---
+14 min
+---
+lwip0
+C4-82-E1-48-76-7C
+192.168.0.69
+0Kb/s
+0Kb/s
+65 / 28
+1 Day 17 h 50 min
+---
+macbook
+C2-0C-92-69-D6-A5
+192.168.0.132
+0Kb/s
+0Kb/s
+1080 / 720
+4 min
+---
+network device
+FC-3C-D7-69-40-AA
+192.168.0.186
+0Kb/s
+0Kb/s
+72 / 58
+1 Day 35 min
+---
+wiz_02345e
+CC-40-85-02-34-5E
+192.168.0.21
+0.65Kb/s
+0.17Kb/s
+72 / 72
+6 Days 17 h 34 min
+---
+wiz_2871ea
+44-4F-8E-28-71-EA
+192.168.0.20
+0.09Kb/s
+0.09Kb/s
+43 / 58
+2 Days 3 h 11 min
+---
+wiz_2b9e38
+44-4F-8E-2B-9E-38
+192.168.0.184
+0Kb/s
+0Kb/s
+65 / 72
+15 Days 20 h 44 min
+---
+wiz_317b40
+44-4F-8E-31-7B-40
+192.168.0.73
+0Kb/s
+0Kb/s
+72 / 72
+3 Days 8 h 3 min
+---
+wiz_31f376
+44-4F-8E-31-F3-76
+192.168.0.31
+0.27Kb/s
+0Kb/s
+65 / 72
+11 h 21 min
+---
+wiz_378364
+44-4F-8E-37-83-64
+192.168.0.111
+0.25Kb/s
+0Kb/s
+72 / 58
+15 Days 20 h 44 min
+---
+wiz_55087e
+6C-29-90-55-08-7E
+192.168.0.114
+0Kb/s
+0Kb/s
+72 / 58
+5 Days 22 h 1 min
+---
+wiz_559e02
+CC-40-85-55-9E-02
+192.168.0.50
+0Kb/s
+0Kb/s
+65 / 72
+12 Days 2 h 55 min
+---
+wiz_55cd2e
+CC-40-85-55-CD-2E
+192.168.0.27
+0Kb/s
+0Kb/s
+72 / 65
+6 h 12 min
+---
+wiz_605a12
+CC-40-85-60-5A-12
+192.168.0.45
+0.40Kb/s
+0.17Kb/s
+21 / 26
+4 Days 11 h 26 min
+---
+wiz_69e6ee
+D8-A0-11-69-E6-EE
+192.168.0.202
+0.68Kb/s
+0.17Kb/s
+72 / 72
+15 Days 20 h 44 min
+---
+wiz_69ea6c
+D8-A0-11-69-EA-6C
+192.168.0.137
+0.40Kb/s
+0.17Kb/s
+72 / 72
+15 Days 20 h 44 min
+---
+wiz_6a9006
+6C-29-90-6A-90-06
+192.168.0.91
+0.29Kb/s
+0Kb/s
+72 / 26
+15 Days 20 h 44 min
+---
+wiz_79bb9e
+D8-A0-11-79-BB-9E
+192.168.0.253
+0.25Kb/s
+0Kb/s
+72 / 72
+15 Days 20 h 44 min
+---
+wiz_94aeb2
+CC-40-85-94-AE-B2
+192.168.0.37
+0.68Kb/s
+0.17Kb/s
+65 / 6.0
+1 Day 17 h 50 min
+---
+wiz_b22c1e
+CC-40-85-B2-2C-1E
+192.168.0.77
+0.73Kb/s
+0.17Kb/s
+72 / 72
+1 Day 17 h 50 min
+---
+wiz_b71246
+44-4F-8E-B7-12-46
+192.168.0.222
+0.65Kb/s
+0Kb/s
+72 / 72
+15 Days 20 h 44 min
+---
+wiz_f1563e
+44-4F-8E-F1-56-3E
+192.168.0.169
+0.30Kb/s
+0Kb/s
+72 / 72
+15 Days 20 h 44 min
+---
+wlan0
+FC-67-1F-1A-3E-60
+192.168.0.238
+0Kb/s
+0Kb/s
+1.0 / 5.0
+3 Days 16 h 55 min
+---
+wlan0
+FC-67-1F-1A-3F-F3
+192.168.0.212
+0Kb/s
+0Kb/s
+28 / 26
+1 Day 17 h 50 min
+---

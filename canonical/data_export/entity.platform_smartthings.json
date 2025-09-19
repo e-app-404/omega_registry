@@ -1,0 +1,3634 @@
+[
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.974775+00:00",
+    "device_class": null,
+    "device_id": "74920ef97e7f3c637793b63e54977afc",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "binary_sensor.hallway_downstairs_motion_alpha_wifi_motion",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "5cec6f729fe5d4dc80ebfec8c1542467",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.351129+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "motion",
+    "original_icon": null,
+    "original_name": "Motion",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "8cd75bfb-9050-4fc0-86bd-0ebfcb5a7377_main_motionSensor_motion_motion",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.976236+00:00",
+    "device_class": null,
+    "device_id": "8dcc9f6c004f3b2ea85ad6ec38f1ebd7",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "binary_sensor.kitchen_fridge_contact_alpha_wifi_door",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "32100ce855e2612a56d966c1759f12dd",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.355407+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "door",
+    "original_icon": null,
+    "original_name": "Door",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "df5072dd-a675-4851-9f8e-d0f8909cd955_main_contactSensor_contact_contact",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.978224+00:00",
+    "device_class": null,
+    "device_id": "ece6b1494be9ece10f91db9eef07dad8",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "binary_sensor.bedroom_wardrobe_motion_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "5952dec1977d2cc96091c71ed098f213",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.373404+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "motion",
+    "original_icon": null,
+    "original_name": "Motion",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "fed1a36d-8c96-454d-b837-205935f36880_main_motionSensor_motion_motion",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.980197+00:00",
+    "device_class": null,
+    "device_id": "c9abf7d36ede96d37919be1982efbcb9",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "binary_sensor.hallway_upstairs_motion_alpha_motion",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "2e598539159fe4597c1b6c0f34d22c0c",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.379743+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "motion",
+    "original_icon": null,
+    "original_name": "Motion",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "2cb86012-f20c-4551-af56-53225167fa92_main_motionSensor_motion_motion",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.981327+00:00",
+    "device_class": null,
+    "device_id": "078af721482b7dc0292eed2b31e56547",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "binary_sensor.bedroom_security_cam_alpha_motion",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "81759cdd1f3daffa4c2da77a57248b77",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.390191+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "motion",
+    "original_icon": null,
+    "original_name": "Motion",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "84b1911c-f49b-43aa-b164-93595feb53df_main_motionSensor_motion_motion",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.982322+00:00",
+    "device_class": null,
+    "device_id": "deb6d49bba818b473ee4853116749388",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "binary_sensor.hallway_entrance_contact_alpha_door",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "858232dede535a7ca712c3613a69fa2b",
+    "labels": [],
+    "modified_at": "2025-07-22T06:04:25.049984+00:00",
+    "name": "Entrance_door_contact_sensor_wifia_alpha",
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "door",
+    "original_icon": null,
+    "original_name": "Door",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "cf399af2-075d-4890-9567-ff83980b47f3_main_contactSensor_contact_contact",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.984354+00:00",
+    "device_class": null,
+    "device_id": "808e383b247a42fa2f15b595ccdbb351",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "binary_sensor.evert_alpha_presence_iphone_presence",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "38a298ec366454230fd3ac52100ffcc3",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.400771+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "presence",
+    "original_icon": null,
+    "original_name": "Presence",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "8602d1db-251f-4b43-9d14-74ccdd199234_main_presenceSensor_presence_presence",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.986563+00:00",
+    "device_class": null,
+    "device_id": "801708f96be953bd6dd22b330c80ea0d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "binary_sensor.entrance_door_motion_smartthings_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "ec3f26813cb78b02987621c632e13917",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.406017+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "motion",
+    "original_icon": null,
+    "original_name": "Motion",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "99568370-2ef6-499a-abb6-666f44865c86_main_motionSensor_motion_motion",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.989607+00:00",
+    "device_class": null,
+    "device_id": "48f76010cb8443d91cefc403f8341141",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "binary_sensor.living_room_multipurpose_alpha_motion",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "92359f9397c28cb6daf3812be0ce8514",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.412619+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "motion",
+    "original_icon": null,
+    "original_name": "Motion",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "81af0fda-a356-465f-a5dd-bf322e7f7083_main_motionSensor_motion_motion",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-14T20:07:50.288918+00:00",
+    "device_class": null,
+    "device_id": "44f27ac8542e72bebf536c155dbb0cc9",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.ensuite_accent_wifi_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "00cc4c85fc79fb5502f6d842dbe9c816",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.418384+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "58213f6a-33a9-424e-a343-06cc07efdf93_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.996817+00:00",
+    "device_class": null,
+    "device_id": "9699aacf90efcc58d0928f4ea41f0283",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.desk_lightstrip_alpha_wifi",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "2d29052c52c980e3d5dd8bbbcc51b933",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.420048+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "d0e8a4d9-b1bb-4c66-a9d5-0d3506b31b9c_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.005055+00:00",
+    "device_class": null,
+    "device_id": "ca3fd7a27030994fbb47c6d04573a550",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.bedroom_wardrobe",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "09425a59482c899093eea2b77831650a",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.421765+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "f7e62871-970b-4a8b-bb92-756063bde9ba_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.015168+00:00",
+    "device_class": null,
+    "device_id": "df742fc063050ab88b8bde872de4c082",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.bedroom_mirror_lightstrip_omega",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "7d85eb4dc632d2ddd8a56362aafe6998",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.425182+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "b370e8a5-b5f4-4625-bd66-b2b7db348441_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-13T04:19:33.917417+00:00",
+    "device_class": null,
+    "device_id": "1e706d8bdbaa0d66a40fa40974f9668d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.kitchen_ceiling_tapo_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "5238b3f3725a7f5a0800e9b01d487aae",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.426770+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "26a9be03-4bf9-47db-b265-cc700518baa9_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.017587+00:00",
+    "device_class": null,
+    "device_id": "56364f5bce325fb8c542f99c9575a3fe",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.bamboo_lamp",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "a2c485115eb966c88382bdae65be94c0",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.428229+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "f2cf9921-601c-4ecf-9654-cecbe4b8f4d8_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-14T20:07:50.290584+00:00",
+    "device_class": null,
+    "device_id": "2ab9e7a68f08fb023fd87ec60d305126",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.living_room_side_alpha_2",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "a47de37353442a39d8b9c1f3f8ed203a",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.432881+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "7881c678-9917-477e-b050-de0e46ea0f26_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-14T20:07:50.291160+00:00",
+    "device_class": null,
+    "device_id": "66c8d04a4f8820e2378cd809fb7cd221",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.laundry_ceiling_wifi_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "c4de58568a611ba46c7dee9b11b389ec",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.435184+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "30186d4a-d28c-48b2-899f-9bec4c131554_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.024179+00:00",
+    "device_class": null,
+    "device_id": "bc0b32dff52bd6c2570a3d451e2a12d6",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.hallway_lightstrip_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "3e97466bd94d61983472bdddb4c11e15",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.437237+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "1ae9f26f-8c71-45cc-bca2-e2810518312a_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T13:10:54.441799+00:00",
+    "device_class": null,
+    "device_id": "103a6dcc213366beacdacde83eb61fef",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.bedroom_nightstand_right_alpha_wifi",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "5d943fca93f1426355d8e151560f0b75",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.438764+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "d60a7d41-e3d5-4f5f-a6c0-ec1f599b74fb_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-14T20:07:50.292094+00:00",
+    "device_class": null,
+    "device_id": "fa47a483e2f36d94dc1e2bfcce125899",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.living_room_foxy_alpha_2",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "3219d095ec7796adbaf8560628ebb48f",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.440223+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "e8609f11-165e-4691-b447-cb2a28e479cb_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.029156+00:00",
+    "device_class": null,
+    "device_id": "aa3c897e5552b256204af629efa1eed5",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.hallway_downstairs_lightstrip_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "690d3f4af933b783e87a635125a577a7",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.442490+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "77375091-4e0c-48eb-8405-c3aff5ba1e79_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.031369+00:00",
+    "device_class": null,
+    "device_id": "46f2135935e1c03da7d57352ee18c1b5",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.bedroom_hifi_area_accent_alpha_wifi",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "cb43a6e31a17098deb207a374681c7e3",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.444325+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "04eaa496-ecb6-4589-b267-f4d876649f69_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.035145+00:00",
+    "device_class": null,
+    "device_id": "17850d2aa8aa962bc46005dd66d2797a",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.entrance_terrazo",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "5fc2f38e745ea67981e4e254fb270671",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.447475+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "5bcd9bdc-9cb8-40de-94a5-51942ac9409e_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.036256+00:00",
+    "device_class": null,
+    "device_id": "e1f6bef205f9344467a5cad470b279f3",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.desk_lamp",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "ac162258eaf61c2a213d9d54c4b8f85c",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.449060+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "48409cd6-5062-4a7b-926e-338db5bc87c9_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-28T17:24:09.128693+00:00",
+    "device_class": null,
+    "device_id": "e3e7ec420d2a490038c3cd1fe197100c",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.living_room_desk_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "5539f5472f7047de1acd584db70cfc89",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.451931+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "6c9ec0a6-302a-41ce-958d-796e977d2f29_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.038957+00:00",
+    "device_class": null,
+    "device_id": "e8afdd2bea2080a08504967969f513ae",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.hallway_upstairs_lightstrip_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "d8eb2a0195eb15f5c21b357e0b2045d0",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.454727+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "652579bf-4cee-495b-80f5-d00dd96e4e35_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "supported_color_modes": [
+        "brightness"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.040036+00:00",
+    "device_class": null,
+    "device_id": "60bec7410f4ad198f956c17ab8f8ae76",
+    "disabled_by": "device",
+    "entity_category": null,
+    "entity_id": "light.home_virtual_dimmer",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "7e50b530aac9775b890c4d06a00c6aec",
+    "labels": [],
+    "modified_at": "2025-07-19T00:21:35.545793+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "fe1e24e1-2cb3-4d42-a81c-0a6fef146a43_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-14T20:07:50.295217+00:00",
+    "device_class": null,
+    "device_id": "165e34f3db8b423b56ae809febf0778d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.living_room_floorlamp_omega",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "0e92645db96013cae31da888f6b2baf9",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.457737+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "15b407ff-e55f-4619-a50c-97de8deb35c3_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.041571+00:00",
+    "device_class": null,
+    "device_id": "f25279c22e4f5a9de1e36c8dbf78cb05",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.terrazo",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "6a47899d10cf2db48d00d02ff3efdfd2",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.459270+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "2cbbce3c-e454-4357-a6a4-ea0f4c5dbd08_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "supported_color_modes": [
+        "brightness"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-25T02:38:32.683949+00:00",
+    "device_class": null,
+    "device_id": "97414e9c540d6dad2525734bc83e59a3",
+    "disabled_by": "device",
+    "entity_category": null,
+    "entity_id": "light.virtual_dimmer",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "4d0efaec78bddf7052923b0ed6bc1f88",
+    "labels": [],
+    "modified_at": "2025-07-19T00:21:32.861951+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "1115658a-55f5-4c67-b041-dfb4cefcef02_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.044837+00:00",
+    "device_class": null,
+    "device_id": "5f3a0daf16a7b0734b0391e75a04c07f",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.brass_pendant",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "ab576c3916497ccb95b544c14314a142",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.462151+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "ca2e1c00-d3be-410d-b001-42b5c29c29a6_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.046010+00:00",
+    "device_class": null,
+    "device_id": "3f72a7aa0391495c5b84adf2a51db847",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.wall_globe",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "df9dfafd4ef1ac1dc87bc14dc3f39a36",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.463580+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "6fcf2f7e-c2ec-4400-a3f3-fd8e251779be_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.046980+00:00",
+    "device_class": null,
+    "device_id": "26f652362335d4842ab180066128176d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.lucetta",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "881bdff8a32f8292cabb1267e846a521",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.469786+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "9c6cb861-570d-4166-9e32-6fb5ce2f1e87_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.047978+00:00",
+    "device_class": null,
+    "device_id": "ddbe25d35d28bbb25141916c1a031e94",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.ensuite_lightstrip_wifi_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "b7bb82371bf98170f9af7e290d9a7951",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.471304+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "38ea730d-6c0d-4490-9589-50376b212447_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {},
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.051068+00:00",
+    "device_class": null,
+    "device_id": "5ba3010addd4eddf1d6b9c5d6a59a63a",
+    "disabled_by": "device",
+    "entity_category": null,
+    "entity_id": "media_player.bedroom_soundbar_sonos_ray_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "3a7e07ecb78750dd68c4d43f9f68d782",
+    "labels": [],
+    "modified_at": "2025-07-19T00:20:59.512606+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "speaker",
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 21517,
+    "translation_key": null,
+    "unique_id": "1326d14c-8690-4fc9-a132-6023b34ea62f_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {},
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.052477+00:00",
+    "device_class": null,
+    "device_id": "d517bef2c84c7367172701803603825d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "media_player.bedroom_tv_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "bfb4a32b195400b86f5e8a428aa8898b",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.476415+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "tv",
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 23997,
+    "translation_key": null,
+    "unique_id": "09d6aee8-1213-833d-fba6-0203984e85a9_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {},
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.053519+00:00",
+    "device_class": null,
+    "device_id": "ddf4abc5a7133583400287ebc5bef095",
+    "disabled_by": "device",
+    "entity_category": null,
+    "entity_id": "media_player.ensuite_speaker_sonos_roam_alpha_2",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "67bdb59704fe5906a5ae051a59ae324b",
+    "labels": [],
+    "modified_at": "2025-07-19T00:21:02.728158+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "speaker",
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 21517,
+    "translation_key": null,
+    "unique_id": "8c36a091-e99a-4540-99e6-274a23f3e627_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {},
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.054497+00:00",
+    "device_class": null,
+    "device_id": "d367b1174e86d2ea55f36bfc2fbf5f99",
+    "disabled_by": "device",
+    "entity_category": null,
+    "entity_id": "media_player.bedroom_sonos_surround_speakers_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "77d6e47a0b533561dfc20cc99b9cb189",
+    "labels": [],
+    "modified_at": "2025-07-19T00:21:06.494333+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "speaker",
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 21517,
+    "translation_key": null,
+    "unique_id": "c7fdd9f5-3fc8-4495-9962-9cfeabbcad44_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {},
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.055428+00:00",
+    "device_class": null,
+    "device_id": "a7145b0bca299b8169b6eec013747511",
+    "disabled_by": "device",
+    "entity_category": null,
+    "entity_id": "media_player.kitchen",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "ec77714a4eef754a40f3b8704ee3f863",
+    "labels": [],
+    "modified_at": "2025-07-19T00:21:11.061085+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "speaker",
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 21517,
+    "translation_key": null,
+    "unique_id": "f5be44eb-f511-42d9-bf86-1bd46ff4484e_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {},
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.057918+00:00",
+    "device_class": null,
+    "device_id": "e443b23ea2acb42164aa3e8e1bbd691f",
+    "disabled_by": "device",
+    "entity_category": null,
+    "entity_id": "media_player.living_room_soundbar_sonos_beam_omega",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "e682db0cf7ca0b3d47c5a845925b590a",
+    "labels": [],
+    "modified_at": "2025-07-19T00:21:14.627679+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "speaker",
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 21517,
+    "translation_key": null,
+    "unique_id": "01c67b56-fefa-4119-b020-e3ff4b64a90c_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "total_increasing"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.060568+00:00",
+    "device_class": null,
+    "device_id": "a70a447d2ea7ecd651bac9e2501610e6",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.living_room_stringlights_alpha_energy",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "bf2b8eeb4848a35e260657764f7b55b4",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.494732+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      },
+      "sensor": {
+        "suggested_display_precision": 2
+      }
+    },
+    "original_device_class": "energy",
+    "original_icon": null,
+    "original_name": "Energy",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "395fda70-4a76-4cfb-bc49-4128e6b6a416_main_powerConsumptionReport_powerConsumption_energy_meter",
+    "unit_of_measurement": "kWh"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "total"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.061967+00:00",
+    "device_class": null,
+    "device_id": "a70a447d2ea7ecd651bac9e2501610e6",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.living_room_stringlights_alpha_energy_difference",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "58e46b265a6926544ac1d2223bfc73f6",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.496635+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      },
+      "sensor": {
+        "suggested_display_precision": 2
+      }
+    },
+    "original_device_class": "energy",
+    "original_icon": null,
+    "original_name": "Energy difference",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": "energy_difference",
+    "unique_id": "395fda70-4a76-4cfb-bc49-4128e6b6a416_main_powerConsumptionReport_powerConsumption_deltaEnergy_meter",
+    "unit_of_measurement": "kWh"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "options": [
+        "both",
+        "strobe",
+        "siren",
+        "off"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.064680+00:00",
+    "device_class": null,
+    "device_id": "feb079c4909628f8d32ac90d3c462718",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.home_iot_hub_tapo_alarm",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "5367705f522277ca4a3a97a8523936a9",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.498277+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      }
+    },
+    "original_device_class": "enum",
+    "original_icon": null,
+    "original_name": "Alarm",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": "alarm",
+    "unique_id": "4298db76-aa44-4dc2-bf99-92081d2ecf79_main_alarm_alarm_alarm",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "measurement"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.079164+00:00",
+    "device_class": null,
+    "device_id": "8a3a0a4b9b312207048379b23e2a7162",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.ensuite_ambient_climate_alpha_humidity",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "2e72db9a43d297774d62d3aaaf990549",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.499653+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "humidity",
+    "original_icon": null,
+    "original_name": "Humidity",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "70b50de3-13ed-4543-b606-de381a26bb0b_main_relativeHumidityMeasurement_humidity_humidity",
+    "unit_of_measurement": "%"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "measurement"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.080282+00:00",
+    "device_class": null,
+    "device_id": "8a3a0a4b9b312207048379b23e2a7162",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.ensuite_ambient_climate_alpha_temperature",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "cff16ece3f948512a0d5df1a645cb9a2",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.502456+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      },
+      "sensor": {
+        "suggested_display_precision": 1
+      }
+    },
+    "original_device_class": "temperature",
+    "original_icon": null,
+    "original_name": "Temperature",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "70b50de3-13ed-4543-b606-de381a26bb0b_main_temperatureMeasurement_temperature_temperature",
+    "unit_of_measurement": "\u00b0C"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "total_increasing"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.081270+00:00",
+    "device_class": null,
+    "device_id": "d517bef2c84c7367172701803603825d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.bedroom_tv_alpha_energy",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "20f7b347b055b5b9419a391588b1124f",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.504222+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      },
+      "sensor": {
+        "suggested_display_precision": 2
+      }
+    },
+    "original_device_class": "energy",
+    "original_icon": null,
+    "original_name": "Energy",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "09d6aee8-1213-833d-fba6-0203984e85a9_main_powerConsumptionReport_powerConsumption_energy_meter",
+    "unit_of_measurement": "kWh"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "measurement"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.082481+00:00",
+    "device_class": null,
+    "device_id": "d517bef2c84c7367172701803603825d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.bedroom_tv_alpha_power",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "e0778d62abca39e4d752aad7eda0ab7b",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.506047+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      },
+      "sensor": {
+        "suggested_display_precision": 2
+      }
+    },
+    "original_device_class": "power",
+    "original_icon": null,
+    "original_name": "Power",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "09d6aee8-1213-833d-fba6-0203984e85a9_main_powerConsumptionReport_powerConsumption_power_meter",
+    "unit_of_measurement": "W"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "total"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.083708+00:00",
+    "device_class": null,
+    "device_id": "d517bef2c84c7367172701803603825d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.bedroom_tv_alpha_energy_difference",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "863e08753a8ae02be173bc90041bb61f",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.507725+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      },
+      "sensor": {
+        "suggested_display_precision": 2
+      }
+    },
+    "original_device_class": "energy",
+    "original_icon": null,
+    "original_name": "Energy difference",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": "energy_difference",
+    "unique_id": "09d6aee8-1213-833d-fba6-0203984e85a9_main_powerConsumptionReport_powerConsumption_deltaEnergy_meter",
+    "unit_of_measurement": "kWh"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "total"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.086087+00:00",
+    "device_class": null,
+    "device_id": "d517bef2c84c7367172701803603825d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.bedroom_tv_alpha_power_energy",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "2f75767185824ea9691223eb20962abd",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.509951+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      },
+      "sensor": {
+        "suggested_display_precision": 2
+      }
+    },
+    "original_device_class": "energy",
+    "original_icon": null,
+    "original_name": "Power energy",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": "power_energy",
+    "unique_id": "09d6aee8-1213-833d-fba6-0203984e85a9_main_powerConsumptionReport_powerConsumption_powerEnergy_meter",
+    "unit_of_measurement": "kWh"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "total_increasing"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.087336+00:00",
+    "device_class": null,
+    "device_id": "d517bef2c84c7367172701803603825d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.bedroom_tv_alpha_energy_saved",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "e2e189242c477794c515dd67ed4651b3",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.511605+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      },
+      "sensor": {
+        "suggested_display_precision": 2
+      }
+    },
+    "original_device_class": "energy",
+    "original_icon": null,
+    "original_name": "Energy saved",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": "energy_saved",
+    "unique_id": "09d6aee8-1213-833d-fba6-0203984e85a9_main_powerConsumptionReport_powerConsumption_energySaved_meter",
+    "unit_of_measurement": "kWh"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.088545+00:00",
+    "device_class": null,
+    "device_id": "d517bef2c84c7367172701803603825d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.bedroom_tv_alpha_tv_channel",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "a7305e28ed3a3db9028dc6b0395e7f79",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.513191+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": "TV channel",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": "tv_channel",
+    "unique_id": "09d6aee8-1213-833d-fba6-0203984e85a9_main_tvChannel_tvChannel_tvChannel",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.089554+00:00",
+    "device_class": null,
+    "device_id": "d517bef2c84c7367172701803603825d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.bedroom_tv_alpha_tv_channel_name",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "faf4949ed499d3264f23b7c0f2f88f3c",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.517608+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": "TV channel name",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": "tv_channel_name",
+    "unique_id": "09d6aee8-1213-833d-fba6-0203984e85a9_main_tvChannel_tvChannelName_tvChannelName",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "measurement"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.090844+00:00",
+    "device_class": null,
+    "device_id": "766ad8b6b5c4b48e7801fec27bcb9172",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.bedroom_tv_alpha_illuminance",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "c3508af10e3abca307731ec04fddfd9b",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.519024+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      }
+    },
+    "original_device_class": "illuminance",
+    "original_icon": null,
+    "original_name": "Illuminance",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "93e8a39d-c832-4005-8348-836eb82cac0f_main_illuminanceMeasurement_illuminance_illuminance",
+    "unit_of_measurement": "lx"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "measurement"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.091828+00:00",
+    "device_class": null,
+    "device_id": "766ad8b6b5c4b48e7801fec27bcb9172",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.bedroom_tv_alpha_illuminance_brightness_intensity",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "4d9e2d6262c7e449ebc3a796e2047ed3",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.520383+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": "Brightness intensity",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": "brightness_intensity",
+    "unique_id": "93e8a39d-c832-4005-8348-836eb82cac0f_main_relativeBrightness_brightnessIntensity_brightnessIntensity",
+    "unit_of_measurement": "level"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "measurement"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.092989+00:00",
+    "device_class": null,
+    "device_id": "3a6dc33a0459933b69aa404d18471e17",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.bedroom_vedge_illuminance_1_illuminance",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "abbda0b77af04581b6aad972100ec878",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.521811+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      }
+    },
+    "original_device_class": "illuminance",
+    "original_icon": null,
+    "original_name": "Illuminance",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "5f3376ac-2cb6-4e9b-be95-961b714e260d_main_illuminanceMeasurement_illuminance_illuminance",
+    "unit_of_measurement": "lx"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "total_increasing"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.094175+00:00",
+    "device_class": null,
+    "device_id": "880abb49c4b3c9f456e876a6bbdc59d7",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.kitchen_lightstrip_alpha_energy",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "5f5aafeb2b64b4070d30cedeebf26c69",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.523576+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      },
+      "sensor": {
+        "suggested_display_precision": 2
+      }
+    },
+    "original_device_class": "energy",
+    "original_icon": null,
+    "original_name": "Energy",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "5e1ca596-1d38-4316-b86e-50eb3f0c71f6_main_powerConsumptionReport_powerConsumption_energy_meter",
+    "unit_of_measurement": "kWh"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "total"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.095464+00:00",
+    "device_class": null,
+    "device_id": "880abb49c4b3c9f456e876a6bbdc59d7",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.kitchen_lightstrip_alpha_energy_difference",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "098826e9aaf404c99729fe3541815faf",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.525382+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      },
+      "sensor": {
+        "suggested_display_precision": 2
+      }
+    },
+    "original_device_class": "energy",
+    "original_icon": null,
+    "original_name": "Energy difference",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": "energy_difference",
+    "unique_id": "5e1ca596-1d38-4316-b86e-50eb3f0c71f6_main_powerConsumptionReport_powerConsumption_deltaEnergy_meter",
+    "unit_of_measurement": "kWh"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.098070+00:00",
+    "device_class": null,
+    "device_id": "48f76010cb8443d91cefc403f8341141",
+    "disabled_by": null,
+    "entity_category": "diagnostic",
+    "entity_id": "sensor.living_room_multipurpose_alpha_battery",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "8d032dedffa9dfcff1fe531856e9e4d6",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.526984+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      }
+    },
+    "original_device_class": "battery",
+    "original_icon": null,
+    "original_name": "Battery",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "81af0fda-a356-465f-a5dd-bf322e7f7083_main_battery_battery_battery",
+    "unit_of_measurement": "%"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "measurement"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.099215+00:00",
+    "device_class": null,
+    "device_id": "48f76010cb8443d91cefc403f8341141",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.living_room_multipurpose_alpha_illuminance",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "2df15c747bd257b71c9a03586d8dc9db",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.528385+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      }
+    },
+    "original_device_class": "illuminance",
+    "original_icon": null,
+    "original_name": "Illuminance",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "81af0fda-a356-465f-a5dd-bf322e7f7083_main_illuminanceMeasurement_illuminance_illuminance",
+    "unit_of_measurement": "lx"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "state_class": "measurement"
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.100355+00:00",
+    "device_class": null,
+    "device_id": "48f76010cb8443d91cefc403f8341141",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "sensor.living_room_multipurpose_alpha_temperature",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "fae950ed7bd323d70b941767fb4e26b1",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.530456+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      },
+      "sensor": {
+        "suggested_display_precision": 1
+      }
+    },
+    "original_device_class": "temperature",
+    "original_icon": null,
+    "original_name": "Temperature",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "81af0fda-a356-465f-a5dd-bf322e7f7083_main_temperatureMeasurement_temperature_temperature",
+    "unit_of_measurement": "\u00b0C"
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.774945+00:00",
+    "device_class": null,
+    "device_id": "a70a447d2ea7ecd651bac9e2501610e6",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.living_room_stringlights_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "9e41443f162516cb9671cbddf69ae303",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.533150+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "395fda70-4a76-4cfb-bc49-4128e6b6a416_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.775994+00:00",
+    "device_class": null,
+    "device_id": "2541c5fbb49bc967aabcc911af1f4cd2",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.powerstrip_bedroom_tv_plug_2",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "4ac3dcbc10ea46723c5081eba2d398bb",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.534439+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "af7f5454-b4f5-409d-9a9b-249444090c0d_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.776879+00:00",
+    "device_class": null,
+    "device_id": "e5a83d1be7c017812af983461b1aaab8",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.hp_monitor",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "385df2e5c6e33cfd003360d2f04b4245",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.535730+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "19efd5d7-980c-4514-aa1b-212caf14d4d8_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.777775+00:00",
+    "device_class": null,
+    "device_id": "d9d96fb68c7030f45d8811e62f281364",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.powerstrip_ha_rpi5_plug_3",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "b3420b113fa3ac68f796dfbea1149def",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.538581+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "16a30de4-5c49-4ed4-a352-0236cb70877f_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.778691+00:00",
+    "device_class": null,
+    "device_id": "05efaae3f44899e11b56e41cc419db58",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.bedroom_wall_switch_alpha_right",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "b3f4178dcb22e94e22404afd81927da4",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.539905+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "c1089711-b9ec-4d8a-9d2d-afe83ed0129d_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.781860+00:00",
+    "device_class": null,
+    "device_id": "284816fae34456f659c85b240b0218ae",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.bedroom_virtual_illuminance_level_3",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "f2c9dbbdc82f9b08a5906dd6b2e6f769",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.541222+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "1a968a46-2006-4127-916b-d9bbf57b3e8f_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.782807+00:00",
+    "device_class": null,
+    "device_id": "2ce42387954719a33dabf6f15d82b1dd",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.bedroom_virtual_illuminance_level_1",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "db0f0a9cd08cb354e8bfa8962b6b648b",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.543656+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "c3dbcaf0-5eed-42ec-9b20-5a0e1fd3f340_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.783716+00:00",
+    "device_class": null,
+    "device_id": "766ad8b6b5c4b48e7801fec27bcb9172",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.bedroom_tv_alpha_illuminance",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "048b961ca458fb7eb5335377b135204d",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.545206+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "93e8a39d-c832-4005-8348-836eb82cac0f_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.784597+00:00",
+    "device_class": null,
+    "device_id": "7c27615ef9942350c054129d79d29579",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.bedroom_virtual_illuminance_level_2",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "8d063dce171b6e7bdce3e4804f9de1c2",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.546476+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "5869c385-ebda-4e9e-a072-93bc433f703a_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.786804+00:00",
+    "device_class": null,
+    "device_id": "a3b7ba82ee811c256239fb48efc15a5d",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.bedroom_virtual_illuminance_level_4",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "8077415771eac5b0c7c636266abd614d",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.547720+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "5e33943d-f0a7-439e-93ff-5b82c7406318_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.787791+00:00",
+    "device_class": null,
+    "device_id": "cc8a518ecdc8f4d0a2997d7d12da3a27",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.ensuite_fan_alpha_wifi",
+    "has_entity_name": true,
+    "hidden_by": "integration",
+    "icon": null,
+    "id": "e413428ae075e4aae54cd94d3b250c69",
+    "labels": [],
+    "modified_at": "2025-07-19T00:23:26.261765+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": false
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "b073533d-23c8-4359-a452-702e5dc3a100_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.788717+00:00",
+    "device_class": null,
+    "device_id": "880abb49c4b3c9f456e876a6bbdc59d7",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.kitchen_lightstrip_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "f5bbc6f988f3d6d87c01abfa0ff7b6f7",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.552162+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "5e1ca596-1d38-4316-b86e-50eb3f0c71f6_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.790503+00:00",
+    "device_class": null,
+    "device_id": "c0eb2084fca3fb354e4c6c26f99b0696",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.bedroom_wall_switch_alpha_left",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "d76e0bfcefa9210615f736db0fb65d14",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.554656+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "015ee1ae-2a72-4495-92f4-6da3b8206376_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.792532+00:00",
+    "device_class": null,
+    "device_id": "c6dbbc2283f4f737d2e0b0e99ccf0dde",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "switch.power_hub_aeotec_smartthings_plug_1",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "43f88b2c94a0cae3c88115173b531b36",
+    "labels": [],
+    "modified_at": "2025-07-19T00:13:20.556228+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "ba586b68-5d3a-481c-8bdc-e5d8dad9d817_main_switch_switch_switch",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.983286+00:00",
+    "device_class": null,
+    "device_id": "bbca9973c2206b2ec7eceb0540430e6e",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "binary_sensor.upstairs_skylight_contact_wifi_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "b225d1096bfdc2a43c906c5917fe949d",
+    "labels": [],
+    "modified_at": "2025-07-19T00:23:11.535450+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "door",
+    "original_icon": null,
+    "original_name": "Door",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "82e632c3-973e-4fd0-b558-109e3b4c8d79_main_contactSensor_contact_contact",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": null,
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:38:59.977246+00:00",
+    "device_class": null,
+    "device_id": "53eec831e4993e0878ce8e553c4c9cd2",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "binary_sensor.kitchen_motion_wifi_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "16814fa540dec8d7a6fd173a48ef3eb8",
+    "labels": [],
+    "modified_at": "2025-07-20T18:21:55.392034+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": "motion",
+    "original_icon": null,
+    "original_name": "Motion",
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 0,
+    "translation_key": null,
+    "unique_id": "d0ab5385-bce0-40ad-a5a7-12d799c0b461_main_motionSensor_motion_motion",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-07-19T00:13:20.444849+00:00",
+    "device_class": null,
+    "device_id": "e25246d67b2f95e32c56071cd64a1f01",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.bedroom_ottoman_lightstrip_wifi_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "0520f4620267d531f3dfa2940fb75fe9",
+    "labels": [],
+    "modified_at": "2025-07-22T03:20:55.033754+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "ac07564c-53b6-4d13-ba20-31e64275bb01_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-07-19T00:13:20.428761+00:00",
+    "device_class": null,
+    "device_id": "349f7405edbc5c0d1705ad97fcf78bc4",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.bedroom_nightstand_left_wifi_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "378784e8fdc9ed4c8e236f4b01a7343e",
+    "labels": [],
+    "modified_at": "2025-07-22T03:21:12.212857+00:00",
+    "name": null,
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "bfa03f31-f570-42ce-8aa9-af7588daa4a7_main",
+    "unit_of_measurement": null
+  },
+  {
+    "aliases": [],
+    "area_id": null,
+    "capabilities": {
+      "max_color_temp_kelvin": 9000,
+      "max_mireds": 500,
+      "min_color_temp_kelvin": 2000,
+      "min_mireds": 111,
+      "supported_color_modes": [
+        "color_temp",
+        "hs"
+      ]
+    },
+    "categories": {},
+    "config_entry_id": "01K0G0E74RH816NM3T6WHGGQFP",
+    "config_subentry_id": null,
+    "created_at": "2025-06-11T00:39:00.037305+00:00",
+    "device_class": null,
+    "device_id": "d391bb3e07ed01faa930d2777d578030",
+    "disabled_by": null,
+    "entity_category": null,
+    "entity_id": "light.desk_corner_wifi_alpha",
+    "has_entity_name": true,
+    "hidden_by": null,
+    "icon": null,
+    "id": "d4b938d82fe49fc4a792d491cc5dc34c",
+    "labels": [],
+    "modified_at": "2025-07-22T05:59:50.031403+00:00",
+    "name": "desk_corner_wifi_alpha",
+    "options": {
+      "cloud.alexa": {
+        "should_expose": false
+      },
+      "cloud.google_assistant": {
+        "should_expose": false
+      },
+      "conversation": {
+        "should_expose": true
+      }
+    },
+    "original_device_class": null,
+    "original_icon": null,
+    "original_name": null,
+    "platform": "smartthings",
+    "previous_unique_id": null,
+    "suggested_object_id": null,
+    "supported_features": 32,
+    "translation_key": null,
+    "unique_id": "4a168565-c108-4c76-9620-eff62a7266d3_main",
+    "unit_of_measurement": null
+  }
+]

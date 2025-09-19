@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Canonical Omega Entity Scaffold",
+  "schemas": {
+    "1.0": {
+      "type": "object",
+      "required": ["version", "entity_id", "domain", "platform", "enabled", "source"],
+      "properties": {
+        "version": { "type": "string" },
+        "entity_id": { "type": "string" },
+        "device_id": { "type": ["string", "null"] },
+        "domain": { "type": "string" },
+        "platform": { "type": "string" },
+        "device_class": { "type": ["string", "null"] },
+        "manufacturer": { "type": ["string", "null"] },
+        "model": { "type": ["string", "null"] },
+        "area_id": { "type": ["string", "null"] },
+        "suggested_area": { "type": ["string", "null"] },
+        "mac": { "type": ["string", "null"] },
+        "entity_category": {
+          "type": ["string", "null"],
+          "enum": ["diagnostic", "config", "system", null]
+        },
+        "name": { "type": ["string", "null"] },
+        "original_name": { "type": ["string", "null"] },
+        "disabled_by": {
+          "type": ["string", "null"],
+          "enum": ["user", "integration", null]
+        },
+        "hidden_by": {
+          "type": ["string", "null"],
+          "enum": ["user", "integration", null]
+        },
+        "enabled": { "type": "boolean" },
+        "via_device_id": { "type": ["string", "null"] },
+        "identifiers": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "connections": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "sw_version": { "type": ["string", "null"] },
+        "hw_version": { "type": ["string", "null"] },
+        "source": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "1.1": {
+      "type": "object",
+      "required": ["version", "entity_id", "domain", "platform", "enabled", "source"],
+      "properties": {
+        "version": { "type": "string", "source": ["1.1"] },
+        "entity_id": { "type": "string", "source": ["str", "core.entity_registry"] },
+        "device_id": { "type": ["string", "null"], "source": ["str | null", "core.entity_registry.device_id"] },
+        "domain": { "type": "string", "source": ["str", "extracted from entity_id"] },
+        "platform": { "type": "string", "source": ["str", "core.entity_registry.platform"] },
+        "device_class": { "type": ["string", "null"], "source": ["str | null", "core.entity_registry"] },
+        "manufacturer": { "type": ["string", "null"], "source": ["str | null", "device_registry"] },
+        "model": { "type": ["string", "null"], "source": ["str | null", "device_registry"] },
+        "area_id": { "type": ["string", "null"], "source": ["str | null", "device_registry or entity_registry"] },
+        "suggested_area": { "type": ["string", "null"], "source": ["str | null", "device_registry"] },
+        "mac": { "type": ["string", "null"], "source": ["str | null", "device_registry.connections"] },
+        "entity_category": { "type": ["string", "null"], "source": ["enum | null", "core.entity_registry"] },
+        "name": { "type": ["string", "null"], "source": ["str | null", "core.entity_registry.name"] },
+        "original_name": { "type": ["string", "null"], "source": ["str | null", "migration or fingerprint (deferred)"] },
+        "disabled_by": { "type": ["string", "null"], "enum": ["user", "integration", null], "source": ["enum | null", "'user', 'integration', or null"] },
+        "hidden_by": { "type": ["string", "null"], "enum": ["user", "integration", null], "source": ["enum | null", "same"] },
+        "enabled": { "type": "boolean", "source": ["bool", "derived from disabled_by is None"] },
+        "via_device_id": { "type": ["string", "null"], "source": ["str | null", "device_registry"] },
+        "identifiers": { "type": "array", "items": { "type": "string" }, "source": ["list[str]", "device_registry"] },
+        "connections": { "type": "array", "items": { "type": "array", "items": { "type": "string" }, "minItems": 2, "maxItems": 2 }, "source": ["list[list[str]]", "device_registry"] },
+        "sw_version": { "type": ["string", "null"], "source": ["str | null", "device_registry"] },
+        "hw_version": { "type": ["string", "null"], "source": ["str | null", "device_registry"] },
+        "source": { "type": "array", "items": { "type": "string" }, "minItems": 1, "source": ["list[str]", "always include ['core.entity_registry', 'core.device_registry']"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "field_conflict": {
+    "tier": {
+      "overrides": ["enrichment", "manual"],
+      "winner": "canonical",
+      "reason": "null in enrichment, valid in canonical"
+    },
+    "area_id": {
+      "overrides": ["enrichment", "manual"],
+      "winner": "canonical",
+      "reason": "null in enrichment, valid in canonical"
+    },
+    "floor_id": {
+      "overrides": ["enrichment", "manual"],
+      "winner": "canonical",
+      "reason": "null in enrichment, valid in canonical"
+    },
+    "room_ref": {
+      "overrides": ["enrichment", "manual"],
+      "winner": "canonical",
+      "reason": "null in enrichment, valid in canonical"
+    },
+    "platform": {
+      "overrides": [],
+      "winner": "canonical",
+      "reason": "platform is always canonical"
+    }
+  },
+  "field_inheritance": {
+    "tier": "core.entity_registry",
+    "area_id": "core.device_registry",
+    "floor_id": "core.area_registry",
+    "room_ref": "core.area_registry",
+    "platform": "core.entity_registry"
+  }
+}

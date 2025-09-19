@@ -1,0 +1,39 @@
+Step 1: Removing __pycache__ directories and .pyc files...
+[RUN] ['find', '/Users/evertappels/Projects/omega_registry', '-name', '__pycache__', '-type', 'd', '-exec', 'rm', '-rf', '{}', '+']
+[RUN] ['find', '/Users/evertappels/Projects/omega_registry', '-name', '*.pyc', '-exec', 'rm', '-f', '{}', '+']
+Step 1 complete.
+Step 2: Adding __init__.py to package directories...
+Ensured scripts/__init__.py exists.
+Ensured scripts/utils/__init__.py exists.
+Ensured scripts/omega_registry/__init__.py exists.
+Step 2 complete.
+Step 3: Verifying virtual environment integrity...
+[RUN] ['which', 'python3']
+/Users/evertappels/Projects/omega_registry/venv/bin/python3
+[RUN] ['python3', '--version']
+Python 3.13.5
+Step 3 complete.
+Step 4: Running shadow path audit...
+[RUN] ['which', '-a', 'python3']
+/Users/evertappels/Projects/omega_registry/venv/bin/python3
+/opt/homebrew/bin/python3
+/Library/Frameworks/Python.framework/Versions/3.13/bin/python3
+/opt/homebrew/bin/python3
+/usr/local/bin/python3
+/usr/bin/python3
+/Library/Frameworks/Python.framework/Versions/3.13/bin/python3
+/opt/homebrew/bin/python3
+Step 4 complete.
+Step 5: Standardizing script shebangs...
+Step 5 complete.
+Step 6: Running omega registry pipeline...
+[RUN] ['python3', '-m', 'scripts.generate_omega_registry_v2', '--output', 'canonical/omega_registry_master.json', '--contract', 'canonical/support/manifests/enrichment_manifest.omega.yaml', '--strict']
+[FAIL] Command '['python3', '-m', 'scripts.generate_omega_registry_v2', '--output', 'canonical/omega_registry_master.json', '--contract', 'canonical/support/manifests/enrichment_manifest.omega.yaml', '--strict']' returned non-zero exit status 2.
+
+usage: generate_omega_registry_v2.py [-h] [--manifest MANIFEST] [--mode MODE]
+                                     [--input INPUT] [--output OUTPUT]
+                                     [--output-version OUTPUT_VERSION]
+                                     [--trace TRACE] [--min_score MIN_SCORE]
+                                     [--recovery_mode]
+generate_omega_registry_v2.py: error: unrecognized arguments: --contract canonical/support/manifests/enrichment_manifest.omega.yaml --strict
+

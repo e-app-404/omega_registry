@@ -1,0 +1,84 @@
+{
+  "python.analysis.diagnosticMode": "workspace",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.wordWrap": "on",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "onWindowChange",
+  "explorer.confirmDelete": false,
+  "terminal.integrated.fontSize": 12,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "vs-seti",
+  "breadcrumbs.enabled": true,
+  "telemetry.telemetryLevel": "off",
+  "python.analysis.typeCheckingMode": "standard",
+  "[json]": {
+    "editor.defaultFormatter": "quanzaiyu.vscode-json-enhanced"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[home-assistant]": {
+    "editor.defaultFormatter": "keesschollaart.vscode-home-assistant"
+  },
+  "[yaml]": {
+
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnSave": true,
+  },
+  "editor.stickyScroll.enabled": false,
+  "task.allowAutomaticTasks": "on",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "files.associations": {
+    "*.yaml": "yaml",
+    "*.yml": "yaml",
+    "*.j2": "jinja",
+    "*.jinja": "jinja",
+    "*.jinja2": "jinja",
+    "*.tpl": "jinja",
+    "*.conf": "ini",
+    "*.env": "env",
+    "*.ini": "ini",
+    "*.log": "log",
+    "*.txt": "plaintext",
+    "*.md": "markdown",
+    "*.json": "json",
+    "*.jsonc": "jsonc",
+    "*.py": "python",
+    "*.pyi": "python",
+    "*.sh": "shellscript",
+    "*.bash": "shellscript",
+    "*.zsh": "shellscript"
+  },
+  "editor.formatOnSave": true,
+  "editor.unicodeHighlight.includeStrings": false,
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.analysis.extraPaths": [
+    "src"
+  ],
+  "python.testing.unittestArgs": [
+    "tests"
+  ],
+  "python.testing.unittestEnabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "markdown": true,
+    "python": true
+  },
+  "github.copilot.advanced": {
+    "enableAutoCompletions": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true
+}

@@ -1,0 +1,70 @@
+# ALPHA ROOM REGISTRY — STRUCTURAL SCAFFOLD
+# Source-traced scaffold for alpha-tier room registry generation
+# Patch Tag: PATCH-ALPHA-ROOM-REGISTRY-EXTRACTION-V1
+
+- room_id: bedroom
+  friendly_name: Bedroom
+  floor: bedroom_evert
+  tier: "α"
+  cluster_size: 300
+  has_beta: true
+  domains:
+    sensor:
+      count: 84
+      device_classes:
+        temperature: 31
+        humidity: 22
+        illuminance: 13
+        co2: 5
+        volatile_organic_compounds: 3
+        battery: 10
+    binary_sensor:
+      count: 39
+      device_classes:
+        motion: 18
+        occupancy: 9
+        window: 3
+        presence: 4
+        door: 5
+    fan: null
+    media_player: null
+  _meta:
+    "title": Alpha Room Registry
+    "document_structure": "alpha_room_structure.v1"
+    "timestamp": "2025-07-22T00:00:00.000000+00:00"
+    "script": "generate_alpha_registry.py"
+    "arguments":
+      [
+        "OMEGA_ROOM_REG",
+        "FLOOR_REGISTRY",
+        "AREA_REGISTRY",
+        "METRICS_FILE",
+        "ENTITY_SOURCE",
+      ]
+  _contract:
+    generated_by: "generate_alpha_registry.py"
+    audit_tag: "PATCH-ALPHA-ROOM-REGISTRY-EXTRACTION-V1"
+    input_hashes:
+      omega_room_registry: <sha256>
+      entity_flatmap: <sha256>
+  _legend:
+    room_id: core.area_registry
+    friendly_name: omega_room_registry.json
+    floor: core.floor_registry
+    tier: pipeline_metrics.latest.json
+    cluster_size: pipeline_metrics.latest.json → tiers_by_area["bedroom"]["α"]
+    has_beta: pipeline_metrics.latest.json → tiers_by_area["bedroom"]["β"]
+    domains.sensor.count: entity_flatmap.json (filtered by domain = sensor, area_id = bedroom)
+    domains.sensor.device_classes: entity_flatmap.json → device_class histogram
+    domains.binary_sensor.count: entity_flatmap.json (domain = binary_sensor)
+    domains.binary_sensor.device_classes: entity_flatmap.json → device_class histogram
+  tier_mapping_source:
+    source: canonical/logs/analytics/pipeline_metrics.latest.json
+    field: tiers_by_area
+    usage: >
+      Used to determine room/entity inclusion in alpha-tier registry extraction.
+  cluster_threshold:
+    min_size: 3
+    action_below_threshold: move_to_virtual_rooms
+    notes: >
+      Threshold for pruning underpopulated rooms from alpha room registry.

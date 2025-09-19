@@ -1,0 +1,27 @@
+(# Idea backlog - automatically appended by the assistant)
+
+## Remediation suggestions (generated 2025-09-18)
+
+- mobile_app enricher
+	- Add an enrichment module that inspects `mobile_app` entities for device identifiers (device_id, app_instance_id) in attributes.
+	- Attempt to match to existing `core.device_registry` entries using identifiers.
+	- If no existing device matches, optionally create a synthetic device id (e.g. `mobile_app:{user}`) and attach `device_id` and provenance.
+	- Provide an optional `canonical/support/mappings/mobile_app_map.yaml` for explicit entity_id->area mapping.
+	- Add a toggle in pipeline config to enable synthetic-device creation.
+
+- network_tracker (nmap/ping) enricher
+	- Add an enricher for `device_tracker` entries produced by `nmap_tracker` and `ping`.
+	- Look for MAC/IP in attributes and try to match devices in `core.device_registry` (by identifiers or stored ip/mac mappings).
+	- If no match, create lightweight synthetic device entries (retain config_entry_id) to populate `device_id`.
+	- Provide a safety option to disable synthetic creation; surface a report for manual review.
+
+- template/entity reference propagation
+	- Extend name_enricher or join_enricher to follow `references_entities` fields and inherit `device_id`/`area_id` when referenced entity is device-associated.
+
+- input_* parser improvements
+	- Harden parsers for `input_number`, `input_text`, `input_boolean`, `input_datetime` to ensure items/keys are extracted consistently.
+	- Add unit tests for `scripts/utils/input_list_extract.py` to capture common formats.
+
+- HACS/custom integration audit
+	- Generate a report of HACS/custom integrations that frequently produce UNKNOWN `config_entry_id` and surface to backlog for plugin authors.
+

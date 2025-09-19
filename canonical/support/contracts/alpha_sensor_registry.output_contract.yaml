@@ -1,0 +1,17 @@
+name: alpha_sensor_registry.v1
+description: "Alpha sensor registry output contract - required fields and inference rules."
+version: 1
+required_keys:
+  - entity_id
+  - platform
+  - domain
+  - device_id
+  - area_id
+  - friendly_name
+  - tier
+optional_keys:
+  - cluster_size
+  - has_beta
+  - _meta
+notes: |
+  Per-item `_meta` should include `inferred_fields` when enrichers have made inferences.

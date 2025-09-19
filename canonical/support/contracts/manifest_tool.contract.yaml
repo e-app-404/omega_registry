@@ -1,0 +1,366 @@
+sections:
+  # Manifest header
+  - title: Omega Registry Manifest
+    version: 1.0
+    date_generated: 2025-07-25
+    source: meta_build_manifest.py
+    description: |
+      This manifest is generated for both human and machine consumption. All formatting, section order, and field definitions are aligned with the schema and documentation. Tag logic and filetype mapping are handled via scripts/utils/tagging.py and constants.py.
+  # General Files
+  - name: General Files
+    type: file_list
+    folders: ["", "canonical/"]
+    fields:
+      [
+        filename,
+        full_path,
+        link,
+        size,
+        hash,
+        date_updated,
+        description,
+        actions,
+        tags,
+      ]
+  # Data pipeline
+  - name: Data pipeline
+    type: section
+    subsections:
+      - name: Canonical inputs
+        type: section
+        subsections:
+          - name: Registry inputs
+            type: file_list
+            folder: canonical/registry_inputs/
+            fields:
+              [
+                filename,
+                link,
+                size,
+                hash,
+                date_updated,
+                description,
+                actions,
+                tags,
+              ]
+          - name: Enrichment sources
+            type: section
+            folder: canonical/enrichment_sources/
+            subsections:
+              - name: Generated Enrichment Outputs
+                type: file_list
+                folder: canonical/enrichment_sources/generated/
+                fields:
+                  [
+                    filename,
+                    link,
+                    size,
+                    hash,
+                    date_updated,
+                    description,
+                    actions,
+                    tags,
+                  ]
+              - name: Home Assistant Registries
+                type: grouped_file_list
+                folder: canonical/enrichment_sources/ha_registries/
+                group_by: subfolder
+                recursive: true
+                fields:
+                  [
+                    filename,
+                    link,
+                    size,
+                    hash,
+                    date_updated,
+                    description,
+                    actions,
+                    tags,
+                  ]
+              - name: Custom Hestia Registries
+                type: grouped_file_list
+                folder: canonical/enrichment_sources/hestia/
+                group_by: subfolder
+                recursive: true
+                fields:
+                  [
+                    filename,
+                    link,
+                    size,
+                    hash,
+                    date_updated,
+                    description,
+                    actions,
+                    tags,
+                  ]
+              - name: Hardware & Network Information Enrichment
+                type: file_list
+                folder: canonical/enrichment_sources/network/
+                fields:
+                  [
+                    filename,
+                    link,
+                    size,
+                    hash,
+                    date_updated,
+                    description,
+                    actions,
+                    tags,
+                  ]
+          - name: Derived Views
+            type: section
+            folder: canonical/derived_views/
+            subsections:
+              - name: Flatmaps
+                type: file_list
+                folder:
+                  [
+                    "canonical/derived_views/flatmaps/",
+                    "canonical/derived_views/",
+                  ]
+                fields:
+                  [
+                    filename,
+                    link,
+                    size,
+                    hash,
+                    date_updated,
+                    description,
+                    actions,
+                    tags,
+                  ]
+      - name: Pipeline & core logic
+        type: section
+        subsections:
+          - name: Pipeline Generation
+            type: file_list
+            folder: scripts/generators/
+            fields:
+              [
+                filename,
+                link,
+                size,
+                hash,
+                date_updated,
+                description,
+                actions,
+                tags,
+              ]
+          - name: Dataset Transformation
+            type: file_list
+            folder: scripts/transformation/
+            fields:
+              [
+                filename,
+                link,
+                size,
+                hash,
+                date_updated,
+                description,
+                actions,
+                tags,
+              ]
+          - name: Enrichment Engine
+            type: file_list
+            folder: scripts/enrich/
+            fields:
+              [
+                filename,
+                link,
+                size,
+                hash,
+                date_updated,
+                description,
+                actions,
+                tags,
+              ]
+          - name: Analytics
+            type: file_list
+            folder: scripts/analytics/
+            fields:
+              [
+                filename,
+                link,
+                size,
+                hash,
+                date_updated,
+                description,
+                actions,
+                tags,
+              ]
+          - name: Auditing & QA
+            type: file_list
+            folders: ["scripts/audit/", "scripts/qa/"]
+            fields:
+              [
+                filename,
+                link,
+                size,
+                hash,
+                date_updated,
+                description,
+                actions,
+                tags,
+              ]
+          - name: Supporting Logic
+            type: section
+            subsections:
+              - name: Tools
+                type: file_list
+                folder: scripts/tools/
+                fields:
+                  [
+                    filename,
+                    link,
+                    size,
+                    hash,
+                    date_updated,
+                    description,
+                    actions,
+                    tags,
+                  ]
+              - name: Utilities
+                type: file_list
+                folder: scripts/utils/
+                fields:
+                  [
+                    filename,
+                    link,
+                    size,
+                    hash,
+                    date_updated,
+                    description,
+                    actions,
+                    tags,
+                  ]
+              - name: Diagnostics
+                type: file_list
+                folder: scripts/diagnostics/
+                fields:
+                  [
+                    filename,
+                    link,
+                    size,
+                    hash,
+                    date_updated,
+                    description,
+                    actions,
+                    tags,
+                  ]
+  # Contracts & Supporting documents
+  - name: Contracts & Supporting documents
+    type: section
+    subsections:
+      - name: Output Contracts
+        type: file_list
+        folder: canonical/support/contracts/
+        fields:
+          [filename, link, size, hash, date_updated, description, actions, tags]
+      - name: Mock Registry Samples & Contracts
+        type: file_list
+        folder: canonical/support/mock/
+        fields:
+          [filename, link, size, hash, date_updated, description, actions, tags]
+      - name: Manifests
+        type: file_list
+        folder: canonical/support/manifests/
+        recursive: true
+        fields: [filename, link, size, hash, date, description, actions, tags]
+      - name: Output Trackers & Checklists
+        type: file_list
+        folder: canonical/support/trackers/
+        fields: [filename, link, size, hash, date, description, actions, tags]
+      - name: Joins
+        type: file_list
+        folder: canonical/support/joins/
+        recursive: true
+        fields: [filename, link, size, hash, date, description, actions, tags]
+  # Logs
+  - name: Logs
+    type: section
+    subsections:
+      - name: Analytics & Diagnostics
+        type: file_list
+        folders: ["canonical/logs/analytics/", "canonical/logs/diagnostics/"]
+        fields:
+          [filename, link, size, hash, date_updated, description, actions, tags]
+      - name: Audit Findings & Conclusions
+        type: file_list
+        folder: canonical/logs/audit/
+        recursive: true
+        fields:
+          [filename, link, size, hash, date_updated, description, actions, tags]
+      - name: AI, LLM & GPT Logs
+        type: file_list
+        folder: canonical/logs/meta/
+        fields:
+          [filename, link, size, hash, date_updated, description, actions, tags]
+      - name: Governance
+        type: file_list
+        folder: canonical/logs/governance/
+        recursive: true
+        fields:
+          [filename, link, size, hash, date_updated, description, actions, tags]
+      - name: Patchfiles & Scratch Logs
+        type: file_list
+        folders: ["canonical/logs/scratch/", "canonical/logs/patches/"]
+        fields:
+          [filename, link, size, hash, date_updated, description, actions, tags]
+      - name: README
+        type: file_list
+        folder:
+        fields:
+          [
+            folder name,
+            link,
+            size,
+            hash,
+            date_updated,
+            description,
+            actions,
+            tags,
+          ]
+  # Tarballs
+  - name: Tarballs
+    type: file_list
+    folders: ["tarballs/", "canonical/tarballs/"]
+    fields:
+      [filename, link, size, hash, date_updated, description, actions, tags]
+  # File Duplications
+  - name: Duplicate Files
+    type: duplications
+    view: table
+    fields: [filename, left, right, summary, description, actions, tags]
+manifest_options:
+  sorting:
+    enabled: true
+    default: last_update
+    options: [last_update, size, creation_date]
+  filtering:
+    enabled: true
+    filters: [file_type, section, tags]
+project_health:
+  documentation_coverage: true
+  test_presence: true
+  last_update_recency: true
+  duplicate_file_risk: true
+  visualization:
+    type: [progress_bar, pie_chart, badge]
+exclude_patterns:
+  - ".DS_Store"
+  - "venv/*"
+  - "venv/**"
+  - "*/venv/*"
+  - "*/venv/**"
+  - "__pycache__/*"
+  - "__pycache__/**"
+  - "*/__pycache__/*"
+  - "*/__pycache__/**"
+exclude_duplicates: []
+table_of_contents: true
+#
+# Tag logic and filetype mapping are handled via scripts/utils/tagging.py and constants.py.
+# All changes are logged in patch files for audit trail.
+#
+# All file entries in major manifest sections (General Files, Data pipeline, etc.) must use the HTML block layout as defined in manifest_tool.schema.md (2025-08-02+).
+#

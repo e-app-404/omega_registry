@@ -1,0 +1,67 @@
+omega_registry_entity_schema:
+  version: "2025-07-23-contract-minimization-v1"
+  id: "omega_registry.minimization_schema.yaml"
+  origin: "omega_registry_master.output_contract.yaml + runtime required fields"
+  type: "object"
+  required:
+    - entity_id
+    - domain
+    - platform
+    - device_class
+    - entity_category
+    - name
+    - area_id
+    - floor_id
+    - device_id
+    - entry_id
+    - integration
+    - join_origin
+  optional:
+    - labels
+    - via_device_id
+    - state_snapshot
+    - exposed_to_assistant
+    - suggested_area
+    - hidden_by
+    - disabled_by
+    - original_name
+    - mac
+    - connections
+    - manufacturer
+    - model
+  runtime_generated:
+    - _meta # Includes .null_fields and conflict_resolution
+    - conflict_id # Deterministically hashed or inferred
+    - field_inheritance # Trace origin of merged fields
+    - tier # Inferred classification (α, β, γ, etc.)
+    - floor_ref # Optional hierarchy trace
+    - room_ref # Optional hierarchy trace
+  disallowed:
+    - options # Flattened to `exposed_to_assistant`
+    - original_device_class
+    - original_icon
+    - original_* # Except `original_name` if explicitly preserved
+    - capabilities
+    - categories
+    - icon
+    - suggested_object_id
+    - supported_features
+    - translation_key
+    - unique_id
+    - previous_unique_id
+    - unit_of_measurement
+    - config_entry_id # Use `entry_id` standardized field
+    - config_subentry_id
+    - created_at
+    - modified_at
+    - has_entity_name
+    - aliases
+    - id
+    - _meta_inference_key # Redundant or transient trace artifacts
+  validation_rules:
+    - must_have_join_origin: true
+    - confidence_range:
+        min: 0.75
+        max: 1.0
+    - area_id_required_if_device_id: true
+    - exposed_to_assistant_must_be_boolean_if_present: true

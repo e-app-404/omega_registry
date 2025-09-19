@@ -1,0 +1,2 @@
+# Minimal runtime requirements for the Omega Registry add-on
+pyyaml

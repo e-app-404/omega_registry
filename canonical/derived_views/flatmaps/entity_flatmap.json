@@ -1,0 +1,11 @@
+[
+  {
+    "entity_id": "sensor.home_assistant_core_cpu_percent",
+    "domain": "sensor",
+    "platform": "hassio",
+    "area_id": "ha_system",
+    "tier": "α",
+    "device_id": "05e60d3edb4206df51911531f63f8ed6",
+    "device_class": null
+  }
+]

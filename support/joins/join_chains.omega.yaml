@@ -1,0 +1,84 @@
+# Omega Registry Join Chains
+# This file defines all join chains for the enrichment pipeline.
+# Each key is a chain name; each value is a mapping with a 'steps' list and optional meta fields.
+# Chains handled by enrichment functions or inference/fallback rules are annotated with join_origin.
+
+# --- Core Join Chains (join engine) ---
+device_area:
+  steps:
+    - [device_id, device_registry, area_id]
+area_floor:
+  steps:
+    - [area_id, area_registry, floor_id]
+
+# --- Device Registry Enrichments (via device_id) ---
+device_mac:
+  steps:
+    - [device_id, device_registry, mac]
+  join_origin: enrichment_fn:enrich_entities_with_device_fields
+device_serial_number:
+  steps:
+    - [device_id, device_registry, serial_number]
+  join_origin: enrichment_fn:enrich_entities_with_device_fields
+device_manufacturer:
+  steps:
+    - [device_id, device_registry, manufacturer]
+  join_origin: enrichment_fn:enrich_entities_with_device_fields
+device_name:
+  steps:
+    - [device_id, device_registry, device_name]
+  join_origin: enrichment_fn:enrich_entities_with_device_fields
+device_primary_config_entry:
+  steps:
+    - [device_id, device_registry, primary_config_entry]
+  join_origin: enrichment_fn:enrich_entities_with_device_fields
+device_identifiers:
+  steps:
+    - [device_id, device_registry, identifiers]
+  join_origin: enrichment_fn:enrich_entities_with_device_fields
+device_via_device_id:
+  steps:
+    - [device_id, device_registry, via_device_id]
+  join_origin: enrichment_fn:enrich_entities_with_device_fields
+
+# --- Config Entry Enrichments (via config_entry_id) ---
+config_integration_domain:
+  steps:
+    - [config_entry_id, config_registry, integration_domain]
+  join_origin: enrichment_fn:enrich_entities_with_config_metadata
+config_integration_title:
+  steps:
+    - [config_entry_id, config_registry, integration_title]
+  join_origin: enrichment_fn:enrich_entities_with_config_metadata
+config_discovery_keys:
+  steps:
+    - [config_entry_id, config_registry, discovery_keys]
+  join_origin: enrichment_fn:enrich_entities_with_config_metadata
+config_integration_unique_id:
+  steps:
+    - [config_entry_id, config_registry, integration_unique_id]
+  join_origin: enrichment_fn:enrich_entities_with_config_metadata
+config_ipv4:
+  steps:
+    - [config_entry_id, config_registry, ipv4]
+  join_origin: enrichment_fn:enrich_entities_with_config_metadata
+  note: maps from config_entry.data.host to ipv4
+
+# --- Inference/Fallback Joins ---
+domain_inference:
+  steps:
+    - [entity_id, inference, domain]
+  join_origin: inference_rule:domain_from_entity_id
+device_class_inference:
+  steps:
+    - [entity, inference, device_class]
+  join_origin: inference_rule:infer_device_class
+tier_inference:
+  steps:
+    - [entity, tier_definitions, tier]
+  join_origin: inference_rule:tier_classification
+name_fallback:
+  steps:
+    - [original_name, entity, name]
+  join_origin: fallback_rule:original_name
+# Extend with additional chains as needed.

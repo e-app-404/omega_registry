@@ -1,0 +1,8 @@
+{
+  "devices": [],
+  "_meta": {
+    "source": "/Users/evertappels/Projects/omega_registry/scripts/transformation/build_enriched_device_map.py",
+    "contract": "enrichment_contract.yaml",
+    "timestamp": "2025-08-02T06:50:45.305900Z"
+  }
+}

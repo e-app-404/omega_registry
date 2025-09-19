@@ -1,0 +1,11 @@
+[tool.ruff]
+line-length = 88
+# Ruff uses its own rule codes; ignore E203 (pycodestyle) and allow black's line breaks
+extend-ignore = ["E203"]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'

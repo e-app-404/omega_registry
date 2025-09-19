@@ -1,0 +1,2826 @@
+{
+  "flatmap": [
+    {
+      "device_id": "820adbe5f9e918790dfa69236d820763",
+      "name": "Sun",
+      "area_id": "london",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "820adbe5f9e918790dfa69236d820763",
+        "Sun"
+      ]
+    },
+    {
+      "device_id": "05e60d3edb4206df51911531f63f8ed6",
+      "name": "Home Assistant Core",
+      "area_id": "ha_system",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "05e60d3edb4206df51911531f63f8ed6",
+        "Home Assistant Core"
+      ]
+    },
+    {
+      "device_id": "0f47169205b3e7c52f45366a168afd39",
+      "name": "Home Assistant Supervisor",
+      "area_id": "ha_system",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "0f47169205b3e7c52f45366a168afd39",
+        "Home Assistant Supervisor"
+      ]
+    },
+    {
+      "device_id": "1b9a3609f656710d1e43f621cac66019",
+      "name": "Home Assistant Host",
+      "area_id": "ha_system",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1b9a3609f656710d1e43f621cac66019",
+        "Home Assistant Host"
+      ]
+    },
+    {
+      "device_id": "4859ed3ffe10ce653dc640e7d32f0f1d",
+      "name": "Home Assistant Operating System",
+      "area_id": "ha_system",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "4859ed3ffe10ce653dc640e7d32f0f1d",
+        "Home Assistant Operating System"
+      ]
+    },
+    {
+      "device_id": "172f8dfb0470aeee96ac2d01e0c41b03",
+      "name": "Boy",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "172f8dfb0470aeee96ac2d01e0c41b03",
+        "Boy"
+      ]
+    },
+    {
+      "device_id": "2c231b2b134c20261ce27da64e8a43d5",
+      "name": "Joel's Bedroom speaker",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "2c231b2b134c20261ce27da64e8a43d5",
+        "Joel's Bedroom speaker"
+      ]
+    },
+    {
+      "device_id": "d53a10c206e8f30d243dcaf5a59c4bcc",
+      "name": "hci0 (2C:CF:67:65:F9:00)",
+      "area_id": "home_assistant",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d53a10c206e8f30d243dcaf5a59c4bcc",
+        "hci0 (2C:CF:67:65:F9:00)"
+      ]
+    },
+    {
+      "device_id": "b70ae3d6a1221e061d956e5bd5d02b09",
+      "name": "Cin\u00e9ma Clapham",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "b70ae3d6a1221e061d956e5bd5d02b09",
+        "Cin\u00e9ma Clapham"
+      ]
+    },
+    {
+      "device_id": "1f008cdc788867084787f12d88af1025",
+      "name": "Bedroom",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1f008cdc788867084787f12d88af1025",
+        "Bedroom"
+      ]
+    },
+    {
+      "device_id": "9ed135979a4cdc695ec6d8659da30cb9",
+      "name": "Belge \u00e9tage",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "9ed135979a4cdc695ec6d8659da30cb9",
+        "Belge \u00e9tage"
+      ]
+    },
+    {
+      "device_id": "0b0cc6fd2a0fe8db0b18b5f96b740293",
+      "name": "Backup",
+      "area_id": "system_admin",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "0b0cc6fd2a0fe8db0b18b5f96b740293",
+        "Backup"
+      ]
+    },
+    {
+      "device_id": "2f434d7f46d9fe722536a18b94f6c264",
+      "name": "Kitchen",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "2f434d7f46d9fe722536a18b94f6c264",
+        "Kitchen"
+      ]
+    },
+    {
+      "device_id": "df67ffc2e83ad13b1f3fec4361e33184",
+      "name": "Sauna Para\u00edso",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "df67ffc2e83ad13b1f3fec4361e33184",
+        "Sauna Para\u00edso"
+      ]
+    },
+    {
+      "device_id": "dd683088467f68e7a0b0b6ccc72e7e30",
+      "name": "Matter Server",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "dd683088467f68e7a0b0b6ccc72e7e30",
+        "Matter Server"
+      ]
+    },
+    {
+      "device_id": "0dc105d3a919fbaebdc5f766e61db1d3",
+      "name": "Forecast",
+      "area_id": "london",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "0dc105d3a919fbaebdc5f766e61db1d3",
+        "Forecast"
+      ]
+    },
+    {
+      "device_id": "e89054d6a2d1d75c175c4a0547e707b4",
+      "name": "Archer AX53",
+      "area_id": "network_connectivity",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e89054d6a2d1d75c175c4a0547e707b4",
+        "Archer AX53"
+      ]
+    },
+    {
+      "device_id": "1408d32b99265f6396f7c5a838b7b4cf",
+      "name": "Hub - Bedroom TV",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1408d32b99265f6396f7c5a838b7b4cf",
+        "Hub - Bedroom TV"
+      ]
+    },
+    {
+      "device_id": "eb48dd1970165ed07588b73dae1122cd",
+      "name": "upstairs_lightstrip_omega",
+      "area_id": "upstairs",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "eb48dd1970165ed07588b73dae1122cd",
+        "upstairs_lightstrip_omega"
+      ]
+    },
+    {
+      "device_id": "7ac5d2b6e58323ccc9b691d8cc02fe42",
+      "name": "ensuite_lightstrip_omega",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "7ac5d2b6e58323ccc9b691d8cc02fe42",
+        "ensuite_lightstrip_omega"
+      ]
+    },
+    {
+      "device_id": "8a63c33a540b71edc4141729209835b7",
+      "name": "home_tapo_iot_hub_omega",
+      "area_id": "network_connectivity",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "8a63c33a540b71edc4141729209835b7",
+        "home_tapo_iot_hub_omega"
+      ]
+    },
+    {
+      "device_id": "2a867ca5dab787d272f8106bc6651c83",
+      "name": "ensuite_climate_omega",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "2a867ca5dab787d272f8106bc6651c83",
+        "ensuite_climate_omega"
+      ]
+    },
+    {
+      "device_id": "3d42f33e57e0736c04886d585beb1eee",
+      "name": "kitchen_fridge_contact_omega",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "3d42f33e57e0736c04886d585beb1eee",
+        "kitchen_fridge_contact_omega"
+      ]
+    },
+    {
+      "device_id": "07bc4370af5f1afb3bcced32c7f94e76",
+      "name": "upstairs_skylight_contact_omega",
+      "area_id": "upstairs",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "07bc4370af5f1afb3bcced32c7f94e76",
+        "upstairs_skylight_contact_omega"
+      ]
+    },
+    {
+      "device_id": "2999f99560d0721a5c330f1f9fc1e4e0",
+      "name": "Ensuite Smart Button",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "2999f99560d0721a5c330f1f9fc1e4e0",
+        "Ensuite Smart Button"
+      ]
+    },
+    {
+      "device_id": "32b206567d162f4e7a3f69d17b874aeb",
+      "name": "Hallway Smart Button",
+      "area_id": "downstairs",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "32b206567d162f4e7a3f69d17b874aeb",
+        "Hallway Smart Button"
+      ]
+    },
+    {
+      "device_id": "0ae434be7c1013bb073ef730cd843305",
+      "name": "hallway_entrance_presence_omega",
+      "area_id": "entrance",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "0ae434be7c1013bb073ef730cd843305",
+        "hallway_entrance_presence_omega"
+      ]
+    },
+    {
+      "device_id": "3a27d905d0557e8718b215499dc8a558",
+      "name": "upstairs_presence_omega",
+      "area_id": "upstairs",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "3a27d905d0557e8718b215499dc8a558",
+        "upstairs_presence_omega"
+      ]
+    },
+    {
+      "device_id": "4035e71d2d943e6421f6f592ba2bf15f",
+      "name": "downstairs_presence_omega",
+      "area_id": "downstairs",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "4035e71d2d943e6421f6f592ba2bf15f",
+        "downstairs_presence_omega"
+      ]
+    },
+    {
+      "device_id": "f3441fcf48d8483478e40cf9fbcc3577",
+      "name": "Wall Panel Right Switch",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "f3441fcf48d8483478e40cf9fbcc3577",
+        "Wall Panel Right Switch"
+      ]
+    },
+    {
+      "device_id": "a8cd0bc8246761a63de243e0ccaae609",
+      "name": "Wall Panel Left Switch",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "a8cd0bc8246761a63de243e0ccaae609",
+        "Wall Panel Left Switch"
+      ]
+    },
+    {
+      "device_id": "e6723486164fddd8eadecb1ba6f86ae6",
+      "name": "kitchen_presence_omega",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e6723486164fddd8eadecb1ba6f86ae6",
+        "kitchen_presence_omega"
+      ]
+    },
+    {
+      "device_id": "c8765c0c131536e335af5a18e26957cc",
+      "name": "Desk Smart Button",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "c8765c0c131536e335af5a18e26957cc",
+        "Desk Smart Button"
+      ]
+    },
+    {
+      "device_id": "91d2fac342cafed1b603226f454af83b",
+      "name": "kitchen sink button",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "91d2fac342cafed1b603226f454af83b",
+        "kitchen sink button"
+      ]
+    },
+    {
+      "device_id": "fb379e43d7bc63a351bd1fbd21318743",
+      "name": "bedroom_wardrobe_presence_omega",
+      "area_id": "wardrobe",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "fb379e43d7bc63a351bd1fbd21318743",
+        "bedroom_wardrobe_presence_omega"
+      ]
+    },
+    {
+      "device_id": "2b70f51f184945e8efe626afc763c931",
+      "name": "entrance_door_contact_omega",
+      "area_id": "entrance",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "2b70f51f184945e8efe626afc763c931",
+        "entrance_door_contact_omega"
+      ]
+    },
+    {
+      "device_id": "bfe47f13181584ba520bcd894addd0a2",
+      "name": "living_room_stringlights_omega",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "bfe47f13181584ba520bcd894addd0a2",
+        "living_room_stringlights_omega"
+      ]
+    },
+    {
+      "device_id": "b672a36177d3f7f08d8a141d257ff5fb",
+      "name": "downstairs_lightstrip_omega",
+      "area_id": "downstairs",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "b672a36177d3f7f08d8a141d257ff5fb",
+        "downstairs_lightstrip_omega"
+      ]
+    },
+    {
+      "device_id": "731128ce2f8c944b1147aca944e2ac54",
+      "name": "hallway_lightstrip_omega",
+      "area_id": "downstairs",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "731128ce2f8c944b1147aca944e2ac54",
+        "hallway_lightstrip_omega"
+      ]
+    },
+    {
+      "device_id": "b8e9aee7948d4fedde63597b6291ec5f",
+      "name": "ensuite_fan",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "b8e9aee7948d4fedde63597b6291ec5f",
+        "ensuite_fan"
+      ]
+    },
+    {
+      "device_id": "d6c5d8ce01882c8bb93eb5f40ff9d15b",
+      "name": "kitchen_lightstrip_omega",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d6c5d8ce01882c8bb93eb5f40ff9d15b",
+        "kitchen_lightstrip_omega"
+      ]
+    },
+    {
+      "device_id": "246fb1740cd176d73a8239f744c4ac48",
+      "name": "TP-LINK_Power Strip_EFA1",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "246fb1740cd176d73a8239f744c4ac48",
+        "TP-LINK_Power Strip_EFA1"
+      ]
+    },
+    {
+      "device_id": "c16870d30d11861004a5a67e2d9d642d",
+      "name": "TP-LINK_Power Strip_EFA1 Bedroom Fan",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "c16870d30d11861004a5a67e2d9d642d",
+        "TP-LINK_Power Strip_EFA1 Bedroom Fan"
+      ]
+    },
+    {
+      "device_id": "8ce29d38246b28da8e83e60b2bfbeb0a",
+      "name": "TP-LINK_Power Strip_EFA1 Plug 2",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "8ce29d38246b28da8e83e60b2bfbeb0a",
+        "TP-LINK_Power Strip_EFA1 Plug 2"
+      ]
+    },
+    {
+      "device_id": "cbee29a6cbfafc351d1e1e0bc7a67d96",
+      "name": "TP-LINK_Power Strip_EFA1 Plug 3",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "cbee29a6cbfafc351d1e1e0bc7a67d96",
+        "TP-LINK_Power Strip_EFA1 Plug 3"
+      ]
+    },
+    {
+      "device_id": "1f657619d3336fc1efc8cd9f44e465ca",
+      "name": "HP27i Monitor",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1f657619d3336fc1efc8cd9f44e465ca",
+        "HP27i Monitor"
+      ]
+    },
+    {
+      "device_id": "ac01b08fc0435492e859aa4fd205caf9",
+      "name": "Ensuite Lamp",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "ac01b08fc0435492e859aa4fd205caf9",
+        "Ensuite Lamp"
+      ]
+    },
+    {
+      "device_id": "3d03b9ec2b2d6d60a54f8f7fffaa7e29",
+      "name": "ProBreeze Dehumidifier",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "3d03b9ec2b2d6d60a54f8f7fffaa7e29",
+        "ProBreeze Dehumidifier"
+      ]
+    },
+    {
+      "device_id": "91212feb307042a0b89a1b26eba2e2db",
+      "name": "Cosmic Globe",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "91212feb307042a0b89a1b26eba2e2db",
+        "Cosmic Globe"
+      ]
+    },
+    {
+      "device_id": "14ba936851dbb4ab32f04737921c5648",
+      "name": "Mosquitto broker",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "14ba936851dbb4ab32f04737921c5648",
+        "Mosquitto broker"
+      ]
+    },
+    {
+      "device_id": "1bb0576566178ba2d80aaf77d7c2e51c",
+      "name": "MariaDB",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1bb0576566178ba2d80aaf77d7c2e51c",
+        "MariaDB"
+      ]
+    },
+    {
+      "device_id": "95f89b90569e816a1610d70c3cce1ee4",
+      "name": "Samba share",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "95f89b90569e816a1610d70c3cce1ee4",
+        "Samba share"
+      ]
+    },
+    {
+      "device_id": "76485cdeb238004b7d8d011cccacf3cf",
+      "name": "Advanced SSH & Web Terminal",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "76485cdeb238004b7d8d011cccacf3cf",
+        "Advanced SSH & Web Terminal"
+      ]
+    },
+    {
+      "device_id": "39daed39f6a2d6cfcc3a58177fbfda3b",
+      "name": "InfluxDB",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "39daed39f6a2d6cfcc3a58177fbfda3b",
+        "InfluxDB"
+      ]
+    },
+    {
+      "device_id": "0dcc4215831e9d39d4cf9cf064967675",
+      "name": "Node-RED",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "0dcc4215831e9d39d4cf9cf064967675",
+        "Node-RED"
+      ]
+    },
+    {
+      "device_id": "5fe259485a0a29597abf94e938f3516c",
+      "name": "Glances",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "5fe259485a0a29597abf94e938f3516c",
+        "Glances"
+      ]
+    },
+    {
+      "device_id": "31974cb933080851697185854099eafc",
+      "name": "macbook",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "31974cb933080851697185854099eafc",
+        "macbook"
+      ]
+    },
+    {
+      "device_id": "ec8d9325fe668b83a81b31f3e7777886",
+      "name": "Tailscale",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "ec8d9325fe668b83a81b31f3e7777886",
+        "Tailscale"
+      ]
+    },
+    {
+      "device_id": "e61ea46daf834eb56ac76a565b440cc4",
+      "name": "Apple MaTuVu",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e61ea46daf834eb56ac76a565b440cc4",
+        "Apple MaTuVu"
+      ]
+    },
+    {
+      "device_id": "f65526580ff8871662b190eadebd8b36",
+      "name": "Zigbee2MQTT",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "f65526580ff8871662b190eadebd8b36",
+        "Zigbee2MQTT"
+      ]
+    },
+    {
+      "device_id": "519bffa614aa63c845f6454478f32f17",
+      "name": "Govee to MQTT Bridge",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "519bffa614aa63c845f6454478f32f17",
+        "Govee to MQTT Bridge"
+      ]
+    },
+    {
+      "device_id": "227dd40985217679cfd2bd341294046b",
+      "name": "RoboRockS5",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "227dd40985217679cfd2bd341294046b",
+        "RoboRockS5"
+      ]
+    },
+    {
+      "device_id": "b8ab42ff904b6759b0e74b20c5b46536",
+      "name": "Withings",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "b8ab42ff904b6759b0e74b20c5b46536",
+        "Withings"
+      ]
+    },
+    {
+      "device_id": "7c81c0b4760b68368b844e2ebab46bbf",
+      "name": "Body Cardio",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "7c81c0b4760b68368b844e2ebab46bbf",
+        "Body Cardio"
+      ]
+    },
+    {
+      "device_id": "0a2759fd20e65810f184adc3dbcd0aed",
+      "name": "ePhone-uk",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "0a2759fd20e65810f184adc3dbcd0aed",
+        "ePhone-uk"
+      ]
+    },
+    {
+      "device_id": "eace3b6e55f2605547036bc57660a0f1",
+      "name": "living_room_main_omega",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "eace3b6e55f2605547036bc57660a0f1",
+        "living_room_main_omega"
+      ]
+    },
+    {
+      "device_id": "4814a86bc3122ca2695689c8a243ff9c",
+      "name": "bedroom_desk_alpha",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "4814a86bc3122ca2695689c8a243ff9c",
+        "bedroom_desk_alpha"
+      ]
+    },
+    {
+      "device_id": "30bb067aebb5065485d87f3b9f896fc6",
+      "name": "bedroom_main_alpha_wifi",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "30bb067aebb5065485d87f3b9f896fc6",
+        "bedroom_main_alpha_wifi"
+      ]
+    },
+    {
+      "device_id": "380090fc1b1f3bb9891099ef8f0adcf3",
+      "name": "bedroom_desk_lightstrip_alpha",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "380090fc1b1f3bb9891099ef8f0adcf3",
+        "bedroom_desk_lightstrip_alpha"
+      ]
+    },
+    {
+      "device_id": "095e5c36b6c3a4751547e56f09cb9982",
+      "name": "bedroom_nightstand_left_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "095e5c36b6c3a4751547e56f09cb9982",
+        "bedroom_nightstand_left_alpha"
+      ]
+    },
+    {
+      "device_id": "f00da629922aaffa97c2cd8808fb4b63",
+      "name": "bedroom_mirror_lightstrip_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "f00da629922aaffa97c2cd8808fb4b63",
+        "bedroom_mirror_lightstrip_alpha"
+      ]
+    },
+    {
+      "device_id": "abf515974a45d041b2b1363014d90604",
+      "name": "bedroom_wall_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "abf515974a45d041b2b1363014d90604",
+        "bedroom_wall_alpha"
+      ]
+    },
+    {
+      "device_id": "65ce87a09873c32a0f14658d1d630348",
+      "name": "bedroom_tv_area_accent_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "65ce87a09873c32a0f14658d1d630348",
+        "bedroom_tv_area_accent_alpha"
+      ]
+    },
+    {
+      "device_id": "d66acdd403bdb44b399c0fdd06e0d3c8",
+      "name": "bedroom_accent_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d66acdd403bdb44b399c0fdd06e0d3c8",
+        "bedroom_accent_alpha"
+      ]
+    },
+    {
+      "device_id": "4bb8ad89dda0cd318c58f3f9ddc24ff9",
+      "name": "bedroom_desk_wall_alpha",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "4bb8ad89dda0cd318c58f3f9ddc24ff9",
+        "bedroom_desk_wall_alpha"
+      ]
+    },
+    {
+      "device_id": "67868f9ab79a486f9d8924bfcded5432",
+      "name": "Govee to MQTT",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "67868f9ab79a486f9d8924bfcded5432",
+        "Govee to MQTT"
+      ]
+    },
+    {
+      "device_id": "b598cfa151ecffde5993be50ecd54d9a",
+      "name": "Monitor LED Backlight",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "b598cfa151ecffde5993be50ecd54d9a",
+        "Monitor LED Backlight"
+      ]
+    },
+    {
+      "device_id": "9523a6a77af13bca214a591b572998d1",
+      "name": "Levoit Air Purifier",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "9523a6a77af13bca214a591b572998d1",
+        "Levoit Air Purifier"
+      ]
+    },
+    {
+      "device_id": "10c0dbf97bdbdbf077d62063f93f5db9",
+      "name": "Zigbee2MQTT Bridge",
+      "area_id": "home_assistant",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "10c0dbf97bdbdbf077d62063f93f5db9",
+        "Zigbee2MQTT Bridge"
+      ]
+    },
+    {
+      "device_id": "333ca4a29f4f043641c9b1d6418f1d6a",
+      "name": "ensuite_occupancy_alpha",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "333ca4a29f4f043641c9b1d6418f1d6a",
+        "ensuite_occupancy_alpha"
+      ]
+    },
+    {
+      "device_id": "1988eb5eb0ccb3138e7f6526076b8d01",
+      "name": "bedroom_occupancy_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1988eb5eb0ccb3138e7f6526076b8d01",
+        "bedroom_occupancy_alpha"
+      ]
+    },
+    {
+      "device_id": "101dde3698c2644343cf630775a65383",
+      "name": "bedroom_security_cam_omega",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "101dde3698c2644343cf630775a65383",
+        "bedroom_security_cam_omega"
+      ]
+    },
+    {
+      "device_id": "53571949b27c75fa30e804752e64787b",
+      "name": "bedroom_desk_corner_alpha",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "53571949b27c75fa30e804752e64787b",
+        "bedroom_desk_corner_alpha"
+      ]
+    },
+    {
+      "device_id": "85e6dbe2f11424af648bbda27e7db4d0",
+      "name": "bedroom_entrance_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "85e6dbe2f11424af648bbda27e7db4d0",
+        "bedroom_entrance_alpha"
+      ]
+    },
+    {
+      "device_id": "4711f70922dcfe24c9e43d90b2167c54",
+      "name": "Tapo Smart IoT HUB",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "4711f70922dcfe24c9e43d90b2167c54",
+        "Tapo Smart IoT HUB"
+      ]
+    },
+    {
+      "device_id": "f680a524dce5210ac9d7bc4bc87bd8d5",
+      "name": "Wall Panel Left Switch",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "f680a524dce5210ac9d7bc4bc87bd8d5",
+        "Wall Panel Left Switch"
+      ]
+    },
+    {
+      "device_id": "4f3e43b485a5a98409a23b65a48d8e81",
+      "name": "ensuite_climate_omega",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "4f3e43b485a5a98409a23b65a48d8e81",
+        "ensuite_climate_omega"
+      ]
+    },
+    {
+      "device_id": "28beef0683a0a97b424aca31f8170ac0",
+      "name": "kitchen_fridge_contact_omega",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "28beef0683a0a97b424aca31f8170ac0",
+        "kitchen_fridge_contact_omega"
+      ]
+    },
+    {
+      "device_id": "a22cd10717cd102ad2b57808a1078df9",
+      "name": "upstairs_skylight_contact_omega",
+      "area_id": "upstairs",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "a22cd10717cd102ad2b57808a1078df9",
+        "upstairs_skylight_contact_omega"
+      ]
+    },
+    {
+      "device_id": "693e8c95e55059a06f51ecba75bf3f5c",
+      "name": "Hallway Smart Button",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "693e8c95e55059a06f51ecba75bf3f5c",
+        "Hallway Smart Button"
+      ]
+    },
+    {
+      "device_id": "e2c9051060d142b15ec4b8ffe6ca95b2",
+      "name": "hallway_entrance_presence_omega",
+      "area_id": "entrance",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e2c9051060d142b15ec4b8ffe6ca95b2",
+        "hallway_entrance_presence_omega"
+      ]
+    },
+    {
+      "device_id": "bda581d138115c5a5a4f12306f346d24",
+      "name": "upstairs_presence_omega",
+      "area_id": "upstairs",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "bda581d138115c5a5a4f12306f346d24",
+        "upstairs_presence_omega"
+      ]
+    },
+    {
+      "device_id": "36fc556164769c0ed04e7197ab968963",
+      "name": "downstairs_presence_omega",
+      "area_id": "downstairs",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "36fc556164769c0ed04e7197ab968963",
+        "downstairs_presence_omega"
+      ]
+    },
+    {
+      "device_id": "aa3bc9df1986d8aaa17b579d2b7806a4",
+      "name": "kitchen_presence_omega",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "aa3bc9df1986d8aaa17b579d2b7806a4",
+        "kitchen_presence_omega"
+      ]
+    },
+    {
+      "device_id": "c355dfa110dff09a0a68c732f81e6cd1",
+      "name": "Desk Smart Button",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "c355dfa110dff09a0a68c732f81e6cd1",
+        "Desk Smart Button"
+      ]
+    },
+    {
+      "device_id": "74be5500efbae6cac2069b3f55152ab0",
+      "name": "kitchen sink button",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "74be5500efbae6cac2069b3f55152ab0",
+        "kitchen sink button"
+      ]
+    },
+    {
+      "device_id": "f9dfaa31801e706bd99bd0858fc3853a",
+      "name": "bedroom_wardrobe_presence_omega",
+      "area_id": "wardrobe",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "f9dfaa31801e706bd99bd0858fc3853a",
+        "bedroom_wardrobe_presence_omega"
+      ]
+    },
+    {
+      "device_id": "f2f5a04a8eb35b1806854f7b5f253f29",
+      "name": "entrance_door_contact_omega",
+      "area_id": "entrance",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "f2f5a04a8eb35b1806854f7b5f253f29",
+        "entrance_door_contact_omega"
+      ]
+    },
+    {
+      "device_id": "c569be54d54255014adcecde22aaf971",
+      "name": "Terrazo Shoe Rack Lamp",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "c569be54d54255014adcecde22aaf971",
+        "Terrazo Shoe Rack Lamp"
+      ]
+    },
+    {
+      "device_id": "977d5690606bf63d18640cbb4c02503a",
+      "name": "Tapo Light Strip 7463",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "977d5690606bf63d18640cbb4c02503a",
+        "Tapo Light Strip 7463"
+      ]
+    },
+    {
+      "device_id": "60102e8ead2d37766062fca573a521a4",
+      "name": "bedroom_wardrobe_lightstrip_alpha",
+      "area_id": "wardrobe",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "60102e8ead2d37766062fca573a521a4",
+        "bedroom_wardrobe_lightstrip_alpha"
+      ]
+    },
+    {
+      "device_id": "b596683bcfffb32f5f797a3fe3e5d39f",
+      "name": "Home",
+      "area_id": "home",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "b596683bcfffb32f5f797a3fe3e5d39f",
+        "Home"
+      ]
+    },
+    {
+      "device_id": "e930a26e78839677031c85ad1f93c872",
+      "name": "System Monitor",
+      "area_id": "system_admin",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e930a26e78839677031c85ad1f93c872",
+        "System Monitor"
+      ]
+    },
+    {
+      "device_id": "fd1cc9f1d191b40283b5fb05cf414df9",
+      "name": "HACS",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "fd1cc9f1d191b40283b5fb05cf414df9",
+        "HACS"
+      ]
+    },
+    {
+      "device_id": "036ad4d73416d61cc7faada9971ecf03",
+      "name": "Nintendo Switch",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "036ad4d73416d61cc7faada9971ecf03",
+        "Nintendo Switch"
+      ]
+    },
+    {
+      "device_id": "d6e8d2e7da2d399c74ffb814a118d580",
+      "name": "Wallet",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d6e8d2e7da2d399c74ffb814a118d580",
+        "Wallet"
+      ]
+    },
+    {
+      "device_id": "8bd28e1c3277d94e3e6d0775ec19911b",
+      "name": "Keys",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "8bd28e1c3277d94e3e6d0775ec19911b",
+        "Keys"
+      ]
+    },
+    {
+      "device_id": "42c1c9427170a833d3e402bf837c2d86",
+      "name": "Backpack",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "42c1c9427170a833d3e402bf837c2d86",
+        "Backpack"
+      ]
+    },
+    {
+      "device_id": "53853ba13632285bda31bdc7f4ca53bd",
+      "name": "ePhone",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "53853ba13632285bda31bdc7f4ca53bd",
+        "ePhone"
+      ]
+    },
+    {
+      "device_id": "ed7ffa177d91cae14e36482662b4b7ff",
+      "name": "Spiti",
+      "area_id": "london",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "ed7ffa177d91cae14e36482662b4b7ff",
+        "Spiti"
+      ]
+    },
+    {
+      "device_id": "412e1edb08e3604f05469bb5a63b40b7",
+      "name": "home_magic_cube_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "412e1edb08e3604f05469bb5a63b40b7",
+        "home_magic_cube_alpha"
+      ]
+    },
+    {
+      "device_id": "504d2e16a1ebce9d05360c8406a2fad6",
+      "name": "Uptime",
+      "area_id": "home_assistant",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "504d2e16a1ebce9d05360c8406a2fad6",
+        "Uptime"
+      ]
+    },
+    {
+      "device_id": "422f1688173f56912f6a3c1e16e5c237",
+      "name": "bedroom_broadlink_rm3_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "422f1688173f56912f6a3c1e16e5c237",
+        "bedroom_broadlink_rm3_alpha"
+      ]
+    },
+    {
+      "device_id": "a74560ac264b7aac3ac04ff5c4218e2c",
+      "name": "Bedroom TV",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "a74560ac264b7aac3ac04ff5c4218e2c",
+        "Bedroom TV"
+      ]
+    },
+    {
+      "device_id": "bb531f9d6bef038366f4965d0d053f49",
+      "name": "WiZ P45.E14",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "bb531f9d6bef038366f4965d0d053f49",
+        "WiZ P45.E14"
+      ]
+    },
+    {
+      "device_id": "6a4d28a6059b150d24f8d069088b8802",
+      "name": "bedroom_nightstand_right_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "6a4d28a6059b150d24f8d069088b8802",
+        "bedroom_nightstand_right_alpha"
+      ]
+    },
+    {
+      "device_id": "7ee9f7480da71160f7a1674dcbba2421",
+      "name": "WiZ G95.E27",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "7ee9f7480da71160f7a1674dcbba2421",
+        "WiZ G95.E27"
+      ]
+    },
+    {
+      "device_id": "294c189c00b209825b5427fcc397da9d",
+      "name": "Spook \ud83d\udc7b Your homie",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "294c189c00b209825b5427fcc397da9d",
+        "Spook \ud83d\udc7b Your homie"
+      ]
+    },
+    {
+      "device_id": "afa7cee9708f8ba1b6f659926ec1c305",
+      "name": "PS4-223",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "afa7cee9708f8ba1b6f659926ec1c305",
+        "PS4-223"
+      ]
+    },
+    {
+      "device_id": "d370122c1df2cc55b902497f1edaecaa",
+      "name": "WiZ Candle",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d370122c1df2cc55b902497f1edaecaa",
+        "WiZ Candle"
+      ]
+    },
+    {
+      "device_id": "8e20c2cfbe1d3c5d0a8087592ff5cadd",
+      "name": "WiZ Color Strip",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "8e20c2cfbe1d3c5d0a8087592ff5cadd",
+        "WiZ Color Strip"
+      ]
+    },
+    {
+      "device_id": "79521e6fab7b253a412c17be9fb23a1a",
+      "name": "WiZ Candle",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "79521e6fab7b253a412c17be9fb23a1a",
+        "WiZ Candle"
+      ]
+    },
+    {
+      "device_id": "438784bcd85b3be95a17452bc3a5c966",
+      "name": "kitchen_ceiling_tapo_alpha",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "438784bcd85b3be95a17452bc3a5c966",
+        "kitchen_ceiling_tapo_alpha"
+      ]
+    },
+    {
+      "device_id": "751e1aea1274a4312e9c59fe1d18f8ee",
+      "name": "laundry_ceiling",
+      "area_id": "laundry_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "751e1aea1274a4312e9c59fe1d18f8ee",
+        "laundry_ceiling"
+      ]
+    },
+    {
+      "device_id": "37843c682bbd431a7cac2aa10c3a44cc",
+      "name": "QS02",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "37843c682bbd431a7cac2aa10c3a44cc",
+        "QS02"
+      ]
+    },
+    {
+      "device_id": "0b4bd9c4d4741053887c9845073983aa",
+      "name": "WiZ P45.E27",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "0b4bd9c4d4741053887c9845073983aa",
+        "WiZ P45.E27"
+      ]
+    },
+    {
+      "device_id": "7f707b83b8f3fe36cb99beb8b80b1ca7",
+      "name": "living_room_side_alpha",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "7f707b83b8f3fe36cb99beb8b80b1ca7",
+        "living_room_side_alpha"
+      ]
+    },
+    {
+      "device_id": "4cb4e6733852b5ce976f0258314fbd9e",
+      "name": "living_room_desk_matter_alpha",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "4cb4e6733852b5ce976f0258314fbd9e",
+        "living_room_desk_matter_alpha"
+      ]
+    },
+    {
+      "device_id": "1f9011c324367baa1e86aa0a9875b04f",
+      "name": "living_room_foxy_matter_alpha",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1f9011c324367baa1e86aa0a9875b04f",
+        "living_room_foxy_matter_alpha"
+      ]
+    },
+    {
+      "device_id": "666511a4dfbe0c159b2067cc0764f2d5",
+      "name": "DS220plus",
+      "area_id": "nas",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "666511a4dfbe0c159b2067cc0764f2d5",
+        "DS220plus"
+      ]
+    },
+    {
+      "device_id": "58a7d9327e5ffbeb9c7c6e66401a2589",
+      "name": "DS220plus (Drive 2)",
+      "area_id": "nas",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "58a7d9327e5ffbeb9c7c6e66401a2589",
+        "DS220plus (Drive 2)"
+      ]
+    },
+    {
+      "device_id": "b0cdd75d386a9825a41958d6fce5e11d",
+      "name": "DS220plus (Drive 1)",
+      "area_id": "nas",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "b0cdd75d386a9825a41958d6fce5e11d",
+        "DS220plus (Drive 1)"
+      ]
+    },
+    {
+      "device_id": "fcfd6bc643f338d3c54a5ccf7d2d54bf",
+      "name": "DS220plus (Volume 1)",
+      "area_id": "nas",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "fcfd6bc643f338d3c54a5ccf7d2d54bf",
+        "DS220plus (Volume 1)"
+      ]
+    },
+    {
+      "device_id": "90975f405264a7d1d97247fc35836dbd",
+      "name": "QS02",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "90975f405264a7d1d97247fc35836dbd",
+        "QS02"
+      ]
+    },
+    {
+      "device_id": "ab0fa123c5cd898c63b7af5531c5e548",
+      "name": "WiZ Candle",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "ab0fa123c5cd898c63b7af5531c5e548",
+        "WiZ Candle"
+      ]
+    },
+    {
+      "device_id": "f29a80bcbffed9b34784680b59b0010b",
+      "name": "WiZ A.E27",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "f29a80bcbffed9b34784680b59b0010b",
+        "WiZ A.E27"
+      ]
+    },
+    {
+      "device_id": "ff6a1bc23c4a04b8c729afb38e0d21e4",
+      "name": "WiZ G95 Filament",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "ff6a1bc23c4a04b8c729afb38e0d21e4",
+        "WiZ G95 Filament"
+      ]
+    },
+    {
+      "device_id": "170a46e0540c8df3076e5a10ec89c4e1",
+      "name": "living_room_floorlamp_alpha",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "170a46e0540c8df3076e5a10ec89c4e1",
+        "living_room_floorlamp_alpha"
+      ]
+    },
+    {
+      "device_id": "3a549d44b87053ffd0354d0d3dc4b682",
+      "name": "WiZ A.E27",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "3a549d44b87053ffd0354d0d3dc4b682",
+        "WiZ A.E27"
+      ]
+    },
+    {
+      "device_id": "a97dd4aee78ac1b27ccce1df389a00f0",
+      "name": "PS5-597",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "a97dd4aee78ac1b27ccce1df389a00f0",
+        "PS5-597"
+      ]
+    },
+    {
+      "device_id": "574a380965ba22f40ea57d25bf5d3321",
+      "name": "PS5 MQTT",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "574a380965ba22f40ea57d25bf5d3321",
+        "PS5 MQTT"
+      ]
+    },
+    {
+      "device_id": "c7e769b50bac794bbff3a3132b6da716",
+      "name": "WiZ Color Strip",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "c7e769b50bac794bbff3a3132b6da716",
+        "WiZ Color Strip"
+      ]
+    },
+    {
+      "device_id": "815a0350ba81072ec6ed458efe96726f",
+      "name": "WiZ Candle",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "815a0350ba81072ec6ed458efe96726f",
+        "WiZ Candle"
+      ]
+    },
+    {
+      "device_id": "35f86162fc6107598ad557c86058f11f",
+      "name": "OpenPlantbook",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "35f86162fc6107598ad557c86058f11f",
+        "OpenPlantbook"
+      ]
+    },
+    {
+      "device_id": "764fb85b54b7c88ca86679282e7aac9e",
+      "name": "Sphero BB-8",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "764fb85b54b7c88ca86679282e7aac9e",
+        "Sphero BB-8"
+      ]
+    },
+    {
+      "device_id": "bfc3381605a8b05232934816afddf82f",
+      "name": "Network Scanner",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "bfc3381605a8b05232934816afddf82f",
+        "Network Scanner"
+      ]
+    },
+    {
+      "device_id": "9491986e2b84d27440f466de944bf45c",
+      "name": "bedroom_ottoman_lightstrip_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "9491986e2b84d27440f466de944bf45c",
+        "bedroom_ottoman_lightstrip_alpha"
+      ]
+    },
+    {
+      "device_id": "01d8884e165ca8e78530fb52b0757526",
+      "name": "PlayStation 5",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "01d8884e165ca8e78530fb52b0757526",
+        "PlayStation 5"
+      ]
+    },
+    {
+      "device_id": "6171f2c99241eac190d9b077286f2843",
+      "name": "babylonRobot",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "6171f2c99241eac190d9b077286f2843",
+        "babylonRobot"
+      ]
+    },
+    {
+      "device_id": "49c24b6add94127cef5c9fc78cd9f786",
+      "name": "Home Assistant Plant",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "49c24b6add94127cef5c9fc78cd9f786",
+        "Home Assistant Plant"
+      ]
+    },
+    {
+      "device_id": "75b84df197bd8aeb3c62449e4c8a37d8",
+      "name": "TP-Link Router",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "75b84df197bd8aeb3c62449e4c8a37d8",
+        "TP-Link Router"
+      ]
+    },
+    {
+      "device_id": "74920ef97e7f3c637793b63e54977afc",
+      "name": "Downstairs Motion Sensor",
+      "area_id": "hallway",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "74920ef97e7f3c637793b63e54977afc",
+        "Downstairs Motion Sensor"
+      ]
+    },
+    {
+      "device_id": "8dcc9f6c004f3b2ea85ad6ec38f1ebd7",
+      "name": "Fridge Door Contact Sensor",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "8dcc9f6c004f3b2ea85ad6ec38f1ebd7",
+        "Fridge Door Contact Sensor"
+      ]
+    },
+    {
+      "device_id": "44f27ac8542e72bebf536c155dbb0cc9",
+      "name": "ensuite_accent_wifi_alpha",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "44f27ac8542e72bebf536c155dbb0cc9",
+        "ensuite_accent_wifi_alpha"
+      ]
+    },
+    {
+      "device_id": "9699aacf90efcc58d0928f4ea41f0283",
+      "name": "bedroom_desk_lightstrip_wifi_alpha",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "9699aacf90efcc58d0928f4ea41f0283",
+        "bedroom_desk_lightstrip_wifi_alpha"
+      ]
+    },
+    {
+      "device_id": "ca3fd7a27030994fbb47c6d04573a550",
+      "name": "bedroom_wardrobe",
+      "area_id": "wardrobe",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "ca3fd7a27030994fbb47c6d04573a550",
+        "bedroom_wardrobe"
+      ]
+    },
+    {
+      "device_id": "a70a447d2ea7ecd651bac9e2501610e6",
+      "name": "Fairy String Lights",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "a70a447d2ea7ecd651bac9e2501610e6",
+        "Fairy String Lights"
+      ]
+    },
+    {
+      "device_id": "df742fc063050ab88b8bde872de4c082",
+      "name": "bedroom_mirror_lightstrip_omega",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "df742fc063050ab88b8bde872de4c082",
+        "bedroom_mirror_lightstrip_omega"
+      ]
+    },
+    {
+      "device_id": "2541c5fbb49bc967aabcc911af1f4cd2",
+      "name": "Bedroom TV (Plug 2)",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "2541c5fbb49bc967aabcc911af1f4cd2",
+        "Bedroom TV (Plug 2)"
+      ]
+    },
+    {
+      "device_id": "1e706d8bdbaa0d66a40fa40974f9668d",
+      "name": "kitchen_ceiling_tapo_alpha",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1e706d8bdbaa0d66a40fa40974f9668d",
+        "kitchen_ceiling_tapo_alpha"
+      ]
+    },
+    {
+      "device_id": "e5a83d1be7c017812af983461b1aaab8",
+      "name": "HP Monitor",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e5a83d1be7c017812af983461b1aaab8",
+        "HP Monitor"
+      ]
+    },
+    {
+      "device_id": "56364f5bce325fb8c542f99c9575a3fe",
+      "name": "bedroom_desk_wall_wifi_alpha",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "56364f5bce325fb8c542f99c9575a3fe",
+        "bedroom_desk_wall_wifi_alpha"
+      ]
+    },
+    {
+      "device_id": "d9d96fb68c7030f45d8811e62f281364",
+      "name": "Homeassistant Pi (Plug 3)",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d9d96fb68c7030f45d8811e62f281364",
+        "Homeassistant Pi (Plug 3)"
+      ]
+    },
+    {
+      "device_id": "53eec831e4993e0878ce8e553c4c9cd2",
+      "name": "Kitchen Motion Sensor",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "53eec831e4993e0878ce8e553c4c9cd2",
+        "Kitchen Motion Sensor"
+      ]
+    },
+    {
+      "device_id": "feb079c4909628f8d32ac90d3c462718",
+      "name": "Tapo IoT Smart Hub",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "feb079c4909628f8d32ac90d3c462718",
+        "Tapo IoT Smart Hub"
+      ]
+    },
+    {
+      "device_id": "2ab9e7a68f08fb023fd87ec60d305126",
+      "name": "living_room_side_alpha",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "2ab9e7a68f08fb023fd87ec60d305126",
+        "living_room_side_alpha"
+      ]
+    },
+    {
+      "device_id": "ece6b1494be9ece10f91db9eef07dad8",
+      "name": "Wardrobe Motion Sensor",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "ece6b1494be9ece10f91db9eef07dad8",
+        "Wardrobe Motion Sensor"
+      ]
+    },
+    {
+      "device_id": "66c8d04a4f8820e2378cd809fb7cd221",
+      "name": "laundry_ceiling_wifi_alpha",
+      "area_id": "laundry_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "66c8d04a4f8820e2378cd809fb7cd221",
+        "laundry_ceiling_wifi_alpha"
+      ]
+    },
+    {
+      "device_id": "8a3a0a4b9b312207048379b23e2a7162",
+      "name": "Ensuite Climate Sensor",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "8a3a0a4b9b312207048379b23e2a7162",
+        "Ensuite Climate Sensor"
+      ]
+    },
+    {
+      "device_id": "c9abf7d36ede96d37919be1982efbcb9",
+      "name": "Upstairs Motion Sensor",
+      "area_id": "hallway",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "c9abf7d36ede96d37919be1982efbcb9",
+        "Upstairs Motion Sensor"
+      ]
+    },
+    {
+      "device_id": "d517bef2c84c7367172701803603825d",
+      "name": "Bedroom TV",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d517bef2c84c7367172701803603825d",
+        "Bedroom TV"
+      ]
+    },
+    {
+      "device_id": "078af721482b7dc0292eed2b31e56547",
+      "name": "Cameron",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "078af721482b7dc0292eed2b31e56547",
+        "Cameron"
+      ]
+    },
+    {
+      "device_id": "bc0b32dff52bd6c2570a3d451e2a12d6",
+      "name": "Hallway Lightstrip",
+      "area_id": "hallway",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "bc0b32dff52bd6c2570a3d451e2a12d6",
+        "Hallway Lightstrip"
+      ]
+    },
+    {
+      "device_id": "deb6d49bba818b473ee4853116749388",
+      "name": "Entrance Contact Sensor",
+      "area_id": "entrance",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "deb6d49bba818b473ee4853116749388",
+        "Entrance Contact Sensor"
+      ]
+    },
+    {
+      "device_id": "fa47a483e2f36d94dc1e2bfcce125899",
+      "name": "living_room_foxy_alpha",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "fa47a483e2f36d94dc1e2bfcce125899",
+        "living_room_foxy_alpha"
+      ]
+    },
+    {
+      "device_id": "d31814ca8714bf24a3df1782a262f9d5",
+      "name": "Ethernet Hub",
+      "area_id": "network_connectivity",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d31814ca8714bf24a3df1782a262f9d5",
+        "Ethernet Hub"
+      ]
+    },
+    {
+      "device_id": "05efaae3f44899e11b56e41cc419db58",
+      "name": "Wall Panel Right Switch",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "05efaae3f44899e11b56e41cc419db58",
+        "Wall Panel Right Switch"
+      ]
+    },
+    {
+      "device_id": "bbca9973c2206b2ec7eceb0540430e6e",
+      "name": "Skylight Contact Sensor",
+      "area_id": "hallway",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "bbca9973c2206b2ec7eceb0540430e6e",
+        "Skylight Contact Sensor"
+      ]
+    },
+    {
+      "device_id": "aa3c897e5552b256204af629efa1eed5",
+      "name": "Downstairs Lightstrip",
+      "area_id": "hallway",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "aa3c897e5552b256204af629efa1eed5",
+        "Downstairs Lightstrip"
+      ]
+    },
+    {
+      "device_id": "46f2135935e1c03da7d57352ee18c1b5",
+      "name": "Parr Column",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "46f2135935e1c03da7d57352ee18c1b5",
+        "Parr Column"
+      ]
+    },
+    {
+      "device_id": "e25246d67b2f95e32c56071cd64a1f01",
+      "name": "bedroom_ottoman_lightstrip_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e25246d67b2f95e32c56071cd64a1f01",
+        "bedroom_ottoman_lightstrip_alpha"
+      ]
+    },
+    {
+      "device_id": "17850d2aa8aa962bc46005dd66d2797a",
+      "name": "Entrance Terrazo",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "17850d2aa8aa962bc46005dd66d2797a",
+        "Entrance Terrazo"
+      ]
+    },
+    {
+      "device_id": "e1f6bef205f9344467a5cad470b279f3",
+      "name": "bedroom_desk_lamp_wifi_alpha",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e1f6bef205f9344467a5cad470b279f3",
+        "bedroom_desk_lamp_wifi_alpha"
+      ]
+    },
+    {
+      "device_id": "d391bb3e07ed01faa930d2777d578030",
+      "name": "Confetti",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d391bb3e07ed01faa930d2777d578030",
+        "Confetti"
+      ]
+    },
+    {
+      "device_id": "e3e7ec420d2a490038c3cd1fe197100c",
+      "name": "living_room_desk_alpha",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e3e7ec420d2a490038c3cd1fe197100c",
+        "living_room_desk_alpha"
+      ]
+    },
+    {
+      "device_id": "e8afdd2bea2080a08504967969f513ae",
+      "name": "Upstairs Lightstrip",
+      "area_id": "hallway",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e8afdd2bea2080a08504967969f513ae",
+        "Upstairs Lightstrip"
+      ]
+    },
+    {
+      "device_id": "165e34f3db8b423b56ae809febf0778d",
+      "name": "living_room_floorlamp_omega",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "165e34f3db8b423b56ae809febf0778d",
+        "living_room_floorlamp_omega"
+      ]
+    },
+    {
+      "device_id": "f25279c22e4f5a9de1e36c8dbf78cb05",
+      "name": "Terrazo",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "f25279c22e4f5a9de1e36c8dbf78cb05",
+        "Terrazo"
+      ]
+    },
+    {
+      "device_id": "cc8a518ecdc8f4d0a2997d7d12da3a27",
+      "name": "Ensuite Fan",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "cc8a518ecdc8f4d0a2997d7d12da3a27",
+        "Ensuite Fan"
+      ]
+    },
+    {
+      "device_id": "880abb49c4b3c9f456e876a6bbdc59d7",
+      "name": "Kitchen Cupboards Lightstrip",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "880abb49c4b3c9f456e876a6bbdc59d7",
+        "Kitchen Cupboards Lightstrip"
+      ]
+    },
+    {
+      "device_id": "5f3a0daf16a7b0734b0391e75a04c07f",
+      "name": "Brass Pendant",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "5f3a0daf16a7b0734b0391e75a04c07f",
+        "Brass Pendant"
+      ]
+    },
+    {
+      "device_id": "3f72a7aa0391495c5b84adf2a51db847",
+      "name": "Wall Globe",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "3f72a7aa0391495c5b84adf2a51db847",
+        "Wall Globe"
+      ]
+    },
+    {
+      "device_id": "c0eb2084fca3fb354e4c6c26f99b0696",
+      "name": "Wall Panel Left Switch",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "c0eb2084fca3fb354e4c6c26f99b0696",
+        "Wall Panel Left Switch"
+      ]
+    },
+    {
+      "device_id": "26f652362335d4842ab180066128176d",
+      "name": "Lucetta",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "26f652362335d4842ab180066128176d",
+        "Lucetta"
+      ]
+    },
+    {
+      "device_id": "c6dbbc2283f4f737d2e0b0e99ccf0dde",
+      "name": "Aeotec Smartthings Hub (Plug 1)",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "c6dbbc2283f4f737d2e0b0e99ccf0dde",
+        "Aeotec Smartthings Hub (Plug 1)"
+      ]
+    },
+    {
+      "device_id": "801708f96be953bd6dd22b330c80ea0d",
+      "name": "kitchen_motion_wifi_alpha",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "801708f96be953bd6dd22b330c80ea0d",
+        "kitchen_motion_wifi_alpha"
+      ]
+    },
+    {
+      "device_id": "ddbe25d35d28bbb25141916c1a031e94",
+      "name": "Ensuite Lightstrip",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "ddbe25d35d28bbb25141916c1a031e94",
+        "Ensuite Lightstrip"
+      ]
+    },
+    {
+      "device_id": "766ad8b6b5c4b48e7801fec27bcb9172",
+      "name": "Bedroom TV Light Sensor",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "766ad8b6b5c4b48e7801fec27bcb9172",
+        "Bedroom TV Light Sensor"
+      ]
+    },
+    {
+      "device_id": "808e383b247a42fa2f15b595ccdbb351",
+      "name": "iPhone",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "808e383b247a42fa2f15b595ccdbb351",
+        "iPhone"
+      ]
+    },
+    {
+      "device_id": "9b74906301e96fac48ede64980166985",
+      "name": "MAIN Virtual Devices 1",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "9b74906301e96fac48ede64980166985",
+        "MAIN Virtual Devices 1"
+      ]
+    },
+    {
+      "device_id": "5ba3010addd4eddf1d6b9c5d6a59a63a",
+      "name": "bedroom sonosray soundbar",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "5ba3010addd4eddf1d6b9c5d6a59a63a",
+        "bedroom sonosray soundbar"
+      ]
+    },
+    {
+      "device_id": "ddf4abc5a7133583400287ebc5bef095",
+      "name": "ensuite sonos roam",
+      "area_id": "ensuite",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "ddf4abc5a7133583400287ebc5bef095",
+        "ensuite sonos roam"
+      ]
+    },
+    {
+      "device_id": "d367b1174e86d2ea55f36bfc2fbf5f99",
+      "name": "bedroom_sonos_surround_speakers_smartthings",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d367b1174e86d2ea55f36bfc2fbf5f99",
+        "bedroom_sonos_surround_speakers_smartthings"
+      ]
+    },
+    {
+      "device_id": "284816fae34456f659c85b240b0218ae",
+      "name": "illuminance level 3",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "284816fae34456f659c85b240b0218ae",
+        "illuminance level 3"
+      ]
+    },
+    {
+      "device_id": "2ce42387954719a33dabf6f15d82b1dd",
+      "name": "illuminance level 1",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "2ce42387954719a33dabf6f15d82b1dd",
+        "illuminance level 1"
+      ]
+    },
+    {
+      "device_id": "da236678eac12bb4f226a0a6d0a37d32",
+      "name": "vEdge Creator V2.94",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "da236678eac12bb4f226a0a6d0a37d32",
+        "vEdge Creator V2.94"
+      ]
+    },
+    {
+      "device_id": "7c27615ef9942350c054129d79d29579",
+      "name": "illuminance level 2",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "7c27615ef9942350c054129d79d29579",
+        "illuminance level 2"
+      ]
+    },
+    {
+      "device_id": "3a6dc33a0459933b69aa404d18471e17",
+      "name": "vEdge Illuminance 1",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "3a6dc33a0459933b69aa404d18471e17",
+        "vEdge Illuminance 1"
+      ]
+    },
+    {
+      "device_id": "a3b7ba82ee811c256239fb48efc15a5d",
+      "name": "illuminance level 4",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "a3b7ba82ee811c256239fb48efc15a5d",
+        "illuminance level 4"
+      ]
+    },
+    {
+      "device_id": "60bec7410f4ad198f956c17ab8f8ae76",
+      "name": "virtual-dimmer 1",
+      "area_id": "virtual",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "60bec7410f4ad198f956c17ab8f8ae76",
+        "virtual-dimmer 1"
+      ]
+    },
+    {
+      "device_id": "a7145b0bca299b8169b6eec013747511",
+      "name": "Kitchen",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "a7145b0bca299b8169b6eec013747511",
+        "Kitchen"
+      ]
+    },
+    {
+      "device_id": "e443b23ea2acb42164aa3e8e1bbd691f",
+      "name": "living room sonos beam soundbar",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e443b23ea2acb42164aa3e8e1bbd691f",
+        "living room sonos beam soundbar"
+      ]
+    },
+    {
+      "device_id": "97414e9c540d6dad2525734bc83e59a3",
+      "name": "virtual-dimmer",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "97414e9c540d6dad2525734bc83e59a3",
+        "virtual-dimmer"
+      ]
+    },
+    {
+      "device_id": "48f76010cb8443d91cefc403f8341141",
+      "name": "living room multipurpose sensor omega",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "48f76010cb8443d91cefc403f8341141",
+        "living room multipurpose sensor omega"
+      ]
+    },
+    {
+      "device_id": "d7bfecb2d0f58de6a823ea5bcbc2e9f6",
+      "name": "ePhone \ud83c\udff4\u200d\u2620\ufe0f",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d7bfecb2d0f58de6a823ea5bcbc2e9f6",
+        "ePhone \ud83c\udff4\u200d\u2620\ufe0f"
+      ]
+    },
+    {
+      "device_id": "0be581a00dbebd1c1e34f8d8000e514d",
+      "name": "ePhone \ud83c\uddea\ud83c\uddf8",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "0be581a00dbebd1c1e34f8d8000e514d",
+        "ePhone \ud83c\uddea\ud83c\uddf8"
+      ]
+    },
+    {
+      "device_id": "1828af4127e86a8f7312fcd1050e662c",
+      "name": "ePhone-uk",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1828af4127e86a8f7312fcd1050e662c",
+        "ePhone-uk"
+      ]
+    },
+    {
+      "device_id": "f04f5a8397c94c337b32f2b4a7043909",
+      "name": "Evert\u2019s Apple Watch",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "f04f5a8397c94c337b32f2b4a7043909",
+        "Evert\u2019s Apple Watch"
+      ]
+    },
+    {
+      "device_id": "1a8c0216056f39bab4777fe0dcc091f0",
+      "name": "ePad \ud83e\udd8a",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1a8c0216056f39bab4777fe0dcc091f0",
+        "ePad \ud83e\udd8a"
+      ]
+    },
+    {
+      "device_id": "9226d8da756370bb1b4454939c6c1b23",
+      "name": "living_room_broadlink_rm4_alpha",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "9226d8da756370bb1b4454939c6c1b23",
+        "living_room_broadlink_rm4_alpha"
+      ]
+    },
+    {
+      "device_id": "e9c8438a05273e9338248949c3510843",
+      "name": "Smartthings Button",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "e9c8438a05273e9338248949c3510843",
+        "Smartthings Button"
+      ]
+    },
+    {
+      "device_id": "061db1ab38b43474fd7fd183f3a2b377",
+      "name": "Better Thermostat",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "061db1ab38b43474fd7fd183f3a2b377",
+        "Better Thermostat"
+      ]
+    },
+    {
+      "device_id": "f64a955ea28683e51f28b539ed98cc6c",
+      "name": "bedroom_monstera_soil_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "f64a955ea28683e51f28b539ed98cc6c",
+        "bedroom_monstera_soil_alpha"
+      ]
+    },
+    {
+      "device_id": "6675ae3a9294706853e6643275dc8749",
+      "name": "bedroom_ambient_climate_ alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "6675ae3a9294706853e6643275dc8749",
+        "bedroom_ambient_climate_ alpha"
+      ]
+    },
+    {
+      "device_id": "3d5ff040ee4a28cba464b2496402c3ca",
+      "name": "bedroom_climate_trv_left_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "3d5ff040ee4a28cba464b2496402c3ca",
+        "bedroom_climate_trv_left_alpha"
+      ]
+    },
+    {
+      "device_id": "a04bea72b5d3b4e3ff209746841ad198",
+      "name": "living_room_climate_trv_alpha",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "a04bea72b5d3b4e3ff209746841ad198",
+        "living_room_climate_trv_alpha"
+      ]
+    },
+    {
+      "device_id": "1a2b528050168a424e03ea75f95bde5c",
+      "name": "living_room_smartbutton_alpha",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1a2b528050168a424e03ea75f95bde5c",
+        "living_room_smartbutton_alpha"
+      ]
+    },
+    {
+      "device_id": "c51828028caa1f477e157a9bfeef47cb",
+      "name": "kitchen_climate_trv_alpha",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "c51828028caa1f477e157a9bfeef47cb",
+        "kitchen_climate_trv_alpha"
+      ]
+    },
+    {
+      "device_id": "d92f79824f6a67d55d63c47eab3736fb",
+      "name": "kitchen_ambient_climate_alpha",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "d92f79824f6a67d55d63c47eab3736fb",
+        "kitchen_ambient_climate_alpha"
+      ]
+    },
+    {
+      "device_id": "010b8a398c593ba16c1098786ef51a1c",
+      "name": "kitchen_occupancy_alpha",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "010b8a398c593ba16c1098786ef51a1c",
+        "kitchen_occupancy_alpha"
+      ]
+    },
+    {
+      "device_id": "0a54b99979fb31e052f44c37de1dd09c",
+      "name": "bedroom_smart_button_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "0a54b99979fb31e052f44c37de1dd09c",
+        "bedroom_smart_button_alpha"
+      ]
+    },
+    {
+      "device_id": "1528bf1cccdba781a7c2a5eb03cca4c6",
+      "name": "living_room_occupancy_alpha",
+      "area_id": "living_room",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "1528bf1cccdba781a7c2a5eb03cca4c6",
+        "living_room_occupancy_alpha"
+      ]
+    },
+    {
+      "device_id": "0a615932b56595292555238b925fd788",
+      "name": "bedroom_climate_trv_right_alpha",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "0a615932b56595292555238b925fd788",
+        "bedroom_climate_trv_right_alpha"
+      ]
+    },
+    {
+      "device_id": "f5cd2aac0761d9c2fb70ec685e46b1d5",
+      "name": "Cookidoo",
+      "area_id": "kitchen",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "f5cd2aac0761d9c2fb70ec685e46b1d5",
+        "Cookidoo"
+      ]
+    },
+    {
+      "device_id": "5469d41fc70b1b0fd7c62f9d8900475e",
+      "name": "DS220plus",
+      "area_id": "media_server",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "5469d41fc70b1b0fd7c62f9d8900475e",
+        "DS220plus"
+      ]
+    },
+    {
+      "device_id": "4f65d0b72b6325e4779eaec1e51fd1ff",
+      "name": "DS220plus (USB Disk 1)",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "4f65d0b72b6325e4779eaec1e51fd1ff",
+        "DS220plus (USB Disk 1)"
+      ]
+    },
+    {
+      "device_id": "38332afa5338a8ac93591cd96015b75c",
+      "name": "DS220plus (USB Disk 1 Partition 1)",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "38332afa5338a8ac93591cd96015b75c",
+        "DS220plus (USB Disk 1 Partition 1)"
+      ]
+    },
+    {
+      "device_id": "259e63885003dc84d7d265376d7ee245",
+      "name": "DS220plus (USB Disk 1 Partition 2)",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "259e63885003dc84d7d265376d7ee245",
+        "DS220plus (USB Disk 1 Partition 2)"
+      ]
+    },
+    {
+      "device_id": "2aa661219e64823b02585a783dd15851",
+      "name": "govee",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "2aa661219e64823b02585a783dd15851",
+        "govee"
+      ]
+    },
+    {
+      "device_id": "9994b50a7032d1eef9144fede5dde612",
+      "name": "iphone11",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "9994b50a7032d1eef9144fede5dde612",
+        "iphone11"
+      ]
+    },
+    {
+      "device_id": "b6b74af79a16605bddda2f3214522060",
+      "name": "File editor",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "b6b74af79a16605bddda2f3214522060",
+        "File editor"
+      ]
+    },
+    {
+      "device_id": "40200930bccd4d7f4e3caa6e046e2621",
+      "name": "100.71.87.40",
+      "area_id": "nas",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "40200930bccd4d7f4e3caa6e046e2621",
+        "100.71.87.40"
+      ]
+    },
+    {
+      "device_id": "53a915be157a495cf5e6978463513004",
+      "name": "100.92.58.104",
+      "area_id": "desk",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "53a915be157a495cf5e6978463513004",
+        "100.92.58.104"
+      ]
+    },
+    {
+      "device_id": "136ad9bb3a981d5feeaa951564f9cafb",
+      "name": "100.77.212.100",
+      "area_id": "ha_addons",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "136ad9bb3a981d5feeaa951564f9cafb",
+        "100.77.212.100"
+      ]
+    },
+    {
+      "device_id": "8d74259ccf5f1acca447ed70c5a5f896",
+      "name": "100.110.187.32",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "8d74259ccf5f1acca447ed70c5a5f896",
+        "100.110.187.32"
+      ]
+    },
+    {
+      "device_id": "0b402c18f3b58c916b4cd5215758d8ce",
+      "name": "100.122.135.128",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "0b402c18f3b58c916b4cd5215758d8ce",
+        "100.122.135.128"
+      ]
+    },
+    {
+      "device_id": "3b485fd9df2a9726a3655091df36973e",
+      "name": "iphone14.reverse-beta.ts.net",
+      "area_id": "evert",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "3b485fd9df2a9726a3655091df36973e",
+        "iphone14.reverse-beta.ts.net"
+      ]
+    },
+    {
+      "device_id": "564602b686357cedf36a473f9f8cccbc",
+      "name": "nas.xplab.io",
+      "area_id": "nas",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "564602b686357cedf36a473f9f8cccbc",
+        "nas.xplab.io"
+      ]
+    },
+    {
+      "device_id": "634addbd0d1b3007a721ae9191eea4b3",
+      "name": "Montse",
+      "area_id": "bedroom",
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "634addbd0d1b3007a721ae9191eea4b3",
+        "Montse"
+      ]
+    },
+    {
+      "device_id": "fbc82d8c5d3a4864b6f4505659562588",
+      "name": "template-entity-row",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "fbc82d8c5d3a4864b6f4505659562588",
+        "template-entity-row"
+      ]
+    },
+    {
+      "device_id": "fff838d96a140a35c6a962c74fb28300",
+      "name": "Config Template Card",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "fff838d96a140a35c6a962c74fb28300",
+        "Config Template Card"
+      ]
+    },
+    {
+      "device_id": "faec4a05a73e0b581ec02cf44711eb51",
+      "name": "Media player template",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "faec4a05a73e0b581ec02cf44711eb51",
+        "Media player template"
+      ]
+    },
+    {
+      "device_id": "bc521b9191c9cd0700f8a7d2c451dd34",
+      "name": "Availability Template",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "bc521b9191c9cd0700f8a7d2c451dd34",
+        "Availability Template"
+      ]
+    },
+    {
+      "device_id": "71de66cf17a675132cdea2c6c273d9a0",
+      "name": "PlayStation 4",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "71de66cf17a675132cdea2c6c273d9a0",
+        "PlayStation 4"
+      ]
+    },
+    {
+      "device_id": "fd3240e3477ea15c19fce0501a3a669e",
+      "name": "bedroom_nightstand_left_alpha",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "fd3240e3477ea15c19fce0501a3a669e",
+        "bedroom_nightstand_left_alpha"
+      ]
+    },
+    {
+      "device_id": "965aacbbd4794d4c921a69449fe7ecc8",
+      "name": "bedroom_nightstand_right_alpha",
+      "area_id": null,
+      "disabled": false,
+      "container_ref": [
+        "core.device_registry",
+        "965aacbbd4794d4c921a69449fe7ecc8",
+        "bedroom_nightstand_right_alpha"
+      ]
+    }
+  ],
+  "_meta": {
+    "source": "/Users/evertappels/Projects/omega_registry/scripts/generators/generate_flatmap.py",
+    "contract": "PATCH PIPELINE-FLAGS-V1",
+    "timestamp": "2025-08-02T06:01:16.343974Z",
+    "pipeline_stage": "flatmap_generation"
+  }
+}

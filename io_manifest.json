@@ -1,0 +1,132 @@
+{
+  "alpha_outputs": [
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/derived_views/alpha_sensor_registry.json",
+      "phase": "generator:alpha_sensor_writer",
+      "sha256": "a5f775e7e5044be1a06c16373c86e232fca6cdd73d5c9a2f2f6a69ea3108ad9c",
+      "updated_at": "2025-09-19T14:26:51.890736+00:00"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/derived_views/alpha_room_registry.json",
+      "phase": "generator:alpha_room_writer",
+      "sha256": "247e062b5b091b2addaa77858b5c5970e289bbdf585de6233591523043c4cabc",
+      "updated_at": "2025-09-19T14:26:51.892555+00:00"
+    }
+  ],
+  "alpha_summary": {
+    "count": 2,
+    "latest_written_at": "2025-09-19T14:26:51.892555+00:00"
+  },
+  "inputs": [
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/core.device_registry",
+      "sha256": "187373d5155d9a8aa6cf584f4794de15caaef5d7e9f35ad83cc5d301e8e463fb"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/core.entity_registry",
+      "sha256": "94a084e97cc22f0c7c3f4804414250ab7182a21a58fdcdfa4b65f136d0efc59d"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/core.area_registry",
+      "sha256": "54005a2d6fd85b2e4dcc0b41712e7d268b350b20c5f5cc27fda0c6540ba03953"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/core.floor_registry",
+      "sha256": "fe279c38eed63e9393a750f0fd95ce15f6931449816c5a7dd567dd7c168ff6c0"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/core.category_registry",
+      "sha256": "f3b316e79f4d3d21365211849b27107a4b31b0fb47d69f5c2c58f57154b067f3"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/core.label_registry",
+      "sha256": "306b30ecd56a48193d96b171cbb477082f57767cb434e6256e6676bc3d955fdf"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/core.config_entries",
+      "sha256": "5837a9ba280c002a809eb2c03b0aa3e72b2d55d65d2453d06c99cf147f5b0214"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/core.restore_state",
+      "sha256": "3163e6c6e74804c1e2094b19a243652bff35f90ca50c13162cbe6cbcb295e7ba"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/counter",
+      "sha256": "27015ccfd0aef9f3115b8686f7e6b50880c0242ce67fbe3f488c1c659444e2e9"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/homeassistant.exposed_entities",
+      "sha256": "cd25a5ba700a032adbbedfaff07cfde6dcb62c954581b0d3db333544314cd6e0"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/input_boolean",
+      "sha256": "e714ea3819397f94eea3fc1398d78b2075bde859c32a554fce485b150ff58655"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/input_datetime",
+      "sha256": "b583ea15f2408e747a582be0548ff16d3dc8796821642b6276aa7eba09eddf2c"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/input_number",
+      "sha256": "e8282e80dd56486636042b7c761be5ac01bda24ce111de4046b496789009fcd9"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/input_text",
+      "sha256": "5b4ab6f62b2574ef024d12f550fa517c3945c22f440488322eb670d17fb19f43"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/person",
+      "sha256": "8cd20cdb21ab6b66c238483b9782c1939d720db8e20f2d3b1f32f38bebb5234e"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/registry_inputs/trace.saved_traces",
+      "sha256": "8d5c5ddb22a21912c626683d2d0cf35a13dfdf4a0355f29ec62827c49b990558"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/support/manifests/enrichment_manifest.omega.yaml",
+      "sha256": "1a25170145cc74971dd4affae92937c4d302b70ef63cfafcb0c300316a5aafbb"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/omega_registry_master.json",
+      "phase": "generator.py:write_registry",
+      "sha256": "96573362c6249073439b6c272187a1953e87abb5d770ddc7e538253092cc2581"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/derived_views/alpha_sensor_registry.json",
+      "phase": "generator:alpha_sensor_writer",
+      "sha256": "a5f775e7e5044be1a06c16373c86e232fca6cdd73d5c9a2f2f6a69ea3108ad9c"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/derived_views/alpha_room_registry.json",
+      "phase": "generator:alpha_room_writer",
+      "sha256": "247e062b5b091b2addaa77858b5c5970e289bbdf585de6233591523043c4cabc"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/derived_views/hydrated_entities.json",
+      "phase": "enrichment_engine.py:hydration output",
+      "sha256": "c8848264435dc13031a075b8da946d4211cea8f345ccac7f49de80f9c2093238"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/derived_views/hydrated_entities.pretty.json",
+      "phase": "enrichment_engine.py:hydration output (pretty)",
+      "sha256": "823ab2ab30eca8a7ea815efb2aa081eb2f4f8123b20d0649bf7b646757c81779"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/derived_views/enriched_registry.json",
+      "phase": "enrichment_engine.py:enriched output",
+      "sha256": "1233ec464be5b0f3c2853a0cb8cb777e25fbd1c781c76a230bf4e5a2322923ed"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/analyze_omega_registry.latest.json",
+      "phase": "analyze_omega_registry.py:analytics log",
+      "sha256": "76b1f1c3932a4165466e5471f9d3f3f0fab937535513b3a59328e2bc297dd462"
+    },
+    {
+      "path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/pipeline_metrics.latest.json",
+      "phase": "analyze_omega_registry.py:pipeline metrics",
+      "sha256": "d71960eaa66a4997296beb928f079524dec7f39e718bea92e0c3c846cebcd57f"
+    }
+  ]
+}

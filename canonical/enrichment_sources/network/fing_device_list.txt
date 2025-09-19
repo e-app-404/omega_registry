@@ -1,0 +1,747 @@
+
+Search this table
+Search
+All
+IP Address
+TYPE	IP	HW ADDRESS	NAME	DETAILS	OS	CHANGED	STATUS
+
+192.168.0.1
+24:2F:D0:D0:5E:B8
+Archer AX53
+TP-Link • Archer AX53
+Router
+
+192.168.0.3
+F0:F6:C1:F7:26:9F
+192.168.0.3 - Sonos Ray - RINCON_F0F6C1F7269F01400
+Sonos • Ray
+Media Player
+May 29, 11:26 AM
+
+192.168.0.7
+6C:29:90:A4:91:DA
+wiz_a491da
+WIZ
+Light
+May 23, 10:42 PM
+
+192.168.0.10
+A6:09:17:10:0A:86
+Mobile
+Apple • iPhone XR
+Mobile
+iOS	1 Tue, 3:17 PM
+
+192.168.0.14
+CC:8D:A2:56:65:B8
+Levoit-purifier
+Levoit • Purifier
+Water Sensor
+Apr 28, 11:17 PM
+
+192.168.0.15
+44:07:0B:7A:06:DD
+Boy
+Google • Home Mini
+Voice Control
+Chrome OS	Apr 28, 11:17 PM
+
+192.168.0.20
+44:4F:8E:28:71:EA
+wiz_2871ea
+WIZ
+Light
+Apr 28, 11:17 PM
+
+192.168.0.21
+CC:40:85:02:34:5E
+wiz_02345e
+WIZ
+Light
+1 Tue, 3:17 PM
+
+192.168.0.23
+8E:86:34:3F:D2:14
+macbook
+Apple • MacBook Air M1 13" (2020)
+Laptop
+macOS 24.3.0	May 31, 11:22 AM
+
+192.168.0.24
+2A:27:DA:FF:90:E4
+Mobile
+Apple
+Mobile
+iOS	Jun 9, 3:08 AM
+
+192.168.0.27
+CC:40:85:55:CD:2E
+wiz_55cd2e
+WIZ
+Light
+Mar 21, 7:39 AM
+
+192.168.0.31
+44:4F:8E:31:F3:76
+wiz_31f376
+WIZ
+Light
+1 Tue, 3:17 PM
+
+192.168.0.32
+98:25:4A:B9:EF:A1
+KP303
+TP-Link • Kasa Smart Wi-Fi Power Strip, 3-Outlets
+Smart Plug
+1 Tue, 3:17 PM
+
+192.168.0.36
+F0:A7:31:35:19:08
+P100
+TP-Link • Mini Smart Wi-Fi Socket
+Smart Plug
+1 Tue, 3:17 PM
+
+192.168.0.37
+CC:40:85:94:AE:B2
+wiz_94aeb2
+WIZ
+Light
+1 Tue, 3:17 PM
+
+192.168.0.43
+68:3A:48:13:7E:88
+hubv3-04021275652
+SmartThings • Hub
+Controller
+Jun 1, 11:52 PM
+
+192.168.0.45
+CC:40:85:60:5A:12
+wiz_605a12
+WIZ
+Light
+1 Tue, 3:17 PM
+
+192.168.0.45
+16:51:C2:F1:B5:DF
+macbook
+Apple • MacBook Air M1 13" (2020)
+Laptop
+macOS 24.3.0	Jun 3, 3:45 PM
+
+192.168.0.46
+1C:86:9A:76:F7:68
+Bedroom TV
+Samsung • QE43Q60CAUXXU
+Television
+Tizen	May 23, 7:19 PM
+
+192.168.0.47
+C4:38:75:E2:BA:D6
+192.168.0.47 - Sonos Era 100 - RINCON_C43875E2BAD601400
+Sonos • Era 100
+Media Player
+Sonos	May 29, 2:24 AM
+
+192.168.0.50
+CC:40:85:55:9E:02
+wiz_559e02
+WIZ
+Light
+1 Tue, 3:17 PM
+
+192.168.0.58
+48:22:54:AB:74:63
+L930
+TP-Link • Tapo L930
+Light
+Jun 4, 7:52 PM
+
+192.168.0.66
+1C:61:B4:B6:AF:6B
+L530
+TP-Link • Tapo L530
+Light
+May 15, 7:54 AM
+
+192.168.0.67
+F0:A7:31:CB:6D:51
+C200
+TP-Link • Tapo C200
+IP Camera
+1 Tue, 3:17 PM
+
+192.168.0.69
+C4:82:E1:48:76:7C
+lwip0
+Tuya
+Smart Device
+Jun 6, 4:59 PM
+
+192.168.0.71
+30:DE:4B:D0:BA:98
+P110
+TP-Link • Tapo P110
+Smart Plug
+Jun 4, 7:52 PM
+
+192.168.0.73
+44:4F:8E:31:7B:40
+wiz_317b40
+WIZ
+Light
+Jun 4, 7:52 PM
+
+192.168.0.77
+CC:40:85:B2:2C:1E
+wiz_b22c1e
+WIZ
+Light
+Jun 4, 7:52 PM
+
+192.168.0.79
+32:AF:3E:23:CA:18
+Watch
+Apple • Apple TV
+Media Player
+watchOS	May 13, 9:53 AM
+
+192.168.0.82
+7C:49:EB:9A:35:15
+Valetudo RoboRock S5
+Roborock • S5
+Smart Cleaner
+Jun 1, 11:52 PM
+
+192.168.0.83
+BC:60:A7:45:4C:D9
+PS4-454CD9
+Sony • PlayStation 4
+Game Console
+May 23, 7:19 PM
+
+192.168.0.91
+6C:29:90:6A:90:06
+wiz_6a9006
+WIZ
+Light
+1 Tue, 3:17 PM
+
+192.168.0.92
+38:42:0B:95:CE:50
+192.168.0.92 - SYMFONISK Bookshelf - RINCON_38420B95CE5001400
+Sonos • SYMFONISK Bookshelf
+Speaker/Amp
+Sonos	May 31, 11:41 AM
+
+192.168.0.102
+48:A5:E7:C0:A3:40
+Game Console
+Nintendo
+Game Console
+Apr 28, 11:17 PM
+
+192.168.0.104
+90:09:D0:3F:69:D9
+DS220plus (DS220+)
+Synology • DS220+
+NAS
+Windows	1 Tue, 3:17 PM
+
+192.168.0.105
+36:D0:DA:C3:58:ED
+Watch
+Apple • Apple TV
+Media Player
+watchOS	May 15, 8:33 AM
+
+192.168.0.108
+F8:E4:3B:9D:3F:9B
+macbook
+Apple • MacBook Air M1 13" (2020)
+Laptop
+macOS 24	Jun 7, 7:42 AM
+
+192.168.0.111
+44:4F:8E:37:83:64
+wiz_378364
+WIZ
+Light
+1 Tue, 3:17 PM
+
+192.168.0.112
+C8:69:CD:3E:41:B9
+Apple-MaTuVu
+Apple • Apple TV (4th Generation)
+Media Player
+tvOS 18.5	1 Tue, 3:17 PM
+
+192.168.0.114
+6C:29:90:55:08:7E
+wiz_55087e
+WIZ
+Light
+Jun 6, 6:37 AM
+
+192.168.0.115
+C8:69:CD:3E:41:BB
+Apple-MaTuVu
+Apple • Apple TV (4th Generation)
+Media Player
+tvOS 18.5	1 Tue, 3:17 PM
+
+192.168.0.116
+9C:53:22:BC:56:8B
+L900
+TP-Link • Tapo L900
+Light
+Jun 4, 7:52 PM
+
+192.168.0.121
+64:05:E4:C0:08:23
+thermomix-c00823
+Vorwerk • Thermomix
+Smart Appliance
+Jun 4, 7:52 PM
+
+192.168.0.123
+B0:B3:69:11:B3:EA
+QS02
+Sdmc • QS02
+Streaming Dongle
+Android 11	Apr 21, 3:39 PM
+
+192.168.0.125
+A8:47:4A:0B:EB:C3
+PS4-454CD9
+Sony • PlayStation 4
+Game Console
+Jun 4, 7:52 PM
+
+192.168.0.125
+56:5A:8F:FE:79:74
+Watch
+Apple • Apple TV
+Media Player
+watchOS	May 14, 2:26 PM
+
+192.168.0.129
+2C:CF:67:65:F8:FE
+Home (Home Assistant)
+Home Assistant • Home Assistant OS
+Desktop
+Windows	May 29, 11:47 AM
+
+192.168.0.130
+2C:CF:67:65:F8:FF
+Home (Home Assistant)
+Home Assistant • Home Assistant OS
+Desktop
+Windows	Jun 9, 3:08 AM
+
+192.168.0.131
+C4:38:75:C7:95:08
+192.168.0.131 - Sonos Roam 2 - RINCON_C43875C7950801400
+Sonos • Roam 2
+Media Player
+Sonos	Jun 4, 7:52 PM
+
+192.168.0.135
+C8:12:0B:E0:8E:4C
+Bedroom TV
+Samsung • QE43Q60CAUXXU
+Television
+Tizen	Jun 4, 7:52 PM
+
+192.168.0.136
+E8:16:56:70:69:E7
+Broadlink RM Mini3
+Samsung
+Mobile
+Android	1 Tue, 3:17 PM
+
+192.168.0.137
+D8:A0:11:69:EA:6C
+wiz_69ea6c
+WIZ
+Light
+1 Tue, 3:17 PM
+
+192.168.0.137
+E8:FB:E9:AC:0A:1A
+iPhone
+Apple • iPhone
+Mobile
+iOS	1 Tue, 3:17 PM
+
+192.168.0.148
+C4:82:E1:A2:5F:81
+lwip0
+Tuya
+Smart Device
+May 14, 10:25 AM
+
+192.168.0.155
+38:42:0B:95:BB:84
+192.168.0.155 - SYMFONISK Bookshelf - RINCON_38420B95BB8401400
+Sonos • SYMFONISK Bookshelf
+Speaker/Amp
+Sonos	May 31, 11:22 AM
+
+192.168.0.159
+56:AB:DB:C2:B6:8E
+Mobile
+Apple
+Mobile
+iOS	May 15, 8:33 AM
+
+192.168.0.161
+70:66:2A:84:B3:62
+PS5-B48865
+Sony • PlayStation 5
+Game Console
+Jun 4, 7:52 PM
+
+192.168.0.168
+26:4E:2C:FA:8D:0D
+macbook
+Apple • MacBook Air M1 13" (2020)
+Laptop
+macOS 24.3.0	May 29, 11:47 AM
+
+192.168.0.169
+44:4F:8E:F1:56:3E
+wiz_f1563e
+WIZ
+Light
+Jun 9, 3:08 AM
+
+192.168.0.173
+D4:AD:FC:12:FF:3F
+Generic
+Shenzhen Intellirocks Tech.
+May 29, 2:23 AM
+
+192.168.0.174
+88:20:0D:93:42:40
+ePhone-uk
+Apple • iPhone
+Mobile
+iOS	Jun 9, 3:08 AM
+
+192.168.0.175
+A8:6E:84:70:D5:FC
+H100
+TP-Link • H100
+Smart Device
+Jun 5, 6:55 PM
+
+192.168.0.184
+44:4F:8E:2B:9E:38
+wiz_2b9e38
+WIZ
+Light
+May 31, 11:22 AM
+
+192.168.0.185
+E6:69:E8:83:1D:CC
+MacBookProEvert-2
+Apple • MacBook Air M1 13" (2020)
+Laptop
+macOS 24.3.0	May 6, 9:44 PM
+
+192.168.0.186
+FC:3C:D7:69:40:AA
+Smart Device
+Tuya
+Smart Device
+May 22, 1:23 AM
+
+192.168.0.188
+1C:90:FF:9B:CC:AA
+Smart Device
+Tuya
+Smart Device
+Jun 6, 10:40 PM
+
+192.168.0.189
+78:8C:B5:99:8F:09
+Light
+TP-Link • Tapo L530
+Light
+1 Tue, 3:17 PM
+
+192.168.0.190
+6C:29:90:A4:8F:37
+wiz_a48f37
+WIZ
+Light
+May 22, 5:44 AM
+
+192.168.0.193
+C4:38:75:E2:BA:6C
+192.168.0.193 - Sonos Era 100 - RINCON_C43875E2BA6C01400
+Sonos • Era 100
+Media Player
+Sonos	May 30, 12:48 AM
+
+192.168.0.195
+9A:BD:E3:2F:3D:40
+Pixel-9-Pro
+Google • Pixel 9 Pro
+Mobile
+Android 15	May 15, 8:33 AM
+
+192.168.0.201
+34:7E:5C:F6:31:6C
+192.168.0.201 - SYMFONISK Bookshelf - RINCON_347E5CF6316C01400
+Sonos • SYMFONISK Bookshelf
+Speaker/Amp
+Sonos	May 29, 11:26 AM
+
+192.168.0.202
+D8:A0:11:69:E6:EE
+wiz_69e6ee
+WIZ
+Light
+Jun 5, 6:55 PM
+
+192.168.0.203
+38:8B:59:68:AF:DB
+Joel's Bedroom speaker
+Google • Home Mini
+Voice Control
+Chrome OS	May 29, 11:47 AM
+
+192.168.0.204
+80:4A:F2:43:25:E4
+192.168.0.204 - Sonos Beam - RINCON_804AF24325E401400
+Sonos • Beam
+Speaker/Amp
+Sonos	May 29, 11:26 AM
+
+192.168.0.212
+FC:67:1F:1A:3F:F3
+wlan0
+Tuya
+Smart Device
+Jun 1, 11:52 PM
+
+192.168.0.214
+96:9B:27:1B:0D:C7
+iPad-2
+Apple • iPad 10.2" 9th Gen (Wi-Fi)
+Tablet
+iPadOS	May 12, 8:50 AM
+
+192.168.0.217
+E8:16:56:7D:90:42
+Broadlink RM4 Pro
+Samsung • Galaxy A3
+Mobile
+Android	1 Tue, 3:17 PM
+
+192.168.0.219
+D8:A0:11:79:BB:7C
+wiz_79bb7c
+WIZ
+Light
+Apr 18, 6:18 PM
+
+192.168.0.220
+9C:53:22:BC:59:06
+L900
+TP-Link • Tapo L900
+Light
+1 Tue, 3:17 PM
+
+192.168.0.221
+9C:53:22:6A:30:5C
+H100
+TP-Link • H100
+Smart Device
+HPE Switch Software	1 Tue, 3:17 PM
+
+192.168.0.222
+44:4F:8E:B7:12:46
+wiz_b71246
+WIZ
+Light
+1 Tue, 3:17 PM
+
+192.168.0.223
+9C:53:22:75:10:26
+P110
+TP-Link • Tapo P110
+Smart Plug
+1 Tue, 3:17 PM
+
+192.168.0.224
+F0:A7:31:35:27:62
+P100
+TP-Link • Mini Smart Wi-Fi Socket
+Smart Plug
+1 Tue, 3:17 PM
+
+192.168.0.225
+9E:21:A5:2C:ED:48
+Mac
+Apple • Mac
+Laptop
+macOS	1 Tue, 3:17 PM
+
+192.168.0.226
+16:8C:50:A1:D9:80
+MacBook-Pro
+Pro
+Apple • MacBook Pro
+Laptop
+macOS	1 Tue, 3:17 PM
+
+192.168.0.227
+D2:56:30:B4:6C:F1
+iPhone
+Apple • iPhone
+Mobile
+iOS	Jun 8, 1:04 AM
+
+192.168.0.228
+94:58:CB:FD:1B:BD
+Game Console
+Nintendo
+Game Console
+Jun 7, 9:44 PM
+
+192.168.0.230
+16:B2:A6:47:F7:17
+Pixel-9-Pro
+Google • Pixel 9 Pro
+Mobile
+Android 15	1 Tue, 3:17 PM
+
+192.168.0.232
+9A:71:2A:D3:AA:89
+MacBookProEvert-2
+Apple • MacBook Air M1 13" (2020)
+Laptop
+macOS 24.3.0	May 21, 7:01 PM
+
+192.168.0.233
+9C:53:22:BC:57:B1
+L900
+TP-Link • Tapo L900
+Light
+1 Tue, 3:17 PM
+
+192.168.0.234
+F8:E4:3B:6E:21:BD
+macbook
+Apple • MacBook Air M1 13" (2020)
+Laptop
+macOS 24	1 Tue, 3:17 PM
+
+192.168.0.234
+26:C6:CB:2C:E7:5A
+macbook
+Apple • MacBook Air M1 13" (2020)
+Laptop
+macOS 24.3.0	1 Tue, 3:17 PM
+
+192.168.0.235
+F6:4E:9B:F9:45:FC
+Mobile
+Apple
+Mobile
+iOS	May 29, 9:48 PM
+
+192.168.0.239
+76:42:E5:1B:F5:CC
+iPhone
+Apple • iPhone
+Mobile
+iOS	May 26, 3:24 PM
+
+192.168.0.241
+10:52:1C:F3:4D:4B
+ESP_F34D4B
+Shelly • Shelly Gas
+Smart Device
+1 Tue, 3:17 PM
+
+192.168.0.243
+90:13:DA:AB:C2:F0
+Homey Pro
+Athom • Homey Pro
+Controller
+Mar 16, 4:55 AM
+
+192.168.0.244
+8A:20:64:78:99:A8
+macbook
+Apple • MacBook Air M1 13" (2020)
+Laptop
+macOS 24.3.0	May 23, 10:42 PM
+
+192.168.0.253
+D8:A0:11:79:BB:9E
+wiz_79bb9e
+WIZ
+Light
+Jun 9, 3:08 AM
+
+00:24:E4:9D:07:4E
+Medical Device
+Withings • Sleep Analyzer
+Medical Device
+Jun 7, 8:24 PM
+
+2E:14:36:F6:87:DF
+Watch
+Apple • Apple TV
+Media Player
+watchOS	May 29, 9:48 PM
+
+36:46:53:81:EF:53
+Google-Pixel-Watch
+Google • Pixel Watch
+Smart Watch
+Android 15	May 29, 10:28 PM
+
+46:D3:59:9F:A6:D9
+Watch
+Apple • Apple TV
+Media Player
+watchOS	May 29, 3:04 AM
+
+4A:54:C3:DB:64:A7
+Watch
+Apple • Apple TV
+Media Player
+watchOS	May 13, 11:53 AM
+
+AE:D3:BE:28:03:3E
+Google-Pixel-Watch
+Google • Pixel Watch
+Smart Watch
+Android 15	May 22, 3:03 AM
+
+E6:9A:79:11:1A:2A
+Watch
+Apple • Apple TV
+Media Player
+watchOS	May 29, 3:04 AM
+
+F2:56:E5:55:22:EA
+Watch
+Apple • Apple TV
+Media Player
+watchOS	May 15, 7:54 AM
+
+FA:A2:A5:F7:3E:EF
+Watch
+Apple • Apple TV
+Media Player
+watchOS	May 13, 1:33 PM
+1
+0

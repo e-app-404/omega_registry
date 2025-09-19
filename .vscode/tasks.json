@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Run omega_pipeline_main.py",
+			"command": "echo '[TASK] Running omega pipeline main...' && PYTHONPATH=. venv/bin/python3 scripts/omega_pipeline_main.py --output-profile audit 2>&1 | tee canonical/logs/meta/omega_pipeline_main.log",
+			"group": "build",
+			"isBackground": false
+		}
+	]
+}

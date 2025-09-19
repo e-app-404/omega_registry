@@ -1,0 +1,13 @@
+name: alpha_room_registry.v1
+description: "Alpha room registry output contract - required fields and inference rules."
+version: 1
+required_keys:
+  - room_ref
+  - tier
+  - cluster_size
+optional_keys:
+  - area_id
+  - domains
+  - _meta
+notes: |
+  Room outputs may use a domain-specific top-key `rooms: [...]` or the generic `items` container shape.

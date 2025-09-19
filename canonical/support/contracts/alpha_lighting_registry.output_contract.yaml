@@ -1,0 +1,16 @@
+name: alpha_lighting_registry.v1
+description: "Alpha lighting registry output contract - required fields and inference rules."
+version: 1
+required_keys:
+  - entity_id
+  - platform
+  - domain
+  - device_id
+  - friendly_name
+optional_keys:
+  - area_id
+  - tier
+  - cluster_size
+  - _meta
+notes: |
+  Light entities should include device linkage (device_id) where available.

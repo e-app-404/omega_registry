@@ -1,0 +1,195 @@
+field_joins:
+  _contract:
+    inferred: true
+    join: audit_tag, input_hashes
+    provenance: enrichment_engine.py
+    source: enrichment_engine.py
+    trace: enrichment_engine.py
+  _legend:
+    inferred: true
+    join: legend
+    provenance: omega_registry_master.output_contract.yaml
+    source: omega_registry_master.output_contract.yaml
+    trace: omega_registry_master.output_contract.yaml
+  _meta:
+    inferred: true
+    join: script_args
+    provenance: scripts/enrich/enrichment_engine.py
+    source: enrichment_engine.py
+    trace: scripts/enrich/enrichment_engine.py
+  area_id:
+    inferred: true
+    join: area_id
+    provenance: join_contract.yaml
+    source: core.entity_registry > core.device_registry > heuristic > exemption
+    trace: join_contract.yaml
+    exemption_logic:
+      - applies_to: [logic, template, virtual]
+        action: skip
+        meta_annotation: required
+  conflict_id:
+    inferred: true
+    join: conflict_id
+    provenance: join_contract.yaml
+    source: join_contract.yaml
+    trace: join_contract.yaml
+  device_class:
+    inferred: true
+    join: device_class
+    provenance: join_contract.yaml
+    source: core.entity_registry
+    trace: join_contract.yaml
+    transformation: tier_classification
+  device_id:
+    inferred: false
+    join: device_id
+    provenance: join_contract.yaml
+    source: core.entity_registry
+    trace: join_contract.yaml
+  manufacturer:
+    inferred: true
+    join: manufacturer
+    provenance: join_contract.yaml
+    source: core.device_registry
+    trace: join_contract.yaml
+    exemption_logic:
+      - applies_to: [logic, template, virtual]
+        action: skip
+        meta_annotation: required
+  serial_number:
+    inferred: true
+    join: serial_number
+    provenance: join_contract.yaml
+    source: core.device_registry
+    trace: join_contract.yaml
+    exemption_logic:
+      - applies_to: [logic, template, virtual]
+        action: skip
+        meta_annotation: required
+  domain:
+    inferred: false
+    join: domain
+    provenance: join_contract.yaml
+    source: core.entity_registry
+    trace: join_contract.yaml
+  entity_category:
+    inferred: true
+    join: entity_category
+    provenance: join_contract.yaml
+    source: core.entity_registry
+    trace: join_contract.yaml
+  entity_id:
+    inferred: false
+    join: entity_id
+    provenance: join_contract.yaml
+    source: core.entity_registry
+    trace: join_contract.yaml
+  entry_id:
+    inferred: false
+    join: config_entry_id
+    provenance: join_contract.yaml
+    source: core.entity_registry
+    trace: join_contract.yaml
+  field_inheritance:
+    inferred: true
+    join: inheritance
+    provenance: join_contract.yaml
+    source: join_contract.yaml
+    trace: join_contract.yaml
+  floor_id:
+    inferred: true
+    join: floor_id
+    provenance: area_hierarchy.yaml
+    source: core.area_registry
+    trace: area_hierarchy.yaml
+  inferred:
+    inferred: true
+    join: inferred
+    provenance: join_contract.yaml
+    source: join_contract.yaml
+    trace: join_contract.yaml
+  integration:
+    inferred: true
+    join: domain
+    provenance: join_contract.yaml
+    source: core.config_entries
+    trace: join_contract.yaml
+    transformation: tier_classification
+  join_confidence:
+    inferred: true
+    join: confidence
+    provenance: join_contract.yaml
+    source: join_contract.yaml
+    trace: join_contract.yaml
+  join_origin:
+    inferred: true
+    join: origin
+    provenance: join_contract.yaml
+    source: join_contract.yaml
+    trace: join_contract.yaml
+  name:
+    inferred: true
+    join: name
+    provenance: join_contract.yaml
+    source: core.entity_registry
+    trace: join_contract.yaml
+  platform:
+    inferred: false
+    join: platform
+    provenance: join_contract.yaml
+    source: core.entity_registry
+    trace: join_contract.yaml
+  tier:
+    inferred: true
+    join: tier
+    provenance: join_contract.yaml
+    source: unique_id/entity_id > references_entities > heuristic > exemption
+    trace: join_contract.yaml
+    exemption_logic:
+      - applies_to: [logic, template, virtual]
+        action: skip
+        meta_annotation: required
+notes:
+  - All exemptions and canonical assignments must be meta-annotated.
+  - area_id and tier must follow precedence: entity_registry > device_registry > heuristic > exemption.
+  - device/manufacturer/serial enrichment is skipped for contract-exempt sensors.
+  - All joins must be contract-compliant and provenance-traceable.
+  - This manifest is validated against join_contract.yaml, area_hierarchy.yaml, tier_definitions.yaml,
+    and output contract.
+  - Fields marked inferred: true may be derived or joined from multiple sources.
+# output_fields: the complete list of fields that are allowed to appear in the
+# final output for each entity. Acts as an allowlist for the minimization/output step.
+output_fields:
+  - entity_id
+  - domain
+  - platform
+  - device_class
+  - entity_category
+  - name
+  - unit_of_measurement
+  - area_id
+  - floor_id
+  - device_id
+  - entry_id
+  - integration
+  - join_confidence
+  - join_origin
+  - _meta
+  - field_inheritance
+  - inferred
+  - conflict_id
+  - _contract
+  - _legend
+# required_keys: The subset of output_fields that are mandatory for every entity.
+required_keys:
+  - entity_id
+  - domain
+  - platform
+  - area_id
+  - tier
+  - name
+  - device_id
+  - platform
+status: ready
+# All field_joins, legends, and provenance reference omega_registry_master.json and its contract.
+# No alternate output references present.

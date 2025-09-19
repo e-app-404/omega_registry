@@ -1,0 +1,7 @@
+# Development and docs requirements
+pyyaml
+rich
+markdown_it_py
+mdurl
+pygments
+pytest

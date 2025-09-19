@@ -1,0 +1,46 @@
+optional_keys:
+  - _meta
+  - field_inheritance
+  - inferred
+  - conflict_id
+  - labels
+  - via_device_id
+  - state_snapshot
+  - exposed_to_assistant
+  - suggested_area
+  - hidden_by
+  - disabled_by
+  - original_name
+  - mac
+  - connections
+  - manufacturer
+  - model
+  - exemption_reason
+output: canonical/omega_registry_master.json
+required_keys:
+  - entity_id
+  - domain
+  - platform
+  - device_class
+  - entity_category
+  - name
+  - area_id
+  - floor_id
+  - device_id
+  - entry_id
+  - integration
+  - join_confidence
+  - join_origin
+  - tier
+validation_rules:
+  - must_have_join_origin
+  - confidence_range:
+      min: 0.75
+      max: 1.0
+  - area_id must not be null if device_id is present unless exemption_reason is set
+  - tier must not be null unless exemption_reason is set
+  - device/manufacturer/serial may be null for logic/template/virtual sensors if exemption_reason is set
+  - if exposed_to_assistant: "true → must be boolean"
+  - audit_trail_required_for_exemptions: true
+  - join_origin/join_confidence must be present for all patched fields
+  - null/intentional/virtual handling must be meta-annotated

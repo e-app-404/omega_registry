@@ -1,0 +1,340 @@
+# AREA HIERARCHY & SPATIAL RELATIONSHIP CONTRACT
+# Canonical definition of area → room → floor containment and propagation rules
+# Status: DRAFT v1
+# Last Updated: 2025-07-22
+# PATCH-JOIN-CONTRACT-ROOM-MAPPING-V1
+
+contract:
+  id: area_relationships_contract
+  version: 1.0
+  author: Evert
+  status: canonical_draft
+  file_path: canonical/support/contracts/area_hierarchy.yaml
+
+contract_metadata:
+  last_validated: "2025-07-22"
+  live_registry_consistency: partial
+  coverage_percent: 100.0
+  notes: |
+    This contract is programmatically validated against live Home Assistant registry data. Coverage and consistency are updated on each validation run.
+
+containment_graph:
+  ground_floor:
+    children: [kitchen, laundry_room, living_room, powder_room]
+  top_floor:
+    children: [sanctum, upstairs]
+  hallway:
+    children: [upstairs, downstairs]
+  downstairs:
+    children: [entrance]
+  bedroom:
+    children: [wardrobe, desk]
+  # normalized: replaced variants (evert_sanctum / sanctum_evert) with canonical 'sanctum'
+  sanctum:
+    children: [bedroom, ensuite]
+  hestia:
+    children: [ha_addons, system_admin, virtual]
+  home:
+    children: [evert, top_floor, ground_floor, hallway, hestia]
+  network:
+    children: [home_assistant, network_connectivity, nas]
+  outside:
+    children: [london]
+  services:
+    children: [alarm, calendar, notifications, cleaning]
+  # (sanctum_evert removed; use 'sanctum' above)
+  ensuite: null
+  kitchen: null
+  laundry_room: null
+  living_room: null
+  entrance: null
+  upstairs: null
+
+nodes:
+  # Floors
+  - id: ground_floor
+    type: floor
+    canonical_name: Ground floor
+    parents: [home]
+    container: ["floor", "ground_floor", "Ground floor"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: top_floor
+    type: floor
+    canonical_name: Top floor
+    parents: [home]
+    container: ["floor", "top_floor", "Top floor"]
+    devices: 0
+    entities: 0
+    services: 0
+
+  # Areas and connectors (reflect containment_graph)
+  - id: hallway
+    type: area
+    canonical_name: Hallway
+    parents: [home]
+    container: ["area", "hallway", "Hallway"]
+    devices: 6
+    entities: 0
+    services: 0
+    tags: [transit, structural_connector]
+  - id: kitchen
+    type: area
+    canonical_name: Kitchen
+    parents: [ground_floor]
+    container: ["area", "kitchen", "Kitchen"]
+    devices: 18
+    entities: 4
+    services: 0
+  - id: laundry_room
+    type: area
+    canonical_name: Laundry room
+    parents: [ground_floor]
+    container: ["area", "laundry_room", "Laundry room"]
+    devices: 2
+    entities: 0
+    services: 0
+  - id: living_room
+    type: area
+    canonical_name: Living Room
+    parents: [ground_floor]
+    container: ["area", "living_room", "Living Room"]
+    devices: 25
+    entities: 5
+    services: 0
+  - id: powder_room
+    type: subarea
+    canonical_name: Powder room
+    parents: [ground_floor]
+    container: ["area", "powder_room", "Powder room"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: entrance
+    type: subarea
+    canonical_name: Entrance
+    parents: [downstairs]
+    container: ["area", "entrance", "Entrance"]
+    devices: 5
+    entities: 3
+    services: 0
+  - id: downstairs
+    type: area
+    canonical_name: Downstairs
+    parents: [hallway]
+    container: ["area", "downstairs", "Downstairs"]
+    devices: 5
+    entities: 4
+    services: 0
+  - id: upstairs
+    type: area
+    canonical_name: Upstairs
+    parents: [hallway, top_floor]
+    container: ["area", "upstairs", "Upstairs"]
+    devices: 5
+    entities: 5
+    services: 0
+
+  - id: bedroom
+    type: area
+    canonical_name: "Evert's bedroom"
+    parents: [sanctum]
+    container: ["area", "bedroom", "Bedroom main"]
+    devices: 66
+    entities: 7
+    services: 0
+  - id: desk
+    type: subarea
+    canonical_name: Desk
+    parents: [bedroom]
+    container: ["area", "desk", "Desk"]
+    devices: 20
+    entities: 0
+    services: 0
+  - id: wardrobe
+    type: subarea
+    canonical_name: Wardrobe
+    parents: [bedroom]
+    container: ["area", "wardrobe", "Wardrobe"]
+    devices: 4
+    entities: 2
+    services: 0
+  - id: ensuite
+    type: area
+    canonical_name: Ensuite
+    parents: [sanctum]
+    container: ["area", "ensuite", "Ensuite"]
+    devices: 16
+    entities: 4
+    services: 0
+
+  # Top-level areas / services / network / external
+  - id: sanctum
+    type: area
+    canonical_name: Sanctum
+    parents: [top_floor]
+    container: ["area", "sanctum", "Sanctum"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: hestia
+    type: area
+    canonical_name: Hestia
+    parents: [home]
+    container: ["area", "hestia", "Hestia"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: home
+    type: area
+    canonical_name: Home
+    parents: []
+    container: ["area", "home", "Home"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: network
+    type: area
+    canonical_name: Network
+    parents: []
+    container: ["area", "network", "Network"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: outside
+    type: area
+    canonical_name: Outside
+    parents: []
+    container: ["area", "outside", "Outside"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: services
+    type: area
+    canonical_name: Services
+    parents: []
+    container: ["area", "services", "Services"]
+    devices: 0
+    entities: 0
+    services: 0
+
+  # Network children & external
+  - id: home_assistant
+    type: area
+    canonical_name: Home Assistant
+    parents: [network]
+    container: ["area", "home_assistant", "Home Assistant"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: network_connectivity
+    type: area
+    canonical_name: Network connectivity
+    parents: [network]
+    container: ["area", "network_connectivity", "Network connectivity"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: nas
+    type: area
+    canonical_name: NAS
+    parents: [network]
+    container: ["area", "nas", "NAS"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: london
+    type: area
+    canonical_name: London
+    parents: [outside]
+    container: ["area", "london", "London"]
+    devices: 0
+    entities: 0
+    services: 0
+
+  # Hestia children
+  - id: ha_addons
+    type: area
+    canonical_name: HA Addons
+    parents: [hestia]
+    container: ["area", "ha_addons", "HA Addons"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: system_admin
+    type: area
+    canonical_name: System Admin
+    parents: [hestia]
+    container: ["area", "system_admin", "System Admin"]
+    devices: 0
+    entities: 0
+    services: 0
+  - id: virtual
+    type: area
+    canonical_name: Virtual
+    parents: [hestia]
+    container: ["area", "virtual", "Virtual"]
+    devices: 0
+    entities: 0
+    services: 0
+
+  # Services children
+  - id: cleaning
+    type: area
+    canonical_name: Cleaning
+    parents: [services]
+    container: ["area", "cleaning", "Cleaning"]
+    devices: 0
+    entities: 0
+    services: 0
+
+propagation_rules:
+  motion:
+    from_subarea_to_area: probable # e.g., desk → bedroom
+    from_area_to_subarea: improbable # e.g., bedroom → desk
+    from_area_to_container: probable # e.g., bedroom → sanctum_evert
+    from_container_to_area: undefined
+    transient_decay: true # motion loses confidence across boundaries
+    decay_rate: 0.7 # relative confidence reduction per level
+    tags: [decay, boundary, propagation]
+  presence:
+    from_subarea_to_area: possible
+    from_area_to_subarea: rare
+    from_area_to_container: possible
+    from_container_to_area: unlikely
+    memory: sticky # presence has higher retention than motion
+    tags: [retention, propagation]
+  occupancy:
+    aggregate_method: weighted_sum
+    weights:
+      subarea: 0.6
+      area: 1.0
+      container: 0.4
+    decay_profile:
+      subarea_timeout: 2m
+      area_timeout: 5m
+      container_timeout: 10m
+    tags: [aggregation, decay]
+  graph:
+    allow_cycles: false
+    max_depth: 5
+    transitive_inference: true
+    tags: [graph, traversal]
+
+output_contract:
+  emit_to: canonical/joins/area_room_floor_hierarchy.json
+  schema:
+    - area_id: string
+    - parent_room: string | null
+    - floor_id: string
+    - type: enum(area, subarea, floor, service)
+    - inference_weight: float
+    - contributes_to: list[string]
+    - inferred_by: string | null
+
+notes: |
+  The purpose of this contract is to standardize spatial reasoning in registry rehydration.
+  All subarea relationships must be explicitly declared to avoid inference ambiguity.
+  This file does not govern device placement, but entity logic implication.
+  Changes to inference propagation require a new contract version.

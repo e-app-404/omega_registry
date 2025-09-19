@@ -1,0 +1,18 @@
+# Omega Registry pipeline configuration
+# All generator scripts and utilities must read from this file for contract-driven, auditable, and minimized output.
+
+# Emit legacy null_fields (array) alongside new _meta.null_fields (dict)
+emit_legacy_null_fields: false
+# Emit legacy options-based voice assistant exposure alongside new voice_assistants object
+emit_legacy_voice_assistants: false
+# Emit full, non-minimized registry entries for debugging/audit (overrides minimization)
+emit_full_registry_entries: false
+# Path to authoritative output contract
+default_contract_path: canonical/support/contracts/omega_registry_master.output_contract.yaml
+# Path to join contract
+join_contract_path: canonical/support/contracts/join_contract.yaml
+# Path to conflict resolution log
+conflict_log_path: canonical/logs/conflicts/conflict_resolution_report.json
+# Output JSON in compact mode (no pretty-print)
+compact_json_output: true
+# Additional config flags can be added as needed

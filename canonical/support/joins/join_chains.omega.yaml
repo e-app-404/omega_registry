@@ -1,0 +1,30 @@
+# Omega Registry Join Chains
+# This file defines all join chains for the enrichment pipeline.
+# Each key is a chain name; each value is a list of [from_key, registry_name, to_key] triples.
+
+device_area:
+  - [device_id, device_registry, area_id]
+  - [entity_id, entity_registry, area_id]
+  - [heuristic_source, heuristic, area_id]
+  - [exemption_case, exemption, area_id]
+
+area_floor:
+  - [area_id, area_registry, floor_id]
+  - [heuristic_source, heuristic, floor_id]
+  - [exemption_case, exemption, floor_id]
+
+tier:
+  - [unique_id, entity, tier]
+  - [entity_id, entity, tier]
+  - [references_entities, heuristic, tier]
+  - [exemption_case, exemption, tier]
+
+manufacturer:
+  - [device_id, device_registry, manufacturer]
+  - [exemption_case, exemption, manufacturer]
+
+serial_number:
+  - [device_id, device_registry, serial_number]
+  - [exemption_case, exemption, serial_number]
+# All joins must emit join_origin, join_confidence, and field_contract.
+# Log join trace for all core field assignments and exemptions.

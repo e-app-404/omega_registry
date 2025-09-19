@@ -1,0 +1,124 @@
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.omega-entry {
+  flex: 1 1 50%;
+  min-width: 320px;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #2c2f36;
+  border-radius: 10px;
+  background: #1f2128;
+  padding: 12px;
+}
+
+.file-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.badge-strip {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-right: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-json {
+  background: #0377A9;
+  color: #fff;
+}
+
+.badge-md {
+  background: #7C4DFF;
+  color: #fff;
+}
+
+.badge-yaml {
+  background: #FF7043;
+  color: #fff;
+}
+
+.badge-py {
+  background: #4CAF50;
+  color: #fff;
+}
+
+.badge-archive {
+  background: #FFCA28;
+  color: #000;
+}
+
+.badge-default {
+  background: #303340;
+  color: #bbb;
+}
+
+.badge-size {
+  background: #aa4f83;
+  color: #fff;
+}
+
+.badge-tag {
+  background: #303340;
+  color: #bbb;
+}
+
+.file-metadata {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.file-metadata li {
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.last-edited {
+  margin-top: 8px;
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+.file-metadata-block {
+  margin-top: 10px;
+}
+
+.file-metadata-summary {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #56c8ff;
+}
+
+@media (max-width: 700px) {
+  .omega-entry {
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}

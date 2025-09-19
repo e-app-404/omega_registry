@@ -1,0 +1,423 @@
+{
+  "items": [
+    {
+      "aliases": [],
+      "floor_id": "sanctum",
+      "humidity_entity_id": null,
+      "icon": "mdi:bed",
+      "id": "bedroom",
+      "labels": [],
+      "name": "Bedroom main",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-08T22:32:04.656092+00:00",
+      "modified_at": "2025-07-22T03:02:51.297250+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "ground_floor",
+      "humidity_entity_id": null,
+      "icon": "mdi:countertop-outline",
+      "id": "kitchen",
+      "labels": [],
+      "name": "Kitchen",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-08T22:32:06.055576+00:00",
+      "modified_at": "2025-07-22T03:07:25.716355+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "ground_floor",
+      "humidity_entity_id": null,
+      "icon": "mdi:sofa-outline",
+      "id": "living_room",
+      "labels": [],
+      "name": "Living Room",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-08T23:54:23.226747+00:00",
+      "modified_at": "2025-07-22T03:05:15.804122+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "network",
+      "humidity_entity_id": null,
+      "icon": "mdi:home-automation",
+      "id": "network_connectivity",
+      "labels": [],
+      "name": "Hubs & Routers",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T00:49:53.042355+00:00",
+      "modified_at": "2025-07-22T03:00:12.162425+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "sanctum",
+      "humidity_entity_id": null,
+      "icon": "mdi:shower-head",
+      "id": "ensuite",
+      "labels": [],
+      "name": "Ensuite",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T00:53:00.971738+00:00",
+      "modified_at": "2025-06-09T00:57:27.677526+00:00"
+    },
+    {
+      "aliases": [
+        "Upstairs",
+        "second_floor"
+      ],
+      "floor_id": "hallways",
+      "humidity_entity_id": null,
+      "icon": "mdi:stairs-down",
+      "id": "upstairs",
+      "labels": [],
+      "name": "upstairs",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T00:55:16.854699+00:00",
+      "modified_at": "2025-09-15T10:53:31.261145+00:00"
+    },
+    {
+      "aliases": [
+        "Hallway Downstairs"
+      ],
+      "floor_id": "hallways",
+      "humidity_entity_id": null,
+      "icon": "mdi:stairs-up",
+      "id": "downstairs",
+      "labels": [],
+      "name": "Downstairs",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T00:56:22.836153+00:00",
+      "modified_at": "2025-09-15T10:53:31.261629+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "sanctum",
+      "humidity_entity_id": null,
+      "icon": "mdi:desk",
+      "id": "desk",
+      "labels": [],
+      "name": "Desk",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T00:57:30.722930+00:00",
+      "modified_at": "2025-06-09T00:57:30.722936+00:00"
+    },
+    {
+      "aliases": [
+        "closet"
+      ],
+      "floor_id": "sanctum",
+      "humidity_entity_id": null,
+      "icon": "mdi:wardrobe",
+      "id": "wardrobe",
+      "labels": [],
+      "name": "Wardrobe",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T00:58:03.386946+00:00",
+      "modified_at": "2025-06-09T00:58:03.386951+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "home",
+      "humidity_entity_id": null,
+      "icon": "mdi:account",
+      "id": "evert",
+      "labels": [],
+      "name": "Evert",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T01:24:39.065189+00:00",
+      "modified_at": "2025-07-22T03:06:35.471792+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "hestia",
+      "humidity_entity_id": null,
+      "icon": "mdi:lambda",
+      "id": "system_admin",
+      "labels": [],
+      "name": "System Admin",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T12:16:39.673293+00:00",
+      "modified_at": "2025-06-09T12:16:39.673299+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "hestia",
+      "humidity_entity_id": null,
+      "icon": "mdi:archive-plus-outline",
+      "id": "ha_addons",
+      "labels": [],
+      "name": "HA Addons",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T12:36:10.918720+00:00",
+      "modified_at": "2025-06-09T12:36:10.918725+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "home",
+      "humidity_entity_id": null,
+      "icon": "mdi:home-assistant",
+      "id": "home",
+      "labels": [],
+      "name": "General",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T18:54:59.558142+00:00",
+      "modified_at": "2025-07-22T03:06:50.625089+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "outside",
+      "humidity_entity_id": null,
+      "icon": "mdi:home-city-outline",
+      "id": "london",
+      "labels": [],
+      "name": "London",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T21:17:00.968354+00:00",
+      "modified_at": "2025-07-22T03:05:01.170531+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "network",
+      "humidity_entity_id": null,
+      "icon": "mdi:home-assistant",
+      "id": "home_assistant",
+      "labels": [],
+      "name": "Home Assistant",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-09T22:27:47.961245+00:00",
+      "modified_at": "2025-06-09T22:27:47.961251+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "home",
+      "humidity_entity_id": null,
+      "icon": "mdi:coat-rack",
+      "id": "hallway",
+      "labels": [],
+      "name": "Hallway",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-11T00:38:59.876817+00:00",
+      "modified_at": "2025-07-22T03:06:41.932305+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "hestia",
+      "humidity_entity_id": null,
+      "icon": "mdi:virtual-reality",
+      "id": "virtual",
+      "labels": [],
+      "name": "Virtual",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-11T00:55:04.336615+00:00",
+      "modified_at": "2025-06-11T00:55:04.336621+00:00"
+    },
+    {
+      "aliases": [
+        "Synology",
+        "Server"
+      ],
+      "floor_id": "network",
+      "humidity_entity_id": null,
+      "icon": "mdi:nas",
+      "id": "nas",
+      "labels": [],
+      "name": "NAS",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-13T23:28:31.722450+00:00",
+      "modified_at": "2025-07-22T02:59:16.183669+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "ground_floor",
+      "humidity_entity_id": null,
+      "icon": "mdi:washing-machine",
+      "id": "laundry_room",
+      "labels": [],
+      "name": "Laundry room",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-06-14T20:07:50.183629+00:00",
+      "modified_at": "2025-07-22T03:04:26.279698+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "services",
+      "humidity_entity_id": null,
+      "icon": "mdi:calendar",
+      "id": "calendar",
+      "labels": [],
+      "name": "Calendar",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-07-19T07:44:33.892628+00:00",
+      "modified_at": "2025-07-19T07:51:02.596058+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "services",
+      "humidity_entity_id": null,
+      "icon": null,
+      "id": "alarm",
+      "labels": [],
+      "name": "Alarm",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-07-19T07:51:04.553873+00:00",
+      "modified_at": "2025-07-19T07:51:04.553877+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "services",
+      "humidity_entity_id": null,
+      "icon": null,
+      "id": "notifications",
+      "labels": [],
+      "name": "Notifications",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-07-19T07:55:41.044564+00:00",
+      "modified_at": "2025-07-19T07:55:41.044570+00:00"
+    },
+    {
+      "aliases": [
+        "Entry",
+        "Front door"
+      ],
+      "floor_id": "ground_floor",
+      "humidity_entity_id": null,
+      "icon": "mdi:door-closed",
+      "id": "entrance",
+      "labels": [],
+      "name": "Entrance",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-07-22T02:58:06.460190+00:00",
+      "modified_at": "2025-07-22T02:58:06.460196+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "network",
+      "humidity_entity_id": null,
+      "icon": "mdi:multimedia",
+      "id": "media_server",
+      "labels": [],
+      "name": "Media Server",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-07-26T18:21:25.203655+00:00",
+      "modified_at": "2025-07-26T18:21:25.203661+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "hestia",
+      "humidity_entity_id": null,
+      "icon": "mdi:home-assistant",
+      "id": "ha_system",
+      "labels": [],
+      "name": "HA System",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-07-26T18:43:09.090924+00:00",
+      "modified_at": "2025-07-26T18:43:09.090930+00:00"
+    },
+    {
+      "aliases": [
+        "toilet",
+        "guest bathroom"
+      ],
+      "floor_id": "downstairs",
+      "humidity_entity_id": null,
+      "icon": "mdi:toilet",
+      "id": "powder_room",
+      "labels": [],
+      "name": "powder room",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-08-05T11:32:35.658169+00:00",
+      "modified_at": "2025-08-05T11:32:35.658175+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "services",
+      "humidity_entity_id": null,
+      "icon": "mdi:spray-bottle",
+      "id": "cleaning",
+      "labels": [],
+      "name": "Cleaning",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-08-05T11:33:58.990006+00:00",
+      "modified_at": "2025-08-05T11:33:58.990012+00:00"
+    },
+    {
+      "aliases": [],
+      "floor_id": "services",
+      "humidity_entity_id": null,
+      "icon": "mdi:alert",
+      "id": "warnings",
+      "labels": [],
+      "name": "Warnings",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-08-05T11:35:35.560880+00:00",
+      "modified_at": "2025-08-05T11:35:35.560885+00:00"
+    },
+    {
+      "aliases": [
+        "",
+        "input_boolean",
+        "overrides"
+      ],
+      "floor_id": "hestia",
+      "humidity_entity_id": null,
+      "icon": "mdi:toggle-switch",
+      "id": "configuration_toggles",
+      "labels": [
+        "virtual"
+      ],
+      "name": "Configuration Toggles",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-08-08T16:53:20.449356+00:00",
+      "modified_at": "2025-08-08T16:53:20.449362+00:00"
+    },
+    {
+      "aliases": [
+        "",
+        "media corner",
+        "hifi area"
+      ],
+      "floor_id": "sanctum",
+      "humidity_entity_id": null,
+      "icon": "mdi:cable-data",
+      "id": "hifi_configuration",
+      "labels": [],
+      "name": "hifi configuration",
+      "picture": null,
+      "temperature_entity_id": null,
+      "created_at": "2025-08-13T14:55:12.363416+00:00",
+      "modified_at": "2025-08-13T14:55:12.363423+00:00"
+    }
+  ],
+  "_meta": {
+    "count": 30
+  }
+}

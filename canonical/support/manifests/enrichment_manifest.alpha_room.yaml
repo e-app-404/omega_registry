@@ -1,0 +1,63 @@
+# enrichment_manifest.alpha_room.yaml
+# Status: in_progress
+# Scaffolded by Copilot, 2025-07-25
+
+status: in_progress
+output_fields:
+  - room_id
+  - friendly_name
+  - floor
+  - tier
+  - cluster_size
+  - has_beta
+  - domains
+  - _meta
+  - _contract
+  - _legend
+
+field_joins:
+  room_id:
+    source: core.area_registry
+    join: area_id
+    trace: area_hierarchy.yaml
+  friendly_name:
+    source: omega_room_registry.json
+    join: area_id
+    trace: pending
+  floor:
+    source: core.floor_registry
+    join: floor_id
+    trace: area_hierarchy.yaml
+  tier:
+    source: pipeline_metrics.latest.json
+    join: tiers_by_area
+    trace: tier_definitions.yaml
+  cluster_size:
+    source: pipeline_metrics.latest.json
+    join: tiers_by_area[room_id]["α"]
+    trace: pending
+  has_beta:
+    source: pipeline_metrics.latest.json
+    join: tiers_by_area[room_id]["β"]
+    trace: pending
+  domains:
+    source: entity_flatmap.json
+    join: domain, area_id
+    trace: join_contract.yaml
+  _meta:
+    source: generate_alpha_registry.py
+    join: script_args
+    trace: pending
+  _contract:
+    source: generate_alpha_registry.py
+    join: audit_tag, input_hashes
+    trace: pending
+  _legend:
+    source: alpha_room_registry.output_contract.yaml
+    join: legend
+    trace: pending
+
+notes:
+  - All joins must be contract-compliant and provenance-traceable.
+  - Any join with trace: pending must be reviewed before production.
+  - This manifest is a scaffold and should be validated against join_contract.yaml and output_contract.

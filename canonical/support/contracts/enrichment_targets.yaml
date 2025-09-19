@@ -1,0 +1,28 @@
+# enrichment_targets.yaml
+# Defines anchors, supported fields, and confidence scoring for each enrichment class
+
+ha_registries:
+  anchors: [device_id, entity_id]
+  fields: [manufacturer, model, firmware, hostname, mac, ipv4, ipv6]
+  confidence_floor: 0.8
+
+hestia:
+  anchors: [device_id, mac]
+  fields:
+    [manufacturer, model, firmware, hostname, mac, ipv4, ipv6, serial_number]
+  confidence_floor: 0.7
+
+manual:
+  anchors: [device_id, entity_id, mac]
+  fields: [manufacturer, model, firmware, hostname, mac, ipv4, ipv6, notes]
+  confidence_floor: 0.9
+
+network:
+  anchors: [mac, ipv4, hostname]
+  fields: [mac, ipv4, ipv6, hostname, device_id]
+  confidence_floor: 0.6
+
+state:
+  anchors: [entity_id]
+  fields: [state, last_seen, snapshot]
+  confidence_floor: 0.5

@@ -1,0 +1,9 @@
+{
+  "rooms": [],
+  "_meta": {
+    "source": "/Users/evertappels/Projects/omega_registry/scripts/generators/generate_alpha_registry.py",
+    "contract": "PATCH PIPELINE-FLAGS-V1",
+    "timestamp": "2025-09-19T15:38:19.420772Z",
+    "pipeline_stage": "alpha_registry_generation"
+  }
+}

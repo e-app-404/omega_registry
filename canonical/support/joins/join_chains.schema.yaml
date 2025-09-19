@@ -1,0 +1,11 @@
+# join_chains.omega.yaml schema (YAML)
+# Each key is a string (chain name).
+# Each value is a list of 3-element lists: [from_key, registry_name, to_key] (all strings).
+<chain_name>:
+  - [<from_key>, <registry_name>, <to_key>]
+  - [<from_key>, <registry_name>, <to_key>]
+# Example:
+device_area:
+  - [device_id, device_registry, area_id]
+area_floor:
+  - [area_id, area_registry, floor_id]
