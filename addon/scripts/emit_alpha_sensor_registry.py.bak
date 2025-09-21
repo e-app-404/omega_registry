@@ -3,11 +3,12 @@ from pathlib import Path
 import json
 sys.path.insert(0, str(Path(__file__).parent.parent / "registry"))
 from registry.utils.registry import load_json, load_yaml
-from registry.utils.constants import FEATURE_ROLES
-from registry.utils.pathing import resolve_path
+from registry.utils.constants import SEMANTIC_ROLE_MAP, ENTITY_ID_SUFFIXES, COMMON_AREAS, FEATURE_ROLES
+from registry.utils.pathing import resolve_path, project_root
 import os
 import collections
 import re
+import difflib
 
 def resolve_area_id(cluster, area_registry, device_registry, area_config):
     # Try direct room/area assignment from cluster
@@ -141,7 +142,7 @@ def main():
         'device_map': {}
     }
     # Helper to resolve config paths robustly
-    Path(__file__).parent.parent.resolve()
+    PROJECT_ROOT = Path(__file__).parent.parent.resolve()
     # Patch: Use robust path resolution for all registry files
     input_paths["core_area_registry"] = str(resolve_path(input_paths.get("core_area_registry", "input/core.area_registry")))
     input_paths["core_device_registry"] = str(resolve_path(input_paths.get("core_device_registry", "input/core.device_registry")))
