@@ -19,7 +19,7 @@ check-venv:
 
 safe-grep:
 	@echo "Running safe search (tracked files only, size-limited)..."
-	@python3 scripts/safe_search.py "$(pattern)" "$(prefix)"
+	@python3 scripts/safe_search.py "$(pattern)" "$(prefix)" || true
 
 
 fix-venv-refs:
