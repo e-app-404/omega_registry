@@ -1,0 +1,59 @@
+file1: /Users/evertappels/Projects/omega_registry/registry_rehydration_local_last/canonical/registry_inputs/core.entity_registry
+file2: /Users/evertappels/Projects/omega_registry/canonical/registry_inputs/core.entity_registry_2
+
+stats:
+  file1_bytes: 1402533
+  file2_bytes: 307697813
+  file1_sha256: 7c6db12b2f9343d3aff28c41787b6567a6aaa49dcd8c83ff0d436f360cea25a6
+  file2_sha256: 22440f594b471c92cd8f4406bbde9a746207687715537bb381ba89d9840bec5c
+  file1_entity_id_occurrences: 1433
+  file2_entity_id_occurrences: 2496
+  file1_unique_entity_ids: 1433
+  file2_unique_entity_ids: 2496
+  common_unique_entity_ids: 1067
+  only_in_file1_count: 366
+  only_in_file2_count: 1429
+
+samples:
+  only_in_file1_first_20:
+    - automation.bb_8_mqtt_command_service
+    - automation.front_door_opened_3
+    - binary_sensor.bb_8_alive
+    - binary_sensor.bedroom_presence_gamma
+    - binary_sensor.desk_smart_button_battery
+    - binary_sensor.desk_smart_button_cloud_connection
+    - binary_sensor.downstairs_lightstrip_omega_cloud_connection
+    - binary_sensor.downstairs_lightstrip_omega_overheated
+    - binary_sensor.downstairs_occupancy_matter_alpha_occupancy
+    - binary_sensor.downstairs_presence_omega_battery
+    - binary_sensor.downstairs_presence_omega_cloud_connection
+    - binary_sensor.downstairs_presence_omega_motion
+    - binary_sensor.downstairs_zone_presence_eta
+    - binary_sensor.ensuite_lightstrip_omega_cloud_connection
+    - binary_sensor.ensuite_lightstrip_omega_overheated
+    - binary_sensor.ensuite_occupancy_omega_occupancy
+    - binary_sensor.ensuite_presence_gamma
+    - binary_sensor.entrance_door_motion_tplink_alpha_battery
+    - binary_sensor.entrance_door_motion_tplink_alpha_cloud_connection
+    - binary_sensor.entrance_door_motion_tplink_alpha_motion
+  only_in_file2_first_20:
+    - automation.auto_git_push_on_config_save
+    - automation.auto_trigger_morning_sequence_after_alarm
+    - automation.bedroom_cam_alert_on_unknown_occupancy_room_mode
+    - automation.bedroom_cam_apply_immediately_on_mode_change
+    - automation.bedroom_cam_enable_when_bedroom_clears_room_mode
+    - automation.bedroom_cam_enable_when_evert_leaves_home_home_mode
+    - automation.bedroom_cam_enable_when_evert_leaves_home_room_mode
+    - automation.bedroom_cam_private_when_bedroom_occupied_room_mode
+    - automation.bedroom_cam_private_when_evert_enters_home_home_mode
+    - automation.bedroom_cam_rehydrate_on_ha_start
+    - automation.bedroom_matrix_availability_online_at_ha_start
+    - automation.bedroom_matrix_mqtt_broadlink
+    - automation.bedroom_matrix_mqtt_discovery_one_shot
+    - automation.count_home_assistant_errors
+    - automation.dehumidifier_filter_reset_auto_off
+    - automation.dehumidifier_runtime_reset_auto_off
+    - automation.desk_presence_decay_timer
+    - automation.desk_presence_ethernet_decay_timer
+    - automation.downstairs_cleaning_daily_report
+    - automation.ensuite_motion_lights_day

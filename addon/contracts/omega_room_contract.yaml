@@ -1,0 +1,59 @@
+# 🧾 Output Contract — Omega Room Registry Rehydration
+# Mode: STRICT-MODE with canonical room mappings from `settings.conf.yaml`
+
+omega_room_registry:
+  version: "1.0"
+  generated_on: "<UTC_TIMESTAMP>"
+  source_context:
+    entity_source: "entity_fingerprint_map.json"
+    mapping_source: "entity_id_migration_map.annotated.v4.full.json"
+    area_source: "settings.conf.yaml"
+    generation_mode: "strict_room_mapping"
+  rooms:
+    - room_slug: "<slugified area name from settings.conf.yaml>"
+      area_id: "<slugified or canonicalized area_id if available>"
+      name: "<human-readable room name>"
+      floor: "<floor_name or level from settings.conf.yaml, optional>"
+      post_reboot_entity_ids:
+        - "binary_sensor.kitchen_motion_main_1"
+        - "sensor.kitchen_temperature_env_1"
+        # ...
+      metadata:
+        cluster_count: <int>
+        entity_count: <int>
+        inferred_role_breakdown:
+          motion: <int>
+          presence: <int>
+          diagnostic: <int>
+        roles_missing: [ "<role>", ... ] # optional fallback presence
+  summary:
+    total_entities_clustered: <int>
+    total_rooms: <int>
+    entity_coverage_percent: <float>  # based on total entities in fingerprint map
+    excluded_entities:
+      count: <int>
+      reasons:
+        - missing_final_area
+        - invalid_cluster_id
+        - missing_migration_map
+      unresolved_list_path: "unresolved_entities.log.json"
+
+# Required sibling outputs (all must be emitted alongside omega_room_registry.json)
+outputs:
+  - omega_room_registry.json
+  - room_registry_completeness_audit.json
+  - unresolved_entities.log.json
+  - rehydration_delta_log.json
+  - TARBALL-OMEGA-ROOM-REGISTRY-STRICT-FINAL-FIXED.tar.gz
+
+# Logging requirements
+log_targets:
+  - PATCH-ROUNDTRIP-AUDIT-V2.log
+  - copilot_patchlog_overview.log
+
+# Notes:
+# - All room names and area slugs MUST be resolved via settings.conf.yaml
+# - Do NOT fall back to core.area_registry for room validation
+# - All metadata fields must be strictly generated — no placeholders or stubs
+# - Any skipped or orphaned entity must be logged and counted
+# - `post_reboot_entity_ids` must be confirmed against migration map

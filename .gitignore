@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+env/
+venv/
+.venv/
+
+# VS Code
+.vscode/
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# Archives
+tarballs/
+*.tar.gz
+
+# Logs and scratch
+canonical/logs/scratch/
+*.log
+
+# Ignore local index venvs
+.indexvenv/

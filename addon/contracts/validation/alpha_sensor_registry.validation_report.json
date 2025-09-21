@@ -1,0 +1,9 @@
+{
+  "total_clusters": 3,
+  "total_entity_ids": 8,
+  "validated_clusters": 3,
+  "validated_entity_ids": 8,
+  "coverage_by_entity_count": 12.7,
+  "duplicate_entity_ids": [],
+  "status": "FAIL"
+}

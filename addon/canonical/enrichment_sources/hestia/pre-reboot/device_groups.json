@@ -1,0 +1,624 @@
+{
+  "motion": {
+    "Bedroom": [
+      "sensor.motion_score_bedroom_bed",
+      "sensor.motion_score_bedroom",
+      "sensor.bedroom_motion_score",
+      "sensor.bedroom_bed_motion_score"
+    ],
+    "Ensuite": [
+      "sensor.motion_score_ensuite",
+      "sensor.metadata_motion_sensors_ensuite",
+      "sensor.ensuite_motion_score"
+    ],
+    "Entrance": [
+      "binary_sensor.entrance_motion",
+      "sensor.hallway_entrance_motion_score"
+    ],
+    "Hallway": [
+      "sensor.motion_score_hallway_downstairs",
+      "binary_sensor.downstairs_motion_sensor",
+      "binary_sensor.upstairs_motion_sensor",
+      "sensor.motion_score_hallway_entrance",
+      "sensor.hallway_motion_score",
+      "sensor.motion_score_hallway_upstairs",
+      "sensor.hallway_downstairs_motion_score",
+      "sensor.hallway_upstairs_motion_score",
+      "sensor.hallway_entrance_motion_score"
+    ],
+    "Kitchen": [
+      "binary_sensor.kitchen_motion",
+      "sensor.motion_score_kitchen",
+      "sensor.metadata_motion_sensors_kitchen",
+      "sensor.kitchen_motion_score"
+    ],
+    "Living Room": [
+      "binary_sensor.living_room_aeotec_sensor_motion",
+      "sensor.motion_score_living_room",
+      "sensor.metadata_motion_sensors_living_room",
+      "sensor.living_room_motion_score"
+    ],
+    "Wardrobe": [
+      "binary_sensor.wardrobe_motion_sensor",
+      "sensor.motion_score_bedroom_wardrobe",
+      "sensor.bedroom_wardrobe_motion_score"
+    ]
+  },
+  "occupancy": {
+    "Bedroom": [
+      "binary_sensor.bedroom_occupancy_rate_limited",
+      "binary_sensor.bedroom_occupancy_validated",
+      "binary_sensor.bedroom_occupancy"
+    ],
+    "Ensuite": [
+      "binary_sensor.ensuite_occupancy_rate_limited",
+      "binary_sensor.ensuite_occupancy_validated",
+      "binary_sensor.ensuite_occupancy"
+    ],
+    "Entrance": [
+      "binary_sensor.entrance_occupancy"
+    ],
+    "Hallway": [
+      "binary_sensor.hallway_downstairs_occupancy_rate_limited",
+      "binary_sensor.hallway_downstairs_occupancy_validated",
+      "binary_sensor.hallway_upstairs_occupancy_rate_limited",
+      "binary_sensor.hallway_upstairs_occupancy_validated"
+    ],
+    "Kitchen": [
+      "binary_sensor.kitchen_occupancy_rate_limited",
+      "binary_sensor.kitchen_occupancy_validated",
+      "binary_sensor.kitchen_occupancy",
+      "binary_sensor.kitchen_occupancy_002"
+    ],
+    "Living Room": [
+      "binary_sensor.living_room_occupancy_rate_limited",
+      "binary_sensor.living_room_occupancy_validated",
+      "binary_sensor.living_room_occupancy"
+    ],
+    "Unknown": [
+      "binary_sensor.downstairs_occupancy",
+      "binary_sensor.upstairs_occupancy"
+    ],
+    "Wardrobe": [
+      "binary_sensor.wardrobe_occupancy"
+    ]
+  },
+  "presence": {
+    "Bedroom": [
+      "binary_sensor.bedroom_presence_msf"
+    ],
+    "Ensuite": [
+      "binary_sensor.ensuite_presence_msf"
+    ],
+    "Hallway": [
+      "binary_sensor.hallway_downstairs_presence_msf",
+      "binary_sensor.hallway_upstairs_presence_msf"
+    ],
+    "Kitchen": [
+      "binary_sensor.kitchen_presence_msf"
+    ],
+    "Living Room": [
+      "binary_sensor.living_room_presence_msf"
+    ],
+    "Evert": [
+      "binary_sensor.presence_iphone14",
+      "sensor.iphone_11_battery",
+      "sensor.iphone_14_battery",
+      "sensor.iphone14_activity",
+      "sensor.iphone14_app_version",
+      "sensor.iphone14_battery_level",
+      "sensor.iphone14_battery_state",
+      "sensor.iphone14_bssid",
+      "sensor.iphone14_connection_type",
+      "sensor.iphone14_distance",
+      "sensor.iphone14_geocoded_location",
+      "sensor.iphone14_last_update_trigger",
+      "sensor.iphone14_location_permission",
+      "sensor.iphone14_sim_1",
+      "sensor.iphone14_sim_2",
+      "sensor.iphone14_ssid",
+      "sensor.iphone14_steps",
+      "sensor.iphone14_storage",
+      "sensor.iphone14_watch_battery_level",
+      "sensor.iphone14_watch_battery_state",
+      "sensor.macbook_app_version",
+      "sensor.macbook_bssid",
+      "sensor.macbook_connection_type",
+      "sensor.macbook_displays",
+      "sensor.macbook_frontmost_app",
+      "sensor.macbook_geocoded_location",
+      "sensor.macbook_internal_battery_level",
+      "sensor.macbook_internal_battery_state",
+      "sensor.macbook_last_update_trigger",
+      "sensor.macbook_location_permission",
+      "sensor.macbook_primary_display_id",
+      "sensor.macbook_primary_display_name",
+      "sensor.macbook_ssid",
+      "binary_sensor.macbook_camera_in_use",
+      "sensor.macbook_storage"
+    ]
+  },
+  "sonos_microphone": {
+    "Living Room": [
+      "binary_sensor.cinema_clapham_microphone"
+    ],
+    "Ensuite": [
+      "binary_sensor.sauna_paraiso_microphone"
+    ]
+  },
+  "metadata": {
+    "Hestia": [
+      "sensor.metadata_athena_athena_templates",
+      "sensor.metadata_motion_sensors_hallway",
+      "sensor.metadata_core_light_template_generator_yaml",
+      "sensor.metadata_core_template_library",
+      "sensor.metadata_monitoring_template_monitor",
+      "sensor.metadata_motion_sensors_living_room",
+      "sensor.metadata_motion_sensors_hallway",
+      "sensor.metadata_motion_sensors_kitchen",
+      "sensor.metadata_motion_sensors_ensuite",
+      "sensor.metadata_automation_motion_lighting",
+      "sensor.metadata_motion_automation",
+      "sensor.metadata_motion_automation_logic",
+      "sensor.metadata_motion_automation_off",
+      "sensor.metadata_motion_score",
+      "sensor.metadata_sensor_motion_score",
+      "sensor.metadata_motion_sensors_bedroom",
+      "sensor.metadata_circadian_room_sensors",
+      "sensor.metadata_theia_circadian_automation",
+      "sensor.metadata_automations_device_monitoring",
+      "sensor.metadata_climate_sensors_climate_sensors",
+      "sensor.metadata_core_tv_integration",
+      "sensor.metadata_helpers_onboard_light_helpers",
+      "sensor.metadata_monitoring_minimal_diagnostic",
+      "sensor.metadata_msf_diagnostics",
+      "sensor.metadata_room_lighting_logic_unified",
+      "sensor.metadata_theia_lighting_core",
+      "sensor.metadata_theia_room_automation",
+      "sensor.metadata_theia_scene_controller",
+      "sensor.metadata_core_device_abstraction",
+      "sensor.metadata_core_light_abstraction",
+      "sensor.metadata_core_sensor_abstraction",
+      "sensor.metadata_core_room_registry",
+      "sensor.metadata_core_system",
+      "sensor.metadata_error_tracking",
+      "sensor.metadata_motion_sensors_bedroom",
+      "sensor.metadata_core_sensor_registry"
+    ]
+  },
+  "diagnostic": {
+    "Hestia": [
+      "sensor.minimal_diagnostic",
+      "sensor.template_error_diagnostics",
+      "sensor.msf_diagnostic",
+      "binary_sensor.device_available_template",
+      "binary_sensor.template_monitor_problems",
+      "binary_sensor.validated_binary_sensor_template",
+      "sensor.sensor_fallback_integrity",
+      "sensor.monitored_template_group",
+      "sensor.template_audit_results",
+      "sensor.template_monitor_config",
+      "sensor.template_monitor_status"
+    ]
+  },
+  "ha_registry": {
+    "Hestia": [
+      "binary_sensor.rate_limited_binary_sensor_template"
+    ]
+  },
+  "user_focus": {
+    "Evert": [
+      "binary_sensor.iphone14_focus",
+      "binary_sensor.macbook_focus"
+    ]
+  },
+  "user_activity": {
+    "Evert": [
+      "binary_sensor.macbook_active",
+      "sensor.iphone14_average_active_pace",
+      "sensor.macbook_active_camera",
+      "sensor.withings_sleep_analyzer_active_calories_burnt_today",
+      "sensor.withings_sleep_analyzer_active_time_today",
+      "sensor.iphone14_floors_ascended",
+      "sensor.iphone14_floors_descended"
+    ]
+  },
+  "device_audio": {
+    "Desk": [
+      "binary_sensor.macbook_audio_input_in_use",
+      "binary_sensor.macbook_audio_output_in_use",
+      "sensor.belge_etage_audio_input_format",
+      "sensor.cinema_clapham_audio_input_format",
+      "sensor.iphone14_audio_output",
+      "sensor.macbook_active_audio_input",
+      "sensor.macbook_active_audio_output",
+      "sensor.macbook_audio_output"
+    ],
+    "Bedroom": [
+      "sensor.belge_etage_audio_input_format",
+      "sensor.iphone14_audio_output"
+    ],
+    "Living Room": [
+      "sensor.cinema_clapham_audio_input_format",
+      "sensor.iphone14_audio_output"
+    ],
+    "Evert": [
+      "sensor.iphone14_audio_output"
+    ]
+  },
+  "system_state": {
+    "Hestia": [
+      "binary_sensor.remote_ui",
+      "binary_sensor.system_error_detected",
+      "binary_sensor.system_problems",
+      "sensor.hestia_system",
+      "sensor.home_assistant_core_cpu_percent",
+      "sensor.home_assistant_core_memory_percent",
+      "sensor.home_assistant_operating_system_newest_version",
+      "sensor.home_assistant_operating_system_version",
+      "sensor.home_assistant_supervisor_cpu_percent",
+      "sensor.home_assistant_supervisor_memory_percent",
+      "sensor.last_system_problem",
+      "sensor.recommended_system_mode",
+      "sensor.system_health",
+      "sensor.system_monitor_last_boot",
+      "sensor.system_monitor_memory_free",
+      "sensor.system_monitor_memory_usage",
+      "sensor.system_monitor_processor_use",
+      "sensor.system_problem_count"
+    ],
+    "Kitchen": [
+      "sensor.valetudo_roborocks5_error"
+    ],
+    "Home": [
+      "sensor.myip"
+    ]
+  },
+  "system_surveillance": {
+    "Hestia": [
+      "event.folder_watcher_config_hestia_core_json",
+      "event.folder_watcher_config_hestia_core_patch",
+      "event.folder_watcher_config_hestia_core_generated",
+      "event.folder_watcher_config_hestia_tools_iris_data"
+    ]
+  },
+  "abstraction": {
+    "Unknown": [
+      "binary_sensor.resolved_validated_sensor",
+      "sensor.abstraction_layer"
+    ]
+  },
+  "contact": {
+    "Bedroom": [
+      "binary_sensor.bedroom_contact_sensor_bed_mtr",
+      "binary_sensor.bedroom_contact_sensor_bed_wifi"
+    ],
+    "Entrance": [
+      "binary_sensor.entrance_door_mtr",
+      "binary_sensor.hallway_entrance_door_contact_sensor_wifi"
+    ],
+    "Kitchen": [
+      "binary_sensor.kitchen_contact_sensor_fridge_door_mtr",
+      "binary_sensor.kitchen_contact_sensor_fridge_door_wifi"
+    ]
+  },
+  "connectivity": {
+    "Home": [
+      "binary_sensor.archer_ax53_wan_status",
+      "binary_sensor.matter_server_running",
+      "binary_sensor.mosquitto_broker_running",
+      "binary_sensor.rpi_power_status",
+      "binary_sensor.zigbee2mqtt_bridge_connection_state",
+      "binary_sensor.zigbee2mqtt_running",
+      "sensor.archer_ax53_download_speed",
+      "sensor.archer_ax53_external_ip",
+      "sensor.archer_ax53_upload_speed",
+      "sensor.archer_ax53_uptime",
+      "sensor.archer_ax53_wan_status",
+      "sensor.govee2mqtt_bridge_version",
+      "sensor.matter_server_cpu_percent",
+      "sensor.matter_server_memory_percent",
+      "sensor.matter_server_newest_version",
+      "sensor.matter_server_version",
+      "sensor.mosquitto_broker_cpu_percent",
+      "sensor.mosquitto_broker_memory_percent",
+      "sensor.mosquitto_broker_newest_version",
+      "sensor.mosquitto_broker_version",
+      "sensor.myip",
+      "sensor.speedtest_download",
+      "sensor.speedtest_ping",
+      "sensor.speedtest_upload",
+      "sensor.zigbee2mqtt_bridge_version"
+    ],
+    "Kitchen": [
+      "sensor.valetudo_roborocks5_wifi_signal",
+      "sensor.valetudo_roborocks5_status_flag"
+    ]
+  },
+  "light": {
+    "Bedroom": [
+      "sensor.bedroom_illuminance_msf_001",
+      "sensor.bedroom_illumination",
+      "sensor.vedge_illuminance"
+    ],
+    "Ensuite": [
+      "sensor.ensuite_illumination"
+    ],
+    "Kitchen": [
+      "sensor.kitchen_illumination"
+    ],
+    "Living Room": [
+      "sensor.living_room_aeotec_sensor_illuminance",
+      "sensor.living_room_illuminance_sonoff"
+    ]
+  },
+  "temperature": {
+    "Bedroom": [
+      "sensor.bedroom_smartbutton_temperature",
+      "sensor.bedroom_climate_temperature",
+      "sensor.monstera_ambient_temperature",
+      "sensor.probreeze_temperature"
+    ],
+    "Ensuite": [
+      "sensor.template_ensuite_temperature_validated_002",
+      "sensor.ensuite_climate_temperature",
+      "sensor.ensuite_climate_sensor_temperature"
+    ],
+    "Kitchen": [
+      "sensor.template_kitchen_temperature_validated_001",
+      "sensor.kitchen_climate_temperature"
+    ],
+    "Living Room": [
+      "sensor.living_room_aeotec_sensor_temperature",
+      "sensor.living_room_climate_temperature",
+      "sensor.template_living_room_temperature_validated_003",
+      "sensor.living_room_smartbutton_temperature"
+    ]
+  },
+  "battery_status": {
+    "Bedroom": [
+      "sensor.bedroom_smartbutton_battery",
+      "sensor.bedroom_climate_sensor_battery",
+      "sensor.bedroom_climate_left_battery",
+      "sensor.bedroom_climate_right_battery",
+      "sensor.monstera_soil_sensor_battery",
+      "sensor.cube_battery"
+    ],
+    "Kitchen": [
+      "sensor.kitchen_climate_sensor_battery",
+      "sensor.kitchen_climate_battery",
+      "sensor.valetudo_roborocks5_battery_level"
+    ],
+    "Living Room": [
+      "sensor.living_room_smartbutton_battery",
+      "sensor.living_room_climate_battery",
+      "sensor.aeotec_multipurpose_sensor_battery"
+    ],
+    "Evert": [
+      "sensor.apple_watch_battery"
+    ],
+    "Ensuite": [
+      "sensor.sauna_paraiso_battery",
+      "sensor.body_cardio_battery",
+      "binary_sensor.sauna_paraiso_charging"
+    ]
+  },
+  "air_quality": {
+    "Bedroom": [
+      "sensor.levoit_air_purifier_pm2_5",
+      "sensor.levoit_purifier_air_quality",
+      "sensor.levoit_air_purifier_filter_life"
+    ]
+  },
+  "power_usage": {
+    "Bedroom": [
+      "sensor.bedroom_tv_energy_difference",
+      "sensor.bedroom_tv_energy_saved",
+      "sensor.bedroom_tv_energy",
+      "sensor.bedroom_tv_power_energy",
+      "sensor.bedroom_tv_power"
+    ],
+    "Kitchen": [
+      "sensor.kitchen_cupboards_lightstrip_energy_difference",
+      "sensor.kitchen_cupboards_lightstrip_energy"
+    ],
+    "Living Room": [
+      "sensor.fairy_stringlights_energy_difference",
+      "sensor.fairy_stringlights_energy"
+    ]
+  },
+  "media_state": {
+    "Bedroom": [
+      "sensor.bedroom_tv_channel_name",
+      "sensor.bedroom_tv_channel",
+      "sensor.bedroom_tv_volume"
+    ]
+  },
+  "light_state": {
+    "Bedroom": [
+      "sensor.bedroom_lighting_brightness",
+      "sensor.bedroom_lighting_temperature",
+      "sensor.circadian_brightness_bedroom",
+      "sensor.circadian_color_temp_bedroom",
+      "sensor.monitor_backlight_status"
+    ],
+    "Ensuite": [
+      "sensor.circadian_brightness_ensuite",
+      "sensor.circadian_color_temp_ensuite",
+      "sensor.ensuite_lighting_brightness",
+      "sensor.ensuite_lighting_temperature"
+    ],
+    "Hallway": [
+      "sensor.circadian_brightness_hallway_downstairs",
+      "sensor.circadian_brightness_hallway_upstairs",
+      "sensor.circadian_color_temp_hallway_downstairs",
+      "sensor.circadian_color_temp_hallway_upstairs",
+      "sensor.hallway_downstairs_lighting_brightness",
+      "sensor.hallway_downstairs_lighting_temp",
+      "sensor.hallway_upstairs_lighting_brightness",
+      "sensor.hallway_upstairs_lighting_temp"
+    ],
+    "Kitchen": [
+      "sensor.circadian_brightness_kitchen",
+      "sensor.circadian_color_temp_kitchen",
+      "sensor.kitchen_lighting_brightness",
+      "sensor.kitchen_lighting_temp"
+    ],
+    "Living Room": [
+      "sensor.circadian_brightness_living_room",
+      "sensor.circadian_color_temp_living_room",
+      "sensor.living_room_lighting_brightness",
+      "sensor.living_room_lighting_temperature"
+    ],
+    "Home": [
+      "sensor.circadian_values",
+      "sensor.current_circadian_period"
+    ]
+  },
+  "humidity": {
+    "Bedroom": [
+      "sensor.bedroom_climate_humidity",
+      "sensor.probreeze_humidity"
+    ],
+    "Ensuite": [
+      "sensor.ensuite_humidity_validated",
+      "sensor.ensuite_climate_humidity",
+      "sensor.ensuite_climate_sensor_humidity"
+    ],
+    "Kitchen": [
+      "sensor.kitchen_humidity_validated",
+      "sensor.kitchen_climate_humidity"
+    ],
+    "Living Room": [
+      "sensor.living_room_broadlink_humidity"
+    ]
+  },
+  "ambient_weather": {
+    "London": [
+      "sensor.clapham_dew_point",
+      "sensor.clapham_feels_like",
+      "sensor.clapham_hourly_rain",
+      "sensor.clapham_max_daily_gust",
+      "sensor.clapham_relative_pressure",
+      "sensor.clapham_uv_index",
+      "sensor.clapham_wind_gust",
+      "sensor.clapham_wind_speed",
+      "sensor.clapham_humidity_outside",
+      "sensor.clapham_daily_rain"
+    ]
+  },
+  "input_control": {
+    "Bedroom": [
+      "sensor.cube_side"
+    ]
+  },
+  "system_config": {
+    "Hermes": [
+      "sensor.hermes_config"
+    ],
+    "Theia": [
+      "sensor.theia_config"
+    ]
+  },
+  "sun_cycle": {
+    "Home": [
+      "sensor.sun_next_dawn",
+      "sensor.sun_next_dusk",
+      "sensor.sun_next_midnight",
+      "sensor.sun_next_noon",
+      "sensor.sun_next_rising",
+      "sensor.sun_next_setting"
+    ]
+  },
+  "usage_statistics": {
+    "Kitchen": [
+      "sensor.valetudo_roborocks5_current_statistics_area",
+      "sensor.valetudo_roborocks5_current_statistics_time",
+      "sensor.valetudo_roborocks5_events",
+      "sensor.valetudo_roborocks5_main_brush",
+      "sensor.valetudo_roborocks5_main_filter",
+      "sensor.valetudo_roborocks5_map_segments",
+      "sensor.valetudo_roborocks5_right_brush",
+      "sensor.valetudo_roborocks5_sensor_cleaning",
+      "sensor.valetudo_roborocks5_total_statistics_area",
+      "sensor.valetudo_roborocks5_total_statistics_count",
+      "sensor.valetudo_roborocks5_total_statistics_time"
+    ]
+  },
+  "plant_metrics": {
+    "Monstera": [
+      "sensor.monstera_soil_moisture"
+    ]
+  },
+  "health_metrics": {
+    "Evert": [
+      "sensor.withings_average_heart_rate",
+      "sensor.withings_average_respiratory_rate",
+      "sensor.withings_bone_mass",
+      "sensor.withings_breathing_disturbances_intensity",
+      "sensor.withings_calories_burnt_last_workout",
+      "sensor.withings_deep_sleep",
+      "sensor.withings_distance_travelled_last_workout",
+      "sensor.withings_sleep_analyzer_distance_travelled_today",
+      "sensor.withings_sleep_analyzer_elevation_change_today",
+      "sensor.withings_fat_free_mass",
+      "sensor.withings_fat_mass",
+      "sensor.withings_fat_ratio",
+      "sensor.withings_heart_pulse",
+      "sensor.withings_hydration",
+      "sensor.withings_last_workout_duration",
+      "sensor.withings_last_workout_type",
+      "sensor.withings_light_sleep",
+      "sensor.withings_maximum_heart_rate",
+      "sensor.withings_maximum_respiratory_rate",
+      "sensor.withings_minimum_heart_rate",
+      "sensor.withings_minimum_respiratory_rate",
+      "sensor.withings_muscle_mass",
+      "sensor.withings_pause_during_last_workout",
+      "sensor.withings_rem_sleep",
+      "sensor.withings_sleep_score",
+      "sensor.withings_snoring_episode_count",
+      "sensor.withings_snoring",
+      "sensor.withings_sleep_analyzer_steps_today",
+      "sensor.withings_time_to_sleep",
+      "sensor.withings_time_to_wakeup",
+      "sensor.withings_sleep_analyzer_total_calories_burnt_today",
+      "sensor.withings_wakeup_count",
+      "sensor.withings_wakeup_time",
+      "sensor.withings_weight_goal",
+      "sensor.withings_weight"
+    ]
+  },
+  "climate_control": {
+    "Bedroom": [
+      "sensor.bedroom_climate_left_closing_steps",
+      "sensor.bedroom_climate_left_idle_steps",
+      "sensor.bedroom_climate_left_weekly_schedule",
+      "sensor.bedroom_climate_left_valve_closing_limit_voltage",
+      "sensor.bedroom_climate_left_valve_motor_running_voltage",
+      "sensor.bedroom_climate_left_valve_opening_limit_voltage",
+      "sensor.bedroom_climate_right_closing_steps",
+      "sensor.bedroom_climate_right_idle_steps",
+      "sensor.bedroom_climate_right_weekly_schedule",
+      "sensor.bedroom_climate_right_valve_closing_limit_voltage",
+      "sensor.bedroom_climate_right_valve_motor_running_voltage",
+      "sensor.bedroom_climate_right_valve_opening_limit_voltage"
+    ],
+    "Kitchen": [
+      "sensor.kitchen_climate_closing_steps",
+      "sensor.kitchen_climate_idle_steps",
+      "sensor.kitchen_climate_weekly_schedule",
+      "sensor.kitchen_climate_valve_closing_limit_voltage",
+      "sensor.kitchen_climate_valve_motor_running_voltage",
+      "sensor.kitchen_climate_valve_opening_limit_voltage"
+    ],
+    "Living Room": [
+      "sensor.living_room_climate_closing_steps",
+      "sensor.living_room_climate_idle_steps",
+      "sensor.living_room_climate_weekly_schedule",
+      "sensor.living_room_climate_valve_closing_limit_voltage",
+      "sensor.living_room_climate_valve_motor_running_voltage",
+      "sensor.living_room_climate_valve_opening_limit_voltage"
+    ]
+  }
+}

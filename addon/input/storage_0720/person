@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "evert",
+        "name": "Evert",
+        "user_id": "6acd54c24a1a4b62afe638118d6e603c",
+        "device_trackers": [
+          "device_tracker.macbook",
+          "device_tracker.ephone_uk"
+        ],
+        "picture": null
+      }
+    ]
+  }
+}

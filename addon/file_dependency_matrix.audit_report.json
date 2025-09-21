@@ -1,0 +1,88 @@
+{
+  "validation_date": "2025-07-09",
+  "status": "INCOMPLETE - ACTION REQUIRED",
+  "missing_scripts": [],
+  "vague_entries": [
+    {
+      "script": "alpha_sensor_registry_backfill.py",
+      "issue": "Reads/writes listed as 'input/output files as per script logic'. Must enumerate actual files."
+    },
+    {
+      "script": "autocluster_audit.py",
+      "issue": "Reads/writes listed as 'input/output files as per script logic'. Must enumerate actual files."
+    },
+    {
+      "script": "fingerprint_entity_reconciliation.py",
+      "issue": "Reads/writes listed as 'input/output files as per script logic'. Must enumerate actual files."
+    }
+  ],
+  "unresolved_config_paths": [
+    {
+      "script": "regenerate_alpha_sensor_registry_v3_002.py",
+      "unresolved": [
+        "core_area_registry (from config)",
+        "core_entity_registry (from config)",
+        "manual_confirmed_matches (from config)",
+        "alpha_sensor_registry (from config)",
+        "alpha_sensor_registry_debug (from config)",
+        "alpha_sensor_registry_mapping_trace (from config)",
+        "alpha_sensor_registry_validation_report (from config)",
+        "cluster_coverage_metrics (from config)"
+      ]
+    },
+    {
+      "script": "enrich_with_devtools_metadata.py",
+      "unresolved": [
+        "omega_enriched_area_patched (from config)",
+        "core_entity_registry (from config)",
+        "omega_enriched_devtools (from config)"
+      ]
+    },
+    {
+      "script": "patch_area_room_zone.py",
+      "unresolved": [
+        "output_paths[omega_enriched_stage2] (from config)",
+        "input_paths[core_area_registry] (from config)",
+        "output_paths[omega_enriched_area_patched] (from config)"
+      ]
+    },
+    {
+      "script": "generate_cleaned_device_registry.py",
+      "unresolved": [
+        "input_paths[core_device_registry] (from config)",
+        "output_paths[omega_cleaned] (from config)"
+      ]
+    },
+    {
+      "script": "regenerate_alpha_sensor_registry_v3.py",
+      "unresolved": [
+        "output_paths[manual_confirmed_matches] (from config)",
+        "output_paths[fingerprinting_run] (from config)",
+        "input_paths[core_entity_registry] (from config)",
+        "output_paths[alpha_sensor_registry] (from config)",
+        "output_paths[alpha_sensor_registry_debug] (from config)",
+        "output_paths[alpha_sensor_registry_validation_report] (from config)",
+        "output_paths[cluster_coverage_metrics] (from config)"
+      ]
+    },
+    {
+      "script": "audit_entity_area_mapping.py",
+      "unresolved": [
+        "input_paths[core_entity_registry] (from config)",
+        "input_paths[core_device_registry] (from config)",
+        "output_paths[entity_area_resolution_report] (from config)",
+        "output_paths[entity_area_resolution_summary] (from config)"
+      ]
+    }
+  ],
+  "orphaned_files": [
+    "master.omega_registry/output/omega_device_registry.enrichment_blockers.csv",
+    "master.omega_registry/output/omega_device_registry.normalization_changelog.md",
+    "master.omega_registry/output/omega_device_registry.normalized.enriched.json",
+    "master.omega_registry/output/omega_registry_devtools_enrichment_report.txt",
+    "master.omega_registry/output/auto_candidate_matches.csv",
+    "master.omega_registry/output/entity_id_migration_map.annotated.v4.full.json",
+    "master.omega_registry/output/entity_id_migration_map.annotated.v4.merged.json"
+  ],
+  "notes": "- All scripts are listed or justified in exclusions.\n- Vague entries and unresolved config paths must be replaced with explicit, resolved file paths.\n- Orphaned files are present in output but not referenced as read by any script.\n- See OUTPUT_DEPENDENCY_MAP in generate_registry_index.py for authoritative output mapping.\n- Manual review required for scripts with vague or dynamic file logic."
+}

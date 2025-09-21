@@ -1,0 +1,434 @@
+# Output dependency map for registry_rehydration_local
+# Maps output files to their generating scripts, references, and metadata
+
+gray_zone_matches.csv:
+  dependencies: [fingerprint_entity_reconciliation.py]
+  references:
+    [
+      entity_fingerprint_map.json,
+      manual_confirmed_matches.json,
+      unmatched_entity_trace.json,
+    ]
+  summary: Gray-zone entity matches for manual review, produced by fingerprint_entity_reconciliation.py.
+  tags: [output, csv, fingerprinting]
+
+entity_fingerprint_map.json:
+  dependencies: [fingerprint_entity_reconciliation.py]
+  references:
+    [
+      manual_confirmed_matches.json,
+      fingerprint_mapping_trace.json,
+      fingerprint_coverage_report.json,
+      fingerprint_inference_trace.json,
+    ]
+  summary: Final entity matches from fingerprinting, with area inheritance and traceability.
+  tags: [output, json, fingerprinting, area_inheritance]
+
+manual_confirmed_matches.json:
+  dependencies: [fingerprint_entity_reconciliation.py]
+  references: []
+  summary: Manual confirmations of entity matches.
+  tags: [output, json, fingerprinting]
+
+unmatched_entity_trace.json:
+  dependencies: [fingerprint_entity_reconciliation.py]
+  references: []
+  summary: Unmatched or ambiguous entities for review.
+  tags: [output, json, fingerprinting]
+
+fingerprint_coverage_trace.json:
+  dependencies: [fingerprint_entity_reconciliation.py]
+  references: [entity_fingerprint_map.json]
+  summary: Schema coverage metrics and trace validation.
+  tags: [output, json, coverage, fingerprint_audit]
+
+fingerprint_mapping_trace.json:
+  dependencies: [fingerprint_entity_reconciliation.py]
+  references: [entity_fingerprint_map.json, fingerprint_coverage_report.json]
+  summary: Per-entity fingerprint traceability and source resolution audit.
+  tags: [output, json, trace, fingerprint_resolution, mapping]
+
+fingerprint_coverage_report.json:
+  dependencies: [fingerprint_entity_reconciliation.py]
+  references: [entity_fingerprint_map.json]
+  summary: Coverage report for fingerprinted entities, including area inheritance recovery stats.
+  tags: [output, json, coverage, area_inheritance, report]
+
+fingerprint_inference_trace.json:
+  dependencies: [fingerprint_entity_reconciliation.py]
+  references: [entity_fingerprint_map.json]
+  summary: Detailed per-entity area/role/slug resolution path, including device inheritance logic.
+  tags:
+    [
+      output,
+      json,
+      inference_trace,
+      area_role_debug,
+      strict_resolution,
+      area_inheritance,
+    ]
+
+fingerprint_inference_failures.log:
+  dependencies: [fingerprint_entity_reconciliation.py]
+  references: [entity_fingerprint_map.json]
+  summary: Line-separated list of entities failing fingerprint resolution.
+  tags: [output, log, rejection_log, fingerprint_failures]
+
+missing_area_inheritance_diagnostics.json:
+  dependencies: [missing_area_inheritance_diagnostics.py]
+  references:
+    [entity_fingerprint_map.json, omega_device_registry.enriched.canonical.json]
+  summary: Diagnostics for entities missing area inheritance from device registry.
+  tags: [output, json, diagnostics, area_inheritance, audit]
+
+unresolved_entity_rejection_audit.json:
+  dependencies: [generate_omega_room_registry.py]
+  references: [unresolved_entities.log.json, entity_fingerprint_map.json]
+  summary: Diagnostic audit of unresolved entities and rejection reasons.
+  tags: [output, json, audit, unresolved, rejection]
+
+entity_id_migration_map.annotated.v4.full.json:
+  dependencies: [expand_migration_map_full_role_coverage.py]
+  references: [alpha_sensor_registry.json]
+  summary: Entity-level pre/post ID mapping and canonical entity key linkage.
+  tags: [output, json, migration_map, source_of_truth, canonical_entity_key]
+
+migration_map_role_coverage_report.json:
+  dependencies: [expand_migration_map_full_role_coverage.py]
+  references: [entity_id_migration_map.annotated.v4.full.json]
+  summary: Role coverage report, used for identifying mapping gaps.
+  tags: [output, json, role_coverage, report]
+
+migration_map_role_gap_trace.json:
+  dependencies: [patch_role_map_gap_analysis.py]
+  references: [migration_map_role_coverage_report.json]
+  summary: Trace of unmapped clusters by role.
+  tags: [output, json, role_gap, trace]
+
+auto_candidate_matches.csv:
+  dependencies: [patch_role_map_gap_analysis.py]
+  references: [migration_map_role_gap_trace.json]
+  summary: Auto-inferred candidate matches for unmapped clusters.
+  tags: [output, csv, candidate_matches]
+
+omega_device_registry.enriched.canonical.devtools_enriched.json:
+  dependencies:
+    [
+      backfill_omega_registry_from_legacy.py,
+      enrich_omega_device_registry_stage2.py,
+      enrich_with_devtools_metadata.py,
+    ]
+  references: []
+  summary: Main enriched omega device registry.
+  tags: [output, json, registry]
+
+omega_device_registry.normalized.enriched.json:
+  dependencies: [normalize_and_enrich_registry.py]
+  references: [omega_device_registry.enriched.canonical.devtools_enriched.json]
+  summary: Final canonical registry after normalization.
+  tags: [output, json, registry, normalized]
+
+omega_device_registry.cleaned.v2.json:
+  dependencies: [generate_cleaned_device_registry.py]
+  references: [input/core.device_registry]
+  summary: Cleaned omega device registry.
+  tags: [output, json, registry, cleaned]
+
+alpha_sensor_registry.json:
+  dependencies:
+    [
+      regenerate_alpha_sensor_registry_v3.py,
+      generate_alpha_sensor_registry.py,
+      emit_alpha_sensor_registry.py,
+    ]
+  references: [entity_fingerprint_map.json]
+  summary: Alpha sensor registry clusters (Tier 3+), consolidated. Emitted to output/alpha_sensor/ by all relevant scripts.
+  tags: [output, json, alpha, sensor, registry]
+
+alpha_sensor_registry.validation_report.json:
+  dependencies:
+    [
+      regenerate_alpha_sensor_registry_v3.py,
+      generate_alpha_sensor_registry.py,
+      emit_alpha_sensor_registry.py,
+    ]
+  references: [alpha_sensor_registry.json]
+  summary: Validation report for alpha sensor registry, emitted to output/alpha_sensor/.
+  tags: [output, json, validation, alpha, sensor]
+
+alpha_sensor_registry.debug.log.json:
+  dependencies:
+    [
+      regenerate_alpha_sensor_registry_v3.py,
+      generate_alpha_sensor_registry.py,
+      emit_alpha_sensor_registry.py,
+    ]
+  references: [alpha_sensor_registry.json]
+  summary: Debug log for alpha sensor registry emission, emitted to output/alpha_sensor/.
+  tags: [output, json, debug, alpha, sensor]
+
+cluster_coverage_metrics.json:
+  dependencies:
+    [regenerate_alpha_sensor_registry_v3.py, audit_cluster_coverage.py]
+  references:
+    [
+      alpha_sensor_registry.json,
+      entity_fingerprint_map.json,
+      unclustered_entity_trace.json,
+      input/core.entity_registry,
+    ]
+  summary: Cluster coverage metrics (merged format, timestamped). Includes coverage_percent, covered_entities, total_entities, per_tier_counts, total_clusterable, clustered, unclustered. Emitted by both regenerate_alpha_sensor_registry_v3.py and audit_cluster_coverage.py.
+  tags:
+    [output, json, metrics, cluster_coverage, alpha, sensor, audit, timestamped]
+
+entity_id_migration_map.annotated.v4.merged.json:
+  dependencies: [cluster_merge_trace.py]
+  references: [entity_id_migration_map.annotated.v4.full.json]
+  summary: Merged migration map after cluster merge.
+  tags: [output, json, migration_map, merged]
+
+final_merge_delta_trace.json:
+  dependencies: [merge_final_registry.py]
+  references: [final_merged_registry.json]
+  summary: Delta trace of final registry merge.
+  tags: [output, json, merge, delta, trace]
+
+final_merge_validation_report.json:
+  dependencies: [merge_final_registry.py]
+  references: [final_merged_registry.json]
+  summary: Validation report for final merged registry.
+  tags: [output, json, merge, validation, report]
+
+final_merged_registry.json:
+  dependencies: [merge_final_registry.py]
+  references:
+    [output/omega_room/omega_room_registry.json, alpha_sensor_registry.json]
+  summary: Final merged registry after all phases.
+  tags: [output, json, registry, merged, final]
+
+merge_commit.lock.yaml:
+  dependencies: [merge_final_registry.py]
+  references: [final_merged_registry.json]
+  summary: Lockfile for merge commit, tracks registry state.
+  tags: [output, yaml, merge, lock, contract]
+
+next_registry_merge_contract.yaml:
+  dependencies: [generate_omega_room_registry.py]
+  references: [omega_room_registry.json]
+  summary: Contract for next registry merge, includes conditions and audit trail.
+  tags: [output, yaml, merge, contract]
+
+TARBALL-ROUNDTRIP-AUDIT-V2-PHASE7-MERGED.tar.gz:
+  dependencies: [merge_final_registry.py]
+  references:
+    [
+      final_merged_registry.json,
+      final_merge_delta_trace.json,
+      final_merge_validation_report.json,
+    ]
+  summary: Archive of all outputs and audit logs for Phase 7 merged registry.
+  tags: [output, archive, tarball, phase7, merged]
+
+TARBALL-OMEGA-ROOM-REGISTRY-STRICT-REBUILD.tar.gz:
+  dependencies: [generate_omega_room_registry.py]
+  references:
+    [
+      output/omega_room/omega_room_registry.json,
+      room_registry_completeness_audit.json,
+      unresolved_entities.log.json,
+      rehydration_delta_log.json,
+    ]
+  summary: Strict-mode omega room registry archive.
+  tags: [output, archive, tarball, omega, room, strict]
+
+TARBALL-OMEGA-ROOM-REGISTRY-20250717-RELAXED.tar.gz:
+  dependencies: [generate_omega_room_registry.py]
+  references:
+    [
+      output/omega_room/omega_room_registry.json,
+      room_registry_completeness_audit.json,
+      unresolved_entities.log.json,
+      rehydration_delta_log.json,
+    ]
+  summary: Relaxed-mode omega room registry archive.
+  tags: [output, archive, tarball, omega, room, relaxed]
+
+PATCH-ROUNDTRIP-AUDIT-V2.log:
+  dependencies: [all phases]
+  references:
+    [
+      output/omega_room/omega_room_registry.json,
+      alpha_sensor_registry.json,
+      final_merged_registry.json,
+    ]
+  summary: Chronological patch and validation audit log.
+  tags: [output, log, patch, audit, chronological]
+
+copilot_patchlog_overview.log:
+  dependencies: [all phases]
+  references: [PATCH-ROUNDTRIP-AUDIT-V2.log]
+  summary: Copilot patch execution and summary log.
+  tags: [output, log, patch, summary, audit]
+
+conversation_full_history.log:
+  dependencies: [all phases]
+  references: [PATCH-ROUNDTRIP-AUDIT-V2.log, copilot_patchlog_overview.log]
+  summary: Full chronological chat and patch history.
+  tags: [output, log, conversation, history, audit]
+
+file_dependency_matrix.json:
+  dependencies:
+    [generate_file_dependency_matrix.py, harden_file_dependency_matrix.py]
+  references: [all scripts]
+  summary: Script-to-file read/write mapping for project, fully validated and hardened.
+  tags: [output, json, dependency, matrix, audit, hardened]
+
+file_dependency_matrix.audit_report.json:
+  dependencies:
+    [generate_file_dependency_matrix.py, harden_file_dependency_matrix.py]
+  references: [file_dependency_matrix.json]
+  summary: Audit report for file dependency matrix, including validation and hardening results.
+  tags: [output, json, dependency, matrix, audit, report, hardened]
+
+file_trace_manifest.v1.json:
+  dependencies: [generate_registry_index.py]
+  references: [all files]
+  summary: File usage manifest for audit and traceability.
+  tags: [output, json, manifest, trace, audit]
+
+registry_rehydration_index.log:
+  dependencies: [generate_registry_index.py]
+  references: [all files]
+  summary: Machine-friendly index of all files in registry_rehydration_local.
+  tags: [output, log, index, manifest]
+
+cluster_coverage_metrics.<timestamp>.json:
+  dependencies:
+    [regenerate_alpha_sensor_registry_v3.py, audit_cluster_coverage.py]
+  references:
+    [
+      alpha_sensor_registry.json,
+      entity_fingerprint_map.json,
+      unclustered_entity_trace.json,
+    ]
+  summary: Cluster coverage metrics (merged format, timestamped). Includes coverage_percent, covered_entities, total_entities, per_tier_counts, total_clusterable, clustered, unclustered. Emitted by both regenerate_alpha_sensor_registry_v3.py and audit_cluster_coverage.py.
+  tags: [output, json, metrics, cluster_coverage, timestamped]
+
+advanced_unresolved_cluster_diagnostics.<timestamp>.json:
+  dependencies: [emit_advanced_unresolved_cluster_diagnostics.py]
+  references: [alpha_sensor_registry.json]
+  summary: Diagnostics for unresolved clusters with advanced reasons. Output is timestamped in data/.
+  tags: [output, json, diagnostics, unresolved, timestamped]
+
+clusters_with_device_but_missing_area.<timestamp>.json:
+  dependencies: [diagnose_device_without_area.py]
+  references: [alpha_sensor_registry.json, core.device_registry.json]
+  summary: Clusters where at least one device exists but has no mapped area_id. Output is timestamped in data/.
+  tags: [output, json, diagnostics, area_inheritance, timestamped]
+
+analyze_unresolved_cluster_diagnostics.py:
+  dependencies: [analyze_unresolved_cluster_diagnostics.py]
+  references: [advanced_unresolved_cluster_diagnostics.<timestamp>.json]
+  summary: Script for statistical and reason breakdown of unresolved clusters. Output is analysis/stats or stdout.
+  tags: [script, analysis, diagnostics, unresolved]
+
+role_resolution_diagnostics.<timestamp>.json:
+  dependencies: [emit_role_resolution_diagnostics.py]
+  references: [output/alpha_sensor/alpha_sensor_registry.json]
+  summary: Diagnostics for clusters with unclassified or diagnostic roles, including inference attempts and reasons. Emitted by emit_role_resolution_diagnostics.py.
+  tags: [output, json, diagnostics, role_inference, timestamped]
+
+entities.normalized.<timestamp>.json:
+  dependencies: [preprocess_entity_registry.py]
+  references: [input/core.entity_registry]
+  summary: Structurally normalized entity registry, preserving key auxiliary fields for downstream semantic enrichment. Timestamped output in data/.
+  tags: [output, json, normalization, entity_registry, timestamped]
+
+entity_preprocessing_log.<timestamp>.json:
+  dependencies: [preprocess_entity_registry.py]
+  references: [input/core.entity_registry]
+  summary: Log of normalization run, including entity counts and status. Timestamped output in data/.
+  tags: [output, json, log, normalization, timestamped]
+
+aux_field_stats.<timestamp>.txt:
+  dependencies: [aux_field_stats.py]
+  references: [input/core.entity_registry]
+  summary: Statistics on non-null presence of auxiliary fields across all entities. Timestamped output in data/.
+
+entity_id_migration_map.rosetta.v5.json:
+  dependencies: [generate_entity_id_migration_map_rosetta_v5.py]
+  references:
+    [
+      data/entity_fingerprint_map.json,
+      input/pre-reboot.hestia_registries/alpha_sensor_registry.json,
+      input/pre-reboot.hestia_registries/omega_device_registry.json,
+      input/pre-reboot.ha_registries/core.entity_registry,
+    ]
+  summary: Canonical entity ID migration map (Rosetta v5). All diagnostics and match confidence included. Used for rehydration and audit.
+  tags: [output, json, migration_map, rosetta_v5, canonical]
+
+rosetta_v5_match_summary.json:
+  dependencies: [generate_entity_id_migration_map_rosetta_v5.py]
+  references: [entity_id_migration_map.rosetta.v5.json]
+  summary: Match summary and confidence histogram for Rosetta v5 migration map.
+  tags: [output, json, diagnostics, match_summary, rosetta_v5]
+
+unmatched_pre_reboot_entities.json:
+  dependencies: [generate_entity_id_migration_map_rosetta_v5.py]
+  references: [entity_id_migration_map.rosetta.v5.json]
+  summary: List of pre-reboot entities with no match in Rosetta v5.
+  tags: [output, json, diagnostics, unmatched, rosetta_v5]
+
+rosetta_v5_run_summary.log:
+  dependencies: [generate_entity_id_migration_map_rosetta_v5.py]
+  references: [entity_id_migration_map.rosetta.v5.json]
+  summary: Run summary and diagnostics for Rosetta v5 migration map generation.
+  tags: [output, log, diagnostics, run_summary, rosetta_v5]
+
+pre_reboot_entity_filtering_diagnostics.json:
+  dependencies: [generate_entity_id_migration_map_rosetta_v5.py]
+  references: [entity_id_migration_map.rosetta.v5.json]
+  summary: Filtering diagnostics for pre-reboot entities in Rosetta v5 pipeline.
+  tags: [output, json, diagnostics, filtering, rosetta_v5]
+
+pre_reboot_canonical_id_issues.json:
+  dependencies: [generate_entity_id_migration_map_rosetta_v5.py]
+  references: [entity_id_migration_map.rosetta.v5.json]
+  summary: Canonical ID issues and nulls for pre-reboot entities in Rosetta v5 pipeline.
+  tags: [output, json, diagnostics, canonical_id, rosetta_v5]
+
+pre_reboot_entities_by_source.json:
+  dependencies: [generate_entity_id_migration_map_rosetta_v5.py]
+  references: [entity_id_migration_map.rosetta.v5.json]
+  summary: Per-source breakdown of pre-reboot entities in Rosetta v5 pipeline.
+  tags: [output, json, diagnostics, by_source, rosetta_v5]
+
+migration_delta_v4_to_v5/added_in_v5.json:
+  dependencies: [delta_analysis_v4_to_v5.py]
+  references:
+    [
+      entity_id_migration_map.annotated.v4.full.json,
+      entity_id_migration_map.rosetta.v5.json,
+    ]
+  summary: Entries present in v5 but not in v4.
+  tags: [output, json, delta, migration_map, v4_to_v5]
+
+migration_delta_v4_to_v5/missing_from_v5.json:
+  dependencies: [delta_analysis_v4_to_v5.py]
+  references:
+    [
+      entity_id_migration_map.annotated.v4.full.json,
+      entity_id_migration_map.rosetta.v5.json,
+    ]
+  summary: Entries present in v4 but not in v5.
+  tags: [output, json, delta, migration_map, v4_to_v5]
+
+migration_delta_v4_to_v5/matched_diff.json:
+  dependencies: [delta_analysis_v4_to_v5.py]
+  references:
+    [
+      entity_id_migration_map.annotated.v4.full.json,
+      entity_id_migration_map.rosetta.v5.json,
+    ]
+  summary: Entries with same pre-entity but different match/confidence between v4 and v5.
+  tags: [output, json, delta, migration_map, v4_to_v5]

@@ -1,0 +1,18 @@
+script: scripts/hestia_pre_reboot_parser.py
+outputs:
+  - path: canonical/diagnostics/legacy_registry_enrichment_summary.yaml
+    must_exist: true
+    must_contain: true
+    min_entries: 1
+    required_keys: ["entity_id", "device_class", "area_id"]
+    on_failure: auto_review_io_logic
+  - path: canonical/joins/pre_reboot_field_join_hints.json
+    must_exist: true
+    must_contain: true
+    min_entries: 1
+  - path: canonical/logs/hestia_pre_reboot_field_diagnostics.log
+    must_exist: true
+    must_contain: true
+  - path: canonical/logs/hestia_pre_reboot_schema_drift.json
+    must_exist: true
+    must_contain: true

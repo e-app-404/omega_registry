@@ -1,0 +1,100 @@
+[
+  {
+    "cluster_id": "bedroom_occupancy_illumination",
+    "post_reboot_entity_ids": ["sensor.bedroom_occupance_alpha_illumination"],
+    "integration_sources": ["mqtt"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "bedroom_occupancy_sensitivity",
+    "post_reboot_entity_ids": ["select.bedroom_occupance_alpha_occupancy_sensitivity"],
+    "integration_sources": ["mqtt"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "bedroom_occupancy_timeout",
+    "post_reboot_entity_ids": ["number.bedroom_occupance_alpha_occupancy_timeout"],
+    "integration_sources": ["mqtt"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "kitchen_occupancy_illumination",
+    "post_reboot_entity_ids": ["sensor.kitchen_occupancy_omega_illumination"],
+    "integration_sources": ["tplink"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "kitchen_occupancy_sensitivity",
+    "post_reboot_entity_ids": ["select.kitchen_occupancy_omega_occupancy_sensitivity"],
+    "integration_sources": ["tplink"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "kitchen_occupancy_timeout",
+    "post_reboot_entity_ids": ["number.kitchen_occupancy_omega_occupancy_timeout"],
+    "integration_sources": ["tplink"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "kitchen_occupancy",
+    "post_reboot_entity_ids": ["binary_sensor.kitchen_occupancy_omega_occupancy", "binary_sensor.kitchen_occupancy_matter_alpha_occupancy"],
+    "integration_sources": ["tplink", "matter"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "kitchen_motion",
+    "post_reboot_entity_ids": ["binary_sensor.kitchen_motion_alpha_motion"],
+    "integration_sources": ["smartthings"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "ensuite_occupancy_illumination",
+    "post_reboot_entity_ids": ["sensor.ensuite_occupancy_omega_illumination"],
+    "integration_sources": ["tplink"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "ensuite_occupancy_sensitivity",
+    "post_reboot_entity_ids": ["select.ensuite_occupancy_omega_occupancy_sensitivity"],
+    "integration_sources": ["tplink"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "ensuite_occupancy_timeout",
+    "post_reboot_entity_ids": ["number.ensuite_occupancy_omega_occupancy_timeout"],
+    "integration_sources": ["tplink"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "ensuite_occupancy",
+    "post_reboot_entity_ids": ["binary_sensor.ensuite_occupancy_omega_occupancy"],
+    "integration_sources": ["tplink"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "living_room_occupancy",
+    "post_reboot_entity_ids": ["binary_sensor.living_room_occupancy_alpha_occupancy"],
+    "integration_sources": ["smartthings"],
+    "protocol_markers": ["fingerprint"],
+    "last_state_timestamps": []
+  },
+  {
+    "cluster_id": "entrance_motion_cloud_connection",
+    "post_reboot_entity_ids": ["binary_sensor.entrance_door_motion_tplink_alpha_cloud_connection"],
+    "integration_sources": ["tplink"],
+    "protocol_markers": ["manual_confirmed"],
+    "last_state_timestamps": []
+  }
+]

@@ -1,0 +1,516 @@
+Transfer starting: 268 files
+.d..t.... ./
+>f+++++++ .DS_Store
+          12292 100%    4.12MB/s   00:00:00 (xfer#1, to-check=1/268)
+>f+++++++ omega_registry_generator.log
+       26927702 100%   56.34MB/s   00:00:00 (xfer#2, to-check=2/268)
+>f+++++++ unresolved_fields_patch.json
+         916611 100%  258.62MB/s   00:00:00 (xfer#3, to-check=3/268)
+.d..t.... analytics/
+>f+++++++ analytics/analyze_omega_registry.latest.json
+          11316 100%   47.35MB/s   00:00:00 (xfer#4, to-check=5/268)
+>f+++++++ analytics/analyze_omega_registry.log
+          17161 100%    9.81MB/s   00:00:00 (xfer#5, to-check=6/268)
+>f+++++++ analytics/copilot_analytics_output.json
+           5827 100%   97.52MB/s   00:00:00 (xfer#6, to-check=7/268)
+>f+++++++ analytics/device_flatmap.metrics.json
+            247 100%    2.59MB/s   00:00:00 (xfer#7, to-check=8/268)
+>f+++++++ analytics/entity_flatmap.metrics.json
+            249 100%    3.89MB/s   00:00:00 (xfer#8, to-check=9/268)
+>f+++++++ analytics/hydration_coverage_report.json
+           2287 100%   56.12MB/s   00:00:00 (xfer#9, to-check=10/268)
+>f+++++++ analytics/metrics_diff_report.json
+            132 100%    1.40MB/s   00:00:00 (xfer#10, to-check=11/268)
+>f+++++++ analytics/omega_registry_analytics.latest.json
+           6817 100%    9.42MB/s   00:00:00 (xfer#11, to-check=12/268)
+>f.st.... analytics/omega_registry_metrics.log
+         102671 100%   46.19MB/s   00:00:00 (xfer#12, to-check=13/268)
+>f+++++++ analytics/pipeline_metrics.latest.json
+          11484 100%   22.63MB/s   00:00:00 (xfer#13, to-check=14/268)
+>f+++++++ analytics/registry_domain_distribution.json
+             99 100%    2.77MB/s   00:00:00 (xfer#14, to-check=15/268)
+cd+++++++ audit/
+>f+++++++ audit/.DS_Store
+           6148 100%   15.15MB/s   00:00:00 (xfer#15, to-check=17/268)
+>f+++++++ audit/CONTRACT_REALIZATION_AUDIT_20250721.log
+           8741 100%   46.31MB/s   00:00:00 (xfer#16, to-check=18/268)
+>f+++++++ audit/alpha_room_registry_sanitization.log
+            468 100%    3.49MB/s   00:00:00 (xfer#17, to-check=19/268)
+>f+++++++ audit/anchor_field_audit.json
+            903 100%    3.20MB/s   00:00:00 (xfer#18, to-check=20/268)
+>f+++++++ audit/contract_compliance_report.json
+            164 100%    1.24MB/s   00:00:00 (xfer#19, to-check=21/268)
+>f+++++++ audit/contract_compliance_report.pretty.json
+            170 100%  703.35KB/s   00:00:00 (xfer#20, to-check=22/268)
+>f+++++++ audit/field_population_audit.json
+         214569 100%  151.10MB/s   00:00:00 (xfer#21, to-check=23/268)
+>f+++++++ audit/regression_inspection_summary.json
+            607 100%   12.02MB/s   00:00:00 (xfer#22, to-check=24/268)
+>f+++++++ audit/synthetic_impact_estimate.json
+            211 100%    4.80MB/s   00:00:00 (xfer#23, to-check=25/268)
+>f+++++++ audit/tier_assignment_report.json
+         146228 100%  129.61MB/s   00:00:00 (xfer#24, to-check=26/268)
+cd+++++++ audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/
+>f+++++++ audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/analyze_omega_registry.log
+           5003 100%   17.42MB/s   00:00:00 (xfer#25, to-check=28/268)
+>f+++++++ audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/build_enriched_device_map.log
+            116 100%  691.61KB/s   00:00:00 (xfer#26, to-check=29/268)
+>f+++++++ audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/crossref.log
+          84211 100%   95.97MB/s   00:00:00 (xfer#27, to-check=30/268)
+>f+++++++ audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/finalize_alpha_room_registry.log
+            119 100%  900.97KB/s   00:00:00 (xfer#28, to-check=31/268)
+>f+++++++ audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/flatten_device_registry.log
+             89 100%  564.31KB/s   00:00:00 (xfer#29, to-check=32/268)
+>f+++++++ audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/generate_alpha_registry.log
+            268 100%    1.98MB/s   00:00:00 (xfer#30, to-check=33/268)
+>f+++++++ audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/generate_entity_flatmap.log
+           2970 100%   21.14MB/s   00:00:00 (xfer#31, to-check=34/268)
+>f+++++++ audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/generate_omega_registry.log
+           2847 100%   17.63MB/s   00:00:00 (xfer#32, to-check=35/268)
+>f+++++++ audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/repair_alpha_room_registry.log
+            106 100%  744.73KB/s   00:00:00 (xfer#33, to-check=36/268)
+>f+++++++ audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/sanitize_alpha_room_registry.log
+            996 100%    7.19MB/s   00:00:00 (xfer#34, to-check=37/268)
+cd+++++++ audit/audit_flatmap/
+>f+++++++ audit/audit_flatmap/flatmap_inference_signal_audit.json
+          40373 100%   41.23MB/s   00:00:00 (xfer#35, to-check=39/268)
+cd+++++++ audit/audit_pipeline/
+>f+++++++ audit/audit_pipeline/analytics.log
+           5316 100%   16.68MB/s   00:00:00 (xfer#36, to-check=41/268)
+>f+++++++ audit/audit_pipeline/field_population_audit.json
+            644 100%    3.53MB/s   00:00:00 (xfer#37, to-check=42/268)
+>f+++++++ audit/audit_pipeline/regression_inspection_summary.json
+            984 100%    4.12MB/s   00:00:00 (xfer#38, to-check=43/268)
+>f+++++++ audit/audit_pipeline/tier_assignment_report.json
+         212195 100%  134.98MB/s   00:00:00 (xfer#39, to-check=44/268)
+cd+++++++ audit/contract_compliance/
+>f+++++++ audit/contract_compliance/contract_compliance_report.json
+        1416207 100%  151.96MB/s   00:00:00 (xfer#40, to-check=46/268)
+>f+++++++ audit/contract_compliance/contract_compliance_report.pretty.json
+        1788294 100%  161.91MB/s   00:00:00 (xfer#41, to-check=47/268)
+cd+++++++ audit/field_population/
+cd+++++++ audit/join_path/
+>f+++++++ audit/join_path/join_path_audit.json
+        1599960 100%   79.05MB/s   00:00:00 (xfer#42, to-check=50/268)
+>f+++++++ audit/join_path/join_path_audit.pretty.json
+        2005009 100%  146.49MB/s   00:00:00 (xfer#43, to-check=51/268)
+cd+++++++ audit/omega_regression/
+>f+++++++ audit/omega_regression/field_population_audit.json
+           1218 100%    5.73MB/s   00:00:00 (xfer#44, to-check=53/268)
+>f+++++++ audit/omega_regression/regression_inspection_summary.json
+           1455 100%    9.85MB/s   00:00:00 (xfer#45, to-check=54/268)
+>f+++++++ audit/omega_regression/tier_assignment_report.json
+           1145 100%    2.10MB/s   00:00:00 (xfer#46, to-check=55/268)
+cd+++++++ audit/omega_report/
+>f+++++++ audit/omega_report/area_coverage_report.json
+         171061 100%  223.76MB/s   00:00:00 (xfer#47, to-check=57/268)
+>f+++++++ audit/omega_report/conflict_resolution_summary.json
+            702 100%   15.95MB/s   00:00:00 (xfer#48, to-check=58/268)
+>f+++++++ audit/omega_report/device_class_distribution.json
+            940 100%   22.93MB/s   00:00:00 (xfer#49, to-check=59/268)
+>f+++++++ audit/omega_report/registry_input_summary.json
+           1044 100%   28.41MB/s   00:00:00 (xfer#50, to-check=60/268)
+>f+++++++ audit/omega_report/tier_distribution.json
+            927 100%   24.56MB/s   00:00:00 (xfer#51, to-check=61/268)
+>f+++++++ audit/omega_report/unresolved_tier_entities.log
+              0 nan%   00:00:00 (xfer#52, to-check=62/268)
+cd+++++++ audit/regression/
+cd+++++++ audit/tier/
+cd+++++++ deltas/
+>f+++++++ deltas/alpha_provenance_compliance_plan.yaml
+           2471 100%   42.79MB/s   00:00:00 (xfer#53, to-check=66/268)
+>f+++++++ deltas/analytics_remediation_actions.patch
+           9262 100%    9.58MB/s   00:00:00 (xfer#54, to-check=67/268)
+>f+++++++ deltas/backlog_tracker_enrichment.patch
+           6132 100%   22.59MB/s   00:00:00 (xfer#55, to-check=68/268)
+>f+++++++ deltas/core_field_remediation.patch
+           7477 100%   37.72MB/s   00:00:00 (xfer#56, to-check=69/268)
+>f+++++++ deltas/delta_contract.yaml
+           1453 100%   33.79MB/s   00:00:00 (xfer#57, to-check=70/268)
+>f+++++++ deltas/normalize_schema_structure.yaml
+           2168 100%   48.18MB/s   00:00:00 (xfer#58, to-check=71/268)
+>f+++++++ deltas/schema_unification_provenance.yaml
+           1900 100%   46.34MB/s   00:00:00 (xfer#59, to-check=72/268)
+cd+++++++ diagnostics/
+>f+++++++ diagnostics/alpha_registry_diagnostics.log
+            852 100%    3.22MB/s   00:00:00 (xfer#60, to-check=74/268)
+>f+++++++ diagnostics/device_area_join_analysis.log
+           3820 100%    9.88MB/s   00:00:00 (xfer#61, to-check=75/268)
+>f+++++++ diagnostics/hestia_pre_reboot_field_diagnostics.log
+             58 100%  377.69KB/s   00:00:00 (xfer#62, to-check=76/268)
+>f+++++++ diagnostics/hestia_pre_reboot_field_map.json
+            482 100%    9.22MB/s   00:00:00 (xfer#63, to-check=77/268)
+>f+++++++ diagnostics/hestia_pre_reboot_schema_drift.json
+           3527 100%   40.08MB/s   00:00:00 (xfer#64, to-check=78/268)
+>f+++++++ diagnostics/legacy_registry_enrichment_summary.yaml
+         460464 100%  199.23MB/s   00:00:00 (xfer#65, to-check=79/268)
+>f+++++++ diagnostics/trace_debug_overlay.json
+        1114342 100%  239.63MB/s   00:00:00 (xfer#66, to-check=80/268)
+>f+++++++ diagnostics/trace_overlay.omega.json
+        5615054 100%  229.10MB/s   00:00:00 (xfer#67, to-check=81/268)
+cd+++++++ diagnostics/join/
+>f+++++++ diagnostics/join/join_contract_snapshot.json
+            873 100%   12.08MB/s   00:00:00 (xfer#68, to-check=83/268)
+cd+++++++ governance/
+>f+++++++ governance/alpha_room.qc_metrics.json
+              0 nan%   00:00:00 (xfer#69, to-check=85/268)
+>f+++++++ governance/alpha_room_registry.test.json
+            275 100%    7.28MB/s   00:00:00 (xfer#70, to-check=86/268)
+>f+++++++ governance/omega_registry.qc_metrics.json
+              0 nan%   00:00:00 (xfer#71, to-check=87/268)
+cd+++++++ governance/qc.backup/
+cd+++++++ governance/roadmaps/
+>f+++++++ governance/roadmaps/alpha_registry.roadmap.yaml
+           7019 100%    9.87MB/s   00:00:00 (xfer#72, to-check=90/268)
+>f+++++++ governance/roadmaps/omega_registry.roadmap.yaml
+          12046 100%   62.82MB/s   00:00:00 (xfer#73, to-check=91/268)
+cd+++++++ hydration_recovery_report/
+>f+++++++ hydration_recovery_report/hydration_coverage_report.json
+            153 100%    3.95MB/s   00:00:00 (xfer#74, to-check=93/268)
+>f+++++++ hydration_recovery_report/hydration_coverage_report.pretty.json
+            159 100% 1020.79KB/s   00:00:00 (xfer#75, to-check=94/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T21-19-31Z.json
+         213962 100%  134.67MB/s   00:00:00 (xfer#76, to-check=95/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T21-19-31Z.pretty.json
+         342355 100%  227.82MB/s   00:00:00 (xfer#77, to-check=96/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T21-40-24Z.json
+         213962 100%  172.20MB/s   00:00:00 (xfer#78, to-check=97/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T21-40-24Z.pretty.json
+         342355 100%  248.26MB/s   00:00:00 (xfer#79, to-check=98/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-01-21Z.json
+         225635 100%  137.94MB/s   00:00:00 (xfer#80, to-check=99/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-01-21Z.pretty.json
+         361160 100%  162.78MB/s   00:00:00 (xfer#81, to-check=100/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-10-08Z.json
+         225635 100%  177.39MB/s   00:00:00 (xfer#82, to-check=101/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-10-08Z.pretty.json
+         361160 100%  173.61MB/s   00:00:00 (xfer#83, to-check=102/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-20-48Z.json
+         225635 100%  133.16MB/s   00:00:00 (xfer#84, to-check=103/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-20-48Z.pretty.json
+         361160 100%  265.56MB/s   00:00:00 (xfer#85, to-check=104/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-23-50Z.json
+         225635 100%  176.52MB/s   00:00:00 (xfer#86, to-check=105/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-23-50Z.pretty.json
+         361160 100%  195.25MB/s   00:00:00 (xfer#87, to-check=106/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-52-53Z.json
+         225635 100%  241.26MB/s   00:00:00 (xfer#88, to-check=107/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-52-53Z.pretty.json
+         361160 100%  198.52MB/s   00:00:00 (xfer#89, to-check=108/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-55-58Z.json
+         225635 100%  239.91MB/s   00:00:00 (xfer#90, to-check=109/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-01T22-55-58Z.pretty.json
+         361160 100%  246.86MB/s   00:00:00 (xfer#91, to-check=110/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T02-30-03Z.json
+         198920 100%  112.65MB/s   00:00:00 (xfer#92, to-check=111/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T02-30-03Z.pretty.json
+         284470 100%  109.39MB/s   00:00:00 (xfer#93, to-check=112/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T02-40-54Z.json
+         198920 100%  224.77MB/s   00:00:00 (xfer#94, to-check=113/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T02-40-54Z.pretty.json
+         284470 100%  159.97MB/s   00:00:00 (xfer#95, to-check=114/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T02-43-51Z.json
+         198920 100%  231.64MB/s   00:00:00 (xfer#96, to-check=115/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T02-43-51Z.pretty.json
+         284470 100%  236.12MB/s   00:00:00 (xfer#97, to-check=116/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T02-58-39Z.json
+         198920 100%  203.76MB/s   00:00:00 (xfer#98, to-check=117/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T02-58-39Z.pretty.json
+         284470 100%  194.61MB/s   00:00:00 (xfer#99, to-check=118/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T03-03-13Z.json
+         198920 100%  159.94MB/s   00:00:00 (xfer#100, to-check=119/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T03-03-13Z.pretty.json
+         284470 100%  159.03MB/s   00:00:00 (xfer#101, to-check=120/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T03-23-11Z.json
+         198920 100%  237.16MB/s   00:00:00 (xfer#102, to-check=121/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T03-23-11Z.pretty.json
+         284470 100%  185.93MB/s   00:00:00 (xfer#103, to-check=122/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T03-55-29Z.json
+         198920 100%  242.29MB/s   00:00:00 (xfer#104, to-check=123/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T03-55-29Z.pretty.json
+         284470 100%  134.96MB/s   00:00:00 (xfer#105, to-check=124/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T04-53-13Z.json
+         198920 100%  108.83MB/s   00:00:00 (xfer#106, to-check=125/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T04-53-13Z.pretty.json
+         284470 100%  235.10MB/s   00:00:00 (xfer#107, to-check=126/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T05-34-08Z.json
+         198920 100%  230.77MB/s   00:00:00 (xfer#108, to-check=127/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T05-34-08Z.pretty.json
+         284470 100%  163.91MB/s   00:00:00 (xfer#109, to-check=128/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T05-54-59Z.json
+         198920 100%  180.30MB/s   00:00:00 (xfer#110, to-check=129/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T05-54-59Z.pretty.json
+         284470 100%  172.04MB/s   00:00:00 (xfer#111, to-check=130/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T08-16-23Z.json
+         198920 100%  232.25MB/s   00:00:00 (xfer#112, to-check=131/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T08-16-23Z.pretty.json
+         284470 100%  243.55MB/s   00:00:00 (xfer#113, to-check=132/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T09-34-01Z.json
+         198920 100%  119.08MB/s   00:00:00 (xfer#114, to-check=133/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T09-34-01Z.pretty.json
+         284470 100%  143.54MB/s   00:00:00 (xfer#115, to-check=134/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T09-57-49Z.json
+         198920 100%  220.84MB/s   00:00:00 (xfer#116, to-check=135/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T09-57-49Z.pretty.json
+         284470 100%  256.39MB/s   00:00:00 (xfer#117, to-check=136/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T10-29-45Z.json
+         198920 100%  153.99MB/s   00:00:00 (xfer#118, to-check=137/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.2025-08-02T10-29-45Z.pretty.json
+         284470 100%  162.16MB/s   00:00:00 (xfer#119, to-check=138/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.json
+         337075 100%  242.06MB/s   00:00:00 (xfer#120, to-check=139/268)
+>f+++++++ hydration_recovery_report/hydration_recovery_report.pretty.json
+         593991 100%  250.21MB/s   00:00:00 (xfer#121, to-check=140/268)
+cd+++++++ meta/
+>f+++++++ meta/analyze_omega_registry.log
+            352 100%    1.00MB/s   00:00:00 (xfer#122, to-check=142/268)
+>f+++++++ meta/build_manifest.log
+            134 100%  533.91KB/s   00:00:00 (xfer#123, to-check=143/268)
+>f+++++++ meta/copilot_chat_output.v1.log
+        1115472 100%  157.62MB/s   00:00:00 (xfer#124, to-check=144/268)
+>f+++++++ meta/copilot_chat_output.v10.log
+         170521 100%  130.62MB/s   00:00:00 (xfer#125, to-check=145/268)
+>f+++++++ meta/copilot_chat_output.v2.log
+         341604 100%  135.80MB/s   00:00:00 (xfer#126, to-check=146/268)
+>f+++++++ meta/copilot_chat_output.v3.log
+         211806 100%  126.17MB/s   00:00:00 (xfer#127, to-check=147/268)
+>f+++++++ meta/copilot_chat_output.v4.log
+         117939 100%   89.91MB/s   00:00:00 (xfer#128, to-check=148/268)
+>f+++++++ meta/copilot_chat_output.v5.log
+          23517 100%   48.02MB/s   00:00:00 (xfer#129, to-check=149/268)
+>f+++++++ meta/copilot_chat_output.v6.log
+         208124 100%  123.98MB/s   00:00:00 (xfer#130, to-check=150/268)
+>f+++++++ meta/copilot_chat_output.v7.log
+         261024 100%  127.72MB/s   00:00:00 (xfer#131, to-check=151/268)
+>f+++++++ meta/copilot_chat_output.v8-climaterefactor.log
+          13470 100%   35.01MB/s   00:00:00 (xfer#132, to-check=152/268)
+>f+++++++ meta/copilot_chat_output.v9.log
+         422601 100%   82.37MB/s   00:00:00 (xfer#133, to-check=153/268)
+>f+++++++ meta/copilot_project_summary.log
+           6902 100%    9.93MB/s   00:00:00 (xfer#134, to-check=154/268)
+>f+++++++ meta/gpt_bootloader.PATCH-OMEGA-REGISTRY-REFACTOR-V1.log
+           4316 100%   10.86MB/s   00:00:00 (xfer#135, to-check=155/268)
+>f+++++++ meta/gpt_bootloader.txt
+           5794 100%   87.79MB/s   00:00:00 (xfer#136, to-check=156/268)
+>f+++++++ meta/gpt_bootloader.v2.log
+           4059 100%    9.13MB/s   00:00:00 (xfer#137, to-check=157/268)
+>f+++++++ meta/gpt_chat_output.log
+         371459 100%  104.84MB/s   00:00:00 (xfer#138, to-check=158/268)
+>f+++++++ meta/gpt_continuity_checkpoint_export.PATCH-OMEGA-REGISTRY-REFACTOR-V1.yaml
+           6496 100%   20.05MB/s   00:00:00 (xfer#139, to-check=159/268)
+>f+++++++ meta/gpt_hydration_seed.log
+           3660 100%    3.72MB/s   00:00:00 (xfer#140, to-check=160/268)
+>f+++++++ meta/gpt_kickoff.log
+           4595 100%    4.21MB/s   00:00:00 (xfer#141, to-check=161/268)
+>f+++++++ meta/missing_aggregation.json
+          19087 100%   87.86MB/s   00:00:00 (xfer#142, to-check=162/268)
+>f+++++++ meta/missing_diagnostics.json
+           7404 100%   40.85MB/s   00:00:00 (xfer#143, to-check=163/268)
+>f+++++++ meta/missing_samples.json
+          63378 100%  180.95MB/s   00:00:00 (xfer#144, to-check=164/268)
+>f+++++++ meta/omega_pipeline_main.log
+          13706 100%   19.63MB/s   00:00:00 (xfer#145, to-check=165/268)
+>f+++++++ meta/project_instruction.0806yaml
+           4752 100%  103.30MB/s   00:00:00 (xfer#146, to-check=166/268)
+>f+++++++ meta/refactoring_enrichment_layer.patch
+           2804 100%   17.69MB/s   00:00:00 (xfer#147, to-check=167/268)
+cd+++++++ patches/
+>f+++++++ patches/copilot_patchlog.log
+          10632 100%   15.32MB/s   00:00:00 (xfer#148, to-check=169/268)
+>f+++++++ patches/deprecation_overview.log
+           2497 100%    9.84MB/s   00:00:00 (xfer#149, to-check=170/268)
+>f+++++++ patches/patch_overview.log
+          26578 100%   54.49MB/s   00:00:00 (xfer#150, to-check=171/268)
+>f+++++++ patches/terminal_output.log
+         154028 100%   86.51MB/s   00:00:00 (xfer#151, to-check=172/268)
+.d..t.... scratch/
+>f+++++++ scratch/# PATCH-ALPHA-ROOM-REGISTRY-DECOPLED-FROM-OMEGA-V2.log
+           4404 100%   23.58MB/s   00:00:00 (xfer#152, to-check=174/268)
+>f..t.... scratch/.keep
+              0 nan%   00:00:00 (xfer#153, to-check=175/268)
+>f+++++++ scratch/CONFLICT-RESOLUTION-AUDIT-20250721.log
+              0 nan%   00:00:00 (xfer#154, to-check=176/268)
+>f..t.... scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T175806.log
+            294 100%    2.03MB/s   00:00:00 (xfer#155, to-check=177/268)
+>f..t.... scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T175943.log
+            294 100%    1.39MB/s   00:00:00 (xfer#156, to-check=178/268)
+>f..t.... scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T180255.log
+            294 100%    2.00MB/s   00:00:00 (xfer#157, to-check=179/268)
+>f..t.... scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T182434.log
+            294 100%    1.62MB/s   00:00:00 (xfer#158, to-check=180/268)
+>f..t.... scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T183030.log
+            141 100%  315.77KB/s   00:00:00 (xfer#159, to-check=181/268)
+>f.st.... scratch/CONTRACT_REALIZATION_AUDIT_AND_PROPAGATION_VALIDATION_V1.log
+          10924 100%   14.25MB/s   00:00:00 (xfer#160, to-check=182/268)
+>f..t.... scratch/CONTRACT_REALIZATION_AUDIT_FOLLOWUP_20250721.log
+           4079 100%   26.49MB/s   00:00:00 (xfer#161, to-check=183/268)
+>f+++++++ scratch/COPILOT PATCH BLOCK: PATCH-AUDIT-FILE-REALDATA-V1.log
+           4440 100%   12.83MB/s   00:00:00 (xfer#162, to-check=184/268)
+>f..t.... scratch/INGESTION_VALIDATION_AND_EXTRACTION_COVERAGE_V1.log
+           5178 100%   26.52MB/s   00:00:00 (xfer#163, to-check=185/268)
+>f+++++++ scratch/PATCH CAPTURE-UNICODE-V1.log
+           3517 100%    5.38MB/s   00:00:00 (xfer#164, to-check=186/268)
+>f+++++++ scratch/PATCH-ALPHA-REGISTRY-CONSOLIDATION-V1.log
+            445 100%    1.07MB/s   00:00:00 (xfer#165, to-check=187/268)
+>f+++++++ scratch/PATCH-ALPHA-ROOM-REGISTRY-ENRICHMENT-V2.log
+           2686 100%    9.45MB/s   00:00:00 (xfer#166, to-check=188/268)
+>f+++++++ scratch/PATCH-ALPHA-ROOM-REGISTRY-EXTRACTION-V1.log
+           7146 100%   11.07MB/s   00:00:00 (xfer#167, to-check=189/268)
+>f+++++++ scratch/PATCH-ALPHA-ROOM-REGISTRY-FINALIZATION-V3.log
+            729 100%    3.84MB/s   00:00:00 (xfer#168, to-check=190/268)
+>f+++++++ scratch/PATCH-ALPHA-ROOM-REGISTRY-REPAIR-V1.log
+           1174 100%    3.49MB/s   00:00:00 (xfer#169, to-check=191/268)
+>f+++++++ scratch/PATCH-ANALYTICS-AREA-FLOOR-USAGE-V2.log
+           2281 100%   11.51MB/s   00:00:00 (xfer#170, to-check=192/268)
+>f..t.... scratch/PATCH-ANALYTICS-TOOLBOX-FOR-OMEGA-REGISTRY-V1.log
+           4022 100%   19.89MB/s   00:00:00 (xfer#171, to-check=193/268)
+>f+++++++ scratch/PATCH-AREA-HIERARCHY-REFINEMENT-V2.log
+        3782093 100%   68.72MB/s   00:00:00 (xfer#172, to-check=194/268)
+>f+++++++ scratch/PATCH-CENTRAL-METADATA-LOGGER-V1.log
+            266 100%  612.79KB/s   00:00:00 (xfer#173, to-check=195/268)
+>f.st.... scratch/PATCH-CONFLICT-RESOLUTION-AUTHORITY-MODEL-V1.log
+           2720 100%    6.70MB/s   00:00:00 (xfer#174, to-check=196/268)
+>f+++++++ scratch/PATCH-CONFLICT-RESOLUTION-AUTHORITY-MODEL-V2.log
+           4249 100%    3.99MB/s   00:00:00 (xfer#175, to-check=197/268)
+>f+++++++ scratch/PATCH-CONSOLIDATE-REGISTRY-UTILS-V1.log
+           2158 100%    2.34MB/s   00:00:00 (xfer#176, to-check=198/268)
+>f+++++++ scratch/PATCH-CONTRACT-AUGMENT-INFERENCE-V1.log
+           1350 100%    1.55MB/s   00:00:00 (xfer#177, to-check=199/268)
+>f+++++++ scratch/PATCH-CONTRACT-CANONICALIATION-V1.log
+          14631 100%   19.99MB/s   00:00:00 (xfer#178, to-check=200/268)
+>f..t.... scratch/PATCH-CONTRACT-REFERENCE-DERIVATION-SCRIPT-V1.log
+           1721 100%    5.72MB/s   00:00:00 (xfer#179, to-check=201/268)
+>f+++++++ scratch/PATCH-DEVICE-AREA-INHERITANCE-FIX.log
+           9192 100%   20.44MB/s   00:00:00 (xfer#180, to-check=202/268)
+>f+++++++ scratch/PATCH-DEVICE-AREA-JOIN-FIX-v1.patch
+           4612 100%   14.71MB/s   00:00:00 (xfer#181, to-check=203/268)
+>f+++++++ scratch/PATCH-DOMAIN-OVERRIDE-AUDIT-V1.log
+         244902 100%   33.00MB/s   00:00:00 (xfer#182, to-check=204/268)
+>f+++++++ scratch/PATCH-ENTITY-FLATMAP-GENERATION-V1.log
+           6203 100%   17.30MB/s   00:00:00 (xfer#183, to-check=205/268)
+>f+++++++ scratch/PATCH-FLATMAP-INFER-V1.log
+           5137 100%   20.84MB/s   00:00:00 (xfer#184, to-check=206/268)
+>f+++++++ scratch/PATCH-FLATMAP-INFER-V2-ENRICH.log
+           3338 100%   16.67MB/s   00:00:00 (xfer#185, to-check=207/268)
+>f+++++++ scratch/PATCH-FLATMAP-INFER-V3-AUDIT.log
+           1522 100%    9.37MB/s   00:00:00 (xfer#186, to-check=208/268)
+>f+++++++ scratch/PATCH-FLATMAP-INFER-V3.log
+           2245 100%   19.65MB/s   00:00:00 (xfer#187, to-check=209/268)
+>f+++++++ scratch/PATCH-FLATMAP-INFER-V4-RUNTIME.log
+           3032 100%   16.64MB/s   00:00:00 (xfer#188, to-check=210/268)
+>f+++++++ scratch/PATCH-FLATMAP-MERGE-V1.log
+            651 100%    3.72MB/s   00:00:00 (xfer#189, to-check=211/268)
+>f+++++++ scratch/PATCH-GENERALIZED-ENRICHMENT-JOIN-INFRASTRUCTURE-V1.patch
+           2853 100%   22.46MB/s   00:00:00 (xfer#190, to-check=212/268)
+>f+++++++ scratch/PATCH-INFERENCE-INPUT-FLATMAP-V1.log
+           2236 100%   14.20MB/s   00:00:00 (xfer#191, to-check=213/268)
+>f+++++++ scratch/PATCH-INTEGRATE-ENRICHED-REGISTRY-METADATA-V1.log
+           3098 100%   14.70MB/s   00:00:00 (xfer#192, to-check=214/268)
+>f..t.... scratch/PATCH-INTEGRATE-PREREBOOT-HESTIA-JOIN-GRAPH-V1.log
+           2800 100%   17.78MB/s   00:00:00 (xfer#193, to-check=215/268)
+>f.st.... scratch/PATCH-JOIN-PIPELINE-HESTIA-V1.log
+           3695 100%   24.15MB/s   00:00:00 (xfer#194, to-check=216/268)
+>f+++++++ scratch/PATCH-JOIN-PIPELINE-HESTIA-V2.log
+           5444 100%   21.18MB/s   00:00:00 (xfer#195, to-check=217/268)
+>f..t.... scratch/PATCH-LOGGING-STANDARD-V1.log
+           1252 100%    5.33MB/s   00:00:00 (xfer#196, to-check=218/268)
+>f+++++++ scratch/PATCH-MANIFEST-BUILDER-V1.log
+          11820 100%   25.61MB/s   00:00:00 (xfer#197, to-check=219/268)
+>f+++++++ scratch/PATCH-MANIFEST-BUILDER-V2.log
+          58344 100%   48.51MB/s   00:00:00 (xfer#198, to-check=220/268)
+>f+++++++ scratch/PATCH-OMEGA-REGISTRY-DOMAIN-OVERRIDE-V1.log
+           1929 100%    5.23MB/s   00:00:00 (xfer#199, to-check=221/268)
+>f+++++++ scratch/PATCH-OMEGA-REGISTRY-METADATA-REINTEGRATION-V2.log
+           2658 100%   10.38MB/s   00:00:00 (xfer#200, to-check=222/268)
+>f+++++++ scratch/PATCH-OMEGA-REGISTRY-REFACTOR-V1.log
+           1954 100%    8.91MB/s   00:00:00 (xfer#201, to-check=223/268)
+>f..t.... scratch/PATCH-PARSE-LEGACY-HESTIA-PREREBOOT-V1.log
+           2211 100%   14.84MB/s   00:00:00 (xfer#202, to-check=224/268)
+>f+++++++ scratch/PATCH-PIPELINE-INTEGRITY-HARDENING-v1.log
+           1962 100%    6.78MB/s   00:00:00 (xfer#203, to-check=225/268)
+>f+++++++ scratch/PATCH-PIPELINE-VALIDATION-POST-ANCHOR-CORRECTION-V1.log
+           3117 100%   14.50MB/s   00:00:00 (xfer#204, to-check=226/268)
+>f+++++++ scratch/PATCH-REGISTRY-MINIMIZATION-V2-REVIEW-FOLLOWUP.log
+           2399 100%   10.08MB/s   00:00:00 (xfer#205, to-check=227/268)
+>f+++++++ scratch/PATCH-REGISTRY-MINIMIZATION-V2.log
+           2399 100%   15.26MB/s   00:00:00 (xfer#206, to-check=228/268)
+>f+++++++ scratch/PATCH-REGISTRY-MINIMIZATION-V3.log
+           3879 100%   10.88MB/s   00:00:00 (xfer#207, to-check=229/268)
+>f+++++++ scratch/PATCH-REGISTRY-MINIMIZATION-V4.log
+           3425 100%   12.91MB/s   00:00:00 (xfer#208, to-check=230/268)
+>f+++++++ scratch/PATCH-REGISTRY-QC-WORKFLOW-V1.log
+           4978 100%   17.78MB/s   00:00:00 (xfer#209, to-check=231/268)
+>f..t.... scratch/PATCH-SCOPED-DIAGNOSTIC-LOGGING-POLICY-V1.log
+           3878 100%   26.43MB/s   00:00:00 (xfer#210, to-check=232/268)
+>f+++++++ scratch/PATCH-SCRIPT-FOLDER-CONSOLIDATION-V1.log
+            523 100%    1.37MB/s   00:00:00 (xfer#211, to-check=233/268)
+>f+++++++ scratch/PATCH-SETUP-LOGGING-UTILS-V1.log
+           1858 100%   10.62MB/s   00:00:00 (xfer#212, to-check=234/268)
+>f+++++++ scratch/PATCH-TIER-INFERENCE-OMEGA-V1.log
+           3260 100%   11.06MB/s   00:00:00 (xfer#213, to-check=235/268)
+>f+++++++ scratch/PATCH-UNICODE-NORMALIZATION.log
+           4281 100%   15.75MB/s   00:00:00 (xfer#214, to-check=236/268)
+>f..t.... scratch/PATCH-VARIOUS-LOGIC-MAINTENANCE-V1.log
+           3027 100%   19.50MB/s   00:00:00 (xfer#215, to-check=237/268)
+>f+++++++ scratch/PATCH-XREF-ENRICHMENT-IMPLICATIONS-V1.log
+           2679 100%   15.97MB/s   00:00:00 (xfer#216, to-check=238/268)
+>f+++++++ scratch/PATCH-XREF-IMPLICATION-LAYER-V1.log
+           2956 100%   17.73MB/s   00:00:00 (xfer#217, to-check=239/268)
+>f+++++++ scratch/PATCH-layout-improvements.patch
+           3897 100%   10.32MB/s   00:00:00 (xfer#218, to-check=240/268)
+>f..t.... scratch/PATCH_CANONICAL_REGISTRY_BUILDER_V1.log
+           1335 100%    7.15MB/s   00:00:00 (xfer#219, to-check=241/268)
+>f..t.... scratch/PATCH_FIELD_PROPAGATION_AND_CORRECTION_V1.log
+           4342 100%   23.38MB/s   00:00:00 (xfer#220, to-check=242/268)
+>f..t.... scratch/PATCH_FIX_EXTRACTION_FOR_IGNORED_REGISTRY_INPUTS_V1.log
+           5395 100%   17.21MB/s   00:00:00 (xfer#221, to-check=243/268)
+>f..t.... scratch/PROPAGATION_AUDIT_AND_SOURCE_INGEST_COMPLETENESS_V1.log
+           8672 100%   12.31MB/s   00:00:00 (xfer#222, to-check=244/268)
+>f+++++++ scratch/VALIDATION-E2E-SEQUENCE.log
+           9664 100%   31.45MB/s   00:00:00 (xfer#223, to-check=245/268)
+>f+++++++ scratch/canonical_scripts.post-move.txt
+           1510 100%    5.22MB/s   00:00:00 (xfer#224, to-check=246/268)
+>f+++++++ scratch/canonical_scripts.pre-move.txt
+           1259 100%    5.03MB/s   00:00:00 (xfer#225, to-check=247/268)
+>f..t.... scratch/copilot_patch_integrate_prereboot_hestia_join_graph_v1_20250720T1600.log
+              0 nan%   00:00:00 (xfer#226, to-check=248/268)
+>f..t.... scratch/debug_pre_reboot_join_entries.log
+           4020 100%   23.51MB/s   00:00:00 (xfer#227, to-check=249/268)
+>f+++++++ scratch/enrichment_engine_patch_20250725.diff
+           2118 100%    6.47MB/s   00:00:00 (xfer#228, to-check=250/268)
+>f.st.... scratch/enrichment_trace_omega_registry.jsonl
+              0 nan%   00:00:00 (xfer#229, to-check=251/268)
+>f+++++++ scratch/omega_registry_enrichment.log
+          21956 100%   30.04MB/s   00:00:00 (xfer#230, to-check=252/268)
+>f.st.... scratch/omega_registry_unused_sources.log
+            523 100%    2.76MB/s   00:00:00 (xfer#231, to-check=253/268)
+>f+++++++ scratch/patch-manifest-builder-improvements-v2.log
+          16558 100%   45.12MB/s   00:00:00 (xfer#232, to-check=254/268)
+>f+++++++ scratch/patch-refactor-enrichment.patch
+           1722 100%    6.54MB/s   00:00:00 (xfer#233, to-check=255/268)
+>f.st.... scratch/propagation_audit_trace.jsonl
+              0 nan%   00:00:00 (xfer#234, to-check=256/268)
+>f.st.... scratch/source_file_ingestion_status.json
+           4100 100%   24.59MB/s   00:00:00 (xfer#235, to-check=257/268)
+cd+++++++ tools/
+>f+++++++ tools/PATCH-MANIFEST-BUILDER-V2.log
+           5299 100%    8.64MB/s   00:00:00 (xfer#236, to-check=259/268)
+>f+++++++ tools/analyze_omega_registry_analyze_omega_registry.log
+          11978 100%   12.89MB/s   00:00:00 (xfer#237, to-check=260/268)
+>f+++++++ tools/crossref_crossref.log
+            544 100%    1.77MB/s   00:00:00 (xfer#238, to-check=261/268)
+>f+++++++ tools/enrichment_engine_enrichment_engine.log
+       84861084 100%  113.64MB/s   00:00:00 (xfer#239, to-check=262/268)
+>f+++++++ tools/enrichment_engine_reinforcement.status.json
+            303 100%    1.34MB/s   00:00:00 (xfer#240, to-check=263/268)
+>f+++++++ tools/generate_flatmap_generate_flatmap.log
+            160 100%  568.40KB/s   00:00:00 (xfer#241, to-check=264/268)
+>f+++++++ tools/generate_omega_registry.log
+           1761 100%    5.64MB/s   00:00:00 (xfer#242, to-check=265/268)
+>f+++++++ tools/generator_omega_registry_generator.log
+        1558149 100%  113.39MB/s   00:00:00 (xfer#243, to-check=266/268)
+>f+++++++ tools/meta_build_manifest_PATCH-MANIFEST-BUILDER-V2.log
+          10252 100%   36.35MB/s   00:00:00 (xfer#244, to-check=267/268)
+
+sent 150M bytes  received 5532 bytes  98092k bytes/sec
+total size is 150M  speedup is 1.00

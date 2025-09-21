@@ -1,0 +1,10 @@
+[
+  {
+    "unresolved_entity": "binary_sensor.tp_link_tapo_t100_downstairs_motion_sensor_battery",
+    "reason": "No high-confidence match for merged cluster"
+  },
+  {
+    "unresolved_entity": "sensor.hallway_entrance_contact_alpha_tp_link_signal_strength",
+    "reason": "No high-confidence match for merged cluster"
+  }
+]

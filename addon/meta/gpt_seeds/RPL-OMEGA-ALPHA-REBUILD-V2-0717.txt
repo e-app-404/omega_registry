@@ -1,0 +1,74 @@
+rehydration_context_manifest:
+  trace_id: RPL-OMEGA-ALPHA-REBUILD-V2-0717
+  persona: Promachos v3
+  mode: dual-stage
+  protocol_lock: PROMACHOS_PROTOCOL_LOCK
+  phase: final_checkpoint
+  last_patch_ids_applied:
+    - PATCH-ROUNDTRIP-AUDIT-V2
+    - STRICT-FINGERPRINT-PASS
+    - STRICT-CLUSTERING-FINALIZATION
+    - OMEGA-ROOM-REGISTRY-STRICT-REBUILD
+  files_used:
+    - file: /registry/output/fingerprinting_run/entity_fingerprint_map.json
+      purpose: post-reboot fingerprint source
+      tags: [fingerprinting, strict_mode, area_inference, clustering_input]
+    - file: /registry/output/fingerprinting_run/entity_id_migration_map.annotated.v4.full.json
+      purpose: entity ID mapping (pre → post reboot)
+      tags: [migration_map, canonical_keys, match_confidence]
+    - file: /registry/output/alpha_sensor/alpha_sensor_registry.json
+      purpose: clustered alpha-tier registry
+      tags: [clustered_registry, sensor_logic, final_output]
+    - file: /registry/output/alpha_sensor/cluster_assignment_trace.json
+      purpose: per-entity clustering trace
+      tags: [audit, clustering_diagnostics, trace]
+    - file: /registry/output/alpha_sensor/alpha_cluster_schema_validation_report.json
+      purpose: validation results for each cluster
+      tags: [schema_audit, tier_classification]
+    - file: /registry/output/omega_room/omega_room_registry.json
+      purpose: reconstructed room-wise registry
+      tags: [room_registry, area_mapping, final_output]
+    - file: /registry/output/omega_room/room_registry_completeness_audit.json
+      purpose: room-level completeness report
+      tags: [room_audit, validation]
+    - file: /registry/output/omega_room/unresolved_entities.log.json
+      purpose: entities excluded due to area/cluster issues
+      tags: [exclusion_log, fallback]
+    - file: /registry/input/ha/core.entity_registry
+      purpose: base source of all HA entities
+      tags: [canonical_input, post_reboot, raw_source]
+    - file: /registry/input/ha/core.area_registry
+      purpose: area names and IDs
+      tags: [area_map, room_inference]
+    - file: /registry/input/ha/core.device_registry
+      purpose: device metadata
+      tags: [device_anchors, integration_map]
+    - file: /registry/contracts/next_registry_merge_contract.yaml
+      purpose: outlines final merge target schema
+      tags: [merge_contract, omega_registry_finalization]
+  memory_variables:
+    alpha_fingerprint_map: 1205 entities
+    strict_fallback_rejection_threshold: applied
+    role_rules_applied: true
+    area_inference_mode: strict (fallbacks excluded)
+    clustering_mode: tiered (T1-T3), strict emit enforced
+    unresolved_entity_count: 282
+    omega_room_registry_total_rooms: 57
+    omega_room_registry_total_entities: 923
+    semantic_entity_span: domains=['sensor', 'binary_sensor', 'media_player', 'light', 'switch']
+    final_registry_completeness: partial (alpha = ✅, omega room = ✅, omega device = pending)
+    copilot_context_log: ✔️ appended across PATCH-ROUNDTRIP-AUDIT-V2.log & copilot_patchlog_overview.log
+    pipeline_stage_order:
+      - entity_migration_map_build
+      - fingerprint_propagation
+      - strict clustering
+      - room registry rehydration
+  filesystem_anchor: /registry/
+  output_phase_dirs:
+    - /registry/output/fingerprinting_run/
+    - /registry/output/alpha_sensor/
+    - /registry/output/omega_room/
+  tarballs_emitted:
+    - STRICT-FINGERPRINT-OUTPUTS-20250717.tar.gz
+    - STRICT-CLUSTERING-OUTPUTS-20250717-FINAL.tar.gz
+    - TARBALL-OMEGA-ROOM-REGISTRY-STRICT-REBUILD.tar.gz

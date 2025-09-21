@@ -1,0 +1,150 @@
+# HESTIA OMEGA/ALPHA PIPELINE EXECUTION & VALIDATION BRIEF
+version: rehydration_protocol_v2.8
+context_lock: PROMACHOS_PROTOCOL_LOCK
+maintainer: e-app-404
+
+stages:
+  - phase: 1
+    label: device_map_construction
+    description: Build internal device map for ID lookups
+    script: scripts/generate_cleaned_device_registry.py
+    inputs:
+      - input/core.device_registry
+    outputs:
+      - output/omega_device/omega_device_registry.cleaned.v2.json
+    validation:
+      - device_count matches expectations (e.g. 221+)
+      - status: completed in pipeline_metrics.latest.json
+    follow_up:
+      - Confirm that no device IDs are missing
+      - Proceed if missing_device_ids == 0
+
+  - phase: 2
+    label: entity_preprocessing
+    description: Normalize and preserve raw entities
+    script: scripts/preprocess_entity_registry.py
+    inputs:
+      - input/core.entity_registry
+    outputs:
+      - data/entities.normalized..json
+    validation:
+      - All entities preserved
+      - Auxiliary fields retained
+      - Schema consistent with fingerprinting expectations
+    follow_up:
+      - Confirm auxiliary stats logged
+      - Confirm >95% fields populated
+
+  - phase: 3-5
+    label: area_inference_role_inference_fingerprint_map_generation
+    description: Area/role inference and canonical fingerprint map
+    script: scripts/fingerprint_entity_reconciliation.py
+    inputs:
+      - data/entities.normalized..json
+      - input/core.device_registry
+    outputs:
+      - data/entity_fingerprint_map..json
+      - output/fingerprinting_run/area_inference_debug.json
+      - output/fingerprinting_run/fingerprint_inference_trace.json
+      - output/fingerprinting_run/fingerprint_consolidation_metrics.json
+    validation:
+      - All entities mapped to cluster_id
+      - area_id, role, semantic_role, confidence_score not null for majority
+      - Inference method breakdowns populated
+    follow_up:
+      - Patch inference.py if any fields unresolved
+      - Validate token/slug/n-gram fallback behavior
+
+  - phase: 6
+    label: cluster_metadata_resolution
+    description: Group entities into area/role clusters and generate metadata
+    script: scripts/cluster_summary.py
+    inputs:
+      - data/entity_fingerprint_map.*.json
+    outputs:
+      - data/cluster_metadata..json
+    validation:
+      - All cluster_id fields consistent
+      - At least 1 cluster per area-role pair
+      - If empty: fallback cluster_id should be null_ or unknown_area_
+
+  - phase: 7
+    label: migration_map_expansion
+    description: Enrich ID mapping with inferred roles and clusters
+    script: scripts/expand_migration_map_full_role_coverage.py
+    inputs:
+      - output/entity_id_migration_map.annotated.v4.json
+      - data/cluster_metadata.*.json
+    outputs:
+      - output/entity_id_migration_map.annotated.v4.full.json
+    validation:
+      - All inferred cluster_id included
+      - semantic_role and source_entity_id present
+      - confidence_score and match_method preserved
+
+  - phase: 8
+    label: rehydration_emission
+    description: Emit final room registry and diagnostics
+    script: scripts/generate_omega_room_registry.py
+    inputs:
+      - data/entity_fingerprint_map.*.json
+      - output/entity_id_migration_map.annotated.v4.full.json
+      - settings.conf.yaml
+    outputs:
+      - output/omega_room/omega_room_registry.json
+      - output/rehydration/rehydration_delta_log.json
+      - output/rehydration/room_registry_completeness_audit.json
+      - output/rehydration/unresolved_entities.log.json
+      - output/rehydration/TARBALL-OMEGA-ROOM-REGISTRY-STRICT-FINAL-CORRECTED.tar.gz
+    validation:
+      - Included entities > 0
+      - reason: missing_final_area_or_cluster_id should be resolved to
+      - Tarball should not double-nest
+
+  - phase: 9
+    label: rehydration_metrics_diagnostics
+    description: Validate completeness, exclusions, unresolved entities
+    script: null
+    inputs:
+      - output/rehydration/rehydration_delta_log.json
+      - output/rehydration/room_registry_completeness_audit.json
+      - output/rehydration/cluster_coverage_metrics.*.json
+    outputs:
+      - diagnostics only
+    validation:
+      - excluded_entities == 0 or explainable
+      - delta_log includes canonical mappings
+      - If all excluded → inference regression → restart from Phase 3
+
+  - phase: 10
+    label: pipeline_metrics_audit
+    description: Collect metrics and timestamps across pipeline stages
+    script: null
+    inputs:
+      - data/pipeline_metrics.latest.json
+    outputs:
+      - audit only
+    validation:
+      - All status == completed
+      - script, input, outputs, duration_seconds, notes fully populated
+    follow_up:
+      - If status == simulated/pending: rerun step
+      - Log to PATCHLOG
+
+re_run_protocol:
+  for_each_stage:
+    command: python3 scripts/<script>.py --config settings.conf.yaml
+    optional_output: --output data/<your_output_file>.json
+
+expected_output_files:
+  - entity_fingerprint_map.*.json
+  - entity_id_migration_map.annotated.v4.full.json
+  - omega_room_registry.json
+  - rehydration_delta_log.json
+  - room_registry_completeness_audit.json
+  - TARBALL-OMEGA-ROOM-REGISTRY-STRICT-FINAL-CORRECTED.tar.gz
+
+recovery_patch_logging:
+  - copilot_patchlog_overview.log
+  - copilot_patches/PATCH-*.log
+

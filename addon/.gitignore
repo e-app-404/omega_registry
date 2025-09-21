@@ -1,0 +1,2 @@
+canonical/logs/scratch/*
+!canonical/logs/scratch/.keep

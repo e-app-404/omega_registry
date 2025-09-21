@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "core.label_registry",
+  "data": {
+    "labels": [
+      {
+        "color": null,
+        "description": null,
+        "icon": "mdi:home-thermometer-outline",
+        "label_id": "climate",
+        "name": "climate",
+        "created_at": "2025-06-09T12:41:07.293380+00:00",
+        "modified_at": "2025-06-09T12:41:07.293386+00:00"
+      },
+      {
+        "color": null,
+        "description": null,
+        "icon": "mdi:air-conditioner",
+        "label_id": "air_quality",
+        "name": "air quality",
+        "created_at": "2025-06-09T12:41:15.733991+00:00",
+        "modified_at": "2025-06-09T12:41:15.733997+00:00"
+      }
+    ]
+  }
+}

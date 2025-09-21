@@ -1,0 +1,105 @@
+[
+  {
+    "file": "output/alpha_sensor_registry.json",
+    "category": "used",
+    "referenced_by": [
+      "scripts/emit_alpha_sensor_registry.py",
+      "scripts/generate_omega_room_registry.py",
+      "scripts/validate_alpha_sensor_registry.py"
+    ],
+    "last_modified": "2025-07-07T19:44:37",
+    "notes": "Rehydrated entity registry for alpha-tier sensors. Used as input for omega room registry and validation."
+  },
+  {
+    "file": "output/entity_id_migration_map.annotated.v4.json",
+    "category": "used",
+    "referenced_by": [
+      "scripts/generate_omega_room_registry.py"
+    ],
+    "last_modified": "2025-07-04T00:25:18",
+    "notes": "Entity ID migration map, used for mapping clusters to canonical entity IDs."
+  },
+  {
+    "file": "output/omega_room_registry.rehydrated.json",
+    "category": "used",
+    "referenced_by": [
+      "scripts/generate_omega_room_registry.py"
+    ],
+    "last_modified": "2025-07-07T03:37:52",
+    "notes": "Output: Omega room registry, generated from alpha sensor registry."
+  },
+  {
+    "file": "output/omega_device_registry.enriched.canonical.devtools_enriched.json",
+    "category": "used",
+    "referenced_by": [
+      "scripts/normalize_and_enrich_registry.py",
+      "scripts/ci_registry_metrics.py"
+    ],
+    "last_modified": "2025-07-06T22:17:03",
+    "notes": "Main enriched omega device registry, used for normalization and metrics."
+  },
+  {
+    "file": "output/omega_device_registry.normalized.enriched.json",
+    "category": "used",
+    "referenced_by": [
+      "scripts/normalize_and_enrich_registry.py"
+    ],
+    "last_modified": "2025-07-06T22:17:08",
+    "notes": "Final canonical registry after normalization."
+  },
+  {
+    "file": "output/alpha_sensor_registry.validation_report.json",
+    "category": "used",
+    "referenced_by": [
+      "scripts/validate_alpha_sensor_registry.py"
+    ],
+    "last_modified": "2025-07-07T20:56:52",
+    "notes": "Validation report for alpha sensor registry clusters."
+  },
+  {
+    "file": "output/fingerprint_entity_clusters.v1.json",
+    "category": "used",
+    "referenced_by": [
+      "scripts/emit_alpha_sensor_registry.py",
+      "scripts/patch_role_map_gap_analysis.py"
+    ],
+    "last_modified": "2025-07-03T14:25:09",
+    "notes": "Clustered fingerprint output, used for cluster grouping and gap analysis."
+  },
+  {
+    "file": "output/migration_map_role_coverage_report.json",
+    "category": "used",
+    "referenced_by": [
+      "scripts/patch_role_map_gap_analysis.py"
+    ],
+    "last_modified": "2025-07-07T23:31:49",
+    "notes": "Role coverage report, used for identifying mapping gaps."
+  },
+  {
+    "file": "output/migration_map_role_gap_trace.json",
+    "category": "used",
+    "referenced_by": [
+      "scripts/patch_role_map_gap_analysis.py"
+    ],
+    "last_modified": "2025-07-07T23:31:49",
+    "notes": "Trace of unmapped clusters by role."
+  },
+  {
+    "file": "output/auto_candidate_matches.csv",
+    "category": "used",
+    "referenced_by": [
+      "scripts/patch_role_map_gap_analysis.py"
+    ],
+    "last_modified": "2025-07-07T23:31:49",
+    "notes": "Auto-inferred candidate matches for unmapped clusters."
+  },
+  {
+    "file": "meta/README_final_registry_release.md",
+    "category": "meta",
+    "referenced_by": [
+      "meta/manifest_20250704.md"
+    ],
+    "last_modified": "2025-07-11T00:00:00",
+    "notes": "Final handoff documentation. Must be validated before final archival bundle."
+  }
+]

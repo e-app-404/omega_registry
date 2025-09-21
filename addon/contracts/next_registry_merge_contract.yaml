@@ -1,0 +1,23 @@
+registry_merge:
+  source: alpha_sensor_registry.json
+  target: omega_device_registry.json
+  conditions:
+    - "no unknown_area allowed unless flagged with reason"
+    - "confidence_score ≥ 0.70 OR manual_confirmed == true"
+    - "tier in [1, 2] unless role is fallback but area is confirmed"
+  output_entities:
+    format: full
+    include_fields:
+      - entity_id
+      - canonical_entity_key
+      - final_area
+      - role
+      - semantic_role
+      - tier
+      - confidence_score
+      - cluster_id
+  validation_pass_required: true
+  audit_trail:
+    delta_log: rehydration_delta_log.json
+    unresolved_log: unresolved_entities.log.json
+    completeness_report: room_registry_completeness_audit.json

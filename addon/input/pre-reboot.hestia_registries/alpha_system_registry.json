@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "HESTIA System Sensor Registry",
+    "location": "/config/hestia/core/system/",
+    "description": "Canonical registry of core system-level telemetry sensors grouped under HESTIA operations and validation logic.",
+    "version": "1.0",
+    "format": "registry+json",
+    "generated": true
+  },
+  "sensors": [
+    {
+      "name": "Diagnostics macro template library jinja (Mu)",
+      "canonical_id": "macro_template_library_health_check_μ",
+      "file": "system_health.yaml",
+      "tier": "μ",
+      "role": "diagnostics",
+      "subsystem": "athena"
+    },
+    {
+      "name": "Hestia System",
+      "canonical_id": "hestia_system",
+      "file": "system_sensors.yaml",
+      "tier": "ω",
+      "role": "system_state",
+      "subsystem": "hestia"
+    },
+    {
+      "name": "Recommended System Mode",
+      "canonical_id": "recommended_system_mode",
+      "file": "system_sensors.yaml",
+      "tier": "ω",
+      "role": "recommendation",
+      "subsystem": "hestia"
+    },
+    {
+      "name": "Alpha to Omega Merge Status",
+      "canonical_id": "alpha_to_omega_merge_status",
+      "file": "alpha_to_omega_merge_status.yaml",
+      "tier": "δ",
+      "role": "merge_validator",
+      "subsystem": "registry"
+    },
+    {
+      "name": "Entity Availability OK",
+      "canonical_id": "entity_availability_ok",
+      "file": "validators_observability.yaml",
+      "tier": "γ",
+      "role": "availability_monitor",
+      "subsystem": "validators"
+    },
+    {
+      "name": "Latest Iris Validator Summary",
+      "canonical_id": "iris_metric_summary",
+      "file": "validators_observability.yaml",
+      "tier": "β",
+      "role": "validator_metrics",
+      "subsystem": "validators"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+output_paths:
+  # Ω-tier registry output files
+  omega_cleaned: str # .json, required
+  omega_enriched_stage2: str # .json, required
+  omega_enriched_area_patched: str # .json, required
+  omega_enriched_devtools: str # .json, optional or post-pipeline
+
+  # α-tier output files
+  alpha_sensor_registry: str # .json, required
+
+  # Registry and cluster transformation artifacts
+  entity_id_migration_map: str # .json, required
+  role_inference_rules: str # .yaml, optional but recommended
+  area_mapping_matrix: str # .json, optional
+  fingerprinting_run: str # directory path, required
+
+  # Ω-room registry output (strict, Phase 6)
+  omega_room_registry: str # .json, required
+  omega_room_registry_debug: str # .json, optional for developer trace
+
+  # Diagnostics: must be written with timestamp expansion
+  cluster_diagnostics: str # must match glob `data/cluster_coverage_metrics.*.json`
+  role_resolution_diagnostics: str # must match glob `data/role_resolution_diagnostics.*.json`
+  unresolved_cluster_diagnostics: str # must match glob `data/unresolved_cluster_diagnostics.*.json`
+  device_area_mismatch_report: str # must match glob `data/clusters_with_device_but_missing_area.*.json`

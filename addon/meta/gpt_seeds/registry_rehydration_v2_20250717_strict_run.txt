@@ -1,0 +1,100 @@
+rehydration_context_manifest:
+  trace_id: registry_rehydration_v2_20250717_strict_run
+  persona: promachos_v3
+  phase:
+    current: Phase 6 - Strict Omega Room Registry Reconstruction (Post-Fingerprint + Cluster Join)
+    completed:
+      - Phase 1: entity_id_migration_map.annotated.v4.full.json (strict)
+      - Phase 2: entity_fingerprint_map.json (strict)
+      - Phase 3: Clustering (strict, with debug instrumentation)
+      - Phase 4: alpha_sensor_registry.json generation + validation (strict)
+      - Phase 5: omega_room_registry.json generation (strict + relaxed)
+    prior_context_merged: true
+    future_phase_ready: true
+
+  files_used:
+    - file: /registry/output/fingerprint/entity_fingerprint_map.json
+      purpose: fingerprint enrichment, clustering source, tier and schema completeness
+      tags: [fingerprint, clustering_input, strict_mode]
+
+    - file: /registry/output/fingerprint/fingerprint_coverage_report.json
+      purpose: schema coverage metrics and trace validation
+      tags: [coverage, fingerprint_audit]
+
+    - file: /registry/output/fingerprint/fingerprint_mapping_trace.json
+      purpose: per-entity fingerprint traceability and source resolution audit
+      tags: [trace, fingerprint_resolution, mapping]
+
+    - file: /registry/output/fingerprint/fingerprint_inference_trace.json
+      purpose: detailed per-entity area/role/slug resolution path
+      tags: [inference_trace, area_role_debug, strict_resolution]
+
+    - file: /registry/output/fingerprint/fingerprint_inference_failures.log
+      purpose: line-separated list of entities failing fingerprint resolution
+      tags: [rejection_log, fingerprint_failures]
+
+    - file: /registry/output/migration/entity_id_migration_map.annotated.v4.full.json
+      purpose: entity-level pre/post ID mapping and canonical entity key linkage
+      tags: [migration_map, source_of_truth, canonical_entity_key]
+
+    - file: /registry/output/alpha_sensor/alpha_sensor_registry.json
+      purpose: canonical alpha-tier cluster registry with strict schema
+      tags: [cluster_output, alpha_sensor_registry, strict_schema]
+
+    - file: /registry/output/alpha_sensor/cluster_assignment_trace.json
+      purpose: per-entity tier, cluster_id, role, and reason for clustering
+      tags: [cluster_trace, clustering_debug, tier_assignments]
+
+    - file: /registry/output/alpha_sensor/alpha_cluster_schema_validation_report.json
+      purpose: structural validation per cluster (schema completeness, tier pass/fail)
+      tags: [cluster_validation, schema_audit]
+
+    - file: /registry/output/alpha_sensor/cluster_skip_trace.json
+      purpose: list of skipped entities during clustering (empty in strict run)
+      tags: [cluster_exclusion, diagnostics]
+
+    - file: /registry/output/omega_room/omega_room_registry.json
+      purpose: room-level entity grouping for strict-mode reconstruction
+      tags: [room_registry, omega, output_final]
+
+    - file: /registry/output/omega_room/unresolved_entities.log.json
+      purpose: list of entities rejected during omega room assignment
+      tags: [omega_room_rejection, exclusion_log]
+
+    - file: /registry/output/omega_room/room_registry_completeness_audit.json
+      purpose: per-room and global audit of assignment coverage and missing roles
+      tags: [audit, coverage_check, area_entity_distribution]
+
+    - file: /registry/output/omega_room/rehydration_delta_log.json
+      purpose: final comparison of pre- vs post-rehydration mappings
+      tags: [delta, transformation_trace]
+
+    - file: /registry/input/core.entity_registry
+      purpose: ground truth entity corpus (1297 entities), canonical reference
+      tags: [entity_source, HA_registry, canonical_input]
+
+    - file: /registry/input/core.area_registry
+      purpose: authoritative room mappings for final_area resolution
+      tags: [room_map, area_reference, omega_room_registry]
+
+  memory_variables:
+    alpha_fingerprint_map: loaded from strict-mode entity_fingerprint_map.json (1205 entities)
+    strict_fingerprint_schema_pass: true (100% schema_complete = false; fallback presence high)
+    role_rules_applied: strict fallback blocking enabled
+    tier_counts: { tier1: 0, tier2: 12, tier3: 9070 }
+    final_cluster_entity_count: 9082
+    fingerprint_fallback_disabled: true
+    room_registry_final_mode: strict
+    unresolved_entities_strict_count: 1205
+    cluster_id_key_mode: (final_area, role, canonical_entity_key)
+    last_patch_ids_applied:
+      - PATCH-STRICT-FINGERPRINT-RECON
+      - PATCH-CLUSTER-STRICT-REBUILD
+      - PATCH-OMEGA-ROOM-STRICT
+      - PATCH-EMIT-TRACE-FIX
+    audit_log_updated: true
+    last_tarball: TARBALL-OMEGA-ROOM-REGISTRY-STRICT-REBUILD.tar.gz
+    cluster_registry_role: output (canonical)
+    fingerprint_map_role: input + intermediate product
+    override_exclusions_active: true
+    strict_mode_enforced: true

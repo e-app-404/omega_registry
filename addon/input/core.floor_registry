@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "core.floor_registry",
+  "data": {
+    "floors": [
+      {
+        "aliases": [],
+        "floor_id": "network",
+        "icon": null,
+        "level": 0,
+        "name": "Network",
+        "created_at": "2025-06-09T00:49:46.488637+00:00",
+        "modified_at": "2025-06-09T00:49:46.488643+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "upstairs",
+        "icon": null,
+        "level": 1,
+        "name": "Upstairs",
+        "created_at": "2025-06-09T00:52:57.038719+00:00",
+        "modified_at": "2025-06-09T00:52:57.038725+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "downstairs",
+        "icon": null,
+        "level": 0,
+        "name": "Downstairs",
+        "created_at": "2025-06-09T00:56:10.190585+00:00",
+        "modified_at": "2025-06-09T00:56:10.190590+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "bedroom_evert",
+        "icon": null,
+        "level": 1,
+        "name": "Bedroom Evert",
+        "created_at": "2025-06-09T00:57:27.671732+00:00",
+        "modified_at": "2025-06-09T00:57:27.671737+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "hestia",
+        "icon": null,
+        "level": 0,
+        "name": "Hestia",
+        "created_at": "2025-06-09T12:16:05.709226+00:00",
+        "modified_at": "2025-06-09T12:16:05.709232+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "services",
+        "icon": null,
+        "level": 0,
+        "name": "Services",
+        "created_at": "2025-07-19T07:51:02.587611+00:00",
+        "modified_at": "2025-07-19T07:51:02.587617+00:00"
+      }
+    ]
+  }
+}

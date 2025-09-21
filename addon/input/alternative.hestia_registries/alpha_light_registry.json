@@ -1,0 +1,3316 @@
+{
+  "_meta": {
+    "$schema": "http://json-schema.org/hestia-v7/schema#",
+    "title": "alpha_light_registry.json schema",
+    "name": "HESTIA Alpha Light Registry",
+    "description": "Registry that accompanies the omega device registry as a specialized version specifically for light entities.",
+    "version": "1.5.0",
+    "migration_source_files": [
+      "device_groups.json",
+      "sensor_signal_plane.json"
+    ],
+    "validation_status": {
+      "last_validated": "2025-05-02T00:46:50.852443Z",
+      "status": "valid",
+      "updated_by": "hephaestus",
+      "messages": []
+    }
+  },
+  "protocol_definitions": {
+    "matter": {
+      "name": "Matter",
+      "description": "Thread-based smart home protocol",
+      "priority": 1
+    },
+    "wifi": {
+      "name": "Wi-Fi",
+      "description": "Legacy wireless IP protocol",
+      "priority": 2
+    },
+    "mqtt": {
+      "name": "MQTT",
+      "description": "Message Queuing Telemetry Transport protocol",
+      "priority": 3
+    },
+    "ble": {
+      "name": "Bluetooth Low Energy",
+      "description": "Wireless personal area network protocol",
+      "priority": 4
+    },
+    "lan": {
+      "name": "Local Area Network",
+      "description": "Direct local network communication protocol",
+      "priority": 5
+    }
+  },
+  "integration_platforms": {
+    "matter": {
+      "name": "Matter",
+      "alias": null,
+      "description": "Thread-based smart home protocol",
+      "protocol": "matter",
+      "priority": 1
+    },
+    "wiz": {
+      "name": "WiZ",
+      "alias": "philips_wiz",
+      "description": "Signify/Philips Wi-Fi protocol for lights",
+      "protocol": "wifi",
+      "priority": 2
+    },
+    "tuya": {
+      "name": "Tuya",
+      "alias": "smartlife",
+      "description": "OEM Wi-Fi protocol used by Enshine",
+      "protocol": "wifi",
+      "priority": 3
+    },
+    "smartthings": {
+      "name": "SmartThings",
+      "alias": null,
+      "description": "Samsung's smart home integration",
+      "protocol": "wifi",
+      "priority": 4
+    },
+    "tplink": {
+      "name": "TP-Link",
+      "alias": "tapo",
+      "description": "TP-Link's direct device integration protocol",
+      "protocol": "wifi",
+      "priority": 5
+    },
+    "govee": {
+      "name": "Govee",
+      "alias": null,
+      "description": "Multi-protocol integration for Govee lighting devices",
+      "protocol": [
+        "mqtt",
+        "ble",
+        "lan",
+        "wifi"
+      ],
+      "priority": 6
+    }
+  },
+  "light_devices": {
+    "bedroom_nightstand_left_omega": {
+      "omega_name": "Bedroom Nightstand Left Light Omega",
+      "friendly_name": "Reading Lamp",
+      "internal_name": "wiz_rgbw_tunable_f1563e",
+      "canonical_id": "bedroom_nightstand_left_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": "nightstand",
+        "role": "left"
+      },
+      "room_id": "bedroom",
+      "room_area": "bed",
+      "integration_stack": {
+        "matter": {
+          "protocol": "matter",
+          "device_id": "032c3c890097974b10b6acd970d9bcd2",
+          "type": "light",
+          "entity_id": "light.reading_lamp_mtr",
+          "canonical_id": "bedroom_nightstand_left_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_nightstand_left_α_matter_available"
+        },
+        "wiz": {
+          "protocol": "wifi",
+          "device_id": "48f44f0fabfa49ac1e913d74a3e100ca",
+          "type": "light",
+          "entity_id": "light.reading_lamp",
+          "canonical_id": "bedroom_nightstand_left_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_nightstand_left_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {
+        "matter": {
+          "last_seen": "2025-04-22T15:30:00",
+          "response_time_ms": 120,
+          "reliability_score": 98
+        },
+        "wifi": {
+          "last_seen": "2025-04-22T14:25:00",
+          "response_time_ms": 350,
+          "reliability_score": 92
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": null
+      },
+      "device_info": {
+        "manufacturer": "Philips",
+        "model": "123189",
+        "model_name": "Candle",
+        "firmware": null,
+        "mac": "44:4F:8E:F1:56:3E",
+        "ipv4": "192.168.0.168",
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.wiz_rgbw_tunable_f1563e_effect_speed",
+            "name": "Bedroom Nightstand Left Light Alpha - Effect Speed",
+            "canonical_id": "bedroom_nightstand_left_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.wiz_rgbw_tunable_f1563e_signal_strength",
+            "name": "Bedroom Nightstand Left Light Alpha - Signal strength",
+            "canonical_id": "bedroom_nightstand_left_α_signal_strength",
+            "type": "sensor"
+          },
+          {
+            "entity": "power",
+            "entity_id": "sensor.wiz_rgbw_tunable_f1563e_power",
+            "name": "Bedroom Nightstand Left Light Alpha - Power",
+            "canonical_id": "bedroom_nightstand_left_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "identify",
+            "entity_id": "button.reading_lamp_mtr_identify",
+            "name": "Bedroom Nightstand Left Light Alpha - Identify",
+            "canonical_id": "bedroom_nightstand_left_α_identify",
+            "type": "button"
+          }
+        ],
+        "history": {
+          "added": "2025-03-15",
+          "protocol_switches": [
+            {
+              "timestamp": "2025-04-21T08:30:00",
+              "from": "matter",
+              "to": "wifi",
+              "reason": "unavailable"
+            },
+            {
+              "timestamp": "2025-04-21T19:45:00",
+              "from": "wifi",
+              "to": "matter",
+              "reason": "preferred_restored"
+            }
+          ]
+        }
+      }
+    },
+    "bedroom_desk_wall_omega": {
+      "omega_name": "Bedroom Desk Wall Light",
+      "friendly_name": "Bamboo Lamp",
+      "internal_name": "wiz_rgbw_tunable_94aeb2",
+      "canonical_id": "bedroom_desk_wall_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": "desk",
+        "role": "wall"
+      },
+      "room_id": "bedroom",
+      "room_area": "desk",
+      "integration_stack": {
+        "matter": {
+          "protocol": "matter",
+          "device_id": "7190aa0638cb8caf7ccb103823284b5c",
+          "type": "light",
+          "entity_id": "light.bamboo_lamp_mtr",
+          "canonical_id": "bedroom_desk_wall_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_desk_wall_α_matter_available"
+        },
+        "wiz": {
+          "protocol": "wifi",
+          "device_id": "b53e47bc55f2d01b074efc9dcac085f3",
+          "type": "light",
+          "origin": "light.bamboo_lamp",
+          "canonical_id": "bedroom_desk_wall_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_desk_wall_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {
+        "matter": {
+          "last_seen": "2025-04-22T15:30:00",
+          "response_time_ms": 120,
+          "reliability_score": 98
+        },
+        "wifi": {
+          "last_seen": "2025-04-22T14:25:00",
+          "response_time_ms": 350,
+          "reliability_score": 92
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": null
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "Candle",
+        "model_name": "Candle",
+        "firmware": null,
+        "mac": "CC:40:85:94:AE:B2",
+        "ipv4": "192.168.0.37",
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.bamboo_lamp_signal_strength",
+            "name": "Bedroom Desk Wall Light Alpha - Signal Strength",
+            "canonical_id": "bedroom_desk_wall_α_signal_strength",
+            "type": "sensor"
+          },
+          {
+            "entity": "power",
+            "entity_id": "sensor.bamboo_lamp_power",
+            "name": "Bedroom Desk Wall Light Alpha - Power",
+            "canonical_id": "bedroom_desk_wall_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.bamboo_lamp_effect_speed",
+            "name": "Bedroom Desk Wall Light Alpha - Effect Speed",
+            "canonical_id": "bedroom_desk_wall_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "identify",
+            "entity_id": "button.bamboo_lamp_mtr_identify",
+            "name": "Bedroom Desk Wall Light Alpha - Identify",
+            "canonical_id": "bedroom_desk_wall_α_identify",
+            "type": "button"
+          },
+          {
+            "entity": "off_transition_time",
+            "entity_id": "number.bamboo_lamp_mtr_off_transition_time",
+            "name": "Bedroom Desk Wall Light Alpha - Off Transition Time",
+            "canonical_id": "bedroom_desk_wall_α_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_level",
+            "entity_id": "number.bamboo_lamp_mtr_on_level",
+            "name": "Bedroom Desk Wall Light Alpha - On Level",
+            "canonical_id": "bedroom_desk_wall_α_on_level",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_transition_time",
+            "entity_id": "number.bamboo_lamp_mtr_on_transition_time",
+            "name": "Bedroom Desk Wall Light Alpha - On Transition Time",
+            "canonical_id": "bedroom_desk_wall_α_on_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_off_transition_time",
+            "entity_id": "number.bamboo_lamp_mtr_on_off_transition_time",
+            "name": "Bedroom Desk Wall Light Alpha - On/Off Transition Time",
+            "canonical_id": "bedroom_desk_wall_α_on_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "power_on_behaviour_on_startup",
+            "entity_id": "select.bamboo_lamp_mtr_power_on_behaviour_on_startup",
+            "name": "Bedroom Desk Wall Light Alpha - Power-on Behavior On Startup",
+            "canonical_id": "bedroom_desk_wall_α_power_on_behaviour_on_startup",
+            "type": "input_select",
+            "select_options": [
+              "on",
+              "off",
+              "toggle",
+              "previous"
+            ]
+          }
+        ],
+        "history": {
+          "added": "2025-03-15",
+          "protocol_switches": [
+            {
+              "timestamp": "2025-04-21T08:30:00",
+              "from": "matter",
+              "to": "wifi",
+              "reason": "unavailable"
+            },
+            {
+              "timestamp": "2025-04-21T19:45:00",
+              "from": "wifi",
+              "to": "matter",
+              "reason": "preferred_restored"
+            }
+          ]
+        }
+      }
+    },
+    "bedroom_main_omega": {
+      "omega_name": "Bedroom Main Light Omega",
+      "friendly_name": "Brass Pendant",
+      "internal_name": null,
+      "canonical_id": "bedroom_main_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": "main",
+        "role": "main"
+      },
+      "room_id": "bedroom",
+      "room_area": "main",
+      "integration_stack": {
+        "matter": {
+          "protocol": "matter",
+          "device_id": "9f03070c8f3f668c7058f06dd17fc01c",
+          "type": "light",
+          "entity_id": "light.brass_pendant_mtr",
+          "canonical_id": "bedroom_main_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_main_α_matter_available"
+        },
+        "wiz": {
+          "protocol": "wifi",
+          "device_id": "692618cdef8725b40bf174613286355c",
+          "type": "light",
+          "entity_id": "light.brass_pendant",
+          "canonical_id": "bedroom_main_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_main_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {
+        "matter": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        },
+        "wifi": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": null
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "127512",
+        "model_name": "G95.E27",
+        "firmware": null,
+        "mac": "44:4F:8E:B7:12:46",
+        "ipv4": null,
+        "ssid": null,
+        "entities": [
+          {
+            "entity": "power",
+            "entity_id": "sensor.wiz_rgbw_tunable_b71246_power",
+            "name": "Bedroom Main Light Alpha - Power",
+            "canonical_id": "bedroom_main_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.wiz_rgbw_tunable_b71246_effect_speed",
+            "name": "Bedroom Main Light Alpha - Effect Speed",
+            "canonical_id": "bedroom_main_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.wiz_rgbw_tunable_b71246_signal_strength",
+            "name": "Bedroom Main Light Alpha - Signal Strength",
+            "canonical_id": "bedroom_main_α_signal_strength",
+            "type": "sensor"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "bedroom_desk_corner_omega": {
+      "omega_name": "Bedroom Desk Corner Light Omega",
+      "friendly_name": "Confetti",
+      "internal_name": null,
+      "canonical_id": "bedroom_desk_corner_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": "desk",
+        "role": "corner"
+      },
+      "room_id": "bedroom",
+      "room_area": "desk",
+      "integration_stack": {
+        "wiz": {
+          "device_id": "f4ddc7116a5b56ef6023e9460251a71e",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.confetti",
+          "canonical_id": "bedroom_desk_corner_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_desk_corner_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "wifi",
+      "protocol_metrics": {
+        "wifi": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": null
+      },
+      "device_info": {
+        "manufacturer": "Wiz Pro",
+        "model": "151017",
+        "model_name": "Candle Pro",
+        "firmware": "1.33.0",
+        "mac": "6C:29:90:6A:90:06",
+        "ipv4": "192.168.0.91",
+        "ssid": null,
+        "entities": [
+          {
+            "entity": "power",
+            "entity_id": "sensor.confetti_power",
+            "name": "Bedroom Desk Corner Light Alpha - Power",
+            "canonical_id": "bedroom_desk_corner_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.confetti_effect_speed",
+            "name": "Bedroom Desk Corner Light Alpha - Effect Speed",
+            "canonical_id": "bedroom_desk_corner_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.confetti_signal_strength",
+            "name": "Bedroom Desk Corner Light Alpha - Signal Strength",
+            "canonical_id": "bedroom_desk_corner_α_signal_strength",
+            "type": "sensor"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      },
+      "status": "unavailable",
+      "error_reason": "No protocol with valid availability"
+    },
+    "ensuite_accent_omega": {
+      "omega_name": "Ensuite Accent Omega",
+      "friendly_name": "Cosmic Globe",
+      "internal_name": null,
+      "canonical_id": "ensuite_accent_ω",
+      "type": "light",
+      "location": {
+        "room": "ensuite",
+        "area": null,
+        "role": "accent"
+      },
+      "room_id": "ensuite",
+      "room_area": "accent",
+      "integration_stack": {
+        "tuya": {
+          "protocol": "wifi",
+          "type": "light",
+          "device_id": "c875be787bc5272f9beb91010c80dc99",
+          "entity_id": "light.ensuite_accent_alpha",
+          "canonical_id": "ensuite_accent_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.ensuite_accent_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "wifi",
+      "protocol_metrics": {
+        "wifi": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": null,
+        "color_temp": null,
+        "color": null,
+        "effects": null
+      },
+      "device_info": {
+        "manufacturer": "Enshine",
+        "model": "GU10",
+        "model_name": "Enshine GU10 Smart Bulb",
+        "firmware": null,
+        "mac": "c875be787bc5272f9beb91010c80dc99",
+        "ipv4": "c875be787bc5272f9beb91010c80dc99",
+        "ssid": "Aethernet_IoT",
+        "entities": [],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      },
+      "status": "unavailable",
+      "error_reason": "No protocol with valid availability"
+    },
+    "bedroom_desk_omega": {
+      "omega_name": "Bedroom Desk Light Omega",
+      "friendly_name": "Desk Lamp",
+      "internal_name": "alpha_wiz_rgbw_tunable_317b40",
+      "canonical_id": "bedroom_desk_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": "desk",
+        "role": "main"
+      },
+      "room_id": "bedroom",
+      "room_area": "desk",
+      "integration_stack": {
+        "matter": {
+          "protocol": "matter",
+          "device_id": "284747eaa58c2cd01ee098d75d26460d",
+          "type": "light",
+          "entity_id": "light.desk_lamp_mtr",
+          "canonical_id": "bedroom_desk_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_desk_α_matter_available"
+        },
+        "wiz": {
+          "device_id": "735205578032274dac2fec7ff8ec4305",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.desk_lamp",
+          "canonical_id": "bedroom_desk_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_desk_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {
+        "matter": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        },
+        "wifi": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": null
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "WiZ Candle (8547)",
+        "model_name": null,
+        "firmware": null,
+        "mac": "44:4f:8e:31:7b:40",
+        "ipv4": "192.168.0.73",
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.wiz_rgbw_tunable_317b40_effect_speed",
+            "name": "Bedroom Desk Light Effect Speed (Alpha)",
+            "canonical_id": "bedroom_desk_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "power",
+            "entity_id": "sensor.wiz_rgbw_tunable_317b40_power",
+            "name": "Bedroom Desk Light Power (Alpha)",
+            "canonical_id": "bedroom_desk_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.wiz_rgbw_tunable_317b40_signal_strength",
+            "name": "Bedroom Desk Light Signal Strength (Alpha)",
+            "canonical_id": "bedroom_desk_α_signal_strength",
+            "type": "sensor"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "hallway_upstairs_lightstrip_omega": {
+      "omega_name": "Hallway Upstairs Lightstrip Omega",
+      "friendly_name": "Upstairs Lightstrip",
+      "internal_name": "tapo_l900_tplink-hallway-upstairs",
+      "canonical_id": "hallway_upstairs_lightstrip_ω",
+      "type": "light",
+      "location": {
+        "room": "hallway",
+        "area": "upstairs",
+        "role": "lightstrip"
+      },
+      "room_id": "hallway",
+      "room_area": "upstairs",
+      "integration_stack": {
+        "smartthings": {
+          "device_id": "ac9d13f1a49e3184600f414360ae1865",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.upstairs_lightstrip",
+          "canonical_id": "hallway_upstairs_lightstrip_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.hallway_upstairs_lightstrip_α_wifi_available"
+        },
+        "tplink": {
+          "device_id": "afa81e2aa885fc158dce1f446235da46",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.upstairs_lightstrip_tplink",
+          "canonical_id": "hallway_upstairs_lightstrip_α_wifi_fallback",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.hallway_upstairs_lightstrip_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "wifi",
+      "protocol_metrics": {
+        "wifi": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Tapo",
+        "model": "l950",
+        "model_name": "lightstrip",
+        "firmware": "1.1.1",
+        "mac": "9C:53:22:BC:59:06",
+        "ipv4": "192.168.0.220",
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "cloud_connection",
+            "entity_id": "binary_sensor.upstairs_lightstrip_cloud_connection",
+            "name": "Hallway Upstairs Lightstrip Alpha - Cloud Connection",
+            "canonical_id": "hallway_upstairs_lightstrip_α_cloud_connection",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "overheated",
+            "entity_id": "binary_sensor.upstairs_lightstrip_overheated",
+            "name": "Hallway Upstairs Lightstrip Alpha - Overheated",
+            "canonical_id": "hallway_upstairs_lightstrip_α_overheated",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "restart",
+            "entity_id": "button.upstairs_lightstrip_restart",
+            "name": "Hallway Upstairs Lightstrip Alpha - Restart",
+            "canonical_id": "hallway_upstairs_lightstrip_α_restart",
+            "type": "button"
+          },
+          {
+            "entity": "tplink",
+            "entity_id": "light.upstairs_lightstrip_tplink",
+            "name": "Hallway Upstairs Lightstrip Alpha - TpLink Light",
+            "canonical_id": "hallway_upstairs_lightstrip_α_tplink",
+            "type": "light"
+          },
+          {
+            "entity": "light_preset",
+            "entity_id": "select.upstairs_lightstrip_light_preset",
+            "name": "Hallway Upstairs Lightstrip Alpha - Light Preset",
+            "canonical_id": "hallway_upstairs_lightstrip_α_light_preset",
+            "type": "input_select"
+          },
+          {
+            "entity": "device_time",
+            "entity_id": "sensor.upstairs_lightstrip_device_time",
+            "name": "Hallway Upstairs Lightstrip Alpha - Device Time",
+            "canonical_id": "hallway_upstairs_lightstrip_α_device_time",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_level",
+            "entity_id": "sensor.upstairs_lightstrip_signal_level",
+            "name": "Hallway Upstairs Lightstrip Alpha - Signal Level",
+            "canonical_id": "hallway_upstairs_lightstrip_α_signal_level",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.upstairs_lightstrip_signal_strength",
+            "name": "Hallway Upstairs Lightstrip Alpha - Signal Strength",
+            "canonical_id": "hallway_upstairs_lightstrip_α_signal_strength",
+            "type": "sensor"
+          },
+          {
+            "entity": "ssid",
+            "entity_id": "sensor.upstairs_lightstrip_ssid",
+            "name": "Hallway Upstairs Lightstrip Alpha - SSID",
+            "canonical_id": "hallway_upstairs_lightstrip_α_ssid",
+            "type": "sensor"
+          },
+          {
+            "entity": "auto_update_enabled",
+            "entity_id": "switch.upstairs_lightstrip_auto_update_enabled",
+            "name": "Hallway Upstairs Lightstrip Alpha - Auto Update Enabled",
+            "canonical_id": "hallway_upstairs_lightstrip_α_auto_update_enabled",
+            "type": "switch"
+          },
+          {
+            "entity": "smooth_transitions",
+            "entity_id": "switch.upstairs_lightstrip_smooth_transitions",
+            "name": "Hallway Upstairs Lightstrip Alpha - Smooth Transitions",
+            "canonical_id": "hallway_upstairs_lightstrip_α_smooth_transitions",
+            "type": "switch"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      },
+      "status": "unavailable",
+      "error_reason": "No protocol with valid availability"
+    },
+    "living_room_main_omega": {
+      "omega_name": "Living Room Main Light Omega",
+      "friendly_name": "Terrazo",
+      "internal_name": "wiz_rgbw_tunable_2871ea",
+      "canonical_id": "living_room_main_ω",
+      "type": "light",
+      "location": {
+        "room": "living_room",
+        "area": null,
+        "role": "main"
+      },
+      "room_id": "living_room",
+      "room_area": null,
+      "integration_stack": {
+        "matter": {
+          "device_id": "770337d75940c16426684730272dd340",
+          "protocol": "matter",
+          "type": "light",
+          "entity_id": "light.terrazo_mtr",
+          "canonical_id": "living_room_main_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.living_room_main_α_matter_available"
+        },
+        "wiz": {
+          "device_id": "aae0d2812c197bf717bc89bad41658bd",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.terrazo",
+          "canonical_id": "living_room_main_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.living_room_main_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {
+        "matter": {},
+        "wifi": {}
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": null,
+        "color_temp": null,
+        "color": null,
+        "effects": null
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "127506",
+        "model_name": "G95 Filament",
+        "firmware": null,
+        "mac": "44:4f:8e:28:71:ea",
+        "ipv4": "192.168.0.20",
+        "ipv6": "fdad:2364:d6f2:2854:464f:8eff:fe",
+        "ssid": "Router? I barely know her!",
+        "entities": [
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.wiz_rgbw_tunable_2871ea_effect_speed",
+            "name": "Living Room Main Light Alpha - Effect Speed",
+            "canonical_id": "living_room_main_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "power",
+            "entity_id": "sensor.wiz_rgbw_tunable_2871ea_power",
+            "name": "Living Room Main Light Alpha - Power",
+            "canonical_id": "living_room_main_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.wiz_rgbw_tunable_2871ea_signal_strength",
+            "name": "Living Room Main Light Alpha - Signal Strength",
+            "canonical_id": "living_room_main_α_signal_strength",
+            "type": "sensor"
+          },
+          {
+            "entity": "identify",
+            "entity_id": "button.terrazo_mtr_identify",
+            "name": "Living Room Main Light Alpha - Identify",
+            "canonical_id": "living_room_main_α_identify",
+            "type": "button"
+          },
+          {
+            "entity": "off_transition_time",
+            "entity_id": "number.terrazo_mtr_off_transition_time",
+            "name": "Living Room Main Light Alpha - Off Transition Time",
+            "canonical_id": "living_room_main_α_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_level",
+            "entity_id": "number.terrazo_mtr_on_level",
+            "name": "Living Room Main Light Alpha - On Level",
+            "canonical_id": "living_room_main_α_on_level",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_off_transition_time",
+            "entity_id": "number.terrazo_mtr_on_off_transition_time",
+            "name": "Living Room Main Light Alpha - On/Off Transition Time",
+            "canonical_id": "living_room_main_α_on_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_transition_time",
+            "entity_id": "number.terrazo_mtr_on_transition_time",
+            "name": "Living Room Main Light Alpha - On Transition Time",
+            "canonical_id": "living_room_main_α_on_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "power_on_behaviour_on_startup",
+            "entity_id": "select.terrazo_mtr_power_on_behaviour_on_startup",
+            "name": "Living Room Main Light Alpha - Power-on Behavior On Startup",
+            "canonical_id": "living_room_main_α_power_on_behaviour_on_startup",
+            "type": "input_select"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "bedroom_wall_omega": {
+      "omega_name": "Bedroom Wall Light Omega",
+      "friendly_name": "Wall Globe",
+      "internal_name": "wiz_globe",
+      "canonical_id": "bedroom_wall_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": null,
+        "role": "wall"
+      },
+      "room_id": "bedroom",
+      "room_area": null,
+      "integration_stack": {
+        "wiz": {
+          "device_id": "fffe6e6585f1a74982ec00ad99c51791",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.wall_globe",
+          "canonical_id": "bedroom_wall_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_wall_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "wifi",
+      "protocol_metrics": {
+        "matter": {},
+        "wifi": {}
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "151017",
+        "model_name": "Candle Pro",
+        "firmware": "1.33.0",
+        "mac": "6C:29:90:55:08:7E",
+        "ipv4": "192.168.0.114",
+        "ssid": null,
+        "entities": [
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.wiz_rgbw_tunable_55087e_effect_speed",
+            "name": "Bedroom Wall Light Alpha - Effect Speed",
+            "canonical_id": "bedroom_wall_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "power",
+            "entity_id": "sensor.wiz_rgbw_tunable_55087e_power",
+            "name": "Bedroom Wall Light Alpha - Power",
+            "canonical_id": "bedroom_wall_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.wiz_rgbw_tunable_55087e_signal_strength",
+            "name": "Bedroom Wall Light Alpha - Signal Strength",
+            "canonical_id": "bedroom_wall_α_signal_strength",
+            "type": "sensor"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      },
+      "status": "unavailable",
+      "error_reason": "No protocol with valid availability"
+    },
+    "bedroom_wardrobe_lightstrip_omega": {
+      "omega_name": "Bedroom Wardrobe Lightstrip Omega",
+      "friendly_name": "Wardrobe Lightstrip",
+      "internal_name": "wiz_unknown",
+      "canonical_id": "bedroom_wardrobe_lightstrip_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": "wardrobe",
+        "role": "lightstrip"
+      },
+      "room_id": "bedroom",
+      "room_area": "wardrobe",
+      "integration_stack": {
+        "matter": {
+          "protocol": "matter",
+          "device_id": "",
+          "type": "light",
+          "entity_id": "light.wardrobe_lightstrip_mtr",
+          "canonical_id": "bedroom_wardrobe_lightstrip_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_wardrobe_lightstrip_α_matter_available"
+        },
+        "wiz": {
+          "protocol": "wifi",
+          "device_id": "",
+          "type": "light",
+          "entity_id": "light.wardrobe_lightstrip",
+          "canonical_id": "bedroom_wardrobe_lightstrip_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_wardrobe_lightstrip_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {
+        "matter": {},
+        "wifi": {}
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": null,
+        "color_temp": null,
+        "color": null,
+        "effects": null
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "127555",
+        "model_name": "Color Strip",
+        "firmware": null,
+        "mac": null,
+        "ipv4": null,
+        "ssid": null,
+        "entities": [],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "living_room_stringlights_omega": {
+      "omega_name": "Living Room Stringlights Omega",
+      "friendly_name": "Fairy Stringlights",
+      "internal_name": "tapo_unknown",
+      "canonical_id": "living_room_stringlights_ω",
+      "type": "switch",
+      "location": {
+        "room": "living_room",
+        "area": null,
+        "role": "stringlights"
+      },
+      "room_id": "living_room",
+      "room_area": null,
+      "integration_stack": {
+        "smartthings": {
+          "protocol": "wifi",
+          "device_id": "11b12cd80eac825d1ddc9a6c97efabc4",
+          "type": "light",
+          "entity_id": "light.fairy_stringlights",
+          "canonical_id": "living_room_stringlights_α_fallback",
+          "status": "fallback",
+          "availability_sensor": "binary_sensor.living_room_stringlights_α_fallback_available"
+        },
+        "tplink": {
+          "protocol": "wifi",
+          "device_id": "0b52b1c94b5b53e416d5c4f91d1091c0",
+          "type": "light",
+          "entity_id": "switch.fairy_string_lights_tplink",
+          "canonical_id": "living_room_stringlights_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.living_room_stringlights_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "wifi",
+      "protocol_metrics": {
+        "wifi": {}
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": false,
+        "color_temp": false,
+        "color": false,
+        "effects": false
+      },
+      "device_info": {
+        "manufacturer": "Tapo",
+        "model": "P110",
+        "model_name": "Tapo P110",
+        "firmware": "1.3.1",
+        "mac": "9C:53:22:75:10:26",
+        "ipv4": null,
+        "ssid": null,
+        "entities": [
+          {
+            "entity": "cloud_connection",
+            "entity_id": "binary_sensor.fairy_string_lights_cloud_connection",
+            "name": "Living Room Stringlights Alpha - Cloud Connection",
+            "canonical_id": "living_room_stringlights_α_cloud_connection",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "overheated",
+            "entity_id": "binary_sensor.fairy_string_lights_overheated",
+            "name": "Living Room Stringlights Alpha - Overheated",
+            "canonical_id": "living_room_stringlights_α_overheated",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "overloaded",
+            "entity_id": "binary_sensor.fairy_string_lights_overloaded",
+            "name": "Living Room Stringlights Alpha - Overloaded",
+            "canonical_id": "living_room_stringlights_α_overloaded",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "turn_off_in",
+            "entity_id": "number.fairy_string_lights_turn_off_in",
+            "name": "Living Room Stringlights Alpha - Turn Off In",
+            "canonical_id": "living_room_stringlights_α_turn_off_in",
+            "type": "input_number"
+          },
+          {
+            "entity": "power_protection",
+            "entity_id": "number.fairy_string_lights_power_protection",
+            "name": "Living Room Stringlights Alpha - Power Protection",
+            "canonical_id": "living_room_stringlights_α_power_protection",
+            "type": "input_number"
+          },
+          {
+            "entity": "signal_level",
+            "entity_id": "sensor.fairy_string_lights_signal_level",
+            "name": "Living Room Stringlights Alpha - Signal Level",
+            "canonical_id": "living_room_stringlights_α_signal_level",
+            "type": "sensor"
+          },
+          {
+            "entity": "device_time",
+            "entity_id": "sensor.fairy_string_lights_device_time",
+            "name": "Living Room Stringlights Alpha - Device Time",
+            "canonical_id": "living_room_stringlights_α_device_time",
+            "type": "sensor"
+          },
+          {
+            "entity": "auto_off_at",
+            "entity_id": "sensor.fairy_string_lights_auto_off_at",
+            "name": "Living Room Stringlights Alpha - Auto Off At",
+            "canonical_id": "living_room_stringlights_α_auto_off_at",
+            "type": "sensor"
+          },
+          {
+            "entity": "current",
+            "entity_id": "sensor.fairy_string_lights_current",
+            "name": "Living Room Stringlights Alpha - Current",
+            "canonical_id": "living_room_stringlights_α_current",
+            "type": "sensor"
+          },
+          {
+            "entity": "auto_off_enabled",
+            "entity_id": "switch.fairy_string_lights_auto_off_enabled",
+            "name": "Living Room Stringlights Alpha - Auto Off Enabled",
+            "canonical_id": "living_room_stringlights_α_auto_off_enabled",
+            "type": "switch"
+          },
+          {
+            "entity": "restart",
+            "entity_id": "button.fairy_string_lights_restart",
+            "name": "Living Room Stringlights Alpha - Restart",
+            "canonical_id": "living_room_stringlights_α_restart",
+            "type": "button"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      },
+      "status": "unavailable",
+      "error_reason": "Missing protocol metadata"
+    },
+    "kitchen_lightstrip_omega": {
+      "omega_name": "Kitchen Lightstrip Omega",
+      "friendly_name": "Kitchen Cupboards Lightstrip",
+      "internal_name": "tapo_unknown",
+      "canonical_id": "kitchen_lightstrip_ω",
+      "type": "switch",
+      "location": {
+        "room": "kitchen",
+        "area": null,
+        "role": "lightstrip"
+      },
+      "room_id": "kitchen",
+      "room_area": null,
+      "integration_stack": {
+        "smartthings": {
+          "protocol": "wifi",
+          "device_id": "ffaa3c7367bb673bfe006c684de0b8c6",
+          "type": "light",
+          "entity_id": "light.kitchen_cupboards_lightstrip",
+          "canonical_id": "kitchen_lightstrip_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.kitchen_lightstrip_α_wifi_available"
+        },
+        "tplink": {
+          "device_id": "24bdcdefd80ebab349ce89501d952bd1",
+          "type": "light",
+          "entity_id": "light.kitchen_cupboards_lightstrip_tplink",
+          "canonical_id": "kitchen_lightstrip_α_wifi_fallback",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.kitchen_lightstrip_α_wifi_fallback_available"
+        }
+      },
+      "preferred_protocol": "wifi",
+      "protocol_metrics": {
+        "wifi": {}
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": false,
+        "color_temp": false,
+        "color": false,
+        "effects": false
+      },
+      "device_info": {
+        "manufacturer": "Tapo",
+        "model": "P100",
+        "model_name": "smart_switch",
+        "firmware": "1.3.1 Build 240621 Rel.162048",
+        "mac": "30:DE:4B:D0:BA:98",
+        "ipv4": null,
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "cloud_connection",
+            "entity_id": "binary_sensor.kitchen_cupboards_lightstrip_cloud_connection",
+            "name": "Kitchen Lightstrip Alpha - Cloud Connection",
+            "canonical_id": "kitchen_lightstrip_α_cloud_connection",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "overheated",
+            "entity_id": "binary_sensor.kitchen_cupboards_lightstrip_overheated",
+            "name": "Kitchen Lightstrip Alpha - Overheated",
+            "canonical_id": "kitchen_lightstrip_α_overheated",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "overloaded",
+            "entity_id": "binary_sensor.kitchen_cupboards_lightstrip_overloaded",
+            "name": "Kitchen Lightstrip Alpha - Overloaded",
+            "canonical_id": "kitchen_lightstrip_α_overloaded",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "restart",
+            "entity_id": "button.kitchen_cupboards_lightstrip_restart",
+            "name": "Kitchen Lightstrip Alpha - Restart",
+            "canonical_id": "kitchen_lightstrip_α_restart",
+            "type": "button"
+          },
+          {
+            "entity": "power_protection",
+            "entity_id": "number.kitchen_cupboards_lightstrip_power_protection",
+            "name": "Kitchen Lightstrip Alpha - Power Protection",
+            "canonical_id": "kitchen_lightstrip_α_power_protection",
+            "type": "input_number"
+          },
+          {
+            "entity": "turn_off_in",
+            "entity_id": "number.kitchen_cupboards_lightstrip_turn_off_in",
+            "name": "Kitchen Lightstrip Alpha - Turn Off In",
+            "canonical_id": "kitchen_lightstrip_α_turn_off_in",
+            "type": "input_number"
+          },
+          {
+            "entity": "auto_off_at",
+            "entity_id": "sensor.kitchen_cupboards_lightstrip_auto_off_at",
+            "name": "Kitchen Lightstrip Alpha - Auto Off At",
+            "canonical_id": "kitchen_lightstrip_α_auto_off_at",
+            "type": "sensor"
+          },
+          {
+            "entity": "current",
+            "entity_id": "sensor.kitchen_cupboards_lightstrip_current",
+            "name": "Kitchen Lightstrip Alpha - Current",
+            "canonical_id": "kitchen_lightstrip_α_current",
+            "type": "sensor"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "kitchen_corner_omega": {
+      "omega_name": "Kitchen Corner Light Omega",
+      "friendly_name": "Kitchen Corner Touch Lamp",
+      "internal_name": "tapo_l530",
+      "canonical_id": "kitchen_corner_ω",
+      "type": "light",
+      "location": {
+        "room": "kitchen",
+        "area": null,
+        "role": "corner"
+      },
+      "room_id": "kitchen",
+      "room_area": null,
+      "integration_stack": {
+        "wifi": {
+          "device_id": "6ee1353709d1904979830cd9f625d6df",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.kitchen_corner",
+          "canonical_id": "kitchen_corner_α_wifi",
+          "status": "unpaired",
+          "availability_sensor": "binary_sensor.kitchen_corner_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {
+        "wifi": {}
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Tapo",
+        "model": "L530",
+        "model_name": "Tapo L530",
+        "firmware": "1.1.1 Build 240623 Rel. 114041",
+        "mac": "1C:61:B4:B6:AF:6B",
+        "ipv4": "192.168.0.66",
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "cloud_connection",
+            "entity_id": "binary_sensor.kitchen_corner_cloud_connection",
+            "name": "Kitchen Corner Light Alpha - Cloud Connection",
+            "canonical_id": "kitchen_corner_α_cloud_connection",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "overheated",
+            "entity_id": "binary_sensor.kitchen_corner_overheated",
+            "name": "Kitchen Corner Light Alpha - Overheated",
+            "canonical_id": "kitchen_corner_α_overheated",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "restart",
+            "entity_id": "button.kitchen_corner_restart",
+            "name": "Kitchen Corner Light Alpha - Restart",
+            "canonical_id": "kitchen_corner_α_restart",
+            "type": "button"
+          },
+          {
+            "entity": "smooth_off",
+            "entity_id": "number.kitchen_corner_smooth_off",
+            "name": "Kitchen Corner Light Alpha - Smooth Off",
+            "canonical_id": "kitchen_corner_α_smooth_off",
+            "type": "input_number"
+          },
+          {
+            "entity": "smooth_on",
+            "entity_id": "number.kitchen_corner_smooth_on",
+            "name": "Kitchen Corner Light Alpha - Smooth On",
+            "canonical_id": "kitchen_corner_α_smooth_on",
+            "type": "input_number"
+          },
+          {
+            "entity": "light_preset",
+            "entity_id": "select.kitchen_corner_light_preset",
+            "name": "Kitchen Corner Light Alpha - Light Preset",
+            "canonical_id": "kitchen_corner_α_light_preset",
+            "type": "input_select"
+          },
+          {
+            "entity": "device_time",
+            "entity_id": "sensor.kitchen_corner_device_time",
+            "name": "Kitchen Corner Light Alpha - Device Time",
+            "canonical_id": "kitchen_corner_α_device_time",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_level",
+            "entity_id": "sensor.kitchen_corner_signal_level",
+            "name": "Kitchen Corner Light Alpha - Signal Level",
+            "canonical_id": "kitchen_corner_α_signal_level",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.kitchen_corner_signal_strength",
+            "name": "Kitchen Corner Light Alpha - Signal Strength",
+            "canonical_id": "kitchen_corner_α_signal_strength",
+            "type": "sensor"
+          },
+          {
+            "entity": "ssid",
+            "entity_id": "sensor.kitchen_corner_ssid",
+            "name": "Kitchen Corner Light Alpha - SSID",
+            "canonical_id": "kitchen_corner_α_ssid",
+            "type": "sensor"
+          },
+          {
+            "entity": "auto_update_enabled",
+            "entity_id": "switch.kitchen_corner_auto_update_enabled",
+            "name": "Kitchen Corner Light Alpha - Auto Update Enabled",
+            "canonical_id": "kitchen_corner_α_auto_update_enabled",
+            "type": "switch"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "monitor_backlight_omega": {
+      "omega_name": "Monitor LED Backlight Omega",
+      "friendly_name": "Govee Bedroom Desk Monitor LED Backlight",
+      "internal_name": "govee_backlight",
+      "canonical_id": "monitor_backlight_ω",
+      "type": "lightstrip",
+      "location": {
+        "room": "bedroom",
+        "area": "desk",
+        "role": "monitor_backlight"
+      },
+      "room_id": "bedroom",
+      "room_area": "desk",
+      "integration_stack": {
+        "govee2mqtt": {
+          "device_id": "0f9ee829e18dd8816e0ec9f268ec9e0a",
+          "protocol": "mqtt",
+          "type": "light",
+          "entity_id": "light.monitor_backlight_alpha",
+          "canonical_id": "monitor_backlight_α",
+          "status": "paired",
+          "availability_sensor": "sensor.monitor_backlight_alpha_available"
+        }
+      },
+      "preferred_protocol": "mqtt",
+      "protocol_metrics": {
+        "mqtt": {}
+      },
+      "fallback_settings": {
+        "retry_attempts": 3,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Govee",
+        "model": "H6182",
+        "model_name": "Tapo L530",
+        "firmware": "2.03.11",
+        "mac": "D4:AD:FC:12:FF:3F",
+        "ipv4": "192.168.0.174",
+        "ssid": "Aethernet_IoT",
+        "mqtt_bindings": {
+          "command_topic": "gv2mqtt/light/22D0D4ADFCB97E7E/command",
+          "state_topic": "gv2mqtt/light/22D0D4ADFCB97E7E/state",
+          "availability_topic": "gv2mqtt/availability",
+          "json_template": {
+            "state": "{{ value_json.on }}",
+            "brightness": "{{ value_json.brightness }}",
+            "rgb_color": "[{{ value_json.color.r }}, {{ value_json.color.g }}, {{ value_json.color.b }}]",
+            "color_temp": "{{ value_json.kelvin }}",
+            "effect": "{{ value_json.scene }}"
+          },
+          "publish_template": {
+            "on": {
+              "on": true
+            },
+            "off": {
+              "on": false
+            },
+            "brightness": {
+              "brightness": "{{ brightness }}"
+            },
+            "rgb_color": {
+              "color": {
+                "r": "{{ r }}",
+                "g": "{{ g }}",
+                "b": "{{ b }}"
+              }
+            },
+            "color_temp": {
+              "kelvin": "{{ kelvin }}"
+            },
+            "effect": {
+              "scene": "{{ effect }}"
+            }
+          },
+          "schema": "json",
+          "brightness_scale": 100,
+          "supported_color_modes": [
+            "rgb",
+            "color_temp"
+          ],
+          "effect_list": [
+            "Rainbow",
+            "Candlelight",
+            "Aurora",
+            "Movie",
+            "Music: Calm",
+            "Music: Dynamic"
+          ]
+        },
+        "entities": [
+          {
+            "entity": "gradient_toggle",
+            "entity_id": "switch.monitor_backlight_gradient_toggle",
+            "friendly_name": "Monitor Backlight Gradient Toggle",
+            "state": "unknown",
+            "domain": "switch"
+          },
+          {
+            "entity": "power",
+            "entity_id": "switch.monitor_backlight_power_switch",
+            "friendly_name": "Monitor Backlight Power Switch",
+            "state": "off",
+            "domain": "switch"
+          },
+          {
+            "entity": "api_state",
+            "entity_id": "button.monitor_backlight_request_platform_api_state",
+            "friendly_name": "Monitor Backlight Request Platform API State",
+            "state": "unknown",
+            "domain": "button"
+          },
+          {
+            "entity": "segment_1",
+            "entity_id": "light.monitor_backlight_segment_001",
+            "friendly_name": "Monitor Backlight Segment 001",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_2",
+            "entity_id": "light.monitor_backlight_segment_002",
+            "friendly_name": "Monitor Backlight Segment 002",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_3",
+            "entity_id": "light.monitor_backlight_segment_003",
+            "friendly_name": "Monitor Backlight Segment 003",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_4",
+            "entity_id": "light.monitor_backlight_segment_004",
+            "friendly_name": "Monitor Backlight Segment 004",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_5",
+            "entity_id": "light.monitor_backlight_segment_005",
+            "friendly_name": "Monitor Backlight Segment 005",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_6",
+            "entity_id": "light.monitor_backlight_segment_006",
+            "friendly_name": "Monitor Backlight Segment 006",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_7",
+            "entity_id": "light.monitor_backlight_segment_007",
+            "friendly_name": "Monitor Backlight Segment 007",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_8",
+            "entity_id": "light.monitor_backlight_segment_008",
+            "friendly_name": "Monitor Backlight Segment 008",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_9",
+            "entity_id": "light.monitor_backlight_segment_009",
+            "friendly_name": "Monitor Backlight Segment 009",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_10",
+            "entity_id": "light.monitor_backlight_segment_010",
+            "friendly_name": "Monitor Backlight Segment 010",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_11",
+            "entity_id": "light.monitor_backlight_segment_011",
+            "friendly_name": "Monitor Backlight Segment 011",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_12",
+            "entity_id": "light.monitor_backlight_segment_012",
+            "friendly_name": "Monitor Backlight Segment 012",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_13",
+            "entity_id": "light.monitor_backlight_segment_013",
+            "friendly_name": "Monitor Backlight Segment 013",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_014",
+            "entity_id": "light.monitor_backlight_segment_014",
+            "friendly_name": "Monitor Backlight Segment 014",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "segment_15",
+            "entity_id": "light.monitor_backlight_segment_015",
+            "friendly_name": "Monitor Backlight Segment 015",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity": "status",
+            "entity_id": "sensor.monitor_backlight_status",
+            "friendly_name": "Monitor Backlight Status",
+            "state": "Available",
+            "domain": "sensor"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "living_room_foxy_omega": {
+      "omega_name": "Living Room Foxy Omega",
+      "friendly_name": "Foxy",
+      "internal_name": "wiz_rgbw_tunable_02345e",
+      "canonical_id": "living_room_foxy_ω",
+      "type": "light",
+      "location": {
+        "room": "living_room",
+        "area": null,
+        "role": "fox"
+      },
+      "room_id": "living_room",
+      "room_area": null,
+      "integration_stack": {
+        "matter": {
+          "device_id": "0bfa61de7d524ee213553c17ec8ff1f1",
+          "protocol": "matter",
+          "type": "light",
+          "entity_id": "light.foxy_mtr",
+          "canonical_id": "living_room_foxy_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.living_room_foxy_α_matter_available"
+        },
+        "wiz": {
+          "device_id": "aba311d315621a300aa18d98682ce601",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.foxy",
+          "canonical_id": "living_room_foxy_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.living_room_foxy_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {},
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Philips",
+        "model": "123189",
+        "model_name": "Candle",
+        "firmware": null,
+        "mac": "CC:40:85:02:34:5E",
+        "ipv4": null,
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "identify",
+            "entity_id": "button.foxy_mtr_identify",
+            "name": "Living Room Foxy Alpha - Identify",
+            "canonical_id": "living_room_foxy_α_identify",
+            "type": "button"
+          },
+          {
+            "entity": "off_transition_time",
+            "entity_id": "number.foxy_mtr_off_transition_time",
+            "name": "Living Room Foxy Alpha - Off Transition Time",
+            "canonical_id": "living_room_foxy_α_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_level",
+            "entity_id": "number.foxy_mtr_on_level",
+            "name": "Living Room Foxy Alpha - On Level",
+            "canonical_id": "living_room_foxy_α_on_level",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_off_transition_time",
+            "entity_id": "number.foxy_mtr_on_off_transition_time",
+            "name": "Living Room Foxy Alpha - On/Off Transition Time",
+            "canonical_id": "living_room_foxy_α_on_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_transition_time",
+            "entity_id": "number.foxy_mtr_on_transition_time",
+            "name": "Living Room Foxy Alpha - On Transition Time",
+            "canonical_id": "living_room_foxy_α_on_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "power_on_behaviour_on_startup",
+            "entity_id": "select.foxy_mtr_power_on_behaviour_on_startup",
+            "name": "Living Room Foxy Alpha - Power-on Behavior On Startup",
+            "canonical_id": "living_room_foxy_α_power_on_behaviour_on_startup",
+            "type": "input_select"
+          },
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.wiz_rgbw_tunable_02345e_effect_speed",
+            "name": "Living Room Foxy Alpha - Effect Speed",
+            "canonical_id": "living_room_foxy_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "power",
+            "entity_id": "sensor.wiz_rgbw_tunable_02345e_power",
+            "name": "Living Room Foxy Alpha - Power",
+            "canonical_id": "living_room_foxy_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.wiz_rgbw_tunable_02345e_signal_strength",
+            "name": "Living Room Foxy Alpha - Signal Strength",
+            "canonical_id": "living_room_foxy_α_signal_strength",
+            "type": "sensor"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "bedroom_mirror_lightstrip_omega": {
+      "omega_name": "Bedroom Mirror Lightstrip Omega",
+      "friendly_name": "Mirror Lightstrip",
+      "internal_name": "wiz_rgbww_tunable_79bb9e",
+      "canonical_id": "bedroom_mirror_lightstrip_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": "mirror",
+        "role": "lightstrip"
+      },
+      "room_id": "bedroom",
+      "room_area": null,
+      "integration_stack": {
+        "matter": {
+          "device_id": "892db8c2f2c63d6ef9c88ba45f203ffc",
+          "protocol": "matter",
+          "type": "light",
+          "entity_id": "light.mirror_lightstrip_mtr",
+          "canonical_id": "bedroom_mirror_lightstrip_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_mirror_lightstrip_α_matter_available"
+        },
+        "wiz": {
+          "device_id": "074612b43810a668cc6a958b98ec48cc",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.mirror_lightstrip",
+          "canonical_id": "bedroom_mirror_lightstrip_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_mirror_lightstrip_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {},
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "127584",
+        "model_name": "Color Strip",
+        "firmware": "1.33.0",
+        "mac": "D8:A0:11:79:BB:9E",
+        "ipv4": "192.168.0.253",
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.wiz_rgbww_tunable_79bb9e_effect_speed",
+            "name": "Bedroom Mirror Lightstrip Alpha - Effect Speed",
+            "canonical_id": "bedroom_mirror_lightstrip_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "power",
+            "entity_id": "sensor.wiz_rgbww_tunable_79bb9e_power",
+            "name": "Bedroom Mirror Lightstrip Alpha - Power",
+            "canonical_id": "bedroom_mirror_lightstrip_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.wiz_rgbww_tunable_79bb9e_signal_strength",
+            "name": "Bedroom Mirror Lightstrip Alpha - Signal Strength",
+            "canonical_id": "bedroom_mirror_lightstrip_α_signal_strength",
+            "type": "sensor"
+          },
+          {
+            "entity": "identify",
+            "entity_id": "button.mirror_lightstrip_mtr_identify",
+            "name": "Bedroom Mirror Lightstrip Alpha - Identify",
+            "canonical_id": "bedroom_mirror_lightstrip_α_identify",
+            "type": "button"
+          },
+          {
+            "entity": "off_transition_time",
+            "entity_id": "number.mirror_lightstrip_mtr_off_transition_time",
+            "name": "Bedroom Mirror Lightstrip Alpha - Off Transition Time",
+            "canonical_id": "bedroom_mirror_lightstrip_α_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_level",
+            "entity_id": "number.mirror_lightstrip_mtr_on_level",
+            "name": "Bedroom Mirror Lightstrip Alpha - On Level",
+            "canonical_id": "bedroom_mirror_lightstrip_α_on_level",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_off_transition_time",
+            "entity_id": "number.mirror_lightstrip_mtr_on_off_transition_time",
+            "name": "Bedroom Mirror Lightstrip Alpha - On/Off Transition Time",
+            "canonical_id": "bedroom_mirror_lightstrip_α_on_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_transition_time",
+            "entity_id": "number.mirror_lightstrip_mtr_on_transition_time",
+            "name": "Bedroom Mirror Lightstrip Alpha - On Transition Time",
+            "canonical_id": "bedroom_mirror_lightstrip_α_on_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "power_on_behaviour_on_startup",
+            "entity_id": "select.mirror_lightstrip_mtr_power_on_behaviour_on_startup",
+            "name": "Bedroom Mirror Lightstrip Alpha - Power-on Behavior On Startup",
+            "canonical_id": "bedroom_mirror_lightstrip_α_power_on_behaviour_on_startup",
+            "type": "input_select"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "bedroom_nightstand_right_omega": {
+      "omega_name": "Bedroom Nightstand Right Omega",
+      "friendly_name": "Sculpture",
+      "internal_name": null,
+      "canonical_id": "bedroom_nightstand_right_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": "nightstand",
+        "role": "right"
+      },
+      "room_id": "bedroom",
+      "room_area": "nightstand",
+      "integration_stack": {
+        "matter": {
+          "device_id": "a9612966aa3243b69ebd169195c4326b",
+          "enabled": true,
+          "protocol": "matter",
+          "type": "light",
+          "entity_id": "light.sculpture_mtr",
+          "canonical_id": "bedroom_nightstand_right_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_nightstand_right_α_matter_available"
+        },
+        "wiz": {
+          "device_id": "f2a9778556e2ff3497883bc9abff5746",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.sculpture",
+          "canonical_id": "bedroom_nightstand_right_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_nightstand_right_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {},
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "127424",
+        "model_name": "P45.E14",
+        "firmware": null,
+        "mac": "444F8E378364",
+        "ipv4": "192.168.0.111",
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "identify",
+            "entity_id": "button.sculpture_mtr_identify",
+            "name": "Bedroom Nightstand Right Alpha - Identify",
+            "canonical_id": "bedroom_nightstand_right_α_identify",
+            "type": "button"
+          },
+          {
+            "entity": "off_transition_time",
+            "entity_id": "number.sculpture_mtr_off_transition_time",
+            "name": "Bedroom Nightstand Right Alpha - Off Transition Time",
+            "canonical_id": "bedroom_nightstand_right_α_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_level",
+            "entity_id": "number.sculpture_mtr_on_level",
+            "name": "Bedroom Nightstand Right Alpha - On Level",
+            "canonical_id": "bedroom_nightstand_right_α_on_level",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_off_transition_time",
+            "entity_id": "number.sculpture_mtr_on_off_transition_time",
+            "name": "Bedroom Nightstand Right Alpha - On/Off Transition Time",
+            "canonical_id": "bedroom_nightstand_right_α_on_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_transition_time",
+            "entity_id": "number.sculpture_mtr_on_transition_time",
+            "name": "Bedroom Nightstand Right Alpha - On Transition Time",
+            "canonical_id": "bedroom_nightstand_right_α_on_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "power_on_behaviour_on_startup",
+            "entity_id": "select.sculpture_mtr_power_on_behaviour_on_startup",
+            "name": "Bedroom Nightstand Right Alpha - Power-on Behavior On Startup",
+            "canonical_id": "bedroom_nightstand_right_α_power_on_behaviour_on_startup",
+            "type": "input_select"
+          },
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.wiz_rgbw_tunable_378364_effect_speed",
+            "name": "Bedroom Nightstand Right Alpha - Effect Speed",
+            "canonical_id": "bedroom_nightstand_right_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "power",
+            "entity_id": "sensor.wiz_rgbw_tunable_378364_power",
+            "name": "Bedroom Nightstand Right Alpha - Power",
+            "canonical_id": "bedroom_nightstand_right_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.wiz_rgbw_tunable_378364_signal_strength",
+            "name": "Bedroom Nightstand Right Alpha - Signal Strength",
+            "canonical_id": "bedroom_nightstand_right_α_signal_strength",
+            "type": "sensor"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "bedroom_entrance_omega": {
+      "omega_name": "Bedroom Entrance Terrazo Omega",
+      "friendly_name": "Entrance Terrazo",
+      "internal_name": "wiz_st64_filament",
+      "canonical_id": "bedroom_entrance_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": null,
+        "role": "entrance"
+      },
+      "room_id": "bedroom",
+      "room_area": null,
+      "integration_stack": {
+        "matter": {
+          "protocol": "matter",
+          "device_id": "31843c0bd4ae5176723c7c6b970ffb75",
+          "type": "light",
+          "entity_id": "light.entrance_terrazo_mtr",
+          "canonical_id": "bedroom_entrance_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_entrance_α_matter_available"
+        },
+        "wiz": {
+          "protocol": "wifi",
+          "device_id": "4022ccdd44e2bedbee00ffc5b12cb97d",
+          "type": "light",
+          "entity_id": "light.entrance_terrazo",
+          "canonical_id": "bedroom_entrance_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_entrance_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {},
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "ST64 Filament",
+        "model_name": "ST64 Filament",
+        "firmware": null,
+        "mac": "44:4f:8e:2b:9e:38",
+        "ipv4": "192.168.0.184",
+        "ipv6": "fdad:2364:d6f2:2854:464f:8eff:fe2b:9e38",
+        "ssid": "Router? I barely know her!",
+        "entities": [],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "laundry_ceiling_omega": {
+      "omega_name": "Laundry Ceiling Omega",
+      "friendly_name": "Laundry Ceiling light",
+      "internal_name": "bfd6a994377ced5769av0i",
+      "canonical_id": "laundry_ceiling_ω",
+      "type": "light",
+      "location": {
+        "room": "laundry",
+        "area": null,
+        "role": "ceiling"
+      },
+      "room_id": "laundry",
+      "room_area": null,
+      "integration_stack": {
+        "tuya": {
+        "protocol": "wifi",
+        "device_id": "751e1aea1274a4312e9c59fe1d18f8ee",
+        "type": "light",
+        "entity_id": "light.laundry_ceiling_tuya_alpha",
+        "canonical_id": "laundry_ceiling_α",
+        "status": "paired",
+        "availability_sensor": null
+      }
+      },
+      "preferred_protocol": "wifi",
+      "protocol_metrics": {
+        "wifi": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": null,
+        "color": null,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "enshine",
+        "model": "GU10",
+        "model_name": "Enshine GU10 Smart Bulb",
+        "firmware": "",
+        "mac": "fc:67:1f:1a:3e:60",
+        "ipv4": "92.40.217.152",
+        "ssid": "Aethernet_IoT",
+        "entities": [],
+        "history": {
+          "added": "2025-04-26",
+          "omega_change": "2025-06-13",
+          "protocol_switches": []
+        }
+      },
+      "status": "unavailable",
+      "error_reason": "No protocol with valid availability"
+    },
+    "ensuite_main_omega": {
+      "omega_name": "Ensuite Main Light Omega",
+      "friendly_name": "Ensuite Lamp",
+      "internal_name": "tuya_enshine",
+      "canonical_id": "ensuite_main_ω",
+      "type": "light",
+      "location": {
+        "room": "ensuite",
+        "area": null,
+        "role": "main"
+      },
+      "room_id": "ensuite",
+      "room_area": null,
+      "integration_stack": {
+        "tuya": {
+          "protocol": "wifi",
+          "device_id": "cad9bc8d1e7597980fd07ff6f18dab4c",
+          "type": "light",
+          "entity_id": "light.ensuite_main_alpha",
+          "canonical_id": "ensuite_main_α_wifi",
+          "status": "paired",
+          "availability_sensor": ""
+        }
+      },
+      "preferred_protocol": "wifi",
+      "protocol_metrics": {},
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "LVWIT",
+        "model": "tuya",
+        "model_name": "LVWIT Smart Light (m74adgwzug23ausy)",
+        "firmware": null,
+        "mac": "C4:82:E1:48:76:7C",
+        "ipv4": "92.40.216.238",
+        "ssid": "Aethernet_IoT",
+        "entities": [],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      },
+      "status": "unavailable",
+      "error_reason": "No protocol with valid availability"
+    },
+    "ensuite_lightstrip_omega": {
+      "omega_name": "Ensuite Lightstrip Omega",
+      "friendly_name": "Ensuite Lightstrip",
+      "internal_name": "tapo_l930",
+      "canonical_id": "ensuite_lightstrip_ω",
+      "type": "light",
+      "location": {
+        "room": "ensuite",
+        "area": null,
+        "role": "lightstrip"
+      },
+      "room_id": "ensuite",
+      "room_area": null,
+      "integration_stack": {
+        "matter": {
+          "protocol": "matter",
+          "type": "light",
+          "device_id": "unknown",
+          "entity_id": "light.ensuite_lightstrip_mtr",
+          "canonical_id": "ensuite_lightstrip_α_matter",
+          "status": "disabled",
+          "availability_sensor": "binary_sensor.ensuite_lightstrip_α_matter_available"
+        },
+        "smartthings": {
+          "protocol": "wifi",
+          "device_id": "0d97098cfecc778332e21babe6a1bd5c",
+          "type": "light",
+          "entity_id": "light.ensuite_lightstrip_wifi_alpha",
+          "canonical_id": "ensuite_lightstrip_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.ensuite_lightstrip_α_wifi_available"
+        },
+        "tplink": {
+          "protocol": "wifi",
+          "device_id": "c9af30f9123fd311977ceadddfd2a28b",
+          "type": "light",
+          "entity_id": "light.ensuite_lightstrip_tplink_alpha",
+          "canonical_id": "ensuite_lightstrip_α_wifi_fallback",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.ensuite_lightstrip_α_wifi_fallback_available"
+        },
+        "homekit": {
+          "protocol": "matter",
+          "device_id": "977d5690606bf63d18640cbb4c02503a",
+          "type": "light",
+          "entity_id": "light.ensuite_lightstrip_homekit_alpha",
+          "canonical_id": "ensuite_lightstrip_α_wifi_fallback",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.ensuite_lightstrip_α_wifi_fallback_available"
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {},
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": null,
+        "color": null,
+        "effects": null
+      },
+      "device_info": {
+        "manufacturer": "Tapo",
+        "model": "L930",
+        "model_name": "L930",
+        "firmware": null,
+        "mac": null,
+        "ipv4": null,
+        "ssid": null,
+          "entities": [
+          {
+            "entity": "light",
+            "entity_id": "light.ensuite_lightstrip_homekit_alpha",
+            "name": "Ensuite Lightstrip HomeKit (Alpha) - Light",
+            "canonical_id": "ensuite_lightstrip_homekit_α_light",
+            "type": "light"
+          },
+          {
+            "entity": "identify",
+            "entity_id": "button.ensuite_lightstrip_homekit_alpha_identify",
+            "name": "Ensuite Lightstrip HomeKit (Alpha) - Identify",
+            "canonical_id": "ensuite_lightstrip_homekit_α_identify",
+            "type": "button"
+          },
+          {
+            "entity": "cloud_connection",
+            "entity_id": "binary_sensor.ensuite_lightstrip_omega_cloud_connection",
+            "name": "Ensuite Lightstrip Tapo (Alpha) - Cloud connection",
+            "canonical_id": "ensuite_lightstrip_tplink_α_cloud_connection",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "overheated",
+            "entity_id": "binary_sensor.ensuite_lightstrip_omega_overheated",
+            "name": "Ensuite Lightstrip Tapo (Alpha) - Overheated",
+            "canonical_id": "ensuite_lightstrip_tplink_α_overheated",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "light_preset",
+            "entity_id": "select.ensuite_lightstrip_omega_light_preset",
+            "name": "Ensuite Lightstrip Tapo (Alpha) - Light preset",
+            "canonical_id": "ensuite_lightstrip_tplink_α_light_preset",
+            "type": "select"
+          },
+          {
+            "entity": "signal_level",
+            "entity_id": "sensor.ensuite_lightstrip_omega_signal_level",
+            "name": "Ensuite Lightstrip Tapo (Alpha) - Signal level",
+            "canonical_id": "ensuite_lightstrip_tplink_α_signal_level",
+            "type": "sensor"
+          },
+          {
+            "entity": "device_time",
+            "entity_id": "sensor.ensuite_lightstrip_omega_device_time",
+            "name": "Ensuite Lightstrip Tapo (Alpha) - Device time",
+            "canonical_id": "ensuite_lightstrip_tplink_α_device_time",
+            "type": "sensor"
+          },
+          {
+            "entity": "auto_update_enabled",
+            "entity_id": "switch.ensuite_lightstrip_omega_auto_update_enabled",
+            "name": "Ensuite Lightstrip Tapo (Alpha) - Auto-update enabled",
+            "canonical_id": "ensuite_lightstrip_tplink_α_auto_update_enabled",
+            "type": "switch"
+          },
+          {
+            "entity": "smooth_transitions",
+            "entity_id": "switch.ensuite_lightstrip_omega_smooth_transitions",
+            "name": "Ensuite Lightstrip Tapo (Alpha) - Smooth transitions",
+            "canonical_id": "ensuite_lightstrip_tplink_α_smooth_transitions",
+            "type": "switch"
+          },
+          {
+            "entity": "light",
+            "entity_id": "light.ensuite_lightstrip_tplink_alpha",
+            "name": "Ensuite Lightstrip Tapo (Alpha) - Light",
+            "canonical_id": "ensuite_lightstrip_tplink_α_light",
+            "type": "light"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.ensuite_lightstrip_tplink_alpha_signal_strength",
+            "name": "Ensuite Lightstrip Tapo (Alpha) - Signal strength",
+            "canonical_id": "ensuite_lightstrip_tplink_α_signal_strength",
+            "type": "sensor"
+          },
+          {
+            "entity": "ssid",
+            "entity_id": "sensor.ensuite_lightstrip_tplink_alpha_ssid",
+            "name": "Ensuite Lightstrip Tapo (Alpha) - SSID",
+            "canonical_id": "ensuite_lightstrip_tplink_α_ssid",
+            "type": "sensor"
+          },
+          {
+            "entity": "restart",
+            "entity_id": "button.ensuite_lightstrip_tplink_alpha_restart",
+            "name": "Ensuite Lightstrip Tapo (Alpha) - Restart",
+            "canonical_id": "ensuite_lightstrip_tplink_α_restart",
+            "type": "button"
+          },
+          {
+            "entity": "light",
+            "entity_id": "light.ensuite_lightstrip_wifi_alpha",
+            "name": "Ensuite Lightstrip WiFi (Alpha) - Light",
+            "canonical_id": "ensuite_lightstrip_wifi_α_light",
+            "type": "light"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "bedroom_tv_area_accent_omega": {
+      "omega_name": "Bedroom TV Area Accent Omega",
+      "friendly_name": "Parr Column",
+      "internal_name": null,
+      "canonical_id": "bedroom_tv_area_accent_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": "tv_area",
+        "role": "accent"
+      },
+      "room_id": "bedroom",
+      "room_area": "tv_area",
+      "integration_stack": {
+        "matter": {
+          "protocol": "matter",
+          "device_id": "5e7cac62fbaf3b678939afd9fd450b59",
+          "type": "light",
+          "entity_id": "light.parr_column_mtr",
+          "canonical_id": "bedroom_tv_area_accent_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_tv_area_accent_α_matter_available"
+        },
+        "wiz": {
+          "protocol": "wifi",
+          "device_id": "d12f37b51937e4244f86ead5a402ff4c",
+          "type": "light",
+          "entity_id": "light.parr_column",
+          "canonical_id": "bedroom_tv_area_accent_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_tv_area_accent_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {},
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "Can127399dle",
+        "model_name": "Candle",
+        "firmware": " v1.0",
+        "mac": "44:4f:8e:31:f3:76",
+        "ipv4": "192.168.0.31",
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity_id": "button.parr_column_mtr_identify",
+            "friendly_name": "Parr Column MTR Identify",
+            "state": "unknown",
+            "domain": "button"
+          },
+          {
+            "entity_id": "number.parr_column_mtr_off_transition_time",
+            "friendly_name": "Parr Column MTR Off transition time",
+            "state": "0.0",
+            "domain": "number"
+          },
+          {
+            "entity_id": "number.parr_column_mtr_on_level",
+            "friendly_name": "Parr Column MTR On level",
+            "state": "152",
+            "domain": "number"
+          },
+          {
+            "entity_id": "number.parr_column_mtr_on_transition_time",
+            "friendly_name": "Parr Column MTR On transition time",
+            "state": "0.0",
+            "domain": "number"
+          },
+          {
+            "entity_id": "number.parr_column_mtr_on_off_transition_time",
+            "friendly_name": "Parr Column MTR On/off transition time",
+            "state": "0.0",
+            "domain": "number"
+          },
+          {
+            "entity_id": "select.parr_column_mtr_power_on_behaviour_on_startup",
+            "friendly_name": "Parr Column MTR Power-on behaviour on startup",
+            "state": "off",
+            "domain": "select"
+          },
+          {
+            "entity_id": "number.wiz_rgbw_tunable_31f376_effect_speed",
+            "friendly_name": "Parr Column Lamp Effect speed",
+            "state": "100.0",
+            "domain": "number"
+          },
+          {
+            "entity_id": "sensor.wiz_rgbw_tunable_31f376_power",
+            "friendly_name": "Parr Column Lamp Power",
+            "state": "unknown",
+            "domain": "sensor"
+          },
+          {
+            "entity_id": "light.parr_column",
+            "friendly_name": "Parr Column Lamp",
+            "state": "off",
+            "domain": "light"
+          },
+          {
+            "entity_id": "sensor.wiz_rgbw_tunable_31f376_signal_strength",
+            "friendly_name": "Parr Column Lamp Signal strength",
+            "state": "-56",
+            "domain": "sensor"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "kitchen_ceiling_omega": {
+      "omega_name": "Kitchen Ceiling Omega",
+      "friendly_name": "Kitchen Ceiling",
+      "internal_name": "kitchen_ceiling_tapo_alpha",
+      "canonical_id": "kitchen_ceiling_ω",
+      "type": "light",
+      "location": {
+        "room": "kitchen",
+        "area": null,
+        "role": "ceiling"
+      },
+      "room_id": "kitchen",
+      "room_area": null,
+      "integration_stack": {
+        "tp-link": {
+          "protocol": "wifi",
+          "device_id": "438784bcd85b3be95a17452bc3a5c966",
+          "type": "light",
+          "entity_id": "light.kitchen_ceiling_tplink_alpha",
+          "canonical_id": "kitchen_ceiling_α_tplink",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.kitchen_ceiling_tapo_alpha_cloud_connection"
+        }
+      },
+      "preferred_protocol": "wifi",
+      "protocol_metrics": {
+        "wifi": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": null,
+        "color": null,
+        "effects": null
+      },
+      "device_info": {
+        "manufacturer": "tapo",
+        "model": "l530",
+        "model_name": "TAPO L530",
+        "firmware": "1.1.1 Build 240623 Rel.114041",
+        "mac": "78:8C:B5:99:8F:09",
+        "ipv4": null,
+        "ssid": null,
+        "entities": [
+          {
+            "entity": "cloud_connection",
+            "entity_id": "binary_sensor.kitchen_ceiling_tapo_alpha_cloud_connection",
+            "name": "Kitchen Ceiling Tapo (Alpha) - Cloud connection",
+            "canonical_id": "kitchen_ceiling_tapo_α_cloud_connection",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "overheated",
+            "entity_id": "binary_sensor.kitchen_ceiling_tapo_alpha_overheated",
+            "name": "Kitchen Ceiling Tapo (Alpha) - Overheated",
+            "canonical_id": "kitchen_ceiling_tapo_α_overheated",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "restart",
+            "entity_id": "button.kitchen_ceiling_tapo_alpha_restart",
+            "name": "Kitchen Ceiling Tapo (Alpha) - Restart",
+            "canonical_id": "kitchen_ceiling_tapo_α_restart",
+            "type": "button"
+          },
+          {
+            "entity": "smooth_on",
+            "entity_id": "number.kitchen_ceiling_tapo_alpha_smooth_on",
+            "name": "Kitchen Ceiling Tapo (Alpha) - Smooth on",
+            "canonical_id": "kitchen_ceiling_tapo_α_smooth_on",
+            "type": "input_number"
+          },
+          {
+            "entity": "smooth_off",
+            "entity_id": "number.kitchen_ceiling_tapo_alpha_smooth_off",
+            "name": "Kitchen Ceiling Tapo (Alpha) - Smooth off",
+            "canonical_id": "kitchen_ceiling_tapo_α_smooth_off",
+            "type": "input_number"
+          },
+          {
+            "entity": "light_preset",
+            "entity_id": "select.kitchen_ceiling_tapo_alpha_light_preset",
+            "name": "Kitchen Ceiling Tapo (Alpha) - Light preset",
+            "canonical_id": "kitchen_ceiling_tapo_α_light_preset",
+            "type": "input_select"
+          },
+          {
+            "entity": "signal_level",
+            "entity_id": "sensor.kitchen_ceiling_tapo_alpha_signal_level",
+            "name": "Kitchen Ceiling Tapo (Alpha) - Signal level",
+            "canonical_id": "kitchen_ceiling_tapo_α_signal_level",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.kitchen_ceiling_tapo_alpha_signal_strength",
+            "name": "Kitchen Ceiling Tapo (Alpha) - Signal strength",
+            "canonical_id": "kitchen_ceiling_tapo_α_signal_strength",
+            "type": "sensor"
+          },
+          {
+            "entity": "ssid",
+            "entity_id": "sensor.kitchen_ceiling_tapo_alpha_ssid",
+            "name": "Kitchen Ceiling Tapo (Alpha) - SSID",
+            "canonical_id": "kitchen_ceiling_tapo_α_ssid",
+            "type": "sensor"
+          },
+          {
+            "entity": "device_time",
+            "entity_id": "sensor.kitchen_ceiling_tapo_alpha_device_time",
+            "name": "Kitchen Ceiling Tapo (Alpha) - Device time",
+            "canonical_id": "kitchen_ceiling_tapo_α_device_time",
+            "type": "sensor"
+          },
+          {
+            "entity": "auto_update_enabled",
+            "entity_id": "switch.kitchen_ceiling_tapo_alpha_auto_update_enabled",
+            "name": "Kitchen Ceiling Tapo (Alpha) - Auto-update enabled",
+            "canonical_id": "kitchen_ceiling_tapo_α_auto_update_enabled",
+            "type": "switch"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      },
+      "status": "unavailable",
+      "error_reason": "No protocol with valid availability"
+    },
+    "bedroom_ottoman_lightstrip_omega": {
+      "omega_name": "Bedroom Ottoman Lightstrip Omega",
+      "friendly_name": "Ottoman Lightstrip",
+      "internal_name": "wiz_rgbww_tunable_79bb7c",
+      "canonical_id": "bedroom_ottoman_lightstrip_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": "ottoman",
+        "role": "lightstrip"
+      },
+      "room_id": "bedroom",
+      "room_area": "ottoman",
+      "integration_stack": {
+        "matter": {
+          "protocol": "matter",
+          "device_id": "c506d5ecc47ee64a19cba38aab241736",
+          "type": "light",
+          "entity_id": "light.ottoman_lightstrip_mtr",
+          "canonical_id": "bedroom_ottoman_lightstrip_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_ottoman_lightstrip_α_matter_available"
+        },
+        "wiz": {
+          "protocol": "wifi",
+          "device_id": "7ad37b077d50b409434a8538e5f121c9",
+          "type": "light",
+          "entity_id": "light.ottoman_lightstrip",
+          "canonical_id": "bedroom_ottoman_lightstrip_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_ottoman_lightstrip_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {},
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "127555",
+        "model_name": "Color Strip",
+        "firmware": null,
+        "mac": "D8:A0:11:79:BB:7C",
+        "ipv4": null,
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "power",
+            "entity_id": "sensor.wiz_rgbww_tunable_79bb7c_power",
+            "name": "Bedroom Ottoman Lightstrip Alpha - Power",
+            "canonical_id": "bedroom_ottoman_lightstrip_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.wiz_rgbww_tunable_79bb7c_effect_speed",
+            "name": "Bedroom Ottoman Lightstrip Alpha - Effect Speed",
+            "canonical_id": "bedroom_ottoman_lightstrip_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.wiz_rgbww_tunable_79bb7c_signal_strength",
+            "name": "Bedroom Ottoman Lightstrip Alpha - Signal Strength",
+            "canonical_id": "bedroom_ottoman_lightstrip_α_signal_strength",
+            "type": "sensor"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "bedroom_desk_lightstrip_omega": {
+      "omega_name": "Bedroom Desk Lightstrip Light Omega",
+      "friendly_name": "Desk Lightstrip",
+      "internal_name": "wiz_rgbww_tunable_69e6ee",
+      "canonical_id": "bedroom_desk_lightstrip_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": "desk",
+        "role": "lightstrip"
+      },
+      "room_id": "bedroom",
+      "room_area": "desk",
+      "integration_stack": {
+        "matter": {
+          "protocol": "matter",
+          "type": "light",
+          "entity_id": "light.desk_lightstrip_mtr",
+          "canonical_id": "bedroom_desk_lightstrip_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_desk_lightstrip_α_matter_available"
+        },
+        "wifi": {
+          "device_id": "c0b46705abc1f97e54f40f339d9f928b",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.desk_lightstrip",
+          "canonical_id": "bedroom_desk_lightstrip_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_desk_lightstrip_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {
+        "matter": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        },
+        "wifi": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": null
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "127555",
+        "model_name": "Color Strip",
+        "firmware": null,
+        "mac": "D8:A0:11:69:E6:EE",
+        "ipv4": null,
+        "ssid": null,
+        "entities": [
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.wiz_rgbww_tunable_69e6ee_effect_speed",
+            "name": "Bedroom Desk Lightstrip Light Effect Speed (Alpha)",
+            "canonical_id": "bedroom_desk_lightstrip_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "power",
+            "entity_id": "sensor.wiz_rgbww_tunable_69e6ee_power",
+            "name": "Bedroom Desk Lightstrip Light Power (Alpha)",
+            "canonical_id": "bedroom_desk_lightstrip_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.wiz_rgbww_tunable_69e6ee_signal_strength",
+            "name": "Bedroom Desk Lightstrip Light Signal Strength (Alpha)",
+            "canonical_id": "bedroom_desk_lightstrip_α_signal_strength",
+            "type": "sensor"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    },
+    "hallway_lightstrip_omega": {
+      "omega_name": "Hallway Lightstrip Omega",
+      "friendly_name": "Hallway Lightstrip",
+      "internal_name": "tapo_l900_tplink-hallway-shelves-backlighting",
+      "canonical_id": "hallway_lightstrip_ω",
+      "type": "light",
+      "location": {
+        "room": "hallway",
+        "area": null,
+        "role": "lightstrip"
+      },
+      "room_id": "hallway",
+      "room_area": null,
+      "integration_stack": {
+        "smartthings": {
+          "device_id": "b20479080983683a3761103bed2600a0",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.hallways_lightstrip",
+          "canonical_id": "hallway_lightstrip_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.hallway_lightstrip_α_wifi_available"
+        },
+        "tplink": {
+          "device_id": "259baa0694df7cf6eaa94a5555f1df87",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.hallways_lightstrip_tplink",
+          "canonical_id": "hallway_lightstrip_α_wifi_fallback",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.hallway_lightstrip_α_wifi_fallback_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {
+        "wifi": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Tapo",
+        "model": "L900",
+        "model_name": "L900",
+        "firmware": "1.1.1",
+        "mac": "mac",
+        "ipv4": "192.168.0.233",
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "cloud_connection",
+            "entity_id": "binary_sensor.hallway_lightstrip_cloud_connection",
+            "name": "Hallway Lightstrip Cloud Connection (Alpha)",
+            "canonical_id": "hallway_lightstrip_α_cloud_connection",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "overheated",
+            "entity_id": "binary_sensor.hallway_lightstrip_overheated",
+            "name": "Hallway Lightstrip Overheated (Alpha)",
+            "canonical_id": "hallway_lightstrip_α_overheated",
+            "type": "binary_sensor"
+          },
+          {
+            "entity": "restart",
+            "entity_id": "button.hallway_lightstrip_restart",
+            "name": "Hallway Lightstrip Restart (Alpha)",
+            "canonical_id": "hallway_lightstrip_α_restart",
+            "type": "button"
+          },
+          {
+            "entity": "light_preset",
+            "entity_id": "select.hallway_lightstrip_light_preset",
+            "name": "Hallway Lightstrip Light Preset (Alpha)",
+            "canonical_id": "hallway_lightstrip_α_light_preset",
+            "type": "input_select"
+          },
+          {
+            "entity": "device_time",
+            "entity_id": "sensor.hallway_lightstrip_device_time",
+            "name": "Hallway Lightstrip Device Time (Alpha)",
+            "canonical_id": "hallway_lightstrip_α_device_time",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_level",
+            "entity_id": "sensor.hallway_lightstrip_signal_level",
+            "name": "Hallway Lightstrip Signal Level (Alpha)",
+            "canonical_id": "hallway_lightstrip_α_signal_level",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.hallway_lightstrip_signal_strength",
+            "name": "Hallway Lightstrip Signal Strength (Alpha)",
+            "canonical_id": "hallway_lightstrip_α_signal_strength",
+            "type": "sensor"
+          },
+          {
+            "entity": "ssid",
+            "entity_id": "sensor.hallway_lightstrip_ssid",
+            "name": "Hallway Lightstrip SSID (Alpha)",
+            "canonical_id": "hallway_lightstrip_α_ssid",
+            "type": "sensor"
+          },
+          {
+            "entity": "auto_update_enabled",
+            "entity_id": "switch.hallway_lightstrip_auto_update_enabled",
+            "name": "Hallway Lightstrip Auto Update Enabled (Alpha)",
+            "canonical_id": "hallway_lightstrip_α_auto_update_enabled",
+            "type": "switch"
+          },
+          {
+            "entity": "smooth_transitions",
+            "entity_id": "switch.hallway_lightstrip_smooth_transitions",
+            "name": "Hallway Lightstrip Smooth Transitions (Alpha)",
+            "canonical_id": "hallway_lightstrip_α_smooth_transitions",
+            "type": "switch"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      },
+      "status": "unavailable",
+      "error_reason": "No protocol with valid availability"
+    },
+    "bedroom_accent_omega": {
+      "omega_name": "Bedroom Accent Omega",
+      "friendly_name": "Lucetta",
+      "internal_name": "wiz_lucetta_b22c1e",
+      "canonical_id": "bedroom_accent_ω",
+      "type": "light",
+      "location": {
+        "room": "bedroom",
+        "area": null,
+        "role": "accent"
+      },
+      "room_id": "bedroom",
+      "room_area": null,
+      "integration_stack": {
+        "matter": {
+          "device_id": "3dfaac2fe9be595d42db1ae436b55f3c",
+          "protocol": "matter",
+          "type": "light",
+          "entity_id": "light.lucetta_mtr",
+          "canonical_id": "bedroom_accent_α_matter",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_accent_α_matter_available"
+        },
+        "wiz": {
+          "device_id": "ea4a6d1486852f0074fce4e61f9ef479",
+          "protocol": "wifi",
+          "type": "light",
+          "entity_id": "light.lucetta",
+          "canonical_id": "bedroom_accent_α_wifi",
+          "status": "paired",
+          "availability_sensor": "binary_sensor.bedroom_accent_α_wifi_available"
+        }
+      },
+      "preferred_protocol": "matter",
+      "protocol_metrics": {
+        "matter": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        },
+        "wifi": {
+          "last_seen": null,
+          "response_time_ms": null,
+          "reliability_score": null
+        }
+      },
+      "fallback_settings": {
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "auto_switch_threshold": 3,
+        "return_to_preferred_after": 60
+      },
+      "capabilities": {
+        "brightness": true,
+        "color_temp": true,
+        "color": true,
+        "effects": true
+      },
+      "device_info": {
+        "manufacturer": "Wiz",
+        "model": "127546",
+        "model_name": "Candle",
+        "firmware": null,
+        "mac": "cc:40:85:b2:2c:1e",
+        "ipv4": "192.168.0.77",
+        "ipv6": "fdad:2364:d6f2:2854:ce40:85ff:feb2:2c1e",
+        "ssid": "Aethernet_IoT",
+        "entities": [
+          {
+            "entity": "effect_speed",
+            "entity_id": "number.lucetta_effect_speed",
+            "name": "Bedroom Accent Light Effect Speed (Alpha)",
+            "canonical_id": "bedroom_accent_α_effect_speed",
+            "type": "input_number"
+          },
+          {
+            "entity": "power",
+            "entity_id": "sensor.lucetta_power",
+            "name": "Bedroom Accent Light Power (Alpha)",
+            "canonical_id": "bedroom_accent_α_power",
+            "type": "sensor"
+          },
+          {
+            "entity": "signal_strength",
+            "entity_id": "sensor.lucetta_signal_strength (Alpha)",
+            "name": "Bedroom Accent Light Signal Strength",
+            "canonical_id": "bedroom_accent_α_signal_strength",
+            "type": "sensor"
+          },
+          {
+            "entity": "identify",
+            "entity_id": "button.lucetta_mtr_identify",
+            "name": "Bedroom Accent Light Identify (Alpha)",
+            "canonical_id": "bedroom_accent_α_identify",
+            "type": "button"
+          },
+          {
+            "entity": "off_transition_time",
+            "entity_id": "number.lucetta_mtr_off_transition_time",
+            "name": "Bedroom Accent AlphLight Off Transition Time (Alpha)",
+            "canonical_id": "bedroom_accent_α_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_level",
+            "entity_id": "number.lucetta_mtr_on_level",
+            "name": "Bedroom Accent Light On Leve (Alpha)",
+            "canonical_id": "bedroom_accent_α_on_level",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_off_transition_time",
+            "entity_id": "number.lucetta_mtr_on_off_transition_time",
+            "name": "Bedroom Accent Light On/Off Transition Time (Alpha)",
+            "canonical_id": "bedroom_accent_α_on_off_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "on_transition_time",
+            "entity_id": "number.lucetta_mtr_on_transition_time",
+            "name": "Bedroom Accent Light On Transition Time (Alpha)",
+            "canonical_id": "bedroom_accent_α_on_transition_time",
+            "type": "input_number"
+          },
+          {
+            "entity": "power_on_behaviour_on_startup",
+            "entity_id": "select.lucetta_mtr_power_on_behaviour_on_startup",
+            "name": "Bedroom Accent Light Power-on Behavior On Startup (Alpha)",
+            "canonical_id": "bedroom_accent_α_power_on_behaviour_on_startup",
+            "type": "input_select"
+          }
+        ],
+        "history": {
+          "added": "2025-04-26",
+          "protocol_switches": []
+        }
+      }
+    }
+  },
+  "room_light_mappings": {
+    "bedroom": {
+      "zones": {
+        "nightstand": [
+          "bedroom_nightstand_left_omega",
+          "bedroom_nightstand_right_omega"
+        ],
+        "desk": [
+          "bedroom_desk_wall_omega",
+          "bedroom_desk_corner_omega",
+          "bedroom_desk_omega",
+          "monitor_backlight_omega",
+          "bedroom_desk_lightstrip_omega"
+        ],
+        "main": [
+          "bedroom_main_omega"
+        ],
+        "general": [
+          "bedroom_wall_omega",
+          "bedroom_entrance_omega",
+          "bedroom_accent_omega"
+        ],
+        "wardrobe": [
+          "bedroom_wardrobe_lightstrip_omega"
+        ],
+        "mirror": [
+          "bedroom_mirror_lightstrip_omega"
+        ],
+        "tv_area": [
+          "bedroom_tv_area_accent_omega"
+        ],
+        "ottoman": [
+          "bedroom_ottoman_lightstrip_omega"
+        ]
+      }
+    },
+    "ensuite": {
+      "zones": {
+        "general": [
+          "ensuite_accent_omega",
+          "ensuite_main_omega",
+          "ensuite_lightstrip_omega"
+        ]
+      }
+    },
+    "hallway": {
+      "zones": {
+        "upstairs": [
+          "hallway_upstairs_lightstrip_omega"
+        ],
+        "general": [
+          "hallway_lightstrip_omega"
+        ]
+      }
+    },
+    "living_room": {
+      "zones": {
+        "general": [
+          "living_room_main_omega",
+          "living_room_stringlights_omega",
+          "living_room_foxy_omega"
+        ]
+      }
+    },
+    "kitchen": {
+      "zones": {
+        "general": [
+          "kitchen_lightstrip_omega",
+          "kitchen_corner_omega",
+          "kitchen_ceiling_omega"
+        ]
+      }
+    },
+    "laundry": {
+      "zones": {
+        "general": [
+          "laundry_ceiling_omega"
+        ]
+      }
+    }
+  },
+  "validation_rules": [
+    {
+      "rule": "canonical_id_format",
+      "target": "light_devices.*.canonical_id",
+      "regex": "^[a-z0-9_]+_ω$"
+    },
+    {
+      "rule": "protocol_availability",
+      "target": "light_devices.*.integration_stack",
+      "condition": "at least one protocol with 'status':'paired'"
+    },
+    {
+      "rule": "room_id_reference",
+      "target": "light_devices.*.room_id",
+      "must_exist": true
+    }
+  ]
+}
+}

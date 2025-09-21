@@ -1,0 +1,689 @@
+[
+  {
+    "old_entity_id": "binary_sensor.bedroom_occupancy_alpha",
+    "new_entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+    "confidence_score": 0.562,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.bedroom_wardrobe_occupancy_wifi_tplink_alpha",
+    "new_entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+    "confidence_score": 0.34,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.bedroom_wardrobe_presence_battery_alpha",
+    "new_entity_id": "binary_sensor.evert_alpha_presence_iphone_presence",
+    "confidence_score": 0.34,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.bedroom_wardrobe_presence_cloud_connection_alpha",
+    "new_entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+    "confidence_score": 0.5,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.desk_presence_macbook_inference_gamma",
+    "new_entity_id": "binary_sensor.macbook_focus",
+    "confidence_score": 0.4,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.ensuite_occupancy_alpha",
+    "new_entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+    "confidence_score": 0.562,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.entrance_door_contact_matter_alpha",
+    "new_entity_id": "binary_sensor.macbook_active",
+    "confidence_score": 0.375,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.entrance_presence_cloud_connection_alpha",
+    "new_entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+    "confidence_score": 0.571,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.floor_activity_detected_gamma",
+    "new_entity_id": "binary_sensor.macbook_active",
+    "confidence_score": 0.419,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_downstairs_motion_smartthings_alpha",
+    "new_entity_id": "binary_sensor.ds220plus_drive_2_below_min_remaining_life",
+    "confidence_score": 0.358,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_downstairs_motion_tplink_alpha",
+    "new_entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+    "confidence_score": 0.296,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_downstairs_motion_wifi_alpha_cloud_connection",
+    "new_entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+    "confidence_score": 0.464,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_downstairs_occupancy_mtr_alpha",
+    "new_entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+    "confidence_score": 0.383,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_downstairs_presence_battery_alpha",
+    "new_entity_id": "binary_sensor.evert_alpha_presence_iphone_presence",
+    "confidence_score": 0.327,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_entrance_contact_alpha_tp_link_battery",
+    "new_entity_id": "binary_sensor.macbook_camera_in_use",
+    "confidence_score": 0.299,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_entrance_contact_alpha_tp_link_cloud_connection",
+    "new_entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+    "confidence_score": 0.451,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_entrance_contact_alpha_tp_link_door",
+    "new_entity_id": "binary_sensor.sphero_bb_8_sphero_bb_8_connection",
+    "confidence_score": 0.308,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_entrance_motion_tplink_alpha",
+    "new_entity_id": "binary_sensor.macbook_camera_in_use",
+    "confidence_score": 0.316,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_entrance_motion_wifi_alpha",
+    "new_entity_id": "binary_sensor.macbook_camera_in_use",
+    "confidence_score": 0.327,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_entrance_occupancy_mtr_alpha",
+    "new_entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+    "confidence_score": 0.4,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_entrance_presence_battery_alpha",
+    "new_entity_id": "binary_sensor.evert_alpha_presence_iphone_presence",
+    "confidence_score": 0.34,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_upstairs_motion_battery_alpha",
+    "new_entity_id": "binary_sensor.ensuite_climate_omega_battery",
+    "confidence_score": 0.318,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_upstairs_motion_tplink_alpha",
+    "new_entity_id": "binary_sensor.upstairs_presence_omega_motion",
+    "confidence_score": 0.286,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_upstairs_motion_wifi_alpha",
+    "new_entity_id": "binary_sensor.upstairs_presence_omega_motion",
+    "confidence_score": 0.3,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_upstairs_occupancy_matter_alpha",
+    "new_entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+    "confidence_score": 0.375,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_upstairs_presence_cloud_connection_alpha",
+    "new_entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+    "confidence_score": 0.5,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_upstairs_skylight_contact_sensor_mtr_alpha",
+    "new_entity_id": "binary_sensor.sphero_bb_8_sphero_bb_8_connection",
+    "confidence_score": 0.278,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_upstairs_skylight_contact_sensor_tp_link_alpha_battery",
+    "new_entity_id": "binary_sensor.ds220plus_drive_2_below_min_remaining_life",
+    "confidence_score": 0.256,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_upstairs_skylight_contact_sensor_tp_link_alpha_cloud_connection",
+    "new_entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+    "confidence_score": 0.368,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_upstairs_skylight_contact_sensor_wifi_alpha",
+    "new_entity_id": "binary_sensor.sphero_bb_8_sphero_bb_8_connection",
+    "confidence_score": 0.274,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.hallway_upstairs_skylight_contact_sensor_wifi_alpha_fallback",
+    "new_entity_id": "binary_sensor.sphero_bb_8_sphero_bb_8_connection",
+    "confidence_score": 0.244,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.in_bed_withings_inference_gamma",
+    "new_entity_id": "binary_sensor.ds220plus_drive_2_below_min_remaining_life",
+    "confidence_score": 0.436,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.kitchen_contact_sensor_fridge_door_mtr",
+    "new_entity_id": "binary_sensor.sphero_bb_8_sphero_bb_8_connection",
+    "confidence_score": 0.3,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.kitchen_contact_sensor_fridge_door_wifi_alpha",
+    "new_entity_id": "binary_sensor.sphero_bb_8_sphero_bb_8_connection",
+    "confidence_score": 0.269,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.kitchen_fridge_contact_alpha_tp_link_battery",
+    "new_entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+    "confidence_score": 0.333,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.kitchen_fridge_contact_alpha_tp_link_cloud_connection",
+    "new_entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+    "confidence_score": 0.464,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.kitchen_fridge_contact_alpha_tp_link_door",
+    "new_entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+    "confidence_score": 0.351,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.kitchen_motion_battery_alpha",
+    "new_entity_id": "binary_sensor.ensuite_climate_omega_battery",
+    "confidence_score": 0.4,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.kitchen_motion_cloud_connection_alpha",
+    "new_entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+    "confidence_score": 0.604,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.kitchen_motion_tplink_alpha",
+    "new_entity_id": "binary_sensor.upstairs_presence_omega_motion",
+    "confidence_score": 0.364,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.kitchen_motion_wifi_smartthings_alpha",
+    "new_entity_id": "binary_sensor.ensuite_climate_omega_temperature_warning",
+    "confidence_score": 0.393,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.kitchen_occupancy_alpha",
+    "new_entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+    "confidence_score": 0.562,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.kitchen_occupancy_matter_alpha",
+    "new_entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+    "confidence_score": 0.462,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.living_room_multipurpose_motion_alpha",
+    "new_entity_id": "binary_sensor.ds220plus_drive_2_below_min_remaining_life",
+    "confidence_score": 0.295,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.living_room_occupancy_alpha",
+    "new_entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+    "confidence_score": 0.5,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.wardrobe_motion_sensor_wifi_st_alpha",
+    "new_entity_id": "binary_sensor.ds220plus_drive_2_below_min_remaining_life",
+    "confidence_score": 0.4,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "binary_sensor.wardrobe_occupancy_mtr_alpha",
+    "new_entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+    "confidence_score": 0.486,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "button.restart_hallway_downstairs_presence_wifi_alpha",
+    "new_entity_id": "button.monitor_backlight_alpha_request_platform_api_state",
+    "confidence_score": 0.361,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "button.restart_kitchen_motion_alpha",
+    "new_entity_id": "button.valetudo_valetudo_roborocks5_vacuum_reset_main_filter_consumable",
+    "confidence_score": 0.464,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "humidifier.probreeze",
+    "new_entity_id": null,
+    "confidence_score": 0.0,
+    "match_method": "",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "number.bedroom_occupancy_timeout",
+    "new_entity_id": "number.ensuite_occupancy_omega_occupancy_timeout",
+    "confidence_score": 0.81,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "number.ensuite_occupancy_timeout_alpha",
+    "new_entity_id": "number.ensuite_occupancy_omega_occupancy_timeout",
+    "confidence_score": 0.708,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "number.kitchen_occupancy_occupancy_timeout_alpha",
+    "new_entity_id": "number.ensuite_occupancy_omega_occupancy_timeout",
+    "confidence_score": 0.586,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "number.living_room_occupancy_timeout_alpha",
+    "new_entity_id": "number.ensuite_occupancy_omega_occupancy_timeout",
+    "confidence_score": 0.654,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "remote.broadlink_pro_omega",
+    "new_entity_id": null,
+    "confidence_score": 0.0,
+    "match_method": "",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "select.bedroom_occupancy_sensitivity_alpha",
+    "new_entity_id": "select.ensuite_occupancy_omega_occupancy_sensitivity",
+    "confidence_score": 0.75,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "select.ensuite_occupancy_sensitivity_alpha",
+    "new_entity_id": "select.ensuite_occupancy_omega_occupancy_sensitivity",
+    "confidence_score": 0.75,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "select.kitchen_occupancy_occupancy_sensitivity_alpha",
+    "new_entity_id": "select.ensuite_occupancy_omega_occupancy_sensitivity",
+    "confidence_score": 0.636,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "select.living_room_occupancy_sensitivity_alpha",
+    "new_entity_id": "select.ensuite_occupancy_omega_occupancy_sensitivity",
+    "confidence_score": 0.7,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.bedroom_occupancy_illumination_alpha",
+    "new_entity_id": "sensor.ensuite_occupancy_omega_illumination",
+    "confidence_score": 0.5,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.bedroom_occupancy_linkquality_alpha",
+    "new_entity_id": "sensor.bedroom_ambient_climate_omega_linkquality",
+    "confidence_score": 0.478,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.bedroom_smartbutton_battery_alpha",
+    "new_entity_id": "sensor.sphero_bb_8_sphero_bb_8_battery",
+    "confidence_score": 0.5,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.bedroom_smartbutton_linkquality_alpha",
+    "new_entity_id": "sensor.bedroom_ambient_climate_omega_linkquality",
+    "confidence_score": 0.458,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.bedroom_smartbutton_temperature",
+    "new_entity_id": "sensor.bedroom_smart_button_omega_temperature",
+    "confidence_score": 0.899,
+    "match_method": "token prefix-core extension + integration",
+    "flag_manual_review": true,
+    "reason": "recovered via fallback_token_inference"
+  },
+  {
+    "old_entity_id": "sensor.bedroom_wardrobe_presence_signal_level_alpha",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_level",
+    "confidence_score": 0.429,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.bedroom_wardrobe_presence_signal_strength_alpha",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_strength",
+    "confidence_score": 0.484,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.ensuite_illumination_alpha",
+    "new_entity_id": "sensor.ensuite_occupancy_omega_illumination",
+    "confidence_score": 0.632,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.ensuite_occupancy_linkquality_alpha",
+    "new_entity_id": "sensor.bedroom_ambient_climate_omega_linkquality",
+    "confidence_score": 0.478,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.hallway_downstairs_motion_wifi_alpha_signal_strength",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_strength",
+    "confidence_score": 0.448,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.hallway_downstairs_presence_wifi_signal_level_alpha",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_level",
+    "confidence_score": 0.381,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.hallway_entrance_contact_alpha_tp_link_signal_level",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_level",
+    "confidence_score": 0.381,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.hallway_entrance_contact_alpha_tp_link_signal_strength",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_strength",
+    "confidence_score": 0.435,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.hallway_entrance_presence_signal_level_alpha",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_level",
+    "confidence_score": 0.429,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.hallway_upstairs_presence_signal_level_alpha",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_level",
+    "confidence_score": 0.429,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.hallway_upstairs_presence_signal_strength_alpha",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_strength",
+    "confidence_score": 0.484,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.hallway_upstairs_skylight_contact_sensor_tp_link_alpha_signal_level",
+    "new_entity_id": "sensor.home_nearest_direction_of_travel",
+    "confidence_score": 0.34,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.hallway_upstairs_skylight_contact_sensor_tp_link_alpha_signal_strength",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_strength",
+    "confidence_score": 0.353,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.kitchen_fridge_contact_alpha_tp_link_signal_level",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_level",
+    "confidence_score": 0.393,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.kitchen_fridge_contact_alpha_tp_link_signal_strength",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_strength",
+    "confidence_score": 0.448,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.kitchen_illumination_alpha",
+    "new_entity_id": "sensor.ensuite_occupancy_omega_illumination",
+    "confidence_score": 0.632,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.kitchen_motion_signal_level_alpha",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_level",
+    "confidence_score": 0.533,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.kitchen_motion_signal_strength",
+    "new_entity_id": "sensor.home_tapo_iot_hub_omega_signal_strength",
+    "confidence_score": 0.667,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.kitchen_occupancy_linkquality_alpha",
+    "new_entity_id": "sensor.bedroom_ambient_climate_omega_linkquality",
+    "confidence_score": 0.478,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.living_room_broadlink_humidity_alpha",
+    "new_entity_id": "sensor.bedroom_climate_trv_left_omega_valve_opening_limit_voltage",
+    "confidence_score": 0.413,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.living_room_broadlink_temperature_alpha",
+    "new_entity_id": "sensor.system_monitor_processor_temperature",
+    "confidence_score": 0.533,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.living_room_multipurpose_battery_alpha",
+    "new_entity_id": "sensor.macbook_internal_battery_state",
+    "confidence_score": 0.412,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.living_room_multipurpose_illuminance_alpha",
+    "new_entity_id": "sensor.bedroom_tv_alpha_illuminance",
+    "confidence_score": 0.415,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.living_room_multipurpose_temperature_alpha",
+    "new_entity_id": "sensor.system_monitor_processor_temperature",
+    "confidence_score": 0.508,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.living_room_occupancy_illuminance_alpha",
+    "new_entity_id": "sensor.bedroom_tv_alpha_illuminance",
+    "confidence_score": 0.44,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.living_room_occupancy_linkquality_alpha",
+    "new_entity_id": "sensor.bedroom_ambient_climate_omega_linkquality",
+    "confidence_score": 0.44,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.living_room_smart_button_linkquality_alpha",
+    "new_entity_id": "sensor.bedroom_ambient_climate_omega_linkquality",
+    "confidence_score": 0.415,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.living_room_smartbutton_battery",
+    "new_entity_id": "sensor.sphero_bb_8_sphero_bb_8_battery",
+    "confidence_score": 0.48,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "sensor.living_room_smartbutton_temperature_alpha",
+    "new_entity_id": "sensor.system_monitor_processor_temperature",
+    "confidence_score": 0.516,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "switch.monitor",
+    "new_entity_id": "switch.bedroom_dehumidifier_probreeze_ionizer",
+    "confidence_score": 0.571,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "update.bedroom_occupancy_alpha",
+    "new_entity_id": "update.ds220plus_dsm_update",
+    "confidence_score": 0.364,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "update.ensuite_occupancy_update_alpha",
+    "new_entity_id": "update.openplantbook_update",
+    "confidence_score": 0.48,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "update.kitchen_occupancy_alpha",
+    "new_entity_id": "update.hacs_update",
+    "confidence_score": 0.294,
+    "match_method": "unmatched",
+    "flag_manual_review": true
+  },
+  {
+    "old_entity_id": "update.living_room_occupancy_alpha",
+    "new_entity_id": "update.living_room_occupancy_alpha",
+    "confidence_score": 1.0,
+    "match_method": "exact_name_match",
+    "flag_manual_review": false
+  }
+]

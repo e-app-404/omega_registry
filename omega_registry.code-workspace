@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"path": "/Users/evertappels/Projects/omega_registry_ha_storage"
+		},
+		{
+			"path": "/Users/evertappels/Projects/omega_registry"
+		},
+		{
+			"path": "/Users/evertappels/.ssh"
+		}
+	],
+	"settings": {
+		"yaml.schemas": {
+			"https://raw.githubusercontent.com/USF-org/USF/refs/heads/main/usf.schema.json": "file:///Users/evertappels/Projects/omega_registry/addon/canonical/support/contracts/canonical_omega_scaffold.json"
+		},
+		"files.exclude": {
+			"**/.venv": true,
+			"**/venv": true,
+			"**/.pytest_cache": true,
+			"**/__pycache__": true,
+			"**/.DS_Store": true,
+			"**/.indexvenv": true,
+			"**/omega_registry_ha_storage/**": true,
+			"**/omega_registry_ha_storage/*": true
+		},
+		"search.exclude": {
+			"**/.venv": true,
+			"**/venv": true,
+			"**/.git": true,
+			"**/tarballs": true,
+			"**/omega_registry_ha_storage/**": true
+		},
+		"files.watcherExclude": {
+			"**/.venv/**": true,
+			"**/venv/**": true,
+			"**/node_modules/**": true
+		},
+		"editor.formatOnSave": true,
+		"python.defaultInterpreterPath": "/Users/evertappels/Projects/omega_registry/venv/bin/python",
+		"yaml.validate": true
+	}
+}

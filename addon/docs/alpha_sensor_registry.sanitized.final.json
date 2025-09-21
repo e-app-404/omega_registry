@@ -1,0 +1,90 @@
+[
+  {
+    "_meta": {
+      "description": "Sanitized, illustrative alpha sensor registry. May be truncated or contain comments for documentation purposes only.",
+      "generated": "2025-07-03",
+      "source": "manual or documentation example, not for production use.",
+      "notes": "This file is not a complete registry. For canonical data, use alpha_sensor_registry.json."
+    }
+  },
+  {
+    "id": "bedroom_motion_alpha",
+    "area": "bedroom",
+    "role": "motion",
+    "entity_function": "alpha",
+    "post_reboot_entity_ids": [
+      "binary_sensor.bedroom_security_cam_alpha_motion",
+      "binary_sensor.bedroom_wardrobe_motion_alpha",
+      "binary_sensor.bedroom_wardrobe_motion_tplink_alpha"
+    ],
+    "integration_sources": ["smartthings", "tplink"],
+    "match_type": "entity_registry_autocluster",
+    "confidence_score_mean": 0.90,
+    "incomplete": false
+  },
+  {
+    "id": "bedroom_occupancy_alpha",
+    "area": "bedroom",
+    "role": "occupancy",
+    "entity_function": "alpha",
+    "post_reboot_entity_ids": [
+      "binary_sensor.bedroom_occupance_alpha_occupancy"
+    ],
+    "integration_sources": ["mqtt"],
+    "match_type": "entity_registry_autocluster",
+    "confidence_score_mean": 0.90,
+    "incomplete": false
+  },
+  {
+    "id": "bedroom_diagnostic_alpha",
+    "area": "bedroom",
+    "role": "diagnostic",
+    "entity_function": "alpha",
+    "post_reboot_entity_ids": [
+      "binary_sensor.bedroom_tplink_powerstrip_omega_cloud_connection"
+    ],
+    "integration_sources": ["tplink"],
+    "match_type": "entity_registry_autocluster",
+    "confidence_score_mean": 0.90,
+    "incomplete": false
+  },
+  {
+    "id": "unknown_switch_alpha",
+    "area": "unknown",
+    "role": "switch",
+    "entity_function": "alpha",
+    "post_reboot_entity_ids": [
+      "switch.sonos_alarm_1",
+      "switch.sonos_alarm_8",
+      "switch.sonos_alarm_30",
+      "switch.sonos_alarm_17"
+    ],
+    "integration_sources": [],
+    "match_type": "entity_registry_autocluster",
+    "confidence_score_mean": 0.90,
+    "incomplete": true
+  },
+  {
+    "id": "upstairs_light_alpha",
+    "area": "upstairs",
+    "role": "light",
+    "entity_function": "alpha",
+    "post_reboot_entity_ids": ["light.upstairs_lightstrip_omega"],
+    "integration_sources": ["tplink"],
+    "match_type": "entity_registry_autocluster",
+    "confidence_score_mean": 0.90,
+    "incomplete": false
+  },
+  {
+    "id": "living_room_media_player_alpha",
+    "area": "living_room",
+    "role": "media_player",
+    "entity_function": "alpha",
+    "post_reboot_entity_ids": ["media_player.living_room_google_mini_omega"],
+    "integration_sources": ["cast"],
+    "match_type": "entity_registry_autocluster",
+    "confidence_score_mean": 0.90,
+    "incomplete": false
+  }
+  // ...more patched and normalized entries for all valid clusters...
+]

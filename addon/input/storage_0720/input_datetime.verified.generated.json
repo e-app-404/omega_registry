@@ -1,0 +1,92 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": "last_presence_mode_change",
+        "name": "last_presence_mode_change",
+        "has_date": true,
+        "icon": "mdi:calendar-search",
+        "has_time": true
+      },
+      {
+        "id": "clio_last_run",
+        "name": "clio_last_run",
+        "has_date": true,
+        "has_time": true,
+        "icon": "mdi:timeline-question"
+      },
+      {
+        "id": "phanes_last_run",
+        "icon": "mdi:timeline-question",
+        "has_date": true,
+        "name": "phanes_last_run",
+        "has_time": true
+      },
+      {
+        "id": "last_error_time",
+        "name": "last_error_time",
+        "has_date": true,
+        "icon": "mdi:calendar-alert-outline",
+        "has_time": true
+      },
+      {
+        "id": "last_error_timestamp",
+        "name": "last_error_timestamp",
+        "has_date": true,
+        "icon": "mdi:calendar-alert",
+        "has_time": true
+      },
+      {
+        "id": "hephaestus_room_registry_last_run",
+        "name": "hephaestus_room_registry_last_run",
+        "has_date": true,
+        "icon": "mdi:calendar-clock-outline",
+        "has_time": true
+      },
+      {
+        "id": "clio_last_run_timestamp",
+        "name": "clio_last_run_timestamp",
+        "has_date": true,
+        "icon": "mdi:calendar-arrow-left",
+        "has_time": true
+      },
+      {
+        "id": "iris_last_run_timestamp",
+        "name": "iris_last_run_timestamp",
+        "has_date": true,
+        "icon": "mdi:calendar-arrow-left",
+        "has_time": true
+      },
+      {
+        "id": "charon_last_run_timestamp",
+        "name": "charon_last_run_timestamp",
+        "has_date": true,
+        "icon": "mdi:calendar-arrow-left",
+        "has_time": true
+      },
+      {
+        "id": "olympus_last_run",
+        "name": "olympus_last_run",
+        "has_date": true,
+        "icon": "mdi:clock-outline",
+        "has_time": true
+      },
+      {
+        "id": "mnemosyne_last_run",
+        "name": "mnemosyne_last_run",
+        "has_date": true,
+        "icon": "mdi:clock-outline",
+        "has_time": true
+      },
+      {
+        "id": "last_run_publish_all_registries",
+        "name": "last_run_publish_all_registries",
+        "has_date": true,
+        "icon": "mdi:av-timer",
+        "has_time": true
+      }
+    ]
+  },
+  "key": "input_datetime",
+  "version": 1
+}

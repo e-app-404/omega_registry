@@ -1,0 +1,76 @@
+# contracts/entity_id_migration_map.rosetta.v5.yaml
+
+entity_id_migration_map:
+  description: >
+    Maps pre-reboot entity IDs to post-reboot equivalents using fingerprint keys,
+    cluster metadata, and confidence scoring. All entries must be traceable, scored,
+    and role-aligned. This is the canonical Rosetta Stone for registry rehydration.
+  type: list
+  items:
+    type: object
+    required:
+      - old_entity_id
+      - new_entity_id
+      - canonical_entity_key
+      - cluster_id
+      - semantic_role
+      - match_method
+      - confidence_score
+      - flag_manual_review
+    properties:
+      old_entity_id:
+        type: string
+        description: >
+          The pre-reboot entity_id (e.g. binary_sensor.kitchen_motion_legacy_1).
+        constraints:
+          - must exist in legacy registry or fingerprint set
+      new_entity_id:
+        type: string
+        nullable: true
+        description: >
+          The resolved post-reboot entity_id (e.g. binary_sensor.kitchen_motion_main_1).
+          If no match found, should be null and flag_manual_review must be true.
+      canonical_entity_key:
+        type: string
+        description: >
+          Deterministic, slugified entity fingerprint used for matching (e.g. kitchen_motion_main_1).
+        constraints:
+          - must match key used in entity_fingerprint_map
+      cluster_id:
+        type: string
+        nullable: true
+        description: >
+          The inferred cluster (area + role) for grouping (e.g. kitchen_motion).
+      semantic_role:
+        type: string
+        nullable: true
+        description: >
+          Role label assigned based on inference or alpha cluster (e.g. presence, config).
+      match_method:
+        type: string
+        enum:
+          [exact, fuzzy, slug_match, prefix_match, cluster_alignment, unmatched]
+        description: >
+          Method used to match the old and new entity_id.
+      confidence_score:
+        type: number
+        format: float
+        minimum: 0.0
+        maximum: 1.0
+        description: >
+          Score from 0.0 to 1.0 reflecting the certainty of the match.
+          Should be ≥ 0.92 to skip manual review.
+      flag_manual_review:
+        type: boolean
+        description: >
+          True if the confidence_score < 0.92 or the match is otherwise ambiguous.
+      source_entity_id:
+        type: string
+        nullable: true
+        description: >
+          Optional override from an auxiliary fingerprint or alias mapping.
+      reason:
+        type: string
+        nullable: true
+        description: >
+          Explanation for unmatched entities or fallback assignments (e.g. no role match, ambiguous slug).

@@ -1,0 +1,118 @@
+file: /Users/evertappels/Projects/omega_registry/canonical/registry_inputs/core.entity_registry_2
+size_bytes: 307697813
+sha256: 22440f594b471c92cd8f4406bbde9a746207687715537bb381ba89d9840bec5c
+total_entities: 2496
+unique_entity_ids: 2496
+entity_ids_with_duplicates_count: 0
+max_duplicates_for_single_entity_id: 1
+platform_top:
+  - tplink: 273
+  - mobile_app: 243
+  - mqtt: 229
+  - template: 156
+  - nmap_tracker: 148
+  - hassio: 122
+  - matter: 120
+  - glances: 103
+  - hacs: 102
+  - wiz: 80
+  - smartthings: 80
+  - systemmonitor: 79
+  - automation: 76
+  - sonos: 67
+  - input_boolean: 54
+  - input_number: 48
+  - withings: 46
+  - synology_dsm: 46
+  - ping: 40
+  - script: 36
+config_entry_top:
+  - None: 486
+  - 01JX93KVNP38Q5YBDS8PDNVZ0Y: 229
+  - 01K0Q85BA9VZTR07DA2QVDG2FB: 148
+  - 01JX8TR19F9SXBPF0AQZ5YX0PJ: 122
+  - 01JX92YXMW2BCHK5F5WF3K5Z0X: 121
+  - 01JX8TSVW600M31ANGMKK969R5: 120
+  - 01K1NXBJ4TK0PHJ6DXT80XEC4Q: 103
+  - 01JXB8HEVBM7C2E1404Y5BYFFG: 102
+  - 01K0G0E74RH816NM3T6WHGGQFP: 80
+  - 01JXB0RD61WQPC8NQ273QYDPJM: 79
+  - 01JX8TR1G40Z67YDAS5GBMYS8E: 67
+  - 01JX9BV3334SZ07XVK0B8CZ36Y: 46
+  - 01JXNSXR1Q7NE4F10RQGGGFP98: 46
+  - 01K2322W0HX9RQGXQVBJJXE01X: 24
+  - 01K15V7QA513X4Y6YD7ED1JQJE: 23
+  - 01K5JBJSDSGRJB9ZQHQ8VMS6D8: 23
+  - 01K5HE5M9XEB2E7N5KCX10T23T: 22
+  - 01K0FXQ76Y0GH4TK63BAQCDV8Z: 21
+  - 01K131TKMV4CN6WXPDG1PN2JN9: 21
+  - 01K1XS6S2J3KFJCNKZY2GJD92F: 20
+disabled_by_counts:
+  - None: 1881
+  - integration: 332
+  - config_entry: 121
+  - user: 93
+  - device: 69
+entity_category_counts:
+  - None: 1457
+  - diagnostic: 670
+  - config: 369
+device_id_null_count: 754
+options_nonempty_count: 2360
+translation_key_missing_count: 1327
+date_ranges:
+  created_min: 2025-06-08T22:31:54.873571+00:00
+  created_max: 2025-09-20T01:24:56.899360+00:00
+  modified_min: 2025-06-08T22:32:04.897878+00:00
+  modified_max: 2025-09-20T01:24:56.899821+00:00
+sample_entity_ids_first_50:
+  - sensor.sun_next_dawn
+  - sensor.sun_next_dusk
+  - sensor.sun_next_midnight
+  - sensor.sun_next_noon
+  - sensor.sun_next_rising
+  - sensor.sun_next_setting
+  - sensor.sun_solar_elevation
+  - sensor.sun_solar_azimuth
+  - sensor.sun_solar_rising
+  - sensor.home_assistant_core_cpu_percent
+  - sensor.home_assistant_core_memory_percent
+  - sensor.home_assistant_supervisor_cpu_percent
+  - sensor.home_assistant_supervisor_memory_percent
+  - sensor.home_assistant_host_os_agent_version
+  - sensor.home_assistant_host_apparmor_version
+  - sensor.home_assistant_host_disk_total
+  - sensor.home_assistant_host_disk_used
+  - sensor.home_assistant_host_disk_free
+  - update.home_assistant_supervisor_update
+  - update.home_assistant_core_update
+  - sensor.sonos_favorites
+  - switch.sonos_alarm_1
+  - switch.sonos_alarm_8
+  - switch.sonos_alarm_30
+  - switch.sonos_alarm_17
+  - sensor.backup_backup_manager_state
+  - sensor.backup_next_scheduled_automatic_backup
+  - sensor.backup_last_successful_automatic_backup
+  - binary_sensor.rpi_power_status
+  - binary_sensor.matter_server_running
+  - sensor.matter_server_version
+  - sensor.matter_server_newest_version
+  - sensor.matter_server_cpu_percent
+  - sensor.matter_server_memory_percent
+  - update.matter_server_update
+  - person.evert
+  - todo.shopping_list
+  - tts.google_translate_en_com
+  - weather.forecast_home
+  - media_player.joels_bedroom_speaker
+  - media_player.living_room_google_mini_omega
+  - number.bedroom_sonos_ray_audio_delay
+  - sensor.bedroom_sonos_ray_audio_input_format
+  - number.bedroom_sonos_ray_balance
+  - number.bedroom_sonos_ray_bass
+  - media_player.bedroom_sonos_ray
+  - switch.bedroom_sonos_ray_crossfade
+  - switch.bedroom_sonos_ray_loudness
+  - number.bedroom_sonos_ray_music_surround_level
+  - switch.bedroom_sonos_ray_night_sound

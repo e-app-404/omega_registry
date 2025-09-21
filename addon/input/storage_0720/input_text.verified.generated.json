@@ -1,0 +1,64 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": "current_active_room",
+        "name": "current_active_room",
+        "icon": "mdi:map-marker-radius",
+        "mode": "text",
+        "min": 0,
+        "max": 100
+      },
+      {
+        "id": "last_error_message",
+        "name": "last_error_message",
+        "icon": "mdi:comment-alert-outline",
+        "min": 0,
+        "max": 255,
+        "mode": "text"
+      },
+      {
+        "id": "omega_room_registry_hash",
+        "name": "omega_room_registry_hash",
+        "icon": "mdi:pound-box",
+        "mode": "text",
+        "max": 100,
+        "min": 0
+      },
+      {
+        "id": "omega_device_registry_hash",
+        "name": "omega_device_registry_hash",
+        "icon": "mdi:pound-box",
+        "mode": "text",
+        "max": 100,
+        "min": 0
+      },
+      {
+        "id": "alpha_sensor_registry_hash",
+        "name": "alpha_sensor_registry_hash",
+        "icon": "mdi:pound-box",
+        "mode": "text",
+        "max": 100,
+        "min": 0
+      },
+      {
+        "id": "alpha_light_registry_hash",
+        "name": "alpha_light_registry_hash",
+        "icon": "mdi:pound-box",
+        "mode": "text",
+        "max": 100,
+        "min": 0
+      },
+      {
+        "id": "glances_credentials",
+        "name": "glances_credentials",
+        "icon": "mdi:form-textbox-password",
+        "mode": "password",
+        "max": 128,
+        "min": 0
+      }
+    ]
+  },
+  "key": "input_text",
+  "version": 1
+}

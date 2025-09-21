@@ -1,0 +1,8 @@
+{
+  "alpha_sensor_registry_backfill.py": ["registry.utils.constants", "registry.utils.registry"],
+  "ci_registry_metrics.py": ["registry.utils.constants", "registry.utils.registry"],
+  "enrich_with_devtools_metadata.py": ["registry.utils.registry", "registry.utils.pathing"],
+  "patch_area_room_zone.py": ["registry.utils.pathing", "registry.utils.registry", "registry.utils.inference", "registry.utils.constants"],
+  "autocluster_audit.py": ["registry.utils.pathing", "registry.utils.registry", "registry.utils.inference", "registry.utils.constants"],
+  "audit_alpha_registry_path.py": ["registry.utils.pathing", "registry.utils.registry", "registry.utils.constants"]
+}

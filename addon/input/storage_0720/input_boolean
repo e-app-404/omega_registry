@@ -1,0 +1,368 @@
+{
+  "data": {
+    "items": [
+      {
+        "name": "multi_sensor_fusion",
+        "id": "input_boolean.multi_sensor_fusion",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "presence_detection_enabled",
+        "id": "input_boolean.presence_detection_enabled",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "presence_detection_logging",
+        "id": "input_boolean.presence_detection_logging",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "presence_debug_mode",
+        "id": "input_boolean.presence_debug_mode",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "trigger_manual_presence_fallback",
+        "id": "input_boolean.trigger_manual_presence_fallback",
+        "initial": "off",
+        "icon": "mdi:bug-check",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "spare_boolean",
+        "id": "input_boolean.spare_boolean",
+        "initial": "off",
+        "icon": "mdi:toggle-switch-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "climate_automation_enabled",
+        "id": "input_boolean.climate_automation_enabled",
+        "initial": "off",
+        "icon": "mdi:thermostat",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "climate_override_active",
+        "id": "input_boolean.climate_override_active",
+        "initial": "off",
+        "icon": "mdi:lock-alert",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "window_open_detection",
+        "id": "input_boolean.window_open_detection",
+        "initial": "off",
+        "icon": "mdi:window-open",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "humidity_control_enabled",
+        "id": "input_boolean.humidity_control_enabled",
+        "initial": "off",
+        "icon": "mdi:water-percent",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "eco_mode_enabled",
+        "id": "input_boolean.eco_mode_enabled",
+        "initial": "off",
+        "icon": "mdi:leaf",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "debug_mode_enabled",
+        "id": "input_boolean.debug_mode_enabled",
+        "initial": "off",
+        "icon": "mdi:bug-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "chain_diagnostics_enabled",
+        "id": "input_boolean.chain_diagnostics_enabled",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "system_alert_active",
+        "id": "input_boolean.system_alert_active",
+        "initial": "off",
+        "icon": "mdi:alert",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "input_booleandebug_mode",
+        "id": "input_boolean.input_booleandebug_mode",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "input_booleanerror_tracking",
+        "id": "input_boolean.input_booleanerror_tracking",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "input_booleansystem_health_monitoring",
+        "id": "input_boolean.input_booleansystem_health_monitoring",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "input_booleandevice_tracking",
+        "id": "input_boolean.input_booleandevice_tracking",
+        "initial": "off",
+        "icon": "mdi:human-greeting-proximity",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "room_presence",
+        "id": "input_boolean.room_presence",
+        "initial": "off",
+        "icon": "mdi:motion-sensor",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "scene_control",
+        "id": "input_boolean.scene_control",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "adaptive_brightness",
+        "id": "input_boolean.adaptive_brightness",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "clio_cooldown_active",
+        "id": "input_boolean.clio_cooldown_active",
+        "initial": "off",
+        "icon": "mdi:clipboard-text-clock-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "phanes_cooldown_active",
+        "id": "input_boolean.phanes_cooldown_active",
+        "initial": "off",
+        "icon": "mdi:archive-clock-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "iris_audit_ok",
+        "id": "input_boolean.iris_audit_ok",
+        "initial": "off",
+        "icon": "mdi:book-check-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "charon_audit_ok",
+        "id": "input_boolean.charon_audit_ok",
+        "initial": "off",
+        "icon": "mdi:book-check-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "battery_monitoring",
+        "id": "input_boolean.battery_monitoring",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "security_monitoring",
+        "id": "input_boolean.security_monitoring",
+        "initial": "off",
+        "icon": "mdi:toggle-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "temperature_control",
+        "id": "input_boolean.temperature_control",
+        "initial": "off",
+        "icon": "mdi:home-thermometer",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "night_mode",
+        "id": "input_boolean.night_mode",
+        "initial": "off",
+        "icon": "mdi:weather-night",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "day_mode",
+        "id": "input_boolean.day_mode",
+        "initial": "off",
+        "icon": "mdi:sun-clock",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "prometheus_only_circadian",
+        "id": "input_boolean.prometheus_only_circadian",
+        "initial": "off",
+        "icon": "mdi:light-switch",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "prometheus_only_availability",
+        "id": "input_boolean.prometheus_only_availability",
+        "initial": "off",
+        "icon": "mdi:home-lightbulb-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "phanes_omega_metadata_enrichment",
+        "id": "input_boolean.phanes_omega_metadata_enrichment",
+        "initial": "off",
+        "icon": "mdi:rotate-orbit",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "turn_on",
+        "id": "input_boolean.turn_on",
+        "initial": "off",
+        "icon": "mdi:toggle-switch-off-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "turn_off",
+        "id": "input_boolean.turn_off",
+        "initial": "off",
+        "icon": "mdi:toggle-switch-off",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "error_notification_enabled",
+        "id": "input_boolean.error_notification_enabled",
+        "initial": "off",
+        "icon": "mdi:alert-circle",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "enable_daily_clean",
+        "id": "input_boolean.enable_daily_clean",
+        "initial": "off",
+        "icon": "mdi:toggle-switch-off-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "olympus_auto_validation",
+        "id": "input_boolean.olympus_auto_validation",
+        "initial": "off",
+        "icon": "mdi:shield-check",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "olympus_auto_fix",
+        "id": "input_boolean.olympus_auto_fix",
+        "initial": "off",
+        "icon": "mdi:auto-fix",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "maintenance_mode",
+        "id": "input_boolean.maintenance_mode",
+        "initial": "off",
+        "icon": "mdi:account-wrench-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "mnemosyne_auto_snapshots",
+        "id": "input_boolean.mnemosyne_auto_snapshots",
+        "initial": "off",
+        "icon": "mdi:camera",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "hermes_system_enabled",
+        "id": "input_boolean.hermes_system_enabled",
+        "initial": "off",
+        "icon": "mdi:power",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "countdown_timer_active",
+        "id": "input_boolean.countdown_timer_active",
+        "initial": "off",
+        "icon": "mdi:timer-settings-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "skylight_alert_acknowledged",
+        "id": "input_boolean.skylight_alert_acknowledged",
+        "initial": "off",
+        "icon": "mdi:wrench-check-outline",
+        "editable": true,
+        "visible": true
+      },
+      {
+        "name": "cooking_mode",
+        "id": "input_boolean.cooking_mode",
+        "initial": "off",
+        "icon": "mdi:chef-hat",
+        "editable": true,
+        "visible": true
+      }
+    ]
+  },
+  "key": "input_boolean",
+  "version": 1
+}

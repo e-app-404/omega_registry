@@ -1,0 +1,93 @@
+rehydration_context_manifest:
+  trace_id: 20250708T2317_promachos_v3_round1
+  persona: promachos_v3
+  phase: ALPHA-SENSOR-REHYDRATION-V1
+  files_used:
+    - file: registry_rehydration_local_project_clean_20250708.tar.gz
+      purpose: Primary working project directory (latest state)
+      tags: [checkpointed, session_canonical, includes_all_outputs]
+
+    - file: master.omega_registry/output/alpha_sensor_registry.json
+      purpose: Final alpha sensor registry output
+      tags: [emitted, clustered, validation_target]
+
+    - file: master.omega_registry/output/fingerprinting_run/entity_fingerprint_map.json
+      purpose: Post-reboot fingerprint map with area/role inference results
+      tags: [used_for_clustering, root_cause_diagnosed]
+
+    - file: master.omega_registry/output/fingerprinting_run/area_inference_summary.json
+      purpose: Area inference statistics per entity
+      tags: [diagnostic, source_of_"unknown_area", audit_input]
+
+    - file: master.omega_registry/output/fingerprinting_run/area_inference_audit.json
+      purpose: Entity-level area inference details
+      tags: [missing_area_confirmed, shows_null_device_id, shows_null_area_id]
+
+    - file: master.omega_registry/output/fingerprinting_run/role_rule_augmentation_trace.json
+      purpose: Trace log of Copilot-suggested role rules and their match paths
+      tags: [copilot_generated, promoted_rules_origin]
+
+    - file: master.omega_registry/copilot_patches/role_rule_suggestions.auto.yaml
+      purpose: Auto-suggested role inference rules promoted to config
+      tags: [copilot_promoted, patch_origin, role_inference]
+
+    - file: master.omega_registry/settings.conf.yaml
+      purpose: Global config and rule definitions for fingerprinting + clustering
+      tags: [patched, list_of_dicts_role_rules, active_config_source]
+
+    - file: master.omega_registry/output/alpha_sensor_registry.validation_report.json
+      purpose: Final validation results (coverage %, status)
+      tags: [validation_output, shows_FAIL, linked_to clustering]
+
+    - file: master.omega_registry/output/alpha_sensor_registry.emit_summary.json
+      purpose: Entity inclusion/exclusion summary during registry emission
+      tags: [debugging_inclusion, pipeline_diagnostics]
+
+    - file: master.omega_registry/output/alpha_sensor_registry.emit_trace.json
+      purpose: Per-entity inclusion trace and justification
+      tags: [used_for_root_cause, key_for_exclusion_reason_analysis]
+
+    - file: master.omega_registry/output/unmatched_entity_trace.json
+      purpose: Record of unmatched entities from fingerprint reconciliation
+      tags: [used_for inference coverage, fallback tracking]
+
+    - file: master.omega_registry/output/fingerprinting_run/gray_zone_matches.csv
+      purpose: List of partial confidence (0.75–0.85) entity matches
+      tags: [used_for borderline inference, clustering_inclusion_review]
+
+  memory_variables:
+    alpha_fingerprint_map: master.omega_registry/output/fingerprinting_run/entity_fingerprint_map.json
+    role_rules_applied:
+      patch_id: PATCH-FP-ROLE-RULE-AUGMENT-V1
+      config_source: master.omega_registry/settings.conf.yaml
+      promoted_from: master.omega_registry/copilot_patches/role_rule_suggestions.auto.yaml
+    area_inference_results:
+      summary_file: master.omega_registry/output/fingerprinting_run/area_inference_summary.json
+      status: 100% "unknown_area" assigned
+    active_output_registry: master.omega_registry/output/alpha_sensor_registry.json
+    validation_status:
+      coverage_percent: 12.7
+      status: FAIL
+      num_clusters: 3
+      all_clusters_have_unknown_area: true
+    fingerprint_entity_count: 75
+    clustered_entity_ids: 14
+    cluster_ids:
+      - unknown_area_light_level_sensor_light_level_sensor_alpha
+      - unknown_area_occupancy_monitor_occupancy_monitor_alpha
+      - unknown_area_motion_monitor_motion_monitor_alpha
+    last_patch_ids:
+      - PATCH-FP-ROLE-RULE-AUGMENT-V1
+      - PATCH-INFER-GAP-TRACE-V1
+      - PATCH-CLUSTER-GROUPING-BUGFIX-V1
+      - PATCH-INDEX-AUDIT-ALPHA-SOURCE-V1
+      - PATCH-AREA-MAP-AUDIT-002
+    gray_zone_count: 8
+    confirmed_matches: 0 (no override confirmed in unmatched_entity_trace.json)
+
+  notes:
+    - Root cause of incomplete registry traced to failure in extracting area_id/device_id from pre-reboot registry due to nested schema.
+    - Correct file was loaded (`alpha_sensor_registry.json` from pre-reboot set), but schema mismatch prevented correct area inference.
+    - Area and device fields are embedded in `.location` and `.device_info`, requiring explicit extraction logic (not yet patched).
+    - Output pipeline correctness is **logically valid but semantically incomplete**.
+    - Session was checkpointed under `registry_rehydration_checkpoint_20250708T2317.tar.gz` and fully reproducible.

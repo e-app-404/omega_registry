@@ -1,0 +1,323 @@
+{
+  "version": 1,
+  "minor_version": 8,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "floor_id": "downstairs",
+        "humidity_entity_id": "sensor.merged_kitchen_humidity_eta",
+        "icon": "mdi:chef-hat",
+        "id": "kitchen",
+        "labels": [],
+        "name": "Kitchen",
+        "picture": "/api/image/serve/2589ffea0e589d3bf21b838bbe3f1098/512x512",
+        "temperature_entity_id": "sensor.merged_kitchen_temperature_eta",
+        "created_at": "2025-03-16T03:53:40.314921+00:00",
+        "modified_at": "2025-05-31T16:38:26.659317+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "upstairs",
+        "humidity_entity_id": "sensor.merged_bedroom_humidity_eta",
+        "icon": "mdi:bed-king",
+        "id": "bedroom",
+        "labels": [],
+        "name": "Bedroom",
+        "picture": "/api/image/serve/7263b693ff11a3b18efba095e63c5529/512x512",
+        "temperature_entity_id": "sensor.merged_bedroom_temperature_eta",
+        "created_at": "2025-03-16T03:53:41.014077+00:00",
+        "modified_at": "2025-05-31T16:37:52.643457+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "downstairs",
+        "humidity_entity_id": "sensor.merged_living_room_humidity_eta",
+        "icon": "mdi:sofa",
+        "id": "living_room",
+        "labels": [],
+        "name": "Living Room",
+        "picture": "/api/image/serve/2d206ecda2eb4ae2795592d85ee37b70/512x512",
+        "temperature_entity_id": "sensor.merged_living_room_temperature_eta",
+        "created_at": "2025-03-16T03:53:55.626379+00:00",
+        "modified_at": "2025-05-31T16:38:38.708889+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "upstairs",
+        "humidity_entity_id": null,
+        "icon": "mdi:home-floor-2",
+        "id": "hallway_upstairs",
+        "labels": [],
+        "name": "Hallway Upstairs",
+        "picture": "/api/image/serve/52f1927164df44ad6d0c9151a3d2fcb3/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-16T05:15:51.559660+00:00",
+        "modified_at": "2025-03-17T17:32:53.884659+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "downstairs",
+        "humidity_entity_id": null,
+        "icon": "mdi:tumble-dryer",
+        "id": "laundry_room",
+        "labels": [],
+        "name": "Laundry Room",
+        "picture": "/api/image/serve/336dfc05afb138badcdc61621e010263/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-16T05:37:46.247139+00:00",
+        "modified_at": "2025-03-17T17:33:06.184723+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "downstairs",
+        "humidity_entity_id": null,
+        "icon": "mdi:coat-rack",
+        "id": "hallway_downstairs",
+        "labels": [],
+        "name": "Hallway Downstairs",
+        "picture": "/api/image/serve/458f587e09e2b49c02d7008150f0b1e3/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-16T05:39:54.133567+00:00",
+        "modified_at": "2025-03-17T17:20:03.555594+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "upstairs",
+        "humidity_entity_id": "sensor.ensuite_climate_humidity_2",
+        "icon": "mdi:shower",
+        "id": "ensuite",
+        "labels": [],
+        "name": "Ensuite",
+        "picture": "/api/image/serve/5f57160a3cac2e15505aac139ca6f4da/512x512",
+        "temperature_entity_id": "sensor.merged_ensuite_temperature_eta",
+        "created_at": "2025-03-16T05:40:11.797291+00:00",
+        "modified_at": "2025-05-31T16:38:11.928724+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "upstairs",
+        "humidity_entity_id": null,
+        "icon": "mdi:desk",
+        "id": "desk",
+        "labels": [],
+        "name": "Desk",
+        "picture": "/api/image/serve/790709d12e432f179770ec5279a97b74/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-16T05:40:24.796654+00:00",
+        "modified_at": "2025-03-16T14:19:02.282823+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "downstairs",
+        "humidity_entity_id": null,
+        "icon": "mdi:toilet",
+        "id": "powder_room",
+        "labels": [],
+        "name": "Powder Room",
+        "picture": "/api/image/serve/f0fa2b7eb0c8ab126a7fb12e4167682a/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-16T05:40:44.420165+00:00",
+        "modified_at": "2025-03-17T17:19:46.638506+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "upstairs",
+        "humidity_entity_id": null,
+        "icon": "mdi:bed",
+        "id": "joel_s_room",
+        "labels": [
+          "joel"
+        ],
+        "name": "Joel's Room",
+        "picture": "/api/image/serve/eac60f4e3f00e760a2f79227ff0e140b/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-16T05:41:05.930505+00:00",
+        "modified_at": "2025-03-17T17:32:23.618379+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "upstairs",
+        "humidity_entity_id": null,
+        "icon": "mdi:bed",
+        "id": "bed",
+        "labels": [
+          "evert"
+        ],
+        "name": "Bed",
+        "picture": "/api/image/serve/3c3b4b9bc1376c762943935d1734b4cc/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-16T05:44:43.764629+00:00",
+        "modified_at": "2025-03-16T14:17:47.933232+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "home",
+        "humidity_entity_id": "sensor.merged_home_humidity_eta",
+        "icon": "mdi:home",
+        "id": "home",
+        "labels": [],
+        "name": "Home",
+        "picture": "/api/image/serve/38ce9223cbe38b39daff916431d3831e/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-16T12:30:52.883493+00:00",
+        "modified_at": "2025-05-31T16:39:08.664243+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "home",
+        "humidity_entity_id": null,
+        "icon": "mdi:account",
+        "id": "evert",
+        "labels": [
+          "evert",
+          "presence_detection"
+        ],
+        "name": "Evert",
+        "picture": "/api/image/serve/6f6c6028b27d956cd21a4b0c507694c9/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-17T16:52:03.043489+00:00",
+        "modified_at": "2025-03-17T17:16:34.189812+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "cyberspace",
+        "humidity_entity_id": null,
+        "icon": "mdi:data-matrix",
+        "id": "virtual_devices",
+        "labels": [],
+        "name": "Virtual devices",
+        "picture": "/api/image/serve/48b1940a630183bed1c6b62dd51f5d90/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-17T16:54:12.043971+00:00",
+        "modified_at": "2025-03-17T18:16:40.349377+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "hestia",
+        "humidity_entity_id": null,
+        "icon": "mdi:shield-home-outline",
+        "id": "athena",
+        "labels": [
+          "subsystem",
+          "athena"
+        ],
+        "name": "Athena",
+        "picture": "/api/image/serve/b5da3abb913e82862615f4251e1ed558/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-24T11:53:36.111998+00:00",
+        "modified_at": "2025-05-28T22:30:59.118181+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "hestia",
+        "humidity_entity_id": null,
+        "icon": "mdi:account-supervisor-circle-outline",
+        "id": "hermes",
+        "labels": [
+          "subsystem",
+          "presence_detection",
+          "hermes"
+        ],
+        "name": "Hermes",
+        "picture": "/api/image/serve/638f5ac410183dd1561d0d99eb919493/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-24T11:54:13.138525+00:00",
+        "modified_at": "2025-05-28T22:30:59.118480+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "hestia",
+        "humidity_entity_id": null,
+        "icon": "mdi:account-supervisor-circle-outline",
+        "id": "theia",
+        "labels": [
+          "subsystem",
+          "theia",
+          "lighting"
+        ],
+        "name": "Theia",
+        "picture": "/api/image/serve/c5a9a4e08dce68dfb3d116b7b32c490d/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-24T11:55:03.612980+00:00",
+        "modified_at": "2025-05-28T22:30:59.118744+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "hestia",
+        "humidity_entity_id": null,
+        "icon": "mdi:tools",
+        "id": "hepheastus",
+        "labels": [
+          "subsystem"
+        ],
+        "name": "Hepheastus",
+        "picture": "/api/image/serve/92b9e85398e139db167b3de7d5da576b/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-03-31T16:35:46.733010+00:00",
+        "modified_at": "2025-05-28T22:30:59.118629+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "hestia",
+        "humidity_entity_id": null,
+        "icon": "mdi:devices",
+        "id": "soteria",
+        "labels": [
+          "soteria"
+        ],
+        "name": "Soteria",
+        "picture": "/api/image/serve/306365c85fe82083b3687eef637fceed/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-05-28T22:32:10.168700+00:00",
+        "modified_at": "2025-05-28T22:32:10.168704+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "hestia",
+        "humidity_entity_id": null,
+        "icon": "mdi:home-thermometer",
+        "id": "aether",
+        "labels": [
+          "aether"
+        ],
+        "name": "Aether",
+        "picture": "/api/image/serve/20f67d7d5cc71b5a7ed1f603c63605f0/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-05-28T22:36:33.518460+00:00",
+        "modified_at": "2025-05-28T22:36:33.518467+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "home",
+        "humidity_entity_id": null,
+        "icon": "mdi:cog-box",
+        "id": "config",
+        "labels": [
+          "abstract_entity"
+        ],
+        "name": "Config",
+        "picture": "/api/image/serve/f673f0e59de62af3a7807c28ee2e3bed/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-05-28T22:40:45.108819+00:00",
+        "modified_at": "2025-05-28T22:40:45.108825+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "hestia",
+        "humidity_entity_id": null,
+        "icon": "mdi:omega",
+        "id": "hestia",
+        "labels": [
+          "abstract_entity"
+        ],
+        "name": "Hestia",
+        "picture": "/api/image/serve/76cf54b3961388276ca770deb3cef3ab/512x512",
+        "temperature_entity_id": null,
+        "created_at": "2025-05-28T22:56:05.260329+00:00",
+        "modified_at": "2025-05-28T22:56:05.260334+00:00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "counter",
+  "data": {
+    "items": [
+      {
+        "id": "homeassistant_errors",
+        "name": "homeassistant_errors",
+        "icon": "mdi:alert-circle",
+        "minimum": 0,
+        "maximum": 999,
+        "restore": true,
+        "initial": 0,
+        "step": 1
+      },
+      {
+        "id": "homeassistant_warnings",
+        "name": "homeassistant_warnings",
+        "icon": "mdi:alert",
+        "minimum": 0,
+        "maximum": 999,
+        "restore": true,
+        "initial": 0,
+        "step": 1
+      }
+    ]
+  }
+}

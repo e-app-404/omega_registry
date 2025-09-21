@@ -1,0 +1,386 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": "presence_room_confidence_base",
+        "min": 0.0,
+        "max": 100.0,
+        "name": "presence_room_confidence_base",
+        "unit_of_measurement": "%",
+        "mode": "slider",
+        "icon": "mdi:file-percent-outline",
+        "step": 1.0
+      },
+      {
+        "id": "presence_motion_sensor_weight",
+        "min": 0.0,
+        "max": 100.0,
+        "name": "presence_motion_sensor_weight",
+        "icon": "mdi:motion-sensor",
+        "unit_of_measurement": "%",
+        "step": 1.0,
+        "mode": "slider"
+      },
+      {
+        "id": "presence_media_activity_weight",
+        "min": 0.0,
+        "max": 100.0,
+        "name": "presence_media_activity_weight",
+        "icon": "mdi:weight",
+        "unit_of_measurement": "%",
+        "step": 1.0,
+        "mode": "slider"
+      },
+      {
+        "id": "presence_light_indicator_weight",
+        "min": 0.0,
+        "max": 100.0,
+        "name": "presence_light_indicator_weight",
+        "icon": "mdi:weight",
+        "unit_of_measurement": "%",
+        "step": 1.0,
+        "mode": "slider"
+      },
+      {
+        "id": "tool_execution_cooldown",
+        "min": 60.0,
+        "max": 3600.0,
+        "name": "tool_execution_cooldown",
+        "icon": "mdi:motion-pause-outline",
+        "mode": "box",
+        "unit_of_measurement": "seconds",
+        "step": 30.0
+      },
+      {
+        "id": "error_log_count",
+        "min": 0.0,
+        "max": 100.0,
+        "name": "error_log_count",
+        "icon": "mdi:content-save-alert-outline",
+        "mode": "box",
+        "unit_of_measurement": "count",
+        "step": 1.0
+      },
+      {
+        "id": "error_count",
+        "min": 0.0,
+        "max": 10000.0,
+        "name": "error_count",
+        "icon": "mdi:timeline-alert-outline",
+        "mode": "box",
+        "unit_of_measurement": "count",
+        "step": 1.0
+      },
+      {
+        "id": "presence_confidence_threshold",
+        "min": 0.0,
+        "max": 100.0,
+        "name": "presence_confidence_threshold",
+        "icon": "mdi:boom-gate-outline",
+        "mode": "slider",
+        "unit_of_measurement": "%",
+        "step": 1.0
+      },
+      {
+        "id": "bedroom_target_temperature",
+        "min": 15.0,
+        "max": 25.0,
+        "name": "bedroom_target_temperature",
+        "icon": "mdi:home-thermometer",
+        "step": 0.5,
+        "unit_of_measurement": "\u00b0C",
+        "mode": "box"
+      },
+      {
+        "id": "living_room_target_temperature",
+        "min": 15.0,
+        "max": 25.0,
+        "name": "living_room_target_temperature",
+        "icon": "mdi:home-thermometer",
+        "mode": "box",
+        "step": 0.5,
+        "unit_of_measurement": "\u00b0C"
+      },
+      {
+        "id": "kitchen_target_temperature",
+        "min": 15.0,
+        "max": 25.0,
+        "name": "kitchen_target_temperature",
+        "icon": "mdi:home-thermometer",
+        "step": 0.5,
+        "unit_of_measurement": "\u00b0C",
+        "mode": "slider"
+      },
+      {
+        "id": "ensuite_target_temperature",
+        "min": 15.0,
+        "max": 25.0,
+        "name": "ensuite_target_temperature",
+        "icon": "mdi:home-thermometer",
+        "mode": "box",
+        "step": 0.5,
+        "unit_of_measurement": "\u00b0C"
+      },
+      {
+        "id": "temperature_tolerance",
+        "min": 0.1,
+        "max": 2.0,
+        "name": "temperature_tolerance",
+        "icon": "mdi:plus-minus",
+        "step": 0.1,
+        "mode": "box",
+        "unit_of_measurement": "\u00b0C"
+      },
+      {
+        "id": "high_humidity_threshold",
+        "min": 50.0,
+        "max": 80.0,
+        "name": "high_humidity_threshold",
+        "icon": "mdi:water-percent-alert",
+        "unit_of_measurement": "%",
+        "step": 1.0,
+        "mode": "slider"
+      },
+      {
+        "id": "default_temperature",
+        "min": 15.0,
+        "max": 25.0,
+        "name": "default_temperature",
+        "icon": "mdi:temperature-celsius",
+        "unit_of_measurement": "\u00b0C",
+        "step": 0.5,
+        "mode": "box"
+      },
+      {
+        "id": "eco_mode_temperature_offset",
+        "min": 0.5,
+        "max": 3.0,
+        "name": "eco_mode_temperature_offset",
+        "icon": "mdi:thermometer-minus",
+        "mode": "box",
+        "step": 0.5,
+        "unit_of_measurement": "\u00b0C"
+      },
+      {
+        "id": "template_monitor_interval",
+        "min": 1.0,
+        "max": 3600.0,
+        "name": "template_monitor_interval",
+        "icon": "mdi:clock-time-three",
+        "step": 1.0,
+        "mode": "box",
+        "unit_of_measurement": "second"
+      },
+      {
+        "id": "system_health_threshold",
+        "min": 0.0,
+        "max": 100.0,
+        "name": "system_health_threshold",
+        "icon": "mdi:shield-home",
+        "mode": "slider",
+        "unit_of_measurement": "%",
+        "step": 1.0
+      },
+      {
+        "id": "motion_timeout",
+        "min": 0.0,
+        "max": 3600.0,
+        "name": "motion_timeout",
+        "icon": "mdi:motion-pause-outline",
+        "mode": "box",
+        "unit_of_measurement": "seconds",
+        "step": 1.0
+      },
+      {
+        "id": "home_away_threshold",
+        "min": 30.0,
+        "max": 3600.0,
+        "name": "home_away_threshold",
+        "icon": "mdi:home-automation",
+        "step": 1.0,
+        "unit_of_measurement": "m",
+        "mode": "slider"
+      },
+      {
+        "id": "morning_color_temp",
+        "min": 2200.0,
+        "max": 6500.0,
+        "name": "morning_color_temp",
+        "icon": "mdi:weather-sunset-up",
+        "mode": "box",
+        "unit_of_measurement": "K",
+        "step": 50.0
+      },
+      {
+        "id": "day_color_temp",
+        "min": 2200.0,
+        "max": 6500.0,
+        "name": "day_color_temp",
+        "icon": "mdi:weather-sunny",
+        "mode": "box",
+        "step": 1.0
+      },
+      {
+        "id": "evening_color_temp",
+        "min": 2200.0,
+        "max": 6500.0,
+        "name": "evening_color_temp",
+        "icon": "mdi:weather-sunset-down",
+        "step": 50.0,
+        "unit_of_measurement": "K",
+        "mode": "slider"
+      },
+      {
+        "id": "night_color_temp",
+        "min": 2200.0,
+        "max": 6500.0,
+        "name": "night_color_temp",
+        "icon": "mdi:lightbulb-night",
+        "mode": "box",
+        "step": 50.0,
+        "unit_of_measurement": "K"
+      },
+      {
+        "id": "light_transition_duration",
+        "min": 0.0,
+        "max": 10.0,
+        "name": "light_transition_duration",
+        "icon": "mdi:lightbulb-auto",
+        "step": 0.1,
+        "unit_of_measurement": "seconds",
+        "mode": "slider"
+      },
+      {
+        "id": "battery_critical_threshold",
+        "min": 0.0,
+        "max": 100.0,
+        "name": "battery_critical_threshold",
+        "icon": "mdi:battery-plus-outline",
+        "unit_of_measurement": "%",
+        "step": 1.0,
+        "mode": "slider"
+      },
+      {
+        "id": "battery_low_threshold",
+        "min": 1.0,
+        "max": 100.0,
+        "name": "battery_low_threshold",
+        "icon": "mdi:battery-charging-10",
+        "unit_of_measurement": "%",
+        "step": 1.0,
+        "mode": "slider"
+      },
+      {
+        "id": "target_humidity",
+        "min": 5.0,
+        "max": 100.0,
+        "name": "target_humidity",
+        "icon": "mdi:cloud-percent",
+        "unit_of_measurement": "%",
+        "step": 1.0,
+        "mode": "slider"
+      },
+      {
+        "id": "humidity_tolerance",
+        "min": 5.0,
+        "max": 100.0,
+        "name": "humidity_tolerance",
+        "icon": "mdi:water-percent",
+        "step": 5.0,
+        "unit_of_measurement": "%",
+        "mode": "slider"
+      },
+      {
+        "id": "motion_score_refresh_interval",
+        "min": 10.0,
+        "max": 300.0,
+        "name": "Motion Score Refresh Interval",
+        "icon": "mdi:eye-refresh-outline",
+        "unit_of_measurement": "second",
+        "mode": "slider",
+        "step": 5.0
+      },
+      {
+        "id": "automation_execution_threshold",
+        "min": 10.0,
+        "max": 1000.0,
+        "name": "automation_execution_threshold",
+        "icon": "mdi:counter",
+        "step": 10.0,
+        "unit_of_measurement": "counts",
+        "mode": "slider"
+      },
+      {
+        "id": "script_execution_threshold",
+        "min": 10.0,
+        "max": 500.0,
+        "name": "script_execution_threshold",
+        "icon": "mdi:counter",
+        "step": 10.0,
+        "unit_of_measurement": "counts",
+        "mode": "slider"
+      },
+      {
+        "id": "energy_usage_alert_threshold",
+        "min": 5.0,
+        "max": 100.0,
+        "name": "energy_usage_alert_threshold",
+        "icon": "mdi:counter",
+        "unit_of_measurement": "kWh",
+        "step": 1.0,
+        "mode": "slider"
+      },
+      {
+        "id": "api_call_warning_threshold",
+        "min": 10.0,
+        "max": 200.0,
+        "name": "api_call_warning_threshold",
+        "icon": "mdi:counter",
+        "step": 10.0,
+        "unit_of_measurement": "call",
+        "mode": "slider"
+      },
+      {
+        "id": "olympus_validation_interval",
+        "min": 1.0,
+        "max": 168.0,
+        "name": "olympus_validation_interval",
+        "mode": "slider",
+        "step": 24.0,
+        "unit_of_measurement": "hours"
+      },
+      {
+        "id": "countdown_hours",
+        "min": 0.0,
+        "max": 23.0,
+        "name": "countdown_hours",
+        "icon": "mdi:timer-edit",
+        "mode": "slider",
+        "unit_of_measurement": "hour",
+        "step": 1.0
+      },
+      {
+        "id": "countdown_minutes",
+        "min": 0.0,
+        "max": 59.0,
+        "name": "countdown_minutes",
+        "icon": "mdi:timer-edit",
+        "unit_of_measurement": "minute",
+        "mode": "slider",
+        "step": 1.0
+      },
+      {
+        "id": "countdown_seconds",
+        "min": 0.0,
+        "max": 59.0,
+        "name": "countdown_seconds",
+        "icon": "mdi:timer-edit",
+        "unit_of_measurement": "second",
+        "mode": "slider",
+        "step": 1.0
+      }
+    ]
+  },
+  "key": "input_number",
+  "version": 1
+}

@@ -1,0 +1,380 @@
+# Centralized project configuration for registry rehydration pipeline
+# All scripts and logic layers should reference this file for global settings, paths, and mappings
+
+# --- Pipeline Paths ---
+# ⚠️ Deprecated: use settings.input_paths and settings.output_paths instead
+paths:
+  input_dir: input
+  output_dir: output
+  docs_dir: docs
+  archive_dir: archive
+  device_registry: input/core.device_registry
+  entity_registry: input/core.entity_registry
+  area_registry: input/core.area_registry
+  room_map: input/room_map.yaml
+
+# --- Weights and Thresholds ---
+weights:
+  name_score: 0.35
+  slug_score: 0.25
+  device_class_score: 0.13
+  role_score: 0.13
+  unit_score: 0.09
+  area_score: 0.05
+
+thresholds:
+  high_confidence: 0.85
+  gray_zone: 0.75
+
+# --- Semantic Roles ---
+semantic_roles:
+  primary_sensor: "Main logic sensor (motion, presence, etc.)"
+  redundant_sensor: "Fallback or redundant signal used in fusion logic"
+  override_trigger: "Manual or override-style triggers (e.g. virtual switch)"
+  environment_light: "Ambient/background lighting (not motion-controlled)"
+  presence_monitor: "Presence sensor based on motion, radar, etc."
+  motion_monitor: "Binary motion sensor"
+  climate_monitor: "Temperature sensor (e.g. from thermostat or sensor pod)"
+  humidity_monitor: "Relative humidity sensor"
+  occupancy_monitor: "Broader occupancy pattern, often inferred"
+  power_sensor: "Wattage, voltage, current sensors"
+  light_sensor: "Illuminance/Lux sensors"
+  generic_sensor: "Fallback when no match found in role_map"
+
+# === Advanced Role Inference & Penalization Logic Extension ===
+
+role_inference_rules:
+  - name: "contact_monitor"
+    match:
+      pattern: "binary_sensor.*contact.*"
+    assign_role: "contact_monitor"
+  - name: "battery_monitor"
+    match:
+      pattern: "binary_sensor.*battery.*"
+    assign_role: "battery_monitor"
+  - name: "motion_monitor"
+    match:
+      pattern: "binary_sensor.*motion.*"
+    assign_role: "motion_monitor"
+  - name: "presence_monitor"
+    match:
+      pattern: "binary_sensor.*presence.*"
+    assign_role: "presence_monitor"
+  - name: "climate_monitor"
+    match:
+      pattern: "sensor.*(temperature|climate).*"
+    assign_role: "climate_monitor"
+  - name: "humidity_monitor"
+    match:
+      pattern: "sensor.*humidity.*"
+    assign_role: "humidity_monitor"
+  - name: "occupancy_monitor"
+    match:
+      pattern: "binary_sensor.*occupanc.*"
+    assign_role: "occupancy_monitor"
+  - name: "connectivity_monitor"
+    match:
+      pattern: "binary_sensor.*cloud_connection.*"
+    assign_role: "connectivity_monitor"
+  - name: "state_override_trigger"
+    match:
+      pattern: "binary_sensor.*override.*"
+    assign_role: "state_override_trigger"
+  - name: "mute_sensor"
+    match:
+      pattern: "binary_sensor.*muted.*"
+    assign_role: "mute_sensor"
+  - name: "light_level_sensor"
+    match:
+      pattern: "sensor.*illumin.*"
+    assign_role: "light_level_sensor"
+  - name: "light_level_sensor"
+    match:
+      pattern: "sensor.*light_level.*"
+    assign_role: "light_level_sensor"
+  - name: "light_level_sensor"
+    match:
+      pattern: "sensor.*lux.*"
+    assign_role: "light_level_sensor"
+  - name: "power_supply_monitor"
+    match:
+      pattern: "sensor.*power.*"
+    assign_role: "power_supply_monitor"
+  - name: "power_supply_monitor"
+    match:
+      pattern: "sensor.*voltage.*"
+    assign_role: "power_supply_monitor"
+  - name: "signal_monitor"
+    match:
+      pattern: "sensor.*rssi.*"
+    assign_role: "signal_monitor"
+  - name: "signal_monitor"
+    match:
+      pattern: "sensor.*signal.*"
+    assign_role: "signal_monitor"
+  - name: "fan_controller"
+    match:
+      pattern: "fan.*"
+    assign_role: "fan_controller"
+  - name: "humidifier_controller"
+    match:
+      pattern: "humidifier.*"
+    assign_role: "humidifier_controller"
+  - name: "climate_controller"
+    match:
+      pattern: "climate.*"
+    assign_role: "climate_controller"
+  - name: "air_quality_monitor"
+    match:
+      pattern: "sensor.*air_quality.*"
+    assign_role: "air_quality_monitor"
+  - name: "air_quality_monitor"
+    match:
+      pattern: "sensor.*pm25.*"
+    assign_role: "air_quality_monitor"
+  - name: "air_quality_monitor"
+    match:
+      pattern: "sensor.*pm2_5.*"
+    assign_role: "air_quality_monitor"
+  - name: "audio_control"
+    match:
+      pattern: "media_player.*audio.*"
+    assign_role: "audio_control"
+  - name: "audio_control"
+    match:
+      pattern: "media_player.*mute.*"
+    assign_role: "audio_control"
+  - name: "audio_control"
+    match:
+      pattern: "media_player.*volume.*"
+    assign_role: "audio_control"
+  - name: "media_entertainment"
+    match:
+      pattern: "media_player.*"
+    assign_role: "media_entertainment"
+  - name: "media_entertainment"
+    match:
+      pattern: "media_player.*spotify.*"
+    assign_role: "media_entertainment"
+  - name: "media_entertainment"
+    match:
+      pattern: "switch.*ps5.*"
+    assign_role: "media_entertainment"
+  - name: "media_entertainment"
+    match:
+      pattern: "switch.*tv.*"
+    assign_role: "media_entertainment"
+  - name: "media_entertainment"
+    match:
+      pattern: "switch.*xbox.*"
+    assign_role: "media_entertainment"
+  # --- Copilot-suggested rules PATCH-FP-ROLE-RULE-AUGMENT-V1-PROMOTE ---
+  - name: "occupancy_sensitivity_param"
+    match:
+      domain: "select"
+      pattern: "occupancy.*sensitivity"
+    assign_role: "config_param"
+  - name: "occupancy_timeout_param"
+    match:
+      domain: "number"
+      pattern: "occupancy.*timeout"
+    assign_role: "config_param"
+  - name: "occupancy_update_entity"
+    match:
+      domain: "update"
+      pattern: "occupancy"
+    assign_role: "config_param"
+  - name: "battery_sensor"
+    match:
+      domain: "sensor"
+      pattern: "battery"
+    assign_role: "battery_monitor"
+  - name: "restart_button"
+    match:
+      domain: "button"
+      pattern: "restart"
+    assign_role: "control_button"
+
+negative_score_rules:
+  mismatch_device_class_area:
+    penalty: -0.25
+    description: "Device class does not match area semantic type"
+  domain_conflict:
+    penalty: -0.40
+    match:
+      - ["climate", "motion"]
+      - ["presence", "switch"]
+  unrelated_suffix_penalty:
+    penalty: -0.30
+    suffixes:
+      - "battery"
+      - "signal"
+      - "rssi"
+      - "firmware"
+
+role_entity_counts:
+  device_tracker: 37
+  media_entertainment_sonos: 8
+  media_entertainment: 11
+  contact_monitor: 15
+  battery_monitor: 15
+  motion_monitor: 16
+  presence_monitor: 10
+  climate_monitor: 59
+  humidity_monitor: 8
+  occupancy_monitor: 9
+  connectivity_monitor: 26
+  state_override_trigger: 5
+  mute_sensor: 3
+  light_level_sensor: 12
+  power_supply_monitor: 42
+  signal_monitor: 72
+  fan_controller: 5
+  humidifier_controller: 1
+  climate_controller: 4
+  air_quality_monitor: 2
+
+device_class_role_map:
+  motion: "motion"
+  occupancy: "occupancy"
+  contact: "contact"
+  temperature: "climate_monitor"
+  humidity: "humidity_monitor"
+  illuminance: "light_level_sensor"
+  power: "power_supply_monitor"
+  voltage: "power_supply_monitor"
+  current: "power_supply_monitor"
+  signal_strength: "signal_monitor"
+  battery: "battery_monitor"
+  # --- Deprecated: use role_inference_rules instead ---
+
+# --- Room and Floor Mappings ---
+rooms:
+  - id: bedroom
+    name: Bedroom
+    floor_id: bedroom_evert
+    aliases: ["bedroom", "master bedroom", "evert's suite", "belge étage"]
+  - id: kitchen
+    name: Kitchen
+    floor_id: kitchen
+    aliases: ["kitchen", "dining room"]
+  - id: living_room
+    name: Living Room
+    floor_id: living_room
+    aliases: ["living_room", "living room", "salon", "cinéma clapham"]
+  - id: ensuite
+    name: Ensuite
+    floor_id: bedroom_evert
+    aliases: ["ensuite", "bathroom", "sauna paraíso"]
+  - id: entrance
+    name: Entrance
+    floor_id: hallway
+    aliases:
+      [
+        "main entrance",
+        "front door",
+        "appartment entry",
+        "flat door",
+        "foyer",
+        "hallway entrance",
+      ]
+  - id: downstairs
+    name: Downstairs
+    floor_id: hallway
+    aliases: ["downstairs", "first floor", "hallway downstairs", "ground floor"]
+  - id: upstairs
+    name: Upstairs
+    floor_id: hallway
+    aliases: ["upstairs", "upstairs", "hallway upstairs", "first floor"]
+  - id: desk
+    name: Desk
+    floor_id: bedroom_evert
+    aliases: ["desk", "office", "study"]
+  - id: wardrobe
+    name: Wardrobe
+    floor_id: bedroom_evert
+    aliases: ["wardrobe", "armoire", "closet"]
+  - id: evert
+    name: Evert
+    floor_id: Evert
+    aliases: ["evert", "personal", "user", "evert device trackers"]
+  - id: system_admin
+    name: System Admin
+    floor_id: hestia
+    aliases: ["system_admin", "system admin", "sysadmin"]
+  - id: ha_addons
+    name: HA Addons
+    floor_id: Home Asssistant
+    aliases: ["ha_addons", "ha addons", "home assistant addons"]
+  - id: home
+    name: Home
+    floor_id: hestia
+    aliases: ["home", "home"]
+  - id: london
+    name: London
+    floor_id: London
+    aliases: ["london", "clapham"]
+  - id: home_assistant
+    name: Home Assistant
+    floor_id: network
+    aliases: ["home_assistant", "home assistant"]
+  - id: virtual
+    name: Virtual
+    floor_id: hestia
+    aliases: ["virtual", "virtual_devices"]
+  - id: laundry
+    name: laundry
+    floor_id: kitchen
+    aliases: ["laundry", "laundry_room", "Laundry Room"]
+  - id: nas
+    name: NAS
+    floor_id: network_connectivity
+    aliases: ["nas", "nas", "synology", "server"]
+  - id: network_connectivity
+    name: Network & Connectivity
+    floor_id: hestia
+    aliases: ["network_connectivity", "network & connectivity"]
+
+# --- General Settings ---
+# --- General Settings ---
+general:
+  default_timezone: Europe/London
+  default_language: en
+  log_level: INFO
+  dry_run: false
+
+  input_paths:
+    core_device_registry: input/core.device_registry
+    core_area_registry: input/core.area_registry
+    core_entity_registry: input/core.entity_registry
+    devtools_template: input/additional.list_sources/ha_devtools_template_device_id_list_2.txt
+    pre_reboot_dir: input/pre-reboot.hestia_registries
+    post_reboot_dir: input/post-reboot.hestia_registries
+
+  output_paths:
+    # Ω–tier registry variants
+    omega_cleaned: output/omega_device/omega_device_registry.cleaned.v2.json
+    omega_enriched_stage2: output/omega_device/omega_device_registry.enriched.canonical.json
+    omega_enriched_area_patched: output/omega_device/omega_device_registry.enriched.canonical.patched.json
+    omega_enriched_devtools: output/omega_device/omega_device_registry.enriched.canonical.devtools_enriched.json
+
+    # α–tier registries
+    alpha_sensor_registry: output/alpha_sensor/alpha_sensor_registry.json
+
+    # Cluster + ID migration mapping artifacts
+    entity_id_migration_map: output/mappings/entity_id_migration_map.annotated.v4.json
+    role_inference_rules: output/mappings/role_inference_rules.auto.yaml
+    area_mapping_matrix: output/mappings/area_inference_map.generated.json
+
+    # Ω–room registry outputs (Phase 6 deliverables)
+    omega_room_registry: output/omega_room/omega_room_registry.json
+    omega_room_registry_debug: output/omega_room/omega_room_registry_generation_debug.json
+
+    # Fingerprint output directory (α→Ω cluster emission pipeline)
+    fingerprinting_run: output/fingerprinting_run
+
+    # Runtime diagnostic output (timestamped to avoid overwrite)
+    cluster_diagnostics: data/cluster_coverage_metrics.%Y%m%d_%H%M%S.json
+    role_resolution_diagnostics: data/role_resolution_diagnostics.%Y%m%d_%H%M%S.json
+    unresolved_cluster_diagnostics: data/unresolved_cluster_diagnostics.%Y%m%d_%H%M%S.json
+    device_area_mismatch_report: data/clusters_with_device_but_missing_area.%Y%m%d_%H%M%S.json

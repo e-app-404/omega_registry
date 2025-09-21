@@ -1,0 +1,8 @@
+[
+  {
+    "id": "orphaned_parameter_signal",
+    "features": [],
+    "requires_review": true,
+    "note": "No orphaned parameter signals detected in this run. All config/tuning signals were successfully associated with a parent cluster."
+  }
+]

@@ -1,0 +1,4269 @@
+🔹 Device ID: 820adbe5f9e918790dfa69236d820763
+Name (user): n/a
+Name (system): Sun
+Model: n/a
+Manufacturer: n/a
+Integration: direct
+Entry type: service
+
+Entities:
+- sensor.sun_next_dawn
+  - domain: sensor
+  - name: Sun Next dawn
+  - state: 2025-06-29T02:58:52+00:00
+  - area: London
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 02:58:11.901838+00:00
+  - last_updated: 2025-06-28 02:58:11.901838+00:00
+- sensor.sun_next_dusk
+  - domain: sensor
+  - name: Sun Next dusk
+  - state: 2025-06-28T21:09:13+00:00
+  - area: London
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-27 21:09:28.937960+00:00
+  - last_updated: 2025-06-27 21:09:28.937960+00:00
+- sensor.sun_next_midnight
+  - domain: sensor
+  - name: Sun Next midnight
+  - state: 2025-06-29T00:04:05+00:00
+  - area: London
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 00:03:53.002923+00:00
+  - last_updated: 2025-06-28 00:03:53.002923+00:00
+- sensor.sun_next_noon
+  - domain: sensor
+  - name: Sun Next noon
+  - state: 2025-06-29T12:03:59+00:00
+  - area: London
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 12:03:47.004377+00:00
+  - last_updated: 2025-06-28 12:03:47.004377+00:00
+- sensor.sun_next_rising
+  - domain: sensor
+  - name: Sun Next rising
+  - state: 2025-06-29T03:47:05+00:00
+  - area: London
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 03:46:30.520534+00:00
+  - last_updated: 2025-06-28 03:46:30.520534+00:00
+- sensor.sun_next_setting
+  - domain: sensor
+  - name: Sun Next setting
+  - state: 2025-06-28T20:21:01+00:00
+  - area: London
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-27 20:21:10.650939+00:00
+  - last_updated: 2025-06-27 20:21:10.650939+00:00
+- sensor.sun_solar_elevation
+  - domain: sensor
+  - name: Sun Solar elevation
+  - state: 7.52
+  - area: London
+  - unit: °
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:17:06.526556+00:00
+  - last_updated: 2025-06-28 19:17:06.526556+00:00
+- sensor.sun_solar_azimuth
+  - domain: sensor
+  - name: Sun Solar azimuth
+  - state: 298.38
+  - area: London
+  - unit: °
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:17:06.526701+00:00
+  - last_updated: 2025-06-28 19:17:06.526701+00:00
+- sensor.sun_solar_rising
+  - domain: sensor
+  - name: Sun Solar rising
+  - state: False
+  - area: London
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 12:03:47.004528+00:00
+  - last_updated: 2025-06-28 12:03:47.004528+00:00
+---
+
+🔹 Device ID: 05e60d3edb4206df51911531f63f8ed6
+Name (user): n/a
+Name (system): Home Assistant Core
+Model: Home Assistant Core
+Manufacturer: Home Assistant
+Integration: direct
+Entry type: service
+
+Entities:
+- update.home_assistant_core_update
+  - domain: update
+  - name: Home Assistant Core Update
+  - state: off
+  - area: n/a
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.638664+00:00
+  - last_updated: 2025-06-25 13:54:12.638664+00:00
+---
+
+🔹 Device ID: 0f47169205b3e7c52f45366a168afd39
+Name (user): n/a
+Name (system): Home Assistant Supervisor
+Model: Home Assistant Supervisor
+Manufacturer: Home Assistant
+Integration: direct
+Entry type: service
+
+Entities:
+- update.home_assistant_supervisor_update
+  - domain: update
+  - name: Home Assistant Supervisor Update
+  - state: off
+  - area: n/a
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.638483+00:00
+  - last_updated: 2025-06-25 13:54:12.638483+00:00
+---
+
+🔹 Device ID: 1b9a3609f656710d1e43f621cac66019
+Name (user): n/a
+Name (system): Home Assistant Host
+Model: Home Assistant Host
+Manufacturer: Home Assistant
+Integration: direct
+Entry type: service
+
+Entities:
+---
+
+🔹 Device ID: 4859ed3ffe10ce653dc640e7d32f0f1d
+Name (user): n/a
+Name (system): Home Assistant Operating System
+Model: Home Assistant Operating System
+Manufacturer: Home Assistant
+Integration: direct
+Entry type: service
+
+Entities:
+- update.home_assistant_operating_system_update
+  - domain: update
+  - name: Home Assistant Operating System Update
+  - state: off
+  - area: n/a
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.639622+00:00
+  - last_updated: 2025-06-25 13:54:12.639622+00:00
+---
+
+🔹 Device ID: 172f8dfb0470aeee96ac2d01e0c41b03
+Name (user): living_room_google_mini_omega
+Name (system): Boy
+Model: Google Home Mini
+Manufacturer: Google Inc.
+Integration: direct
+Entry type: n/a
+
+Entities:
+- media_player.living_room_google_mini_omega
+  - domain: media_player
+  - name: living_room_google_mini_omega
+  - state: off
+  - area: n/a
+  - unit: n/a
+  - device_class: speaker
+  - entity_category: n/a
+  - last_changed: 2025-06-28 04:00:14.487637+00:00
+  - last_updated: 2025-06-28 04:00:14.487637+00:00
+---
+
+🔹 Device ID: 2c231b2b134c20261ce27da64e8a43d5
+Name (user): n/a
+Name (system): Joel's Bedroom speaker
+Model: Google Home Mini
+Manufacturer: Google Inc.
+Integration: direct
+Entry type: n/a
+
+Entities:
+---
+
+🔹 Device ID: d53a10c206e8f30d243dcaf5a59c4bcc
+Name (user): n/a
+Name (system): hci0 (2C:CF:67:65:F9:00)
+Model: bcm43438-bt
+Manufacturer: Raspberry Pi (Trading) Ltd
+Integration: direct
+Entry type: n/a
+
+Entities:
+---
+
+🔹 Device ID: b70ae3d6a1221e061d956e5bd5d02b09
+Name (user): living_room_sonos_soundbar_omega
+Name (system): Cinéma Clapham
+Model: Beam
+Manufacturer: Sonos
+Integration: direct
+Entry type: n/a
+
+Entities:
+- number.living_room_sonos_soundbar_alpha_audio_delay
+  - domain: number
+  - name: living_room_sonos_soundbar_omega Audio delay
+  - state: 0
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.596704+00:00
+  - last_updated: 2025-06-25 03:36:14.596704+00:00
+- sensor.living_room_sonos_soundbar_alpha_audio_input_format
+  - domain: sensor
+  - name: living_room_sonos_soundbar_omega Audio input format
+  - state: No input
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-27 00:46:18.104927+00:00
+  - last_updated: 2025-06-27 00:46:18.104927+00:00
+- number.living_room_sonos_soundbar_alpha_balance
+  - domain: number
+  - name: living_room_sonos_soundbar_omega Balance
+  - state: 0
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.597327+00:00
+  - last_updated: 2025-06-25 03:36:14.597327+00:00
+- number.living_room_sonos_soundbar_alpha_bass
+  - domain: number
+  - name: living_room_sonos_soundbar_omega Bass
+  - state: 3
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.596979+00:00
+  - last_updated: 2025-06-25 03:36:14.596979+00:00
+- media_player.living_room_sonos_soundbar_alpha
+  - domain: media_player
+  - name: living_room_sonos_soundbar_omega
+  - state: paused
+  - area: Living Room
+  - unit: n/a
+  - device_class: speaker
+  - entity_category: n/a
+  - last_changed: 2025-06-27 00:46:01.162855+00:00
+  - last_updated: 2025-06-27 00:46:01.162855+00:00
+- switch.living_room_sonos_soundbar_alpha_crossfade
+  - domain: switch
+  - name: living_room_sonos_soundbar_omega Crossfade
+  - state: off
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.624792+00:00
+  - last_updated: 2025-06-25 03:36:14.624792+00:00
+- switch.living_room_sonos_soundbar_alpha_loudness
+  - domain: switch
+  - name: living_room_sonos_soundbar_omega Loudness
+  - state: on
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.624907+00:00
+  - last_updated: 2025-06-25 03:36:14.624907+00:00
+- binary_sensor.living_room_sonos_soundbar_alpha_microphone
+  - domain: binary_sensor
+  - name: living_room_sonos_soundbar_omega Microphone
+  - state: off
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.591909+00:00
+  - last_updated: 2025-06-25 03:36:14.591909+00:00
+- number.living_room_sonos_soundbar_alpha_music_surround_level
+  - domain: number
+  - name: living_room_sonos_soundbar_omega Music surround level
+  - state: 0
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.598398+00:00
+  - last_updated: 2025-06-25 03:36:14.598398+00:00
+- switch.living_room_sonos_soundbar_alpha_night_sound
+  - domain: switch
+  - name: living_room_sonos_soundbar_omega Night sound
+  - state: on
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.625129+00:00
+  - last_updated: 2025-06-25 03:36:14.625129+00:00
+- switch.living_room_sonos_soundbar_alpha_speech_enhancement
+  - domain: switch
+  - name: living_room_sonos_soundbar_omega Speech enhancement
+  - state: on
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.625233+00:00
+  - last_updated: 2025-06-25 03:36:14.625233+00:00
+- switch.living_room_sonos_soundbar_alpha_status_light
+  - domain: switch
+  - name: living_room_sonos_soundbar_omega Status light
+  - state: on
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.625445+00:00
+  - last_updated: 2025-06-25 03:36:14.625445+00:00
+- switch.living_room_sonos_soundbar_alpha_surround_enabled
+  - domain: switch
+  - name: living_room_sonos_soundbar_omega Surround enabled
+  - state: on
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.625341+00:00
+  - last_updated: 2025-06-25 03:36:14.625341+00:00
+- number.living_room_sonos_soundbar_alpha_surround_level
+  - domain: number
+  - name: living_room_sonos_soundbar_omega Surround level
+  - state: 2
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.598130+00:00
+  - last_updated: 2025-06-25 03:36:14.598130+00:00
+- switch.living_room_sonos_soundbar_alpha_surround_music_full_volume
+  - domain: switch
+  - name: living_room_sonos_soundbar_omega Surround music full volume
+  - state: off
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.625014+00:00
+  - last_updated: 2025-06-25 03:36:14.625014+00:00
+- switch.living_room_sonos_soundbar_alpha_touch_controls
+  - domain: switch
+  - name: living_room_sonos_soundbar_omega Touch controls
+  - state: on
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.624642+00:00
+  - last_updated: 2025-06-25 03:36:14.624642+00:00
+- number.living_room_sonos_soundbar_alpha_treble
+  - domain: number
+  - name: living_room_sonos_soundbar_omega Treble
+  - state: 0
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.597787+00:00
+  - last_updated: 2025-06-25 03:36:14.597787+00:00
+---
+
+🔹 Device ID: 1f008cdc788867084787f12d88af1025
+Name (user): bedroom_sonos_surround
+Name (system): Bedroom
+Model: SYMFONISK Bookshelf
+Manufacturer: Sonos
+Integration: direct
+Entry type: n/a
+
+Entities:
+- switch.sonos_alarm_1
+  - domain: switch
+  - name: bedroom_sonos_surround Weekdays alarm 08:00
+  - state: on
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 01:39:25.993516+00:00
+  - last_updated: 2025-06-28 01:39:25.993516+00:00
+- switch.sonos_alarm_8
+  - domain: switch
+  - name: bedroom_sonos_surround Daily alarm 10:00
+  - state: on
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 01:39:31.123366+00:00
+  - last_updated: 2025-06-28 01:39:31.123366+00:00
+- switch.sonos_alarm_30
+  - domain: switch
+  - name: bedroom_sonos_surround Once alarm 07:30
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 06:30:00.371114+00:00
+  - last_updated: 2025-06-28 06:30:00.371114+00:00
+- number.bedroom_sonos_surround_balance
+  - domain: number
+  - name: bedroom_sonos_surround Balance
+  - state: -10
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.724742+00:00
+  - last_updated: 2025-06-25 03:36:14.724742+00:00
+- number.bedroom_sonos_surround_bass
+  - domain: number
+  - name: bedroom_sonos_surround Bass
+  - state: 0
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.724586+00:00
+  - last_updated: 2025-06-25 03:36:14.724586+00:00
+- media_player.bedroom_sonos_surround
+  - domain: media_player
+  - name: bedroom_sonos_surround
+  - state: playing
+  - area: Bedroom
+  - unit: n/a
+  - device_class: speaker
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:36:18.724905+00:00
+  - last_updated: 2025-06-28 19:13:22.058653+00:00
+- switch.bedroom_sonos_surround_crossfade
+  - domain: switch
+  - name: bedroom_sonos_surround Crossfade
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-26 00:44:51.208818+00:00
+  - last_updated: 2025-06-26 00:44:51.208818+00:00
+- switch.bedroom_sonos_surround_loudness
+  - domain: switch
+  - name: bedroom_sonos_surround Loudness
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.725269+00:00
+  - last_updated: 2025-06-25 03:36:14.725269+00:00
+- number.bedroom_sonos_surround_treble
+  - domain: number
+  - name: bedroom_sonos_surround Treble
+  - state: 0
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.724870+00:00
+  - last_updated: 2025-06-25 03:36:14.724870+00:00
+---
+
+🔹 Device ID: 9ed135979a4cdc695ec6d8659da30cb9
+Name (user): bedroom_sonos_ray
+Name (system): Belge étage
+Model: Ray
+Manufacturer: Sonos
+Integration: direct
+Entry type: n/a
+
+Entities:
+- switch.sonos_alarm_17
+  - domain: switch
+  - name: bedroom_sonos_ray Daily alarm 10:05
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 01:39:36.560211+00:00
+  - last_updated: 2025-06-28 01:39:36.560211+00:00
+- number.bedroom_sonos_ray_audio_delay
+  - domain: number
+  - name: bedroom_sonos_ray Audio delay
+  - state: 0
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.439656+00:00
+  - last_updated: 2025-06-25 03:36:14.439656+00:00
+- sensor.bedroom_sonos_ray_audio_input_format
+  - domain: sensor
+  - name: bedroom_sonos_ray Audio input format
+  - state: No input
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 11:29:21.310166+00:00
+  - last_updated: 2025-06-28 11:29:21.310166+00:00
+- number.bedroom_sonos_ray_balance
+  - domain: number
+  - name: bedroom_sonos_ray Balance
+  - state: 0
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.440001+00:00
+  - last_updated: 2025-06-25 03:36:14.440001+00:00
+- number.bedroom_sonos_ray_bass
+  - domain: number
+  - name: bedroom_sonos_ray Bass
+  - state: 0
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.439852+00:00
+  - last_updated: 2025-06-25 03:36:14.439852+00:00
+- media_player.bedroom_sonos_ray
+  - domain: media_player
+  - name: bedroom_sonos_ray
+  - state: playing
+  - area: Bedroom
+  - unit: n/a
+  - device_class: speaker
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:36:22.191201+00:00
+  - last_updated: 2025-06-28 19:13:22.058371+00:00
+- switch.bedroom_sonos_ray_crossfade
+  - domain: switch
+  - name: bedroom_sonos_ray Crossfade
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.736386+00:00
+  - last_updated: 2025-06-25 03:36:14.736386+00:00
+- switch.bedroom_sonos_ray_loudness
+  - domain: switch
+  - name: bedroom_sonos_ray Loudness
+  - state: on
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:39:48.437722+00:00
+  - last_updated: 2025-06-28 18:39:48.437722+00:00
+- number.bedroom_sonos_ray_music_surround_level
+  - domain: number
+  - name: bedroom_sonos_ray Music surround level
+  - state: 0
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.440409+00:00
+  - last_updated: 2025-06-25 03:36:14.440409+00:00
+- switch.bedroom_sonos_ray_night_sound
+  - domain: switch
+  - name: bedroom_sonos_ray Night sound
+  - state: on
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.446638+00:00
+  - last_updated: 2025-06-25 03:36:14.446638+00:00
+- switch.bedroom_sonos_ray_speech_enhancement
+  - domain: switch
+  - name: bedroom_sonos_ray Speech enhancement
+  - state: on
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.446761+00:00
+  - last_updated: 2025-06-25 03:36:14.446761+00:00
+- switch.bedroom_sonos_ray_surround_enabled
+  - domain: switch
+  - name: bedroom_sonos_ray Surround enabled
+  - state: on
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.446873+00:00
+  - last_updated: 2025-06-25 03:36:14.446873+00:00
+- number.bedroom_sonos_ray_surround_level
+  - domain: number
+  - name: bedroom_sonos_ray Surround level
+  - state: 0
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.440277+00:00
+  - last_updated: 2025-06-25 03:36:14.440277+00:00
+- switch.bedroom_sonos_ray_surround_music_full_volume
+  - domain: switch
+  - name: bedroom_sonos_ray Surround music full volume
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:14.446516+00:00
+  - last_updated: 2025-06-25 03:36:14.446516+00:00
+- number.bedroom_sonos_ray_treble
+  - domain: number
+  - name: bedroom_sonos_ray Treble
+  - state: 3
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:39:45.508557+00:00
+  - last_updated: 2025-06-28 18:39:45.508557+00:00
+---
+
+🔹 Device ID: 0b0cc6fd2a0fe8db0b18b5f96b740293
+Name (user): n/a
+Name (system): Backup
+Model: Home Assistant Backup
+Manufacturer: Home Assistant
+Integration: direct
+Entry type: service
+
+Entities:
+- sensor.backup_backup_manager_state
+  - domain: sensor
+  - name: Backup Backup Manager state
+  - state: idle
+  - area: System Admin
+  - unit: n/a
+  - device_class: enum
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:21:54.431637+00:00
+  - last_updated: 2025-06-28 17:21:54.431637+00:00
+- sensor.backup_next_scheduled_automatic_backup
+  - domain: sensor
+  - name: Backup Next scheduled automatic backup
+  - state: 2025-06-29T03:58:03+00:00
+  - area: System Admin
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 04:13:52.001433+00:00
+  - last_updated: 2025-06-28 04:13:52.001433+00:00
+- sensor.backup_last_successful_automatic_backup
+  - domain: sensor
+  - name: Backup Last successful automatic backup
+  - state: 2025-06-28T04:16:30+00:00
+  - area: System Admin
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 04:16:30.840478+00:00
+  - last_updated: 2025-06-28 04:16:30.840478+00:00
+- event.backup_automatic_backup
+  - domain: event
+  - name: Backup Automatic backup
+  - state: 2025-06-28T17:21:54.431+00:00
+  - area: System Admin
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:21:54.431174+00:00
+  - last_updated: 2025-06-28 17:21:54.431174+00:00
+- sensor.backup_last_attempted_automatic_backup
+  - domain: sensor
+  - name: Backup Last attempted automatic backup
+  - state: 2025-06-28T04:13:52+00:00
+  - area: System Admin
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 04:13:52.001590+00:00
+  - last_updated: 2025-06-28 04:13:52.001590+00:00
+---
+
+🔹 Device ID: 2f434d7f46d9fe722536a18b94f6c264
+Name (user): kitchen_sonos_speaker
+Name (system): Kitchen
+Model: SYMFONISK Bookshelf
+Manufacturer: Sonos
+Integration: direct
+Entry type: n/a
+
+Entities:
+- number.kitchen_sonos_speaker_balance
+  - domain: number
+  - name: kitchen_sonos_speaker Balance
+  - state: 0
+  - area: Kitchen
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:06:02.715334+00:00
+  - last_updated: 2025-06-28 18:06:02.715334+00:00
+- number.kitchen_sonos_speaker_bass
+  - domain: number
+  - name: kitchen_sonos_speaker Bass
+  - state: 0
+  - area: Kitchen
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:06:02.715230+00:00
+  - last_updated: 2025-06-28 18:06:02.715230+00:00
+- switch.kitchen_sonos_speaker_crossfade
+  - domain: switch
+  - name: kitchen_sonos_speaker Crossfade
+  - state: off
+  - area: Kitchen
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:06:02.715002+00:00
+  - last_updated: 2025-06-28 18:06:02.715002+00:00
+- media_player.kitchen_sonos_speaker
+  - domain: media_player
+  - name: kitchen_sonos_speaker
+  - state: paused
+  - area: Kitchen
+  - unit: n/a
+  - device_class: speaker
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:06:02.714713+00:00
+  - last_updated: 2025-06-28 18:06:02.714713+00:00
+- switch.kitchen_sonos_speaker_loudness
+  - domain: switch
+  - name: kitchen_sonos_speaker Loudness
+  - state: on
+  - area: Kitchen
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:06:02.715109+00:00
+  - last_updated: 2025-06-28 18:06:02.715109+00:00
+- number.kitchen_sonos_speaker_treble
+  - domain: number
+  - name: kitchen_sonos_speaker Treble
+  - state: 0
+  - area: Kitchen
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:06:02.715421+00:00
+  - last_updated: 2025-06-28 18:06:02.715421+00:00
+---
+
+🔹 Device ID: df67ffc2e83ad13b1f3fec4361e33184
+Name (user): ensuite_sonos_roam
+Name (system): Sauna Paraíso
+Model: Roam 2
+Manufacturer: Sonos
+Integration: direct
+Entry type: n/a
+
+Entities:
+- number.ensuite_sonos_roam_balance
+  - domain: number
+  - name: ensuite_sonos_roam Balance
+  - state: 0
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.797510+00:00
+  - last_updated: 2025-06-25 03:36:13.797510+00:00
+- number.ensuite_sonos_roam_bass
+  - domain: number
+  - name: ensuite_sonos_roam Bass
+  - state: 0
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.797143+00:00
+  - last_updated: 2025-06-25 03:36:13.797143+00:00
+- sensor.ensuite_sonos_roam_battery
+  - domain: sensor
+  - name: ensuite_sonos_roam Battery
+  - state: 100
+  - area: Ensuite
+  - unit: %
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-27 19:36:13.938053+00:00
+  - last_updated: 2025-06-27 19:36:13.938053+00:00
+- binary_sensor.ensuite_sonos_roam_charging
+  - domain: binary_sensor
+  - name: ensuite_sonos_roam Charging
+  - state: on
+  - area: Ensuite
+  - unit: n/a
+  - device_class: battery_charging
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.746224+00:00
+  - last_updated: 2025-06-25 03:36:13.746224+00:00
+- switch.ensuite_sonos_roam_crossfade
+  - domain: switch
+  - name: ensuite_sonos_roam Crossfade
+  - state: off
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 06:30:03.437092+00:00
+  - last_updated: 2025-06-28 06:30:03.437092+00:00
+- switch.ensuite_sonos_roam_loudness
+  - domain: switch
+  - name: ensuite_sonos_roam Loudness
+  - state: on
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.790919+00:00
+  - last_updated: 2025-06-25 03:36:13.790919+00:00
+- binary_sensor.ensuite_sonos_roam_microphone
+  - domain: binary_sensor
+  - name: ensuite_sonos_roam Microphone
+  - state: off
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.828931+00:00
+  - last_updated: 2025-06-25 03:36:13.828931+00:00
+- media_player.ensuite_sonos_roam
+  - domain: media_player
+  - name: ensuite_sonos_roam
+  - state: paused
+  - area: Ensuite
+  - unit: n/a
+  - device_class: speaker
+  - entity_category: n/a
+  - last_changed: 2025-06-28 06:30:03.449975+00:00
+  - last_updated: 2025-06-28 06:30:03.449975+00:00
+- number.ensuite_sonos_roam_treble
+  - domain: number
+  - name: ensuite_sonos_roam Treble
+  - state: 0
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.797738+00:00
+  - last_updated: 2025-06-25 03:36:13.797738+00:00
+---
+
+🔹 Device ID: dd683088467f68e7a0b0b6ccc72e7e30
+Name (user): n/a
+Name (system): Matter Server
+Model: Home Assistant Add-on
+Manufacturer: Official add-ons
+Integration: direct
+Entry type: service
+
+Entities:
+- binary_sensor.matter_server_running
+  - domain: binary_sensor
+  - name: Matter Server Running
+  - state: on
+  - area: HA Addons
+  - unit: n/a
+  - device_class: running
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.638024+00:00
+  - last_updated: 2025-06-25 13:54:12.638024+00:00
+- sensor.matter_server_version
+  - domain: sensor
+  - name: Matter Server Version
+  - state: 8.0.0
+  - area: HA Addons
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.639720+00:00
+  - last_updated: 2025-06-25 13:54:12.639720+00:00
+- sensor.matter_server_newest_version
+  - domain: sensor
+  - name: Matter Server Newest version
+  - state: 8.0.0
+  - area: HA Addons
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.639780+00:00
+  - last_updated: 2025-06-25 13:54:12.639780+00:00
+- sensor.matter_server_cpu_percent
+  - domain: sensor
+  - name: Matter Server CPU percent
+  - state: 0.24
+  - area: HA Addons
+  - unit: %
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:17:53.661797+00:00
+  - last_updated: 2025-06-28 19:17:53.661797+00:00
+- sensor.matter_server_memory_percent
+  - domain: sensor
+  - name: Matter Server Memory percent
+  - state: 3.94
+  - area: HA Addons
+  - unit: %
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 04:17:18.434368+00:00
+  - last_updated: 2025-06-28 04:17:18.434368+00:00
+- update.matter_server_update
+  - domain: update
+  - name: Matter Server Update
+  - state: off
+  - area: HA Addons
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.638762+00:00
+  - last_updated: 2025-06-25 13:54:12.638762+00:00
+---
+
+🔹 Device ID: 0dc105d3a919fbaebdc5f766e61db1d3
+Name (user): n/a
+Name (system): Forecast
+Model: Forecast
+Manufacturer: Met.no
+Integration: direct
+Entry type: service
+
+Entities:
+- weather.forecast_home
+  - domain: weather
+  - name: Forecast Home
+  - state: partlycloudy
+  - area: Home
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:38:12.077813+00:00
+  - last_updated: 2025-06-28 18:36:12.063369+00:00
+---
+
+🔹 Device ID: e89054d6a2d1d75c175c4a0547e707b4
+Name (user): router_archer_ax53_omega
+Name (system): Archer AX53
+Model: Archer AX53
+Manufacturer: TP-Link
+Integration: direct
+Entry type: n/a
+
+Entities:
+- sensor.archer_ax53_data_received
+  - domain: sensor
+  - name: router_archer_ax53_omega Data received
+  - state: 3902221030
+  - area: Network & Connectivity
+  - unit: B
+  - device_class: data_size
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:18:13.724414+00:00
+  - last_updated: 2025-06-28 19:18:13.724414+00:00
+- sensor.archer_ax53_data_sent
+  - domain: sensor
+  - name: router_archer_ax53_omega Data sent
+  - state: 3069166378
+  - area: Network & Connectivity
+  - unit: B
+  - device_class: data_size
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:18:13.724641+00:00
+  - last_updated: 2025-06-28 19:18:13.724641+00:00
+- sensor.archer_ax53_packets_received
+  - domain: sensor
+  - name: router_archer_ax53_omega Packets received
+  - state: 261325455
+  - area: Network & Connectivity
+  - unit: packets
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:18:13.724740+00:00
+  - last_updated: 2025-06-28 19:18:13.724740+00:00
+- sensor.archer_ax53_packets_sent
+  - domain: sensor
+  - name: router_archer_ax53_omega Packets sent
+  - state: 120256028
+  - area: Network & Connectivity
+  - unit: packets
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:18:13.724822+00:00
+  - last_updated: 2025-06-28 19:18:13.724822+00:00
+- sensor.archer_ax53_uptime
+  - domain: sensor
+  - name: router_archer_ax53_omega Uptime
+  - state: 1218247
+  - area: Network & Connectivity
+  - unit: s
+  - device_class: duration
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:18:13.724926+00:00
+  - last_updated: 2025-06-28 19:18:13.724926+00:00
+- sensor.archer_ax53_wan_status
+  - domain: sensor
+  - name: router_archer_ax53_omega WAN status
+  - state: Connected
+  - area: Network & Connectivity
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:23:44.096455+00:00
+  - last_updated: 2025-06-28 15:23:44.096455+00:00
+- sensor.archer_ax53_packet_download_speed
+  - domain: sensor
+  - name: router_archer_ax53_omega Packet download speed
+  - state: 424.791320097359
+  - area: Network & Connectivity
+  - unit: packets/s
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:18:13.725190+00:00
+  - last_updated: 2025-06-28 19:18:13.725190+00:00
+- sensor.archer_ax53_packet_upload_speed
+  - domain: sensor
+  - name: router_archer_ax53_omega Packet upload speed
+  - state: 129.130694762804
+  - area: Network & Connectivity
+  - unit: packets/s
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:18:13.725270+00:00
+  - last_updated: 2025-06-28 19:18:13.725270+00:00
+- binary_sensor.router_archer_ax53_omega_wan_status
+  - domain: binary_sensor
+  - name: router_archer_ax53_omega WAN status
+  - state: on
+  - area: Network & Connectivity
+  - unit: n/a
+  - device_class: connectivity
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:23:44.093848+00:00
+  - last_updated: 2025-06-28 15:23:44.093848+00:00
+- sensor.router_archer_ax53_omega_external_ip
+  - domain: sensor
+  - name: router_archer_ax53_omega External IP
+  - state: 10.99.188.194
+  - area: Network & Connectivity
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:23:44.095925+00:00
+  - last_updated: 2025-06-28 15:23:44.095925+00:00
+- sensor.router_archer_ax53_omega_download_speed
+  - domain: sensor
+  - name: router_archer_ax53_omega Download speed
+  - state: 442.978253165194
+  - area: Network & Connectivity
+  - unit: KiB/s
+  - device_class: data_rate
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:18:13.725036+00:00
+  - last_updated: 2025-06-28 19:18:13.725036+00:00
+- sensor.router_archer_ax53_omega_upload_speed
+  - domain: sensor
+  - name: router_archer_ax53_omega Upload speed
+  - state: 62.8675630623781
+  - area: Network & Connectivity
+  - unit: KiB/s
+  - device_class: data_rate
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:18:13.725116+00:00
+  - last_updated: 2025-06-28 19:18:13.725116+00:00
+- sensor.router_archer_ax53_omega_number_of_port_mapping_entries_ipv4
+  - domain: sensor
+  - name: Number of port mapping entries (IPv4)
+  - state: unavailable
+  - area: Network & Connectivity
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-27 09:01:34.293600+00:00
+  - last_updated: 2025-06-27 09:01:34.293600+00:00
+---
+
+🔹 Device ID: 1408d32b99265f6396f7c5a838b7b4cf
+Name (user): bedroom_tv_hub_alpha_wifi
+Name (system): Hub - Bedroom TV
+Model: SAMSUNG_VD_TV_HUB
+Manufacturer: Samsung
+Integration: direct
+Entry type: n/a
+
+Entities:
+- media_player.bedroom_tv_hub_alpha_wifi
+  - domain: media_player
+  - name: bedroom_tv_hub_alpha_wifi
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: tv
+  - entity_category: n/a
+  - last_changed: 2025-06-28 12:43:28.990370+00:00
+  - last_updated: 2025-06-28 12:43:28.990370+00:00
+- remote.bedroom_tv_hub_alpha_wifi
+  - domain: remote
+  - name: bedroom_tv_hub_alpha_wifi
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 12:43:28.990610+00:00
+  - last_updated: 2025-06-28 12:43:28.990610+00:00
+---
+
+🔹 Device ID: eb48dd1970165ed07588b73dae1122cd
+Name (user): n/a
+Name (system): upstairs_lightstrip_omega
+Model: L900
+Manufacturer: TP-Link
+Integration: direct
+Entry type: n/a
+
+Entities:
+- binary_sensor.upstairs_lightstrip_omega_cloud_connection
+  - domain: binary_sensor
+  - name: upstairs_lightstrip_omega Cloud connection
+  - state: on
+  - area: Upstairs
+  - unit: n/a
+  - device_class: connectivity
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:28:11.486604+00:00
+  - last_updated: 2025-06-28 15:28:11.486604+00:00
+- binary_sensor.upstairs_lightstrip_omega_overheated
+  - domain: binary_sensor
+  - name: upstairs_lightstrip_omega Overheated
+  - state: off
+  - area: Upstairs
+  - unit: n/a
+  - device_class: problem
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.548463+00:00
+  - last_updated: 2025-06-25 03:36:13.548463+00:00
+- select.upstairs_lightstrip_omega_light_preset
+  - domain: select
+  - name: upstairs_lightstrip_omega Light preset
+  - state: Not set
+  - area: Upstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.551513+00:00
+  - last_updated: 2025-06-25 03:36:13.551513+00:00
+- sensor.upstairs_lightstrip_omega_signal_level
+  - domain: sensor
+  - name: upstairs_lightstrip_omega Signal level
+  - state: 3
+  - area: Upstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 08:11:45.472244+00:00
+  - last_updated: 2025-06-28 08:11:45.472244+00:00
+- switch.upstairs_lightstrip_omega_auto_update_enabled
+  - domain: switch
+  - name: upstairs_lightstrip_omega Auto-update enabled
+  - state: on
+  - area: Upstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.553241+00:00
+  - last_updated: 2025-06-25 03:36:13.553241+00:00
+- switch.upstairs_lightstrip_omega_smooth_transitions
+  - domain: switch
+  - name: upstairs_lightstrip_omega Smooth transitions
+  - state: off
+  - area: Upstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.553412+00:00
+  - last_updated: 2025-06-25 03:36:13.553412+00:00
+- light.upstairs_lightstrip_omega
+  - domain: light
+  - name: upstairs_lightstrip_omega
+  - state: off
+  - area: Upstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:03:35.969021+00:00
+  - last_updated: 2025-06-28 19:03:35.969021+00:00
+---
+
+🔹 Device ID: 7ac5d2b6e58323ccc9b691d8cc02fe42
+Name (user): ensuite_lightstrip_tplink_alpha
+Name (system): ensuite_lightstrip_omega
+Model: L930
+Manufacturer: TP-Link
+Integration: direct
+Entry type: n/a
+
+Entities:
+- binary_sensor.ensuite_lightstrip_omega_cloud_connection
+  - domain: binary_sensor
+  - name: ensuite_lightstrip_tplink_alpha Cloud connection
+  - state: on
+  - area: Ensuite
+  - unit: n/a
+  - device_class: connectivity
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:25:23.851746+00:00
+  - last_updated: 2025-06-28 15:25:23.851746+00:00
+- binary_sensor.ensuite_lightstrip_omega_overheated
+  - domain: binary_sensor
+  - name: ensuite_lightstrip_tplink_alpha Overheated
+  - state: off
+  - area: Ensuite
+  - unit: n/a
+  - device_class: problem
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.522100+00:00
+  - last_updated: 2025-06-25 03:36:13.522100+00:00
+- select.ensuite_lightstrip_omega_light_preset
+  - domain: select
+  - name: ensuite_lightstrip_tplink_alpha Light preset
+  - state: Not set
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.529104+00:00
+  - last_updated: 2025-06-25 03:36:13.529104+00:00
+- sensor.ensuite_lightstrip_omega_signal_level
+  - domain: sensor
+  - name: ensuite_lightstrip_tplink_alpha Signal level
+  - state: 2
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 13:34:07.808038+00:00
+  - last_updated: 2025-06-28 13:34:07.808038+00:00
+- sensor.ensuite_lightstrip_omega_device_time
+  - domain: sensor
+  - name: ensuite_lightstrip_tplink_alpha Device time
+  - state: 2025-06-28T19:18:29+00:00
+  - area: Ensuite
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:18:29.829151+00:00
+  - last_updated: 2025-06-28 19:18:29.829151+00:00
+- switch.ensuite_lightstrip_omega_auto_update_enabled
+  - domain: switch
+  - name: ensuite_lightstrip_tplink_alpha Auto-update enabled
+  - state: on
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.532568+00:00
+  - last_updated: 2025-06-25 03:36:13.532568+00:00
+- switch.ensuite_lightstrip_omega_smooth_transitions
+  - domain: switch
+  - name: ensuite_lightstrip_tplink_alpha Smooth transitions
+  - state: off
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.532797+00:00
+  - last_updated: 2025-06-25 03:36:13.532797+00:00
+- sensor.ensuite_lightstrip_tplink_alpha_signal_strength
+  - domain: sensor
+  - name: ensuite_lightstrip_tplink_alpha Signal strength
+  - state: -57
+  - area: Ensuite
+  - unit: dBm
+  - device_class: signal_strength
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:18:04.832127+00:00
+  - last_updated: 2025-06-28 19:18:04.832127+00:00
+- sensor.ensuite_lightstrip_tplink_alpha_ssid
+  - domain: sensor
+  - name: ensuite_lightstrip_tplink_alpha SSID
+  - state: Aethernet_IoT
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.530849+00:00
+  - last_updated: 2025-06-25 03:36:13.530849+00:00
+- button.ensuite_lightstrip_tplink_alpha_restart
+  - domain: button
+  - name: ensuite_lightstrip_tplink_alpha Restart
+  - state: unknown
+  - area: Ensuite
+  - unit: n/a
+  - device_class: restart
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.522987+00:00
+  - last_updated: 2025-06-25 03:36:13.522987+00:00
+- light.ensuite_lightstrip_tplink_alpha
+  - domain: light
+  - name: ensuite_lightstrip_tplink_alpha
+  - state: on
+  - area: Ensuite
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 13:24:57.863296+00:00
+  - last_updated: 2025-06-28 13:24:57.863296+00:00
+---
+Result type: string
+
+This template listens for the following state changed events:
+
+Entity: binary_sensor.ensuite_lightstrip_omega_cloud_connection
+Entity: binary_sensor.ensuite_lightstrip_omega_overheated
+Entity: binary_sensor.ensuite_sonos_roam_charging
+Entity: binary_sensor.ensuite_sonos_roam_microphone
+Entity: binary_sensor.living_room_sonos_soundbar_alpha_microphone
+Entity: binary_sensor.matter_server_running
+Entity: binary_sensor.router_archer_ax53_omega_wan_status
+Entity: binary_sensor.upstairs_lightstrip_omega_cloud_connection
+Entity: binary_sensor.upstairs_lightstrip_omega_overheated
+Entity: button.ensuite_lightstrip_tplink_alpha_restart
+Entity: event.backup_automatic_backup
+Entity: light.ensuite_lightstrip_tplink_alpha
+Entity: light.upstairs_lightstrip_omega
+Entity: media_player.bedroom_sonos_ray
+Entity: media_player.bedroom_sonos_surround
+Entity: media_player.bedroom_tv_hub_alpha_wifi
+Entity: media_player.ensuite_sonos_roam
+Entity: media_player.kitchen_sonos_speaker
+Entity: media_player.living_room_google_mini_omega
+Entity: media_player.living_room_sonos_soundbar_alpha
+Entity: number.bedroom_sonos_ray_audio_delay
+Entity: number.bedroom_sonos_ray_balance
+Entity: number.bedroom_sonos_ray_bass
+Entity: number.bedroom_sonos_ray_music_surround_level
+Entity: number.bedroom_sonos_ray_surround_level
+Entity: number.bedroom_sonos_ray_treble
+Entity: number.bedroom_sonos_surround_balance
+Entity: number.bedroom_sonos_surround_bass
+Entity: number.bedroom_sonos_surround_treble
+Entity: number.ensuite_sonos_roam_balance
+Entity: number.ensuite_sonos_roam_bass
+Entity: number.ensuite_sonos_roam_treble
+Entity: number.kitchen_sonos_speaker_balance
+Entity: number.kitchen_sonos_speaker_bass
+Entity: number.kitchen_sonos_speaker_treble
+Entity: number.living_room_sonos_soundbar_alpha_audio_delay
+Entity: number.living_room_sonos_soundbar_alpha_balance
+Entity: number.living_room_sonos_soundbar_alpha_bass
+Entity: number.living_room_sonos_soundbar_alpha_music_surround_level
+Entity: number.living_room_sonos_soundbar_alpha_surround_level
+Entity: number.living_room_sonos_soundbar_alpha_treble
+Entity: remote.bedroom_tv_hub_alpha_wifi
+Entity: select.ensuite_lightstrip_omega_light_preset
+Entity: select.upstairs_lightstrip_omega_light_preset
+Entity: sensor.archer_ax53_data_received
+Entity: sensor.archer_ax53_data_sent
+Entity: sensor.archer_ax53_packet_download_speed
+Entity: sensor.archer_ax53_packet_upload_speed
+Entity: sensor.archer_ax53_packets_received
+Entity: sensor.archer_ax53_packets_sent
+Entity: sensor.archer_ax53_uptime
+Entity: sensor.archer_ax53_wan_status
+Entity: sensor.backup_backup_manager_state
+Entity: sensor.backup_last_attempted_automatic_backup
+Entity: sensor.backup_last_successful_automatic_backup
+Entity: sensor.backup_next_scheduled_automatic_backup
+Entity: sensor.bedroom_sonos_ray_audio_input_format
+Entity: sensor.ensuite_lightstrip_omega_device_time
+Entity: sensor.ensuite_lightstrip_omega_signal_level
+Entity: sensor.ensuite_lightstrip_tplink_alpha_signal_strength
+Entity: sensor.ensuite_lightstrip_tplink_alpha_ssid
+Entity: sensor.ensuite_sonos_roam_battery
+Entity: sensor.living_room_sonos_soundbar_alpha_audio_input_format
+Entity: sensor.matter_server_cpu_percent
+Entity: sensor.matter_server_memory_percent
+Entity: sensor.matter_server_newest_version
+Entity: sensor.matter_server_version
+Entity: sensor.router_archer_ax53_omega_download_speed
+Entity: sensor.router_archer_ax53_omega_external_ip
+Entity: sensor.router_archer_ax53_omega_number_of_port_mapping_entries_ipv4
+Entity: sensor.router_archer_ax53_omega_upload_speed
+Entity: sensor.sun_next_dawn
+Entity: sensor.sun_next_dusk
+Entity: sensor.sun_next_midnight
+Entity: sensor.sun_next_noon
+Entity: sensor.sun_next_rising
+Entity: sensor.sun_next_setting
+Entity: sensor.sun_solar_azimuth
+Entity: sensor.sun_solar_elevation
+Entity: sensor.sun_solar_rising
+Entity: sensor.upstairs_lightstrip_omega_signal_level
+Entity: switch.bedroom_sonos_ray_crossfade
+Entity: switch.bedroom_sonos_ray_loudness
+Entity: switch.bedroom_sonos_ray_night_sound
+Entity: switch.bedroom_sonos_ray_speech_enhancement
+Entity: switch.bedroom_sonos_ray_surround_enabled
+Entity: switch.bedroom_sonos_ray_surround_music_full_volume
+Entity: switch.bedroom_sonos_surround_crossfade
+Entity: switch.bedroom_sonos_surround_loudness
+Entity: switch.ensuite_lightstrip_omega_auto_update_enabled
+Entity: switch.ensuite_lightstrip_omega_smooth_transitions
+Entity: switch.ensuite_sonos_roam_crossfade
+Entity: switch.ensuite_sonos_roam_loudness
+Entity: switch.kitchen_sonos_speaker_crossfade
+Entity: switch.kitchen_sonos_speaker_loudness
+Entity: switch.living_room_sonos_soundbar_alpha_crossfade
+Entity: switch.living_room_sonos_soundbar_alpha_loudness
+Entity: switch.living_room_sonos_soundbar_alpha_night_sound
+Entity: switch.living_room_sonos_soundbar_alpha_speech_enhancement
+Entity: switch.living_room_sonos_soundbar_alpha_status_light
+Entity: switch.living_room_sonos_soundbar_alpha_surround_enabled
+Entity: switch.living_room_sonos_soundbar_alpha_surround_music_full_volume
+Entity: switch.living_room_sonos_soundbar_alpha_touch_controls
+Entity: switch.sonos_alarm_1
+Entity: switch.sonos_alarm_17
+Entity: switch.sonos_alarm_30
+Entity: switch.sonos_alarm_8
+Entity: switch.upstairs_lightstrip_omega_auto_update_enabled
+Entity: switch.upstairs_lightstrip_omega_smooth_transitions
+Entity: update.home_assistant_core_update
+Entity: update.home_assistant_operating_system_update
+Entity: update.home_assistant_supervisor_update
+Entity: update.matter_server_update
+Entity: weather.forecast_home
+
+
+🔹 Device ID: 010b8a398c593ba16c1098786ef51a1c
+Name (user): n/a
+Name (system): kitchen_occupancy_omega
+Model: Zigbee occupancy sensor
+Manufacturer: SONOFF
+Integration: 10c0dbf97bdbdbf077d62063f93f5db9
+Entry type: n/a
+
+Entities:
+- binary_sensor.kitchen_occupancy_omega_occupancy
+  - domain: binary_sensor
+  - name: kitchen_occupancy_omega Occupancy
+  - state: off
+  - area: Kitchen
+  - unit: n/a
+  - device_class: occupancy
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:59:52.552171+00:00
+  - last_updated: 2025-06-28 17:59:52.552171+00:00
+- number.kitchen_occupancy_omega_occupancy_timeout
+  - domain: number
+  - name: kitchen_occupancy_omega Occupancy timeout
+  - state: unknown
+  - area: Kitchen
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:15.353791+00:00
+  - last_updated: 2025-06-25 03:36:15.353791+00:00
+- select.kitchen_occupancy_omega_occupancy_sensitivity
+  - domain: select
+  - name: kitchen_occupancy_omega Occupancy sensitivity
+  - state: unknown
+  - area: Kitchen
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:15.354152+00:00
+  - last_updated: 2025-06-25 03:36:15.354152+00:00
+- sensor.kitchen_occupancy_omega_illumination
+  - domain: sensor
+  - name: kitchen_occupancy_omega Illumination
+  - state: bright
+  - area: Kitchen
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:37:25.328671+00:00
+  - last_updated: 2025-06-25 03:37:25.328671+00:00
+- update.kitchen_occupancy_omega
+  - domain: update
+  - name: kitchen_occupancy_omega
+  - state: off
+  - area: Kitchen
+  - unit: n/a
+  - device_class: firmware
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:37:25.328949+00:00
+  - last_updated: 2025-06-25 03:37:25.328949+00:00
+---
+
+🔹 Device ID: 036ad4d73416d61cc7faada9971ecf03
+Name (user): n/a
+Name (system): Nintendo Switch
+Model: n/a
+Manufacturer: Tile Inc.
+Integration: direct
+Entry type: n/a
+
+Entities:
+- binary_sensor.nintendo_switch_lost
+  - domain: binary_sensor
+  - name: Nintendo Switch Lost
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:24:50.387082+00:00
+  - last_updated: 2025-06-28 15:24:50.387082+00:00
+- device_tracker.nintendo_switch
+  - domain: device_tracker
+  - name: Nintendo Switch
+  - state: home
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:16:51.071820+00:00
+  - last_updated: 2025-06-28 19:16:51.071820+00:00
+---
+
+🔹 Device ID: 05e60d3edb4206df51911531f63f8ed6
+Name (user): n/a
+Name (system): Home Assistant Core
+Model: Home Assistant Core
+Manufacturer: Home Assistant
+Integration: direct
+Entry type: service
+
+Entities:
+- update.home_assistant_core_update
+  - domain: update
+  - name: Home Assistant Core Update
+  - state: off
+  - area: n/a
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.638664+00:00
+  - last_updated: 2025-06-25 13:54:12.638664+00:00
+---
+
+🔹 Device ID: 05efaae3f44899e11b56e41cc419db58
+Name (user): bedroom_wall_switch_alpha_right
+Name (system): Wall Panel Right Switch
+Model: S220
+Manufacturer: TP-Link
+Integration: direct
+Entry type: n/a
+
+Entities:
+- switch.bedroom_wall_switch_alpha_right
+  - domain: switch
+  - name: bedroom_wall_switch_alpha_right
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:24:09.145911+00:00
+  - last_updated: 2025-06-28 17:24:09.145911+00:00
+---
+
+🔹 Device ID: 078af721482b7dc0292eed2b31e56547
+Name (user): bedroom_security_cam_alpha
+Name (system): Cameron
+Model: C200
+Manufacturer: TP-Link
+Integration: direct
+Entry type: n/a
+
+Entities:
+- binary_sensor.bedroom_security_cam_alpha_motion
+  - domain: binary_sensor
+  - name: bedroom_security_cam_alpha Motion
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: motion
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:24:09.104648+00:00
+  - last_updated: 2025-06-28 17:24:09.104648+00:00
+---
+
+🔹 Device ID: 07bc4370af5f1afb3bcced32c7f94e76
+Name (user): upstairs_skylight_contact_tplink_alpha
+Name (system): upstairs_skylight_contact_omega
+Model: T110
+Manufacturer: TP-Link
+Integration: 8a63c33a540b71edc4141729209835b7
+Entry type: n/a
+
+Entities:
+- binary_sensor.upstairs_skylight_contact_tplink_alpha_battery
+  - domain: binary_sensor
+  - name: upstairs_skylight_contact_tplink_alpha Battery
+  - state: off
+  - area: Upstairs
+  - unit: n/a
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191189+00:00
+  - last_updated: 2025-06-28 17:31:32.191189+00:00
+- binary_sensor.upstairs_skylight_contact_tplink_alpha_cloud_connection
+  - domain: binary_sensor
+  - name: upstairs_skylight_contact_tplink_alpha Cloud connection
+  - state: on
+  - area: Upstairs
+  - unit: n/a
+  - device_class: connectivity
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191274+00:00
+  - last_updated: 2025-06-28 17:31:32.191274+00:00
+- button.upstairs_skylight_contact_tplink_alpha_restart
+  - domain: button
+  - name: upstairs_skylight_contact_tplink_alpha Restart
+  - state: unknown
+  - area: Upstairs
+  - unit: n/a
+  - device_class: restart
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.193661+00:00
+  - last_updated: 2025-06-28 17:31:32.193661+00:00
+- sensor.upstairs_skylight_contact_tplink_alpha_signal_level
+  - domain: sensor
+  - name: upstairs_skylight_contact_tplink_alpha Signal level
+  - state: 3
+  - area: Upstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.202897+00:00
+  - last_updated: 2025-06-28 17:31:32.202897+00:00
+- sensor.upstairs_skylight_contact_tplink_alpha_signal_strength
+  - domain: sensor
+  - name: upstairs_skylight_contact_tplink_alpha Signal strength
+  - state: -67
+  - area: Upstairs
+  - unit: dBm
+  - device_class: signal_strength
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.202960+00:00
+  - last_updated: 2025-06-28 17:31:32.202960+00:00
+- button.upstairs_skylight_contact_tplink_alpha_unpair_device
+  - domain: button
+  - name: upstairs_skylight_contact_tplink_alpha Unpair device
+  - state: unknown
+  - area: Upstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.193728+00:00
+  - last_updated: 2025-06-28 17:31:32.193728+00:00
+- binary_sensor.upstairs_skylight_contact_tplink_alpha_window
+  - domain: binary_sensor
+  - name: upstairs_skylight_contact_tplink_alpha_window
+  - state: on
+  - area: Upstairs
+  - unit: n/a
+  - device_class: door
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191346+00:00
+  - last_updated: 2025-06-28 17:31:32.191346+00:00
+---
+
+🔹 Device ID: 07f690dc10f5c59a4edded01216bfe56
+Name (user): n/a
+Name (system): bedroom_ottoman_lightstrip_alpha
+Model: Color Strip
+Manufacturer: WiZ
+Integration: direct
+Entry type: n/a
+
+Entities:
+- light.bedroom_ottoman_lightstrip_alpha
+  - domain: light
+  - name: bedroom_ottoman_lightstrip_alpha
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:19.884968+00:00
+  - last_updated: 2025-06-28 17:24:09.111301+00:00
+---
+
+🔹 Device ID: 095e5c36b6c3a4751547e56f09cb9982
+Name (user): bedroom_nightstand_left_alpha
+Name (system): bedroom_nightstand_left_alpha
+Model: SHRGBC
+Manufacturer: WiZ
+Integration: direct
+Entry type: n/a
+
+Entities:
+- light.bedroom_nightstand_left_alpha
+  - domain: light
+  - name: bedroom_nightstand_left_alpha
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-27 07:05:23.628413+00:00
+  - last_updated: 2025-06-27 07:05:23.628413+00:00
+- number.bedroom_nightstand_left_alpha_effect_speed
+  - domain: number
+  - name: bedroom_nightstand_left_alpha Effect speed
+  - state: 100.0
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-27 01:33:27.508451+00:00
+  - last_updated: 2025-06-27 01:33:27.508451+00:00
+- sensor.bedroom_nightstand_left_alpha_signal_strength
+  - domain: sensor
+  - name: bedroom_nightstand_left_alpha Signal strength
+  - state: -50
+  - area: Bedroom
+  - unit: dBm
+  - device_class: signal_strength
+  - entity_category: n/a
+  - last_changed: 2025-06-27 07:05:25.495958+00:00
+  - last_updated: 2025-06-27 07:05:25.495958+00:00
+---
+
+🔹 Device ID: 0a2759fd20e65810f184adc3dbcd0aed
+Name (user): iphone14
+Name (system): ePhone-uk
+Model: iPhone14,7
+Manufacturer: Apple
+Integration: direct
+Entry type: n/a
+
+Entities:
+- device_tracker.ephone_uk
+  - domain: device_tracker
+  - name: ePhone-uk
+  - state: home
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 16:00:39.021680+00:00
+  - last_updated: 2025-06-28 16:00:39.021680+00:00
+- sensor.ephone_uk_activity
+  - domain: sensor
+  - name: ePhone-uk Activity
+  - state: Stationary
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:27:32.906681+00:00
+  - last_updated: 2025-06-28 18:27:32.906681+00:00
+- sensor.ephone_uk_app_version
+  - domain: sensor
+  - name: ePhone-uk App Version
+  - state: 2025.5
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:12.367249+00:00
+  - last_updated: 2025-06-25 03:36:12.367249+00:00
+- sensor.ephone_uk_audio_output
+  - domain: sensor
+  - name: ePhone-uk Audio Output
+  - state: Built-in Speaker
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 08:09:07.496341+00:00
+  - last_updated: 2025-06-28 08:09:07.496341+00:00
+- sensor.ephone_uk_average_active_pace
+  - domain: sensor
+  - name: ePhone-uk Average Active Pace
+  - state: 1
+  - area: Evert
+  - unit: m/s
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 08:43:03.436408+00:00
+  - last_updated: 2025-06-28 08:43:03.436408+00:00
+- sensor.ephone_uk_battery_level
+  - domain: sensor
+  - name: ePhone-uk Battery Level
+  - state: 65
+  - area: Evert
+  - unit: %
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:07:35.085403+00:00
+  - last_updated: 2025-06-28 19:07:35.085403+00:00
+- sensor.ephone_uk_battery_state
+  - domain: sensor
+  - name: ePhone-uk Battery State
+  - state: Charging
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:25:33.186489+00:00
+  - last_updated: 2025-06-28 18:57:34.677114+00:00
+- sensor.ephone_uk_bssid
+  - domain: sensor
+  - name: ePhone-uk BSSID
+  - state: 66:2f:d0:d0:5e:b7
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 16:00:39.209364+00:00
+  - last_updated: 2025-06-28 16:00:39.209364+00:00
+- sensor.ephone_uk_connection_type
+  - domain: sensor
+  - name: ePhone-uk Connection Type
+  - state: Wi-Fi
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:54:53.343584+00:00
+  - last_updated: 2025-06-28 15:54:53.343584+00:00
+- sensor.ephone_uk_distance
+  - domain: sensor
+  - name: ePhone-uk Distance
+  - state: 4568
+  - area: Evert
+  - unit: m
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:13:26.327113+00:00
+  - last_updated: 2025-06-28 17:13:26.327113+00:00
+- sensor.ephone_uk_floors_ascended
+  - domain: sensor
+  - name: ePhone-uk Floors Ascended
+  - state: 10
+  - area: Evert
+  - unit: floors
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:13:26.327390+00:00
+  - last_updated: 2025-06-28 17:13:26.327390+00:00
+- sensor.ephone_uk_floors_descended
+  - domain: sensor
+  - name: ePhone-uk Floors Descended
+  - state: 11
+  - area: Evert
+  - unit: floors
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 14:11:03.901886+00:00
+  - last_updated: 2025-06-28 14:11:03.901886+00:00
+- binary_sensor.ephone_uk_focus
+  - domain: binary_sensor
+  - name: ePhone-uk Focus
+  - state: off
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 09:04:12.794741+00:00
+  - last_updated: 2025-06-28 09:04:12.794741+00:00
+- sensor.ephone_uk_geocoded_location
+  - domain: sensor
+  - name: ePhone-uk Geocoded Location
+  - state: Home
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:53:20.773989+00:00
+  - last_updated: 2025-06-28 16:00:39.209815+00:00
+- sensor.ephone_uk_last_update_trigger
+  - domain: sensor
+  - name: ePhone-uk Last Update Trigger
+  - state: Periodic
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:27:32.908041+00:00
+  - last_updated: 2025-06-28 18:27:32.908041+00:00
+- sensor.ephone_uk_location_permission
+  - domain: sensor
+  - name: ePhone-uk Location permission
+  - state: Authorized Always
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:12.368697+00:00
+  - last_updated: 2025-06-25 03:36:12.368697+00:00
+- sensor.ephone_uk_ssid
+  - domain: sensor
+  - name: ePhone-uk SSID
+  - state: Aethernet_IoT
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 16:00:39.209006+00:00
+  - last_updated: 2025-06-28 16:00:39.209006+00:00
+- sensor.ephone_uk_steps
+  - domain: sensor
+  - name: ePhone-uk Steps
+  - state: 6679
+  - area: Evert
+  - unit: steps
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:13:26.327656+00:00
+  - last_updated: 2025-06-28 17:13:26.327656+00:00
+- sensor.ephone_uk_storage
+  - domain: sensor
+  - name: ePhone-uk Storage
+  - state: 9.55
+  - area: Evert
+  - unit: % available
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:12:35.339152+00:00
+  - last_updated: 2025-06-28 19:12:35.339152+00:00
+- sensor.ephone_uk_watch_battery_level
+  - domain: sensor
+  - name: ePhone-uk Watch Battery Level
+  - state: 100
+  - area: Evert
+  - unit: %
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:12.369431+00:00
+  - last_updated: 2025-06-25 03:36:12.369431+00:00
+- sensor.ephone_uk_watch_battery_state
+  - domain: sensor
+  - name: ePhone-uk Watch Battery State
+  - state: Full
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:12.369572+00:00
+  - last_updated: 2025-06-25 03:36:12.369572+00:00
+---
+
+🔹 Device ID: 0a54b99979fb31e052f44c37de1dd09c
+Name (user): n/a
+Name (system): bedroom_smart_button_omega
+Model: Button
+Manufacturer: SmartThings
+Integration: 10c0dbf97bdbdbf077d62063f93f5db9
+Entry type: n/a
+
+Entities:
+- sensor.bedroom_smart_button_omega_battery
+  - domain: sensor
+  - name: bedroom_smart_button_omega Battery
+  - state: 100
+  - area: Bedroom
+  - unit: %
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:37:25.330956+00:00
+  - last_updated: 2025-06-25 03:37:25.330956+00:00
+- sensor.bedroom_smart_button_omega_temperature
+  - domain: sensor
+  - name: bedroom_smart_button_omega Temperature
+  - state: 30.66
+  - area: Bedroom
+  - unit: °C
+  - device_class: temperature
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:31:27.477099+00:00
+  - last_updated: 2025-06-28 18:31:27.477099+00:00
+- sensor.bedroom_smart_button_omega_linkquality
+  - domain: sensor
+  - name: bedroom_smart_button_omega Linkquality
+  - state: 153
+  - area: Bedroom
+  - unit: lqi
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:31:27.477370+00:00
+  - last_updated: 2025-06-28 18:31:27.477370+00:00
+---
+
+🔹 Device ID: 0a615932b56595292555238b925fd788
+Name (user): n/a
+Name (system): bedroom_climate_trv_right_omega
+Model: Zigbee thermostatic radiator valve
+Manufacturer: SONOFF
+Integration: 10c0dbf97bdbdbf077d62063f93f5db9
+Entry type: n/a
+
+Entities:
+- number.bedroom_climate_trv_right_omega_local_temperature_calibration
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Temperature
+  - state: 0.6
+  - area: Bedroom
+  - unit: °C
+  - device_class: temperature
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540968+00:00
+  - last_updated: 2025-06-25 03:36:47.540968+00:00
+- climate.bedroom_climate_trv_right_omega
+  - domain: climate
+  - name: bedroom_climate_trv_right_omega
+  - state: heat
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541238+00:00
+  - last_updated: 2025-06-28 18:52:07.258547+00:00
+- sensor.bedroom_climate_trv_right_omega_battery
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Battery
+  - state: 93
+  - area: Bedroom
+  - unit: %
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541099+00:00
+  - last_updated: 2025-06-25 03:36:47.541099+00:00
+- switch.bedroom_climate_trv_right_omega_child_lock
+  - domain: switch
+  - name: bedroom_climate_trv_right_omega Child lock
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540872+00:00
+  - last_updated: 2025-06-25 03:36:47.540872+00:00
+- switch.bedroom_climate_trv_right_omega_open_window
+  - domain: switch
+  - name: bedroom_climate_trv_right_omega Open window
+  - state: on
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541305+00:00
+  - last_updated: 2025-06-25 03:36:47.541305+00:00
+- number.bedroom_climate_trv_right_omega_frost_protection_temperature
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Frost protection temperature
+  - state: 7
+  - area: Bedroom
+  - unit: °C
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540354+00:00
+  - last_updated: 2025-06-25 03:36:47.540354+00:00
+- select.bedroom_climate_trv_right_omega_temperature_sensor_select
+  - domain: select
+  - name: bedroom_climate_trv_right_omega Temperature sensor
+  - state: internal
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540172+00:00
+  - last_updated: 2025-06-25 03:36:47.540172+00:00
+- number.bedroom_climate_trv_right_omega_external_temperature_input
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Temperature
+  - state: 22.4
+  - area: Bedroom
+  - unit: °C
+  - device_class: temperature
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540638+00:00
+  - last_updated: 2025-06-25 03:36:47.540638+00:00
+- sensor.bedroom_climate_trv_right_omega_idle_steps
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Idle steps
+  - state: 27
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540740+00:00
+  - last_updated: 2025-06-25 03:36:47.540740+00:00
+- sensor.bedroom_climate_trv_right_omega_closing_steps
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Closing steps
+  - state: 302
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540441+00:00
+  - last_updated: 2025-06-25 03:36:47.540441+00:00
+- sensor.bedroom_climate_trv_right_omega_valve_opening_limit_voltage
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Valve opening limit voltage
+  - state: 1851
+  - area: Bedroom
+  - unit: mV
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540781+00:00
+  - last_updated: 2025-06-25 03:36:47.540781+00:00
+- sensor.bedroom_climate_trv_right_omega_valve_closing_limit_voltage
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Valve closing limit voltage
+  - state: 2765
+  - area: Bedroom
+  - unit: mV
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541011+00:00
+  - last_updated: 2025-06-25 03:36:47.541011+00:00
+- sensor.bedroom_climate_trv_right_omega_valve_motor_running_voltage
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Valve motor running voltage
+  - state: 1447
+  - area: Bedroom
+  - unit: mV
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540698+00:00
+  - last_updated: 2025-06-25 03:36:47.540698+00:00
+- number.bedroom_climate_trv_right_omega_valve_opening_degree
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Valve opening degree
+  - state: 100
+  - area: Bedroom
+  - unit: %
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541047+00:00
+  - last_updated: 2025-06-25 03:36:47.541047+00:00
+- number.bedroom_climate_trv_right_omega_valve_closing_degree
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Valve closing degree
+  - state: 100
+  - area: Bedroom
+  - unit: %
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540919+00:00
+  - last_updated: 2025-06-25 03:36:47.540919+00:00
+- number.bedroom_climate_trv_right_omega_temperature_accuracy
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Temperature accuracy
+  - state: -1.0
+  - area: Bedroom
+  - unit: °C
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541350+00:00
+  - last_updated: 2025-06-25 03:36:47.541350+00:00
+- sensor.bedroom_climate_trv_right_omega_weekly_schedule
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Schedule
+  - state: ``
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540817+00:00
+  - last_updated: 2025-06-25 03:36:47.540817+00:00
+- update.bedroom_climate_trv_right_omega
+  - domain: update
+  - name: bedroom_climate_trv_right_omega
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: firmware
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540548+00:00
+  - last_updated: 2025-06-25 03:36:47.540548+00:00
+---
+
+🔹 Device ID: 0ae434be7c1013bb073ef730cd843305
+Name (user): entrance_door_motion_tplink_alpha
+Name (system): hallway_entrance_presence_omega
+Model: T100
+Manufacturer: TP-Link
+Integration: 8a63c33a540b71edc4141729209835b7
+Entry type: n/a
+
+Entities:
+- binary_sensor.entrance_door_motion_tplink_alpha_battery
+  - domain: binary_sensor
+  - name: entrance_door_motion_tplink_alpha Battery
+  - state: off
+  - area: Downstairs
+  - unit: n/a
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191676+00:00
+  - last_updated: 2025-06-28 17:31:32.191676+00:00
+- binary_sensor.entrance_door_motion_tplink_alpha_cloud_connection
+  - domain: binary_sensor
+  - name: entrance_door_motion_tplink_alpha Cloud connection
+  - state: on
+  - area: Downstairs
+  - unit: n/a
+  - device_class: connectivity
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191758+00:00
+  - last_updated: 2025-06-28 17:31:32.191758+00:00
+- binary_sensor.entrance_door_motion_tplink_alpha_motion
+  - domain: binary_sensor
+  - name: entrance_door_motion_tplink_alpha Motion
+  - state: off
+  - area: Downstairs
+  - unit: n/a
+  - device_class: motion
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191839+00:00
+  - last_updated: 2025-06-28 17:31:32.191839+00:00
+- button.entrance_door_motion_tplink_alpha_restart
+  - domain: button
+  - name: entrance_door_motion_tplink_alpha Restart
+  - state: unknown
+  - area: Downstairs
+  - unit: n/a
+  - device_class: restart
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.193793+00:00
+  - last_updated: 2025-06-28 17:31:32.193793+00:00
+- sensor.entrance_door_motion_tplink_alpha_signal_level
+  - domain: sensor
+  - name: entrance_door_motion_tplink_alpha Signal level
+  - state: 3
+  - area: Downstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.203131+00:00
+  - last_updated: 2025-06-28 17:31:32.203131+00:00
+- sensor.entrance_door_motion_tplink_alpha_signal_strength
+  - domain: sensor
+  - name: entrance_door_motion_tplink_alpha Signal strength
+  - state: -70
+  - area: Downstairs
+  - unit: dBm
+  - device_class: signal_strength
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.203188+00:00
+  - last_updated: 2025-06-28 17:31:32.203188+00:00
+- button.entrance_door_motion_tplink_alpha_unpair_device
+  - domain: button
+  - name: entrance_door_motion_tplink_alpha Unpair device
+  - state: unknown
+  - area: Downstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.193856+00:00
+  - last_updated: 2025-06-28 17:31:32.193856+00:00
+---
+
+🔹 Device ID: 0b0cc6fd2a0fe8db0b18b5f96b740293
+Name (user): n/a
+Name (system): Backup
+Model: Home Assistant Backup
+Manufacturer: Home Assistant
+Integration: direct
+Entry type: service
+
+Entities:
+- sensor.backup_backup_manager_state
+  - domain: sensor
+  - name: Backup Backup Manager state
+  - state: idle
+  - area: System Admin
+  - unit: n/a
+  - device_class: enum
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:21:54.431637+00:00
+  - last_updated: 2025-06-28 17:21:54.431637+00:00
+- sensor.backup_next_scheduled_automatic_backup
+  - domain: sensor
+  - name: Backup Next scheduled automatic backup
+  - state: 2025-06-29T03:58:03+00:00
+  - area: System Admin
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 04:13:52.001433+00:00
+  - last_updated: 2025-06-28 04:13:52.001433+00:00
+- sensor.backup_last_successful_automatic_backup
+  - domain: sensor
+  - name: Backup Last successful automatic backup
+  - state: 2025-06-28T04:16:30+00:00
+  - area: System Admin
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 04:16:30.840478+00:00
+  - last_updated: 2025-06-28 04:16:30.840478+00:00
+- event.backup_automatic_backup
+  - domain: event
+  - name: Backup Automatic backup
+  - state: 2025-06-28T17:21:54.431+00:00
+  - area: System Admin
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:21:54.431174+00:00
+  - last_updated: 2025-06-28 17:21:54.431174+00:00
+- sensor.backup_last_attempted_automatic_backup
+  - domain: sensor
+  - name: Backup Last attempted automatic backup
+  - state: 2025-06-28T04:13:52+00:00
+  - area: System Admin
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 04:13:52.001590+00:00
+  - last_updated: 2025-06-28 04:13:52.001590+00:00
+---
+
+🔹 Device ID: 0b4bd9c4d4741053887c9845073983aa
+Name (user): Living_room_side_matter_alpha
+Name (system): WiZ P45.E27
+Model: WiZ P45.E27
+Manufacturer: Signify
+Integration: direct
+Entry type: n/a
+
+Entities:
+- button.wiz_p45_e27_identify
+  - domain: button
+  - name: Living_room_side_matter_alpha Identify
+  - state: unknown
+  - area: Living Room
+  - unit: n/a
+  - device_class: identify
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.331990+00:00
+  - last_updated: 2025-06-26 07:04:06.331990+00:00
+- light.wiz_p45_e27
+  - domain: light
+  - name: Living_room_side_matter_alpha
+  - state: off
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-27 00:38:45.783628+00:00
+  - last_updated: 2025-06-27 00:38:45.783628+00:00
+- number.wiz_p45_e27_on_level
+  - domain: number
+  - name: Living_room_side_matter_alpha On level
+  - state: 254
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.332715+00:00
+  - last_updated: 2025-06-26 07:04:06.332715+00:00
+- number.wiz_p45_e27_on_transition_time
+  - domain: number
+  - name: Living_room_side_matter_alpha On transition time
+  - state: 0.0
+  - area: Living Room
+  - unit: s
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.332844+00:00
+  - last_updated: 2025-06-26 07:04:06.332844+00:00
+- number.wiz_p45_e27_off_transition_time
+  - domain: number
+  - name: Living_room_side_matter_alpha Off transition time
+  - state: 0.0
+  - area: Living Room
+  - unit: s
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.332956+00:00
+  - last_updated: 2025-06-26 07:04:06.332956+00:00
+- number.wiz_p45_e27_on_off_transition_time
+  - domain: number
+  - name: Living_room_side_matter_alpha On/off transition time
+  - state: 0.0
+  - area: Living Room
+  - unit: s
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.333062+00:00
+  - last_updated: 2025-06-26 07:04:06.333062+00:00
+- select.wiz_p45_e27_power_on_behaviour_on_startup
+  - domain: select
+  - name: Living_room_side_matter_alpha Power-on behaviour on startup
+  - state: off
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.333171+00:00
+  - last_updated: 2025-06-26 07:04:06.333171+00:00
+---
+
+🔹 Device ID: 0be581a00dbebd1c1e34f8d8000e514d
+Name (user): iphone11
+Name (system): ePhone 🇪🇸
+Model: iPhone 11
+Manufacturer: Apple
+Integration: direct
+Entry type: n/a
+
+Entities:
+- device_tracker.iphone11
+  - domain: device_tracker
+  - name: iphone11
+  - state: home
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:01:44.273354+00:00
+  - last_updated: 2025-06-28 19:01:44.273354+00:00
+- sensor.iphone11_battery
+  - domain: sensor
+  - name: iphone11 Battery
+  - state: 100
+  - area: Bedroom
+  - unit: %
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:00:37.873654+00:00
+  - last_updated: 2025-06-28 15:30:45.768263+00:00
+---
+
+🔹 Device ID: 0dc105d3a919fbaebdc5f766e61db1d3
+Name (user): n/a
+Name (system): Forecast
+Model: Forecast
+Manufacturer: Met.no
+Integration: direct
+Entry type: service
+
+Entities:
+- weather.forecast_home
+  - domain: weather
+  - name: Forecast Home
+  - state: partlycloudy
+  - area: Home
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:38:12.077813+00:00
+  - last_updated: 2025-06-28 18:36:12.063369+00:00
+---
+
+🔹 Device ID: 0dcc4215831e9d39d4cf9cf064967675
+Name (user): n/a
+Name (system): Node-RED
+Model: Home Assistant Add-on
+Manufacturer: Home Assistant Community Add-ons
+Integration: direct
+Entry type: service
+
+Entities:
+- update.node_red_update
+  - domain: update
+  - name: Node-RED Update
+  - state: off
+  - area: n/a
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.639176+00:00
+  - last_updated: 2025-06-25 13:54:12.639176+00:00
+---
+
+🔹 Device ID: 0f47169205b3e7c52f45366a168afd39
+Name (user): n/a
+Name (system): Home Assistant Supervisor
+Model: Home Assistant Supervisor
+Manufacturer: Home Assistant
+Integration: direct
+Entry type: service
+
+Entities:
+- update.home_assistant_supervisor_update
+  - domain: update
+  - name: Home Assistant Supervisor Update
+  - state: off
+  - area: n/a
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.638483+00:00
+  - last_updated: 2025-06-25 13:54:12.638483+00:00
+---
+
+🔹 Device ID: 101dde3698c2644343cf630775a65383
+Name (user): bedroom_security_cam_alpha
+Name (system): bedroom_security_cam_omega
+Model: C200
+Manufacturer: TP-Link
+Integration: direct
+Entry type: n/a
+
+Entities:
+- switch.bedroom_security_cam_alpha_baby_cry_detection
+  - domain: switch
+  - name: bedroom_security_cam_alpha Baby cry detection
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.591558+00:00
+  - last_updated: 2025-06-25 03:36:13.591558+00:00
+- switch.bedroom_security_cam_alpha
+  - domain: switch
+  - name: bedroom_security_cam_alpha
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.591705+00:00
+  - last_updated: 2025-06-25 03:36:13.591705+00:00
+- sensor.bedroom_security_cam_alpha_device_time
+  - domain: sensor
+  - name: bedroom_security_cam_alpha Device time
+  - state: 2025-06-28T19:16:55+00:00
+  - area: Bedroom
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:16:56.197599+00:00
+  - last_updated: 2025-06-28 19:16:56.197599+00:00
+- switch.bedroom_security_cam_alpha_led
+  - domain: switch
+  - name: bedroom_security_cam_alpha LED
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.591837+00:00
+  - last_updated: 2025-06-25 03:36:13.591837+00:00
+- camera.bedroom_security_cam_alpha_live_view
+  - domain: camera
+  - name: bedroom_security_cam_alpha Live view
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.581170+00:00
+  - last_updated: 2025-06-28 19:16:03.989609+00:00
+- switch.bedroom_security_cam_alpha_motion_detection
+  - domain: switch
+  - name: bedroom_security_cam_alpha Motion detection
+  - state: on
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.591958+00:00
+  - last_updated: 2025-06-25 03:36:13.591958+00:00
+- number.bedroom_security_cam_alpha_pan_degrees
+  - domain: number
+  - name: bedroom_security_cam_alpha Pan degrees
+  - state: 30
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.589237+00:00
+  - last_updated: 2025-06-25 03:36:13.589237+00:00
+- button.bedroom_security_cam_alpha_pan_left
+  - domain: button
+  - name: bedroom_security_cam_alpha Pan left
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.580215+00:00
+  - last_updated: 2025-06-25 03:36:13.580215+00:00
+- button.bedroom_security_cam_alpha_pan_right
+  - domain: button
+  - name: bedroom_security_cam_alpha Pan right
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.580060+00:00
+  - last_updated: 2025-06-25 03:36:13.580060+00:00
+- switch.bedroom_security_cam_alpha_person_detection
+  - domain: switch
+  - name: bedroom_security_cam_alpha Person detection
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.592061+00:00
+  - last_updated: 2025-06-25 03:36:13.592061+00:00
+- sensor.bedroom_security_cam_alpha_signal_level
+  - domain: sensor
+  - name: bedroom_security_cam_alpha Signal level
+  - state: 3
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:15:26.234446+00:00
+  - last_updated: 2025-06-28 19:15:26.234446+00:00
+- sensor.bedroom_security_cam_alpha_signal_strength
+  - domain: sensor
+  - name: bedroom_security_cam_alpha Signal strength
+  - state: -53
+  - area: Bedroom
+  - unit: dBm
+  - device_class: signal_strength
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:16:51.191163+00:00
+  - last_updated: 2025-06-28 19:16:51.191163+00:00
+- switch.bedroom_security_cam_alpha_tamper_detection
+  - domain: switch
+  - name: bedroom_security_cam_alpha Tamper detection
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.592164+00:00
+  - last_updated: 2025-06-25 03:36:13.592164+00:00
+- number.bedroom_security_cam_alpha_tilt_degrees
+  - domain: number
+  - name: bedroom_security_cam_alpha Tilt degrees
+  - state: 10
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.589545+00:00
+  - last_updated: 2025-06-25 03:36:13.589545+00:00
+- button.bedroom_security_cam_alpha_tilt_down
+  - domain: button
+  - name: bedroom_security_cam_alpha Tilt down
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.580488+00:00
+  - last_updated: 2025-06-25 03:36:13.580488+00:00
+- button.bedroom_security_cam_alpha_tilt_up
+  - domain: button
+  - name: bedroom_security_cam_alpha Tilt up
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.580348+00:00
+  - last_updated: 2025-06-25 03:36:13.580348+00:00
+---
+
+🔹 Device ID: 103a6dcc213366beacdacde83eb61fef
+Name (user): bedroom nightstand right alpha wifi
+Name (system): bedroom nightstand right omega
+Model: P45.E14
+Manufacturer: WiZ
+Integration: direct
+Entry type: n/a
+
+Entities:
+- light.bedroom_nightstand_right_alpha_wifi
+  - domain: light
+  - name: bedroom nightstand right alpha wifi
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:24:09.126923+00:00
+  - last_updated: 2025-06-28 17:24:09.126923+00:00
+---
+Result type: string
+
+This template listens for the following state changed events:
+
+Entity: binary_sensor.bedroom_security_cam_alpha_motion
+Entity: binary_sensor.entrance_door_motion_tplink_alpha_battery
+Entity: binary_sensor.entrance_door_motion_tplink_alpha_cloud_connection
+Entity: binary_sensor.entrance_door_motion_tplink_alpha_motion
+Entity: binary_sensor.ephone_uk_focus
+Entity: binary_sensor.kitchen_occupancy_omega_occupancy
+Entity: binary_sensor.nintendo_switch_lost
+Entity: binary_sensor.upstairs_skylight_contact_tplink_alpha_battery
+Entity: binary_sensor.upstairs_skylight_contact_tplink_alpha_cloud_connection
+Entity: binary_sensor.upstairs_skylight_contact_tplink_alpha_window
+Entity: button.bedroom_security_cam_alpha_pan_left
+Entity: button.bedroom_security_cam_alpha_pan_right
+Entity: button.bedroom_security_cam_alpha_tilt_down
+Entity: button.bedroom_security_cam_alpha_tilt_up
+Entity: button.entrance_door_motion_tplink_alpha_restart
+Entity: button.entrance_door_motion_tplink_alpha_unpair_device
+Entity: button.upstairs_skylight_contact_tplink_alpha_restart
+Entity: button.upstairs_skylight_contact_tplink_alpha_unpair_device
+Entity: button.wiz_p45_e27_identify
+Entity: camera.bedroom_security_cam_alpha_live_view
+Entity: climate.bedroom_climate_trv_right_omega
+Entity: device_tracker.ephone_uk
+Entity: device_tracker.iphone11
+Entity: device_tracker.nintendo_switch
+Entity: event.backup_automatic_backup
+Entity: light.bedroom_nightstand_left_alpha
+Entity: light.bedroom_nightstand_right_alpha_wifi
+Entity: light.bedroom_ottoman_lightstrip_alpha
+Entity: light.wiz_p45_e27
+Entity: number.bedroom_climate_trv_right_omega_external_temperature_input
+Entity: number.bedroom_climate_trv_right_omega_frost_protection_temperature
+Entity: number.bedroom_climate_trv_right_omega_local_temperature_calibration
+Entity: number.bedroom_climate_trv_right_omega_temperature_accuracy
+Entity: number.bedroom_climate_trv_right_omega_valve_closing_degree
+Entity: number.bedroom_climate_trv_right_omega_valve_opening_degree
+Entity: number.bedroom_nightstand_left_alpha_effect_speed
+Entity: number.bedroom_security_cam_alpha_pan_degrees
+Entity: number.bedroom_security_cam_alpha_tilt_degrees
+Entity: number.kitchen_occupancy_omega_occupancy_timeout
+Entity: number.wiz_p45_e27_off_transition_time
+Entity: number.wiz_p45_e27_on_level
+Entity: number.wiz_p45_e27_on_off_transition_time
+Entity: number.wiz_p45_e27_on_transition_time
+Entity: select.bedroom_climate_trv_right_omega_temperature_sensor_select
+Entity: select.kitchen_occupancy_omega_occupancy_sensitivity
+Entity: select.wiz_p45_e27_power_on_behaviour_on_startup
+Entity: sensor.backup_backup_manager_state
+Entity: sensor.backup_last_attempted_automatic_backup
+Entity: sensor.backup_last_successful_automatic_backup
+Entity: sensor.backup_next_scheduled_automatic_backup
+Entity: sensor.bedroom_climate_trv_right_omega_battery
+Entity: sensor.bedroom_climate_trv_right_omega_closing_steps
+Entity: sensor.bedroom_climate_trv_right_omega_idle_steps
+Entity: sensor.bedroom_climate_trv_right_omega_valve_closing_limit_voltage
+Entity: sensor.bedroom_climate_trv_right_omega_valve_motor_running_voltage
+Entity: sensor.bedroom_climate_trv_right_omega_valve_opening_limit_voltage
+Entity: sensor.bedroom_climate_trv_right_omega_weekly_schedule
+Entity: sensor.bedroom_nightstand_left_alpha_signal_strength
+Entity: sensor.bedroom_security_cam_alpha_device_time
+Entity: sensor.bedroom_security_cam_alpha_signal_level
+Entity: sensor.bedroom_security_cam_alpha_signal_strength
+Entity: sensor.bedroom_smart_button_omega_battery
+Entity: sensor.bedroom_smart_button_omega_linkquality
+Entity: sensor.bedroom_smart_button_omega_temperature
+Entity: sensor.entrance_door_motion_tplink_alpha_signal_level
+Entity: sensor.entrance_door_motion_tplink_alpha_signal_strength
+Entity: sensor.ephone_uk_activity
+Entity: sensor.ephone_uk_app_version
+Entity: sensor.ephone_uk_audio_output
+Entity: sensor.ephone_uk_average_active_pace
+Entity: sensor.ephone_uk_battery_level
+Entity: sensor.ephone_uk_battery_state
+Entity: sensor.ephone_uk_bssid
+Entity: sensor.ephone_uk_connection_type
+Entity: sensor.ephone_uk_distance
+Entity: sensor.ephone_uk_floors_ascended
+Entity: sensor.ephone_uk_floors_descended
+Entity: sensor.ephone_uk_geocoded_location
+Entity: sensor.ephone_uk_last_update_trigger
+Entity: sensor.ephone_uk_location_permission
+Entity: sensor.ephone_uk_ssid
+Entity: sensor.ephone_uk_steps
+Entity: sensor.ephone_uk_storage
+Entity: sensor.ephone_uk_watch_battery_level
+Entity: sensor.ephone_uk_watch_battery_state
+Entity: sensor.iphone11_battery
+Entity: sensor.kitchen_occupancy_omega_illumination
+Entity: sensor.upstairs_skylight_contact_tplink_alpha_signal_level
+Entity: sensor.upstairs_skylight_contact_tplink_alpha_signal_strength
+Entity: switch.bedroom_climate_trv_right_omega_child_lock
+Entity: switch.bedroom_climate_trv_right_omega_open_window
+Entity: switch.bedroom_security_cam_alpha
+Entity: switch.bedroom_security_cam_alpha_baby_cry_detection
+Entity: switch.bedroom_security_cam_alpha_led
+Entity: switch.bedroom_security_cam_alpha_motion_detection
+Entity: switch.bedroom_security_cam_alpha_person_detection
+Entity: switch.bedroom_security_cam_alpha_tamper_detection
+Entity: switch.bedroom_wall_switch_alpha_right
+Entity: update.bedroom_climate_trv_right_omega
+Entity: update.home_assistant_core_update
+Entity: update.home_assistant_supervisor_update
+Entity: update.kitchen_occupancy_omega
+Entity: update.node_red_update
+Entity: weather.forecast_home
+
+🔹 Device ID: 010b8a398c593ba16c1098786ef51a1c
+Name (user): n/a
+Name (system): kitchen_occupancy_omega
+Model: Zigbee occupancy sensor
+Manufacturer: SONOFF
+Integration: 10c0dbf97bdbdbf077d62063f93f5db9
+Entry type: n/a
+
+Entities:
+- binary_sensor.kitchen_occupancy_omega_occupancy
+  - domain: binary_sensor
+  - name: kitchen_occupancy_omega Occupancy
+  - state: off
+  - area: Kitchen
+  - unit: n/a
+  - device_class: occupancy
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:24:37.856204+00:00
+  - last_updated: 2025-06-28 19:24:37.856204+00:00
+- number.kitchen_occupancy_omega_occupancy_timeout
+  - domain: number
+  - name: kitchen_occupancy_omega Occupancy timeout
+  - state: unknown
+  - area: Kitchen
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:15.353791+00:00
+  - last_updated: 2025-06-25 03:36:15.353791+00:00
+- select.kitchen_occupancy_omega_occupancy_sensitivity
+  - domain: select
+  - name: kitchen_occupancy_omega Occupancy sensitivity
+  - state: unknown
+  - area: Kitchen
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:15.354152+00:00
+  - last_updated: 2025-06-25 03:36:15.354152+00:00
+- sensor.kitchen_occupancy_omega_illumination
+  - domain: sensor
+  - name: kitchen_occupancy_omega Illumination
+  - state: bright
+  - area: Kitchen
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:37:25.328671+00:00
+  - last_updated: 2025-06-25 03:37:25.328671+00:00
+- update.kitchen_occupancy_omega
+  - domain: update
+  - name: kitchen_occupancy_omega
+  - state: off
+  - area: Kitchen
+  - unit: n/a
+  - device_class: firmware
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:37:25.328949+00:00
+  - last_updated: 2025-06-25 03:37:25.328949+00:00
+---
+
+🔹 Device ID: 036ad4d73416d61cc7faada9971ecf03
+Name (user): n/a
+Name (system): Nintendo Switch
+Model: n/a
+Manufacturer: Tile Inc.
+Integration: direct
+Entry type: n/a
+
+Entities:
+- binary_sensor.nintendo_switch_lost
+  - domain: binary_sensor
+  - name: Nintendo Switch Lost
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:24:50.387082+00:00
+  - last_updated: 2025-06-28 15:24:50.387082+00:00
+- device_tracker.nintendo_switch
+  - domain: device_tracker
+  - name: Nintendo Switch
+  - state: home
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:26:51.089510+00:00
+  - last_updated: 2025-06-28 19:26:51.089510+00:00
+---
+
+🔹 Device ID: 05efaae3f44899e11b56e41cc419db58
+Name (user): bedroom_wall_switch_alpha_right
+Name (system): Wall Panel Right Switch
+Model: S220
+Manufacturer: TP-Link
+Integration: direct
+Entry type: n/a
+
+Entities:
+- switch.bedroom_wall_switch_alpha_right
+  - domain: switch
+  - name: bedroom_wall_switch_alpha_right
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:24:09.145911+00:00
+  - last_updated: 2025-06-28 17:24:09.145911+00:00
+---
+
+🔹 Device ID: 078af721482b7dc0292eed2b31e56547
+Name (user): bedroom_security_cam_alpha
+Name (system): Cameron
+Model: C200
+Manufacturer: TP-Link
+Integration: direct
+Entry type: n/a
+
+Entities:
+- binary_sensor.bedroom_security_cam_alpha_motion
+  - domain: binary_sensor
+  - name: bedroom_security_cam_alpha Motion
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: motion
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:24:09.104648+00:00
+  - last_updated: 2025-06-28 17:24:09.104648+00:00
+---
+
+🔹 Device ID: 07bc4370af5f1afb3bcced32c7f94e76
+Name (user): upstairs_skylight_contact_tplink_alpha
+Name (system): upstairs_skylight_contact_omega
+Model: T110
+Manufacturer: TP-Link
+Integration: 8a63c33a540b71edc4141729209835b7
+Entry type: n/a
+
+Entities:
+- binary_sensor.upstairs_skylight_contact_tplink_alpha_battery
+  - domain: binary_sensor
+  - name: upstairs_skylight_contact_tplink_alpha Battery
+  - state: off
+  - area: Upstairs
+  - unit: n/a
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191189+00:00
+  - last_updated: 2025-06-28 17:31:32.191189+00:00
+- binary_sensor.upstairs_skylight_contact_tplink_alpha_cloud_connection
+  - domain: binary_sensor
+  - name: upstairs_skylight_contact_tplink_alpha Cloud connection
+  - state: on
+  - area: Upstairs
+  - unit: n/a
+  - device_class: connectivity
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191274+00:00
+  - last_updated: 2025-06-28 17:31:32.191274+00:00
+- button.upstairs_skylight_contact_tplink_alpha_restart
+  - domain: button
+  - name: upstairs_skylight_contact_tplink_alpha Restart
+  - state: unknown
+  - area: Upstairs
+  - unit: n/a
+  - device_class: restart
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.193661+00:00
+  - last_updated: 2025-06-28 17:31:32.193661+00:00
+- sensor.upstairs_skylight_contact_tplink_alpha_signal_level
+  - domain: sensor
+  - name: upstairs_skylight_contact_tplink_alpha Signal level
+  - state: 3
+  - area: Upstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.202897+00:00
+  - last_updated: 2025-06-28 17:31:32.202897+00:00
+- sensor.upstairs_skylight_contact_tplink_alpha_signal_strength
+  - domain: sensor
+  - name: upstairs_skylight_contact_tplink_alpha Signal strength
+  - state: -67
+  - area: Upstairs
+  - unit: dBm
+  - device_class: signal_strength
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.202960+00:00
+  - last_updated: 2025-06-28 17:31:32.202960+00:00
+- button.upstairs_skylight_contact_tplink_alpha_unpair_device
+  - domain: button
+  - name: upstairs_skylight_contact_tplink_alpha Unpair device
+  - state: unknown
+  - area: Upstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.193728+00:00
+  - last_updated: 2025-06-28 17:31:32.193728+00:00
+- binary_sensor.upstairs_skylight_contact_tplink_alpha_window
+  - domain: binary_sensor
+  - name: upstairs_skylight_contact_tplink_alpha_window
+  - state: on
+  - area: Upstairs
+  - unit: n/a
+  - device_class: door
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191346+00:00
+  - last_updated: 2025-06-28 17:31:32.191346+00:00
+---
+
+🔹 Device ID: 07f690dc10f5c59a4edded01216bfe56
+Name (user): n/a
+Name (system): bedroom_ottoman_lightstrip_alpha
+Model: Color Strip
+Manufacturer: WiZ
+Integration: direct
+Entry type: n/a
+
+Entities:
+- light.bedroom_ottoman_lightstrip_alpha
+  - domain: light
+  - name: bedroom_ottoman_lightstrip_alpha
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:19.884968+00:00
+  - last_updated: 2025-06-28 17:24:09.111301+00:00
+---
+
+🔹 Device ID: 095e5c36b6c3a4751547e56f09cb9982
+Name (user): bedroom_nightstand_left_alpha
+Name (system): bedroom_nightstand_left_alpha
+Model: SHRGBC
+Manufacturer: WiZ
+Integration: direct
+Entry type: n/a
+
+Entities:
+- light.bedroom_nightstand_left_alpha
+  - domain: light
+  - name: bedroom_nightstand_left_alpha
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-27 07:05:23.628413+00:00
+  - last_updated: 2025-06-27 07:05:23.628413+00:00
+- number.bedroom_nightstand_left_alpha_effect_speed
+  - domain: number
+  - name: bedroom_nightstand_left_alpha Effect speed
+  - state: 100.0
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-27 01:33:27.508451+00:00
+  - last_updated: 2025-06-27 01:33:27.508451+00:00
+- sensor.bedroom_nightstand_left_alpha_signal_strength
+  - domain: sensor
+  - name: bedroom_nightstand_left_alpha Signal strength
+  - state: -50
+  - area: Bedroom
+  - unit: dBm
+  - device_class: signal_strength
+  - entity_category: n/a
+  - last_changed: 2025-06-27 07:05:25.495958+00:00
+  - last_updated: 2025-06-27 07:05:25.495958+00:00
+---
+
+🔹 Device ID: 0a2759fd20e65810f184adc3dbcd0aed
+Name (user): iphone14
+Name (system): ePhone-uk
+Model: iPhone14,7
+Manufacturer: Apple
+Integration: direct
+Entry type: n/a
+
+Entities:
+- device_tracker.ephone_uk
+  - domain: device_tracker
+  - name: ePhone-uk
+  - state: home
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 16:00:39.021680+00:00
+  - last_updated: 2025-06-28 16:00:39.021680+00:00
+- sensor.ephone_uk_activity
+  - domain: sensor
+  - name: ePhone-uk Activity
+  - state: Stationary
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:27:32.906681+00:00
+  - last_updated: 2025-06-28 18:27:32.906681+00:00
+- sensor.ephone_uk_app_version
+  - domain: sensor
+  - name: ePhone-uk App Version
+  - state: 2025.5
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:12.367249+00:00
+  - last_updated: 2025-06-25 03:36:12.367249+00:00
+- sensor.ephone_uk_audio_output
+  - domain: sensor
+  - name: ePhone-uk Audio Output
+  - state: Built-in Speaker
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 08:09:07.496341+00:00
+  - last_updated: 2025-06-28 08:09:07.496341+00:00
+- sensor.ephone_uk_average_active_pace
+  - domain: sensor
+  - name: ePhone-uk Average Active Pace
+  - state: 1
+  - area: Evert
+  - unit: m/s
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 08:43:03.436408+00:00
+  - last_updated: 2025-06-28 08:43:03.436408+00:00
+- sensor.ephone_uk_battery_level
+  - domain: sensor
+  - name: ePhone-uk Battery Level
+  - state: 75
+  - area: Evert
+  - unit: %
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:22:35.855440+00:00
+  - last_updated: 2025-06-28 19:22:35.855440+00:00
+- sensor.ephone_uk_battery_state
+  - domain: sensor
+  - name: ePhone-uk Battery State
+  - state: Charging
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:25:33.186489+00:00
+  - last_updated: 2025-06-28 18:57:34.677114+00:00
+- sensor.ephone_uk_bssid
+  - domain: sensor
+  - name: ePhone-uk BSSID
+  - state: 66:2f:d0:d0:5e:b7
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 16:00:39.209364+00:00
+  - last_updated: 2025-06-28 16:00:39.209364+00:00
+- sensor.ephone_uk_connection_type
+  - domain: sensor
+  - name: ePhone-uk Connection Type
+  - state: Wi-Fi
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:54:53.343584+00:00
+  - last_updated: 2025-06-28 15:54:53.343584+00:00
+- sensor.ephone_uk_distance
+  - domain: sensor
+  - name: ePhone-uk Distance
+  - state: 4568
+  - area: Evert
+  - unit: m
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:13:26.327113+00:00
+  - last_updated: 2025-06-28 17:13:26.327113+00:00
+- sensor.ephone_uk_floors_ascended
+  - domain: sensor
+  - name: ePhone-uk Floors Ascended
+  - state: 10
+  - area: Evert
+  - unit: floors
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:13:26.327390+00:00
+  - last_updated: 2025-06-28 17:13:26.327390+00:00
+- sensor.ephone_uk_floors_descended
+  - domain: sensor
+  - name: ePhone-uk Floors Descended
+  - state: 11
+  - area: Evert
+  - unit: floors
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 14:11:03.901886+00:00
+  - last_updated: 2025-06-28 14:11:03.901886+00:00
+- binary_sensor.ephone_uk_focus
+  - domain: binary_sensor
+  - name: ePhone-uk Focus
+  - state: off
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 09:04:12.794741+00:00
+  - last_updated: 2025-06-28 09:04:12.794741+00:00
+- sensor.ephone_uk_geocoded_location
+  - domain: sensor
+  - name: ePhone-uk Geocoded Location
+  - state: Home
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:53:20.773989+00:00
+  - last_updated: 2025-06-28 16:00:39.209815+00:00
+- sensor.ephone_uk_last_update_trigger
+  - domain: sensor
+  - name: ePhone-uk Last Update Trigger
+  - state: Periodic
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:27:32.908041+00:00
+  - last_updated: 2025-06-28 18:27:32.908041+00:00
+- sensor.ephone_uk_location_permission
+  - domain: sensor
+  - name: ePhone-uk Location permission
+  - state: Authorized Always
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:12.368697+00:00
+  - last_updated: 2025-06-25 03:36:12.368697+00:00
+- sensor.ephone_uk_ssid
+  - domain: sensor
+  - name: ePhone-uk SSID
+  - state: Aethernet_IoT
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 16:00:39.209006+00:00
+  - last_updated: 2025-06-28 16:00:39.209006+00:00
+- sensor.ephone_uk_steps
+  - domain: sensor
+  - name: ePhone-uk Steps
+  - state: 6679
+  - area: Evert
+  - unit: steps
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:13:26.327656+00:00
+  - last_updated: 2025-06-28 17:13:26.327656+00:00
+- sensor.ephone_uk_storage
+  - domain: sensor
+  - name: ePhone-uk Storage
+  - state: 9.14
+  - area: Evert
+  - unit: % available
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:22:35.855800+00:00
+  - last_updated: 2025-06-28 19:22:35.855800+00:00
+- sensor.ephone_uk_watch_battery_level
+  - domain: sensor
+  - name: ePhone-uk Watch Battery Level
+  - state: 100
+  - area: Evert
+  - unit: %
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:12.369431+00:00
+  - last_updated: 2025-06-25 03:36:12.369431+00:00
+- sensor.ephone_uk_watch_battery_state
+  - domain: sensor
+  - name: ePhone-uk Watch Battery State
+  - state: Full
+  - area: Evert
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:12.369572+00:00
+  - last_updated: 2025-06-25 03:36:12.369572+00:00
+---
+
+🔹 Device ID: 0a54b99979fb31e052f44c37de1dd09c
+Name (user): n/a
+Name (system): bedroom_smart_button_omega
+Model: Button
+Manufacturer: SmartThings
+Integration: 10c0dbf97bdbdbf077d62063f93f5db9
+Entry type: n/a
+
+Entities:
+- sensor.bedroom_smart_button_omega_battery
+  - domain: sensor
+  - name: bedroom_smart_button_omega Battery
+  - state: 100
+  - area: Bedroom
+  - unit: %
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:37:25.330956+00:00
+  - last_updated: 2025-06-25 03:37:25.330956+00:00
+- sensor.bedroom_smart_button_omega_temperature
+  - domain: sensor
+  - name: bedroom_smart_button_omega Temperature
+  - state: 30.66
+  - area: Bedroom
+  - unit: °C
+  - device_class: temperature
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:31:27.477099+00:00
+  - last_updated: 2025-06-28 18:31:27.477099+00:00
+- sensor.bedroom_smart_button_omega_linkquality
+  - domain: sensor
+  - name: bedroom_smart_button_omega Linkquality
+  - state: 153
+  - area: Bedroom
+  - unit: lqi
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 18:31:27.477370+00:00
+  - last_updated: 2025-06-28 18:31:27.477370+00:00
+---
+
+🔹 Device ID: 0a615932b56595292555238b925fd788
+Name (user): n/a
+Name (system): bedroom_climate_trv_right_omega
+Model: Zigbee thermostatic radiator valve
+Manufacturer: SONOFF
+Integration: 10c0dbf97bdbdbf077d62063f93f5db9
+Entry type: n/a
+
+Entities:
+- number.bedroom_climate_trv_right_omega_local_temperature_calibration
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Temperature
+  - state: 0.6
+  - area: Bedroom
+  - unit: °C
+  - device_class: temperature
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540968+00:00
+  - last_updated: 2025-06-25 03:36:47.540968+00:00
+- climate.bedroom_climate_trv_right_omega
+  - domain: climate
+  - name: bedroom_climate_trv_right_omega
+  - state: heat
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541238+00:00
+  - last_updated: 2025-06-28 18:52:07.258547+00:00
+- sensor.bedroom_climate_trv_right_omega_battery
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Battery
+  - state: 93
+  - area: Bedroom
+  - unit: %
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541099+00:00
+  - last_updated: 2025-06-25 03:36:47.541099+00:00
+- switch.bedroom_climate_trv_right_omega_child_lock
+  - domain: switch
+  - name: bedroom_climate_trv_right_omega Child lock
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540872+00:00
+  - last_updated: 2025-06-25 03:36:47.540872+00:00
+- switch.bedroom_climate_trv_right_omega_open_window
+  - domain: switch
+  - name: bedroom_climate_trv_right_omega Open window
+  - state: on
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541305+00:00
+  - last_updated: 2025-06-25 03:36:47.541305+00:00
+- number.bedroom_climate_trv_right_omega_frost_protection_temperature
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Frost protection temperature
+  - state: 7
+  - area: Bedroom
+  - unit: °C
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540354+00:00
+  - last_updated: 2025-06-25 03:36:47.540354+00:00
+- select.bedroom_climate_trv_right_omega_temperature_sensor_select
+  - domain: select
+  - name: bedroom_climate_trv_right_omega Temperature sensor
+  - state: internal
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540172+00:00
+  - last_updated: 2025-06-25 03:36:47.540172+00:00
+- number.bedroom_climate_trv_right_omega_external_temperature_input
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Temperature
+  - state: 22.4
+  - area: Bedroom
+  - unit: °C
+  - device_class: temperature
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540638+00:00
+  - last_updated: 2025-06-25 03:36:47.540638+00:00
+- sensor.bedroom_climate_trv_right_omega_idle_steps
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Idle steps
+  - state: 27
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540740+00:00
+  - last_updated: 2025-06-25 03:36:47.540740+00:00
+- sensor.bedroom_climate_trv_right_omega_closing_steps
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Closing steps
+  - state: 302
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540441+00:00
+  - last_updated: 2025-06-25 03:36:47.540441+00:00
+- sensor.bedroom_climate_trv_right_omega_valve_opening_limit_voltage
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Valve opening limit voltage
+  - state: 1851
+  - area: Bedroom
+  - unit: mV
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540781+00:00
+  - last_updated: 2025-06-25 03:36:47.540781+00:00
+- sensor.bedroom_climate_trv_right_omega_valve_closing_limit_voltage
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Valve closing limit voltage
+  - state: 2765
+  - area: Bedroom
+  - unit: mV
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541011+00:00
+  - last_updated: 2025-06-25 03:36:47.541011+00:00
+- sensor.bedroom_climate_trv_right_omega_valve_motor_running_voltage
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Valve motor running voltage
+  - state: 1447
+  - area: Bedroom
+  - unit: mV
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540698+00:00
+  - last_updated: 2025-06-25 03:36:47.540698+00:00
+- number.bedroom_climate_trv_right_omega_valve_opening_degree
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Valve opening degree
+  - state: 100
+  - area: Bedroom
+  - unit: %
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541047+00:00
+  - last_updated: 2025-06-25 03:36:47.541047+00:00
+- number.bedroom_climate_trv_right_omega_valve_closing_degree
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Valve closing degree
+  - state: 100
+  - area: Bedroom
+  - unit: %
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540919+00:00
+  - last_updated: 2025-06-25 03:36:47.540919+00:00
+- number.bedroom_climate_trv_right_omega_temperature_accuracy
+  - domain: number
+  - name: bedroom_climate_trv_right_omega Temperature accuracy
+  - state: -1.0
+  - area: Bedroom
+  - unit: °C
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.541350+00:00
+  - last_updated: 2025-06-25 03:36:47.541350+00:00
+- sensor.bedroom_climate_trv_right_omega_weekly_schedule
+  - domain: sensor
+  - name: bedroom_climate_trv_right_omega Schedule
+  - state: []
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540817+00:00
+  - last_updated: 2025-06-25 03:36:47.540817+00:00
+- update.bedroom_climate_trv_right_omega
+  - domain: update
+  - name: bedroom_climate_trv_right_omega
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: firmware
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:47.540548+00:00
+  - last_updated: 2025-06-25 03:36:47.540548+00:00
+---
+
+🔹 Device ID: 0ae434be7c1013bb073ef730cd843305
+Name (user): entrance_door_motion_tplink_alpha
+Name (system): hallway_entrance_presence_omega
+Model: T100
+Manufacturer: TP-Link
+Integration: 8a63c33a540b71edc4141729209835b7
+Entry type: n/a
+
+Entities:
+- binary_sensor.entrance_door_motion_tplink_alpha_battery
+  - domain: binary_sensor
+  - name: entrance_door_motion_tplink_alpha Battery
+  - state: off
+  - area: Downstairs
+  - unit: n/a
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191676+00:00
+  - last_updated: 2025-06-28 17:31:32.191676+00:00
+- binary_sensor.entrance_door_motion_tplink_alpha_cloud_connection
+  - domain: binary_sensor
+  - name: entrance_door_motion_tplink_alpha Cloud connection
+  - state: on
+  - area: Downstairs
+  - unit: n/a
+  - device_class: connectivity
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191758+00:00
+  - last_updated: 2025-06-28 17:31:32.191758+00:00
+- binary_sensor.entrance_door_motion_tplink_alpha_motion
+  - domain: binary_sensor
+  - name: entrance_door_motion_tplink_alpha Motion
+  - state: off
+  - area: Downstairs
+  - unit: n/a
+  - device_class: motion
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.191839+00:00
+  - last_updated: 2025-06-28 17:31:32.191839+00:00
+- button.entrance_door_motion_tplink_alpha_restart
+  - domain: button
+  - name: entrance_door_motion_tplink_alpha Restart
+  - state: unknown
+  - area: Downstairs
+  - unit: n/a
+  - device_class: restart
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.193793+00:00
+  - last_updated: 2025-06-28 17:31:32.193793+00:00
+- sensor.entrance_door_motion_tplink_alpha_signal_level
+  - domain: sensor
+  - name: entrance_door_motion_tplink_alpha Signal level
+  - state: 3
+  - area: Downstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.203131+00:00
+  - last_updated: 2025-06-28 17:31:32.203131+00:00
+- sensor.entrance_door_motion_tplink_alpha_signal_strength
+  - domain: sensor
+  - name: entrance_door_motion_tplink_alpha Signal strength
+  - state: -70
+  - area: Downstairs
+  - unit: dBm
+  - device_class: signal_strength
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.203188+00:00
+  - last_updated: 2025-06-28 17:31:32.203188+00:00
+- button.entrance_door_motion_tplink_alpha_unpair_device
+  - domain: button
+  - name: entrance_door_motion_tplink_alpha Unpair device
+  - state: unknown
+  - area: Downstairs
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:31:32.193856+00:00
+  - last_updated: 2025-06-28 17:31:32.193856+00:00
+---
+
+🔹 Device ID: 0b4bd9c4d4741053887c9845073983aa
+Name (user): Living_room_side_matter_alpha
+Name (system): WiZ P45.E27
+Model: WiZ P45.E27
+Manufacturer: Signify
+Integration: direct
+Entry type: n/a
+
+Entities:
+- button.wiz_p45_e27_identify
+  - domain: button
+  - name: Living_room_side_matter_alpha Identify
+  - state: unknown
+  - area: Living Room
+  - unit: n/a
+  - device_class: identify
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.331990+00:00
+  - last_updated: 2025-06-26 07:04:06.331990+00:00
+- light.wiz_p45_e27
+  - domain: light
+  - name: Living_room_side_matter_alpha
+  - state: off
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-27 00:38:45.783628+00:00
+  - last_updated: 2025-06-27 00:38:45.783628+00:00
+- number.wiz_p45_e27_on_level
+  - domain: number
+  - name: Living_room_side_matter_alpha On level
+  - state: 254
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.332715+00:00
+  - last_updated: 2025-06-26 07:04:06.332715+00:00
+- number.wiz_p45_e27_on_transition_time
+  - domain: number
+  - name: Living_room_side_matter_alpha On transition time
+  - state: 0.0
+  - area: Living Room
+  - unit: s
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.332844+00:00
+  - last_updated: 2025-06-26 07:04:06.332844+00:00
+- number.wiz_p45_e27_off_transition_time
+  - domain: number
+  - name: Living_room_side_matter_alpha Off transition time
+  - state: 0.0
+  - area: Living Room
+  - unit: s
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.332956+00:00
+  - last_updated: 2025-06-26 07:04:06.332956+00:00
+- number.wiz_p45_e27_on_off_transition_time
+  - domain: number
+  - name: Living_room_side_matter_alpha On/off transition time
+  - state: 0.0
+  - area: Living Room
+  - unit: s
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.333062+00:00
+  - last_updated: 2025-06-26 07:04:06.333062+00:00
+- select.wiz_p45_e27_power_on_behaviour_on_startup
+  - domain: select
+  - name: Living_room_side_matter_alpha Power-on behaviour on startup
+  - state: off
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-26 07:04:06.333171+00:00
+  - last_updated: 2025-06-26 07:04:06.333171+00:00
+---
+
+🔹 Device ID: 0be581a00dbebd1c1e34f8d8000e514d
+Name (user): iphone11
+Name (system): ePhone 🇪🇸
+Model: iPhone 11
+Manufacturer: Apple
+Integration: direct
+Entry type: n/a
+
+Entities:
+- device_tracker.iphone11
+  - domain: device_tracker
+  - name: iphone11
+  - state: home
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:01:44.273354+00:00
+  - last_updated: 2025-06-28 19:01:44.273354+00:00
+- sensor.iphone11_battery
+  - domain: sensor
+  - name: iphone11 Battery
+  - state: 100
+  - area: Bedroom
+  - unit: %
+  - device_class: battery
+  - entity_category: n/a
+  - last_changed: 2025-06-28 15:00:37.873654+00:00
+  - last_updated: 2025-06-28 15:30:45.768263+00:00
+---
+
+🔹 Device ID: 0dcc4215831e9d39d4cf9cf064967675
+Name (user): n/a
+Name (system): Node-RED
+Model: Home Assistant Add-on
+Manufacturer: Home Assistant Community Add-ons
+Integration: direct
+Entry type: service
+
+Entities:
+- update.node_red_update
+  - domain: update
+  - name: Node-RED Update
+  - state: off
+  - area: n/a
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.639176+00:00
+  - last_updated: 2025-06-25 13:54:12.639176+00:00
+---
+
+🔹 Device ID: 101dde3698c2644343cf630775a65383
+Name (user): bedroom_security_cam_alpha
+Name (system): bedroom_security_cam_omega
+Model: C200
+Manufacturer: TP-Link
+Integration: direct
+Entry type: n/a
+
+Entities:
+- switch.bedroom_security_cam_alpha_baby_cry_detection
+  - domain: switch
+  - name: bedroom_security_cam_alpha Baby cry detection
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.591558+00:00
+  - last_updated: 2025-06-25 03:36:13.591558+00:00
+- switch.bedroom_security_cam_alpha
+  - domain: switch
+  - name: bedroom_security_cam_alpha
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.591705+00:00
+  - last_updated: 2025-06-25 03:36:13.591705+00:00
+- sensor.bedroom_security_cam_alpha_device_time
+  - domain: sensor
+  - name: bedroom_security_cam_alpha Device time
+  - state: 2025-06-28T19:27:05+00:00
+  - area: Bedroom
+  - unit: n/a
+  - device_class: timestamp
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:27:06.195290+00:00
+  - last_updated: 2025-06-28 19:27:06.195290+00:00
+- switch.bedroom_security_cam_alpha_led
+  - domain: switch
+  - name: bedroom_security_cam_alpha LED
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.591837+00:00
+  - last_updated: 2025-06-25 03:36:13.591837+00:00
+- camera.bedroom_security_cam_alpha_live_view
+  - domain: camera
+  - name: bedroom_security_cam_alpha Live view
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.581170+00:00
+  - last_updated: 2025-06-28 19:26:03.990301+00:00
+- switch.bedroom_security_cam_alpha_motion_detection
+  - domain: switch
+  - name: bedroom_security_cam_alpha Motion detection
+  - state: on
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.591958+00:00
+  - last_updated: 2025-06-25 03:36:13.591958+00:00
+- number.bedroom_security_cam_alpha_pan_degrees
+  - domain: number
+  - name: bedroom_security_cam_alpha Pan degrees
+  - state: 30
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.589237+00:00
+  - last_updated: 2025-06-25 03:36:13.589237+00:00
+- button.bedroom_security_cam_alpha_pan_left
+  - domain: button
+  - name: bedroom_security_cam_alpha Pan left
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.580215+00:00
+  - last_updated: 2025-06-25 03:36:13.580215+00:00
+- button.bedroom_security_cam_alpha_pan_right
+  - domain: button
+  - name: bedroom_security_cam_alpha Pan right
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.580060+00:00
+  - last_updated: 2025-06-25 03:36:13.580060+00:00
+- switch.bedroom_security_cam_alpha_person_detection
+  - domain: switch
+  - name: bedroom_security_cam_alpha Person detection
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.592061+00:00
+  - last_updated: 2025-06-25 03:36:13.592061+00:00
+- sensor.bedroom_security_cam_alpha_signal_level
+  - domain: sensor
+  - name: bedroom_security_cam_alpha Signal level
+  - state: 4
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:20:31.277889+00:00
+  - last_updated: 2025-06-28 19:20:31.277889+00:00
+- sensor.bedroom_security_cam_alpha_signal_strength
+  - domain: sensor
+  - name: bedroom_security_cam_alpha Signal strength
+  - state: -46
+  - area: Bedroom
+  - unit: dBm
+  - device_class: signal_strength
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:26:26.196318+00:00
+  - last_updated: 2025-06-28 19:26:26.196318+00:00
+- switch.bedroom_security_cam_alpha_tamper_detection
+  - domain: switch
+  - name: bedroom_security_cam_alpha Tamper detection
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.592164+00:00
+  - last_updated: 2025-06-25 03:36:13.592164+00:00
+- number.bedroom_security_cam_alpha_tilt_degrees
+  - domain: number
+  - name: bedroom_security_cam_alpha Tilt degrees
+  - state: 10
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.589545+00:00
+  - last_updated: 2025-06-25 03:36:13.589545+00:00
+- button.bedroom_security_cam_alpha_tilt_down
+  - domain: button
+  - name: bedroom_security_cam_alpha Tilt down
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.580488+00:00
+  - last_updated: 2025-06-25 03:36:13.580488+00:00
+- button.bedroom_security_cam_alpha_tilt_up
+  - domain: button
+  - name: bedroom_security_cam_alpha Tilt up
+  - state: unavailable
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:13.580348+00:00
+  - last_updated: 2025-06-25 03:36:13.580348+00:00
+---
+
+🔹 Device ID: 103a6dcc213366beacdacde83eb61fef
+Name (user): bedroom nightstand right alpha wifi
+Name (system): bedroom nightstand right omega
+Model: P45.E14
+Manufacturer: WiZ
+Integration: direct
+Entry type: n/a
+
+Entities:
+- light.bedroom_nightstand_right_alpha_wifi
+  - domain: light
+  - name: bedroom nightstand right alpha wifi
+  - state: off
+  - area: Bedroom
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:24:09.126923+00:00
+  - last_updated: 2025-06-28 17:24:09.126923+00:00
+---
+
+🔹 Device ID: 10c0dbf97bdbdbf077d62063f93f5db9
+Name (user): n/a
+Name (system): Zigbee2MQTT Bridge
+Model: Bridge
+Manufacturer: Zigbee2MQTT
+Integration: direct
+Entry type: n/a
+
+Entities:
+- binary_sensor.zigbee2mqtt_bridge_connection_state
+  - domain: binary_sensor
+  - name: Zigbee2MQTT Bridge Connection state
+  - state: on
+  - area: Home Assistant
+  - unit: n/a
+  - device_class: connectivity
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:15.356328+00:00
+  - last_updated: 2025-06-25 03:36:15.356328+00:00
+- button.zigbee2mqtt_bridge_restart
+  - domain: button
+  - name: Zigbee2MQTT Bridge Restart
+  - state: unknown
+  - area: Home Assistant
+  - unit: n/a
+  - device_class: restart
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:15.353905+00:00
+  - last_updated: 2025-06-25 03:36:15.353905+00:00
+- select.zigbee2mqtt_bridge_log_level
+  - domain: select
+  - name: Zigbee2MQTT Bridge Log level
+  - state: debug
+  - area: Home Assistant
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:15.361541+00:00
+  - last_updated: 2025-06-25 03:36:15.361541+00:00
+- sensor.zigbee2mqtt_bridge_version
+  - domain: sensor
+  - name: Zigbee2MQTT Bridge Version
+  - state: 2.4.0
+  - area: Home Assistant
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:15.361490+00:00
+  - last_updated: 2025-06-25 03:36:15.361490+00:00
+- switch.zigbee2mqtt_bridge_permit_join
+  - domain: switch
+  - name: Zigbee2MQTT Bridge Permit join
+  - state: off
+  - area: Home Assistant
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:15.361572+00:00
+  - last_updated: 2025-06-25 03:36:15.361572+00:00
+---
+
+🔹 Device ID: 14ba936851dbb4ab32f04737921c5648
+Name (user): n/a
+Name (system): Mosquitto broker
+Model: Home Assistant Add-on
+Manufacturer: Official add-ons
+Integration: direct
+Entry type: service
+
+Entities:
+- update.mosquitto_broker_update
+  - domain: update
+  - name: Mosquitto broker Update
+  - state: off
+  - area: HA Addons
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 13:54:12.638839+00:00
+  - last_updated: 2025-06-25 13:54:12.638839+00:00
+---
+
+🔹 Device ID: 1528bf1cccdba781a7c2a5eb03cca4c6
+Name (user): living_room_occupancy_alpha
+Name (system): living_room_occupancy_omega
+Model: Zigbee occupancy sensor
+Manufacturer: SONOFF
+Integration: 10c0dbf97bdbdbf077d62063f93f5db9
+Entry type: n/a
+
+Entities:
+- sensor.living_room_occupancy_alpha_illumination
+  - domain: sensor
+  - name: living_room_occupancy_alpha Illumination
+  - state: bright
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 06:04:45.251764+00:00
+  - last_updated: 2025-06-28 06:04:45.251764+00:00
+- sensor.living_room_occupancy_alpha_linkquality
+  - domain: sensor
+  - name: living_room_occupancy_alpha Linkquality
+  - state: 25
+  - area: Living Room
+  - unit: lqi
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:11:26.380450+00:00
+  - last_updated: 2025-06-28 19:11:26.380450+00:00
+- update.living_room_occupancy_alpha
+  - domain: update
+  - name: living_room_occupancy_alpha
+  - state: off
+  - area: Living Room
+  - unit: n/a
+  - device_class: firmware
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:37:25.332478+00:00
+  - last_updated: 2025-06-25 03:37:25.332478+00:00
+- binary_sensor.living_room_occupancy_alpha_occupancy
+  - domain: binary_sensor
+  - name: living_room_occupancy_alpha Occupancy
+  - state: off
+  - area: Living Room
+  - unit: n/a
+  - device_class: occupancy
+  - entity_category: n/a
+  - last_changed: 2025-06-28 19:11:26.380210+00:00
+  - last_updated: 2025-06-28 19:11:26.380210+00:00
+- select.living_room_occupancy_alpha_occupancy_sensitivity
+  - domain: select
+  - name: living_room_occupancy_alpha Occupancy sensitivity
+  - state: unknown
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:15.354486+00:00
+  - last_updated: 2025-06-25 03:36:15.354486+00:00
+- number.living_room_occupancy_alpha_occupancy_timeout
+  - domain: number
+  - name: living_room_occupancy_alpha Occupancy timeout
+  - state: unknown
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-25 03:36:15.356541+00:00
+  - last_updated: 2025-06-25 03:36:15.356541+00:00
+---
+
+🔹 Device ID: 165e34f3db8b423b56ae809febf0778d
+Name (user): n/a
+Name (system): living_room_floorlamp_omega
+Model: A.E27
+Manufacturer: WiZ
+Integration: direct
+Entry type: n/a
+
+Entities:
+- light.living_room_floorlamp_omega
+  - domain: light
+  - name: living_room_floorlamp_omega
+  - state: off
+  - area: Living Room
+  - unit: n/a
+  - device_class: n/a
+  - entity_category: n/a
+  - last_changed: 2025-06-28 17:24:09.131832+00:00
+  - last_updated: 2025-06-28 17:24:09.131832+00:00
+---
+Result type: string
+
+This template listens for the following state changed events:
+
+Entity: binary_sensor.bedroom_security_cam_alpha_motion
+Entity: binary_sensor.entrance_door_motion_tplink_alpha_battery
+Entity: binary_sensor.entrance_door_motion_tplink_alpha_cloud_connection
+Entity: binary_sensor.entrance_door_motion_tplink_alpha_motion
+Entity: binary_sensor.ephone_uk_focus
+Entity: binary_sensor.kitchen_occupancy_omega_occupancy
+Entity: binary_sensor.living_room_occupancy_alpha_occupancy
+Entity: binary_sensor.nintendo_switch_lost
+Entity: binary_sensor.upstairs_skylight_contact_tplink_alpha_battery
+Entity: binary_sensor.upstairs_skylight_contact_tplink_alpha_cloud_connection
+Entity: binary_sensor.upstairs_skylight_contact_tplink_alpha_window
+Entity: binary_sensor.zigbee2mqtt_bridge_connection_state
+Entity: button.bedroom_security_cam_alpha_pan_left
+Entity: button.bedroom_security_cam_alpha_pan_right
+Entity: button.bedroom_security_cam_alpha_tilt_down
+Entity: button.bedroom_security_cam_alpha_tilt_up
+Entity: button.entrance_door_motion_tplink_alpha_restart
+Entity: button.entrance_door_motion_tplink_alpha_unpair_device
+Entity: button.upstairs_skylight_contact_tplink_alpha_restart
+Entity: button.upstairs_skylight_contact_tplink_alpha_unpair_device
+Entity: button.wiz_p45_e27_identify
+Entity: button.zigbee2mqtt_bridge_restart
+Entity: camera.bedroom_security_cam_alpha_live_view
+Entity: climate.bedroom_climate_trv_right_omega
+Entity: device_tracker.ephone_uk
+Entity: device_tracker.iphone11
+Entity: device_tracker.nintendo_switch
+Entity: light.bedroom_nightstand_left_alpha
+Entity: light.bedroom_nightstand_right_alpha_wifi
+Entity: light.bedroom_ottoman_lightstrip_alpha
+Entity: light.living_room_floorlamp_omega
+Entity: light.wiz_p45_e27
+Entity: number.bedroom_climate_trv_right_omega_external_temperature_input
+Entity: number.bedroom_climate_trv_right_omega_frost_protection_temperature
+Entity: number.bedroom_climate_trv_right_omega_local_temperature_calibration
+Entity: number.bedroom_climate_trv_right_omega_temperature_accuracy
+Entity: number.bedroom_climate_trv_right_omega_valve_closing_degree
+Entity: number.bedroom_climate_trv_right_omega_valve_opening_degree
+Entity: number.bedroom_nightstand_left_alpha_effect_speed
+Entity: number.bedroom_security_cam_alpha_pan_degrees
+Entity: number.bedroom_security_cam_alpha_tilt_degrees
+Entity: number.kitchen_occupancy_omega_occupancy_timeout
+Entity: number.living_room_occupancy_alpha_occupancy_timeout
+Entity: number.wiz_p45_e27_off_transition_time
+Entity: number.wiz_p45_e27_on_level
+Entity: number.wiz_p45_e27_on_off_transition_time
+Entity: number.wiz_p45_e27_on_transition_time
+Entity: select.bedroom_climate_trv_right_omega_temperature_sensor_select
+Entity: select.kitchen_occupancy_omega_occupancy_sensitivity
+Entity: select.living_room_occupancy_alpha_occupancy_sensitivity
+Entity: select.wiz_p45_e27_power_on_behaviour_on_startup
+Entity: select.zigbee2mqtt_bridge_log_level
+Entity: sensor.bedroom_climate_trv_right_omega_battery
+Entity: sensor.bedroom_climate_trv_right_omega_closing_steps
+Entity: sensor.bedroom_climate_trv_right_omega_idle_steps
+Entity: sensor.bedroom_climate_trv_right_omega_valve_closing_limit_voltage
+Entity: sensor.bedroom_climate_trv_right_omega_valve_motor_running_voltage
+Entity: sensor.bedroom_climate_trv_right_omega_valve_opening_limit_voltage
+Entity: sensor.bedroom_climate_trv_right_omega_weekly_schedule
+Entity: sensor.bedroom_nightstand_left_alpha_signal_strength
+Entity: sensor.bedroom_security_cam_alpha_device_time
+Entity: sensor.bedroom_security_cam_alpha_signal_level
+Entity: sensor.bedroom_security_cam_alpha_signal_strength
+Entity: sensor.bedroom_smart_button_omega_battery
+Entity: sensor.bedroom_smart_button_omega_linkquality
+Entity: sensor.bedroom_smart_button_omega_temperature
+Entity: sensor.entrance_door_motion_tplink_alpha_signal_level
+Entity: sensor.entrance_door_motion_tplink_alpha_signal_strength
+Entity: sensor.ephone_uk_activity
+Entity: sensor.ephone_uk_app_version
+Entity: sensor.ephone_uk_audio_output
+Entity: sensor.ephone_uk_average_active_pace
+Entity: sensor.ephone_uk_battery_level
+Entity: sensor.ephone_uk_battery_state
+Entity: sensor.ephone_uk_bssid
+Entity: sensor.ephone_uk_connection_type
+Entity: sensor.ephone_uk_distance
+Entity: sensor.ephone_uk_floors_ascended
+Entity: sensor.ephone_uk_floors_descended
+Entity: sensor.ephone_uk_geocoded_location
+Entity: sensor.ephone_uk_last_update_trigger
+Entity: sensor.ephone_uk_location_permission
+Entity: sensor.ephone_uk_ssid
+Entity: sensor.ephone_uk_steps
+Entity: sensor.ephone_uk_storage
+Entity: sensor.ephone_uk_watch_battery_level
+Entity: sensor.ephone_uk_watch_battery_state
+Entity: sensor.iphone11_battery
+Entity: sensor.kitchen_occupancy_omega_illumination
+Entity: sensor.living_room_occupancy_alpha_illumination
+Entity: sensor.living_room_occupancy_alpha_linkquality
+Entity: sensor.upstairs_skylight_contact_tplink_alpha_signal_level
+Entity: sensor.upstairs_skylight_contact_tplink_alpha_signal_strength
+Entity: sensor.zigbee2mqtt_bridge_version
+Entity: switch.bedroom_climate_trv_right_omega_child_lock
+Entity: switch.bedroom_climate_trv_right_omega_open_window
+Entity: switch.bedroom_security_cam_alpha
+Entity: switch.bedroom_security_cam_alpha_baby_cry_detection
+Entity: switch.bedroom_security_cam_alpha_led
+Entity: switch.bedroom_security_cam_alpha_motion_detection
+Entity: switch.bedroom_security_cam_alpha_person_detection
+Entity: switch.bedroom_security_cam_alpha_tamper_detection
+Entity: switch.bedroom_wall_switch_alpha_right
+Entity: switch.zigbee2mqtt_bridge_permit_join
+Entity: update.bedroom_climate_trv_right_omega
+Entity: update.kitchen_occupancy_omega
+Entity: update.living_room_occupancy_alpha
+Entity: update.mosquitto_broker_update
+Entity: update.node_red_update

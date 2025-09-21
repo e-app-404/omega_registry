@@ -1,0 +1,117 @@
+# CANONICAL MANIFEST (recursive index)
+# Last updated: 2025-07-21
+
+# --- Directory and File Listing ---
+# (All files under canonical/ recursively)
+
+canonical/diagnostics/legacy_registry_enrichment_summary.yaml
+canonical/enrichment_sources/ha_registries/post-reboot/core.area_registry
+canonical/enrichment_sources/ha_registries/post-reboot/core.area_registry.parsed.md
+canonical/enrichment_sources/ha_registries/post-reboot/core.config_entries
+canonical/enrichment_sources/ha_registries/post-reboot/core.device_registry
+canonical/enrichment_sources/ha_registries/post-reboot/core.entity_registry
+canonical/enrichment_sources/ha_registries/pre-reboot/core.area_registry
+canonical/enrichment_sources/ha_registries/pre-reboot/core.config_entries
+canonical/enrichment_sources/ha_registries/pre-reboot/core.device_registry
+canonical/enrichment_sources/ha_registries/pre-reboot/core.entity_registry
+canonical/enrichment_sources/hestia/.DS_Store
+canonical/enrichment_sources/hestia/post-reboot/omega_device_registry.cleaned.v2.json
+canonical/enrichment_sources/hestia/pre-reboot/alpha_light_registry.json
+canonical/enrichment_sources/hestia/pre-reboot/alpha_sensor_registry.json
+canonical/enrichment_sources/hestia/pre-reboot/alpha_system_registry.json
+canonical/enrichment_sources/hestia/pre-reboot/device_groups.json
+canonical/enrichment_sources/hestia/pre-reboot/omega_device_registry.json
+canonical/enrichment_sources/hestia/pre-reboot/omega_room_registry_05-23.json
+canonical/enrichment_sources/hestia/pre-reboot/omega_room_registry_06-06.json
+canonical/enrichment_sources/hestia/pre-reboot/omega_room_registry.json
+canonical/enrichment_sources/network/fing_device_list.csv
+canonical/enrichment_sources/network/fing_device_list.txt
+canonical/enrichment_sources/network/ha_devtools_template_device_id_list_2.txt
+canonical/enrichment_sources/network/router_device_list.csv
+canonical/enrichment_sources/network/router_device_list.txt
+canonical/joins/pre_reboot_field_join_hints.json
+canonical/logs/analytics/omega_registry_metrics.log
+canonical/logs/CONTRACT_REALIZATION_AUDIT_20250721.log
+canonical/logs/copilot_chat_output.log
+canonical/logs/copilot_overview_patch_files.log
+canonical/logs/copilot_patchlog.log
+canonical/logs/copilot_terminal_output.log
+canonical/logs/global_data.log
+canonical/logs/gpt_chat_output.log
+canonical/logs/hestia_pre_reboot_field_diagnostics.log
+canonical/logs/hestia_pre_reboot_field_map.json
+canonical/logs/hestia_pre_reboot_schema_drift.json
+canonical/logs/scratch/.keep
+canonical/logs/scratch/CONTRACT_REALIZATION_AUDIT_AND_PROPAGATION_VALIDATION_V1.log
+canonical/logs/scratch/CONTRACT_REALIZATION_AUDIT_FOLLOWUP_20250721.log
+canonical/logs/scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T175806.log
+canonical/logs/scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T175943.log
+canonical/logs/scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T180255.log
+canonical/logs/scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T182434.log
+canonical/logs/scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T183030.log
+canonical/logs/scratch/copilot_patch_integrate_prereboot_hestia_join_graph_v1_20250720T1600.log
+canonical/logs/scratch/debug_join_graph_omega_registry.jsonl
+canonical/logs/scratch/debug_pre_reboot_join_entries.log
+canonical/logs/scratch/enrichment_trace_omega_registry.jsonl
+canonical/logs/scratch/INGESTION_VALIDATION_AND_EXTRACTION_COVERAGE_V1.log
+canonical/logs/scratch/omega_registry_unused_sources.log
+canonical/logs/scratch/PATCH_CANONICAL_REGISTRY_BUILDER_V1.log
+canonical/logs/scratch/PATCH_FIELD_PROPAGATION_AND_CORRECTION_V1.log
+canonical/logs/scratch/PATCH_FIX_EXTRACTION_FOR_IGNORED_REGISTRY_INPUTS_V1.log
+canonical/logs/scratch/PATCH-ANALYTICS-TOOLBOX-FOR-OMEGA-REGISTRY-V1.log
+canonical/logs/scratch/PATCH-CONFLICT-RESOLUTION-AUTHORITY-MODEL-V1.log
+canonical/logs/scratch/PATCH-CONTRACT-REFERENCE-DERIVATION-SCRIPT-V1.log
+canonical/logs/scratch/PATCH-INTEGRATE-PREREBOOT-HESTIA-JOIN-GRAPH-V1.log
+canonical/logs/scratch/PATCH-JOIN-PIPELINE-HESTIA-V1.log
+canonical/logs/scratch/PATCH-LOGGING-STANDARD-V1.log
+canonical/logs/scratch/PATCH-PARSE-LEGACY-HESTIA-PREREBOOT-V1.log
+canonical/logs/scratch/PATCH-SCOPED-DIAGNOSTIC-LOGGING-POLICY-V1.log
+canonical/logs/scratch/PATCH-VARIOUS-LOGIC-MAINTENANCE-V1.log
+canonical/logs/scratch/PROPAGATION_AUDIT_AND_SOURCE_INGEST_COMPLETENESS_V1.log
+canonical/logs/scratch/propagation_audit_trace.jsonl
+canonical/logs/scratch/source_file_ingestion_status.json
+canonical/omega_registry_master.json
+canonical/registry_inputs/core.area_registry
+canonical/registry_inputs/core.category_registry
+canonical/registry_inputs/core.config_entries
+canonical/registry_inputs/core.device_registry
+canonical/registry_inputs/core.entity_registry
+canonical/registry_inputs/core.floor_registry
+canonical/registry_inputs/core.label_registry
+canonical/registry_inputs/core.restore_state
+canonical/registry_inputs/counter
+canonical/registry_inputs/counter.verified.generated.json
+canonical/registry_inputs/homeassistant.exposed_entities
+canonical/registry_inputs/input_boolean
+canonical/registry_inputs/input_datetime
+canonical/registry_inputs/input_datetime.verified.generated.json
+canonical/registry_inputs/input_number.verified.generated.json
+canonical/registry_inputs/input_text.verified.generated.json
+canonical/registry_inputs/person
+canonical/registry_inputs/trace.saved_traces
+canonical/support/contracts/canonical_omega_scaffold.json
+canonical/support/contracts/join_contract.yaml
+canonical/support/contracts/omega_registry_master.output_contract.yaml
+canonical/support/enrichment_sources_manifest.md
+canonical/support/mock/mock_omega_registry_contract.json
+
+# --- Cross-Reference Section ---
+# Files/scripts outside canonical/ that are referenced or relevant to core logic:
+
+scripts/analytics/analyze_omega_registry.py   # Analytics, references canonical registry/logs
+scripts/generate_omega_registry.py            # Main join pipeline, references canonical everywhere
+scripts/utils/input_list_extract.py           # Utility, imported for extraction
+scripts/utils/join_utils.py                   # Utility, imported for join/enrichment logic
+scripts/hestia_pre_reboot_parser.py           # Legacy parsing, references canonical outputs
+scripts/utils/output_contract_enforcer.py     # Output contract enforcement, references logs
+tarball_omega.sh
+settings.conf.yaml                            # Dynamic path config for scripts
+canonical_manifest.txt
+
+# --- Manifest Improvement Template ---
+# To further improve this manifest:
+# 1. Add a brief annotation for each file (e.g., input, output, log, contract, enrichment, etc.)
+# 2. Group files by type or purpose (inputs, enrichments, outputs, logs, contracts, support, etc.)
+# 3. Optionally include last modified timestamps for traceability
+# 4. Document directory semantics at the top (purpose of each major subfolder)
+# 5. Automate manifest generation to keep it up to date

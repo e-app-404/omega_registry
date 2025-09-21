@@ -1,0 +1,92 @@
+[
+  {
+    "cluster_id": "bedroom_occupancy",
+    "post_reboot_entity_id": "sensor.bedroom_occupance_alpha_illumination",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "bedroom_occupancy",
+    "post_reboot_entity_id": "select.bedroom_occupance_alpha_occupancy_sensitivity",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "bedroom_occupancy",
+    "post_reboot_entity_id": "number.bedroom_occupance_alpha_occupancy_timeout",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "kitchen_occupancy",
+    "post_reboot_entity_id": "sensor.kitchen_occupancy_omega_illumination",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "kitchen_occupancy",
+    "post_reboot_entity_id": "select.kitchen_occupancy_omega_occupancy_sensitivity",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "kitchen_occupancy",
+    "post_reboot_entity_id": "number.kitchen_occupancy_omega_occupancy_timeout",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "kitchen_occupancy",
+    "post_reboot_entity_id": "binary_sensor.kitchen_occupancy_omega_occupancy",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "kitchen_occupancy",
+    "post_reboot_entity_id": "binary_sensor.kitchen_occupancy_matter_alpha_occupancy",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "kitchen_motion",
+    "post_reboot_entity_id": "binary_sensor.kitchen_motion_alpha_motion",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "ensuite_occupancy",
+    "post_reboot_entity_id": "sensor.ensuite_occupancy_omega_illumination",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "ensuite_occupancy",
+    "post_reboot_entity_id": "select.ensuite_occupancy_omega_occupancy_sensitivity",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "ensuite_occupancy",
+    "post_reboot_entity_id": "number.ensuite_occupancy_omega_occupancy_timeout",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "ensuite_occupancy",
+    "post_reboot_entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "living_room_occupancy",
+    "post_reboot_entity_id": "binary_sensor.living_room_occupancy_alpha_occupancy",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  },
+  {
+    "cluster_id": "entrance_motion_cloud_connection",
+    "post_reboot_entity_id": "binary_sensor.entrance_door_motion_tplink_alpha_cloud_connection",
+    "source": "cluster_merged",
+    "confidence": 0.97
+  }
+]

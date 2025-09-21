@@ -1,0 +1,1400 @@
+- Enriched entity name from name_registry: sensor.sun_next_dawn -> Next dawn
+- Enriched entity name from name_registry: sensor.sun_next_dusk -> Next dusk
+- Enriched entity name from name_registry: sensor.sun_next_midnight -> Next midnight
+- Enriched entity name from name_registry: sensor.sun_next_noon -> Next noon
+- Enriched entity name from name_registry: sensor.sun_next_rising -> Next rising
+- Enriched entity name from name_registry: sensor.sun_next_setting -> Next setting
+- Enriched entity name from name_registry: sensor.sun_solar_elevation -> Solar elevation
+- Enriched entity name from name_registry: sensor.sun_solar_azimuth -> Solar azimuth
+- Enriched entity name from name_registry: sensor.sun_solar_rising -> Solar rising
+- Enriched entity name from name_registry: update.home_assistant_core_update -> Update
+- Enriched entity name from name_registry: update.home_assistant_supervisor_update -> Update
+- Enriched entity name from original_name: sensor.home_assistant_host_os_agent_version -> OS Agent version
+- Enriched entity name from original_name: sensor.home_assistant_host_apparmor_version -> Apparmor version
+- Enriched entity name from original_name: sensor.home_assistant_host_disk_total -> Disk total
+- Enriched device_class from original_device_class: sensor.home_assistant_host_disk_total -> data_size
+- Enriched entity name from original_name: sensor.home_assistant_host_disk_used -> Disk used
+- Enriched device_class from original_device_class: sensor.home_assistant_host_disk_used -> data_size
+- Enriched entity name from original_name: sensor.home_assistant_host_disk_free -> Disk free
+- Enriched device_class from original_device_class: sensor.home_assistant_host_disk_free -> data_size
+- Enriched entity name from name_registry: update.home_assistant_operating_system_update -> Update
+- Enriched device_class from original_device_class: media_player.joels_bedroom_speaker -> speaker
+- Enriched entity name from name_registry: number.living_room_sonos_soundbar_alpha_audio_delay -> Audio delay
+- Enriched entity name from name_registry: sensor.living_room_sonos_soundbar_alpha_audio_input_format -> Audio input format
+- Enriched entity name from name_registry: number.living_room_sonos_soundbar_alpha_balance -> Balance
+- Enriched entity name from name_registry: number.living_room_sonos_soundbar_alpha_bass -> Bass
+- Enriched entity name from name_registry: switch.living_room_sonos_soundbar_alpha_crossfade -> Crossfade
+- Enriched entity name from name_registry: switch.living_room_sonos_soundbar_alpha_loudness -> Loudness
+- Enriched entity name from name_registry: binary_sensor.living_room_sonos_soundbar_alpha_microphone -> Microphone
+- Enriched entity name from name_registry: number.living_room_sonos_soundbar_alpha_music_surround_level -> Music surround level
+- Enriched entity name from name_registry: switch.living_room_sonos_soundbar_alpha_night_sound -> Night sound
+- Enriched entity name from name_registry: switch.living_room_sonos_soundbar_alpha_speech_enhancement -> Speech enhancement
+- Enriched entity name from name_registry: switch.living_room_sonos_soundbar_alpha_status_light -> Status light
+- Enriched entity name from name_registry: switch.living_room_sonos_soundbar_alpha_surround_enabled -> Surround enabled
+- Enriched entity name from name_registry: number.living_room_sonos_soundbar_alpha_surround_level -> Surround level
+- Enriched entity name from name_registry: switch.living_room_sonos_soundbar_alpha_surround_music_full_volume -> Surround music full volume
+- Enriched entity name from name_registry: switch.living_room_sonos_soundbar_alpha_touch_controls -> Touch controls
+- Enriched entity name from name_registry: number.living_room_sonos_soundbar_alpha_treble -> Treble
+- Enriched entity name from name_registry: switch.sonos_alarm_1 -> Weekdays alarm 11:30
+- Enriched entity name from name_registry: switch.sonos_alarm_8 -> Daily alarm 10:00
+- Enriched entity name from name_registry: switch.sonos_alarm_30 -> Once alarm 10:30
+- Enriched entity name from name_registry: number.bedroom_sonos_surround_balance -> Balance
+- Enriched entity name from name_registry: number.bedroom_sonos_surround_bass -> Bass
+- Enriched entity name from name_registry: switch.bedroom_sonos_surround_crossfade -> Crossfade
+- Enriched entity name from name_registry: switch.bedroom_sonos_surround_loudness -> Loudness
+- Enriched entity name from name_registry: number.bedroom_sonos_surround_treble -> Treble
+- Enriched entity name from name_registry: switch.sonos_alarm_17 -> Daily alarm 10:05
+- Enriched entity name from name_registry: number.bedroom_sonos_ray_audio_delay -> Audio delay
+- Enriched entity name from name_registry: sensor.bedroom_sonos_ray_audio_input_format -> Audio input format
+- Enriched entity name from name_registry: number.bedroom_sonos_ray_balance -> Balance
+- Enriched entity name from name_registry: number.bedroom_sonos_ray_bass -> Bass
+- Enriched entity name from name_registry: switch.bedroom_sonos_ray_crossfade -> Crossfade
+- Enriched entity name from name_registry: switch.bedroom_sonos_ray_loudness -> Loudness
+- Enriched entity name from name_registry: number.bedroom_sonos_ray_music_surround_level -> Music surround level
+- Enriched entity name from name_registry: switch.bedroom_sonos_ray_night_sound -> Night sound
+- Enriched entity name from name_registry: switch.bedroom_sonos_ray_speech_enhancement -> Speech enhancement
+- Enriched entity name from name_registry: switch.bedroom_sonos_ray_surround_enabled -> Surround enabled
+- Enriched entity name from name_registry: number.bedroom_sonos_ray_surround_level -> Surround level
+- Enriched entity name from name_registry: switch.bedroom_sonos_ray_surround_music_full_volume -> Surround music full volume
+- Enriched entity name from name_registry: number.bedroom_sonos_ray_treble -> Treble
+- Enriched entity name from name_registry: sensor.backup_backup_manager_state -> Backup Manager state
+- Enriched entity name from name_registry: sensor.backup_next_scheduled_automatic_backup -> Next scheduled automatic backup
+- Enriched entity name from name_registry: sensor.backup_last_successful_automatic_backup -> Last successful automatic backup
+- Enriched entity name from name_registry: event.backup_automatic_backup -> Automatic backup
+- Enriched entity name from name_registry: sensor.backup_last_attempted_automatic_backup -> Last attempted automatic backup
+- Enriched entity name from name_registry: number.kitchen_sonos_speaker_balance -> Balance
+- Enriched entity name from name_registry: number.kitchen_sonos_speaker_bass -> Bass
+- Enriched entity name from name_registry: switch.kitchen_sonos_speaker_crossfade -> Crossfade
+- Enriched entity name from name_registry: switch.kitchen_sonos_speaker_loudness -> Loudness
+- Enriched entity name from name_registry: number.kitchen_sonos_speaker_treble -> Treble
+- Enriched entity name from name_registry: number.ensuite_sonos_roam_balance -> Balance
+- Enriched entity name from name_registry: number.ensuite_sonos_roam_bass -> Bass
+- Enriched entity name from name_registry: sensor.ensuite_sonos_roam_battery -> Battery
+- Enriched entity name from name_registry: binary_sensor.ensuite_sonos_roam_charging -> Charging
+- Enriched entity name from name_registry: switch.ensuite_sonos_roam_crossfade -> Crossfade
+- Enriched entity name from name_registry: switch.ensuite_sonos_roam_loudness -> Loudness
+- Enriched entity name from name_registry: binary_sensor.ensuite_sonos_roam_microphone -> Microphone
+- Enriched entity name from name_registry: number.ensuite_sonos_roam_treble -> Treble
+- Enriched entity name from name_registry: binary_sensor.matter_server_running -> Running
+- Enriched entity name from name_registry: sensor.matter_server_version -> Version
+- Enriched entity name from name_registry: sensor.matter_server_newest_version -> Newest version
+- Enriched entity name from name_registry: sensor.matter_server_cpu_percent -> CPU percent
+- Enriched entity name from name_registry: sensor.matter_server_memory_percent -> Memory percent
+- Enriched entity name from name_registry: update.matter_server_update -> Update
+- Enriched entity name from name_registry: weather.forecast_home -> Home
+- Enriched entity name from name_registry: sensor.archer_ax53_data_received -> Data received
+- Enriched entity name from name_registry: sensor.archer_ax53_data_sent -> Data sent
+- Enriched entity name from name_registry: sensor.archer_ax53_packets_received -> Packets received
+- Enriched entity name from name_registry: sensor.archer_ax53_packets_sent -> Packets sent
+- Enriched entity name from name_registry: sensor.archer_ax53_uptime -> Uptime
+- Enriched entity name from name_registry: sensor.archer_ax53_wan_status -> WAN status
+- Enriched entity name from name_registry: sensor.archer_ax53_packet_download_speed -> Packet download speed
+- Enriched entity name from name_registry: sensor.archer_ax53_packet_upload_speed -> Packet upload speed
+- Enriched entity name from name_registry: binary_sensor.router_archer_ax53_omega_wan_status -> WAN status
+- Enriched entity name from name_registry: sensor.router_archer_ax53_omega_external_ip -> External IP
+- Enriched entity name from name_registry: sensor.router_archer_ax53_omega_download_speed -> Download speed
+- Enriched entity name from name_registry: sensor.router_archer_ax53_omega_upload_speed -> Upload speed
+- Enriched entity name from name_registry: binary_sensor.upstairs_lightstrip_omega_cloud_connection -> Cloud connection
+- Enriched entity name from name_registry: binary_sensor.upstairs_lightstrip_omega_overheated -> Overheated
+- Enriched entity name from name_registry: select.upstairs_lightstrip_omega_light_preset -> Light preset
+- Enriched entity name from name_registry: sensor.upstairs_lightstrip_omega_signal_level -> Signal level
+- Enriched entity name from name_registry: switch.upstairs_lightstrip_omega_auto_update_enabled -> Auto-update enabled
+- Enriched entity name from name_registry: switch.upstairs_lightstrip_omega_smooth_transitions -> Smooth transitions
+- Enriched entity name from name_registry: binary_sensor.ensuite_lightstrip_omega_cloud_connection -> Cloud connection
+- Enriched entity name from name_registry: binary_sensor.ensuite_lightstrip_omega_overheated -> Overheated
+- Enriched entity name from name_registry: select.ensuite_lightstrip_omega_light_preset -> Light preset
+- Enriched entity name from name_registry: sensor.ensuite_lightstrip_omega_signal_level -> Signal level
+- Enriched entity name from name_registry: sensor.ensuite_lightstrip_omega_device_time -> Device time
+- Enriched entity name from name_registry: switch.ensuite_lightstrip_omega_auto_update_enabled -> Auto-update enabled
+- Enriched entity name from name_registry: switch.ensuite_lightstrip_omega_smooth_transitions -> Smooth transitions
+- Enriched entity name from name_registry: sensor.ensuite_lightstrip_tplink_alpha_signal_strength -> Signal strength
+- Enriched entity name from name_registry: sensor.ensuite_lightstrip_tplink_alpha_ssid -> SSID
+- Enriched entity name from name_registry: button.ensuite_lightstrip_tplink_alpha_restart -> Restart
+- Enriched entity name from original_name: binary_sensor.home_tapo_iot_hub_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.home_tapo_iot_hub_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.home_tapo_iot_hub_omega_overheated -> Overheated
+- Enriched device_class from original_device_class: binary_sensor.home_tapo_iot_hub_omega_overheated -> problem
+- Enriched entity name from original_name: button.home_tapo_iot_hub_omega_restart -> Restart
+- Enriched device_class from original_device_class: button.home_tapo_iot_hub_omega_restart -> restart
+- Enriched entity name from original_name: button.home_tapo_iot_hub_omega_pair_new_device -> Pair new device
+- Enriched entity name from original_name: select.home_tapo_iot_hub_omega_alarm_sound -> Alarm sound
+- Enriched entity name from original_name: select.home_tapo_iot_hub_omega_alarm_volume -> Alarm volume
+- Enriched entity name from original_name: sensor.home_tapo_iot_hub_omega_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.home_tapo_iot_hub_omega_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.home_tapo_iot_hub_omega_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.home_tapo_iot_hub_omega_ssid -> SSID
+- Enriched entity name from original_name: sensor.home_tapo_iot_hub_omega_device_time -> Device time
+- Enriched device_class from original_device_class: sensor.home_tapo_iot_hub_omega_device_time -> timestamp
+- Enriched entity name from original_name: sensor.home_tapo_iot_hub_omega_alarm_source -> Alarm source
+- Enriched entity name from original_name: switch.home_tapo_iot_hub_omega_auto_update_enabled -> Auto-update enabled
+- Enriched entity name from original_name: switch.home_tapo_iot_hub_omega_led -> LED
+- Enriched entity name from original_name: binary_sensor.ensuite_climate_omega_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.ensuite_climate_omega_battery -> battery
+- Enriched entity name from original_name: binary_sensor.ensuite_climate_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.ensuite_climate_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.ensuite_climate_omega_humidity_warning -> Humidity warning
+- Enriched entity name from original_name: binary_sensor.ensuite_climate_omega_temperature_warning -> Temperature warning
+- Enriched entity name from original_name: button.ensuite_climate_omega_restart -> Restart
+- Enriched device_class from original_device_class: button.ensuite_climate_omega_restart -> restart
+- Enriched entity name from original_name: button.ensuite_climate_omega_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.ensuite_climate_omega_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.ensuite_climate_omega_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.ensuite_climate_omega_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.ensuite_climate_omega_humidity -> Humidity
+- Enriched device_class from original_device_class: sensor.ensuite_climate_omega_humidity -> humidity
+- Enriched entity name from original_name: sensor.ensuite_climate_omega_report_interval -> Report interval
+- Enriched device_class from original_device_class: sensor.ensuite_climate_omega_report_interval -> duration
+- Enriched entity name from original_name: sensor.ensuite_climate_omega_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.ensuite_climate_omega_temperature -> temperature
+- Enriched entity name from original_name: binary_sensor.kitchen_fridge_contact_omega_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.kitchen_fridge_contact_omega_battery -> battery
+- Enriched entity name from original_name: binary_sensor.kitchen_fridge_contact_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.kitchen_fridge_contact_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.kitchen_fridge_contact_omega_door -> Door
+- Enriched device_class from original_device_class: binary_sensor.kitchen_fridge_contact_omega_door -> door
+- Enriched entity name from original_name: button.kitchen_fridge_contact_omega_restart -> Restart
+- Enriched device_class from original_device_class: button.kitchen_fridge_contact_omega_restart -> restart
+- Enriched entity name from original_name: button.kitchen_fridge_contact_omega_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.kitchen_fridge_contact_omega_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.kitchen_fridge_contact_omega_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.kitchen_fridge_contact_omega_signal_strength -> signal_strength
+- Enriched entity name from name_registry: binary_sensor.upstairs_skylight_contact_tplink_alpha_battery -> Battery
+- Enriched entity name from name_registry: binary_sensor.upstairs_skylight_contact_tplink_alpha_cloud_connection -> Cloud connection
+- Enriched entity name from name_registry: button.upstairs_skylight_contact_tplink_alpha_restart -> Restart
+- Enriched entity name from name_registry: sensor.upstairs_skylight_contact_tplink_alpha_signal_level -> Signal level
+- Enriched entity name from name_registry: sensor.upstairs_skylight_contact_tplink_alpha_signal_strength -> Signal strength
+- Enriched entity name from name_registry: button.upstairs_skylight_contact_tplink_alpha_unpair_device -> Unpair device
+- Enriched entity name from name_registry: binary_sensor.upstairs_skylight_contact_tplink_alpha_window -> Door
+- Enriched entity name from original_name: binary_sensor.ensuite_smart_button_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.ensuite_smart_button_battery -> battery
+- Enriched entity name from original_name: binary_sensor.ensuite_smart_button_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.ensuite_smart_button_cloud_connection -> connectivity
+- Enriched entity name from original_name: button.ensuite_smart_button_restart -> Restart
+- Enriched device_class from original_device_class: button.ensuite_smart_button_restart -> restart
+- Enriched entity name from original_name: button.ensuite_smart_button_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.ensuite_smart_button_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.ensuite_smart_button_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.ensuite_smart_button_signal_strength -> signal_strength
+- Enriched entity name from original_name: binary_sensor.hallway_smart_button_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.hallway_smart_button_battery -> battery
+- Enriched entity name from original_name: binary_sensor.hallway_smart_button_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.hallway_smart_button_cloud_connection -> connectivity
+- Enriched entity name from original_name: button.hallway_smart_button_restart -> Restart
+- Enriched device_class from original_device_class: button.hallway_smart_button_restart -> restart
+- Enriched entity name from original_name: button.hallway_smart_button_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.hallway_smart_button_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.hallway_smart_button_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.hallway_smart_button_signal_strength -> signal_strength
+- Enriched entity name from name_registry: binary_sensor.entrance_door_motion_tplink_alpha_battery -> Battery
+- Enriched entity name from name_registry: binary_sensor.entrance_door_motion_tplink_alpha_cloud_connection -> Cloud connection
+- Enriched entity name from name_registry: binary_sensor.entrance_door_motion_tplink_alpha_motion -> Motion
+- Enriched entity name from name_registry: button.entrance_door_motion_tplink_alpha_restart -> Restart
+- Enriched entity name from name_registry: sensor.entrance_door_motion_tplink_alpha_signal_level -> Signal level
+- Enriched entity name from name_registry: sensor.entrance_door_motion_tplink_alpha_signal_strength -> Signal strength
+- Enriched entity name from name_registry: button.entrance_door_motion_tplink_alpha_unpair_device -> Unpair device
+- Enriched entity name from original_name: binary_sensor.upstairs_presence_omega_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.upstairs_presence_omega_battery -> battery
+- Enriched entity name from original_name: binary_sensor.upstairs_presence_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.upstairs_presence_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.upstairs_presence_omega_motion -> Motion
+- Enriched device_class from original_device_class: binary_sensor.upstairs_presence_omega_motion -> motion
+- Enriched entity name from original_name: button.upstairs_presence_omega_restart -> Restart
+- Enriched device_class from original_device_class: button.upstairs_presence_omega_restart -> restart
+- Enriched entity name from original_name: button.upstairs_presence_omega_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.upstairs_presence_omega_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.upstairs_presence_omega_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.upstairs_presence_omega_signal_strength -> signal_strength
+- Enriched entity name from original_name: binary_sensor.downstairs_presence_omega_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.downstairs_presence_omega_battery -> battery
+- Enriched entity name from original_name: binary_sensor.downstairs_presence_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.downstairs_presence_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.downstairs_presence_omega_motion -> Motion
+- Enriched device_class from original_device_class: binary_sensor.downstairs_presence_omega_motion -> motion
+- Enriched entity name from original_name: button.downstairs_presence_omega_restart -> Restart
+- Enriched device_class from original_device_class: button.downstairs_presence_omega_restart -> restart
+- Enriched entity name from original_name: button.downstairs_presence_omega_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.downstairs_presence_omega_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.downstairs_presence_omega_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.downstairs_presence_omega_signal_strength -> signal_strength
+- Enriched entity name from original_name: binary_sensor.wall_panel_right_switch_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.wall_panel_right_switch_battery -> battery
+- Enriched entity name from original_name: binary_sensor.wall_panel_right_switch_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.wall_panel_right_switch_cloud_connection -> connectivity
+- Enriched entity name from original_name: button.wall_panel_right_switch_restart -> Restart
+- Enriched device_class from original_device_class: button.wall_panel_right_switch_restart -> restart
+- Enriched entity name from original_name: button.wall_panel_right_switch_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.wall_panel_right_switch_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.wall_panel_right_switch_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.wall_panel_right_switch_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.wall_panel_right_switch_battery -> Battery
+- Enriched device_class from original_device_class: sensor.wall_panel_right_switch_battery -> battery
+- Enriched entity name from original_name: switch.wall_panel_right_switch_wall_panel_right_switch -> Wall Panel Right Switch
+- Enriched entity name from original_name: binary_sensor.wall_panel_left_switch_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.wall_panel_left_switch_battery -> battery
+- Enriched entity name from original_name: binary_sensor.wall_panel_left_switch_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.wall_panel_left_switch_cloud_connection -> connectivity
+- Enriched entity name from original_name: button.wall_panel_left_switch_restart -> Restart
+- Enriched device_class from original_device_class: button.wall_panel_left_switch_restart -> restart
+- Enriched entity name from original_name: button.wall_panel_left_switch_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.wall_panel_left_switch_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.wall_panel_left_switch_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.wall_panel_left_switch_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.wall_panel_left_switch_battery -> Battery
+- Enriched device_class from original_device_class: sensor.wall_panel_left_switch_battery -> battery
+- Enriched entity name from original_name: switch.wall_panel_left_switch_wall_panel_left_switch -> Wall Panel Left Switch
+- Enriched entity name from original_name: binary_sensor.kitchen_presence_omega_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.kitchen_presence_omega_battery -> battery
+- Enriched entity name from original_name: binary_sensor.kitchen_presence_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.kitchen_presence_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.kitchen_presence_omega_motion -> Motion
+- Enriched device_class from original_device_class: binary_sensor.kitchen_presence_omega_motion -> motion
+- Enriched entity name from original_name: button.kitchen_presence_omega_restart -> Restart
+- Enriched device_class from original_device_class: button.kitchen_presence_omega_restart -> restart
+- Enriched entity name from original_name: button.kitchen_presence_omega_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.kitchen_presence_omega_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.kitchen_presence_omega_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.kitchen_presence_omega_signal_strength -> signal_strength
+- Enriched entity name from original_name: binary_sensor.desk_smart_button_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.desk_smart_button_battery -> battery
+- Enriched entity name from original_name: binary_sensor.desk_smart_button_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.desk_smart_button_cloud_connection -> connectivity
+- Enriched entity name from original_name: button.desk_smart_button_restart -> Restart
+- Enriched device_class from original_device_class: button.desk_smart_button_restart -> restart
+- Enriched entity name from original_name: button.desk_smart_button_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.desk_smart_button_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.desk_smart_button_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.desk_smart_button_signal_strength -> signal_strength
+- Enriched entity name from original_name: binary_sensor.kitchen_sink_button_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.kitchen_sink_button_battery -> battery
+- Enriched entity name from original_name: binary_sensor.kitchen_sink_button_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.kitchen_sink_button_cloud_connection -> connectivity
+- Enriched entity name from original_name: button.kitchen_sink_button_restart -> Restart
+- Enriched device_class from original_device_class: button.kitchen_sink_button_restart -> restart
+- Enriched entity name from original_name: button.kitchen_sink_button_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.kitchen_sink_button_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.kitchen_sink_button_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.kitchen_sink_button_signal_strength -> signal_strength
+- Enriched entity name from original_name: button.bedroom_wardrobe_motion_alpha_restart -> Restart
+- Enriched device_class from original_device_class: button.bedroom_wardrobe_motion_alpha_restart -> restart
+- Enriched entity name from original_name: button.bedroom_wardrobe_motion_alpha_unpair_device -> Unpair device
+- Enriched entity name from original_name: binary_sensor.bedroom_wardrobe_motion_tplink_alpha_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.bedroom_wardrobe_motion_tplink_alpha_cloud_connection -> connectivity
+- Enriched entity name from original_name: sensor.bedroom_wardrobe_motion_tplink_alpha_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.bedroom_wardrobe_motion_tplink_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.bedroom_wardrobe_motion_tplink_alpha_signal_strength -> signal_strength
+- Enriched entity name from original_name: binary_sensor.bedroom_wardrobe_motion_tplink_alpha_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.bedroom_wardrobe_motion_tplink_alpha_battery -> battery
+- Enriched entity name from original_name: binary_sensor.bedroom_wardrobe_motion_tplink_alpha -> Motion
+- Enriched device_class from original_device_class: binary_sensor.bedroom_wardrobe_motion_tplink_alpha -> motion
+- Enriched entity name from original_name: binary_sensor.entrance_door_contact_omega_battery -> Battery
+- Enriched device_class from original_device_class: binary_sensor.entrance_door_contact_omega_battery -> battery
+- Enriched entity name from original_name: binary_sensor.entrance_door_contact_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.entrance_door_contact_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: button.entrance_door_contact_omega_restart -> Restart
+- Enriched device_class from original_device_class: button.entrance_door_contact_omega_restart -> restart
+- Enriched entity name from original_name: button.entrance_door_contact_omega_unpair_device -> Unpair device
+- Enriched entity name from original_name: sensor.entrance_door_contact_omega_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.entrance_door_contact_omega_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.entrance_door_contact_omega_signal_strength -> signal_strength
+- Enriched entity name from original_name: binary_sensor.entrance_door_alpha_contact -> Door
+- Enriched device_class from original_device_class: binary_sensor.entrance_door_alpha_contact -> door
+- Enriched entity name from original_name: binary_sensor.living_room_stringlights_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.living_room_stringlights_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.living_room_stringlights_omega_overloaded -> Overloaded
+- Enriched device_class from original_device_class: binary_sensor.living_room_stringlights_omega_overloaded -> problem
+- Enriched entity name from original_name: button.living_room_stringlights_omega_restart -> Restart
+- Enriched device_class from original_device_class: button.living_room_stringlights_omega_restart -> restart
+- Enriched entity name from original_name: number.living_room_stringlights_omega_turn_off_in -> Turn off in
+- Enriched entity name from original_name: number.living_room_stringlights_omega_power_protection -> Power protection
+- Enriched entity name from original_name: sensor.living_room_stringlights_omega_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.living_room_stringlights_omega_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.living_room_stringlights_omega_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.living_room_stringlights_omega_ssid -> SSID
+- Enriched entity name from original_name: sensor.living_room_stringlights_omega_on_since -> On since
+- Enriched device_class from original_device_class: sensor.living_room_stringlights_omega_on_since -> timestamp
+- Enriched entity name from original_name: sensor.living_room_stringlights_omega_device_time -> Device time
+- Enriched device_class from original_device_class: sensor.living_room_stringlights_omega_device_time -> timestamp
+- Enriched entity name from original_name: sensor.living_room_stringlights_omega_auto_off_at -> Auto-off at
+- Enriched device_class from original_device_class: sensor.living_room_stringlights_omega_auto_off_at -> timestamp
+- Enriched entity name from original_name: sensor.living_room_stringlights_omega_current_consumption -> Current consumption
+- Enriched device_class from original_device_class: sensor.living_room_stringlights_omega_current_consumption -> power
+- Enriched entity name from original_name: sensor.living_room_stringlights_omega_today_s_consumption -> Today's consumption
+- Enriched device_class from original_device_class: sensor.living_room_stringlights_omega_today_s_consumption -> energy
+- Enriched entity name from original_name: sensor.living_room_stringlights_omega_this_month_s_consumption -> This month's consumption
+- Enriched device_class from original_device_class: sensor.living_room_stringlights_omega_this_month_s_consumption -> energy
+- Enriched entity name from original_name: sensor.living_room_stringlights_omega_voltage -> Voltage
+- Enriched device_class from original_device_class: sensor.living_room_stringlights_omega_voltage -> voltage
+- Enriched entity name from original_name: sensor.living_room_stringlights_omega_current -> Current
+- Enriched device_class from original_device_class: sensor.living_room_stringlights_omega_current -> current
+- Enriched entity name from original_name: switch.living_room_stringlights_omega_auto_off_enabled -> Auto-off enabled
+- Enriched entity name from original_name: switch.living_room_stringlights_omega_auto_update_enabled -> Auto-update enabled
+- Enriched entity name from original_name: switch.living_room_stringlights_omega_led -> LED
+- Enriched entity name from original_name: binary_sensor.downstairs_lightstrip_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.downstairs_lightstrip_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.downstairs_lightstrip_omega_overheated -> Overheated
+- Enriched device_class from original_device_class: binary_sensor.downstairs_lightstrip_omega_overheated -> problem
+- Enriched entity name from original_name: button.downstairs_lightstrip_omega_restart -> Restart
+- Enriched device_class from original_device_class: button.downstairs_lightstrip_omega_restart -> restart
+- Enriched entity name from original_name: select.downstairs_lightstrip_omega_light_preset -> Light preset
+- Enriched entity name from original_name: sensor.downstairs_lightstrip_omega_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.downstairs_lightstrip_omega_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.downstairs_lightstrip_omega_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.downstairs_lightstrip_omega_ssid -> SSID
+- Enriched entity name from original_name: sensor.downstairs_lightstrip_omega_device_time -> Device time
+- Enriched device_class from original_device_class: sensor.downstairs_lightstrip_omega_device_time -> timestamp
+- Enriched entity name from original_name: switch.downstairs_lightstrip_omega_auto_update_enabled -> Auto-update enabled
+- Enriched entity name from original_name: switch.downstairs_lightstrip_omega_smooth_transitions -> Smooth transitions
+- Enriched entity name from original_name: binary_sensor.hallway_lightstrip_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.hallway_lightstrip_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.hallway_lightstrip_omega_overheated -> Overheated
+- Enriched device_class from original_device_class: binary_sensor.hallway_lightstrip_omega_overheated -> problem
+- Enriched entity name from original_name: button.hallway_lightstrip_omega_restart -> Restart
+- Enriched device_class from original_device_class: button.hallway_lightstrip_omega_restart -> restart
+- Enriched entity name from original_name: select.hallway_lightstrip_omega_light_preset -> Light preset
+- Enriched entity name from original_name: sensor.hallway_lightstrip_omega_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.hallway_lightstrip_omega_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.hallway_lightstrip_omega_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.hallway_lightstrip_omega_ssid -> SSID
+- Enriched entity name from original_name: sensor.hallway_lightstrip_omega_device_time -> Device time
+- Enriched device_class from original_device_class: sensor.hallway_lightstrip_omega_device_time -> timestamp
+- Enriched entity name from original_name: switch.hallway_lightstrip_omega_auto_update_enabled -> Auto-update enabled
+- Enriched entity name from original_name: switch.hallway_lightstrip_omega_smooth_transitions -> Smooth transitions
+- Enriched entity name from original_name: binary_sensor.ensuite_fan_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.ensuite_fan_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.ensuite_fan_overheated -> Overheated
+- Enriched device_class from original_device_class: binary_sensor.ensuite_fan_overheated -> problem
+- Enriched entity name from original_name: button.ensuite_fan_restart -> Restart
+- Enriched device_class from original_device_class: button.ensuite_fan_restart -> restart
+- Enriched entity name from original_name: number.ensuite_fan_turn_off_in -> Turn off in
+- Enriched entity name from original_name: sensor.ensuite_fan_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.ensuite_fan_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.ensuite_fan_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.ensuite_fan_ssid -> SSID
+- Enriched entity name from original_name: sensor.ensuite_fan_on_since -> On since
+- Enriched device_class from original_device_class: sensor.ensuite_fan_on_since -> timestamp
+- Enriched entity name from original_name: sensor.ensuite_fan_device_time -> Device time
+- Enriched device_class from original_device_class: sensor.ensuite_fan_device_time -> timestamp
+- Enriched entity name from original_name: sensor.ensuite_fan_auto_off_at -> Auto-off at
+- Enriched device_class from original_device_class: sensor.ensuite_fan_auto_off_at -> timestamp
+- Enriched entity name from original_name: switch.ensuite_fan_auto_off_enabled -> Auto-off enabled
+- Enriched entity name from original_name: switch.ensuite_fan_auto_update_enabled -> Auto-update enabled
+- Enriched entity name from original_name: switch.ensuite_fan_led -> LED
+- Enriched entity name from original_name: binary_sensor.kitchen_lightstrip_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.kitchen_lightstrip_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.kitchen_lightstrip_omega_overloaded -> Overloaded
+- Enriched device_class from original_device_class: binary_sensor.kitchen_lightstrip_omega_overloaded -> problem
+- Enriched entity name from original_name: button.kitchen_lightstrip_omega_restart -> Restart
+- Enriched device_class from original_device_class: button.kitchen_lightstrip_omega_restart -> restart
+- Enriched entity name from original_name: number.kitchen_lightstrip_omega_turn_off_in -> Turn off in
+- Enriched entity name from original_name: number.kitchen_lightstrip_omega_power_protection -> Power protection
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_omega_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_omega_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.kitchen_lightstrip_omega_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_omega_ssid -> SSID
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_omega_on_since -> On since
+- Enriched device_class from original_device_class: sensor.kitchen_lightstrip_omega_on_since -> timestamp
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_omega_device_time -> Device time
+- Enriched device_class from original_device_class: sensor.kitchen_lightstrip_omega_device_time -> timestamp
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_omega_auto_off_at -> Auto-off at
+- Enriched device_class from original_device_class: sensor.kitchen_lightstrip_omega_auto_off_at -> timestamp
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_omega_current_consumption -> Current consumption
+- Enriched device_class from original_device_class: sensor.kitchen_lightstrip_omega_current_consumption -> power
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_omega_today_s_consumption -> Today's consumption
+- Enriched device_class from original_device_class: sensor.kitchen_lightstrip_omega_today_s_consumption -> energy
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_omega_this_month_s_consumption -> This month's consumption
+- Enriched device_class from original_device_class: sensor.kitchen_lightstrip_omega_this_month_s_consumption -> energy
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_omega_voltage -> Voltage
+- Enriched device_class from original_device_class: sensor.kitchen_lightstrip_omega_voltage -> voltage
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_omega_current -> Current
+- Enriched device_class from original_device_class: sensor.kitchen_lightstrip_omega_current -> current
+- Enriched entity name from original_name: switch.kitchen_lightstrip_omega_auto_off_enabled -> Auto-off enabled
+- Enriched entity name from original_name: switch.kitchen_lightstrip_omega_auto_update_enabled -> Auto-update enabled
+- Enriched entity name from original_name: switch.kitchen_lightstrip_omega_led -> LED
+- Enriched entity name from original_name: button.tp_link_power_strip_efa1_restart -> Restart
+- Enriched device_class from original_device_class: button.tp_link_power_strip_efa1_restart -> restart
+- Enriched entity name from original_name: sensor.tp_link_power_strip_efa1_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.tp_link_power_strip_efa1_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.tp_link_power_strip_efa1_on_since -> On since
+- Enriched device_class from original_device_class: sensor.tp_link_power_strip_efa1_on_since -> timestamp
+- Enriched entity name from original_name: binary_sensor.bedroom_tplink_powerstrip_omega_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.bedroom_tplink_powerstrip_omega_cloud_connection -> connectivity
+- Enriched entity name from original_name: switch.bedroom_tplink_powerstrip_omega_led -> LED
+- Enriched entity name from original_name: switch.bedroom_tplink_powerstrip_omega_bedroom_fan -> Bedroom Fan
+- Enriched entity name from original_name: switch.bedroom_tplink_powerstrip_omega_plug_2 -> Plug 2
+- Enriched entity name from original_name: switch.bedroom_tplink_powerstrip_omega_plug_3 -> Plug 3
+- Enriched entity name from original_name: fan.bedroom_tplink_powerstrip_alpha_fan -> Bedroom Fan
+- Enriched entity name from original_name: sensor.tp_link_power_strip_efa1_bedroom_fan_on_since -> On since
+- Enriched device_class from original_device_class: sensor.tp_link_power_strip_efa1_bedroom_fan_on_since -> timestamp
+- Enriched entity name from original_name: sensor.tp_link_power_strip_efa1_plug_2_on_since -> On since
+- Enriched device_class from original_device_class: sensor.tp_link_power_strip_efa1_plug_2_on_since -> timestamp
+- Enriched entity name from original_name: sensor.tp_link_power_strip_efa1_plug_3_on_since -> On since
+- Enriched device_class from original_device_class: sensor.tp_link_power_strip_efa1_plug_3_on_since -> timestamp
+- Enriched entity name from original_name: binary_sensor.desk_monitor_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.desk_monitor_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.desk_monitor_overheated -> Overheated
+- Enriched device_class from original_device_class: binary_sensor.desk_monitor_overheated -> problem
+- Enriched entity name from original_name: number.desk_monitor_turn_off_in -> Turn off in
+- Enriched entity name from original_name: sensor.desk_monitor_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.desk_monitor_auto_off_at -> Auto-off at
+- Enriched device_class from original_device_class: sensor.desk_monitor_auto_off_at -> timestamp
+- Enriched entity name from original_name: switch.desk_monitor_auto_off_enabled -> Auto-off enabled
+- Enriched entity name from original_name: switch.desk_monitor_auto_update_enabled -> Auto-update enabled
+- Enriched entity name from original_name: switch.desk_monitor_led -> LED
+- Enriched entity name from original_name: sensor.desk_monitor_device_time -> Device time
+- Enriched device_class from original_device_class: sensor.desk_monitor_device_time -> timestamp
+- Enriched entity name from original_name: button.desk_monitor_restart -> Restart
+- Enriched device_class from original_device_class: button.desk_monitor_restart -> restart
+- Enriched entity name from original_name: sensor.desk_monitor_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.desk_monitor_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.desk_monitor_ssid -> SSID
+- Enriched entity name from original_name: sensor.desk_monitor_on_since -> On since
+- Enriched device_class from original_device_class: sensor.desk_monitor_on_since -> timestamp
+- Enriched entity name from original_name: select.bedroom_dehumidifier_probreeze_countdown -> Countdown
+- Enriched entity name from original_name: sensor.bedroom_dehumidifier_probreeze_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.bedroom_dehumidifier_probreeze_temperature -> temperature
+- Enriched entity name from original_name: sensor.bedroom_dehumidifier_probreeze_humidity -> Humidity
+- Enriched device_class from original_device_class: sensor.bedroom_dehumidifier_probreeze_humidity -> humidity
+- Enriched entity name from original_name: switch.bedroom_dehumidifier_probreeze_ionizer -> Ionizer
+- Enriched entity name from original_name: switch.bedroom_dehumidifier_probreeze_child_lock -> Child lock
+- Enriched entity name from original_name: switch.bedroom_dehumidifier_probreeze_filter_reset -> Filter reset
+- Enriched device_class from original_device_class: humidifier.bedroom_dehumidifier_probreeze -> dehumidifier
+- Enriched entity name from name_registry: update.mosquitto_broker_update -> Update
+- Enriched entity name from original_name: binary_sensor.mariadb_running -> Running
+- Enriched device_class from original_device_class: binary_sensor.mariadb_running -> running
+- Enriched entity name from original_name: sensor.mariadb_version -> Version
+- Enriched entity name from original_name: sensor.mariadb_newest_version -> Newest version
+- Enriched entity name from original_name: sensor.mariadb_cpu_percent -> CPU percent
+- Enriched entity name from original_name: sensor.mariadb_memory_percent -> Memory percent
+- Enriched entity name from original_name: update.mariadb_update -> Update
+- Enriched entity name from original_name: binary_sensor.samba_share_running -> Running
+- Enriched device_class from original_device_class: binary_sensor.samba_share_running -> running
+- Enriched entity name from original_name: sensor.samba_share_version -> Version
+- Enriched entity name from original_name: sensor.samba_share_newest_version -> Newest version
+- Enriched entity name from original_name: sensor.samba_share_cpu_percent -> CPU percent
+- Enriched entity name from original_name: sensor.samba_share_memory_percent -> Memory percent
+- Enriched entity name from original_name: update.samba_share_update -> Update
+- Enriched entity name from original_name: binary_sensor.advanced_ssh_web_terminal_running -> Running
+- Enriched device_class from original_device_class: binary_sensor.advanced_ssh_web_terminal_running -> running
+- Enriched entity name from original_name: sensor.advanced_ssh_web_terminal_version -> Version
+- Enriched entity name from original_name: sensor.advanced_ssh_web_terminal_newest_version -> Newest version
+- Enriched entity name from original_name: sensor.advanced_ssh_web_terminal_cpu_percent -> CPU percent
+- Enriched entity name from original_name: sensor.advanced_ssh_web_terminal_memory_percent -> Memory percent
+- Enriched entity name from original_name: update.advanced_ssh_web_terminal_update -> Update
+- Enriched entity name from original_name: binary_sensor.influxdb_running -> Running
+- Enriched device_class from original_device_class: binary_sensor.influxdb_running -> running
+- Enriched entity name from original_name: sensor.influxdb_version -> Version
+- Enriched entity name from original_name: sensor.influxdb_newest_version -> Newest version
+- Enriched entity name from original_name: sensor.influxdb_cpu_percent -> CPU percent
+- Enriched entity name from original_name: sensor.influxdb_memory_percent -> Memory percent
+- Enriched entity name from original_name: update.influxdb_update -> Update
+- Enriched entity name from name_registry: update.node_red_update -> Update
+- Enriched entity name from original_name: binary_sensor.glances_running -> Running
+- Enriched device_class from original_device_class: binary_sensor.glances_running -> running
+- Enriched entity name from original_name: sensor.glances_version -> Version
+- Enriched entity name from original_name: sensor.glances_newest_version -> Newest version
+- Enriched entity name from original_name: sensor.glances_cpu_percent -> CPU percent
+- Enriched entity name from original_name: sensor.glances_memory_percent -> Memory percent
+- Enriched entity name from original_name: update.glances_update -> Update
+- Enriched entity name from original_name: device_tracker.macbook -> macbook
+- Enriched entity name from original_name: sensor.macbook_storage -> macbook Storage
+- Enriched entity name from original_name: sensor.macbook_bssid -> macbook BSSID
+- Enriched entity name from original_name: sensor.macbook_internal_battery_state -> macbook Internal Battery State
+- Enriched entity name from original_name: binary_sensor.macbook_focus -> macbook Focus
+- Enriched entity name from original_name: sensor.macbook_app_version -> macbook App Version
+- Enriched entity name from original_name: sensor.macbook_primary_display_id -> macbook Primary Display ID
+- Enriched entity name from original_name: sensor.macbook_active_camera -> macbook Active Camera
+- Enriched entity name from original_name: sensor.macbook_active_audio_input -> macbook Active Audio Input
+- Enriched entity name from original_name: binary_sensor.macbook_active -> macbook Active
+- Enriched entity name from original_name: sensor.macbook_connection_type -> macbook Connection Type
+- Enriched entity name from original_name: binary_sensor.macbook_audio_input_in_use -> macbook Audio Input In Use
+- Enriched entity name from original_name: sensor.macbook_internal_battery_level -> macbook Internal Battery Level
+- Enriched entity name from original_name: binary_sensor.macbook_audio_output_in_use -> macbook Audio Output In Use
+- Enriched entity name from original_name: sensor.macbook_geocoded_location -> macbook Geocoded Location
+- Enriched entity name from original_name: sensor.macbook_location_permission -> macbook Location permission
+- Enriched entity name from original_name: sensor.macbook_frontmost_app -> macbook Frontmost App
+- Enriched entity name from original_name: sensor.macbook_audio_output -> macbook Audio Output
+- Enriched entity name from original_name: binary_sensor.macbook_camera_in_use -> macbook Camera In Use
+- Enriched entity name from original_name: sensor.macbook_ssid -> macbook SSID
+- Enriched entity name from original_name: sensor.macbook_primary_display_name -> macbook Primary Display Name
+- Enriched entity name from original_name: sensor.macbook_displays -> macbook Displays
+- Enriched entity name from original_name: sensor.macbook_last_update_trigger -> macbook Last Update Trigger
+- Enriched entity name from original_name: sensor.macbook_active_audio_output -> macbook Active Audio Output
+- Enriched entity name from name_registry: sensor.iphone11_battery -> Battery
+- Enriched entity name from original_name: sensor.iphone14_battery -> Battery
+- Enriched device_class from original_device_class: sensor.iphone14_battery -> battery
+- Enriched entity name from original_name: sensor.apple_watch_battery -> Battery
+- Enriched device_class from original_device_class: sensor.apple_watch_battery -> battery
+- Enriched entity name from original_name: sensor.ha_addon_ha_addon_tailscale_alpha_cpu_percent -> CPU percent
+- Enriched entity name from original_name: sensor.ha_addon_tailscale_alpha_memory_percent -> Memory percent
+- Enriched entity name from original_name: sensor.ha_addon_tailscale_alpha_newest_version -> Newest version
+- Enriched entity name from original_name: binary_sensor.ha_addon_tailscale_alpha_running -> Running
+- Enriched device_class from original_device_class: binary_sensor.ha_addon_tailscale_alpha_running -> running
+- Enriched entity name from original_name: update.ha_addon_tailscale_alpha_update -> Update
+- Enriched entity name from original_name: sensor.ha_addon_tailscale_alpha_version -> Version
+- Enriched entity name from original_name: binary_sensor.zigbee2mqtt_running -> Running
+- Enriched device_class from original_device_class: binary_sensor.zigbee2mqtt_running -> running
+- Enriched entity name from original_name: sensor.zigbee2mqtt_version -> Version
+- Enriched entity name from original_name: sensor.zigbee2mqtt_newest_version -> Newest version
+- Enriched entity name from original_name: sensor.zigbee2mqtt_cpu_percent -> CPU percent
+- Enriched entity name from original_name: sensor.zigbee2mqtt_memory_percent -> Memory percent
+- Enriched entity name from original_name: update.zigbee2mqtt_update -> Update
+- Enriched entity name from original_name: binary_sensor.govee_to_mqtt_bridge_running -> Running
+- Enriched device_class from original_device_class: binary_sensor.govee_to_mqtt_bridge_running -> running
+- Enriched entity name from original_name: sensor.govee_to_mqtt_bridge_version -> Version
+- Enriched entity name from original_name: sensor.govee_to_mqtt_bridge_newest_version -> Newest version
+- Enriched entity name from original_name: sensor.govee_to_mqtt_bridge_cpu_percent -> CPU percent
+- Enriched entity name from original_name: sensor.govee_to_mqtt_bridge_memory_percent -> Memory percent
+- Enriched entity name from original_name: update.govee_to_mqtt_bridge_update -> Update
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_battery_level -> Battery level
+- Enriched device_class from original_device_class: sensor.valetudo_valetudo_roborocks5_vacuum_battery_level -> battery
+- Enriched entity name from original_name: switch.valetudo_valetudo_roborocks5_vacuum_carpet_mode -> Carpet Mode
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_current_statistics_area -> Current Statistics Area
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_current_statistics_time -> Current Statistics Time
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_error -> Error
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_events -> Events
+- Enriched entity name from original_name: select.valetudo_valetudo_roborocks5_vacuum_fan -> Fan
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_main_brush -> Main Brush
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_main_filter -> Main Filter
+- Enriched entity name from original_name: camera.valetudo_valetudo_roborocks5_vacuum_map_data -> Map data
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_map_segments -> Map segments
+- Enriched entity name from original_name: button.valetudo_valetudo_roborocks5_vacuum_play_locate_sound -> Play locate sound
+- Enriched entity name from original_name: button.valetudo_valetudo_roborocks5_vacuum_reset_main_brush_consumable -> Reset Main Brush Consumable
+- Enriched entity name from original_name: button.valetudo_valetudo_roborocks5_vacuum_reset_main_filter_consumable -> Reset Main Filter Consumable
+- Enriched entity name from original_name: button.valetudo_valetudo_roborocks5_vacuum_reset_right_brush_consumable -> Reset Right Brush Consumable
+- Enriched entity name from original_name: button.valetudo_valetudo_roborocks5_vacuum_reset_sensor_cleaning_consumable -> Reset Sensor Cleaning Consumable
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_right_brush -> Right Brush
+- Enriched entity name from original_name: vacuum.valetudo_valetudo_roborocks5_vacuum -> Robot
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_sensor_cleaning -> Sensor Cleaning
+- Enriched entity name from original_name: number.valetudo_valetudo_roborocks5_vacuum_speaker_volume -> Speaker volume
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_status_flag -> Status Flag
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_total_statistics_area -> Total Statistics Area
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_total_statistics_count -> Total Statistics Count
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_total_statistics_time -> Total Statistics Time
+- Enriched entity name from original_name: sensor.valetudo_valetudo_roborocks5_vacuum_wi_fi_configuration -> Wi-Fi configuration
+- Enriched device_class from original_device_class: sensor.valetudo_valetudo_roborocks5_vacuum_wi_fi_configuration -> signal_strength
+- Enriched entity name from original_name: sensor.withings_hydration -> Hydration
+- Enriched device_class from original_device_class: sensor.withings_hydration -> weight
+- Enriched entity name from original_name: sensor.withings_breathing_disturbances_intensity -> Breathing disturbances intensity
+- Enriched entity name from original_name: sensor.withings_time_to_sleep -> Time to sleep
+- Enriched device_class from original_device_class: sensor.withings_time_to_sleep -> duration
+- Enriched entity name from original_name: sensor.withings_time_to_wakeup -> Time to wakeup
+- Enriched device_class from original_device_class: sensor.withings_time_to_wakeup -> duration
+- Enriched entity name from original_name: sensor.withings_average_heart_rate -> Average heart rate
+- Enriched entity name from original_name: sensor.withings_maximum_heart_rate -> Maximum heart rate
+- Enriched entity name from original_name: sensor.withings_minimum_heart_rate -> Minimum heart rate
+- Enriched entity name from original_name: sensor.withings_light_sleep -> Light sleep
+- Enriched device_class from original_device_class: sensor.withings_light_sleep -> duration
+- Enriched entity name from original_name: sensor.withings_rem_sleep -> REM sleep
+- Enriched device_class from original_device_class: sensor.withings_rem_sleep -> duration
+- Enriched entity name from original_name: sensor.withings_average_respiratory_rate -> Average respiratory rate
+- Enriched entity name from original_name: sensor.withings_maximum_respiratory_rate -> Maximum respiratory rate
+- Enriched entity name from original_name: sensor.withings_minimum_respiratory_rate -> Minimum respiratory rate
+- Enriched entity name from original_name: sensor.withings_sleep_score -> Sleep score
+- Enriched entity name from original_name: sensor.withings_snoring -> Snoring
+- Enriched device_class from original_device_class: sensor.withings_snoring -> duration
+- Enriched entity name from original_name: sensor.withings_snoring_episode_count -> Snoring episode count
+- Enriched entity name from original_name: sensor.withings_wakeup_count -> Wakeup count
+- Enriched entity name from original_name: sensor.withings_wakeup_time -> Wakeup time
+- Enriched device_class from original_device_class: sensor.withings_wakeup_time -> duration
+- Enriched entity name from original_name: calendar.evert_health_biometrics_workouts -> Workouts
+- Enriched entity name from original_name: sensor.evert_health_biometrics_fat_mass -> Fat mass
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_fat_mass -> weight
+- Enriched entity name from original_name: sensor.evert_health_biometrics_muscle_mass -> Muscle mass
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_muscle_mass -> weight
+- Enriched entity name from original_name: sensor.evert_health_biometrics_bone_mass -> Bone mass
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_bone_mass -> weight
+- Enriched entity name from original_name: sensor.evert_health_biometrics_fat_ratio -> Fat ratio
+- Enriched entity name from original_name: sensor.evert_health_biometrics_fat_free_mass -> Fat free mass
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_fat_free_mass -> weight
+- Enriched entity name from original_name: sensor.evert_health_biometrics_weight_goal -> Weight goal
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_weight_goal -> weight
+- Enriched entity name from original_name: sensor.evert_health_biometrics_deep_sleep -> Deep sleep
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_deep_sleep -> duration
+- Enriched entity name from original_name: sensor.evert_health_biometrics_last_workout_type -> Last workout type
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_last_workout_type -> enum
+- Enriched entity name from original_name: sensor.evert_health_biometrics_calories_burnt_last_workout -> Calories burnt last workout
+- Enriched entity name from original_name: sensor.evert_health_biometrics_distance_travelled_last_workout -> Distance travelled last workout
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_distance_travelled_last_workout -> distance
+- Enriched entity name from original_name: sensor.evert_health_biometrics_elevation_change_last_workout -> Elevation change last workout
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_elevation_change_last_workout -> distance
+- Enriched entity name from original_name: sensor.evert_health_biometrics_last_workout_intensity -> Last workout intensity
+- Enriched entity name from original_name: sensor.evert_health_biometrics_pause_during_last_workout -> Pause during last workout
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_pause_during_last_workout -> duration
+- Enriched entity name from original_name: sensor.evert_health_biometrics_last_workout_duration -> Last workout duration
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_last_workout_duration -> duration
+- Enriched entity name from original_name: sensor.evert_health_biometrics_steps_today -> Steps today
+- Enriched entity name from original_name: sensor.evert_health_biometrics_distance_travelled_today -> Distance travelled today
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_distance_travelled_today -> distance
+- Enriched entity name from original_name: sensor.evert_health_biometrics_elevation_change_today -> Elevation change today
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_elevation_change_today -> distance
+- Enriched entity name from original_name: sensor.evert_health_biometrics_soft_activity_today -> Soft activity today
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_soft_activity_today -> duration
+- Enriched entity name from original_name: sensor.evert_health_biometrics_moderate_activity_today -> Moderate activity today
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_moderate_activity_today -> duration
+- Enriched entity name from original_name: sensor.evert_health_biometrics_intense_activity_today -> Intense activity today
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_intense_activity_today -> duration
+- Enriched entity name from original_name: sensor.evert_health_biometrics_active_time_today -> Active time today
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_active_time_today -> duration
+- Enriched entity name from original_name: sensor.evert_health_biometrics_active_calories_burnt_today -> Active calories burnt today
+- Enriched entity name from original_name: sensor.evert_health_biometrics_total_calories_burnt_today -> Total calories burnt today
+- Enriched entity name from original_name: sensor.evert_health_biometrics_weight -> Weight
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_weight -> weight
+- Enriched entity name from original_name: binary_sensor.evert_health_biometrics_in_bed -> In bed
+- Enriched device_class from original_device_class: binary_sensor.evert_health_biometrics_in_bed -> occupancy
+- Enriched entity name from original_name: sensor.evert_health_biometrics_heart_pulse -> Heart pulse
+- Enriched entity name from original_name: sensor.evert_health_biometrics_pulse_wave_velocity -> Pulse wave velocity
+- Enriched device_class from original_device_class: sensor.evert_health_biometrics_pulse_wave_velocity -> speed
+- Enriched entity name from original_name: sensor.evert_health_biometrics_vascular_age -> Vascular age
+- Enriched entity name from original_name: sensor.ensuite_body_cardio_scales_battery -> Battery
+- Enriched device_class from original_device_class: sensor.ensuite_body_cardio_scales_battery -> enum
+- Enriched entity name from original_name: sensor.living_room_main_wiz_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.living_room_main_wiz_alpha_power -> power
+- Enriched entity name from original_name: number.living_room_main_wiz_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.living_room_main_wiz_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.living_room_main_wiz_alpha_signal_strength -> signal_strength
+- Enriched entity name from original_name: number.bedroom_desk_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_desk_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_desk_alpha_power -> power
+- Enriched entity name from original_name: sensor.bedroom_desk_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.bedroom_desk_alpha_signal_strength -> signal_strength
+- Enriched entity name from original_name: number.bedroom_main_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_main_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_main_alpha_power -> power
+- Enriched entity name from original_name: sensor.bedroom_main_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.bedroom_main_alpha_signal_strength -> signal_strength
+- Enriched entity name from original_name: number.bedroom_desk_lightstrip_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_desk_lightstrip_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_desk_lightstrip_alpha_power -> power
+- Enriched entity name from original_name: sensor.bedroom_mirror_lightstrip_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.bedroom_mirror_lightstrip_alpha_signal_strength -> signal_strength
+- Enriched entity name from name_registry: number.bedroom_nightstand_left_alpha_effect_speed -> Effect speed
+- Enriched entity name from name_registry: sensor.bedroom_nightstand_left_alpha_signal_strength -> Signal strength
+- Enriched entity name from original_name: sensor.wiz_rgbww_tunable_79bb9e_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.wiz_rgbww_tunable_79bb9e_signal_strength -> signal_strength
+- Enriched entity name from original_name: number.bedroom_mirror_lightstrip_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_mirror_lightstrip_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_mirror_lightstrip_alpha_power -> power
+- Enriched entity name from original_name: number.bedroom_wall_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_wall_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_wall_alpha_power -> power
+- Enriched entity name from original_name: sensor.bedroom_wall_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.bedroom_wall_alpha_signal_strength -> signal_strength
+- Enriched entity name from original_name: number.bedroom_hifi_accent_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_hifi_accent_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_hifi_accent_alpha_power -> power
+- Enriched entity name from original_name: sensor.bedroom_hifi_accent_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.bedroom_hifi_accent_alpha_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.wiz_rgbw_tunable_b22c1e_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.wiz_rgbw_tunable_b22c1e_signal_strength -> signal_strength
+- Enriched entity name from original_name: number.bedroom_accent_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_accent_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_accent_alpha_power -> power
+- Enriched entity name from original_name: number.bedroom_desk_wall_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_desk_wall_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_desk_wall_alpha_power -> power
+- Enriched entity name from original_name: sensor.bedroom_desk_wall_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.bedroom_desk_wall_alpha_signal_strength -> signal_strength
+- Enriched entity name from original_name: button.govee2mqtt_purge_caches -> Purge Caches
+- Enriched entity name from original_name: sensor.govee2mqtt_version -> Version
+- Enriched entity name from original_name: switch.monitor_backlight_alpha_gradient_toggle -> Gradient Toggle
+- Enriched entity name from original_name: switch.monitor_backlight_alpha_power_switch -> Power Switch
+- Enriched entity name from original_name: button.monitor_backlight_alpha_request_platform_api_state -> Request Platform API State
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_001 -> Segment 001
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_002 -> Segment 002
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_003 -> Segment 003
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_004 -> Segment 004
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_005 -> Segment 005
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_006 -> Segment 006
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_007 -> Segment 007
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_008 -> Segment 008
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_009 -> Segment 009
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_010 -> Segment 010
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_011 -> Segment 011
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_012 -> Segment 012
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_013 -> Segment 013
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_014 -> Segment 014
+- Enriched entity name from original_name: light.monitor_backlight_alpha_segment_015 -> Segment 015
+- Enriched entity name from original_name: sensor.monitor_backlight_alpha_available -> Status
+- Enriched entity name from original_name: select.bedroom_airpurifier_alpha_night_light_level -> Night light level
+- Enriched entity name from original_name: sensor.bedroom_airpurifier_alpha_filter_lifetime -> Filter lifetime
+- Enriched entity name from original_name: sensor.bedroom_airpurifier_alpha_air_quality -> Air quality
+- Enriched entity name from original_name: sensor.bedroom_airpurifier_alpha_pm2_5 -> PM2.5
+- Enriched device_class from original_device_class: sensor.bedroom_airpurifier_alpha_pm2_5 -> pm25
+- Enriched entity name from original_name: switch.bedroom_airpurifier_alpha_display -> Display
+- Enriched entity name from name_registry: binary_sensor.zigbee2mqtt_bridge_connection_state -> Connection state
+- Enriched entity name from name_registry: button.zigbee2mqtt_bridge_restart -> Restart
+- Enriched entity name from name_registry: select.zigbee2mqtt_bridge_log_level -> Log level
+- Enriched entity name from name_registry: sensor.zigbee2mqtt_bridge_version -> Version
+- Enriched entity name from name_registry: switch.zigbee2mqtt_bridge_permit_join -> Permit join
+- Enriched entity name from original_name: sensor.bedroom_ambient_climate_omega_battery -> Battery
+- Enriched device_class from original_device_class: sensor.bedroom_ambient_climate_omega_battery -> battery
+- Enriched entity name from original_name: sensor.bedroom_ambient_climate_omega_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.bedroom_ambient_climate_omega_temperature -> temperature
+- Enriched entity name from original_name: sensor.bedroom_ambient_climate_omega_humidity -> Humidity
+- Enriched device_class from original_device_class: sensor.bedroom_ambient_climate_omega_humidity -> humidity
+- Enriched entity name from original_name: number.bedroom_ambient_climate_omega_comfort_temperature_min -> Comfort temperature min
+- Enriched entity name from original_name: number.bedroom_ambient_climate_omega_comfort_temperature_max -> Comfort temperature max
+- Enriched entity name from original_name: number.bedroom_ambient_climate_omega_comfort_humidity_min -> Comfort humidity min
+- Enriched entity name from original_name: number.bedroom_ambient_climate_omega_comfort_humidity_max -> Comfort humidity max
+- Enriched entity name from original_name: select.bedroom_ambient_climate_omega_temperature_units -> Temperature units
+- Enriched entity name from original_name: number.bedroom_ambient_climate_omega_temperature_calibration -> Temperature calibration
+- Enriched entity name from original_name: number.bedroom_ambient_climate_omega_humidity_calibration -> Humidity calibration
+- Enriched entity name from original_name: sensor.bedroom_ambient_climate_omega_linkquality -> Linkquality
+- Enriched device_class from original_device_class: update.bedroom_ambient_climate_omega -> firmware
+- Enriched entity name from original_name: number.bedroom_climate_trv_left_omega_local_temperature_calibration -> Temperature
+- Enriched device_class from original_device_class: number.bedroom_climate_trv_left_omega_local_temperature_calibration -> temperature
+- Enriched entity name from original_name: sensor.bedroom_climate_trv_left_omega_battery -> Battery
+- Enriched device_class from original_device_class: sensor.bedroom_climate_trv_left_omega_battery -> battery
+- Enriched entity name from original_name: switch.bedroom_climate_trv_left_omega_child_lock -> Child lock
+- Enriched entity name from original_name: switch.bedroom_climate_trv_left_omega_open_window -> Open window
+- Enriched entity name from original_name: number.bedroom_climate_trv_left_omega_frost_protection_temperature -> Frost protection temperature
+- Enriched entity name from original_name: select.bedroom_climate_trv_left_omega_temperature_sensor_select -> Temperature sensor
+- Enriched entity name from original_name: number.bedroom_climate_trv_left_omega_external_temperature_input -> Temperature
+- Enriched device_class from original_device_class: number.bedroom_climate_trv_left_omega_external_temperature_input -> temperature
+- Enriched entity name from original_name: sensor.bedroom_climate_trv_left_omega_idle_steps -> Idle steps
+- Enriched entity name from original_name: sensor.bedroom_climate_trv_left_omega_closing_steps -> Closing steps
+- Enriched entity name from original_name: sensor.bedroom_climate_trv_left_omega_valve_opening_limit_voltage -> Valve opening limit voltage
+- Enriched entity name from original_name: sensor.bedroom_climate_trv_left_omega_valve_closing_limit_voltage -> Valve closing limit voltage
+- Enriched entity name from original_name: sensor.bedroom_climate_trv_left_omega_valve_motor_running_voltage -> Valve motor running voltage
+- Enriched entity name from original_name: number.bedroom_climate_trv_left_omega_valve_opening_degree -> Valve opening degree
+- Enriched entity name from original_name: number.bedroom_climate_trv_left_omega_valve_closing_degree -> Valve closing degree
+- Enriched entity name from original_name: number.bedroom_climate_trv_left_omega_temperature_accuracy -> Temperature accuracy
+- Enriched entity name from original_name: sensor.bedroom_climate_trv_left_omega_weekly_schedule -> Schedule
+- Enriched entity name from original_name: sensor.bedroom_climate_trv_left_omega_linkquality -> Linkquality
+- Enriched device_class from original_device_class: update.bedroom_climate_trv_left_omega -> firmware
+- Enriched entity name from name_registry: number.bedroom_climate_trv_right_omega_local_temperature_calibration -> Temperature
+- Enriched entity name from name_registry: sensor.bedroom_climate_trv_right_omega_battery -> Battery
+- Enriched entity name from name_registry: switch.bedroom_climate_trv_right_omega_child_lock -> Child lock
+- Enriched entity name from name_registry: switch.bedroom_climate_trv_right_omega_open_window -> Open window
+- Enriched entity name from name_registry: number.bedroom_climate_trv_right_omega_frost_protection_temperature -> Frost protection temperature
+- Enriched entity name from name_registry: select.bedroom_climate_trv_right_omega_temperature_sensor_select -> Temperature sensor
+- Enriched entity name from name_registry: number.bedroom_climate_trv_right_omega_external_temperature_input -> Temperature
+- Enriched entity name from name_registry: sensor.bedroom_climate_trv_right_omega_idle_steps -> Idle steps
+- Enriched entity name from name_registry: sensor.bedroom_climate_trv_right_omega_closing_steps -> Closing steps
+- Enriched entity name from name_registry: sensor.bedroom_climate_trv_right_omega_valve_opening_limit_voltage -> Valve opening limit voltage
+- Enriched entity name from name_registry: sensor.bedroom_climate_trv_right_omega_valve_closing_limit_voltage -> Valve closing limit voltage
+- Enriched entity name from name_registry: sensor.bedroom_climate_trv_right_omega_valve_motor_running_voltage -> Valve motor running voltage
+- Enriched entity name from name_registry: number.bedroom_climate_trv_right_omega_valve_opening_degree -> Valve opening degree
+- Enriched entity name from name_registry: number.bedroom_climate_trv_right_omega_valve_closing_degree -> Valve closing degree
+- Enriched entity name from name_registry: number.bedroom_climate_trv_right_omega_temperature_accuracy -> Temperature accuracy
+- Enriched entity name from name_registry: sensor.bedroom_climate_trv_right_omega_weekly_schedule -> Schedule
+- Enriched entity name from original_name: binary_sensor.ensuite_occupancy_omega_occupancy -> Occupancy
+- Enriched device_class from original_device_class: binary_sensor.ensuite_occupancy_omega_occupancy -> occupancy
+- Enriched entity name from original_name: number.ensuite_occupancy_omega_occupancy_timeout -> Occupancy timeout
+- Enriched entity name from original_name: select.ensuite_occupancy_omega_occupancy_sensitivity -> Occupancy sensitivity
+- Enriched entity name from original_name: sensor.ensuite_occupancy_omega_illumination -> Illumination
+- Enriched entity name from original_name: sensor.ensuite_occupancy_omega_linkquality -> Linkquality
+- Enriched device_class from original_device_class: update.ensuite_occupancy_omega -> firmware
+- Enriched entity name from original_name: sensor.bedroom_occupancy_omega_linkquality -> Linkquality
+- Enriched device_class from original_device_class: update.bedroom_occupance_alpha -> firmware
+- Enriched entity name from original_name: sensor.bedroom_occupance_alpha_illumination -> Illumination
+- Enriched entity name from original_name: binary_sensor.bedroom_occupance_alpha_occupancy -> Occupancy
+- Enriched device_class from original_device_class: binary_sensor.bedroom_occupance_alpha_occupancy -> occupancy
+- Enriched entity name from original_name: select.bedroom_occupance_alpha_occupancy_sensitivity -> Occupancy sensitivity
+- Enriched entity name from original_name: number.bedroom_occupance_alpha_occupancy_timeout -> Occupancy timeout
+- Enriched entity name from name_registry: switch.bedroom_security_cam_alpha_baby_cry_detection -> Baby cry detection
+- Enriched entity name from name_registry: sensor.bedroom_security_cam_alpha_device_time -> Device time
+- Enriched entity name from name_registry: switch.bedroom_security_cam_alpha_led -> LED
+- Enriched entity name from name_registry: camera.bedroom_security_cam_alpha_live_view -> Live view
+- Enriched entity name from name_registry: switch.bedroom_security_cam_alpha_motion_detection -> Motion detection
+- Enriched entity name from name_registry: number.bedroom_security_cam_alpha_pan_degrees -> Pan degrees
+- Enriched entity name from name_registry: button.bedroom_security_cam_alpha_pan_left -> Pan left
+- Enriched entity name from name_registry: button.bedroom_security_cam_alpha_pan_right -> Pan right
+- Enriched entity name from name_registry: switch.bedroom_security_cam_alpha_person_detection -> Person detection
+- Enriched entity name from name_registry: sensor.bedroom_security_cam_alpha_signal_level -> Signal level
+- Enriched entity name from name_registry: sensor.bedroom_security_cam_alpha_signal_strength -> Signal strength
+- Enriched entity name from name_registry: switch.bedroom_security_cam_alpha_tamper_detection -> Tamper detection
+- Enriched entity name from name_registry: number.bedroom_security_cam_alpha_tilt_degrees -> Tilt degrees
+- Enriched entity name from name_registry: button.bedroom_security_cam_alpha_tilt_down -> Tilt down
+- Enriched entity name from name_registry: button.bedroom_security_cam_alpha_tilt_up -> Tilt up
+- Enriched entity name from original_name: number.bedroom_desk_corner_omega_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_desk_corner_omega_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_desk_corner_omega_power -> power
+- Enriched entity name from original_name: sensor.bedroom_desk_corner_signal_strength_alpha -> Signal strength
+- Enriched device_class from original_device_class: sensor.bedroom_desk_corner_signal_strength_alpha -> signal_strength
+- Enriched entity name from original_name: sensor.wiz_rgbw_tunable_2b9e38_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.wiz_rgbw_tunable_2b9e38_signal_strength -> signal_strength
+- Enriched entity name from original_name: number.bedroom_entrance_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_entrance_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_entrance_alpha_power -> power
+- Enriched entity name from original_name: update.tapo_smart_iot_hub_firmware -> Firmware
+- Enriched device_class from original_device_class: update.tapo_smart_iot_hub_firmware -> firmware
+- Enriched entity name from original_name: select.wall_panel_right_switch_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: select.wall_panel_left_switch_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: sensor.ensuite_climate_matter_alfa_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.ensuite_climate_matter_alfa_temperature -> temperature
+- Enriched entity name from original_name: sensor.ensuite_climate_matter_alfa_humidity -> Humidity
+- Enriched device_class from original_device_class: sensor.ensuite_climate_matter_alfa_humidity -> humidity
+- Enriched entity name from original_name: binary_sensor.kitchen_fridge_contact_omega_matter_door -> Door
+- Enriched device_class from original_device_class: binary_sensor.kitchen_fridge_contact_omega_matter_door -> door
+- Enriched entity name from original_name: binary_sensor.upstairs_skylight_contact_matter_omega -> Door
+- Enriched device_class from original_device_class: binary_sensor.upstairs_skylight_contact_matter_omega -> door
+- Enriched entity name from original_name: binary_sensor.entrance_door_occupancy_matter_alpha -> Occupancy
+- Enriched device_class from original_device_class: binary_sensor.entrance_door_occupancy_matter_alpha -> occupancy
+- Enriched entity name from original_name: binary_sensor.upstairs_occupancy_matter_alpha_occupancy -> Occupancy
+- Enriched device_class from original_device_class: binary_sensor.upstairs_occupancy_matter_alpha_occupancy -> occupancy
+- Enriched entity name from original_name: binary_sensor.downstairs_occupancy_matter_alpha_occupancy -> Occupancy
+- Enriched device_class from original_device_class: binary_sensor.downstairs_occupancy_matter_alpha_occupancy -> occupancy
+- Enriched entity name from original_name: binary_sensor.kitchen_occupancy_matter_alpha_occupancy -> Occupancy
+- Enriched device_class from original_device_class: binary_sensor.kitchen_occupancy_matter_alpha_occupancy -> occupancy
+- Enriched entity name from original_name: binary_sensor.bedroom_wardrobe_occupancy_matter_alpha -> Occupancy
+- Enriched device_class from original_device_class: binary_sensor.bedroom_wardrobe_occupancy_matter_alpha -> occupancy
+- Enriched entity name from original_name: binary_sensor.entrance_door_contact_matter_omega -> Door
+- Enriched device_class from original_device_class: binary_sensor.entrance_door_contact_matter_omega -> door
+- Enriched entity name from original_name: button.bedroom_entrance_alpha_matter_identify -> Identify
+- Enriched device_class from original_device_class: button.bedroom_entrance_alpha_matter_identify -> identify
+- Enriched entity name from original_name: number.bedroom_entrance_alpha_matter_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.bedroom_entrance_alpha_matter_on_level -> On level
+- Enriched entity name from original_name: number.bedroom_entrance_alpha_matter_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.bedroom_entrance_alpha_matter_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.bedroom_entrance_alpha_matter_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: light.ensuite_lightstrip_homekit_alpha -> Tapo Light Strip 7463 Light Bulb
+- Enriched entity name from original_name: button.ensuite_lightstrip_homekit_alpha_identify -> Tapo Light Strip 7463 Identify
+- Enriched device_class from original_device_class: button.ensuite_lightstrip_homekit_alpha_identify -> identify
+- Enriched entity name from original_name: number.bedroom_wardrobe_lightstrip_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_wardrobe_lightstrip_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_wardrobe_lightstrip_alpha_power -> power
+- Enriched entity name from original_name: sensor.bedroom_wardrobe_lightstrip_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.bedroom_wardrobe_lightstrip_alpha_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.home_nearest_device -> Nearest device
+- Enriched entity name from original_name: sensor.home_nearest_distance -> Nearest distance
+- Enriched device_class from original_device_class: sensor.home_nearest_distance -> distance
+- Enriched entity name from original_name: sensor.home_nearest_direction_of_travel -> Nearest direction of travel
+- Enriched device_class from original_device_class: sensor.home_nearest_direction_of_travel -> enum
+- Enriched entity name from original_name: sensor.home_evert_distance -> Evert Distance
+- Enriched device_class from original_device_class: sensor.home_evert_distance -> distance
+- Enriched entity name from original_name: sensor.home_everts_apple_watch_distance -> everts_apple_watch Distance
+- Enriched device_class from original_device_class: sensor.home_everts_apple_watch_distance -> distance
+- Enriched entity name from original_name: sensor.home_ephone_uk_distance -> ePhone-uk Distance
+- Enriched device_class from original_device_class: sensor.home_ephone_uk_distance -> distance
+- Enriched entity name from original_name: sensor.home_iphone14_distance -> iphone14 Distance
+- Enriched device_class from original_device_class: sensor.home_iphone14_distance -> distance
+- Enriched entity name from original_name: sensor.home_evert_direction_of_travel -> Evert Direction of travel
+- Enriched device_class from original_device_class: sensor.home_evert_direction_of_travel -> enum
+- Enriched entity name from original_name: sensor.home_everts_apple_watch_direction_of_travel -> everts_apple_watch Direction of travel
+- Enriched device_class from original_device_class: sensor.home_everts_apple_watch_direction_of_travel -> enum
+- Enriched entity name from original_name: sensor.home_ephone_uk_direction_of_travel -> ePhone-uk Direction of travel
+- Enriched device_class from original_device_class: sensor.home_ephone_uk_direction_of_travel -> enum
+- Enriched entity name from original_name: sensor.home_iphone14_direction_of_travel -> iphone14 Direction of travel
+- Enriched device_class from original_device_class: sensor.home_iphone14_direction_of_travel -> enum
+- Enriched entity name from original_name: sensor.system_monitor_disk_free_ssl -> Disk free /ssl
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_free_ssl -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_free_media -> Disk free /media
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_free_media -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_free_config -> Disk free /config
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_free_config -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_free -> Disk free /
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_free -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_free_run_audio -> Disk free /run/audio
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_free_run_audio -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_free_share -> Disk free /share
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_free_share -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_use_ssl -> Disk use /ssl
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_use_ssl -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_use_media -> Disk use /media
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_use_media -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_use_config -> Disk use /config
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_use_config -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_use -> Disk use /
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_use -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_use_run_audio -> Disk use /run/audio
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_use_run_audio -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_use_share -> Disk use /share
+- Enriched device_class from original_device_class: sensor.system_monitor_disk_use_share -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_disk_usage_ssl -> Disk usage /ssl
+- Enriched entity name from original_name: sensor.system_monitor_disk_usage_media -> Disk usage /media
+- Enriched entity name from original_name: sensor.system_monitor_disk_usage_config -> Disk usage /config
+- Enriched entity name from original_name: sensor.system_monitor_disk_usage -> Disk usage /
+- Enriched entity name from original_name: sensor.system_monitor_disk_usage_run_audio -> Disk usage /run/audio
+- Enriched entity name from original_name: sensor.system_monitor_disk_usage_share -> Disk usage /share
+- Enriched entity name from original_name: sensor.system_monitor_ipv4_address_hassio -> IPv4 address hassio
+- Enriched entity name from original_name: sensor.system_monitor_ipv4_address_lo -> IPv4 address lo
+- Enriched entity name from original_name: sensor.system_monitor_ipv4_address_end0 -> IPv4 address end0
+- Enriched entity name from original_name: sensor.system_monitor_ipv4_address_docker0 -> IPv4 address docker0
+- Enriched entity name from original_name: sensor.system_monitor_ipv4_address_wlan0 -> IPv4 address wlan0
+- Enriched entity name from original_name: sensor.system_monitor_ipv6_address_hassio -> IPv6 address hassio
+- Enriched entity name from original_name: sensor.system_monitor_ipv6_address_lo -> IPv6 address lo
+- Enriched entity name from original_name: sensor.system_monitor_ipv6_address_end0 -> IPv6 address end0
+- Enriched entity name from original_name: sensor.system_monitor_ipv6_address_docker0 -> IPv6 address docker0
+- Enriched entity name from original_name: sensor.system_monitor_ipv6_address_wlan0 -> IPv6 address wlan0
+- Enriched entity name from original_name: sensor.system_monitor_last_boot -> Last boot
+- Enriched device_class from original_device_class: sensor.system_monitor_last_boot -> timestamp
+- Enriched entity name from original_name: sensor.system_monitor_load_15_min -> Load (15 min)
+- Enriched entity name from original_name: sensor.system_monitor_load_1_min -> Load (1 min)
+- Enriched entity name from original_name: sensor.system_monitor_load_5_min -> Load (5 min)
+- Enriched entity name from original_name: sensor.system_monitor_memory_free -> Memory free
+- Enriched device_class from original_device_class: sensor.system_monitor_memory_free -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_memory_use -> Memory use
+- Enriched device_class from original_device_class: sensor.system_monitor_memory_use -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_memory_usage -> Memory usage
+- Enriched entity name from original_name: sensor.system_monitor_network_in_hassio -> Network in hassio
+- Enriched device_class from original_device_class: sensor.system_monitor_network_in_hassio -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_network_in_lo -> Network in lo
+- Enriched device_class from original_device_class: sensor.system_monitor_network_in_lo -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_network_in_end0 -> Network in end0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_in_end0 -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_network_in_docker0 -> Network in docker0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_in_docker0 -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_network_in_wlan0 -> Network in wlan0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_in_wlan0 -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_network_out_hassio -> Network out hassio
+- Enriched device_class from original_device_class: sensor.system_monitor_network_out_hassio -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_network_out_lo -> Network out lo
+- Enriched device_class from original_device_class: sensor.system_monitor_network_out_lo -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_network_out_end0 -> Network out end0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_out_end0 -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_network_out_docker0 -> Network out docker0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_out_docker0 -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_network_out_wlan0 -> Network out wlan0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_out_wlan0 -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_packets_in_hassio -> Packets in hassio
+- Enriched entity name from original_name: sensor.system_monitor_packets_in_lo -> Packets in lo
+- Enriched entity name from original_name: sensor.system_monitor_packets_in_end0 -> Packets in end0
+- Enriched entity name from original_name: sensor.system_monitor_packets_in_docker0 -> Packets in docker0
+- Enriched entity name from original_name: sensor.system_monitor_packets_in_wlan0 -> Packets in wlan0
+- Enriched entity name from original_name: sensor.system_monitor_packets_out_hassio -> Packets out hassio
+- Enriched entity name from original_name: sensor.system_monitor_packets_out_lo -> Packets out lo
+- Enriched entity name from original_name: sensor.system_monitor_packets_out_end0 -> Packets out end0
+- Enriched entity name from original_name: sensor.system_monitor_packets_out_docker0 -> Packets out docker0
+- Enriched entity name from original_name: sensor.system_monitor_packets_out_wlan0 -> Packets out wlan0
+- Enriched entity name from original_name: sensor.system_monitor_network_throughput_in_hassio -> Network throughput in hassio
+- Enriched device_class from original_device_class: sensor.system_monitor_network_throughput_in_hassio -> data_rate
+- Enriched entity name from original_name: sensor.system_monitor_network_throughput_in_lo -> Network throughput in lo
+- Enriched device_class from original_device_class: sensor.system_monitor_network_throughput_in_lo -> data_rate
+- Enriched entity name from original_name: sensor.system_monitor_network_throughput_in_end0 -> Network throughput in end0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_throughput_in_end0 -> data_rate
+- Enriched entity name from original_name: sensor.system_monitor_network_throughput_in_docker0 -> Network throughput in docker0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_throughput_in_docker0 -> data_rate
+- Enriched entity name from original_name: sensor.system_monitor_network_throughput_in_wlan0 -> Network throughput in wlan0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_throughput_in_wlan0 -> data_rate
+- Enriched entity name from original_name: sensor.system_monitor_network_throughput_out_hassio -> Network throughput out hassio
+- Enriched device_class from original_device_class: sensor.system_monitor_network_throughput_out_hassio -> data_rate
+- Enriched entity name from original_name: sensor.system_monitor_network_throughput_out_lo -> Network throughput out lo
+- Enriched device_class from original_device_class: sensor.system_monitor_network_throughput_out_lo -> data_rate
+- Enriched entity name from original_name: sensor.system_monitor_network_throughput_out_end0 -> Network throughput out end0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_throughput_out_end0 -> data_rate
+- Enriched entity name from original_name: sensor.system_monitor_network_throughput_out_docker0 -> Network throughput out docker0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_throughput_out_docker0 -> data_rate
+- Enriched entity name from original_name: sensor.system_monitor_network_throughput_out_wlan0 -> Network throughput out wlan0
+- Enriched device_class from original_device_class: sensor.system_monitor_network_throughput_out_wlan0 -> data_rate
+- Enriched entity name from original_name: sensor.system_monitor_processor_use -> Processor use
+- Enriched entity name from original_name: sensor.system_monitor_processor_temperature -> Processor temperature
+- Enriched device_class from original_device_class: sensor.system_monitor_processor_temperature -> temperature
+- Enriched entity name from original_name: sensor.system_monitor_swap_free -> Swap free
+- Enriched device_class from original_device_class: sensor.system_monitor_swap_free -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_swap_use -> Swap use
+- Enriched device_class from original_device_class: sensor.system_monitor_swap_use -> data_size
+- Enriched entity name from original_name: sensor.system_monitor_swap_usage -> Swap usage
+- Enriched entity name from original_name: binary_sensor.system_monitor_process_python3 -> Process python3
+- Enriched device_class from original_device_class: binary_sensor.system_monitor_process_python3 -> running
+- Enriched entity name from original_name: update.hacs_update -> HACS update
+- Enriched entity name from original_name: switch.hacs_pre_release -> Pre-release
+- Enriched entity name from name_registry: binary_sensor.nintendo_switch_lost -> Lost
+- Enriched entity name from original_name: binary_sensor.wallet_lost -> Lost
+- Enriched entity name from original_name: binary_sensor.keys_lost -> Lost
+- Enriched entity name from original_name: binary_sensor.backpack_lost -> Lost
+- Enriched entity name from original_name: binary_sensor.iphone14_lost -> Lost
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_daily_rain -> Daily rain
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_daily_rain -> precipitation
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_dew_point -> Dew point
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_dew_point -> temperature
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_feels_like -> Feels like
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_feels_like -> temperature
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_hourly_rain -> Hourly rain
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_hourly_rain -> precipitation_intensity
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_humidity -> Humidity
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_humidity -> humidity
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_max_daily_gust -> Max daily gust
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_max_daily_gust -> wind_speed
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_relative_pressure -> Relative pressure
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_relative_pressure -> pressure
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_temperature -> temperature
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_uv_index -> UV index
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_wind_gust -> Wind gust
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_wind_gust -> wind_speed
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_wind_speed -> Wind speed
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_wind_speed -> wind_speed
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_irradiance -> Irradiance
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_irradiance -> irradiance
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_yearly_rain -> Yearly rain
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_yearly_rain -> precipitation
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_wind_direction -> Wind direction
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_wind_direction -> wind_direction
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_weekly_rain -> Weekly rain
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_weekly_rain -> precipitation
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_monthly_rain -> Monthly rain
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_monthly_rain -> precipitation
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_last_rain -> Last rain
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_last_rain -> timestamp
+- Enriched entity name from original_name: sensor.london_ambient_weather_alpha_absolute_pressure -> Absolute pressure
+- Enriched device_class from original_device_class: sensor.london_ambient_weather_alpha_absolute_pressure -> pressure
+- Enriched entity name from original_name: sensor.0x286d970001152304_linkquality -> Linkquality
+- Enriched entity name from original_name: sensor.living_room_smartbutton_omega_battery -> Battery
+- Enriched device_class from original_device_class: sensor.living_room_smartbutton_omega_battery -> battery
+- Enriched entity name from original_name: sensor.living_room_smartbutton_omega_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.living_room_smartbutton_omega_temperature -> temperature
+- Enriched entity name from original_name: sensor.kitchen_ambient_climate_omega_battery -> Battery
+- Enriched device_class from original_device_class: sensor.kitchen_ambient_climate_omega_battery -> battery
+- Enriched entity name from original_name: sensor.kitchen_ambient_climate_omega_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.kitchen_ambient_climate_omega_temperature -> temperature
+- Enriched entity name from original_name: sensor.kitchen_ambient_climate_omega_humidity -> Humidity
+- Enriched device_class from original_device_class: sensor.kitchen_ambient_climate_omega_humidity -> humidity
+- Enriched entity name from original_name: number.kitchen_ambient_climate_omega_comfort_temperature_min -> Comfort temperature min
+- Enriched entity name from original_name: number.kitchen_ambient_climate_omega_comfort_temperature_max -> Comfort temperature max
+- Enriched entity name from original_name: number.kitchen_ambient_climate_omega_comfort_humidity_min -> Comfort humidity min
+- Enriched entity name from original_name: number.kitchen_ambient_climate_omega_comfort_humidity_max -> Comfort humidity max
+- Enriched entity name from original_name: select.kitchen_ambient_climate_omega_temperature_units -> Temperature units
+- Enriched entity name from original_name: number.kitchen_ambient_climate_omega_temperature_calibration -> Temperature calibration
+- Enriched entity name from original_name: number.kitchen_ambient_climate_omega_humidity_calibration -> Humidity calibration
+- Enriched entity name from original_name: sensor.kitchen_ambient_climate_omega_linkquality -> Linkquality
+- Enriched device_class from original_device_class: update.kitchen_ambient_climate_omega -> firmware
+- Enriched entity name from original_name: number.kitchen_climate_trv_omega_local_temperature_calibration -> Temperature
+- Enriched device_class from original_device_class: number.kitchen_climate_trv_omega_local_temperature_calibration -> temperature
+- Enriched entity name from original_name: sensor.kitchen_climate_trv_omega_battery -> Battery
+- Enriched device_class from original_device_class: sensor.kitchen_climate_trv_omega_battery -> battery
+- Enriched entity name from original_name: switch.kitchen_climate_trv_omega_child_lock -> Child lock
+- Enriched entity name from original_name: switch.kitchen_climate_trv_omega_open_window -> Open window
+- Enriched entity name from original_name: number.kitchen_climate_trv_omega_frost_protection_temperature -> Frost protection temperature
+- Enriched entity name from original_name: select.kitchen_climate_trv_omega_temperature_sensor_select -> Temperature sensor
+- Enriched entity name from original_name: number.kitchen_climate_trv_omega_external_temperature_input -> Temperature
+- Enriched device_class from original_device_class: number.kitchen_climate_trv_omega_external_temperature_input -> temperature
+- Enriched entity name from original_name: sensor.kitchen_climate_trv_omega_idle_steps -> Idle steps
+- Enriched entity name from original_name: sensor.kitchen_climate_trv_omega_closing_steps -> Closing steps
+- Enriched entity name from original_name: sensor.kitchen_climate_trv_omega_valve_opening_limit_voltage -> Valve opening limit voltage
+- Enriched entity name from original_name: sensor.kitchen_climate_trv_omega_valve_closing_limit_voltage -> Valve closing limit voltage
+- Enriched entity name from original_name: sensor.kitchen_climate_trv_omega_valve_motor_running_voltage -> Valve motor running voltage
+- Enriched entity name from original_name: number.kitchen_climate_trv_omega_valve_opening_degree -> Valve opening degree
+- Enriched entity name from original_name: number.kitchen_climate_trv_omega_valve_closing_degree -> Valve closing degree
+- Enriched entity name from original_name: number.kitchen_climate_trv_omega_temperature_accuracy -> Temperature accuracy
+- Enriched entity name from original_name: sensor.kitchen_climate_trv_omega_weekly_schedule -> Schedule
+- Enriched entity name from original_name: sensor.kitchen_climate_trv_omega_linkquality -> Linkquality
+- Enriched device_class from original_device_class: update.kitchen_climate_trv_omega -> firmware
+- Enriched entity name from name_registry: binary_sensor.kitchen_occupancy_omega_occupancy -> Occupancy
+- Enriched entity name from name_registry: number.kitchen_occupancy_omega_occupancy_timeout -> Occupancy timeout
+- Enriched entity name from name_registry: select.kitchen_occupancy_omega_occupancy_sensitivity -> Occupancy sensitivity
+- Enriched entity name from name_registry: sensor.kitchen_occupancy_omega_illumination -> Illumination
+- Enriched entity name from original_name: number.living_room_climate_trv_omega_local_temperature_calibration -> Temperature
+- Enriched device_class from original_device_class: number.living_room_climate_trv_omega_local_temperature_calibration -> temperature
+- Enriched entity name from original_name: sensor.living_room_climate_trv_omega_battery -> Battery
+- Enriched device_class from original_device_class: sensor.living_room_climate_trv_omega_battery -> battery
+- Enriched entity name from original_name: switch.living_room_climate_trv_omega_child_lock -> Child lock
+- Enriched entity name from original_name: switch.living_room_climate_trv_omega_open_window -> Open window
+- Enriched entity name from original_name: number.living_room_climate_trv_omega_frost_protection_temperature -> Frost protection temperature
+- Enriched entity name from original_name: select.living_room_climate_trv_omega_temperature_sensor_select -> Temperature sensor
+- Enriched entity name from original_name: number.living_room_climate_trv_omega_external_temperature_input -> Temperature
+- Enriched device_class from original_device_class: number.living_room_climate_trv_omega_external_temperature_input -> temperature
+- Enriched entity name from original_name: sensor.living_room_climate_trv_omega_idle_steps -> Idle steps
+- Enriched entity name from original_name: sensor.living_room_climate_trv_omega_closing_steps -> Closing steps
+- Enriched entity name from original_name: sensor.living_room_climate_trv_omega_valve_opening_limit_voltage -> Valve opening limit voltage
+- Enriched entity name from original_name: sensor.living_room_climate_trv_omega_valve_closing_limit_voltage -> Valve closing limit voltage
+- Enriched entity name from original_name: sensor.living_room_climate_trv_omega_valve_motor_running_voltage -> Valve motor running voltage
+- Enriched entity name from original_name: number.living_room_climate_trv_omega_valve_opening_degree -> Valve opening degree
+- Enriched entity name from original_name: number.living_room_climate_trv_omega_valve_closing_degree -> Valve closing degree
+- Enriched entity name from original_name: number.living_room_climate_trv_omega_temperature_accuracy -> Temperature accuracy
+- Enriched entity name from original_name: sensor.living_room_climate_trv_omega_weekly_schedule -> Schedule
+- Enriched entity name from original_name: sensor.living_room_climate_trv_omega_linkquality -> Linkquality
+- Enriched device_class from original_device_class: update.living_room_climate_trv_omega -> firmware
+- Enriched entity name from name_registry: sensor.living_room_occupancy_alpha_illumination -> Illumination
+- Enriched entity name from name_registry: sensor.living_room_occupancy_alpha_linkquality -> Linkquality
+- Enriched entity name from name_registry: binary_sensor.living_room_occupancy_alpha_occupancy -> Occupancy
+- Enriched entity name from name_registry: select.living_room_occupancy_alpha_occupancy_sensitivity -> Occupancy sensitivity
+- Enriched entity name from name_registry: number.living_room_occupancy_alpha_occupancy_timeout -> Occupancy timeout
+- Enriched entity name from name_registry: sensor.bedroom_smart_button_omega_battery -> Battery
+- Enriched entity name from name_registry: sensor.bedroom_smart_button_omega_temperature -> Temperature
+- Enriched entity name from name_registry: sensor.bedroom_smart_button_omega_linkquality -> Linkquality
+- Enriched entity name from original_name: sensor.home_magic_cube_omega_battery -> Battery
+- Enriched device_class from original_device_class: sensor.home_magic_cube_omega_battery -> battery
+- Enriched entity name from original_name: sensor.home_magic_cube_omega_voltage -> Voltage
+- Enriched device_class from original_device_class: sensor.home_magic_cube_omega_voltage -> voltage
+- Enriched entity name from original_name: sensor.home_magic_cube_omega_power_outage_count -> Power outage count
+- Enriched entity name from original_name: select.home_magic_cube_omega_operation_mode -> Operation mode
+- Enriched entity name from original_name: sensor.home_magic_cube_omega_side -> Side
+- Enriched entity name from original_name: sensor.home_magic_cube_omega_action_from_side -> Action from side
+- Enriched entity name from original_name: sensor.home_magic_cube_omega_action_angle -> Action angle
+- Enriched entity name from original_name: sensor.home_magic_cube_omega_linkquality -> Linkquality
+- Enriched device_class from original_device_class: update.home_magic_cube_omega -> firmware
+- Enriched device_class from original_device_class: sensor.home_assistant_uptime_alpha -> timestamp
+- Enriched entity name from original_name: sensor.bedroom_monstera_soil_alpha_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.bedroom_monstera_soil_alpha_temperature -> temperature
+- Enriched entity name from original_name: sensor.bedroom_monstera_soil_alpha_humidity -> Humidity
+- Enriched device_class from original_device_class: sensor.bedroom_monstera_soil_alpha_humidity -> humidity
+- Enriched entity name from original_name: sensor.bedroom_monstera_soil_alpha_battery -> Battery
+- Enriched device_class from original_device_class: sensor.bedroom_monstera_soil_alpha_battery -> battery
+- Enriched entity name from original_name: sensor.bedroom_monstera_soil_alpha_linkquality -> Linkquality
+- Enriched device_class from original_device_class: update.bedroom_monstera_soil_alpha -> firmware
+- Enriched entity name from original_name: media_player.bedroom_tv_alpha_dlna -> Bedroom TV
+- Enriched entity name from original_name: binary_sensor.hallway_downstairs_motion_alpha_wifi_motion -> Motion
+- Enriched device_class from original_device_class: binary_sensor.hallway_downstairs_motion_alpha_wifi_motion -> motion
+- Enriched entity name from original_name: binary_sensor.kitchen_fridge_contact_alpha_wifi_door -> Door
+- Enriched device_class from original_device_class: binary_sensor.kitchen_fridge_contact_alpha_wifi_door -> door
+- Enriched entity name from original_name: sensor.living_room_stringlights_alpha_energy -> Energy
+- Enriched device_class from original_device_class: sensor.living_room_stringlights_alpha_energy -> energy
+- Enriched entity name from original_name: sensor.living_room_stringlights_alpha_energy_difference -> Energy difference
+- Enriched device_class from original_device_class: sensor.living_room_stringlights_alpha_energy_difference -> energy
+- Enriched entity name from original_name: binary_sensor.kitchen_motion_alpha_motion -> Motion
+- Enriched device_class from original_device_class: binary_sensor.kitchen_motion_alpha_motion -> motion
+- Enriched entity name from original_name: sensor.home_iot_hub_tapo_alarm -> Alarm
+- Enriched device_class from original_device_class: sensor.home_iot_hub_tapo_alarm -> enum
+- Enriched entity name from original_name: binary_sensor.bedroom_wardrobe_motion_alpha -> Motion
+- Enriched device_class from original_device_class: binary_sensor.bedroom_wardrobe_motion_alpha -> motion
+- Enriched entity name from original_name: sensor.ensuite_ambient_climate_alpha_humidity -> Humidity
+- Enriched device_class from original_device_class: sensor.ensuite_ambient_climate_alpha_humidity -> humidity
+- Enriched entity name from original_name: sensor.ensuite_ambient_climate_alpha_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.ensuite_ambient_climate_alpha_temperature -> temperature
+- Enriched entity name from original_name: binary_sensor.hallway_upstairs_motion_alpha_motion -> Motion
+- Enriched device_class from original_device_class: binary_sensor.hallway_upstairs_motion_alpha_motion -> motion
+- Enriched entity name from original_name: sensor.bedroom_tv_alpha_energy -> Energy
+- Enriched device_class from original_device_class: sensor.bedroom_tv_alpha_energy -> energy
+- Enriched entity name from original_name: sensor.bedroom_tv_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_tv_alpha_power -> power
+- Enriched entity name from original_name: sensor.bedroom_tv_alpha_energy_difference -> Energy difference
+- Enriched device_class from original_device_class: sensor.bedroom_tv_alpha_energy_difference -> energy
+- Enriched entity name from original_name: sensor.bedroom_tv_alpha_power_energy -> Power energy
+- Enriched device_class from original_device_class: sensor.bedroom_tv_alpha_power_energy -> energy
+- Enriched entity name from original_name: sensor.bedroom_tv_alpha_energy_saved -> Energy saved
+- Enriched device_class from original_device_class: sensor.bedroom_tv_alpha_energy_saved -> energy
+- Enriched entity name from original_name: sensor.bedroom_tv_alpha_tv_channel -> TV channel
+- Enriched entity name from original_name: sensor.bedroom_tv_alpha_tv_channel_name -> TV channel name
+- Enriched device_class from original_device_class: media_player.bedroom_tv_alpha -> tv
+- Enriched entity name from name_registry: binary_sensor.bedroom_security_cam_alpha_motion -> Motion
+- Enriched entity name from original_name: binary_sensor.hallway_entrance_contact_alpha_door -> Door
+- Enriched device_class from original_device_class: binary_sensor.hallway_entrance_contact_alpha_door -> door
+- Enriched entity name from original_name: binary_sensor.upstairs_skylight_contact_alpha_door -> Door
+- Enriched device_class from original_device_class: binary_sensor.upstairs_skylight_contact_alpha_door -> door
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_alpha_energy -> Energy
+- Enriched device_class from original_device_class: sensor.kitchen_lightstrip_alpha_energy -> energy
+- Enriched entity name from original_name: sensor.kitchen_lightstrip_alpha_energy_difference -> Energy difference
+- Enriched device_class from original_device_class: sensor.kitchen_lightstrip_alpha_energy_difference -> energy
+- Enriched entity name from original_name: binary_sensor.entrance_door_motion_smartthings_alpha -> Motion
+- Enriched device_class from original_device_class: binary_sensor.entrance_door_motion_smartthings_alpha -> motion
+- Enriched entity name from original_name: sensor.bedroom_tv_alpha_illuminance_brightness_intensity -> Brightness intensity
+- Enriched entity name from original_name: sensor.bedroom_tv_alpha_illuminance -> Illuminance
+- Enriched device_class from original_device_class: sensor.bedroom_tv_alpha_illuminance -> illuminance
+- Enriched entity name from original_name: binary_sensor.evert_alpha_presence_iphone_presence -> Presence
+- Enriched device_class from original_device_class: binary_sensor.evert_alpha_presence_iphone_presence -> presence
+- Enriched device_class from original_device_class: media_player.bedroom_soundbar_sonos_ray_alpha -> speaker
+- Enriched device_class from original_device_class: media_player.ensuite_speaker_sonos_roam_alpha_2 -> speaker
+- Enriched device_class from original_device_class: media_player.bedroom_sonos_surround_speakers_alpha -> speaker
+- Enriched entity name from original_name: sensor.bedroom_vedge_illuminance_1_illuminance -> Illuminance
+- Enriched device_class from original_device_class: sensor.bedroom_vedge_illuminance_1_illuminance -> illuminance
+- Enriched device_class from original_device_class: media_player.kitchen -> speaker
+- Enriched device_class from original_device_class: media_player.living_room_soundbar_sonos_beam_omega -> speaker
+- Enriched entity name from original_name: binary_sensor.living_room_multipurpose_alpha_motion -> Motion
+- Enriched device_class from original_device_class: binary_sensor.living_room_multipurpose_alpha_motion -> motion
+- Enriched entity name from original_name: sensor.living_room_multipurpose_alpha_battery -> Battery
+- Enriched device_class from original_device_class: sensor.living_room_multipurpose_alpha_battery -> battery
+- Enriched entity name from original_name: sensor.living_room_multipurpose_alpha_illuminance -> Illuminance
+- Enriched device_class from original_device_class: sensor.living_room_multipurpose_alpha_illuminance -> illuminance
+- Enriched entity name from original_name: sensor.living_room_multipurpose_alpha_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.living_room_multipurpose_alpha_temperature -> temperature
+- Enriched entity name from original_name: button.bedroom_nightstand_right_alpha_matter_identify -> Identify
+- Enriched device_class from original_device_class: button.bedroom_nightstand_right_alpha_matter_identify -> identify
+- Enriched entity name from original_name: number.bedroom_nightstand_right_alpha_matter_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.bedroom_nightstand_right_alpha_matter_on_level -> On level
+- Enriched entity name from original_name: number.bedroom_nightstand_right_alpha_matter_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.bedroom_nightstand_right_alpha_matter_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.bedroom_nightstand_right_alpha_matter_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: sensor.wiz_rgbw_tunable_378364_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.wiz_rgbw_tunable_378364_signal_strength -> signal_strength
+- Enriched entity name from original_name: number.bedroom_nightstand_right_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.bedroom_nightstand_right_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.bedroom_nightstand_right_alpha_power -> power
+- Enriched entity name from original_name: button.bedroom_main_alpha_matter_identify -> Identify
+- Enriched device_class from original_device_class: button.bedroom_main_alpha_matter_identify -> identify
+- Enriched entity name from original_name: number.bedroom_main_alpha_matter_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.bedroom_main_alpha_matter_on_level -> On level
+- Enriched entity name from original_name: number.bedroom_main_alpha_matter_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.bedroom_main_alpha_matter_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.bedroom_main_alpha_matter_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: update.spook_your_homie_update -> Spook 👻 Your homie update
+- Enriched entity name from original_name: switch.spook_your_homie_pre_release -> Pre-release
+- Enriched entity name from original_name: media_player.playstation_4 -> PlayStation_4
+- Enriched entity name from original_name: button.bedroom_desk_matter_alpha_identify -> Identify
+- Enriched device_class from original_device_class: button.bedroom_desk_matter_alpha_identify -> identify
+- Enriched entity name from original_name: number.bedroom_desk_matter_alpha_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.bedroom_desk_matter_alpha_on_level -> On level
+- Enriched entity name from original_name: number.bedroom_desk_matter_alpha_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.bedroom_desk_matter_alpha_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.bedroom_desk_matter_alpha_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: button.bedroom_desk_lightstrip_matter_alpha_identify -> Identify
+- Enriched device_class from original_device_class: button.bedroom_desk_lightstrip_matter_alpha_identify -> identify
+- Enriched entity name from original_name: number.bedroom_desk_lightstrip_matter_alpha_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.bedroom_desk_lightstrip_matter_alpha_on_level -> On level
+- Enriched entity name from original_name: number.bedroom_desk_lightstrip_matter_alpha_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.bedroom_desk_lightstrip_matter_alpha_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.bedroom_desk_lightstrip_matter_alpha_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: button.bedroom_desk_wall_matter_alpha_identify -> Identify
+- Enriched device_class from original_device_class: button.bedroom_desk_wall_matter_alpha_identify -> identify
+- Enriched entity name from original_name: number.bedroom_desk_wall_matter_alpha_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.bedroom_desk_wall_matter_alpha_on_level -> On level
+- Enriched entity name from original_name: number.bedroom_desk_wall_matter_alpha_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.bedroom_desk_wall_matter_alpha_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.bedroom_desk_wall_matter_alpha_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: binary_sensor.kitchen_ceiling_tapo_alpha_cloud_connection -> Cloud connection
+- Enriched device_class from original_device_class: binary_sensor.kitchen_ceiling_tapo_alpha_cloud_connection -> connectivity
+- Enriched entity name from original_name: binary_sensor.kitchen_ceiling_tapo_alpha_overheated -> Overheated
+- Enriched device_class from original_device_class: binary_sensor.kitchen_ceiling_tapo_alpha_overheated -> problem
+- Enriched entity name from original_name: button.kitchen_ceiling_tapo_alpha_restart -> Restart
+- Enriched device_class from original_device_class: button.kitchen_ceiling_tapo_alpha_restart -> restart
+- Enriched entity name from original_name: number.kitchen_ceiling_tapo_alpha_smooth_on -> Smooth on
+- Enriched entity name from original_name: number.kitchen_ceiling_tapo_alpha_smooth_off -> Smooth off
+- Enriched entity name from original_name: select.kitchen_ceiling_tapo_alpha_light_preset -> Light preset
+- Enriched entity name from original_name: sensor.kitchen_ceiling_tapo_alpha_signal_level -> Signal level
+- Enriched entity name from original_name: sensor.kitchen_ceiling_tapo_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.kitchen_ceiling_tapo_alpha_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.kitchen_ceiling_tapo_alpha_ssid -> SSID
+- Enriched entity name from original_name: sensor.kitchen_ceiling_tapo_alpha_device_time -> Device time
+- Enriched device_class from original_device_class: sensor.kitchen_ceiling_tapo_alpha_device_time -> timestamp
+- Enriched entity name from original_name: switch.kitchen_ceiling_tapo_alpha_auto_update_enabled -> Auto-update enabled
+- Enriched entity name from name_registry: button.wiz_p45_e27_identify -> Identify
+- Enriched entity name from name_registry: number.wiz_p45_e27_on_level -> On level
+- Enriched entity name from name_registry: number.wiz_p45_e27_on_transition_time -> On transition time
+- Enriched entity name from name_registry: number.wiz_p45_e27_off_transition_time -> Off transition time
+- Enriched entity name from name_registry: number.wiz_p45_e27_on_off_transition_time -> On/off transition time
+- Enriched entity name from name_registry: select.wiz_p45_e27_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: number.living_room_side_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.living_room_side_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.living_room_side_alpha_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.living_room_side_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.living_room_side_alpha_power -> power
+- Enriched entity name from original_name: number.wiz_rgbw_tunable_55cd2e_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.wiz_rgbw_tunable_55cd2e_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.wiz_rgbw_tunable_55cd2e_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.wiz_rgbw_tunable_55cd2e_power -> Power
+- Enriched device_class from original_device_class: sensor.wiz_rgbw_tunable_55cd2e_power -> power
+- Enriched entity name from original_name: sensor.living_room_foxy_alpha_power -> Power
+- Enriched device_class from original_device_class: sensor.living_room_foxy_alpha_power -> power
+- Enriched entity name from original_name: number.living_room_foxy_alpha_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.living_room_foxy_alpha_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.living_room_foxy_alpha_signal_strength -> signal_strength
+- Enriched entity name from original_name: binary_sensor.ds220plus_security_status -> Security status
+- Enriched device_class from original_device_class: binary_sensor.ds220plus_security_status -> safety
+- Enriched entity name from original_name: button.ds220plus_reboot -> DS220plus Reboot
+- Enriched device_class from original_device_class: button.ds220plus_reboot -> restart
+- Enriched entity name from original_name: button.ds220plus_shutdown -> DS220plus Shutdown
+- Enriched entity name from original_name: sensor.ds220plus_cpu_utilisation_other -> CPU utilisation (other)
+- Enriched entity name from original_name: sensor.ds220plus_cpu_utilisation_user -> CPU utilisation (user)
+- Enriched entity name from original_name: sensor.ds220plus_cpu_utilisation_system -> CPU utilisation (system)
+- Enriched entity name from original_name: sensor.ds220plus_cpu_utilisation_total -> CPU utilisation (total)
+- Enriched entity name from original_name: sensor.ds220plus_cpu_load_average_1_min -> CPU load average (1 min)
+- Enriched entity name from original_name: sensor.ds220plus_cpu_load_average_5_min -> CPU load average (5 min)
+- Enriched entity name from original_name: sensor.ds220plus_cpu_load_average_15_min -> CPU load average (15 min)
+- Enriched entity name from original_name: sensor.ds220plus_memory_usage_real -> Memory usage (real)
+- Enriched entity name from original_name: sensor.ds220plus_memory_size -> Memory size
+- Enriched device_class from original_device_class: sensor.ds220plus_memory_size -> data_size
+- Enriched entity name from original_name: sensor.ds220plus_memory_cached -> Memory cached
+- Enriched device_class from original_device_class: sensor.ds220plus_memory_cached -> data_size
+- Enriched entity name from original_name: sensor.ds220plus_memory_available_swap -> Memory available (swap)
+- Enriched device_class from original_device_class: sensor.ds220plus_memory_available_swap -> data_size
+- Enriched entity name from original_name: sensor.ds220plus_memory_available_real -> Memory available (real)
+- Enriched device_class from original_device_class: sensor.ds220plus_memory_available_real -> data_size
+- Enriched entity name from original_name: sensor.ds220plus_memory_total_swap -> Memory total (swap)
+- Enriched device_class from original_device_class: sensor.ds220plus_memory_total_swap -> data_size
+- Enriched entity name from original_name: sensor.ds220plus_memory_total_real -> Memory total (real)
+- Enriched device_class from original_device_class: sensor.ds220plus_memory_total_real -> data_size
+- Enriched entity name from original_name: sensor.ds220plus_upload_throughput -> Upload throughput
+- Enriched device_class from original_device_class: sensor.ds220plus_upload_throughput -> data_rate
+- Enriched entity name from original_name: sensor.ds220plus_download_throughput -> Download throughput
+- Enriched device_class from original_device_class: sensor.ds220plus_download_throughput -> data_rate
+- Enriched entity name from original_name: sensor.ds220plus_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.ds220plus_temperature -> temperature
+- Enriched entity name from original_name: sensor.ds220plus_last_boot -> Last boot
+- Enriched device_class from original_device_class: sensor.ds220plus_last_boot -> timestamp
+- Enriched entity name from original_name: update.ds220plus_dsm_update -> DSM update
+- Enriched entity name from original_name: binary_sensor.ds220plus_drive_2_exceeded_max_bad_sectors -> Exceeded max bad sectors
+- Enriched device_class from original_device_class: binary_sensor.ds220plus_drive_2_exceeded_max_bad_sectors -> safety
+- Enriched entity name from original_name: binary_sensor.ds220plus_drive_2_below_min_remaining_life -> Below min remaining life
+- Enriched device_class from original_device_class: binary_sensor.ds220plus_drive_2_below_min_remaining_life -> safety
+- Enriched entity name from original_name: sensor.ds220plus_drive_2_status_smart -> Status (smart)
+- Enriched entity name from original_name: sensor.ds220plus_drive_2_status -> Status
+- Enriched entity name from original_name: sensor.ds220plus_drive_2_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.ds220plus_drive_2_temperature -> temperature
+- Enriched entity name from original_name: binary_sensor.ds220plus_drive_1_exceeded_max_bad_sectors -> Exceeded max bad sectors
+- Enriched device_class from original_device_class: binary_sensor.ds220plus_drive_1_exceeded_max_bad_sectors -> safety
+- Enriched entity name from original_name: binary_sensor.ds220plus_drive_1_below_min_remaining_life -> Below min remaining life
+- Enriched device_class from original_device_class: binary_sensor.ds220plus_drive_1_below_min_remaining_life -> safety
+- Enriched entity name from original_name: sensor.ds220plus_drive_1_status_smart -> Status (smart)
+- Enriched entity name from original_name: sensor.ds220plus_drive_1_status -> Status
+- Enriched entity name from original_name: sensor.ds220plus_drive_1_temperature -> Temperature
+- Enriched device_class from original_device_class: sensor.ds220plus_drive_1_temperature -> temperature
+- Enriched entity name from original_name: sensor.ds220plus_volume_1_status -> Status
+- Enriched entity name from original_name: sensor.ds220plus_volume_1_total_size -> Total size
+- Enriched device_class from original_device_class: sensor.ds220plus_volume_1_total_size -> data_size
+- Enriched entity name from original_name: sensor.ds220plus_volume_1_used_space -> Used space
+- Enriched device_class from original_device_class: sensor.ds220plus_volume_1_used_space -> data_size
+- Enriched entity name from original_name: sensor.ds220plus_volume_1_volume_used -> Volume used
+- Enriched entity name from original_name: sensor.ds220plus_volume_1_average_disk_temp -> Average disk temp
+- Enriched device_class from original_device_class: sensor.ds220plus_volume_1_average_disk_temp -> temperature
+- Enriched entity name from original_name: sensor.ds220plus_volume_1_maximum_disk_temp -> Maximum disk temp
+- Enriched device_class from original_device_class: sensor.ds220plus_volume_1_maximum_disk_temp -> temperature
+- Enriched device_class from original_device_class: media_player.qs02_2 -> tv
+- Enriched entity name from original_name: button.wiz_candle_identify -> Identify
+- Enriched device_class from original_device_class: button.wiz_candle_identify -> identify
+- Enriched entity name from original_name: number.wiz_candle_on_level -> On level
+- Enriched entity name from original_name: number.wiz_candle_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.wiz_candle_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.wiz_candle_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.wiz_candle_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: button.wiz_a_e27_identify -> Identify
+- Enriched device_class from original_device_class: button.wiz_a_e27_identify -> identify
+- Enriched entity name from original_name: number.wiz_a_e27_on_level -> On level
+- Enriched entity name from original_name: number.wiz_a_e27_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.wiz_a_e27_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.wiz_a_e27_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.wiz_a_e27_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: button.wiz_g95_filament_identify -> Identify
+- Enriched device_class from original_device_class: button.wiz_g95_filament_identify -> identify
+- Enriched entity name from original_name: number.wiz_g95_filament_on_level -> On level
+- Enriched entity name from original_name: number.wiz_g95_filament_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.wiz_g95_filament_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.wiz_g95_filament_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.wiz_g95_filament_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: number.wiz_rgbw_tunable_559e02_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.wiz_rgbw_tunable_559e02_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.wiz_rgbw_tunable_559e02_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.wiz_rgbw_tunable_559e02_power -> Power
+- Enriched device_class from original_device_class: sensor.wiz_rgbw_tunable_559e02_power -> power
+- Enriched entity name from original_name: button.living_room_floorlamp_matter_alpha_identify -> Identify
+- Enriched device_class from original_device_class: button.living_room_floorlamp_matter_alpha_identify -> identify
+- Enriched entity name from original_name: number.living_room_floorlamp_matter_alpha_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.living_room_floorlamp_matter_alpha_on_level -> On level
+- Enriched entity name from original_name: number.living_room_floorlamp_matter_alpha_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.living_room_floorlamp_matter_alpha_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.living_room_floorlamp_matter_alpha_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: switch.ps5_power -> power
+- Enriched entity name from original_name: sensor.ps5_activity -> activity
+- Enriched entity name from original_name: binary_sensor.ps5_mqtt_running -> Running
+- Enriched device_class from original_device_class: binary_sensor.ps5_mqtt_running -> running
+- Enriched entity name from original_name: sensor.ps5_mqtt_version -> Version
+- Enriched entity name from original_name: sensor.ps5_mqtt_newest_version -> Newest version
+- Enriched entity name from original_name: sensor.ps5_mqtt_cpu_percent -> CPU percent
+- Enriched entity name from original_name: sensor.ps5_mqtt_memory_percent -> Memory percent
+- Enriched entity name from original_name: update.ps5_mqtt_update -> Update
+- Enriched entity name from original_name: button.wiz_color_strip_identify -> Identify
+- Enriched device_class from original_device_class: button.wiz_color_strip_identify -> identify
+- Enriched entity name from original_name: number.wiz_color_strip_on_level -> On level
+- Enriched entity name from original_name: number.wiz_color_strip_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.wiz_color_strip_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.wiz_color_strip_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.wiz_color_strip_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: number.wiz_rgbww_tunable_79bb7c_effect_speed -> Effect speed
+- Enriched entity name from original_name: sensor.wiz_rgbww_tunable_79bb7c_signal_strength -> Signal strength
+- Enriched device_class from original_device_class: sensor.wiz_rgbww_tunable_79bb7c_signal_strength -> signal_strength
+- Enriched entity name from original_name: sensor.wiz_rgbww_tunable_79bb7c_power -> Power
+- Enriched device_class from original_device_class: sensor.wiz_rgbww_tunable_79bb7c_power -> power
+- Enriched entity name from original_name: button.bedroom_nightstand_left_matter_alpha_identify -> Identify
+- Enriched device_class from original_device_class: button.bedroom_nightstand_left_matter_alpha_identify -> identify
+- Enriched entity name from original_name: number.bedroom_nightstand_left_matter_alpha_off_transition_time -> Off transition time
+- Enriched entity name from original_name: number.bedroom_nightstand_left_matter_alpha_on_level -> On level
+- Enriched entity name from original_name: number.bedroom_nightstand_left_matter_alpha_on_transition_time -> On transition time
+- Enriched entity name from original_name: number.bedroom_nightstand_left_matter_alpha_on_off_transition_time -> On/off transition time
+- Enriched entity name from original_name: select.bedroom_nightstand_left_matter_alpha_power_on_behaviour_on_startup -> Power-on behaviour on startup
+- Enriched entity name from original_name: update.openplantbook_update -> OpenPlantbook update
+- Enriched entity name from original_name: switch.openplantbook_pre_release -> Pre-release
+- Enriched entity name from original_name: sensor.ephone_battery -> Battery
+- Enriched device_class from original_device_class: sensor.ephone_battery -> battery
+- Enriched entity name from original_name: sensor.sphero_bb_8_sphero_bb_8_battery -> Sphero BB-8 Battery
+- Enriched device_class from original_device_class: sensor.sphero_bb_8_sphero_bb_8_battery -> battery
+- Enriched entity name from original_name: binary_sensor.sphero_bb_8_sphero_bb_8_connection -> Sphero BB-8 Connection
+- Enriched device_class from original_device_class: binary_sensor.sphero_bb_8_sphero_bb_8_connection -> connectivity

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "core.category_registry",
+  "data": {
+    "categories": {
+      "automation": [
+        {
+          "category_id": "01JY3KFZV76S3M5FEGSCJ27TG9",
+          "created_at": "2025-06-19T08:04:43.495969+00:00",
+          "icon": "mdi:bell",
+          "modified_at": "2025-06-19T08:04:43.495975+00:00",
+          "name": "Alerts"
+        },
+        {
+          "category_id": "01K0CAK0HPYX9KAS4HDM9VREWC",
+          "created_at": "2025-07-17T13:53:38.870273+00:00",
+          "icon": "mdi:alarm",
+          "modified_at": "2025-07-17T13:53:38.870279+00:00",
+          "name": "Alarm"
+        },
+        {
+          "category_id": "01K0CASDG7TNTRZW7F33B1CWR4",
+          "created_at": "2025-07-17T13:57:08.743309+00:00",
+          "icon": "mdi:desktop-tower-monitor",
+          "modified_at": "2025-07-17T13:57:08.743315+00:00",
+          "name": "Presence - Desk Setup"
+        }
+      ]
+    }
+  }
+}

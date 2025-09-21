@@ -1,0 +1,49 @@
+{
+  "version": "2.0",
+  "source": "Omega Registry Rehydration Pipeline",
+  "device_key_mappings": {
+    "v1": [
+      "device_id",
+      "manufacturer",
+      "model",
+      "firmware",
+      "platform",
+      "location"
+    ],
+    "v2": [
+      "id",
+      "manufacturer",
+      "model",
+      "via_device_id",
+      "identifiers",
+      "integration"
+    ]
+  },
+  "entity_key_mappings": {
+    "v1": [
+      "name",
+      "canonical_id",
+      "origin",
+      "type"
+    ],
+    "v2": [
+      "entity_id",
+      "attributes"
+    ]
+  },
+  "rehydration_sources": {
+    "primary": "core.entity_registry (Home Assistant .storage)",
+    "attribute_strategy": "fallback if entity_id found, merge all attributes unconditionally",
+    "malformed_entities": "fields reassigned to first valid entity per device"
+  },
+  "structural_policies": {
+    "require_entity_id": true,
+    "allow_empty_attributes": true,
+    "max_entities_per_device": 100
+  },
+  "metadata": {
+    "generated_on": "2025-06-29",
+    "entity_rehydration_coverage": ">=99%",
+    "attribute_injection": "selective"
+  }
+}

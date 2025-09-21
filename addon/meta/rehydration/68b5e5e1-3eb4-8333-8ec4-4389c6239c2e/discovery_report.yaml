@@ -1,0 +1,36 @@
+found_canonical_dirs:
+  - /Users/evertappels/Projects/omega_registry/canonical
+  - /Users/evertappels/Projects/omega_registry/registry_rehydration_local_last/canonical
+hardcoded_canonical_literals:
+  files_with_literal_count: 57
+  sample_files:
+    - registry_rehydration_local_last/scripts/generate_omega_registry.py: lines with 'canonical/' defaults and log writes
+    - registry_rehydration_local_last/scripts/hestia_pre_reboot_parser.py: CLI defaults and copilot_patchlog append
+    - registry_rehydration_local_last/scripts/canonical_registry_builder.py: OUTPUT_PATH constant
+    - registry_rehydration_local_last/scripts/analytics/analyze_omega_registry.py: relative lookup for '../canonical/registry_inputs/core.entity_registry'
+    - registry_rehydration_local_last/scripts/utils/output_contract_enforcer.py: log_dir = 'canonical/logs/scratch'
+  note: "Many scripts accept CLI overrides (e.g., --input_dir or --output) but default values reference 'canonical/'."
+env_or_config_refs:
+  detected: false
+  candidates_searched:
+    - CANONICAL_ROOT
+    - canonical_root
+    - canonicalRoot
+    - CANONICAL_DIR
+  note: "No explicit env var or config key named CANONICAL_ROOT found by literal search; consider centralizing path via env/config to reduce hard-coded literals."
+key_differing_files_between_roots:
+  - canonical/registry_inputs/core.entity_registry
+  - canonical/registry_inputs/core.device_registry
+  - canonical/registry_inputs/core.config_entries
+  - canonical/registry_inputs/core.restore_state
+  - canonical/logs/scratch/enrichment_trace_omega_registry.jsonl
+  - canonical/logs/scratch/propagation_audit_trace.jsonl
+  - canonical/logs/scratch/source_file_ingestion_status.json
+  - canonical/omega_registry_master.json
+recommendations:
+  - Run a follow-up pass to list every occurrence (file + line numbers) for the 57 files with 'canonical/' literals; I can produce a CSV mapping.
+  - Add a small wrapper module (e.g., 'canonical_path.py') that exports a single function to resolve canonical paths from env or default 'canonical/'.
+  - Before moving files: archive non-master canonical to 'registry_rehydration_local_last/canonical_archive/<timestamp>/' and re-run manifest collector to confirm parity.
+  - Draft ADR and small CI check to prevent two canonical/ roots from being committed.
+report_generated_by: automated-discovery-pass
+report_generated_at: '2025-09-20T00:00:00Z'

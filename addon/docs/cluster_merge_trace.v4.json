@@ -1,0 +1,75 @@
+[
+  {
+    "base_cluster": "bedroom_occupancy",
+    "merged_from": [
+      "bedroom_occupancy_sensitivity"
+    ],
+    "entities_added": [
+      "select.bedroom_occupance_alpha_occupancy_sensitivity"
+    ]
+  },
+  {
+    "base_cluster": "bedroom_occupancy",
+    "merged_from": [
+      "bedroom_occupancy_timeout"
+    ],
+    "entities_added": [
+      "number.bedroom_occupance_alpha_occupancy_timeout"
+    ]
+  },
+  {
+    "base_cluster": "kitchen_occupancy",
+    "merged_from": [
+      "kitchen_occupancy_sensitivity"
+    ],
+    "entities_added": [
+      "select.kitchen_occupancy_omega_occupancy_sensitivity"
+    ]
+  },
+  {
+    "base_cluster": "kitchen_occupancy",
+    "merged_from": [
+      "kitchen_occupancy_timeout"
+    ],
+    "entities_added": [
+      "number.kitchen_occupancy_omega_occupancy_timeout"
+    ]
+  },
+  {
+    "base_cluster": "kitchen_occupancy",
+    "merged_from": [
+      "kitchen_occupancy"
+    ],
+    "entities_added": [
+      "binary_sensor.kitchen_occupancy_omega_occupancy",
+      "binary_sensor.kitchen_occupancy_matter_alpha_occupancy"
+    ]
+  },
+  {
+    "base_cluster": "ensuite_occupancy",
+    "merged_from": [
+      "ensuite_occupancy_sensitivity"
+    ],
+    "entities_added": [
+      "select.ensuite_occupancy_omega_occupancy_sensitivity"
+    ]
+  },
+  {
+    "base_cluster": "ensuite_occupancy",
+    "merged_from": [
+      "ensuite_occupancy_timeout"
+    ],
+    "entities_added": [
+      "number.ensuite_occupancy_omega_occupancy_timeout"
+    ]
+  },
+  {
+    "base_cluster": "ensuite_occupancy",
+    "merged_from": [
+      "ensuite_occupancy"
+    ],
+    "entities_added": [
+      "binary_sensor.ensuite_occupancy_omega_occupancy"
+    ]
+  }
+]

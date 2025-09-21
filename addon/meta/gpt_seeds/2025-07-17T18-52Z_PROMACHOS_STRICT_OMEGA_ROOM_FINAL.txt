@@ -1,0 +1,50 @@
+rehydration_context_manifest:
+  trace_id: 2025-07-17T18:52Z_PROMACHOS_STRICT_OMEGA_ROOM_FINAL
+  persona: promachos_v3
+  phase: Phase 3.5 — Omega Room Registry Reconstruction (strict-mode reattempt w/ settings.conf.yaml)
+  files_used:
+    - file: settings.conf.yaml
+      purpose: Canonical source of room and floor mappings
+      tags: [config, authoritative_area_source, override_core_registry]
+    - file: entity_fingerprint_map.json
+      purpose: Source of fingerprinted entity metadata
+      tags: [fingerprinting, area_propagation, cluster_inference]
+    - file: entity_id_migration_map.annotated.v4.full.json
+      purpose: Post-reboot ID mapping for fingerprinted entities
+      tags: [id_mapping, migration, Rosetta_Stone]
+    - file: core.area_registry
+      purpose: Explicitly deprecated in favor of settings.conf.yaml
+      tags: [legacy_area_source, deprecated]
+    - file: omega_room_contract.yaml
+      purpose: Target schema for omega_room_registry.json
+      tags: [output_contract, schema, room_registry]
+    - file: PATCH-ROUNDTRIP-AUDIT-V2.log
+      purpose: Lineage logging of patch actions, entity counts, phase transitions
+      tags: [audit_log, patching, governance]
+    - file: copilot_patchlog_overview.log
+      purpose: Copilot-executed patch summary and phase-level logging
+      tags: [copilot_trace, execution_log]
+    - file: unresolved_entity_rejection_audit.json
+      purpose: Summary of exclusions during strict omega room mapping
+      tags: [diagnostics, rejection_trace, exclusion_audit]
+    - file: missing_area_inheritance_diagnostics.json
+      purpose: Area propagation success/failure trace (device inheritance)
+      tags: [diagnostics, area_inference, inheritance_audit]
+    - file: TARBALL-OMEGA-ROOM-REGISTRY-STRICT-FINAL-CORRECTED.tar.gz
+      purpose: Final strict-mode room registry outputs (empty due to area mismatch)
+      tags: [output_bundle, room_registry, strict_mode, failure_trace]
+    - file: registry_rehydration_snapshot_20250717_173038.tar.gz
+      purpose: Full project snapshot post-area-inheritance patch
+      tags: [project_snapshot, recovery_point, stable]
+  memory_variables:
+    alpha_fingerprint_map: Validated, 1205 entities post-strict propagation
+    role_rules_applied: settings.conf.yaml > role_mappings block
+    area_inference_status: 1205 pre-patch unknowns → 159 unresolved after inheritance patch
+    patch_ids_applied:
+      - PATCH-settings_conf_yaml-general_path_fix-20250717
+      - PATCH-generate_omega_room_registry-refactor_paths-strict_rebuild-20250717
+      - PATCH-area_inheritance_fix-fingerprint_pipeline-device_level-20250717
+    unresolved_area_trace: Majority of final_area slugs do not match settings.conf.yaml room_mappings
+    strict_registry_result: Zero room population; all entities excluded
+    copilot_execution_paused: True — awaiting override or next reconstruction instruction
+    core.area_registry_usage: Explicitly disabled per protocol (all area lookups resolved via settings.conf.yaml)

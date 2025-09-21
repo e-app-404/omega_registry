@@ -1,0 +1,78 @@
+# 📜 Pre-Execution Output Contracts
+#
+# Before any script runs, we must explicitly define:
+#
+# Attribute	Specified?	Required Action
+# Minimum entity count	❌	Derive from core.entity_registry
+# Required role coverage	❌	Specify role quota per room
+# Expected per-room tiers	❌	Declare required tier distributions
+# Schema shape	✅ (partial)	Re-assert and validate early
+# Semantic completeness	❌	Infer from legacy registry baseline
+# Post-conditions	❌	Output audits must be predeclared
+#
+#
+# ⸻
+#
+# 🛠 Recommendation
+#
+# Create a pre-flight contract file (e.g. contracts/expected_alpha_sensor_registry.yaml) containing:
+# 	•	Expected count of clusters
+# 	•	Expected area/tier/role/semantic_role distributions
+# 	•	Acceptable thresholds (e.g. min confidence)
+# 	•	Required output files per phase
+# 	•	Sanity guardrails (e.g. “No duplicate entity_ids”, “No unknown area_id”)
+#
+# And require all execution logic (Copilot, scripts) to validate against this contract before considering a phase “complete”.
+#
+# ⸻
+
+# === Output Contract: Alpha Sensor Registry ===
+version: 1.0
+source: PATCH-ALPHA-REGEN-V3-001
+description: |
+  Output contract for the regenerated alpha_sensor_registry.json.
+  Enforces completeness, structure, and minimum coverage against the known entity base.
+
+thresholds:
+  min_confidence_score_mean: 0.92
+  min_coverage_percent: 90.0
+  max_feature_count_per_cluster: 3
+  required_fields:
+    - id
+    - area
+    - role
+    - semantic_role
+    - tier
+    - confidence_score_mean
+    - post_reboot_entity_ids
+    - source_clusters
+    - match_methods
+
+schema_constraints:
+  tier: "alpha"
+  allow_features: true
+  enforce_area_presence: true
+  enforce_unique_entity_ids: true
+
+role_expectations:
+  motion_monitor: { min_clusters: 4 }
+  occupancy_monitor: { min_clusters: 4 }
+  climate_monitor: { min_clusters: 4 }
+  humidity_monitor: { min_clusters: 4 }
+  contact_monitor: { min_clusters: 2 }
+  light_level_sensor: { min_clusters: 2 }
+  override_trigger: { min_clusters: 1 }
+
+area_expectations:
+  bedroom: { min_clusters: 5 }
+  ensuite: { min_clusters: 3 }
+  kitchen: { min_clusters: 5 }
+  living_room: { min_clusters: 4 }
+  hallway_downstairs: { min_clusters: 2 }
+  hallway_upstairs: { min_clusters: 2 }
+
+audit_outputs:
+  - output/alpha_sensor_registry.json
+  - output/data/alpha_sensor_registry.debug.log.json
+  - output/alpha_sensor_registry.validation_report.json
+  - output/data/cluster_coverage_metrics.json

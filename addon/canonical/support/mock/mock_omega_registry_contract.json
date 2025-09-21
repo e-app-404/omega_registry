@@ -1,0 +1,83 @@
+[
+{
+  "entity_id": "binary_sensor.kitchen_occupancy_omega_occupancy",
+  "domain": "binary_sensor",
+  "platform": "mqtt",
+  "device_class": "occupancy",
+  "entity_category": null,
+  "name": "Kitchen Occupancy (Omega)",
+  "original_name": "Kitchen Occupancy",
+  "hidden_by": null,
+  "disabled_by": null,
+  "area_id": "kitchen",
+  "suggested_area": "Kitchen",
+  "floor_id": "downstairs",
+  "floor_name": "Downstairs",
+  "level": 0,
+  "device_id": "a1b2c3d4e5f6",
+  "manufacturer": "Zemismart",
+  "model": "ZN-005",
+  "mac": "12:34:56:78:9A:BC",
+  "connections": [["mac", "12:34:56:78:9A:BC"]],
+  "entry_id": "entry_omega_mqtt_kitchen",
+  "integration": "mqtt",
+  "via_device_id": null,
+  "labels": ["occupancy", "kitchen", "presence", "omega"],
+  "state_snapshot": {
+    "state": "on",
+    "last_seen": "2025-07-18T17:02:49.000Z",
+    "restored": true
+  },
+  "exposed_to_assistant": true,
+  "join_confidence": 1.0,
+  "join_origin": ["core.entity_registry", "core.device_registry", "core.area_registry"],
+  "source": [
+    "core.entity_registry",
+    "core.device_registry",
+    "core.area_registry",
+    "core.floor_registry",
+    "core.restore_state",
+    "homeassistant.exposed_entities"
+  ]
+},
+{
+  "entity_id": "sensor.living_room_multipurpose_alpha_temperature",
+  "domain": "sensor",
+  "platform": "mqtt",
+  "device_class": "temperature",
+  "entity_category": "diagnostic",
+  "name": "Living Room Multipurpose Temperature",
+  "original_name": "Livingroom TSensor",
+  "hidden_by": null,
+  "disabled_by": null,
+  "area_id": "living_room",
+  "suggested_area": "Living Room",
+  "floor_id": "downstairs",
+  "floor_name": "Downstairs",
+  "level": 0,
+  "device_id": "ddee4455aa",
+  "manufacturer": "Sonoff",
+  "model": "SNZB-02P",
+  "mac": "AB:CD:EF:12:34:56",
+  "connections": [["mac", "AB:CD:EF:12:34:56"]],
+  "entry_id": "entry_alpha_living_temp",
+  "integration": "mqtt",
+  "via_device_id": null,
+  "labels": ["temperature", "alpha", "diagnostic", "living_room"],
+  "state_snapshot": {
+    "state": "23.3",
+    "last_seen": "2025-07-20T09:11:04.000Z",
+    "restored": false
+  },
+  "exposed_to_assistant": false,
+  "join_confidence": 1.0,
+  "join_origin": ["core.entity_registry", "core.device_registry", "core.restore_state"],
+  "source": [
+    "core.entity_registry",
+    "core.device_registry",
+    "core.area_registry",
+    "core.floor_registry",
+    "core.restore_state"
+  ]
+}
+]

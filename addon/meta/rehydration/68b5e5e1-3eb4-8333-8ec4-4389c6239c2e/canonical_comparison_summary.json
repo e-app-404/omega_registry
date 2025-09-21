@@ -1,0 +1,260 @@
+{
+  "found_canonical_dirs": [
+    "/Users/evertappels/Projects/omega_registry/canonical",
+    "/Users/evertappels/Projects/omega_registry/registry_rehydration_local_last/canonical"
+  ],
+  "total_distinct_relpaths": 319,
+  "unique_files": 275,
+  "identical_files": 21,
+  "differing_files": 23,
+  "unique_list_sample": [
+    {
+      "relpath": "logs/.DS_Store",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "6b0b6d00b94c58b2a9d2aaa88b5a005f79857a94aec81075101aa9264ea1c031",
+        "size": 12292,
+        "mtime": 1758298025.174994,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/.DS_Store"
+      }
+    },
+    {
+      "relpath": "logs/analytics/analyze_omega_registry.latest.json",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "8afeb7c7316c15c139aad511c96ab6dad6e23f9a0c2a108a0c5ccea3b9de84ed",
+        "size": 11316,
+        "mtime": 1758294328.0852063,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/analyze_omega_registry.latest.json"
+      }
+    },
+    {
+      "relpath": "logs/analytics/analyze_omega_registry.log",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "ff4b16afba4caef87e59195fd73d8d8e727ff2f860bf55cd7ec2a9933e25e109",
+        "size": 17161,
+        "mtime": 1754524981.1097848,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/analyze_omega_registry.log"
+      }
+    },
+    {
+      "relpath": "logs/analytics/copilot_analytics_output.json",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "6e2825c8ca7ba3fb5480d959699bfbf20160e18f6d85975e5a06a21552197a94",
+        "size": 5827,
+        "mtime": 1753183723.58309,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/copilot_analytics_output.json"
+      }
+    },
+    {
+      "relpath": "logs/analytics/device_flatmap.metrics.json",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "3fefa0a492284ac4c5e7f50d93b0a15589961f53cc9d91c00a4837a53fd19bb6",
+        "size": 247,
+        "mtime": 1754114476.346718,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/device_flatmap.metrics.json"
+      }
+    },
+    {
+      "relpath": "logs/analytics/entity_flatmap.metrics.json",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "a9f2aae22f7c1e27606e82fb92017d23df7f5e0316c23c1bdc7dea76f8af6bde",
+        "size": 249,
+        "mtime": 1753224574.2993877,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/entity_flatmap.metrics.json"
+      }
+    },
+    {
+      "relpath": "logs/analytics/hydration_coverage_report.json",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "81dfd06b194d6ee6b1792fa0bddfaf6145c60a65561f0e602791b9419c2bc01a",
+        "size": 2287,
+        "mtime": 1753470908.902646,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/hydration_coverage_report.json"
+      }
+    },
+    {
+      "relpath": "logs/analytics/metrics_diff_report.json",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "d2bf5bbf4195ef9afda24d9de93e25973c588a7f09e250315f5e9e893acfc5f9",
+        "size": 132,
+        "mtime": 1753202685.186918,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/metrics_diff_report.json"
+      }
+    },
+    {
+      "relpath": "logs/analytics/omega_registry_analytics.latest.json",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "d284ffc5e708666fb3f27e154a69f982b71b6657b929c3b6cd2e8f532e8e55fa",
+        "size": 6817,
+        "mtime": 1753236112.0522256,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/omega_registry_analytics.latest.json"
+      }
+    },
+    {
+      "relpath": "logs/analytics/pipeline_metrics.latest.json",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "334a9956a12412230b64a7619ab257813b310808f719d382657e4f4b6b58ce8c",
+        "size": 11484,
+        "mtime": 1758294328.0858371,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/pipeline_metrics.latest.json"
+      }
+    },
+    {
+      "relpath": "logs/analytics/registry_domain_distribution.json",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "43fec91eb0c8d8bc51506c97d911a5acdc6fc53968e03c9821ef41b6d748d0ba",
+        "size": 99,
+        "mtime": 1753183551.0166435,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/analytics/registry_domain_distribution.json"
+      }
+    },
+    {
+      "relpath": "logs/audit/.DS_Store",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "167c0b6f9d4ed02300e32fb8ba64d00c854414f192c581dac5c4b335aaa19ddc",
+        "size": 6148,
+        "mtime": 1754997734.3216836,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/audit/.DS_Store"
+      }
+    },
+    {
+      "relpath": "logs/audit/CONTRACT_REALIZATION_AUDIT_20250721.log",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "b98b88ffed1756b74afdcbe4412da7988a3cfc8b54c5c4be46dfc53f26690211",
+        "size": 8741,
+        "mtime": 1753121000.0,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/audit/CONTRACT_REALIZATION_AUDIT_20250721.log"
+      }
+    },
+    {
+      "relpath": "logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/analyze_omega_registry.log",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "a22905b95a728c6e93f063b5bc88c29606e0905723b6d44b63dea8c9de42f4ed",
+        "size": 5003,
+        "mtime": 1753186448.410858,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/analyze_omega_registry.log"
+      }
+    },
+    {
+      "relpath": "logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/build_enriched_device_map.log",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "ea293fc1f00b27dc894fee583f8a2d823f84782bb3cef86413b13c24ad219e5c",
+        "size": 116,
+        "mtime": 1753187057.9819112,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/build_enriched_device_map.log"
+      }
+    },
+    {
+      "relpath": "logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/crossref.log",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "36d7ed957616c9e36cd8cdc802795618e48099cebadd8a4d91b68f40d9c13b0a",
+        "size": 84211,
+        "mtime": 1753186432.1212347,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/crossref.log"
+      }
+    },
+    {
+      "relpath": "logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/finalize_alpha_room_registry.log",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "8c6622a9c6dc6f1d544362fdc78eecd17fb69748571ae6d8b40f935aa3ede0d6",
+        "size": 119,
+        "mtime": 1753186592.4858885,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/finalize_alpha_room_registry.log"
+      }
+    },
+    {
+      "relpath": "logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/flatten_device_registry.log",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "39dbd920010049d639c2085bf0a719a4fcaf99fd6c9f8edc3f10bf5584e726fc",
+        "size": 89,
+        "mtime": 1753186438.762511,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/flatten_device_registry.log"
+      }
+    },
+    {
+      "relpath": "logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/generate_alpha_registry.log",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "6270c90ccbe8770467d5f5e9a267d48386478c979c198baf076dd329fc48a0b5",
+        "size": 268,
+        "mtime": 1753187183.5690403,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/generate_alpha_registry.log"
+      }
+    },
+    {
+      "relpath": "logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/generate_entity_flatmap.log",
+      "entry": {
+        "canonical_root": "/Users/evertappels/Projects/omega_registry/canonical",
+        "sha256": "0cdef6f28e220aab3a890b63597ab418261d04985e44452eb885558f4681e2be",
+        "size": 2970,
+        "mtime": 1753187049.6007035,
+        "abs_path": "/Users/evertappels/Projects/omega_registry/canonical/logs/audit/VALIDATION-CONTRACT-CANONICALIZATION-V1/generate_entity_flatmap.log"
+      }
+    }
+  ],
+  "identical_list_sample": [
+    "logs/scratch/.keep",
+    "logs/scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T175806.log",
+    "logs/scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T175943.log",
+    "logs/scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T180255.log",
+    "logs/scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T182434.log",
+    "logs/scratch/CONTRACT-ENFORCEMENT-FAILURES-20250720T183030.log",
+    "logs/scratch/CONTRACT_REALIZATION_AUDIT_FOLLOWUP_20250721.log",
+    "logs/scratch/INGESTION_VALIDATION_AND_EXTRACTION_COVERAGE_V1.log",
+    "logs/scratch/PATCH-ANALYTICS-TOOLBOX-FOR-OMEGA-REGISTRY-V1.log",
+    "logs/scratch/PATCH-CONTRACT-REFERENCE-DERIVATION-SCRIPT-V1.log",
+    "logs/scratch/PATCH-INTEGRATE-PREREBOOT-HESTIA-JOIN-GRAPH-V1.log",
+    "logs/scratch/PATCH-LOGGING-STANDARD-V1.log",
+    "logs/scratch/PATCH-PARSE-LEGACY-HESTIA-PREREBOOT-V1.log",
+    "logs/scratch/PATCH-SCOPED-DIAGNOSTIC-LOGGING-POLICY-V1.log",
+    "logs/scratch/PATCH-VARIOUS-LOGIC-MAINTENANCE-V1.log",
+    "logs/scratch/PATCH_CANONICAL_REGISTRY_BUILDER_V1.log",
+    "logs/scratch/PATCH_FIELD_PROPAGATION_AND_CORRECTION_V1.log",
+    "logs/scratch/PATCH_FIX_EXTRACTION_FOR_IGNORED_REGISTRY_INPUTS_V1.log",
+    "logs/scratch/PROPAGATION_AUDIT_AND_SOURCE_INGEST_COMPLETENESS_V1.log",
+    "logs/scratch/copilot_patch_integrate_prereboot_hestia_join_graph_v1_20250720T1600.log",
+    "logs/scratch/debug_pre_reboot_join_entries.log"
+  ],
+  "differing_list_sample": [
+    ".DS_Store",
+    "logs/analytics/omega_registry_metrics.log",
+    "logs/scratch/CONTRACT_REALIZATION_AUDIT_AND_PROPAGATION_VALIDATION_V1.log",
+    "logs/scratch/PATCH-CONFLICT-RESOLUTION-AUTHORITY-MODEL-V1.log",
+    "logs/scratch/PATCH-JOIN-PIPELINE-HESTIA-V1.log",
+    "logs/scratch/enrichment_trace_omega_registry.jsonl",
+    "logs/scratch/omega_registry_unused_sources.log",
+    "logs/scratch/propagation_audit_trace.jsonl",
+    "logs/scratch/source_file_ingestion_status.json",
+    "registry_inputs/core.area_registry",
+    "registry_inputs/core.category_registry",
+    "registry_inputs/core.config_entries",
+    "registry_inputs/core.device_registry",
+    "registry_inputs/core.entity_registry",
+    "registry_inputs/core.floor_registry",
+    "registry_inputs/core.label_registry",
+    "registry_inputs/core.restore_state",
+    "registry_inputs/counter",
+    "registry_inputs/homeassistant.exposed_entities",
+    "registry_inputs/input_boolean",
+    "registry_inputs/input_datetime",
+    "registry_inputs/person",
+    "registry_inputs/trace.saved_traces"
+  ]
+}

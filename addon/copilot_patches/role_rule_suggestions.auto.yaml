@@ -1,0 +1,37 @@
+# Copilot-generated role inference rule suggestions for excluded entities
+# PATCH-FP-ROLE-RULE-AUGMENT-V1
+
+- name: "occupancy_sensitivity_param"
+  match:
+    domain: "select"
+    pattern: "occupancy.*sensitivity"
+  assign_role: "config_param"
+  # Matches: select.bedroom_occupance_alpha_occupancy_sensitivity, select.kitchen_occupancy_omega_occupancy_sensitivity, select.ensuite_occupancy_omega_occupancy_sensitivity, select.living_room_occupancy_alpha_occupancy_sensitivity
+
+- name: "occupancy_timeout_param"
+  match:
+    domain: "number"
+    pattern: "occupancy.*timeout"
+  assign_role: "config_param"
+  # Matches: number.bedroom_occupance_alpha_occupancy_timeout, number.kitchen_occupancy_omega_occupancy_timeout, number.ensuite_occupancy_omega_occupancy_timeout, number.living_room_occupancy_alpha_occupancy_timeout
+
+- name: "occupancy_update_entity"
+  match:
+    domain: "update"
+    pattern: "occupancy"
+  assign_role: "config_param"
+  # Matches: update.bedroom_occupance_alpha, update.kitchen_occupancy_omega, update.ensuite_occupancy_omega, update.living_room_occupancy_alpha
+
+- name: "battery_sensor"
+  match:
+    domain: "sensor"
+    pattern: "battery"
+  assign_role: "battery_monitor"
+  # Matches: sensor.living_room_multipurpose_alpha_battery
+
+- name: "restart_button"
+  match:
+    domain: "button"
+    pattern: "restart"
+  assign_role: "control_button"
+  # Matches: button.downstairs_presence_omega_restart

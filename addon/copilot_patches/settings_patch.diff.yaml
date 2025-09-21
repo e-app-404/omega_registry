@@ -1,0 +1,53 @@
+# Patch diff for settings.conf.yaml (role_inference_rules and penalization logic)
+
+---
+# PATCH role_inference_rules + penalties settings.conf.yaml
+
+## Expanded and normalized role_inference_rules
+role_inference_rules:
+  - match: "binary_sensor.*motion.*"
+    assign_role: "motion_monitor"
+  - match: "binary_sensor.*occupancy.*"
+    assign_role: "occupancy_monitor"
+  - match: "binary_sensor.*occupance.*"
+    assign_role: "occupancy_monitor"
+  - match: "binary_sensor.*presence.*"
+    assign_role: "presence_monitor"
+  - match: "sensor.*temperature.*"
+    assign_role: "climate_monitor"
+  - match: "sensor.*climate.*"
+    assign_role: "climate_monitor"
+  - match: "sensor.*humidity.*"
+    assign_role: "humidity_monitor"
+  - match: "binary_sensor.*contact.*"
+    assign_role: "contact_monitor"
+  - match: "sensor.*illumination.*"
+    assign_role: "light_sensor"
+  - match: "sensor.*illuminance.*"
+    assign_role: "light_sensor"
+  - match: "sensor.*battery.*"
+    assign_role: "battery_monitor"
+  - match: "switch.*override.*"
+    assign_role: "override_trigger"
+  - match: "binary_sensor.*manual_trigger.*"
+    assign_role: "override_trigger"
+
+## Added penalization logic
+negative_score_rules:
+  - id: mismatch_device_class_area
+    penalty: -0.25
+    description: "Device class does not match area semantic type"
+  - id: domain_conflict
+    penalty: -0.40
+    match:
+      - ["climate", "motion"]
+      - ["presence", "switch"]
+  - id: unrelated_suffix_penalty
+    penalty: -0.30
+    suffixes:
+      - "battery"
+      - "signal"
+      - "rssi"
+      - "firmware"
+
+# End of patch

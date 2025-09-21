@@ -1,0 +1,78 @@
+file1: /Users/evertappels/Projects/omega_registry/canonical/registry_inputs/core.entity_registry
+file2: /Users/evertappels/Projects/omega_registry/registry_rehydration_local_last/canonical/registry_inputs/core.entity_registry
+
+stats:
+  file1_bytes: 292149037
+  file2_bytes: 1402533
+  file1_sha256: 94a084e97cc22f0c7c3f4804414250ab7182a21a58fdcdfa4b65f136d0efc59d
+  file2_sha256: 7c6db12b2f9343d3aff28c41787b6567a6aaa49dcd8c83ff0d436f360cea25a6
+  file1_entity_id_occurrences: 404759
+  file2_entity_id_occurrences: 1487
+  file1_unique_entity_ids: 2606
+  file2_unique_entity_ids: 1467
+  common_unique_entity_ids: 1107
+  only_in_file1_count: 1499
+  only_in_file2_count: 360
+
+samples:
+  only_in_file1_first_20:
+    - automation.auto_git_push_on_config_save
+    - automation.auto_trigger_morning_sequence_after_alarm
+    - automation.bedroom_cam_alert_on_unknown_occupancy_room_mode
+    - automation.bedroom_cam_apply_immediately_on_mode_change
+    - automation.bedroom_cam_enable_when_bedroom_clears_room_mode
+    - automation.bedroom_cam_enable_when_evert_leaves_home_home_mode
+    - automation.bedroom_cam_enable_when_evert_leaves_home_room_mode
+    - automation.bedroom_cam_private_when_bedroom_occupied_room_mode
+    - automation.bedroom_cam_private_when_evert_enters_home_home_mode
+    - automation.bedroom_cam_rehydrate_on_ha_start
+    - automation.bedroom_matrix_availability_online_at_ha_start
+    - automation.bedroom_matrix_mqtt_broadlink
+    - automation.bedroom_matrix_mqtt_broadlink_2
+    - automation.bedroom_matrix_mqtt_command_bridge
+    - automation.bedroom_matrix_mqtt_discovery_one_shot
+    - automation.bedroom_matrix_mqtt_discovery_one_shot_2
+    - automation.count_home_assistant_errors
+    - automation.dehumidifier_filter_reset_auto_off
+    - automation.dehumidifier_runtime_reset_auto_off
+    - automation.desk_presence_decay_timer
+  only_in_file2_first_20:
+    - automation.bb_8_mqtt_command_service
+    - automation.front_door_opened_2
+    - automation.front_door_opened_3
+    - automation.function_wakeup_apple_tv
+    - automation.function_wakeup_lights
+    - automation.function_wakeup_vacuum
+    - binary_sensor.bedroom_presence_gamma
+    - binary_sensor.desk_smart_button_battery
+    - binary_sensor.desk_smart_button_cloud_connection
+    - binary_sensor.downstairs_lightstrip_omega_cloud_connection
+    - binary_sensor.downstairs_lightstrip_omega_overheated
+    - binary_sensor.downstairs_occupancy_matter_alpha_occupancy
+    - binary_sensor.downstairs_presence_omega_battery
+    - binary_sensor.downstairs_presence_omega_cloud_connection
+    - binary_sensor.downstairs_presence_omega_motion
+    - binary_sensor.downstairs_zone_presence_eta
+    - binary_sensor.ensuite_lightstrip_omega_cloud_connection
+    - binary_sensor.ensuite_lightstrip_omega_overheated
+    - binary_sensor.ensuite_occupancy_omega_occupancy
+    - binary_sensor.ensuite_presence_gamma
+
+notes:
+  - file1 (canonical) is very large (~292MB) and contains many repeated occurrences of entity_id (404,759 matches vs 2,606 unique ids),
+    indicating it likely contains historical versions / multiple entries per entity.
+  - file2 (rehydration snapshot) is much smaller (~1.4MB) and contains a compact set (1,487 occurrences, 1,467 unique ids),
+    consistent with a filtered/consolidated snapshot.
+  - There are 1,107 unique entity_ids common to both files. 1,499 unique ids appear only in the canonical source and 360 only in the rehydration snapshot.
+
+commands_used:
+  - wc -c <path>
+  - shasum -a 256 <path>
+  - grep -o '"entity_id":"[^"]*"' <file> | sed 's/"entity_id":"//' | sed 's/"$//' > entities.txt
+  - sort ... | uniq
+  - comm -23/comm -13/comm -12 for set diffs
+
+next_steps_suggestion:
+  - If you want a field-level diff for particular entity_id(s), tell me which (or I can pick a representative sample) and I'll extract the full JSON entries and diff them.
+  - I can also generate CSVs of "only in canonical" and "only in rehydration" for downstream analysis, or produce a small report file added to the artifact index.
+  - If desired, I can compute per-entity latest "modified_at" timestamps and show which entities changed between the two sets.

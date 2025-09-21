@@ -1,0 +1,5202 @@
+{
+  "summary": {
+    "total_entities": 1297,
+    "clusterable_entities": 0,
+    "actually_clustered": 8,
+    "skipped_entities": 1297,
+    "skipped_breakdown": {
+      "Does not match clusterable criteria": 1297
+    }
+  },
+  "matches": [],
+  "skipped": [
+    {
+      "entity_id": "sensor.sun_next_dawn",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.sun_next_dusk",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.sun_next_midnight",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.sun_next_noon",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.sun_next_rising",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.sun_next_setting",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.sun_solar_elevation",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.sun_solar_azimuth",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.sun_solar_rising",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_core_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_core_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_supervisor_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_supervisor_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_host_os_agent_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_host_apparmor_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_host_disk_total",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_host_disk_used",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_host_disk_free",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_operating_system_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_operating_system_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.home_assistant_supervisor_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.home_assistant_core_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.home_assistant_operating_system_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.sonos_favorites",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.sonos_alarm_1",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.sonos_alarm_8",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.sonos_alarm_30",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.sonos_alarm_17",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.backup_backup_manager_state",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.backup_next_scheduled_automatic_backup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.backup_last_successful_automatic_backup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.rpi_power_status",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.matter_server_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.matter_server_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.matter_server_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.matter_server_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.matter_server_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.matter_server_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "person.evert",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "todo.shopping_list",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "tts.google_translate_en_com",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "weather.forecast_home",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.joels_bedroom_speaker",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.archer_ax53_data_received",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.archer_ax53_data_sent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.archer_ax53_packets_received",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.archer_ax53_packets_sent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.archer_ax53_uptime",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.archer_ax53_wan_status",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.archer_ax53_packet_download_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.archer_ax53_packet_upload_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.router_archer_ax53_omega_wan_status",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.router_archer_ax53_omega_external_ip",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.router_archer_ax53_omega_download_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.router_archer_ax53_omega_upload_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.living_room_google_mini_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_sonos_ray_audio_delay",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_sonos_ray_audio_input_format",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_sonos_ray_balance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_sonos_ray_bass",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.bedroom_sonos_ray",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_ray_crossfade",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_ray_loudness",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_sonos_ray_music_surround_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_ray_night_sound",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_ray_speech_enhancement",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_ray_status_light",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_ray_surround_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_sonos_ray_surround_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_ray_surround_music_full_volume",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_ray_touch_controls",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_sonos_ray_treble",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.ensuite_sonos_roam_balance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.ensuite_sonos_roam_bass",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_sonos_roam_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_sonos_roam_charging",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ensuite_sonos_roam_crossfade",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ensuite_sonos_roam_loudness",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_sonos_roam_microphone",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.ensuite_sonos_roam",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ensuite_sonos_roam_status_light",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ensuite_sonos_roam_touch_controls",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.ensuite_sonos_roam_treble",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_sonos_surround_balance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_sonos_surround_bass",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.bedroom_sonos_surround",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_surround_crossfade",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_surround_loudness",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_surround_status_light",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_sonos_surround_touch_controls",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_sonos_surround_treble",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_sonos_speaker_balance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_sonos_speaker_bass",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_sonos_speaker_crossfade",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.kitchen_sonos_speaker",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_sonos_speaker_loudness",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_sonos_speaker_status_light",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_sonos_speaker_touch_controls",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_sonos_speaker_treble",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.upstairs_lightstrip_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.upstairs_lightstrip_omega_overheated",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.upstairs_lightstrip_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.upstairs_lightstrip_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.upstairs_lightstrip_omega_light_preset",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.upstairs_lightstrip_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.upstairs_lightstrip_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.upstairs_lightstrip_omega_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.upstairs_lightstrip_omega_device_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.upstairs_lightstrip_omega_auto_update_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.upstairs_lightstrip_omega_smooth_transitions",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_lightstrip_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_lightstrip_omega_overheated",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.ensuite_lightstrip_omega_light_preset",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_lightstrip_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_lightstrip_omega_device_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ensuite_lightstrip_omega_auto_update_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ensuite_lightstrip_omega_smooth_transitions",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.home_tapo_iot_hub_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.home_tapo_iot_hub_omega_overheated",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_climate_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_climate_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_climate_omega_humidity_warning",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_climate_omega_temperature_warning",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_fridge_contact_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_fridge_contact_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_fridge_contact_omega_door",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_smart_button_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_smart_button_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.hallway_smart_button_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.hallway_smart_button_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.upstairs_presence_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.upstairs_presence_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.upstairs_presence_omega_motion",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.downstairs_presence_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.downstairs_presence_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.downstairs_presence_omega_motion",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.wall_panel_right_switch_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.wall_panel_right_switch_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.wall_panel_left_switch_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.wall_panel_left_switch_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_presence_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_presence_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_presence_omega_motion",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.desk_smart_button_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.desk_smart_button_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_sink_button_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_sink_button_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.entrance_door_contact_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.entrance_door_contact_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.home_tapo_iot_hub_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.home_tapo_iot_hub_omega_pair_new_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.ensuite_climate_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.ensuite_climate_omega_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.kitchen_fridge_contact_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.kitchen_fridge_contact_omega_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.ensuite_smart_button_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.ensuite_smart_button_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.hallway_smart_button_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.hallway_smart_button_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.upstairs_presence_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.upstairs_presence_omega_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.downstairs_presence_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.downstairs_presence_omega_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.wall_panel_right_switch_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.wall_panel_right_switch_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.wall_panel_left_switch_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.wall_panel_left_switch_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.kitchen_presence_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.kitchen_presence_omega_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.desk_smart_button_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.desk_smart_button_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.kitchen_sink_button_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.kitchen_sink_button_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.entrance_door_contact_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.entrance_door_contact_omega_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.home_tapo_iot_hub_omega_alarm_sound",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.home_tapo_iot_hub_omega_alarm_volume",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_tapo_iot_hub_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_tapo_iot_hub_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_tapo_iot_hub_omega_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_tapo_iot_hub_omega_device_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_tapo_iot_hub_omega_alarm_source",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_climate_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_climate_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_climate_omega_humidity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_climate_omega_report_interval",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_climate_omega_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_fridge_contact_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_fridge_contact_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_smart_button_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_smart_button_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.hallway_smart_button_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.hallway_smart_button_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.upstairs_presence_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.upstairs_presence_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.downstairs_presence_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.downstairs_presence_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wall_panel_right_switch_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wall_panel_right_switch_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wall_panel_right_switch_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wall_panel_left_switch_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wall_panel_left_switch_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wall_panel_left_switch_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_presence_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_presence_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.desk_smart_button_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.desk_smart_button_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_sink_button_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_sink_button_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.entrance_door_contact_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.entrance_door_contact_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "siren.home_tapo_iot_hub_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.home_tapo_iot_hub_omega_auto_update_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.home_tapo_iot_hub_omega_led",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.wall_panel_right_switch_wall_panel_right_switch",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.wall_panel_left_switch_wall_panel_left_switch",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.living_room_stringlights_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.living_room_stringlights_omega_overloaded",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.living_room_stringlights_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_stringlights_omega_turn_off_in",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_stringlights_omega_power_protection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_omega_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_omega_on_since",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_omega_device_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_omega_auto_off_at",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_omega_current_consumption",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_omega_today_s_consumption",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_omega_this_month_s_consumption",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_omega_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_omega_current",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_stringlights_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_stringlights_omega_auto_off_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_stringlights_omega_auto_update_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_stringlights_omega_led",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.downstairs_lightstrip_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.downstairs_lightstrip_omega_overheated",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.downstairs_lightstrip_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.downstairs_lightstrip_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.downstairs_lightstrip_omega_light_preset",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.downstairs_lightstrip_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.downstairs_lightstrip_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.downstairs_lightstrip_omega_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.downstairs_lightstrip_omega_device_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.downstairs_lightstrip_omega_auto_update_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.downstairs_lightstrip_omega_smooth_transitions",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.hallway_lightstrip_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.hallway_lightstrip_omega_overheated",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.hallway_lightstrip_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.hallway_lightstrip_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.hallway_lightstrip_omega_light_preset",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.hallway_lightstrip_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.hallway_lightstrip_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.hallway_lightstrip_omega_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.hallway_lightstrip_omega_device_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.hallway_lightstrip_omega_auto_update_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.hallway_lightstrip_omega_smooth_transitions",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_fan_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_fan_overheated",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.ensuite_fan_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.ensuite_fan_turn_off_in",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_fan_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_fan_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_fan_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_fan_on_since",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_fan_device_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_fan_auto_off_at",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ensuite_fan",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ensuite_fan_auto_off_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ensuite_fan_auto_update_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ensuite_fan_led",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_lightstrip_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_lightstrip_omega_overloaded",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.kitchen_lightstrip_omega_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_lightstrip_omega_turn_off_in",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_lightstrip_omega_power_protection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_omega_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_omega_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_omega_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_omega_on_since",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_omega_device_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_omega_auto_off_at",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_omega_current_consumption",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_omega_today_s_consumption",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_omega_this_month_s_consumption",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_omega_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_omega_current",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_lightstrip_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_lightstrip_omega_auto_off_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_lightstrip_omega_auto_update_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_lightstrip_omega_led",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.tp_link_power_strip_efa1_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.tp_link_power_strip_efa1_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.tp_link_power_strip_efa1_on_since",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.tp_link_power_strip_efa1_bedroom_fan_on_since",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.tp_link_power_strip_efa1_plug_2_on_since",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.tp_link_power_strip_efa1_plug_3_on_since",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.bedroom_tplink_powerstrip_omega_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_tplink_powerstrip_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_tplink_powerstrip_omega_led",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_tplink_powerstrip_omega_bedroom_fan",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_tplink_powerstrip_omega_plug_2",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_tplink_powerstrip_omega_plug_3",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.desk_monitor_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.desk_monitor_overheated",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.desk_monitor_turn_off_in",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.desk_monitor_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.desk_monitor_auto_off_at",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.desk_monitor",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.desk_monitor_auto_off_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.desk_monitor_auto_update_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.desk_monitor_led",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.ensuite_main_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "fan.bedroom_dehumidifier_probreeze",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_dehumidifier_probreeze_countdown",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_dehumidifier_probreeze_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_dehumidifier_probreeze_humidity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_dehumidifier_probreeze_ionizer",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_dehumidifier_probreeze_child_lock",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_dehumidifier_probreeze_filter_reset",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "humidifier.bedroom_dehumidifier_probreeze",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.mosquitto_broker_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.mariadb_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.samba_share_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.mosquitto_broker_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.mosquitto_broker_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.mosquitto_broker_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.mosquitto_broker_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.mariadb_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.mariadb_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.mariadb_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.mariadb_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.samba_share_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.samba_share_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.samba_share_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.samba_share_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.mosquitto_broker_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.mariadb_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.samba_share_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.advanced_ssh_web_terminal_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.influxdb_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.node_red_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.glances_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.advanced_ssh_web_terminal_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.advanced_ssh_web_terminal_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.advanced_ssh_web_terminal_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.advanced_ssh_web_terminal_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.influxdb_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.influxdb_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.influxdb_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.influxdb_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.node_red_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.node_red_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.node_red_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.node_red_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.glances_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.glances_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.glances_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.glances_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.advanced_ssh_web_terminal_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.influxdb_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.node_red_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.glances_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "device_tracker.macbook",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "device_tracker.everts_apple_watch",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "device_tracker.iphone11",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.iphone11_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.iphone14_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "device_tracker.iphone14",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.bedroom_apple_tv_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "remote.bedroom_apple_tv_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.zigbee2mqtt_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.zigbee2mqtt_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.zigbee2mqtt_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.zigbee2mqtt_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.zigbee2mqtt_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.zigbee2mqtt_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.govee_to_mqtt_bridge_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.govee_to_mqtt_bridge_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.govee_to_mqtt_bridge_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.govee_to_mqtt_bridge_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.govee_to_mqtt_bridge_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.govee_to_mqtt_bridge_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_hydration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_breathing_disturbances_intensity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_time_to_sleep",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_time_to_wakeup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_average_heart_rate",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_maximum_heart_rate",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_minimum_heart_rate",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_light_sleep",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_rem_sleep",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_average_respiratory_rate",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_maximum_respiratory_rate",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_minimum_respiratory_rate",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_sleep_score",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_snoring",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_snoring_episode_count",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_wakeup_count",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.withings_wakeup_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "calendar.evert_health_biometrics_workouts",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_fat_mass",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_muscle_mass",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_bone_mass",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_fat_ratio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_fat_free_mass",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_weight_goal",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_deep_sleep",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_last_workout_type",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_calories_burnt_last_workout",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_distance_travelled_last_workout",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_elevation_change_last_workout",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_last_workout_intensity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_pause_during_last_workout",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_last_workout_duration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_body_cardio_scales_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "scene.bedroom_vaporwave",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "device_tracker.ephone_uk",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.router_archer_ax53_omega_number_of_port_mapping_entries_ipv4",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.living_room_main_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_desk_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_desk_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_desk_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_main_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_main_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_main_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_desk_lightstrip_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_lightstrip_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_desk_lightstrip_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_nightstand_left_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_nightstand_left_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_nightstand_left_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wiz_rgbww_tunable_79bb9e_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_mirror_lightstrip_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_mirror_lightstrip_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_mirror_lightstrip_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_mirror_lightstrip_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_nightstand_left_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_main_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_wall_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_wall_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_wall_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_wall_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wiz_rgbw_tunable_b22c1e_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_accent_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_accent_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_accent_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_desk_wall_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_wall_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_desk_wall_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_airpurifier_alpha_night_light_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_airpurifier_alpha_filter_lifetime",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_airpurifier_alpha_air_quality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_airpurifier_alpha_pm2_5",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_airpurifier_alpha_display",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "fan.bedroom_airpurifier_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.govee2mqtt_purge_caches",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.govee2mqtt_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.monitor_backlight_alpha_gradient_toggle",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.monitor_backlight_alpha_power_switch",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.monitor_backlight_alpha_request_platform_api_state",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_001",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_002",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_003",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_004",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_005",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_006",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_007",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_008",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_009",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_010",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_011",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_012",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_013",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_014",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.monitor_backlight_alpha_segment_015",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.monitor_backlight_alpha_available",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.zigbee2mqtt_bridge_connection_state",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.zigbee2mqtt_bridge_restart_required",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.zigbee2mqtt_bridge_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.zigbee2mqtt_bridge_log_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.zigbee2mqtt_bridge_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.zigbee2mqtt_bridge_coordinator_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.zigbee2mqtt_bridge_network_map",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.zigbee2mqtt_bridge_permit_join",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.multi_sensor_fusion",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.presence_detection_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.presence_detection_logging",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.presence_debug_mode",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.trigger_manual_presence_fallback",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_ambient_climate_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_ambient_climate_omega_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_ambient_climate_omega_humidity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_ambient_climate_omega_comfort_temperature_min",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_ambient_climate_omega_comfort_temperature_max",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_ambient_climate_omega_comfort_humidity_min",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_ambient_climate_omega_comfort_humidity_max",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_ambient_climate_omega_temperature_units",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_ambient_climate_omega_temperature_calibration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_ambient_climate_omega_humidity_calibration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_ambient_climate_omega_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.bedroom_ambient_climate_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_left_omega_local_temperature_calibration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "climate.bedroom_climate_trv_left_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_left_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_climate_trv_left_omega_child_lock",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_climate_trv_left_omega_open_window",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_left_omega_frost_protection_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_climate_trv_left_omega_temperature_sensor_select",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_left_omega_external_temperature_input",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_left_omega_idle_steps",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_left_omega_closing_steps",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_left_omega_valve_opening_limit_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_left_omega_valve_closing_limit_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_left_omega_valve_motor_running_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_left_omega_valve_opening_degree",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_left_omega_valve_closing_degree",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_left_omega_temperature_accuracy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_left_omega_weekly_schedule",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_left_omega_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.bedroom_climate_trv_left_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_right_omega_local_temperature_calibration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "climate.bedroom_climate_trv_right_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_right_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_climate_trv_right_omega_child_lock",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_climate_trv_right_omega_open_window",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_right_omega_frost_protection_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_climate_trv_right_omega_temperature_sensor_select",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_right_omega_external_temperature_input",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_right_omega_idle_steps",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_right_omega_closing_steps",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_right_omega_valve_opening_limit_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_right_omega_valve_closing_limit_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_right_omega_valve_motor_running_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_right_omega_valve_opening_degree",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_right_omega_valve_closing_degree",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_climate_trv_right_omega_temperature_accuracy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_right_omega_weekly_schedule",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_climate_trv_right_omega_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.bedroom_climate_trv_right_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ensuite_occupancy_omega_occupancy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.ensuite_occupancy_omega_occupancy_timeout",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.ensuite_occupancy_omega_occupancy_sensitivity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_occupancy_omega_illumination",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_occupancy_omega_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.ensuite_occupancy_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_occupancy_omega_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.spare_boolean",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.climate_automation_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.climate_override_active",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.window_open_detection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.humidity_control_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.eco_mode_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.debug_mode_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.chain_diagnostics_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.system_alert_active",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.input_booleandebug_mode",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.input_booleanerror_tracking",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.input_booleansystem_health_monitoring",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.input_booleandevice_tracking",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.room_presence",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.scene_control",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.adaptive_brightness",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.clio_cooldown_active",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.phanes_cooldown_active",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.iris_audit_ok",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.charon_audit_ok",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.battery_monitoring",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.security_monitoring",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.temperature_control",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.night_mode",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.day_mode",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.prometheus_only_circadian",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.prometheus_only_availability",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.phanes_omega_metadata_enrichment",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.turn_on",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.turn_off",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.error_notification_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.enable_daily_clean",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.olympus_auto_validation",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.olympus_auto_fix",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.maintenance_mode",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.mnemosyne_auto_snapshots",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.hermes_system_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.countdown_timer_active",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.skylight_alert_acknowledged",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.cooking_mode",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_steps_today",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_distance_travelled_today",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_elevation_change_today",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_soft_activity_today",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_moderate_activity_today",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_intense_activity_today",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_active_time_today",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_active_calories_burnt_today",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_total_calories_burnt_today",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_security_cam_alpha_baby_cry_detection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_security_cam_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_security_cam_alpha_device_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_security_cam_alpha_led",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "camera.bedroom_security_cam_alpha_live_view",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_security_cam_alpha_motion_detection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_security_cam_alpha_pan_degrees",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_security_cam_alpha_pan_left",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_security_cam_alpha_pan_right",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_security_cam_alpha_person_detection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_security_cam_alpha_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_security_cam_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_security_cam_alpha_tamper_detection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_security_cam_alpha_tilt_degrees",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_security_cam_alpha_tilt_down",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_security_cam_alpha_tilt_up",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_desk_corner_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_corner_omega_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_desk_corner_omega_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_desk_corner_signal_strength_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wiz_rgbw_tunable_2b9e38_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_entrance_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_entrance_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_entrance_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.tapo_smart_iot_hub_firmware",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.wall_panel_right_switch_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.wall_panel_left_switch_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.desk_monitor_device_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.desk_monitor_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.desk_monitor_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.desk_monitor_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.desk_monitor_on_since",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_wardrobe_lightstrip_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_wardrobe_lightstrip_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_wardrobe_lightstrip_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_wardrobe_lightstrip_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_nearest_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_nearest_distance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_nearest_direction_of_travel",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_evert_distance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_everts_apple_watch_distance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_ephone_uk_distance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_iphone14_distance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_evert_direction_of_travel",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_everts_apple_watch_direction_of_travel",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_ephone_uk_direction_of_travel",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_iphone14_direction_of_travel",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_free_ssl",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_free_media",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_free_config",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_free",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_free_run_audio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_free_share",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_use_ssl",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_use_media",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_use_config",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_use",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_use_run_audio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_use_share",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_usage_ssl",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_usage_media",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_usage_config",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_usage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_usage_run_audio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_disk_usage_share",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_ipv4_address_hassio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_ipv4_address_lo",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_ipv4_address_end0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_ipv4_address_docker0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_ipv4_address_wlan0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_ipv6_address_hassio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_ipv6_address_lo",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_ipv6_address_end0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_ipv6_address_docker0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_ipv6_address_wlan0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_last_boot",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_load_15_min",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_load_1_min",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_load_5_min",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_memory_free",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_memory_use",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_memory_usage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_in_hassio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_in_lo",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_in_end0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_in_docker0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_in_wlan0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_out_hassio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_out_lo",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_out_end0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_out_docker0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_out_wlan0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_packets_in_hassio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_packets_in_lo",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_packets_in_end0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_packets_in_docker0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_packets_in_wlan0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_packets_out_hassio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_packets_out_lo",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_packets_out_end0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_packets_out_docker0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_packets_out_wlan0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_throughput_in_hassio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_throughput_in_lo",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_throughput_in_end0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_throughput_in_docker0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_throughput_in_wlan0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_throughput_out_hassio",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_throughput_out_lo",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_throughput_out_end0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_throughput_out_docker0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_network_throughput_out_wlan0",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_processor_use",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_processor_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_swap_free",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_swap_use",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.system_monitor_swap_usage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.system_monitor_process_python3",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.hacs_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.hacs_pre_release",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.nintendo_switch_lost",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.wallet_lost",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.keys_lost",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.backpack_lost",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "device_tracker.nintendo_switch",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "device_tracker.wallet",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "device_tracker.keys",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "device_tracker.backpack",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "device_tracker.ephone",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.iphone14_lost",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_sonos_soundbar_alpha_audio_delay",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_sonos_soundbar_alpha_audio_input_format",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_sonos_soundbar_alpha_balance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_sonos_soundbar_alpha_bass",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.living_room_sonos_soundbar_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_sonos_soundbar_alpha_crossfade",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_sonos_soundbar_alpha_loudness",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.living_room_sonos_soundbar_alpha_microphone",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_sonos_soundbar_alpha_music_surround_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_sonos_soundbar_alpha_night_sound",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_sonos_soundbar_alpha_speech_enhancement",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_sonos_soundbar_alpha_status_light",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_sonos_soundbar_alpha_surround_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_sonos_soundbar_alpha_surround_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_sonos_soundbar_alpha_surround_music_full_volume",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_sonos_soundbar_alpha_touch_controls",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_sonos_soundbar_alpha_treble",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.entrance_door_contact_matter_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_fridge_contact_omega_matter_door",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.upstairs_skylight_contact_matter_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_weight",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.0x286d970001152304_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_ambient_climate_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_ambient_climate_omega_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_ambient_climate_omega_humidity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_ambient_climate_omega_comfort_temperature_min",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_ambient_climate_omega_comfort_temperature_max",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_ambient_climate_omega_comfort_humidity_min",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_ambient_climate_omega_comfort_humidity_max",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.kitchen_ambient_climate_omega_temperature_units",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_ambient_climate_omega_temperature_calibration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_ambient_climate_omega_humidity_calibration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_ambient_climate_omega_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.kitchen_ambient_climate_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_climate_trv_omega_local_temperature_calibration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "climate.kitchen_climate_trv_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_climate_trv_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_climate_trv_omega_child_lock",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_climate_trv_omega_open_window",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_climate_trv_omega_frost_protection_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.kitchen_climate_trv_omega_temperature_sensor_select",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_climate_trv_omega_external_temperature_input",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_climate_trv_omega_idle_steps",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_climate_trv_omega_closing_steps",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_climate_trv_omega_valve_opening_limit_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_climate_trv_omega_valve_closing_limit_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_climate_trv_omega_valve_motor_running_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_climate_trv_omega_valve_opening_degree",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_climate_trv_omega_valve_closing_degree",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_climate_trv_omega_temperature_accuracy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_climate_trv_omega_weekly_schedule",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_climate_trv_omega_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.kitchen_climate_trv_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_occupancy_omega_occupancy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_occupancy_omega_occupancy_timeout",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.kitchen_occupancy_omega_occupancy_sensitivity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_occupancy_omega_illumination",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_occupancy_omega_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.kitchen_occupancy_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_climate_trv_omega_local_temperature_calibration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "climate.living_room_climate_trv_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_climate_trv_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_climate_trv_omega_child_lock",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_climate_trv_omega_open_window",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_climate_trv_omega_frost_protection_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.living_room_climate_trv_omega_temperature_sensor_select",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_climate_trv_omega_external_temperature_input",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_climate_trv_omega_idle_steps",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_climate_trv_omega_closing_steps",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_climate_trv_omega_valve_opening_limit_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_climate_trv_omega_valve_closing_limit_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_climate_trv_omega_valve_motor_running_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_climate_trv_omega_valve_opening_degree",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_climate_trv_omega_valve_closing_degree",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_climate_trv_omega_temperature_accuracy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_climate_trv_omega_weekly_schedule",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_climate_trv_omega_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.living_room_climate_trv_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_smartbutton_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_smartbutton_omega_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_smart_button_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_smart_button_omega_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_smart_button_omega_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.remote_ui",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "stt.home_assistant_cloud",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "tts.home_assistant_cloud",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_magic_cube_omega_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_magic_cube_omega_voltage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_magic_cube_omega_power_outage_count",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.home_magic_cube_omega_operation_mode",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_magic_cube_omega_side",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_magic_cube_omega_action_from_side",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_magic_cube_omega_action_angle",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_magic_cube_omega_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.home_magic_cube_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_assistant_uptime_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_monstera_soil_alpha_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_monstera_soil_alpha_humidity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_monstera_soil_alpha_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_monstera_soil_alpha_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.bedroom_monstera_soil_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_datetime.last_ha_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "remote.bedroom_broadlink_rm3_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.evert_health_biometrics_in_bed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_wardrobe",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_mirror_lightstrip_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bamboo_lamp",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_nightstand_left_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.entrance_terrazo",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.desk_lamp",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.terrazo",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.brass_pendant",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.wall_globe",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.lucetta",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.kitchen",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.hp_monitor",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_fridge_contact_alpha_wifi_door",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.desk_lightstrip_alpha_wifi",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_alpha_energy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_stringlights_alpha_energy_difference",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.living_room_stringlights_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.powerstrip_bedroom_tv_plug_2",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.powerstrip_ha_rpi5_plug_3",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_motion_alpha_motion",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.home_iot_hub_tapo_alarm",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_ambient_climate_alpha_humidity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_ambient_climate_alpha_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.hallway_upstairs_motion_alpha_motion",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_tv_alpha_energy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_tv_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_tv_alpha_energy_difference",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_tv_alpha_power_energy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_tv_alpha_energy_saved",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_tv_alpha_tv_channel",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_tv_alpha_tv_channel_name",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.bedroom_security_cam_alpha_motion",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.hallway_lightstrip_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.hallway_entrance_contact_alpha_door",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_wall_switch_alpha_right",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.upstairs_skylight_contact_alpha_door",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.hallway_downstairs_lightstrip_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_desk_corner_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.hallway_upstairs_lightstrip_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_alpha_energy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_lightstrip_alpha_energy_difference",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_lightstrip_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_wall_switch_alpha_left",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.power_hub_aeotec_smartthings_plug_1",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_tv_alpha_illuminance_brightness_intensity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_tv_alpha_illuminance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.bedroom_soundbar_sonos_ray_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.ensuite_speaker_sonos_roam_alpha_2",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_virtual_illuminance_level_3",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_virtual_illuminance_level_1",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_virtual_illuminance_level_2",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_vedge_illuminance_1_illuminance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.bedroom_virtual_illuminance_level_4",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.home_virtual_dimmer",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.living_room_soundbar_sonos_beam_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.living_room_multipurpose_alpha_motion",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_multipurpose_alpha_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_multipurpose_alpha_illuminance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_multipurpose_alpha_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.bedroom_tv_hub_alpha_wifi",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "remote.bedroom_tv_hub_alpha_wifi",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.hallway_downstairs_motion_alpha_wifi_motion",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.evert_alpha_presence_iphone_presence",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_nightstand_right_alpha_matter_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_nightstand_right_alpha_matter_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_nightstand_right_alpha_matter_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_nightstand_right_alpha_matter_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_nightstand_right_alpha_matter_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_nightstand_right_alpha_matter_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_nightstand_right_alpha_matter",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wiz_rgbw_tunable_378364_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_nightstand_right_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_nightstand_right_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_main_alpha_matter_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_main_alpha_matter_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_main_alpha_matter_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_main_alpha_matter_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_main_alpha_matter_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_main_alpha_matter_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_main_alpha_matter",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_tv_alpha_illuminance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.spook_your_homie_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.spook_your_homie_pre_release",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_daily_rain",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_dew_point",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_feels_like",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_hourly_rain",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_humidity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_max_daily_gust",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_relative_pressure",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_uv_index",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_wind_gust",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_wind_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_irradiance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_yearly_rain",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_wind_direction",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_weekly_rain",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_monthly_rain",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_last_rain",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.london_ambient_weather_alpha_absolute_pressure",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.upstairs_skylight_contact_tplink_alpha_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.upstairs_skylight_contact_tplink_alpha_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.upstairs_skylight_contact_tplink_alpha_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.upstairs_skylight_contact_tplink_alpha_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.upstairs_skylight_contact_tplink_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.upstairs_skylight_contact_tplink_alpha_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.upstairs_skylight_contact_tplink_alpha_window",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_battery_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.valetudo_valetudo_roborocks5_vacuum_carpet_mode",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_current_statistics_area",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_current_statistics_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_error",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_events",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.valetudo_valetudo_roborocks5_vacuum_fan",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_main_brush",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_main_filter",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "camera.valetudo_valetudo_roborocks5_vacuum_map_data",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_map_segments",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.valetudo_valetudo_roborocks5_vacuum_play_locate_sound",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.valetudo_valetudo_roborocks5_vacuum_reset_main_brush_consumable",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.valetudo_valetudo_roborocks5_vacuum_reset_main_filter_consumable",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.valetudo_valetudo_roborocks5_vacuum_reset_right_brush_consumable",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.valetudo_valetudo_roborocks5_vacuum_reset_sensor_cleaning_consumable",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_right_brush",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "vacuum.valetudo_valetudo_roborocks5_vacuum",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_sensor_cleaning",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.valetudo_valetudo_roborocks5_vacuum_speaker_volume",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_status_flag",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_total_statistics_area",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_total_statistics_count",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_total_statistics_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.valetudo_valetudo_roborocks5_vacuum_wi_fi_configuration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "counter.homeassistant_errors",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "counter.homeassistant_warnings",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_hifi_accent_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_hifi_accent_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_hifi_accent_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_hifi_accent_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_hifi_area_accent_alpha_wifi",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.bedroom_tv_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.bedroom_tv_alpha_dlna",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.playstation_4",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_wardrobe_motion_alpha_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_wardrobe_motion_alpha_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.bedroom_wardrobe_motion_tplink_alpha_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_wardrobe_motion_tplink_alpha_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_wardrobe_motion_tplink_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.bedroom_wardrobe_motion_tplink_alpha_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.downstairs_occupancy_matter_alpha_occupancy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.upstairs_occupancy_matter_alpha_occupancy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_occupancy_matter_alpha_occupancy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_occupancy_alpha_illumination",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_occupancy_alpha_linkquality",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.living_room_occupancy_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.living_room_occupancy_alpha_occupancy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.living_room_occupancy_alpha_occupancy_sensitivity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_occupancy_alpha_occupancy_timeout",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.entrance_door_motion_tplink_alpha_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.entrance_door_motion_tplink_alpha_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.entrance_door_motion_tplink_alpha_motion",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.entrance_door_motion_tplink_alpha_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.entrance_door_motion_tplink_alpha_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.entrance_door_motion_tplink_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.entrance_door_motion_tplink_alpha_unpair_device",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.entrance_door_occupancy_matter_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.entrance_door_motion_smartthings_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.bedroom_wardrobe_occupancy_matter_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.bedroom_wardrobe_motion_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.bedroom_wardrobe_motion_tplink_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_main_wiz_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_main_wiz_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_main_wiz_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_desk_wall_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_desk_matter_alpha_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_matter_alpha_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_matter_alpha_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_matter_alpha_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_matter_alpha_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_desk_matter_alpha_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_desk_matter_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_desk_lightstrip_matter_alpha_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_lightstrip_matter_alpha_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_lightstrip_matter_alpha_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_lightstrip_matter_alpha_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_lightstrip_matter_alpha_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_desk_lightstrip_matter_alpha_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_desk_lightstrip_matter_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_desk_wall_matter_alpha_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_wall_matter_alpha_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_wall_matter_alpha_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_wall_matter_alpha_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_desk_wall_matter_alpha_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_desk_wall_matter_alpha_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_desk_wall_matter_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_text.last_motion",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_text.last_opened",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_storage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_bssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_internal_battery_state",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.macbook_focus",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_app_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_primary_display_id",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_active_camera",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_active_audio_input",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.macbook_active",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_connection_type",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.macbook_audio_input_in_use",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_internal_battery_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.macbook_audio_output_in_use",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_geocoded_location",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_location_permission",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_frontmost_app",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_audio_output",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.macbook_camera_in_use",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_primary_display_name",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_displays",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_last_update_trigger",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.macbook_active_audio_output",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "event.backup_automatic_backup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.backup_last_attempted_automatic_backup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "script.function_wakeup_apple_tv",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "script.light_colorloop",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_select.alarm_type",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_number.wakeup_duration",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_datetime.wakeup_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.kitchen_ceiling_tapo_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_ceiling_tapo_alpha_cloud_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.kitchen_ceiling_tapo_alpha_overheated",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.kitchen_ceiling_tapo_alpha_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_ceiling_tapo_alpha_smooth_on",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.kitchen_ceiling_tapo_alpha_smooth_off",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.kitchen_ceiling_tapo_alpha_light_preset",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_ceiling_tapo_alpha_signal_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_ceiling_tapo_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_ceiling_tapo_alpha_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.kitchen_ceiling_tapo_alpha_device_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.kitchen_ceiling_tapo_alpha_auto_update_enabled",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.kitchen_ceiling_tplink_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.laundry_ceiling_tuya_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.ensuite_accent_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.ensuite_lightstrip_homekit_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.ensuite_lightstrip_homekit_alpha_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.ensuite_lightstrip_tplink_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_lightstrip_tplink_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_lightstrip_tplink_alpha_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.ensuite_lightstrip_tplink_alpha_restart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.ensuite_lightstrip_wifi_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.qs02",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.wiz_p45_e27_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.wiz_p45_e27",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_p45_e27_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_p45_e27_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_p45_e27_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_p45_e27_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.wiz_p45_e27_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.wiz_rgbw_tunable_55cd2e",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_rgbw_tunable_55cd2e_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wiz_rgbw_tunable_55cd2e_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wiz_rgbw_tunable_55cd2e_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ds220plus_security_status",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ds220plus_drive_2_exceeded_max_bad_sectors",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ds220plus_drive_2_below_min_remaining_life",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ds220plus_drive_1_exceeded_max_bad_sectors",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ds220plus_drive_1_below_min_remaining_life",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.ds220plus_reboot",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.ds220plus_shutdown",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_cpu_utilisation_other",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_cpu_utilisation_user",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_cpu_utilisation_system",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_cpu_utilisation_total",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_cpu_load_average_1_min",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_cpu_load_average_5_min",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_cpu_load_average_15_min",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_memory_usage_real",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_memory_size",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_memory_cached",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_memory_available_swap",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_memory_available_real",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_memory_total_swap",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_memory_total_real",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_upload_throughput",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_download_throughput",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_volume_1_status",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_volume_1_total_size",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_volume_1_used_space",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_volume_1_volume_used",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_volume_1_average_disk_temp",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_volume_1_maximum_disk_temp",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_drive_2_status_smart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_drive_2_status",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_drive_2_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_drive_1_status_smart",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_drive_1_status",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_drive_1_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ds220plus_last_boot",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.ds220plus_dsm_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.qs02_2",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "remote.qs02",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.wiz_candle_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.wiz_candle",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_candle_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_candle_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_candle_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_candle_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.wiz_candle_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.wiz_a_e27_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.wiz_a_e27",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_a_e27_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_a_e27_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_a_e27_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_a_e27_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.wiz_a_e27_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.wiz_g95_filament_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.wiz_g95_filament",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_g95_filament_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_g95_filament_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_g95_filament_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_g95_filament_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.wiz_g95_filament_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.wiz_rgbw_tunable_559e02",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_rgbw_tunable_559e02_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wiz_rgbw_tunable_559e02_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wiz_rgbw_tunable_559e02_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ha_addon_ha_addon_tailscale_alpha_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ha_addon_tailscale_alpha_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ha_addon_tailscale_alpha_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ha_addon_tailscale_alpha_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.ha_addon_tailscale_alpha_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ha_addon_tailscale_alpha_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ps5_mqtt_running",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ps5_mqtt_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ps5_mqtt_newest_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ps5_mqtt_cpu_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ps5_mqtt_memory_percent",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.ps5_mqtt_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.ensuite_accent_wifi_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.living_room_side_alpha_2",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.laundry_ceiling_wifi_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.living_room_foxy_alpha_2",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.living_room_floorlamp_omega",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.living_room_foxy_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_foxy_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_foxy_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_foxy_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_side_alpha_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_side_alpha_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.living_room_side_alpha_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.living_room_side_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.living_room_floorlamp_matter_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.living_room_floorlamp_matter_alpha_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_floorlamp_matter_alpha_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_floorlamp_matter_alpha_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_floorlamp_matter_alpha_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.living_room_floorlamp_matter_alpha_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.living_room_floorlamp_matter_alpha_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.wiz_color_strip_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.wiz_color_strip",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_color_strip_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_color_strip_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_color_strip_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_color_strip_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.wiz_color_strip_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.wiz_rgbww_tunable_79bb7c",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.wiz_rgbww_tunable_79bb7c_effect_speed",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wiz_rgbww_tunable_79bb7c_signal_strength",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.wiz_rgbww_tunable_79bb7c_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_nightstand_left_matter_alpha_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_nightstand_left_matter_alpha_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_nightstand_left_matter_alpha_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_nightstand_left_matter_alpha_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_nightstand_left_matter_alpha_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_nightstand_left_matter_alpha_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_nightstand_left_matter_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_nightstand_right_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_nightstand_right_alpha_wifi",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_entrance_alpha_matter",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "button.bedroom_entrance_alpha_matter_identify",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_entrance_alpha_matter_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_entrance_alpha_matter_on_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_entrance_alpha_matter_on_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_entrance_alpha_matter_on_off_transition_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_entrance_alpha_matter_power_on_behaviour_on_startup",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.bedroom_occupance_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bedroom_occupance_alpha_illumination",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.bedroom_occupance_alpha_occupancy",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "select.bedroom_occupance_alpha_occupancy_sensitivity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "number.bedroom_occupance_alpha_occupancy_timeout",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "automation.function_wakeup_apple_tv",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "automation.function_wakeup_vacuum",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "automation.function_wakeup_lights",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_activity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_app_version",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_audio_output",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_average_active_pace",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_battery_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_battery_state",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_bssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_connection_type",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_distance",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_floors_ascended",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_floors_descended",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.ephone_uk_focus",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_geocoded_location",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_last_update_trigger",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_location_permission",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_sim_1",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_sim_2",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_ssid",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_steps",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_storage",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_watch_battery_level",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_uk_watch_battery_state",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.entrance_door_alpha_contact",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_datetime.sonos_alarm_time",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_select.sonos_alarm_zone",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_select.dynamic_alarm_recurrence",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_number.sonos_alarm_volume",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.sonos_alarm_enable",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.sonos_alarm_oneoff",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "input_boolean.sonos_alarm_include_group",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.sonos_alarm_profile",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "automation.update_sonos_alarm_automation",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "automation.send_sonos_alarm_preview_notification",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "automation.disable_sonos_alarm_via_notification",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "automation.reconfirm_alarm_via_notification",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.bedroom_ottoman_lightstrip_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.bb_8_alive",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bb8_diagnostics",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.bb8_status",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "automation.bb_8_mqtt_command_service",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "script.bb8_roll",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "script.bb8_stop",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "script.bb8_led_red",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "script.bb8_diagnostics",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "update.openplantbook_update",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.openplantbook_pre_release",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ephone_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ps5_power",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ps5_activity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.sphero_bb_8_sphero_bb_8_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "binary_sensor.sphero_bb_8_sphero_bb_8_connection",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_climate_matter_alfa_temperature",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.ensuite_climate_matter_alfa_humidity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_heart_pulse",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.unavailable_entities",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.disabled_device_entities",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "automation.update_unavailable_entities_group",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "automation.unavailable_entities_notification",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.virtual_dimmer",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.wall_panel_right_switch_matter_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.wall_panel_left_switch_matter_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "device_tracker.iphone8",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "fan.bedroom_tplink_powerstrip_alpha_fan",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "switch.ensuite_fan_alpha_wifi",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "fan.ensuite_fan",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "fan.ensuite_fan_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.apple_watch_battery",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_pulse_wave_velocity",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "sensor.evert_health_biometrics_vascular_age",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "light.living_room_desk_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    },
+    {
+      "entity_id": "media_player.bedroom_sonos_surround_speakers_alpha",
+      "excluded_reason": "Does not match clusterable criteria"
+    }
+  ]
+}

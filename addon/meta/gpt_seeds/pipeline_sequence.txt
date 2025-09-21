@@ -1,0 +1,184 @@
+Below is a canonical execution and validation sequence for the full registry rehydration pipeline. It is designed as an end-to-end operations brief — your single source of truth for validating or re-running the process with Copilot. It includes:
+	•	All phases
+	•	Scripts involved
+	•	Input/output expectations
+	•	Validation checkpoints
+	•	Follow-up instructions
+
+⸻
+
+🧭 HESTIA OMEGA/ALPHA PIPELINE EXECUTION & VALIDATION BRIEF
+
+Version: rehydration_protocol_v2.7
+Context Lock: PROMACHOS_PROTOCOL_LOCK
+Maintainer: e-app-404
+
+⸻
+
+🧩 STAGE OVERVIEW
+
+Phase	Label	Description	Primary Script(s)
+1	device_map_construction	Build internal device map for ID lookups	generate_cleaned_device_registry.py
+2	entity_preprocessing	Normalize and filter raw entities	emit_alpha_sensor_registry.py
+3	area_inference	Infer area_id per entity	fingerprint_entity_reconciliation.py
+4	role_inference	Infer functional role per entity	fingerprint_entity_reconciliation.py
+5	entity_fingerprinting	Generate fingerprint map (area+role+device+platform)	fingerprint_entity_reconciliation.py
+6	migration_map_expansion	Enrich ID mapping with inferred roles	expand_migration_map_full_role_coverage.py
+7	cluster_summary	Summarize clusters and validate inference coverage	cluster_summary.py
+8	rehydration_emission	Emit final room registry and diagnostics	generate_omega_room_registry.py
+9	rehydration_metrics	Validate completeness, exclusions, unresolved entities	Copilot + cluster_coverage_metrics.*, rehydration_delta_log.json
+10	pipeline_metrics_audit	Collect metrics and timestamps across pipeline stages	pipeline_metrics.latest.json, pipeline_metrics.*.json
+
+
+⸻
+
+✅ PHASE CHECKLIST & EXECUTION CONTRACT
+
+📍 PHASE 1: Device Map Construction
+	•	Script: scripts/generate_cleaned_device_registry.py
+	•	Inputs:
+	•	input/core.device_registry
+	•	Outputs:
+	•	output/omega_device/omega_device_registry.cleaned.v2.json
+	•	output/devicemaps/device_map_v1.pkl (optional)
+	•	Validation:
+	•	device_count matches expectations (e.g. 221+)
+	•	status: completed in pipeline_metrics.latest.json
+	•	Follow-up: Confirm that no device IDs are missing. Proceed if missing_device_ids == 0.
+
+⸻
+
+📍 PHASE 2–4: Entity Preprocessing, Area Inference, Role Inference
+	•	Script: scripts/fingerprint_entity_reconciliation.py
+	•	Inputs:
+	•	input/core.entity_registry
+	•	input/core.device_registry
+	•	Outputs:
+	•	data/entity_fingerprint_map.<ts>.json
+	•	output/fingerprinting_run/area_inference_debug.json
+	•	Validation:
+	•	All entities are present
+	•	role, area_id, device_id resolved in fingerprint
+	•	At least 90% area and role inference success rate
+	•	Follow-up:
+	•	If error: patch sys.path and infer_role() unpacking
+	•	Use centralized infer_area_id() logic in all scripts
+
+⸻
+
+📍 PHASE 5: Fingerprint Consolidation
+	•	Same as Phases 2–4 (single script)
+	•	Output must include:
+	•	Fingerprint fields:
+	•	area_id, role, cluster_id, semantic_role, confidence_score, platform, etc.
+	•	Validation:
+	•	Log total entities
+	•	confidence_score >= 0.80 for majority of inferences
+	•	Patch and re-run if any fields are missing or null
+
+⸻
+
+📍 PHASE 6: Migration Map Expansion
+	•	Script: scripts/expand_migration_map_full_role_coverage.py
+	•	Inputs:
+	•	output/entity_id_migration_map.annotated.v4.json
+	•	Outputs:
+	•	output/entity_id_migration_map.annotated.v4.full.json
+	•	Validation:
+	•	All known entities mapped
+	•	confidence_score retained
+	•	semantic_role, source_entity_id, match_method fields populated
+
+⸻
+
+📍 PHASE 7: Cluster Summary
+	•	Script: scripts/cluster_summary.py
+	•	Inputs:
+	•	data/entity_fingerprint_map.*.json
+	•	Outputs:
+	•	data/cluster_summary.<ts>.json
+	•	Validation:
+	•	cluster_id != null
+	•	Cluster counts per area/role reflect real entities
+	•	If empty: patch to allow "null_<role>" or "unknown_area_<role>"
+
+⸻
+
+📍 PHASE 8: Rehydration Emission
+	•	Script: scripts/generate_omega_room_registry.py
+	•	Inputs:
+	•	data/entity_fingerprint_map.*.json
+	•	output/entity_id_migration_map.annotated.v4.full.json
+	•	settings.conf.yaml
+	•	Outputs:
+	•	output/omega_room/omega_room_registry.json
+	•	output/rehydration/rehydration_delta_log.json
+	•	output/rehydration/room_registry_completeness_audit.json
+	•	output/rehydration/unresolved_entities.log.json
+	•	output/rehydration/TARBALL-OMEGA-ROOM-REGISTRY-STRICT-FINAL-CORRECTED.tar.gz
+	•	Validation:
+	•	Confirm included entities > 0
+	•	reason: missing_final_area_or_cluster_id should only affect unresolved cases
+	•	Tarball path must be correct (avoid nested registry_rehydration_local/registry_rehydration_local)
+
+⸻
+
+📍 PHASE 9: Rehydration Metrics & Diagnostics
+	•	Script: None (Copilot audit or custom)
+	•	Inputs:
+	•	rehydration_delta_log.json
+	•	room_registry_completeness_audit.json
+	•	cluster_coverage_metrics.*.json
+	•	Outputs:
+	•	Diagnostics only
+	•	Validation:
+	•	excluded_entities == 0 or reasonable
+	•	rehydration_delta_log.json includes entities
+	•	If all are excluded → pipeline error → fix area/cluster inference
+
+⸻
+
+📍 PHASE 10: Pipeline Metrics Audit
+	•	Script: Copilot-logged
+	•	File: data/pipeline_metrics.latest.json
+	•	Validation:
+	•	All status == completed
+	•	script, input, outputs, duration_seconds, notes fully populated
+	•	Follow-up:
+	•	If status == simulated or pending: rerun step
+	•	Use this log to track and rehydrate future runs
+
+⸻
+
+🔄 RE-RUN PROTOCOL
+
+For each stage:
+
+python3 scripts/<scriptname>.py --config settings.conf.yaml
+
+Optional:
+
+--output data/<your_output_file>.json
+
+
+⸻
+
+📁 EXPECTED OUTPUT FILES
+
+File	Description
+entity_fingerprint_map.*.json	Canonical fingerprint map
+entity_id_migration_map.annotated.v4.full.json	ID migration with roles
+omega_room_registry.json	Final rehydrated room registry
+rehydration_delta_log.json	Inclusion/exclusion log
+room_registry_completeness_audit.json	Per-area cluster summary
+TARBALL-OMEGA-ROOM-REGISTRY-STRICT-FINAL-CORRECTED.tar.gz	Deliverable tarball
+
+
+⸻
+
+🧷 RECOVERY / PATCH LOGGING
+	•	All patches must be recorded in:
+	•	copilot_patchlog_overview.log
+	•	copilot_patches/PATCH-<name>.log
+
+⸻

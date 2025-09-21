@@ -1,0 +1,2455 @@
+{
+  "_meta": {
+    "$schema": "http://json-schema.org/hestia-v7/schema#",
+    "description": "Registry that accompanies the alpha device registry as a specialized version, specifically for sensors.",
+    "migration_source_files": [
+      "sensor_signal_plane.json"
+    ],
+    "name": "HESTIA Alpha Sensor hestia.core.registry",
+    "title": "alpha_sensor_registry.json schema",
+    "validation_status": {
+      "last_validated": "2025-04-29T22:01:07.391306Z",
+      "messages": [],
+      "status": "valid",
+      "updated_by": "hephaestus"
+    },
+    "version": "1.5.0"
+  },
+  "sensors": {
+    "bedroom_bed_presence_inferred_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Non-physical abstraction",
+            "Source entity confidence inherited"
+          ],
+          "score": 75
+        },
+        "entity_confidence": {
+          "factors": [
+            "Based on validated Withings sensor",
+            "Passthrough logic"
+          ],
+          "score": 80,
+          "uncertain_fields": []
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Mapped directly to room-specific presence role"
+          ],
+          "score": 85
+        },
+        "requires_review": true
+      },
+      "device_info": {
+        "firmware": null,
+        "hub_id": null,
+        "implementation": "template",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "Template",
+        "model": "Withings Proxy",
+        "model_name": "Withings Sleep Analyzer Inference",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 0,
+        "retry_attempts": 0,
+        "retry_delay_ms": 0,
+        "return_to_preferred_after": 0
+      },
+      "features": [],
+      "integration": {
+        "integration_stack": {
+          "template": {
+            "availability_sensor": null,
+            "canonical_id": "bedroom_bed_presence_inferred_α",
+            "class": "occupancy",
+            "device_class": "occupancy",
+            "device_id": null,
+            "entity_id": "binary_sensor.in_bed_withings_inference_gamma",
+            "origin": "hermes",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "template",
+            "signal_type": "presence",
+            "status": "inferred",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "template"
+      },
+      "location": {
+        "area": "bed",
+        "role": "presence",
+        "room": "bedroom",
+        "room_area": "bed",
+        "room_id": "bedroom",
+        "signal": "inferred"
+      },
+      "metadata": {
+        "added_date": "2025-06-05",
+        "alpha_canonical": "bedroom_bed_presence_inferred_α",
+        "alpha_name": "Inferred: In Bed via Withings (Alpha)",
+        "friendly_name": "Withings In-Bed Presence",
+        "internal_name": "in_bed_withings_inference"
+      },
+      "protocol_metrics": {}
+    },
+    "bedroom_desk_presence_inferred_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Logic structure consistent with other physical devices"
+          ],
+          "score": 80,
+          "uncertain_fields": [
+            "origin traceability"
+          ]
+        },
+        "entity_confidence": {
+          "factors": [
+            "Computed from consistent logic",
+            "Linked to high-confidence sources"
+          ],
+          "score": 85,
+          "uncertain_fields": [
+            "entity_id lifecycle not guaranteed"
+          ]
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Strong alignment with physical presence signals"
+          ],
+          "score": 90
+        },
+        "requires_review": true
+      },
+      "device_info": {
+        "firmware": null,
+        "hub_id": null,
+        "implementation": "template",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "Template",
+        "model": "binary_sensor",
+        "model_name": "binary_sensor",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 0,
+        "retry_attempts": 0,
+        "retry_delay_ms": 0,
+        "return_to_preferred_after": 0
+      },
+      "features": [],
+      "integration": {
+        "integration_stack": {
+          "template": {
+            "availability_sensor": null,
+            "canonical_id": "desk_presence_macbook_inference_α",
+            "class": "occupancy",
+            "device_class": "occupancy",
+            "device_id": null,
+            "entity_id": "binary_sensor.desk_presence_macbook_inference_gamma",
+            "origin": "hermes",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "template",
+            "signal_type": "presence",
+            "status": "inferred",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "template"
+      },
+      "location": {
+        "area": "desk",
+        "role": "presence",
+        "room": "bedroom",
+        "room_area": "desk",
+        "room_id": "bedroom",
+        "signal": "inferred"
+      },
+      "metadata": {
+        "added_date": "2025-06-05",
+        "alpha_canonical": "bedroom_desk_presence_inferred_α",
+        "alpha_name": "Desk Presence via MacBook Inference (Alpha)",
+        "friendly_name": "Desk Presence via MacBook",
+        "internal_name": "desk_presence_macbook_inference"
+      },
+      "protocol_metrics": {}
+    },
+    "bedroom_occupancy_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Complete device information",
+            "Clear room assignment"
+          ],
+          "score": 90
+        },
+        "entity_confidence": {
+          "factors": [
+            "Multiple consistent entities",
+            "Clear entity purposes"
+          ],
+          "score": 90,
+          "uncertain_fields": []
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Consistent entity naming",
+            "Clear functional grouping"
+          ],
+          "score": 95
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": "1.0.6",
+        "hub_id": "f0cdd0dfd4c88bcaca15abf435075890",
+        "implementation": "bridge",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "SONOFF",
+        "model": "Zigbee occupancy sensor",
+        "model_name": "SNZB-06P",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "bedroom_presence_linkquality_α",
+          "entity": "linkquality",
+          "entity_id": "sensor.bedroom_occupancy_linkquality_alpha",
+          "mqtt_topic": null,
+          "name": "Bedroom Occupancy Link quality (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "bedroom_presence_sensitivity_α",
+          "entity": "sensitivity",
+          "entity_id": "select.bedroom_occupancy_sensitivity_alpha",
+          "name": "Bedroom Occupancy Sensitivity (Alpha)",
+          "type": "select"
+        },
+        {
+          "canonical_id": "bedroom_presence_occupancy_timeout_α",
+          "entity": "occupancy_timeout",
+          "entity_id": "number.bedroom_occupancy_timeout",
+          "name": "Bedroom Occupancy Timeou (Alpha)",
+          "type": "number"
+        },
+        {
+          "canonical_id": "bedroom_presence_update_α",
+          "entity": "update",
+          "entity_id": "update.bedroom_occupancy_alpha",
+          "name": "Update Bedroom Occupancy Sensor (Alpha))",
+          "type": "update"
+        },
+        {
+          "canonical_id": "bedroom_presence_illumination_α",
+          "entity": "illumination",
+          "entity_id": "sensor.bedroom_occupancy_illumination_alpha",
+          "name": "Bedroom Occupancy Illumination (Alpha)",
+          "type": "sensor"
+        }
+      ],
+      "history": {
+        "added": "2025-03-15",
+        "protocol_switches": [
+          {
+            "from": "matter",
+            "reason": "unavailable",
+            "timestamp": "2025-04-21T08:30:00",
+            "to": "wifi"
+          },
+          {
+            "from": "wifi",
+            "reason": "preferred_restored",
+            "timestamp": "2025-04-21T19:45:00",
+            "to": "matter"
+          }
+        ]
+      },
+      "integration": {
+        "fallback_settings": {
+          "auto_switch_threshold": 3,
+          "retry_attempts": 2,
+          "retry_delay_ms": 500,
+          "return_to_preferred_after": 60
+        },
+        "integration_stack": {
+          "mqtt": {
+            "availability_sensor": "",
+            "canonical_id": "bedroom_presence_mqtt_α",
+            "class": "occupancy",
+            "device_class": "occupancy",
+            "device_id": "e8be57f3a6f4b730e455615f6ea33e9e",
+            "entity_id": "binary_sensor.bedroom_occupancy_alpha",
+            "origin": "Zigbee2MQTT Bridge",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "mqtt",
+            "signal_type": "occupancy",
+            "status": "paired",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "mqtt",
+        "protocol_metrics": {
+          "mqtt": {
+            "last_seen": "2025-04-22T15:30:00",
+            "reliability_score": 98,
+            "response_time_ms": 120
+          }
+        }
+      },
+      "location": {
+        "area": "",
+        "role": "presence",
+        "room": "bedroom",
+        "room_area": null,
+        "room_id": "bedroom",
+        "signal": "occupancy"
+      },
+      "metadata": {
+        "added_date": "2025-03-15",
+        "alpha_canonical": "bedroom_occupancy_α",
+        "alpha_name": "Bedroom Occupancy (Alpha)",
+        "friendly_name": "Sonoff SNZB-06P Bedroom Occupancy Sensor",
+        "internal_name": "sonoffbedroomoccupancy"
+      },
+      "protocol_metrics": {}
+    },
+    "bedroom_smartbutton_omega": {
+      "device_info": {
+        "firmware": "2.3.0",
+        "hub_id": "f0cdd0dfd4c88bcaca15abf435075890",
+        "implementation": "bridge",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "SmartThings",
+        "model": "ST Button",
+        "model_name": "IM6001-BTP01",
+        "ssid": null
+      },
+      "features": [
+        {
+          "canonical_id": "bedroom_button_batter_α",
+          "entity": "batter",
+          "entity_id": "sensor.bedroom_smartbutton_battery_alpha",
+          "mqtt_topic": null,
+          "name": "Bedroom Smart Button Battery (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "bedroom_button_linkquality_α",
+          "entity": "linkquality",
+          "entity_id": "sensor.bedroom_smartbutton_linkquality_alpha",
+          "name": "Bedroom Smart Button Link Quality (Alpha)",
+          "type": "sensor"
+        }
+      ],
+      "integration": {
+        "fallback_settings": {
+          "auto_switch_threshold": 3,
+          "retry_attempts": 2,
+          "retry_delay_ms": 500,
+          "return_to_preferred_after": 60
+        },
+        "integration_stack": {
+          "mqtt": {
+            "availability_sensor": "",
+            "canonical_id": "bedroom_button_mqtt_α",
+            "class": "temperature",
+            "device_class": "temperature",
+            "device_id": "e16a923fadc8c958f403929467f392c9",
+            "entity_id": "sensor.bedroom_smartbutton_temperature",
+            "origin": "Zigbee2MQTT Bridge",
+            "platform": "sensor",
+            "preference": "1",
+            "protocol": "mqtt",
+            "signal_type": "occupancy",
+            "status": "paired",
+            "type": "sensor"
+          }
+        },
+        "preferred_protocol": "mqtt",
+        "protocol_metrics": {
+          "mqtt": {
+            "last_seen": "2025-04-22T15:30:00",
+            "reliability_score": 98,
+            "response_time_ms": 120
+          }
+        }
+      },
+      "location": {
+        "area": "",
+        "role": "button",
+        "room": "bedroom",
+        "room_area": null,
+        "room_id": "bedroom",
+        "signal": "multi"
+      },
+      "metadata": {
+        "added_date": "2025-06-04",
+        "alpha_canonical": "bedroom_smartbutton_α",
+        "alpha_name": "Bedroom Smart Button (Alpha)",
+        "friendly_name": "SmartThings Bedroom Smart Button",
+        "internal_name": "sonoffbedroomoccupancy"
+      }
+    },
+    "bedroom_wardrobe_presence_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Clear location and function",
+            "Missing firmware data"
+          ],
+          "score": 85
+        },
+        "entity_confidence": {
+          "factors": [
+            "Multiple consistent entities",
+            "Clear functional naming"
+          ],
+          "score": 90,
+          "uncertain_fields": [
+            "integration.preferred_protocol"
+          ]
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Consistent entity grouping",
+            "Clear entity relationships"
+          ],
+          "score": 90
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": "1.12.0",
+        "hub_id": [
+          "9e71d42b774ef23a83fa2b14c284118c",
+          "dfde5d28da186506c3a30c53b2a784df"
+        ],
+        "implementation": "hub",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "TP-Link",
+        "model": "T100",
+        "model_name": "Tapo T100",
+        "serial_nr": "74FECE4B7AB5",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "bedroom_presence_cloud_connection_α",
+          "entity": "cloud_connection",
+          "entity_id": "binary_sensor.bedroom_wardrobe_presence_cloud_connection_alpha",
+          "name": "Bedroom Wardrobe Presence Cloud Connection (Alpha)",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "bedroom_presence_signal_level_α",
+          "entity": "signal_level",
+          "entity_id": "sensor.bedroom_wardrobe_presence_signal_level_alpha",
+          "name": "Bedroom Wardrobe Presence Signal Level (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "bedroom_presence_battery_α",
+          "entity": "battery",
+          "entity_id": "binary_sensor.bedroom_wardrobe_presence_battery_alpha",
+          "name": "Bedroom Wardrobe Presence Battery (Alpha)",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "bedroom_presence_signal_strength_α",
+          "entity": "signal_strength",
+          "entity_id": "sensor.bedroom_wardrobe_presence_signal_strength_alpha",
+          "name": "Bedroom Wardrobe Presence Signal Strength (Alpha)",
+          "type": "sensor"
+        }
+      ],
+      "integration": {
+        "integration_stack": {
+          "matter": {
+            "availability_sensor": null,
+            "canonical_id": "bedroom_presence_matter_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": "b1840156995ef30cf84d420c8bb6b859",
+            "entity_id": "binary_sensor.wardrobe_occupancy_mtr_alpha",
+            "origin": "smartthings",
+            "platform": "binary_sensor",
+            "preference": "3",
+            "protocol": "wifi",
+            "signal_type": "motion",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "smartthings": {
+            "availability_sensor": null,
+            "canonical_id": "bedroom_presence_smartthings_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": "b1840156995ef30cf84d420c8bb6b859",
+            "entity_id": "binary_sensor.wardrobe_motion_sensor_wifi_st_alpha",
+            "origin": "smartthings",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "wifi",
+            "signal_type": "motion",
+            "status": "fallback",
+            "type": "binary_sensor"
+          },
+          "tp-link": {
+            "availability_sensor": "binary_sensor.bedroom_wardrobe_presence_cloud_connection_alpha",
+            "canonical_id": "bedroom_presence_tp_link_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": "b1840156995ef30cf84d420c8bb6b859",
+            "entity_id": "binary_sensor.bedroom_wardrobe_occupancy_wifi_tplink_alpha",
+            "origin": "tp-link",
+            "platform": "binary_sensor",
+            "preference": "2",
+            "protocol": "wifi",
+            "signal_type": "motion",
+            "status": "paired",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "matter"
+      },
+      "location": {
+        "area": "wardrobe",
+        "role": "presence",
+        "room": "bedroom",
+        "room_area": "wardrobe",
+        "room_id": "bedroom",
+        "signal": "motion"
+      },
+      "metadata": {
+        "added_date": "2025-04-27",
+        "alpha_canonical": "bedroom_wardrobe_presence_α",
+        "alpha_name": "Wardrobe Presence Sensor (Alpha)",
+        "friendly_name": "Tapo T100 Wardrobe Motion Sensor",
+        "internal_name": "wardrobe_motion_sensor"
+      },
+      "protocol_metrics": {}
+    },
+    "ensuite_occupancy_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Complete device information",
+            "Clear room assignment"
+          ],
+          "score": 90
+        },
+        "entity_confidence": {
+          "factors": [
+            "Multiple consistent entities",
+            "Clear entity purposes"
+          ],
+          "score": 90,
+          "uncertain_fields": []
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Consistent entity naming",
+            "Clear functional grouping"
+          ],
+          "score": 95
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": "1.0.6",
+        "hub_id": "f0cdd0dfd4c88bcaca15abf435075890",
+        "implementation": "bridge",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "SONOFF",
+        "model": "Zigbee occupancy sensor",
+        "model_name": "SNZB-06P",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "ensuite_presence_linkquality_α",
+          "entity": "linkquality",
+          "entity_id": "sensor.ensuite_occupancy_linkquality_alpha",
+          "name": "Ensuite Link Quality Timeout (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "ensuite_presence_sensitivity_α",
+          "entity": "sensitivity",
+          "entity_id": "select.ensuite_occupancy_sensitivity_alpha",
+          "name": "Ensuite Presence Sensitivity (Alpha)",
+          "type": "select"
+        },
+        {
+          "canonical_id": "ensuite_presence_occupancy_timeout_α",
+          "entity": "occupancy_timeout",
+          "entity_id": "number.ensuite_occupancy_timeout_alpha",
+          "name": "Ensuite Occupancy Timeout (Alpha)",
+          "type": "number"
+        },
+        {
+          "canonical_id": "ensuite_presence_update_α",
+          "entity": "update",
+          "entity_id": "update.ensuite_occupancy_update_alpha",
+          "name": "Ensuite Occupancy Update (Alpha)",
+          "type": "update"
+        },
+        {
+          "canonical_id": "ensuite_presence_illumination_α",
+          "entity": "illumination",
+          "entity_id": "sensor.ensuite_illumination_alpha",
+          "name": "Ensuite Presence Illuminance (Alphat)",
+          "type": "sensor"
+        }
+      ],
+      "integration": {
+        "integration_stack": {
+          "mqtt": {
+            "availability_sensor": null,
+            "canonical_id": "ensuite_presence_mqtt_α",
+            "class": "occupancy",
+            "device_class": "occupancy",
+            "device_id": "6d6373591f54d4bfa7933c3ac6233f37",
+            "entity_id": "binary_sensor.ensuite_occupancy_alpha",
+            "origin": "Zigbee2MQTT Bridge",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "mqtt",
+            "signal_type": "occupancy",
+            "status": "paired",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "mqtt"
+      },
+      "location": {
+        "area": null,
+        "role": "presence",
+        "room": "ensuite",
+        "room_area": null,
+        "room_id": "ensuite",
+        "signal": "occupancy"
+      },
+      "metadata": {
+        "added_date": "2025-04-27",
+        "alpha_canonical": "ensuite_presence_α",
+        "alpha_name": "Ensuite Occupancy Alpha",
+        "friendly_name": "Sonoff SNZB-06P Ensuite Presence (Alpha)",
+        "internal_name": "sonoffensuiteoccupancy"
+      },
+      "protocol_metrics": {}
+    },
+    "entrance_door_contact_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Clear device location and purpose",
+            "Missing firmware data"
+          ],
+          "score": 80,
+          "uncertain_fields": [
+            "firmware"
+          ]
+        },
+        "entity_confidence": {
+          "factors": [
+            "Clear entity naming convention",
+            "Explicit device info"
+          ],
+          "score": 85,
+          "uncertain_fields": [
+            "integration.origin",
+            "device_class"
+          ]
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Single entity with clear purpose"
+          ],
+          "score": 90
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": null,
+        "hub_id": null,
+        "implementation": "hub",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "Tapo",
+        "model": "T110",
+        "model_name": null,
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "hallway_contact_battery_level_α",
+          "entity": "battery_level",
+          "entity_id": "binary_sensor.hallway_entrance_contact_alpha_tp_link_battery",
+          "name": "Entrance Door Contact Alpha Battery",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "hallway_contact_cloud_connection_α",
+          "entity": "cloud_connection",
+          "entity_id": "binary_sensor.hallway_entrance_contact_alpha_tp_link_cloud_connection",
+          "name": "Entrance Door Contact Alpha Cloud Connection",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "hallway_contact_signal_level_α",
+          "entity": "signal_level",
+          "entity_id": "sensor.hallway_entrance_contact_alpha_tp_link_signal_level",
+          "name": "Entrance Door Contact Alpha Signal Level",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "hallway_contact_signal_strength_α",
+          "entity": "signal_strength",
+          "entity_id": "sensor.hallway_entrance_contact_alpha_tp_link_signal_strength",
+          "name": "Entrance Door Contact Alpha Signal Strength",
+          "type": "sensor"
+        }
+      ],
+      "integration": {
+        "integration_stack": {
+          "matter": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_contact_matter_α",
+            "class": "door",
+            "device_class": "door",
+            "device_id": "d1c278f3ed5d08a523a58f3ee9b2a6c5",
+            "entity_id": "binary_sensor.entrance_door_contact_matter_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "matter",
+            "signal_type": "opening",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "smartthings": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_contact_smartthings_α",
+            "class": "door",
+            "device_class": "door",
+            "device_id": "0f14243975908562317803a3f8c1a944",
+            "entity_id": "binary_sensor.kitchen_contact_sensor_fridge_door_wifi_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "2",
+            "protocol": "wifi",
+            "signal_type": "opening",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "tp-link": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_contact_tp_link_α",
+            "class": "door",
+            "device_class": "door",
+            "device_id": "3f5034f4acbf4f2ac4108b8c27991a93",
+            "entity_id": "binary_sensor.hallway_entrance_contact_alpha_tp_link_door",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "2",
+            "protocol": "wifi",
+            "signal_type": "opening",
+            "status": "paired",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "matter"
+      },
+      "location": {
+        "area": "entrance",
+        "role": "contact",
+        "room": "hallway",
+        "room_area": "entrance",
+        "room_id": "hallway_downstairs",
+        "signal": "opening"
+      },
+      "metadata": {
+        "added_date": "2025-04-27",
+        "alpha_canonical": "entrance_door_contact_α",
+        "alpha_name": "Entrance Door Contact Sensor Alpha",
+        "friendly_name": "Tapo T110 Entrance Door Contact Sensor",
+        "internal_name": "hallway_entrance_door_contact_sensor"
+      },
+      "protocol_metrics": {}
+    },
+    "hallway_downstairs_presence_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Complete device information",
+            "Clear entity purpose"
+          ],
+          "score": 85,
+          "uncertain_fields": []
+        },
+        "entity_confidence": {
+          "factors": [
+            "Clear entity naming convention",
+            "Explicit device info"
+          ],
+          "score": 80,
+          "uncertain_fields": [
+            "integration.origin"
+          ]
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Single entity with clear purpose"
+          ],
+          "score": 90
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": "1.12.0",
+        "hub_id": "dfde5d28da186506c3a30c53b2a784df",
+        "implementation": "hub",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": "9C:53:22:6A:30:5C",
+        "manufacturer": "Tapo",
+        "model": "T100",
+        "model_name": null,
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "hallway_presence_battery_level_α",
+          "entity": "battery_level",
+          "entity_id": "binary_sensor.hallway_downstairs_presence_battery_alpha",
+          "name": "Hallway Downstairs Presence Battery (Alpha)",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "hallway_presence_cloud_connection_α",
+          "entity": "cloud_connection",
+          "entity_id": "binary_sensor.hallway_downstairs_motion_wifi_alpha_cloud_connection",
+          "name": "Hallway Downstairs Presence Cloud Connection (Alpha)",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "hallway_presence_signal_level_α",
+          "entity": "signal_level",
+          "entity_id": "sensor.hallway_downstairs_presence_wifi_signal_level_alpha",
+          "name": "Hallway Downstairs Presence Signal Level (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "hallway_presence_signal_strength_α",
+          "entity": "signal_strength",
+          "entity_id": "sensor.hallway_downstairs_motion_wifi_alpha_signal_strength",
+          "name": "Hallway Downstairs Presence Signal Strength Wifi (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "hallway_presence_restart_α",
+          "entity": "restart",
+          "entity_id": "button.restart_hallway_downstairs_presence_wifi_alpha",
+          "name": "Restart Hallway Downstairs Presence Wifi (Alpha)",
+          "type": "button"
+        }
+      ],
+      "integration": {
+        "integration_stack": {
+          "matter": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_presence_matter_α",
+            "class": "occupancy",
+            "device_class": "occupancy",
+            "device_id": "935ecf8eda35f975e69f015a15c56b8e",
+            "entity_id": "binary_sensor.hallway_downstairs_occupancy_mtr_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "matter",
+            "signal_type": "occupancy",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "smartthings": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_presence_smartthings_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": "a75cabb192d0e2d8f431616f1e6bc405",
+            "entity_id": "binary_sensor.hallway_downstairs_motion_smartthings_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "3",
+            "protocol": "wifi",
+            "signal_type": "motion",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "tp-link": {
+            "availability_sensor": "binary_sensor.hallway_downstairs_motion_wifi_alpha_cloud_connection",
+            "canonical_id": "hallway_presence_tp_link_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": "a75cabb192d0e2d8f431616f1e6bc405",
+            "entity_id": "binary_sensor.hallway_downstairs_motion_tplink_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "2",
+            "protocol": "wifi",
+            "signal_type": "motion",
+            "status": "paired",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "matter"
+      },
+      "location": {
+        "area": "downstairs",
+        "role": "presence",
+        "room": "hallway",
+        "room_area": null,
+        "room_id": "hallway_downstairs",
+        "signal": "hybrid"
+      },
+      "metadata": {
+        "added_date": "2025-04-27",
+        "alpha_canonical": "hallway_downstairs_presence_α",
+        "alpha_name": "Hallway Downstairs Presence Alpha",
+        "friendly_name": "Tapo T100 Downstairs Motion Sensor",
+        "internal_name": "downstairs_presence_sensor"
+      },
+      "protocol_metrics": {}
+    },
+    "hallway_entrance_presence_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Complete device info",
+            "Missing firmware data"
+          ],
+          "score": 85
+        },
+        "entity_confidence": {
+          "factors": [
+            "Multiple consistent entities",
+            "Clear functional roles"
+          ],
+          "score": 90,
+          "uncertain_fields": [
+            "integration.preferred_protocol"
+          ]
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Clear entity relationships",
+            "Consistent naming pattern"
+          ],
+          "score": 95
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": "1.5.0",
+        "hub_id": "9e71d42b774ef23a83fa2b14c284118c",
+        "implementation": "hub",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "TP-Link",
+        "model": "T100",
+        "model_name": null,
+        "serial_nr": "5C628B684960",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "hallway_downstairs_presence_battery_level_α",
+          "entity": "battery_level",
+          "entity_id": "binary_sensor.hallway_entrance_presence_battery_alpha",
+          "name": "Hallway Entrance Presence Battery (Alpha)",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "hallway_downstairs_presence_cloud_connection_α",
+          "entity": "cloud_connection",
+          "entity_id": "binary_sensor.entrance_presence_cloud_connection_alpha",
+          "name": "Hallway Entrance Presence Cloud Connection (Alpha)",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "hallway_downstairs_presence_signal_level_α",
+          "entity": "signal_level",
+          "entity_id": "sensor.hallway_entrance_presence_signal_level_alpha",
+          "name": "Hallway Entrance Presence Signal Level (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "hallway_downstairs_presence_signal_strength_α",
+          "entity": "signal_strength",
+          "entity_id": "hallway_entrance_presence_signal_strength_alpha",
+          "name": "Hallway Entrance Presence Signal Strength (Alpha)",
+          "type": "sensor"
+        }
+      ],
+      "integration": {
+        "integration_stack": {
+          "matter": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_downstairs_presence_matter_α",
+            "class": "occupancy",
+            "device_class": "occupancy",
+            "device_id": "7741791032299fc7dfe96945c495a0ad",
+            "entity_id": "binary_sensor.hallway_entrance_occupancy_mtr_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "matter",
+            "signal_type": "occupancy",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "smartthings": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_downstairs_presence_smartthings_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": "4506f2ccf6465836515693b8f7547876",
+            "entity_id": "binary_sensor.hallway_entrance_motion_wifi_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "3",
+            "protocol": "wifi",
+            "signal_type": "motion",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "tp-link": {
+            "availability_sensor": "binary_sensor.entrance_presence_cloud_connection_alpha",
+            "canonical_id": "hallway_downstairs_presence_tp_link_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": "3848d3358a2ab7fbfe2ecae54215a0ea",
+            "entity_id": "binary_sensor.hallway_entrance_motion_tplink_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "2",
+            "protocol": "wifi",
+            "signal_type": "motion",
+            "status": "paired",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "matter"
+      },
+      "location": {
+        "area": "entrance",
+        "role": "presence",
+        "room": "hallway_downstairs",
+        "room_area": null,
+        "room_id": "hallway_downstairs",
+        "signal": "hybrid"
+      },
+      "metadata": {
+        "added_date": "2025-04-27",
+        "alpha_canonical": "hallway_entrance_presence_α",
+        "alpha_name": "Hallway Entrance Presence Alpha",
+        "friendly_name": "Entrance Door Presence Sensor",
+        "internal_name": "entrance_presence"
+      },
+      "protocol_metrics": {}
+    },
+    "hallway_floor_activity_inferred_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Non-hardware basis",
+            "Time-based threshold logic"
+          ],
+          "score": 70
+        },
+        "entity_confidence": {
+          "factors": [
+            "Motion inferred from multiple iOS deltas"
+          ],
+          "score": 75,
+          "uncertain_fields": [
+            "semantic location derivation"
+          ]
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Consistent with gamma-tier abstractions"
+          ],
+          "score": 80
+        },
+        "requires_review": true
+      },
+      "device_info": {
+        "firmware": null,
+        "hub_id": null,
+        "implementation": "template",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "Template",
+        "model": "iPhone Proxy",
+        "model_name": "Floor Elevation Inference",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 0,
+        "retry_attempts": 0,
+        "retry_delay_ms": 0,
+        "return_to_preferred_after": 0
+      },
+      "features": [],
+      "integration": {
+        "integration_stack": {
+          "template": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_floor_activity_inferred_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": null,
+            "entity_id": "binary_sensor.floor_activity_detected_gamma",
+            "origin": "hermes",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "template",
+            "signal_type": "motion",
+            "status": "inferred",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "template"
+      },
+      "location": {
+        "area": "stairs",
+        "role": "motion",
+        "room": "hallway",
+        "room_area": "stairs",
+        "room_id": "hallway",
+        "signal": "inferred"
+      },
+      "metadata": {
+        "added_date": "2025-06-05",
+        "alpha_canonical": "hallway_floor_activity_inferred_α",
+        "alpha_name": "Inferred: Floor Activity (Alpha)",
+        "friendly_name": "iPhone Floor Motion Proxy",
+        "internal_name": "floor_activity_detected"
+      },
+      "protocol_metrics": {}
+    },
+    "hallway_upstairs_presence_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Complete device information",
+            "Clear entity purpose"
+          ],
+          "score": 85,
+          "uncertain_fields": []
+        },
+        "entity_confidence": {
+          "factors": [
+            "Clear entity naming convention",
+            "Explicit device info"
+          ],
+          "score": 80,
+          "uncertain_fields": [
+            "integration.origin"
+          ]
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Single entity with clear purpose"
+          ],
+          "score": 90
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": "1.12.0",
+        "hub_id": null,
+        "implementation": "hub",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "Tapo",
+        "model": "T100",
+        "model_name": null,
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "hallway_presence_battery_level_α",
+          "entity": "battery_level",
+          "entity_id": "binary_sensor.hallway_upstairs_motion_battery_alpha",
+          "name": "Hallway Upstairs Presence Battery (Alpha)",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "hallway_presence_cloud_connection_α",
+          "entity": "cloud_connection",
+          "entity_id": "binary_sensor.hallway_upstairs_presence_cloud_connection_alpha",
+          "name": "Hallway Upstairs Presence Cloud Connection (Alpha)",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "hallway_presence_signal_level_α",
+          "entity": "signal_level",
+          "entity_id": "sensor.hallway_upstairs_presence_signal_level_alpha",
+          "name": "Hallway Upstairs Presence Signal Level (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "hallway_presence_signal_strength_α",
+          "entity": "signal_strength",
+          "entity_id": "sensor.hallway_upstairs_presence_signal_strength_alpha",
+          "name": "Hallway Upstairs Presence Signal Strength (Alpha)",
+          "type": "sensor"
+        }
+      ],
+      "integration": {
+        "integration_stack": {
+          "matter": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_presence_matter_α",
+            "class": "occupancy",
+            "device_class": "occupancy",
+            "device_id": "8e28ff7772d37212b3a8b9e8e093e9c4",
+            "entity_id": "binary_sensor.hallway_upstairs_occupancy_matter_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "matter",
+            "signal_type": "occupancy",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "smartthings": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_presence_smartthings_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": "",
+            "entity_id": "binary_sensor.hallway_upstairs_motion_wifi_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "3",
+            "protocol": "wifi",
+            "signal_type": "motion",
+            "status": "fallback",
+            "type": "binary_sensor"
+          },
+          "tp-link": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_presence_tp_link_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": "e830b14b4d628230f71426dd7519684f",
+            "entity_id": "binary_sensor.hallway_upstairs_motion_tplink_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "wifi",
+            "signal_type": "motion",
+            "status": "paired",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "matter"
+      },
+      "location": {
+        "area": "upstairs",
+        "role": "presence",
+        "room": "hallway",
+        "room_area": null,
+        "room_id": "hallway_upstairs",
+        "signal": "hybrid"
+      },
+      "metadata": {
+        "added_date": "2025-04-27",
+        "alpha_canonical": "hallway_upstairs_presence_α",
+        "alpha_name": "Hallway Upstairs Presence (Alpha)",
+        "friendly_name": "Tapo T100 Upstairs Presence Sensor",
+        "internal_name": "upstairs_presence_sensor"
+      },
+      "protocol_metrics": {}
+    },
+    "kitchen_fridge_contact_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Clear device location and purpose",
+            "Missing firmware data"
+          ],
+          "score": 75,
+          "uncertain_fields": [
+            "firmware"
+          ]
+        },
+        "entity_confidence": {
+          "factors": [
+            "Clear entity naming convention",
+            "Explicit device info"
+          ],
+          "score": 80,
+          "uncertain_fields": [
+            "integration.origin",
+            "device_class"
+          ]
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Single entity with clear purpose"
+          ],
+          "score": 90
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": null,
+        "hub_id": null,
+        "implementation": "hub",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "Tapo",
+        "model": "T110",
+        "model_name": null,
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "kitchen_contact_battery_level_α",
+          "entity": "battery_level",
+          "entity_id": "binary_sensor.kitchen_fridge_contact_alpha_tp_link_battery",
+          "name": "Kitchen Fridge Contact Alpha Battery",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "kitchen_contact_cloud_connection_α",
+          "entity": "cloud_connection",
+          "entity_id": "binary_sensor.kitchen_fridge_contact_alpha_tp_link_cloud_connection",
+          "name": "Kitchen Fridge Contact Alpha Cloud Connection",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "kitchen_contact_signal_level_α",
+          "entity": "signal_level",
+          "entity_id": "sensor.kitchen_fridge_contact_alpha_tp_link_signal_level",
+          "name": "Kitchen Fridge Contact Alpha Signal Level",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "kitchen_contact_signal_strength_α",
+          "entity": "signal_strength",
+          "entity_id": "sensor.kitchen_fridge_contact_alpha_tp_link_signal_strength",
+          "name": "Kitchen Fridge Contact Alpha Signal Strength",
+          "type": "sensor"
+        }
+      ],
+      "integration": {
+        "integration_stack": {
+          "matter": {
+            "availability_sensor": null,
+            "canonical_id": "kitchen_contact_matter_α",
+            "class": "door",
+            "device_class": "door",
+            "device_id": "3308ac670ef180cb5a015d1d5d529ed6",
+            "entity_id": "binary_sensor.kitchen_contact_sensor_fridge_door_mtr",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "matter",
+            "signal_type": "opening",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "smartthings": {
+            "availability_sensor": null,
+            "canonical_id": "kitchen_contact_smartthings_α",
+            "class": "door",
+            "device_class": "door",
+            "device_id": "0f14243975908562317803a3f8c1a944",
+            "entity_id": "binary_sensor.kitchen_contact_sensor_fridge_door_wifi_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "2",
+            "protocol": "wifi",
+            "signal_type": "opening",
+            "status": "fallback",
+            "type": "binary_sensor"
+          },
+          "tp-link": {
+            "availability_sensor": null,
+            "canonical_id": "kitchen_contact_tp_link_α",
+            "class": "door",
+            "device_class": "door",
+            "device_id": "9bb536694bc9557460bfe729a7010fd1",
+            "entity_id": "binary_sensor.kitchen_fridge_contact_alpha_tp_link_door",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "2",
+            "protocol": "wifi",
+            "signal_type": "opening",
+            "status": "fallback",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "matter"
+      },
+      "location": {
+        "area": null,
+        "role": "contact",
+        "room": "kitchen",
+        "room_area": null,
+        "room_id": "kitchen",
+        "signal": "opening"
+      },
+      "metadata": {
+        "added_date": "2025-04-27",
+        "alpha_canonical": "kitchen_fridge_contact_α",
+        "alpha_name": "Kitchen Fridge Contact Alpha",
+        "friendly_name": "Tapo T110 Fridge Door Contact Sensor",
+        "internal_name": "kitchen_fridge_door_contact_sensor"
+      },
+      "protocol_metrics": {}
+    },
+    "kitchen_occupancy_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Complete device information",
+            "Clear room assignment"
+          ],
+          "score": 90
+        },
+        "entity_confidence": {
+          "factors": [
+            "Multiple consistent entities",
+            "Clear entity purposes"
+          ],
+          "score": 90,
+          "uncertain_fields": []
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Consistent entity naming",
+            "Clear functional grouping"
+          ],
+          "score": 95
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": "1.0.6",
+        "hub_id": "f0cdd0dfd4c88bcaca15abf435075890",
+        "implementation": "bridge",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "SONOFF",
+        "model": "Zigbee occupancy sensor",
+        "model_name": "SNZB-06P",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "kitchen_presence_update_α",
+          "entity": "update",
+          "entity_id": "update.kitchen_occupancy_alpha",
+          "name": "Kitchen Occupancy Alpha Update",
+          "type": "update"
+        },
+        {
+          "canonical_id": "kitchen_presence_sensitivity_α",
+          "entity": "sensitivity",
+          "entity_id": "select.kitchen_occupancy_occupancy_sensitivity_alpha",
+          "name": "Sonoff SNZB-06P Kitchen Occupancy Sensor Sensitivity (Alpha)",
+          "type": "select"
+        },
+        {
+          "canonical_id": "kitchen_presence_occupancy_timeout_α",
+          "entity": "occupancy_timeout",
+          "entity_id": "number.kitchen_occupancy_occupancy_timeout_alpha",
+          "name": "Kitchen Occupancy Alpha Occupancy Timeout",
+          "type": "number"
+        },
+        {
+          "canonical_id": "kitchen_presence_illumination_α",
+          "entity": "illumination",
+          "entity_id": "sensor.kitchen_illumination_alpha",
+          "name": "Sonoff SNZB-06P Kitchen Illuminance Sensor (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "kitchen_presence_occupancy_α",
+          "entity": "occupancy",
+          "entity_id": "sensor.kitchen_occupancy_linkquality_alpha",
+          "name": "Sonoff SNZB-06P Kitchen Occupancy Sensor Linkquality (Alpha)",
+          "type": "binary_sensor"
+        }
+      ],
+      "integration": {
+        "integration_stack": {
+          "mqtt": {
+            "availability_sensor": null,
+            "canonical_id": "kitchen_presence_mqtt_α",
+            "class": "occupancy",
+            "device_class": "occupancy",
+            "device_id": "8db4e4f48141048204d070c44a14a811",
+            "entity_id": "binary_sensor.kitchen_occupancy_alpha",
+            "origin": "Zigbee2MQTT Bridge",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "mqtt",
+            "signal_type": "occupancy",
+            "status": "paired",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "mqtt"
+      },
+      "location": {
+        "area": null,
+        "role": "presence",
+        "room": "kitchen",
+        "room_area": null,
+        "room_id": "kitchen",
+        "signal": "occupancy"
+      },
+      "metadata": {
+        "added_date": "2025-04-27",
+        "alpha_canonical": "kitchen_occupancy_α",
+        "alpha_name": "Sonoff SNZB-06P Kitchen Occupancy Sensor (Alpha)",
+        "friendly_name": "Sonoff SNZB-06P Kitchen Occupancy Sensor",
+        "internal_name": "sonoffkitchenoccupancy"
+      },
+      "protocol_metrics": {}
+    },
+    "kitchen_presence_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Entity matches location",
+            "Device name doesn't match location"
+          ],
+          "score": 75,
+          "uncertain_fields": [
+            "metadata.internal_name"
+          ]
+        },
+        "entity_confidence": {
+          "factors": [
+            "Entity ID matches area",
+            "Entity friendly name matches area"
+          ],
+          "score": 70,
+          "uncertain_fields": [
+            "device_name inconsistent with location and entity"
+          ]
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Single clear entity for device function"
+          ],
+          "score": 85
+        },
+        "requires_review": true
+      },
+      "device_info": {
+        "firmware": "1.12.0 Build 230512 Rel.103011",
+        "hub_id": "dfde5d28da186506c3a30c53b2a784df",
+        "implementation": "hub",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "TP-Link",
+        "model": "T100",
+        "model_name": "Tapo T100",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "kitchen_presence_cloud_connection_α",
+          "entity": "cloud_connection",
+          "entity_id": "binary_sensor.kitchen_motion_cloud_connection_alpha",
+          "name": "Kitchen Motion Cloud Connection (Alpha)",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "kitchen_presence_signal_level_α",
+          "entity": "signal_level",
+          "entity_id": "sensor.kitchen_motion_signal_level_alpha",
+          "name": "Kitchen Motion Signal Level (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "kitchen_presence_battery_α",
+          "entity": "battery_level",
+          "entity_id": "binary_sensor.kitchen_motion_battery_alpha",
+          "name": "Kitchen Motion Battery (Alpha)",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "kitchen_presence_signal_strength_α",
+          "entity": "signal_strength",
+          "entity_id": "sensor.kitchen_motion_signal_strength",
+          "name": "Kitchen Motion Signal Strength (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "kitchen_presence_restart_α",
+          "entity": "restart",
+          "entity_id": "button.restart_kitchen_motion_alpha",
+          "name": "Restart Kitchen Motion (Alpha)",
+          "type": "button"
+        }
+      ],
+      "integration": {
+        "integration_stack": {
+          "matter": {
+            "availability_sensor": null,
+            "canonical_id": "kitchen_presence_matter_α",
+            "class": "occupancy",
+            "device_class": "occupancy",
+            "device_id": "745c29746b152571ece78665c8e5b904",
+            "entity_id": "binary_sensor.kitchen_occupancy_matter_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "matter",
+            "signal_type": "occupancy",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "smartthings": {
+            "availability_sensor": null,
+            "canonical_id": "kitchen_presence_smartthings_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": "a0032804c521c7e9b4cc03010447232c",
+            "entity_id": "binary_sensor.kitchen_motion_wifi_smartthings_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "3",
+            "protocol": "wifi",
+            "signal_type": "motion",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "tp-link": {
+            "availability_sensor": null,
+            "canonical_id": "kitchen_presence_tp_link_α",
+            "class": "motion",
+            "device_class": "motion",
+            "device_id": "469e4df13a0f201f5ee307992ce97f8b",
+            "entity_id": "binary_sensor.kitchen_motion_tplink_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "2",
+            "protocol": "wifi",
+            "signal_type": "motion",
+            "status": "paired",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "matter"
+      },
+      "location": {
+        "area": null,
+        "role": "presence",
+        "room": "kitchen",
+        "room_area": null,
+        "room_id": "kitchen",
+        "signal": "hybrid"
+      },
+      "metadata": {
+        "added_date": "2025-04-27",
+        "alpha_canonical": "kitchen_presence_α",
+        "alpha_name": "Kitchen Presence (Alpha)",
+        "friendly_name": "Tapo T100 ST Kitchen Presence Sensor",
+        "internal_name": "kitchen_presence_sensor"
+      },
+      "protocol_metrics": {}
+    },
+    "living_room_broadlink_omega": {
+      "device_info": {
+        "firmware": "62092",
+        "hub_id": "",
+        "implementation": "direct",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": "E8:16:56:7D:90:42",
+        "manufacturer": "Broadlink",
+        "model": "RM4 Pro",
+        "model_name": "Broadlink RM4 Pro",
+        "ssid": null
+      },
+      "integration": {
+        "integration_stack": {
+          "lan": {
+            "availability_sensor": null,
+            "canonical_id": "living_room_remote_lan_α",
+            "class": {
+              "humidity": {
+                "availability_sensor": null,
+                "canonical_id": "sensor.living_room_broadlink_humidity_α",
+                "device_class": "humidity",
+                "entity_id": "sensor.living_room_broadlink_humidity_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "humidity",
+                "status": "paired"
+              },
+              "remote": {
+                "availability_sensor": null,
+                "canonical_id": "broadlink_pro_remote_α",
+                "device_class": "remote",
+                "entity_id": "remote.broadlink_pro_omega",
+                "platform": "remote",
+                "preference": "1",
+                "signal_type": "multi",
+                "status": "paired"
+              },
+              "temperature": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_broadlink_temperature_alpha_α",
+                "device_class": "temperature",
+                "entity_id": "sensor.living_room_broadlink_temperature_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "temperature",
+                "status": "paired"
+              }
+            },
+            "device_class": {
+              "humidity": {
+                "availability_sensor": null,
+                "canonical_id": "sensor.living_room_broadlink_humidity_α",
+                "device_class": "humidity",
+                "entity_id": "sensor.living_room_broadlink_humidity_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "humidity",
+                "status": "paired"
+              },
+              "remote": {
+                "availability_sensor": null,
+                "canonical_id": "broadlink_pro_remote_α",
+                "device_class": "remote",
+                "entity_id": "remote.broadlink_pro_omega",
+                "platform": "remote",
+                "preference": "1",
+                "signal_type": "multi",
+                "status": "paired"
+              },
+              "temperature": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_broadlink_temperature_alpha_α",
+                "device_class": "temperature",
+                "entity_id": "sensor.living_room_broadlink_temperature_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "temperature",
+                "status": "paired"
+              }
+            },
+            "device_id": "259fe073863ce8fb7c786bdc71adcba2",
+            "fallback_settings": {
+              "auto_switch_threshold": 3,
+              "retry_attempts": 2,
+              "retry_delay_ms": 500,
+              "return_to_preferred_after": 60
+            },
+            "features": [],
+            "origin": "IR",
+            "platform": "remote",
+            "preference": "1",
+            "protocol": "lan",
+            "protocol_metrics": {
+              "lan": {
+                "last_seen": "2025-04-22T15:30:00",
+                "reliability_score": 98,
+                "response_time_ms": 120
+              }
+            },
+            "signal_type": {
+              "humidity": {
+                "availability_sensor": null,
+                "canonical_id": "sensor.living_room_broadlink_humidity_α",
+                "device_class": "humidity",
+                "entity_id": "sensor.living_room_broadlink_humidity_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "humidity",
+                "status": "paired"
+              },
+              "remote": {
+                "availability_sensor": null,
+                "canonical_id": "broadlink_pro_remote_α",
+                "device_class": "remote",
+                "entity_id": "remote.broadlink_pro_omega",
+                "platform": "remote",
+                "preference": "1",
+                "signal_type": "multi",
+                "status": "paired"
+              },
+              "temperature": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_broadlink_temperature_alpha_α",
+                "device_class": "temperature",
+                "entity_id": "sensor.living_room_broadlink_temperature_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "temperature",
+                "status": "paired"
+              }
+            },
+            "type": "remote"
+          }
+        },
+        "preferred_protocol": "lan"
+      },
+      "location": {
+        "area": "",
+        "role": "remote",
+        "room": "living_room",
+        "room_area": null,
+        "room_id": "living_room",
+        "signal": "multi"
+      },
+      "metadata": {
+        "added_date": "2025-06-04",
+        "alpha_canonical": "living_room_broadlink_α",
+        "alpha_name": "Living Room Broadlink (Alpha)",
+        "friendly_name": "Broadlink RM4 Pro",
+        "internal_name": "broadlink_rm4_pro_living_room"
+      }
+    },
+    "living_room_multipurpose_sensor_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Complete device information",
+            "Clear entity purpose"
+          ],
+          "score": 85,
+          "uncertain_fields": [
+            "exact sensor placement"
+          ]
+        },
+        "entity_confidence": {
+          "factors": [
+            "Multiple consistent entities",
+            "Clear functional roles"
+          ],
+          "score": 90,
+          "uncertain_fields": []
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Clear multi-signal device with consistent relationships"
+          ],
+          "score": 95
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": "2.3.49-10",
+        "hub_id": "bc1dbeed7772c07dcc62f878ea4f190a",
+        "implementation": "hub",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "Aeotec",
+        "model": "Multipurpose Sensor",
+        "model_name": "0002-0005",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "living_room_multipurpose_battery_α",
+          "entity": "battery",
+          "entity_id": "sensor.living_room_multipurpose_battery_alpha",
+          "name": "Living Room Multipurpose Battery (Alpha)",
+          "type": "sensor"
+        }
+      ],
+      "integration": {
+        "fallback_settings": {
+          "auto_switch_threshold": 3,
+          "retry_attempts": 2,
+          "retry_delay_ms": 500,
+          "return_to_preferred_after": 60
+        },
+        "integration_stack": {
+          "wifi": {
+            "availability_sensor": null,
+            "canonical_id": "living_room_multipurpose_wifi_α",
+            "class": {
+              "illuminance": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_multipurpose_illuminance_α",
+                "device_class": "illuminance",
+                "entity_id": "sensor.living_room_multipurpose_illuminance_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "illuminance",
+                "status": "paired"
+              },
+              "motion": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_multipurpose_motion_α",
+                "device_class": "motion",
+                "entity_id": "binary_sensor.living_room_multipurpose_motion_alpha",
+                "platform": "binary_sensor",
+                "preference": "1",
+                "signal_type": "motion",
+                "status": "paired"
+              },
+              "temperature": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_multipurpose_temperature_α",
+                "device_class": "temperature",
+                "entity_id": "sensor.living_room_multipurpose_temperature_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "temperature",
+                "status": "paired"
+              }
+            },
+            "device_class": {
+              "illuminance": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_multipurpose_illuminance_α",
+                "device_class": "illuminance",
+                "entity_id": "sensor.living_room_multipurpose_illuminance_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "illuminance",
+                "status": "paired"
+              },
+              "motion": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_multipurpose_motion_α",
+                "device_class": "motion",
+                "entity_id": "binary_sensor.living_room_multipurpose_motion_alpha",
+                "platform": "binary_sensor",
+                "preference": "1",
+                "signal_type": "motion",
+                "status": "paired"
+              },
+              "temperature": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_multipurpose_temperature_α",
+                "device_class": "temperature",
+                "entity_id": "sensor.living_room_multipurpose_temperature_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "temperature",
+                "status": "paired"
+              }
+            },
+            "device_id": "0e0d2aa5f95b6dfd783540fb0c104ffb",
+            "origin": "ZHA",
+            "platform": "sensor",
+            "preference": "1",
+            "protocol": "wifi",
+            "signal_type": {
+              "illuminance": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_multipurpose_illuminance_α",
+                "device_class": "illuminance",
+                "entity_id": "sensor.living_room_multipurpose_illuminance_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "illuminance",
+                "status": "paired"
+              },
+              "motion": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_multipurpose_motion_α",
+                "device_class": "motion",
+                "entity_id": "binary_sensor.living_room_multipurpose_motion_alpha",
+                "platform": "binary_sensor",
+                "preference": "1",
+                "signal_type": "motion",
+                "status": "paired"
+              },
+              "temperature": {
+                "availability_sensor": null,
+                "canonical_id": "living_room_multipurpose_temperature_α",
+                "device_class": "temperature",
+                "entity_id": "sensor.living_room_multipurpose_temperature_alpha",
+                "platform": "sensor",
+                "preference": "1",
+                "signal_type": "temperature",
+                "status": "paired"
+              }
+            },
+            "type": "sensor"
+          }
+        },
+        "preferred_protocol": "zha",
+        "protocol_metrics": {
+          "wifi": {
+            "last_seen": "2025-04-22T15:30:00",
+            "reliability_score": 98,
+            "response_time_ms": 120
+          }
+        }
+      },
+      "location": {
+        "area": null,
+        "role": "multipurpose",
+        "room": "living_room",
+        "room_area": null,
+        "room_id": "living_room",
+        "signal": "multi"
+      },
+      "metadata": {
+        "added_date": "2025-03-15",
+        "alpha_canonical": "living_room_multipurpose_α",
+        "alpha_name": "Living Room Multipurpose Sensor Alpha",
+        "friendly_name": "Living Room Aeotec Multipurpose Sensor",
+        "internal_name": "aeotec_multipurpose"
+      },
+      "protocol_metrics": {}
+    },
+    "living_room_occupancy_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Complete device information",
+            "Clear room assignment"
+          ],
+          "score": 90
+        },
+        "entity_confidence": {
+          "factors": [
+            "Multiple consistent entities",
+            "Clear entity purposes"
+          ],
+          "score": 90,
+          "uncertain_fields": []
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Consistent entity naming",
+            "Clear functional grouping"
+          ],
+          "score": 95
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": "1.0.6",
+        "hub_id": "f0cdd0dfd4c88bcaca15abf435075890",
+        "implementation": "bridge",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "SONOFF",
+        "model": "Zigbee occupancy sensor",
+        "model_name": "SNZB-06P",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "living_room_presence_update_α",
+          "entity": "update",
+          "entity_id": "update.living_room_occupancy_alpha",
+          "name": "Living Room Occupancy Update (Alpha)",
+          "type": "update"
+        },
+        {
+          "canonical_id": "living_room_presence_sensitivity_α",
+          "entity": "sensitivity",
+          "entity_id": "select.living_room_occupancy_sensitivity_alpha",
+          "name": "Living Room Occupancy Sensitivity (Alpha)",
+          "type": "select"
+        },
+        {
+          "canonical_id": "living_room_presence_occupancy_timeout_α",
+          "entity": "occupancy_timeout",
+          "entity_id": "number.living_room_occupancy_timeout_alpha",
+          "name": "Living Room Occupancy Timeout (Alpha)",
+          "type": "number"
+        },
+        {
+          "canonical_id": "living_room_presence_illuminance_α",
+          "entity": "illuminance",
+          "entity_id": "sensor.living_room_occupancy_illuminance_alpha",
+          "name": "Living Room Occupancy Illuminance (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "living_room_presence_linkquality_α",
+          "entity": "linkquality",
+          "entity_id": "sensor.living_room_occupancy_linkquality_alpha",
+          "name": "Living Room Occupancy Link Quality (Alpha)",
+          "type": "sensor"
+        }
+      ],
+      "integration": {
+        "integration_stack": {
+          "mqtt": {
+            "availability_sensor": null,
+            "canonical_id": "living_room_presence_mqtt_α",
+            "class": "occupancy",
+            "device_class": "occupancy",
+            "device_id": "d3a8d7c6d70d87a849a3e0113f79b7f0",
+            "entity_id": "binary_sensor.living_room_occupancy_alpha",
+            "origin": "Zigbee2MQTT Bridge",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "mqtt",
+            "signal_type": "occupancy",
+            "status": "paired",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "mqtt"
+      },
+      "location": {
+        "area": null,
+        "role": "presence",
+        "room": "living_room",
+        "room_area": null,
+        "room_id": "living_room",
+        "signal": "occupancy"
+      },
+      "metadata": {
+        "added_date": "2025-04-27",
+        "alpha_canonical": "living_room_occupancy_α",
+        "alpha_name": " Living Room Occupancy (Alpha)",
+        "friendly_name": "Living Room Sonoff Zigbee Occupancy Sensor",
+        "internal_name": "sonofflivingroomoccupancy"
+      },
+      "protocol_metrics": {}
+    },
+    "living_room_smartbutton_omega": {
+      "device_info": {
+        "firmware": "2.3.0",
+        "hub_id": "f0cdd0dfd4c88bcaca15abf435075890",
+        "implementation": "bridge",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": null,
+        "manufacturer": "SmartThings",
+        "model": "ST Button",
+        "model_name": "IM6001-BTP01",
+        "ssid": null
+      },
+      "features": [
+        {
+          "canonical_id": "living_room_button_battery_α",
+          "entity": "battery",
+          "entity_id": "sensor.living_room_smartbutton_battery",
+          "mqtt_topic": null,
+          "name": "Living Room Smart Button Battery (Alpha)",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "living_room_button_linkquality_α",
+          "entity": "linkquality",
+          "entity_id": "sensor.living_room_smart_button_linkquality_alpha",
+          "name": "Living Room Smart Button Link Quality (Alpha)",
+          "type": "sensor"
+        }
+      ],
+      "integration": {
+        "fallback_settings": {
+          "auto_switch_threshold": 3,
+          "retry_attempts": 2,
+          "retry_delay_ms": 500,
+          "return_to_preferred_after": 60
+        },
+        "integration_stack": {
+          "mqtt": {
+            "availability_sensor": "",
+            "canonical_id": "living_room_button_mqtt_α",
+            "class": "temperature",
+            "device_class": "temperature",
+            "device_id": "e16a923fadc8c958f403929467f392c9",
+            "entity_id": "sensor.living_room_smartbutton_temperature_alpha",
+            "origin": "Zigbee2MQTT Bridge",
+            "platform": "sensor",
+            "preference": "1",
+            "protocol": "mqtt",
+            "signal_type": "occupancy",
+            "status": "paired",
+            "type": "sensor"
+          }
+        },
+        "preferred_protocol": "mqtt",
+        "protocol_metrics": {
+          "mqtt": {
+            "last_seen": "2025-04-22T15:30:00",
+            "reliability_score": 98,
+            "response_time_ms": 120
+          }
+        }
+      },
+      "location": {
+        "area": "",
+        "role": "button",
+        "room": "living_room",
+        "room_area": null,
+        "room_id": "living_room",
+        "signal": "multi"
+      },
+      "metadata": {
+        "added_date": "2025-06-04",
+        "alpha_canonical": "living_room_smartbutton_α",
+        "alpha_name": "Living Room Smart Button (Alpha)",
+        "friendly_name": "SmartThings Bedroom Smart Button",
+        "internal_name": "smartthings_smartbutton_living_room"
+      }
+    },
+    "upstairs_skylight_contact_omega": {
+      "confidence_metrics": {
+        "device_confidence": {
+          "factors": [
+            "Clear device purpose",
+            "Missing firmware data"
+          ],
+          "score": 70,
+          "uncertain_fields": [
+            "firmware",
+            "precise location"
+          ]
+        },
+        "entity_confidence": {
+          "factors": [
+            "Clear entity type",
+            "Explicit device info"
+          ],
+          "score": 75,
+          "uncertain_fields": [
+            "integration.origin",
+            "device_class",
+            "room_area"
+          ]
+        },
+        "relationship_confidence": {
+          "factors": [
+            "Single entity with reasonably clear purpose"
+          ],
+          "score": 85
+        },
+        "requires_review": false
+      },
+      "device_info": {
+        "firmware": "1.9.0",
+        "hub_id": "9e71d42b774ef23a83fa2b14c284118c",
+        "implementation": "hub",
+        "ipv4": null,
+        "ipv6": null,
+        "mac": "9C53226A305C",
+        "manufacturer": "Tapo",
+        "model": "T110",
+        "model_name": "T110",
+        "ssid": null
+      },
+      "fallback_settings": {
+        "auto_switch_threshold": 3,
+        "retry_attempts": 2,
+        "retry_delay_ms": 500,
+        "return_to_preferred_after": 60
+      },
+      "features": [
+        {
+          "canonical_id": "hallway_contact_cloud_connection_α",
+          "entity": "cloud_connection",
+          "entity_id": "binary_sensor.hallway_upstairs_skylight_contact_sensor_tp_link_alpha_cloud_connection",
+          "name": "Hallway Upstairs Skylight Contact Sensor TP-Link (Alpha) Battery",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "hallway_contact_signal_level_α",
+          "entity": "signal_level",
+          "entity_id": "sensor.hallway_upstairs_skylight_contact_sensor_tp_link_alpha_signal_level",
+          "name": "Hallway Upstairs Skylight Contact Sensor TP-Link (Alpha) Signal level",
+          "type": "sensor"
+        },
+        {
+          "canonical_id": "hallway_contact_battery_level_α",
+          "entity": "battery_level",
+          "entity_id": "binary_sensor.hallway_upstairs_skylight_contact_sensor_tp_link_alpha_battery",
+          "name": "Hallway Upstairs Skylight Contact Sensor TP-Link (Alpha) Battery",
+          "type": "binary_sensor"
+        },
+        {
+          "canonical_id": "hallway_contact_signal_strength_α",
+          "entity": "signal_strength",
+          "entity_id": "sensor.hallway_upstairs_skylight_contact_sensor_tp_link_alpha_signal_strength",
+          "name": "Hallway Upstairs Skylight Contact Sensor TP-Link (Alpha) Signal strength",
+          "type": "sensor"
+        }
+      ],
+      "integration": {
+        "integration_stack": {
+          "matter": {
+            "availability_sensor": null,
+            "canonical_id": "hallway_contact_matter_α",
+            "class": "opening",
+            "device_class": "opening",
+            "device_id": "a51ac9d83391d6c716cd8f8b2147621e",
+            "entity_id": "binary_sensor.hallway_upstairs_skylight_contact_sensor_mtr_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "1",
+            "protocol": "matter",
+            "signal_type": "opening",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "smartthings": {
+            "availability_sensor": "",
+            "canonical_id": "hallway_contact_smartthings_α",
+            "class": "opening",
+            "device_class": "opening",
+            "device_id": "087ae8238d4bc1228a0778ae73c10cd5",
+            "entity_id": "binary_sensor.hallway_upstairs_skylight_contact_sensor_wifi_alpha_fallback",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "3",
+            "protocol": "wifi",
+            "signal_type": "opening",
+            "status": "paired",
+            "type": "binary_sensor"
+          },
+          "tp-link": {
+            "availability_sensor": "binary_sensor.hallway_upstairs_skylight_contact_sensor_tp_link_alpha_cloud_connection",
+            "canonical_id": "hallway_contact_tp_link_α",
+            "class": "opening",
+            "device_class": "opening",
+            "device_id": "cfb735c3bea45ae6815f0a0f75f37e39",
+            "entity_id": "binary_sensor.hallway_upstairs_skylight_contact_sensor_wifi_alpha",
+            "origin": "HomeAssistant",
+            "platform": "binary_sensor",
+            "preference": "2",
+            "protocol": "wifi",
+            "signal_type": "opening",
+            "status": "paired",
+            "type": "binary_sensor"
+          }
+        },
+        "preferred_protocol": "matter"
+      },
+      "location": {
+        "area": "upstairs",
+        "role": "contact",
+        "room": "hallway",
+        "room_area": "",
+        "room_id": "hallway_upstairs",
+        "signal": "opening"
+      },
+      "metadata": {
+        "added_date": "2025-04-27",
+        "alpha_canonical": "upstairs_skylight_contact_α",
+        "alpha_name": "Hallway Upstairs Skylight Contact Sensor Matter (Alpha)",
+        "friendly_name": "Upstairs Window Tapo Contact Sensor",
+        "internal_name": "skylight_window_ontact"
+      },
+      "protocol_metrics": {}
+    }
+  }
+}

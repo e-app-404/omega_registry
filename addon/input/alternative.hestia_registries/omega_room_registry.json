@@ -1,0 +1,1368 @@
+{
+  "_meta": {
+    "$schema": "http://json-schema.org/hestia-v7/schema#",
+    "title": "room-registry.json schema",
+    "name": "HESTIA Unified Room Management Schema",
+    "description": "HESTIA Unified Room Management Schema",
+    "version": "1.1.0",
+    "migration_source_files": [
+      "room_groups.json",
+      "room_adjacency.json",
+      "room_categories.json",
+      "room_configurations.json"
+    ],
+    "validation_status": {
+      "last_validated": "2025-04-29T22:01:07.391306Z",
+      "status": "valid",
+      "updated_by": "hephaestus",
+      "messages": []
+    },
+    "metadata": {
+      "created_at": "2025-05-09T18:56:06.126435Z",
+      "updated_at": "2025-05-09T18:56:06.126435Z",
+      "validated_by": "hephaestus_room_manager",
+      "status": "new"
+    },
+    "categories_definitions": {
+      "common": {
+        "name": "Common Areas",
+        "description": "Shared living spaces",
+        "behavior_profiles": [],
+        "version": "1.0",
+        "changelog": []
+      },
+      "private": {
+        "name": "Private Spaces",
+        "description": "Personal or restricted access spaces",
+        "behavior_profiles": [],
+        "version": "1.0",
+        "changelog": []
+      },
+      "entertainment": {
+        "name": "Entertainment Zones",
+        "description": "Areas for recreation and media",
+        "behavior_profiles": [],
+        "version": "1.0",
+        "changelog": []
+      }
+    },
+    "area_definitions": {},
+    "behaviors": {},
+    "behavior_schedules": [],
+    "rooms": {
+      "living_room": {
+        "id": "living_room",
+        "friendly_name": "Living Room",
+        "aliases": ["common_room", "cinema_clapham"],
+        "type": "common",
+        "floor": "1",
+        "groups": ["Floor 1"],
+        "categories": ["common", "entertainment"],
+        "areas": ["couch", "windows", "desk", "liquor_cabinet"],
+        "adjacency": {
+          "connected_rooms": {
+            "kitchen": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "downstairs": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            }
+          }
+        },
+        "devices": {},
+        "lights": {},
+        "sensors": {
+          "temperature": {
+            "omega": "living_room_multipurpose_sensor_omega",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "humidity": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "motion": {
+            "omega": "living_room_multipurpose_sensor_omega",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "occupancy": {
+            "omega": "living_room_multipurpose_sensor_omega",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "illuminance": {
+            "omega": "living_room_multipurpose_sensor_omega",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "contact": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          }
+        },
+        "configuration": {
+          "lighting": [
+            "mood_day",
+            "mood_night",
+            "gaming",
+            "tv_time",
+            "circadian"
+          ],
+          "climate": ["drafty", "thermostatic"],
+          "presence": ["motion", "occupancy"],
+          "security": "none",
+          "media": ["projector", "audio_zone", "gaming_console"],
+          "vacuum_segment_id": "19",
+          "default_brightness": 60,
+          "circadian_type": "brightness",
+          "version": "1.0",
+          "presence_msf": ["rate-limited", "validated"],
+          "changelog": []
+        },
+        "metadata": {
+          "created_at": "2025-04-29T18:56:06.126366Z",
+          "updated_at": "2025-04-29T18:56:06.126366Z",
+          "validated_by": "hephaestus_room_manager",
+          "status": "validated"
+        }
+      },
+      "bedroom": {
+        "id": "bedroom",
+        "friendly_name": "Bedroom",
+        "aliases": [
+          "everts_room",
+          "evert_s_room",
+          "master_bedroom",
+          "suite",
+          "belge_etage"
+        ],
+        "type": "private",
+        "floor": "2",
+        "groups": ["Floor 2"],
+        "categories": ["private"],
+        "areas": ["desk", "ottoman", "wardrobe", "monstera", "bed", "mirror"],
+        "adjacency": {
+          "connected_rooms": {
+            "hallway": {
+              "connection_type": "doorway",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "ensuite": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "desk": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "wardrobe": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "ottoman": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "monstera": {
+              "connection_type": "doorway",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            }
+          }
+        },
+        "devices": {
+          "fan": [
+            "fan.levoit_air_purifier",
+            "fan.probreeze",
+            "fan.bedroom_fan"
+          ],
+          "dehumidifier": "humidifier.probreeze",
+          "monitor": "switch.monitor"
+        },
+        "lights": {},
+        "sensors": {
+          "temperature": {
+            "omega": "",
+            "alpha": [
+              "sensor.probreeze_temperature",
+              "sensor.bedroom_smartbutton_temperature",
+              "sensor.bedroom_climate_temperature"
+            ],
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "humidity": {
+            "omega": "",
+            "alpha": [
+              "sensor.bedroom_probreeze_humidity_alpha",
+              "sensor.bedroom_climate_humidity"
+            ],
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "motion": {
+            "omega": "",
+            "alpha": [
+              "binary_sensor.wardrobe_motion_sensor",
+              "binary_sensor.wardrobe_motion_sensor_motion"
+            ],
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "occupancy": {
+            "omega": "bedroom_occupancy_omega",
+            "alpha": [
+              "binary_sensor.bedroom_occupancy",
+              "binary_sensor.wardrobe_occupancy"
+            ],
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "illuminance": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "contact": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          }
+        },
+        "configuration": {
+          "lighting": [
+            "mood_day",
+            "mood_night",
+            "circadian",
+            "gaming",
+            "tv_time",
+            "red"
+          ],
+          "climate": ["thermostatic", "humidity_sensitive", "ventilation"],
+          "presence": ["motion", "occupancy", "contact", "inferred"],
+          "security": "camera",
+          "media": ["tv", "gaming_console", "audio_zone"],
+          "vacuum_segment_id": "none",
+          "version": "1.2",
+          "changelog": [],
+          "default_brightness": 60,
+          "circadian_type": "brightness",
+          "presence_msf": ["rate-limited", "validated"]
+        },
+        "metadata": {
+          "created_at": "2025-04-29T18:56:06.126382Z",
+          "updated_at": "2025-04-29T18:56:06.126382Z",
+          "validated_by": "hephaestus_room_manager",
+          "status": "validated"
+        }
+      },
+      "laundry": {
+        "id": "laundry",
+        "friendly_name": "Laundry Room",
+        "aliases": [],
+        "type": "common",
+        "floor": "1",
+        "groups": ["Floor 1"],
+        "categories": ["common"],
+        "areas": [],
+        "adjacency": {
+          "connected_rooms": {}
+        },
+        "devices": {},
+        "lights": {},
+        "sensors": {
+          "temperature": {},
+          "humidity": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "motion": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "occupancy": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "illuminance": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "contact": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          }
+        },
+        "configuration": {
+          "lighting": ["task_light", "mood_day", "mood_night"],
+          "climate": "none",
+          "presence": "proxy",
+          "security": "none",
+          "media": "none",
+          "vacuum_segment_id": "16",
+          "version": "1.0",
+          "changelog": [],
+          "default_brightness": 60,
+          "circadian_type": "brightness"
+        },
+        "metadata": {
+          "created_at": "2025-04-29T18:56:06.126387Z",
+          "updated_at": "2025-04-29T18:56:06.126387Z",
+          "validated_by": "hephaestus_room_manager",
+          "status": "validated"
+        }
+      },
+      "ensuite": {
+        "id": "ensuite",
+        "friendly_name": "Ensuite",
+        "aliases": ["bathroom", "sauna_paraiso"],
+        "type": "private",
+        "floor": "2",
+        "groups": ["Floor 2"],
+        "categories": ["private"],
+        "areas": [],
+        "adjacency": {
+          "connected_rooms": {
+            "bedroom": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "desk": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "wardrobe": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "monstera": {
+              "connection_type": "doorway",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            }
+          }
+        },
+        "devices": {},
+        "lights": {},
+        "sensors": {
+          "temperature": {},
+          "humidity": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "motion": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "occupancy": {
+            "omega": "ensuite_occupancy_omega",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "illuminance": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "contact": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          }
+        },
+        "configuration": {
+          "lighting": [
+            "mood_day",
+            "mood_night",
+            "circadian",
+            "night_light",
+            "vaporwave"
+          ],
+          "climate": "interior bathroom",
+          "presence": "occupancy",
+          "security": "none",
+          "media": "audio_zone",
+          "version": "1.0",
+          "changelog": [],
+          "default_brightness": 60,
+          "circadian_type": "brightness",
+          "presence_msf": ["rate-limited", "validated"]
+        },
+        "metadata": {
+          "created_at": "2025-04-29T18:56:06.126393Z",
+          "updated_at": "2025-04-29T18:56:06.126393Z",
+          "validated_by": "hephaestus_room_manager",
+          "status": "validated"
+        }
+      },
+      "downstairs": {
+        "id": "downstairs",
+        "friendly_name": "Downstairs Hallway",
+        "aliases": ["ground_floor", "floor_1", "hallway"],
+        "type": "common",
+        "floor": "1",
+        "groups": ["Floor 1"],
+        "categories": [],
+        "areas": [],
+        "adjacency": {
+          "connected_rooms": {
+            "living_room": {
+              "connection_type": "open_archway",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "kitchen": {
+              "connection_type": "doorway",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "bedroom": {
+              "connection_type": "staircase",
+              "distance_meters": 5.0,
+              "transition_time_seconds": 5.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "powder_room": {
+              "connection_type": "doorway",
+              "distance_meters": 0.5,
+              "transition_time_seconds": 2.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "entrance": {
+              "connection_type": "staircase",
+              "distance_meters": 2.0,
+              "transition_time_seconds": 3.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "upstairs": {
+              "connection_type": "staircase",
+              "distance_meters": 4.0,
+              "transition_time_seconds": 4.0,
+              "door_sensor": "none",
+              "accessibility": true
+            }
+          }
+        },
+        "devices": {},
+        "lights": {},
+        "sensors": {
+          "temperature": {},
+          "humidity": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "motion": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "occupancy": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "illuminance": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "contact": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          }
+        },
+        "configuration": {
+          "lighting": ["mood_day", "mood_night", "circadian", "night_light"],
+          "climate": "none",
+          "presence": ["motion", "occupancy", "contact"],
+          "security": "none",
+          "media": "none",
+          "vacuum_segment_id": "18",
+          "presence_msf": ["rate-limited", "validated"],
+          "version": "1.0",
+          "changelog": [],
+          "default_brightness": 60,
+          "circadian_type": "brightness"
+        },
+        "metadata": {
+          "created_at": "2025-04-29T18:56:06.126401Z",
+          "updated_at": "2025-04-29T18:56:06.126401Z",
+          "validated_by": "hephaestus_room_manager",
+          "status": "validated"
+        }
+      },
+      "upstairs": {
+        "id": "upstairs",
+        "friendly_name": "Upstairs Hallway",
+        "aliases": ["top_floor", "floor_2"],
+        "type": "common",
+        "floor": "2",
+        "groups": ["Floor 2"],
+        "categories": [],
+        "areas": [],
+        "adjacency": {
+          "connected_rooms": {
+            "downstairs": {
+              "connection_type": "doorway",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "bedroom": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            }
+          }
+        },
+        "devices": {},
+        "lights": {},
+        "sensors": {
+          "temperature": {},
+          "humidity": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "motion": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "occupancy": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "illuminance": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "contact": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          }
+        },
+        "configuration": {
+          "lighting": ["mood_day", "mood_night", "circadian", "night_light"],
+          "climate": "none",
+          "presence": ["motion", "occupancy"],
+          "security": "none",
+          "media": "none",
+          "vacuum_segment_id": "none",
+          "version": "1.0",
+          "changelog": [],
+          "default_brightness": 60,
+          "circadian_type": "brightness"
+        },
+        "metadata": {
+          "created_at": "2025-04-29T18:56:06.126407Z",
+          "updated_at": "2025-04-29T18:56:06.126407Z",
+          "validated_by": "hephaestus_room_manager",
+          "status": "validated"
+        }
+      },
+      "kitchen": {
+        "id": "kitchen",
+        "friendly_name": "Kitchen",
+        "aliases": [],
+        "type": "common",
+        "floor": "1",
+        "groups": ["Floor 1"],
+        "categories": ["common"],
+        "areas": ["kitchen_counters", "dining_table", "coffee_corner"],
+        "adjacency": {
+          "connected_rooms": {
+            "laundry": {
+              "connection_type": "open_archway",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "downstairs": {
+              "connection_type": "doorway",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            }
+          }
+        },
+        "devices": {},
+        "lights": {},
+        "sensors": {
+          "temperature": {},
+          "humidity": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "motion": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "occupancy": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "illuminance": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "contact": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          }
+        },
+        "configuration": {
+          "lighting": [
+            "scene_control",
+            "ambient_only",
+            "task_light",
+            "circadian"
+          ],
+          "climate": "thermostatic",
+          "presence": ["motion", "occupancy"],
+          "security": "none",
+          "media": "audio_zone",
+          "vacuum_segment_id": "17",
+          "version": "1.0",
+          "presence_msf": ["rate-limited", "validated"],
+          "changelog": [],
+          "default_brightness": 60,
+          "circadian_type": "brightness"
+        },
+        "metadata": {
+          "created_at": "2025-04-29T18:56:06.126412Z",
+          "updated_at": "2025-04-29T18:56:06.126412Z",
+          "validated_by": "hephaestus_room_manager",
+          "status": "validated"
+        }
+      },
+      "entrance": {
+        "id": "entrance",
+        "friendly_name": "Entrance",
+        "aliases": ["front_door", "main_door", "entryway"],
+        "type": "common",
+        "floor": "1",
+        "groups": ["Floor 1"],
+        "categories": [],
+        "areas": [],
+        "adjacency": {
+          "connected_rooms": {}
+        },
+        "devices": {},
+        "lights": {},
+        "sensors": {
+          "temperature": {},
+          "humidity": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "motion": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "occupancy": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "illuminance": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "contact": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          }
+        },
+        "configuration": {
+          "lighting": ["lightstrips", "mood_day", "mood_night", "night_light"],
+          "climate": "none",
+          "presence": ["motion", "occupancy"],
+          "security": "none",
+          "media": "none",
+          "vacuum_segment_id": "none",
+          "presence_msf": ["rate-limited", "validated"],
+          "version": "1.0",
+          "changelog": [],
+          "default_brightness": 60,
+          "circadian_type": "brightness"
+        },
+        "metadata": {
+          "created_at": "2025-04-29T18:56:06.126420Z",
+          "updated_at": "2025-04-29T18:56:06.126420Z",
+          "validated_by": "hephaestus_room_manager",
+          "status": "validated"
+        }
+      },
+      "wardrobe": {
+        "id": "wardrobe",
+        "friendly_name": "Wardrobe",
+        "aliases": ["closet"],
+        "type": "utility",
+        "floor": "2",
+        "groups": ["Floor 2"],
+        "categories": [],
+        "areas": [],
+        "adjacency": {
+          "connected_rooms": {}
+        },
+        "devices": {},
+        "lights": {},
+        "sensors": {
+          "temperature": {},
+          "humidity": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "motion": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "occupancy": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "illuminance": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "contact": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          }
+        },
+        "configuration": {
+          "lighting": ["utility_light", "circadian"],
+          "climate": "none",
+          "presence": "motion",
+          "security": "none",
+          "media": "none",
+          "presence_msf": ["rate-limited", "validated"],
+          "version": "1.0",
+          "changelog": [],
+          "default_brightness": 60,
+          "circadian_type": "brightness"
+        },
+        "metadata": {
+          "created_at": "2025-04-29T18:56:06.126425Z",
+          "updated_at": "2025-04-29T18:56:06.126425Z",
+          "validated_by": "hephaestus_room_manager",
+          "status": "validated"
+        },
+        "parent_room": "bedroom"
+      },
+      "ottoman": {
+        "id": "ottoman",
+        "friendly_name": "Ottoman",
+        "aliases": ["bed_storage", "bed_lift_up_base"],
+        "type": "utility",
+        "floor": "2",
+        "groups": ["Floor 2"],
+        "categories": [],
+        "areas": [],
+        "adjacency": {
+          "connected_rooms": {}
+        },
+        "devices": {},
+        "lights": {},
+        "sensors": {
+          "temperature": {},
+          "humidity": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "motion": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "occupancy": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "illuminance": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "contact": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          }
+        },
+        "configuration": {
+          "lighting": "utility_light",
+          "climate": "none",
+          "presence": "contact_sensor",
+          "security": "none",
+          "media": "none",
+          "presence_msf": null,
+          "version": "1.0",
+          "changelog": [],
+          "default_brightness": 60,
+          "circadian_type": "brightness"
+        },
+        "metadata": {
+          "created_at": "2025-04-29T18:56:06.126430Z",
+          "updated_at": "2025-04-29T18:56:06.126430Z",
+          "validated_by": "hephaestus_room_manager",
+          "status": "validated"
+        },
+        "parent_room": "bedroom"
+      },
+      "desk": {
+        "id": "desk",
+        "friendly_name": ["Desk", "office"],
+        "aliases": ["office"],
+        "type": "private",
+        "floor": "2",
+        "groups": ["Floor 2"],
+        "categories": ["private"],
+        "areas": [],
+        "adjacency": {
+          "connected_rooms": {
+            "bedroom": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "ensuite": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "wardrobe": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            },
+            "ottoman": {
+              "connection_type": "high_proximity",
+              "distance_meters": 0.0,
+              "transition_time_seconds": 0.0,
+              "door_sensor": "none",
+              "accessibility": true
+            }
+          }
+        },
+        "devices": {},
+        "lights": {},
+        "sensors": {
+          "temperature": {},
+          "humidity": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "motion": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "occupancy": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "illuminance": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          },
+          "contact": {
+            "omega": "",
+            "alpha": "",
+            "beta": "",
+            "eta": "",
+            "delta": "",
+            "gamma": "",
+            "zeta": "",
+            "mu": ""
+          }
+        },
+        "configuration": {
+          "lighting": [
+            "mood_day",
+            "mood_night",
+            "task_light",
+            "gaming",
+            "red",
+            "circadian"
+          ],
+          "climate": ["thermostatic", "humidity_sensitive"],
+          "presence": ["motion", "occupancy", "inference"],
+          "security": "camera",
+          "media": ["audio_zone", "pc"],
+          "vacuum_segment_id": "none",
+          "presence_msf": ["rate-limited", "validated", "inference"],
+          "version": "1.0",
+          "changelog": [],
+          "default_brightness": 60,
+          "circadian_type": "brightness"
+        },
+        "metadata": {
+          "created_at": "2025-04-29T18:56:06.126435Z",
+          "updated_at": "2025-05-09T18:56:06.126435Z",
+          "validated_by": "hephaestus_room_manager",
+          "status": "validated"
+        },
+        "parent_room": "bedroom"
+      },
+      "powder_room": {
+        "id": "powder_room",
+        "friendly_name": ["Toilet", "guest_bathroom"],
+        "aliases": ["toilet"],
+        "type": "common",
+        "floor": "1",
+        "groups": ["Floor 1"],
+        "categories": ["common"],
+        "areas": [],
+        "adjacency": {
+          "connected_rooms": {
+            "downstairs": {
+              "connection_type": "doorway",
+              "distance_meters": 0.5,
+              "transition_time_seconds": 0.5,
+              "door_sensor": "none",
+              "accessibility": true
+            }
+          }
+        },
+        "configuration": {
+          "circadian_type": "none"
+        }
+      },
+      "devices": {
+        "configuration": {}
+      },
+      "lights": {
+        "configuration": {}
+      },
+      "sensors": {
+        "temperature": {},
+        "humidity": {
+          "omega": "",
+          "alpha": "",
+          "beta": "",
+          "eta": "",
+          "delta": "",
+          "gamma": "",
+          "zeta": "",
+          "mu": ""
+        },
+        "motion": {
+          "omega": "",
+          "alpha": "",
+          "beta": "",
+          "eta": "",
+          "delta": "",
+          "gamma": "",
+          "zeta": "",
+          "mu": ""
+        },
+        "occupancy": {
+          "omega": "",
+          "alpha": "",
+          "beta": "",
+          "eta": "",
+          "delta": "",
+          "gamma": "",
+          "zeta": "",
+          "mu": ""
+        },
+        "illuminance": {
+          "omega": "",
+          "alpha": "",
+          "beta": "",
+          "eta": "",
+          "delta": "",
+          "gamma": "",
+          "zeta": "",
+          "mu": ""
+        },
+        "contact": {
+          "omega": "",
+          "alpha": "",
+          "beta": "",
+          "eta": "",
+          "delta": "",
+          "gamma": "",
+          "zeta": "",
+          "mu": ""
+        }
+      },
+      "configuration": {
+        "lighting": "none",
+        "climate": "none",
+        "presence": "none",
+        "security": "none",
+        "media": "none",
+        "vacuum_segment_id": "20",
+        "version": "1.0",
+        "changelog": []
+      }
+    }
+  }
+}

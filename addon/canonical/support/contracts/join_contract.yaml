@@ -1,0 +1,860 @@
+contract:
+  meta:
+    title: JOIN GRAPH STRATEGY FOR HOME ASSISTANT REGISTRIES
+    subtitle: Phase 0 — Join Architecture Design
+    description: |
+      We're designing a join graph with a semantic backbone, powered by heterogeneous Home Assistant source registries, where:
+        •	Each file is a partial truth
+        •	Entities are transient, but devices and areas form stable backbones
+        •	Joins are sometimes loose, sometimes tight — and must carry provenance
+
+  sections:
+    - section: 1
+      title: Canonical Anchors
+      description: |
+        Defines the authoritative node types (anchors) in the registry join graph. Each anchor is uniquely identified and mapped to a source registry, and can become a node in the graph, joined explicitly or heuristically to others.
+      canonical_anchors:
+        - anchor_type: entity
+          properties:
+            primary_id: entity_id
+            registry_file: core.entity_registry
+            trust_level: canonical
+            version: 2025-07-20
+            description: >
+              Represents a single Home Assistant entity (e.g., binary_sensor.bedroom_motion_main).
+              Anchors the graph at the finest granularity level. All joins originate from this ID.
+              Entity metadata includes domain, platform, device_class, and is crucial for tiered registry extraction.
+              # PATCH PATCH-VARIOUS-LOGIC-MAINTENANCE-V1: device_class fallback to original_device_class if missing.
+              device_class_fallback: original_device_class
+              device_class_sources: [core.entity_registry.device_class, core.entity_registry.original_device_class]
+        - anchor_type: device
+          properties:
+            primary_id: device_id
+            registry_file: core.device_registry
+            trust_level: canonical
+            version: 2025-07-20
+            description: >
+              Represents a physical or virtual device in Home Assistant.
+              The primary_id device_id uniquely identifies the device across registries.
+              The device registry provides stable device metadata such as manufacturer, model, and connections.
+              Marked canonical because devices form a stable backbone essential for entity grouping and provenance.
+              # PATCH PATCH-VARIOUS-LOGIC-MAINTENANCE-V1: connection_fields surfaced: [mac, upnp_id]
+              connection_fields: [mac, upnp_id]
+        - anchor_type: area
+          properties:
+            primary_id: area_id
+            registry_file: core.area_registry
+            trust_level: canonical
+            version: 2025-07-20
+            source_hash: "<placeholder>"
+            last_updated: 2025-07-20T15:00:00Z
+            description: >
+              Represents a physical or logical area (room, zone) in Home Assistant.
+              area_id is used to uniquely identify and join devices and entities to their location context.
+              The area registry provides spatial and organizational semantics to the graph.
+              Trust level is canonical as areas provide foundational structure for spatial joins and user context.
+        - anchor_type: integration
+          properties:
+            primary_id: entry_id
+            registry_file: core.config_entries
+            trust_level: loosely_coupled
+            description: >
+              Represents a Home Assistant integration configuration entry.
+              entry_id serves as the join key linking devices and entities to their integration source.
+              The config_entries registry provides metadata about integrations, platforms, and setup.
+              Marked loosely_coupled because integration mappings can be incomplete or misaligned with other registries.
+        - anchor_type: floor
+          properties:
+            primary_id: floor_id
+            registry_file: core.area_registry
+            trust_level: optional
+            description: >
+              Represents a floor or higher-level grouping within an area hierarchy.
+              floor_id is used to associate areas to a broader spatial context.
+              Provided by the area registry as an optional organizational layer.
+              Trust level is optional since floors may not be defined or consistently used across setups.
+        - anchor_type: label
+          properties:
+            primary_id: label_id
+            registry_file: core.label_registry
+            trust_level: optional
+            description: >
+              Represents user-defined tags or labels applied to entities or devices.
+              label_id uniquely identifies each label for tagging and metadata enrichment.
+              The label registry provides semantic tags to enhance filtering and grouping.
+              Marked optional as labels are user-defined and may not be universally present.
+        - anchor_type: state_snapshot
+          properties:
+            primary_id: entity_id
+            registry_file: core.restore_state
+            trust_level: optional
+            description: >
+              Represents a runtime snapshot of an entity's last known state.
+              entity_id is used to link the snapshot back to the canonical entity.
+              The restore_state registry provides transient runtime data such as last state and attributes.
+              Trust level is optional since state snapshots are ephemeral and may not always be available.
+
+    - section: 2
+      title: Typed Join Relationships
+      description: |
+        Specifies the allowed join edges between anchors, including join fields, cardinality, and notes for each relationship.
+      join_relationships:
+        - source_node: entity
+          target_node: device
+          join_fields: [device_id]
+          cardinality: many_to_one
+          notes: Default link between HA entity and hardware
+        - source_node: device
+          target_node: area
+          join_fields: [area_id]
+          cardinality: many_to_one
+          notes: Optional — may be null
+        - source_node: entity
+          target_node: area
+          join_fields: [area_id]
+          cardinality: many_to_one
+          notes: May override device area
+        - source_node: device
+          target_node: via_device
+          join_fields: [via_device_id]
+          cardinality: many_to_one
+          notes: For bridges/gateways
+        - source_node: device
+          target_node: integration
+          join_fields: [config_entries]
+          cardinality: many_to_many
+          notes: Weak link — config entries may not align
+        - source_node: entity
+          target_node: integration
+          join_fields: [platform, entry_id]
+          cardinality: many_to_one
+          notes: Also weak — needs reconciliation
+        - source_node: entity
+          target_node: state_snapshot
+          join_fields: [entity_id]
+          cardinality: one_to_one
+          notes: Optional runtime info
+        - source_node: entity
+          target_node: label
+          join_fields: [labels]
+          cardinality: many_to_many
+          notes: Optional tag metadata
+        - source_node: area
+          target_node: floor
+          join_fields: [floor_id]
+          cardinality: many_to_one
+          notes: Organizational hierarchy
+
+    - section: 3
+      title: Registry Spine
+      description: |
+        The core entity-centric join path, showing how all anchors and relationships connect in the canonical graph. This is the backbone for all derived registry views.
+        This “spine” allows flexible multi-source augmentation with:
+          • Upstream structural anchors (device, area, integration)
+          • Downstream views (sensor registry, room registry, presence model)
+      spine_paths:
+        - from: entity
+          to: device
+          via: device_id
+          hash: f39b0b7
+        - from: device
+          to: area
+          via: area_id
+          hash: 97d2f15
+        - from: entity
+          to: area
+          via: area_id (override)
+          hash: a85f04c
+      diagram: |
+        ENTITY
+          │
+          ├── device_id ─────────► DEVICE
+          │                          ├── area_id ──────► AREA
+          │                          ├── via_device_id ─┘
+          │                          └── config_entries[] ───► INTEGRATION
+          │
+          ├── area_id (override) ─► AREA
+          ├── labels[] ───────────► LABEL
+          ├── state_snapshot ─────► RESTORE_STATE
+          ├── platform, domain     (join hint to integration)
+          └── device_class, hidden_by, etc. (atomic)
+
+    - section: 4
+      title: Storage Plan
+      description: |
+        Defines the canonical output artifacts and their purpose. Each output is a facet of the full join graph, supporting modularity and diffing.
+      outputs:
+        - path: canonical/omega_registry_master.json
+          description: All entities, fully joined
+        - path: canonical/joins/device_to_area_map.json
+          description: Device to area mapping
+        - path: canonical/joins/entity_to_device_map.json
+          description: Entity to device mapping
+        - path: canonical/joins/integration_summary.json
+          description: Integration summary
+        - path: canonical/metadata/entity_join_diagnostics.log
+          description: Entity join diagnostics log
+        - path: canonical/joins/area_floor_mapping.json
+          description: Resolved area→floor→level mapping with aliases and floor names
+        - path: canonical/diagnostics/hestia_pre_reboot_field_map.json
+          description: Summary of custom fields from legacy HESTIA registries
+        - path: canonical/joins/pre_reboot_field_join_hints.json
+          description: Joinable field hints extracted from legacy registries
+        - path: canonical/logs/hestia_pre_reboot_field_diagnostics.log
+          description: Normalization, value drift, and conflict issues in legacy data
+        - path: canonical/diagnostics/hestia_pre_reboot_schema_drift.json
+          description: Diff of legacy fields vs. omega master schema
+        - path: canonical/registry_inputs/core.entity_registry.cleaned.json
+          description: Cleaned post-reboot Home Assistant entity registry
+        - path: canonical/registry_inputs/core.device_registry.cleaned.json
+          description: Cleaned post-reboot Home Assistant device registry
+        - path: canonical/registry_inputs/core.area_registry.cleaned.json
+          description: Area registry with validated spatial metadata
+        - path: canonical/registry_inputs/core.config_entries.cleaned.json
+          description: Integration map from config entries
+        - path: canonical/registry_inputs/core.label_registry.cleaned.json
+          description: Label map (tags applied to entities)
+        - path: canonical/registry_inputs/core.floor_registry.cleaned.json
+          description: Floor hierarchy for spatial inference
+
+    - section: 5
+      title: Join Confidence
+      description: |
+        Every join should record its origin and confidence score. If fallback heuristics are used, confidence is downgraded and the source is marked accordingly. This ensures traceability and trust in the join process.
+      join_confidence:
+        fields:
+          - join_origin: [core.entity_registry, core.device_registry]
+          - confidence: 1.0
+        notes: |
+          If fallback heuristics were used (e.g. from platform only), downgrade to 0.85 and mark the source as "heuristic_integration_map".
+          This is critical to avoid future trust erosion when extending to custom registries or external mappings.
+
+    - section: 6
+      title: Embedded YAML schema
+      description: |
+        The YAML schema for the join contract, allowing easy validation and integration into Home Assistant's configuration.
+        This section now also references the mock Omega registry contract for test and validation purposes.
+      schema_reference:
+        - path: canonical/support/contracts/canonical_omega_scaffold.json
+          description: Canonical data schema for omega_registry_master.json entries
+          schema_version: 1.1
+        - path: canonical/support/mock/mock_omega_registry_contract.json
+          description: Mock/test schema for omega registry contract validation and integration tests
+          schema_version: 1.0
+          fields:
+            - entity_id: string (e.g., "binary_sensor.kitchen_occupancy_omega_occupancy")
+            - domain: string (e.g., "binary_sensor")
+            - platform: string (e.g., "mqtt")
+            - device_class: string (e.g., "occupancy")
+            - entity_category: string|null
+            - name: string
+            - original_name: string
+            - hidden_by: string|null
+            - disabled_by: string|null
+            - area_id: string
+            - suggested_area: string
+            - floor_id: string
+            - floor_name: string
+            - level: int
+            - device_id: string
+            - manufacturer: string
+            - model: string
+            - mac: string
+            - connections: array of [string, string]
+            - entry_id: string
+            - integration: string
+            - via_device_id: string|null
+            - labels: array of string
+            - state_snapshot:
+                type: object
+                properties:
+                  state: string
+                  last_seen: string
+                  restored: bool
+            - exposed_to_assistant: bool
+            - join_confidence: float
+            - join_origin: array of string
+            - source: array of string
+      deprecated_fields:
+        - field: area.aliases
+          remove_after: 2025-12-31
+          replacement: area.alt_names
+
+    - section: 7
+      title: Source File Inventory
+      description: |
+        Inventory of all source files in input/storage_0720/, with anchor type, schema version, join usage, and trust level for each.
+      canonical_inputs_scope: [] # [2025-07-21] Content migrated: see 'files' below for authoritative source file inventory and metadata. This section is now intentionally empty to avoid redundancy.
+      files:
+        # PATCH-JOIN-PIPELINE-HESTIA-V1: All enrichment sources must be referenced under enrichment_sources/.
+        # Each enrichment file should be tagged with source_class: enrichment if not canonical input.
+        - filename: ha_registries/post-reboot/core.entity_registry
+          anchor_type: entity
+          source_class: enrichment
+          description: Post-reboot Home Assistant entity registry (enrichment)
+          schema_version: 1.x
+          primary_id_field: entity_id
+          trust_level: enrichment
+          used_in_joins:
+            [entity-to-device, entity-to-area, entity-to-integration]
+          notes: Enrichment source, not canonical pipeline output
+        - filename: hestia/pre-reboot/omega_device_registry.json
+          anchor_type: device
+          source_class: enrichment
+          description: Pre-reboot Hestia device registry (enrichment)
+          schema_version: 1.x
+          primary_id_field: device_id
+          trust_level: enrichment
+          used_in_joins: [entity-to-device, device-to-area]
+          notes: Enrichment source, not canonical pipeline output
+        - filename: core.area_registry
+          anchor_type: area
+          description: Area registry (rooms/zones)
+          schema_version: 1.8
+          primary_id_field: area_id
+          trust_level: canonical
+          used_in_joins: [device-to-area, entity-to-area, area-to-floor]
+          notes: Provides spatial context for devices/entities
+        - filename: core.device_registry
+          anchor_type: device
+          description: Device registry (physical/virtual devices)
+          schema_version: 1.10
+          primary_id_field: device_id
+          trust_level: canonical
+          used_in_joins:
+            [
+              entity-to-device,
+              device-to-area,
+              device-to-integration,
+              device-to-via_device,
+            ]
+          notes: Stable backbone for entity grouping
+        - filename: core.entity_registry
+          anchor_type: entity
+          description: Entity registry (all entities)
+          schema_version: 1.x
+          primary_id_field: entity_id
+          trust_level: canonical
+          used_in_joins:
+            [
+              entity-to-device,
+              entity-to-area,
+              entity-to-integration,
+              entity-to-label,
+              entity-to-state_snapshot,
+            ]
+          notes: All joins originate from here
+        - filename: core.config_entries
+          anchor_type: integration
+          description: Integration configuration entries
+          schema_version: 1.x
+          primary_id_field: entry_id
+          trust_level: loosely_coupled
+          used_in_joins: [device-to-integration, entity-to-integration]
+          notes: Weak link, may not align with other registries
+        - filename: core.floor_registry
+          anchor_type: floor
+          description: Floor registry (area hierarchy)
+          schema_version: 1.2
+          primary_id_field: floor_id
+          trust_level: optional
+          used_in_joins: [area-to-floor]
+          notes: Optional, not always present
+        - filename: core.label_registry
+          anchor_type: label
+          description: Label registry (user tags)
+          schema_version: 1.x
+          primary_id_field: label_id
+          trust_level: optional
+          used_in_joins: [entity-to-label]
+          notes: Optional, user-defined
+        - filename: core.restore_state
+          anchor_type: state_snapshot
+          description: Entity state snapshot (runtime)
+          schema_version: 1.x
+          primary_id_field: entity_id
+          trust_level: optional
+          used_in_joins: [entity-to-state_snapshot]
+          notes: Ephemeral, runtime only
+        - filename: core.category_registry
+          anchor_type: category
+          description: Category registry (entity categories)
+          schema_version: 1.x
+          primary_id_field: category_id
+          trust_level: optional
+          used_in_joins: []
+          notes: Used for entity classification
+        - filename: counter
+          anchor_type: counter
+          description: Counter entities (input helpers)
+          schema_version: 1.x
+          primary_id_field: counter_id
+          trust_level: optional
+          used_in_joins: []
+          notes: Input helper, not always present
+        - filename: homeassistant.exposed_entities
+          anchor_type: exposed_entity
+          description: Entities exposed to voice assistants
+          schema_version: 1.x
+          primary_id_field: entity_id
+          trust_level: optional
+          used_in_joins: []
+          notes: Used for voice/assistant integration
+        - filename: input_boolean
+          anchor_type: input_boolean
+          description: Input boolean helpers
+          schema_version: 1.x
+          primary_id_field: input_boolean_id
+          trust_level: optional
+          used_in_joins: []
+          notes: Input helper, not always present
+        - filename: input_datetime
+          anchor_type: input_datetime
+          description: Input datetime helpers
+          schema_version: 1.x
+          primary_id_field: input_datetime_id
+          trust_level: optional
+          used_in_joins: []
+          notes: Input helper, not always present
+        - filename: input_datetime.verified.generated.json
+          anchor_type: input_datetime
+          description: Verified/generated input datetime helpers
+          schema_version: 1.x
+          primary_id_field: input_datetime_id
+          trust_level: optional
+          used_in_joins: []
+          notes: Generated/verified variant
+        - filename: input_number.verified.generated.json
+          anchor_type: input_number
+          description: Verified/generated input number helpers
+          schema_version: 1.x
+          primary_id_field: input_number_id
+          trust_level: optional
+          used_in_joins: []
+          notes: Generated/verified variant
+        - filename: input_text.verified.generated.json
+          anchor_type: input_text
+          description: Verified/generated input text helpers
+          schema_version: 1.x
+          primary_id_field: input_text_id
+          trust_level: optional
+          used_in_joins: []
+          notes: Generated/verified variant
+        - filename: person
+          anchor_type: person
+          description: Person registry (user presence)
+          schema_version: 1.x
+          primary_id_field: person_id
+          trust_level: optional
+          used_in_joins: []
+          notes: Used for presence/person tracking
+        - filename: trace.saved_traces
+          anchor_type: trace
+          description: Automation/script traces
+          schema_version: 1.x
+          primary_id_field: trace_id
+          trust_level: optional
+          used_in_joins: []
+          notes: Used for debugging/automation traces
+
+    - section: 8
+      title: Registry Graph Behavior Contracts
+      description: |
+        Defines normalization rules, view filtering presets, join stability indicators, and conflict resolution policies
+        to enforce consistent graph behavior during construction, filtering, and derivation phases.
+
+      normalization_policy:
+        missing_fields: preserve_as_null # Do not drop incomplete entries
+        orphaned_area_ids: warn_and_remove # Log and discard if area_id is unmapped
+        mac_resolution_priority: connections_over_identifiers
+        empty_arrays: convert_to_null # Normalize empty [] to null for schema compatibility
+
+      view_presets:
+        - view_id: alpha_sensor_registry
+          filter:
+            domain: ["sensor", "binary_sensor"]
+            device_class: ["motion", "occupancy", "presence"]
+            enabled: true
+            entity_category: null # Only main functional entities
+          source: omega_registry_master.json
+          path: canonical/derived_views/alpha_sensor_registry.json
+
+        - view_id: omega_room_registry
+          filter:
+            area_id: not_null
+            enabled: true
+          source: omega_registry_master.json
+          path: canonical/derived_views/omega_room_registry.json
+
+      join_stability_indicators:
+        - relation: entity → device
+          join_fields: [device_id]
+          stability: stable
+        - relation: device → area
+          join_fields: [area_id]
+          stability: moderate
+        - relation: entity → integration
+          join_fields: [platform, entry_id]
+          stability: volatile
+        - relation: device → via_device
+          join_fields: [via_device_id]
+          stability: stable
+
+      collision_policy:
+        entity_to_device_area_conflict: warn_and_resolve_with_entity_area
+        orphan_device_id: isolate_and_log
+        unknown_integration_platform: assign_fallback_domain
+        duplicated_mac: allow_with_conflict_flag
+
+    - section: 9
+      title: Area Hierarchy Resolution Rules
+      description: |
+        Captures floor and alias-based area mappings derived from core.area_registry and core.floor_registry.
+        Used to build structured area → floor → level mappings in spatial views.
+        This formalizes the mapping you summarized and ensures downstream tools don’t re-implement it differently.
+
+      area_floor_resolution:
+        source_registry: core.area_registry
+        floor_registry: core.floor_registry
+        fields_used:
+          - area_id
+          - floor_id
+          - aliases
+          - level
+        missing_floor_policy: retain_area_only
+        alias_resolution: case_insensitive_exact_match
+        emit_resolved_table: canonical/joins/area_floor_mapping.json
+
+    - section: 10
+      title: Special Entity-Like Structures
+      description: |
+        Defines special registries that expose `entity_id`s or stateful behaviors but do not participate
+        in the canonical entity join graph. These require separate treatment in view derivation or inference.
+
+      special_entities:
+        - kind: person
+          source: person
+          has_entity_id: true
+          anchored_in: person registry
+          joins_with: [device_tracker, zone, automation]
+          notes: Used for presence detection, not tracked in core.entity_registry
+
+        - kind: helper
+          subtypes:
+            [
+              input_boolean,
+              input_text,
+              input_number,
+              input_datetime,
+              counter,
+              timer,
+            ]
+          source: multiple
+          has_entity_id: true
+          anchored_in: core.entity_registry
+          notes: >
+            Helper entities for internal state management. Typically created via UI or YAML,
+            and treated as a unified class during derivation and inference.
+
+        - enrichment: voice_assistant_exposure
+          applies_to: entity
+          source: homeassistant.exposed_entities
+          join_key: entity_id
+          dimension: exposed_to_assistant
+          notes: >
+            Provides assistant-access metadata to entities. Does not define a new kind.
+
+        - kind: automation
+          source: trace.saved_traces
+          has_entity_id: true
+          anchored_in: trace logs or configuration
+          notes: Has a state and can be triggered, but not tracked in core.entity_registry
+
+        - kind: script
+          source: trace.saved_traces
+          has_entity_id: true
+          anchored_in: YAML or UI configuration
+          notes: May expose a state, requires custom ingestion or mapping
+
+    - section: 11
+      title: External Anchors & Validation Metadata
+      description: |
+        Declares non-core, non-canonical input sources that may contribute additional metadata,
+        override logic, or custom registry behavior. Also defines optional fields for input validation,
+        source verification, and automated integrity tracking.
+
+      external_anchors:
+        - anchor_type: override_registry
+          path: input/custom/override_entity_registry.yaml
+          trust_level: supplemental
+          schema_version: 1.0
+          primary_id_field: entity_id
+          usage_notes: |
+            May override metadata for a subset of entities (e.g., display_name, exposure flag).
+            Used as a reconciliation source of last resort. Must be explicitly enabled during ingestion.
+          validation:
+            schema: schemas/override_registry.schema.json
+            validation_status: pending
+            lint_result: not_run
+            source_hash: "<placeholder>"
+          provenance:
+            source_hash: "<sha256>"
+            generated_by: "run_pipeline.py@v1.3.2"
+            upstream_contract: "join_contract.yaml@1.1"
+            timestamp: 2025-07-22T16:00:00Z
+
+        - anchor_type: alpha_role_templates
+          path: input/custom/template_registry_alpha.yaml
+          trust_level: supplemental
+          schema_version: 1.0
+          primary_id_field: entity_id
+          usage_notes: |
+            Defines structured roles for alpha-tier entities (e.g., occupancy, motion).
+            Used during entity inference or sensor view construction.
+          validation:
+            schema: schemas/template_registry.schema.json
+            validation_status: valid
+            lint_result: clean
+            source_hash: "<placeholder>"
+          provenance:
+            source_hash: "<sha256>"
+            generated_by: "run_pipeline.py@v1.3.2"
+            upstream_contract: "join_contract.yaml@1.1"
+            timestamp: 2025-07-22T16:00:00Z
+
+        - anchor_type: zone_fallback_map
+          path: input/custom/zone_mapping_fallback.yaml
+          trust_level: optional
+          schema_version: 0.1
+          primary_id_field: zone_id
+          usage_notes: |
+            Contains fallback mappings for unmapped zones or entities missing area inference.
+            Useful in legacy imports or fused room configurations.
+          validation:
+            validation_status: warning
+            lint_result: missing_fields
+            source_hash: "<placeholder>"
+          provenance:
+            source_hash: "<sha256>"
+            generated_by: "run_pipeline.py@v1.3.2"
+            upstream_contract: "join_contract.yaml@1.1"
+            timestamp: 2025-07-22T16:00:00Z
+
+      notes: |
+        These external anchors do not participate directly in join spine logic,
+        but may influence field enrichment, view filtering, or override decisions.
+        Validation metadata supports automated CI pipelines and reproducibility audits.
+
+    - section: 12
+      title: Edge Case Handling & Resolution Strategy
+      description: |
+        Defines policies for handling ambiguous, missing, or conflicting join paths
+        and structural inconsistencies during graph derivation.
+
+      edge_case_handling:
+        orphaned_devices: retain_and_log
+        orphaned_areas: retain_and_warn
+        duplicate_entity_ids: deduplicate_and_warn
+        conflicting_entity_sources: prefer_entity_registry
+        multi_area_entities: prefer_entity_area_override
+        ambiguous_integrations: infer_from_domain_or_log
+        unjoinable_helpers: tag_as_isolated_and_skip
+
+    - section: 13
+      title: Contract Audit Metadata & Schema Drift Protection
+      description: |
+        Records structural versioning, tracked changes, and CI/CD enforcement routines
+        for preventing schema drift and accidental misconfiguration across graph evolution.
+
+      contract_schema_version: 1.1
+      audit_log:
+        - date: 2025-07-20
+          author: evert
+          change: Initial join graph constructed
+          impact:
+            [
+              all registry joins,
+              initial pipeline snapshot,
+              baseline for all downstream outputs,
+            ]
+        - date: 2025-07-21
+          author: copilot
+          change: Added view presets and validation logic
+          impact: [derived views, validation matrix, CI enforcement]
+        - date: 2025-07-22
+          author: promachos
+          change: CI hooks and edge case handling injected
+          impact:
+            [
+              all derived views,
+              join confidence scoring,
+              audit log traceability,
+              downstream contract consumers,
+            ]
+      ci_hooks:
+        - name: validate_contract_schema
+          path: scripts/validate_join_contract.py
+          frequency: on_commit
+
+        - name: validate_registry_ingestion
+          path: scripts/lint_registry_inputs.py
+          frequency: on_pipeline_boot
+
+        - name: fingerprint_join_outputs
+          path: scripts/hash_output_bundle.py
+          frequency: post_pipeline
+
+    - section: 14
+      title: HESTIA-Derived Registries
+      description: |
+        Documents derived registry outputs specific to the HESTIA system. These are generated from
+        the omega master registry and support tiered presence, sensor abstraction, and context-aware logic.
+        While downstream, they must adhere to schema constraints and retain provenance for auditability.
+
+      derived_views:
+        - name: alpha_sensor_registry
+          tier: alpha
+          source: canonical/omega_registry_master.json
+          path: canonical/derived_views/alpha_sensor_registry.json
+          transforms:
+            - filter:
+                domain: [sensor, binary_sensor]
+                device_class: [motion, occupancy, presence]
+            - infer_fields: [role, zone_class, room_profile]
+            - schema_trim: true
+          schema: schemas/alpha_sensor_registry.schema.json
+          provenance:
+            source_hash: "<sha256>"
+            generated_by: "run_pipeline.py@v1.3.2"
+            upstream_contract: "join_contract.yaml@1.1"
+            timestamp: 2025-07-22T16:00:00Z
+
+        - name: omega_room_registry
+          tier: omega
+          source: canonical/omega_registry_master.json
+          path: canonical/derived_views/omega_room_registry.json
+          transforms:
+            - cluster_by: area_id
+            - attach: [room_aliases, device_count, primary_role]
+            - trim_fields: [hidden_by, entity_category]
+          schema: schemas/omega_room_registry.schema.json
+          provenance:
+            source_hash: "<sha256>"
+            generated_by: "run_pipeline.py@v1.3.2"
+            upstream_contract: "join_contract.yaml@1.1"
+            timestamp: 2025-07-22T16:00:00Z
+
+      schema_drift_policy:
+        allow_missing_fields: true
+        allow_additional_fields: true
+        preserve_unknown_fields: false
+        enforce_type_checks: true
+        log_nonfatal_drift: true
+
+      inferred_fields:
+        - field: role
+          inferred_from: [device_class, domain, name_tokens]
+          description: |
+            Role classification (e.g., motion_sensor, light_sensor, presence_detector)
+            inferred from entity naming, device class, and usage patterns.
+
+        - field: zone_class
+          inferred_from: [area_id, floor_id, aliases]
+          description: |
+            Spatial classification grouping (e.g., sleeping_area, service_zone),
+            derived from area-to-floor mappings and semantic labels.
+
+        - field: room_profile
+          inferred_from: [device_count, label, inferred_role_distribution]
+          description: |
+            Descriptive profile of a room’s function (e.g., bedroom, utility, ambient-only),
+            inferred from entity composition and metadata clustering.
+
+        - field: primary_role
+          inferred_from: [most_common(role)]
+          description: |
+            Dominant role detected within a room cluster, used for room-level logic (e.g., motion-dominant).
+
+    - section: 15
+      title: Validation Matrix
+      description: |
+        Defines required validation and audit tests for each major output, supporting runtime enforcement and dry-run audits.
+      validation_matrix:
+        - output: canonical/omega_registry_master.json
+          tests:
+            [
+              schema_validation,
+              join_integrity,
+              join_confidence_distribution,
+              contract_conformance,
+              device_class_fallback_check,
+              connection_fields_check,
+            ]
+        - output: canonical/derived_views/alpha_sensor_registry.json
+          tests: [schema_validation, field_filtering, inferred_field_audit]
+        - output: canonical/derived_views/omega_room_registry.json
+          tests: [cluster_integrity, role_distribution_check]
+        - output: canonical/omega_registry_master.json
+          tests:
+            [
+              schema_validation,
+              join_integrity,
+              join_confidence_distribution,
+              contract_conformance,
+            ]
+
+    - section: 16
+      title: Diagnostics Output Policy
+      description: |
+        Defines conventions and location for ephemeral diagnostic logs.
+        Debug logs are stored separately from canonical outputs to prevent bundle pollution and audit confusion.
+
+      diagnostics_policy:
+        ephemeral_logs_subfolder: canonical/logs/scratch/
+        emit_requires_flag: true
+        TTL: 3 runs
+        retention_policy: ephemeral
+        patch_logs_suffix: PATCH-<NAME>.log
+        notes: |
+          All debug or trace logs must be explicitly emitted via targeted scripts with `--log-path`.
+          No passive registry scripts should write `.log` files directly.
+          Logs older than 3 pipeline runs may be deleted via `scripts/cleanup_old_logs.py`.
+
+scripts:
+  derive_join_graph:
+    path: scripts/generate_omega_registry.py
+    description: |
+      Generates the primary join graph and emits the canonical output:
+      omega_registry_master.json. Resolves multi-source enrichment, join tracing,
+      and field inheritance as per contract definitions.
+    produces:
+      - canonical/omega_registry_master.json
+      - canonical/logs/scratch/debug_join_graph_omega_registry.jsonl
+    contract_linked: true
+    version_controlled: true
+    ci_hook: true
+
+  analyze_omega_registry:
+    path: scripts/analytics/analyze_omega_registry.py
+    description: |
+      Analyzes omega_registry_master.json for structural health and operational completeness.
+      Computes entity count, join origin coverage, join confidence stats, field completeness, enrichment depth distribution, and malformed entity detection.
+      Appends timestamped YAML metrics to canonical/logs/analytics/omega_registry_metrics.log for each run.
+    produces:
+      - canonical/logs/analytics/omega_registry_metrics.log
+    contract_linked: true
+    version_controlled: true
+    ci_hook: false
+
+  hestia_pre_reboot_parser:
+    path: scripts/hestia_pre_reboot_parser.py
+    description: |
+      Parses legacy Hestia pre-reboot registries and emits enrichment and diagnostics outputs as per output contract.
+    produces:
+      - canonical/diagnostics/legacy_registry_enrichment_summary.yaml
+      - canonical/joins/pre_reboot_field_join_hints.json
+      - canonical/logs/hestia_pre_reboot_field_diagnostics.log
+      - canonical/logs/hestia_pre_reboot_schema_drift.json
+    contract_linked: true
+    version_controlled: true
+    ci_hook: false

@@ -1,0 +1,81 @@
+scripts:
+  generate_omega_registry.py:
+    path: registry_rehydration_local_last/scripts/generate_omega_registry.py
+    inputs:
+      - canonical/support/contracts/join_contract.yaml (reads contract to enumerate expected inputs)
+      - canonical/registry_inputs/<15 expected files> (loaded from 'canonical/registry_inputs/')
+      - canonical/enrichment_sources/<subfolder>/<file> (via resolve_enrichment_path)
+    outputs:
+      - user-specified --output (omega_registry_master.json)
+      - canonical/logs/scratch/enrichment_trace_omega_registry.jsonl
+      - canonical/logs/scratch/propagation_audit_trace.jsonl
+      - canonical/logs/scratch/source_file_ingestion_status.json
+      - canonical/logs/scratch/omega_registry_unused_sources.log
+    canonical_references: true
+    notes: |
+      - Resolves enrichment sources under canonical/enrichment_sources/ via resolve_enrichment_path().
+      - Loads a contract at canonical/support/contracts/join_contract.yaml to determine expected input file list.
+      - Writes multiple scratch logs under canonical/logs/scratch/ and the final omega_registry json to --output.
+
+  hestia_pre_reboot_parser.py:
+    path: registry_rehydration_local_last/scripts/hestia_pre_reboot_parser.py
+    inputs:
+      - default: canonical/derived_views/hestia_registries/pre-reboot/ (overridable via --input_dir)
+    outputs:
+      - canonical/diagnostics/legacy_registry_enrichment_summary.yaml (enrichment summary)
+      - canonical/logs/hestia_pre_reboot_field_map.json (field map)
+      - canonical/joins/pre_reboot_field_join_hints.json (join hints)
+      - canonical/logs/hestia_pre_reboot_field_diagnostics.log (diagnostics)
+      - canonical/logs/hestia_pre_reboot_schema_drift.json (schema drift)
+    canonical_references: true
+    notes: |
+      - Default paths point into canonical/derived_views/... but are configurable via CLI args.
+      - Emits multiple canonical/ outputs and appends to canonical/logs/copilot_patchlog.log.
+
+  analyze_omega_registry.py:
+    path: registry_rehydration_local_last/scripts/analytics/analyze_omega_registry.py
+    inputs:
+      - required: --input (path to omega_registry_master.json)
+      - internal: attempts to read ../canonical/registry_inputs/core.entity_registry for source analytics
+    outputs:
+      - appends analytics YAML block to the provided --log file
+    canonical_references: true
+    notes: |
+      - Attempts to derive source analytics by resolving a relative path from the input to ../canonical/registry_inputs/core.entity_registry.
+      - Emits a warning if the canonical source is not present.
+
+  canonical_registry_builder.py:
+    path: registry_rehydration_local_last/scripts/canonical_registry_builder.py
+    inputs:
+      - input/post-reboot.ha_registries/core.entity_registry
+      - input/post-reboot.ha_registries/core.device_registry
+    outputs:
+      - canonical/omega_registry/omega_registry_master.json (hard-coded OUTPUT_PATH)
+    canonical_references: partial
+    notes: |
+      - Uses hard-coded INPUT paths under input/, and writes output into canonical/omega_registry/.
+      - This script is a simpler, more opinionated builder used for specific post-reboot inputs.
+
+  utils/output_contract_enforcer.py:
+    path: registry_rehydration_local_last/scripts/utils/output_contract_enforcer.py
+    inputs:
+      - contract YAML (passed as CLI arg)
+      - optional: reference snapshot for structural diffs (--reference_snapshot)
+    outputs:
+      - Emits CONTRACT-ENFORCEMENT failure logs under canonical/logs/scratch/ when checks fail
+    canonical_references: true
+    notes: |
+      - Enforces 'outputs' declared in contract YAML, which often reference canonical/ output paths.
+      - Exits non-zero on contract enforcement failures.
+
+observations:
+  - Many scripts read from and write to paths under canonical/ by default.
+  - Some scripts accept CLI overrides (e.g., --input_dir or --output) but default values reference canonical/.
+  - Logs under canonical/logs/scratch/ are used heavily for intermediate diagnostics and are created by multiple scripts.
+  - The join contract (canonical/support/contracts/join_contract.yaml) is a single source of truth used by generate_omega_registry.py.
+  - There are also hard-coded absolute paths in some log artifacts produced and noted in logs, but main scripts use relative canonical/ paths.
+
+recommendations:
+  - If you want to run the pipeline in a non-canonical workspace, pass explicit --input/--output flags to scripts to avoid writing into canonical/.
+  - Consider centralizing canonical path resolution via an environment variable or config object to avoid scattered 'canonical/' literals.
+  - Use the 'canonical_manifest.txt' to determine the expected set of canonical inputs when validating ingestion.

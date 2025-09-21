@@ -1,0 +1,33 @@
+output: canonical/omega_registry_master.json
+required_keys:
+  - entity_id
+  - domain
+  - platform
+  - device_class
+  - entity_category
+  - name
+  - area_id
+  - floor_id
+  - device_id
+  - entry_id
+  - integration
+  - join_confidence
+  - join_origin
+optional_keys:
+  - labels
+  - via_device_id
+  - state_snapshot
+  - exposed_to_assistant
+  - suggested_area
+  - hidden_by
+  - disabled_by
+  - original_name
+  - mac
+  - connections
+  - manufacturer
+  - model
+validation_rules:
+  - must_have_join_origin
+  - confidence_range: [0.75, 1.0]
+  - area_id must not be null if device_id is present
+  - if exposed_to_assistant: true → must be boolean

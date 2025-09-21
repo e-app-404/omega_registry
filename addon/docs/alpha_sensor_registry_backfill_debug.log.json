@@ -1,0 +1,98 @@
+[
+  {
+    "group_id": "bedroom_occupancy_illumination_omega",
+    "role": "",
+    "semantic_role": "generic_sensor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "No match found. Cluster composed of -class entities with mqtt integration"
+  },
+  {
+    "group_id": "bedroom_occupancy_sensitivity_omega",
+    "role": "",
+    "semantic_role": "generic_sensor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "No match found. Cluster composed of -class entities with mqtt integration"
+  },
+  {
+    "group_id": "bedroom_occupancy_timeout_omega",
+    "role": "",
+    "semantic_role": "generic_sensor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "No match found. Cluster composed of -class entities with mqtt integration"
+  },
+  {
+    "group_id": "kitchen_occupancy_illumination_omega",
+    "role": "",
+    "semantic_role": "generic_sensor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "No match found. Cluster composed of -class entities with tplink integration"
+  },
+  {
+    "group_id": "kitchen_occupancy_sensitivity_omega",
+    "role": "",
+    "semantic_role": "generic_sensor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "No match found. Cluster composed of -class entities with tplink integration"
+  },
+  {
+    "group_id": "kitchen_occupancy_timeout_omega",
+    "role": "",
+    "semantic_role": "generic_sensor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "No match found. Cluster composed of -class entities with tplink integration"
+  },
+  {
+    "group_id": "kitchen_occupancy_omega",
+    "role": "occupancy",
+    "semantic_role": "presence_monitor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "Matched via device_class fallback. Cluster composed of occupancy-class entities with tplink, matter integration"
+  },
+  {
+    "group_id": "kitchen_motion_omega",
+    "role": "motion",
+    "semantic_role": "motion_monitor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "Matched via device_class fallback. Cluster composed of motion-class entities with smartthings integration"
+  },
+  {
+    "group_id": "ensuite_occupancy_illumination_omega",
+    "role": "",
+    "semantic_role": "generic_sensor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "No match found. Cluster composed of -class entities with tplink integration"
+  },
+  {
+    "group_id": "ensuite_occupancy_sensitivity_omega",
+    "role": "",
+    "semantic_role": "generic_sensor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "No match found. Cluster composed of -class entities with tplink integration"
+  },
+  {
+    "group_id": "ensuite_occupancy_timeout_omega",
+    "role": "",
+    "semantic_role": "generic_sensor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "No match found. Cluster composed of -class entities with tplink integration"
+  },
+  {
+    "group_id": "ensuite_occupancy_omega",
+    "role": "occupancy",
+    "semantic_role": "presence_monitor",
+    "matched_rule": null,
+    "source_cluster": "fingerprint",
+    "reasoning_summary": "Matched via device_class fallback. Cluster composed of occupancy-class entities with tplink integration"
+  }
+]

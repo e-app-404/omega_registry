@@ -1,0 +1,302 @@
+{
+  "_meta": {
+    "note": "Hardened file dependency matrix. All config references resolved to explicit paths as of 2025-07-09. No vague entries remain. Any ambiguity is annotated.",
+    "generated_by": "PATCH-FILE-DEPENDENCY-MATRIX-HARDENING-V4 Copilot agent, 2025-07-09",
+    "script_count": 35,
+    "exclusions": {
+      "mac_crawler.py": "Utility script for MAC address parsing, does not read or write project files.",
+      "run_pipeline.py": "Pipeline orchestrator, only invokes subprocesses, does not directly read/write project files.",
+      "audit_alpha_registry_path.py": "Reads registry_rehydration_index.log and emits to stdout only (no file writes).",
+      "ci_registry_metrics.py": "Reads omega_enriched_devtools, emits metrics to stdout only (no file writes)."
+    },
+    "placeholders_added": [
+      "condense_identifiers.py",
+      "expand_migration_map_full_role_coverage.py",
+      "generate_omega_room_registry.py",
+      "audit_cluster_coverage.py",
+      "generate_registry_index.py",
+      "verify_pipeline_inputs.py"
+    ],
+    "documentation": {
+      "README_final_registry_release.md": {
+        "reads": [],
+        "writes": [
+          "generate_release_bundle.py"
+        ],
+        "consumed_by": [
+          "auditor",
+          "handoff_script"
+        ]
+      }
+    }
+  },
+  "alpha_sensor_registry_backfill.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "input/core.entity_registry",
+      "input/core.device_registry",
+      "input/core.area_registry"
+    ],
+    "writes": [
+      "output/alpha_sensor_registry.json"
+    ],
+    "consumed_by": [
+      "emit_alpha_sensor_registry.py",
+      "validate_alpha_sensor_registry.py"
+    ]
+  },
+  "audit_alpha_registry_path.py": {
+    "reads": [
+      "registry_rehydration_index.log"
+    ],
+    "writes": [],
+    "consumed_by": [
+      "manual audit", "directory cleanup"
+    ]
+  },
+  "audit_entity_area_mapping.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "input/core.entity_registry",
+      "input/core.device_registry"
+    ],
+    "writes": [
+      "output/data/entity_area_resolution_report.json",
+      "output/data/entity_area_resolution_summary.json"
+    ],
+    "consumed_by": [
+      "validate_alpha_sensor_registry.py", "project audit"
+    ]
+  },
+  "autocluster_audit.py": {
+    "reads": [
+      "output/omega_device_registry.enriched.canonical.devtools_enriched.json",
+      "input/core.entity_registry"
+    ],
+    "writes": [
+      "output/auto_candidate_matches.csv"
+    ],
+    "consumed_by": [
+      "validate_alpha_sensor_registry.py", "cluster_merge_trace.py"
+    ]
+  },
+  "backfill_omega_registry_from_legacy.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "output/omega_device_registry.enriched.canonical.devtools_enriched.json",
+      "input/pre-reboot.hestia_registries/alpha_light_registry.json",
+      "input/pre-reboot.hestia_registries/alpha_sensor_registry.json",
+      "input/pre-reboot.hestia_registries/alpha_system_registry.json",
+      "input/pre-reboot.hestia_registries/device_groups.json",
+      "input/pre-reboot.hestia_registries/omega_room_registry.json"
+    ],
+    "writes": [
+      "data/backfill_omega_registry_report_<timestamp>.log"
+    ],
+    "consumed_by": [
+      "manual audit", "project recovery"
+    ]
+  },
+  "ci_registry_metrics.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "output/omega_device_registry.enriched.canonical.devtools_enriched.json"
+    ],
+    "writes": [],
+    "consumed_by": [
+      "manual audit", "metrics review"
+    ]
+  },
+  "cluster_merge_trace.py": {
+    "reads": [
+      "output/fingerprint_entity_clusters.v1.json"
+    ],
+    "writes": [
+      "output/cluster_merge_trace.json",
+      "output/entity_id_migration_map.annotated.v4.json"
+    ],
+    "consumed_by": [
+      "expand_migration_map_full_role_coverage.py", "validate_alpha_sensor_registry.py"
+    ]
+  },
+  "emit_alpha_sensor_registry.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "input/core.area_registry",
+      "input/core.device_registry",
+      "input/core.entity_registry",
+      "output/fingerprinting_run/entity_fingerprint_map.json",
+      "output/fingerprint_entity_clusters.v1.json"
+    ],
+    "writes": [
+      "output/alpha_sensor_registry.json",
+      "output/data/alpha_sensor_registry.debug.log.json",
+      "output/data/alpha_sensor_registry.emit_trace.json",
+      "output/data/alpha_sensor_registry.emit_summary.json",
+      "output/data/alpha_sensor_registry.cluster_area_audit.json"
+    ],
+    "consumed_by": [
+      "validate_alpha_sensor_registry.py", "generate_omega_room_registry.py"
+    ]
+  },
+  "enrich_omega_device_registry_stage2.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "output/omega_device_registry.cleaned.v2.json",
+      "input/core.entity_registry",
+      "input/core.device_registry"
+    ],
+    "writes": [
+      "output/omega_device_registry.enriched.canonical.json"
+    ],
+    "consumed_by": [
+      "enrich_with_devtools_metadata.py", "patch_area_room_zone.py"
+    ]
+  },
+  "enrich_with_devtools_metadata.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "output/omega_device_registry.enriched.canonical.patched.json",
+      "input/core.entity_registry",
+      "input/ha_devtools_template_device_id_list_2.txt"
+    ],
+    "writes": [
+      "output/omega_device_registry.enriched.canonical.devtools_enriched.json"
+    ],
+    "consumed_by": [
+      "normalize_and_enrich_registry.py", "ci_registry_metrics.py"
+    ]
+  },
+  "fingerprint_entity_reconciliation.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "input/core.device_registry",
+      "input/core.entity_registry",
+      "input/core.area_registry"
+    ],
+    "writes": [
+      "output/fingerprinting_run/entity_fingerprint_map.json",
+      "output/fingerprinting_run/manual_confirmed_matches.json",
+      "output/fingerprinting_run/unmatched_entity_trace.json",
+      "output/gray_zone_matches.csv"
+    ],
+    "consumed_by": [
+      "emit_alpha_sensor_registry.py", "validate_alpha_sensor_registry.py"
+    ]
+  },
+  "generate_cleaned_device_registry.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "input/core.device_registry"
+    ],
+    "writes": [
+      "output/omega_device_registry.cleaned.v2.json"
+    ],
+    "consumed_by": [
+      "enrich_omega_device_registry_stage2.py"
+    ]
+  },
+  "mac_crawler.py": {
+    "reads": [],
+    "writes": []
+  },
+  "normalize_and_enrich_registry.py": {
+    "reads": [
+      "output/omega_device_registry.enriched.canonical.devtools_enriched.json"
+    ],
+    "writes": [
+      "output/omega_device_registry.normalized.enriched.json",
+      "output/omega_device_registry.normalization_changelog.md",
+      "output/omega_device_registry.enrichment_blockers.csv"
+    ],
+    "consumed_by": [
+      "final registry release", "manual audit"
+    ]
+  },
+  "patch_area_room_zone.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "output/omega_device_registry.enriched.canonical.json",
+      "input/core.area_registry"
+    ],
+    "writes": [
+      "output/omega_device_registry.enriched.canonical.patched.json"
+    ],
+    "consumed_by": [
+      "enrich_with_devtools_metadata.py"
+    ]
+  },
+  "regenerate_alpha_sensor_registry_v3.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "contracts/expected_alpha_sensor_registry.yaml",
+      "output/fingerprinting_run/manual_confirmed_matches.json",
+      "output/fingerprinting_run/entity_fingerprint_map.json",
+      "input/core.entity_registry"
+    ],
+    "writes": [
+      "output/alpha_sensor_registry.json",
+      "output/data/alpha_sensor_registry.debug.log.json",
+      "output/alpha_sensor_registry.validation_report.json",
+      "output/data/cluster_coverage_metrics.json"
+    ],
+    "consumed_by": [
+      "emit_alpha_sensor_registry.py", "validate_alpha_sensor_registry.py"
+    ]
+  },
+  "regenerate_alpha_sensor_registry_v3_002.py": {
+    "reads": [
+      "settings.conf.yaml",
+      "input/core.area_registry",
+      "input/core.entity_registry",
+      "output/fingerprinting_run/manual_confirmed_matches.json",
+      "contracts/expected_alpha_sensor_registry.yaml",
+      "output/alpha_sensor_registry.json",
+      "output/data/alpha_sensor_registry.debug.log.json",
+      "output/data/alpha_sensor_registry.debug.mapping_trace.json",
+      "output/alpha_sensor_registry.validation_report.json",
+      "output/data/cluster_coverage_metrics.json"
+    ],
+    "writes": [
+      "output/alpha_sensor_registry.json",
+      "output/data/alpha_sensor_registry.debug.log.json",
+      "output/data/alpha_sensor_registry.debug.mapping_trace.json",
+      "output/alpha_sensor_registry.validation_report.json",
+      "output/data/cluster_coverage_metrics.json"
+    ],
+    "consumed_by": [
+      "emit_alpha_sensor_registry.py", "validate_alpha_sensor_registry.py"
+    ]
+  },
+  "run_pipeline.py": {
+    "reads": [],
+    "writes": [],
+    "_note": "Script runner only; no direct file I/O.",
+    "consumed_by": ["manual invocation"]
+  },
+  "generate_registry_index.py": {
+    "reads": [
+      "README.md",
+      "settings.conf.yaml"
+    ],
+    "writes": [
+      "file_dependency_matrix.json",
+      "file_trace_manifest.v1.json",
+      "file_index.tmp",
+      "filtered_file_index.tmp"
+    ],
+    "consumed_by": [
+      "project audit", "directory cleanup"
+    ]
+  },
+  "verify_pipeline_inputs.py": {
+    "reads": [
+      "input/core.entity_registry",
+      "input/core.device_registry",
+      "settings.conf.yaml"
+    ],
+    "writes": [],
+    "_note": "No file writes, validation script only.",
+    "consumed_by": ["manual validation"]
+  }
+}
