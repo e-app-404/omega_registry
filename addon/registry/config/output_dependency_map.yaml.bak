@@ -1,4 +1,4 @@
-# Output dependency map for addon
+# Output dependency map for registry_rehydration_local
 # Maps output files to their generating scripts, references, and metadata
 
 gray_zone_matches.csv:
@@ -299,7 +299,7 @@ file_trace_manifest.v1.json:
 registry_rehydration_index.log:
   dependencies: [generate_registry_index.py]
   references: [all files]
-  summary: Machine-friendly index of all files in addon.
+  summary: Machine-friendly index of all files in registry_rehydration_local.
   tags: [output, log, index, manifest]
 
 cluster_coverage_metrics.<timestamp>.json:

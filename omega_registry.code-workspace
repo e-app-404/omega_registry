@@ -37,7 +37,7 @@
 			"**/node_modules/**": true
 		},
 		"editor.formatOnSave": true,
-		"python.defaultInterpreterPath": "/Users/evertappels/Projects/omega_registry/venv/bin/python",
+		"python.defaultInterpreterPath": "/Users/evertappels/Projects/omega_registry/.venv/bin/python",
 		"yaml.validate": true
 	}
 }

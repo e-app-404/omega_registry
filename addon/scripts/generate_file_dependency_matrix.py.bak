@@ -1,6 +1,6 @@
 """
 Script: generate_file_dependency_matrix.py
-Purpose: Scan all Python scripts under addon/, extract file I/O, and update file_dependency_matrix.json with full coverage and logging.
+Purpose: Scan all Python scripts under registry_rehydration_local/, extract file I/O, and update file_dependency_matrix.json with full coverage and logging.
 """
 import os
 import json
@@ -13,7 +13,7 @@ from glob import glob
 from collections import defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LOCAL_DIR = os.path.join(ROOT, "addon")
+LOCAL_DIR = os.path.join(ROOT, "registry_rehydration_local")
 MATRIX_PATH = os.path.join(LOCAL_DIR, "file_dependency_matrix.json")
 SETTINGS_PATH = os.path.join(LOCAL_DIR, "settings.conf.yaml")
 PATCHLOG_OVERVIEW = os.path.join(LOCAL_DIR, "copilot_patchlog_overview.log")

@@ -1,9 +1,9 @@
 Workspace layout
 
-This workspace is used for registry rehydration and analysis. It contains two primary folder entries in the VS Code workspace file `addon.code-workspace`:
+This workspace is used for registry rehydration and analysis. It contains two primary folder entries in the VS Code workspace file `registry_rehydration_local.code-workspace`:
 
 - `/Users/evertappels/Projects/omega_registry_ha_storage` (symlink) — a symbolic link pointing to the Home Assistant `config/.storage` directory on the host system. This path is intentionally referenced in the workspace to allow quick inspection and referencing of HA runtime registry files locally.
-- `/Users/evertappels/Projects/registry_rehydration_archive/addon` — the repository and derived artifacts for registry rehydration.
+- `/Users/evertappels/Projects/registry_rehydration_archive/registry_rehydration_local_last` — the repository and derived artifacts for registry rehydration.
 
 No-modify policy for HA `.storage`
 

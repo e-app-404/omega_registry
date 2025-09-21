@@ -3,7 +3,7 @@
 This module centralizes path resolution so scripts can use canonical_path(...)
 and repo-relative paths in a consistent, testable way. It prefers an
 environment override `CANONICAL_ROOT` when present, and provides backwards
-compatibility if the addon directory is still named `addon`.
+compatibility if the addon directory is still named `registry_rehydration_local_last`.
 
 Usage examples:
         from utils.paths import canonical_path, addon_root
@@ -45,13 +45,13 @@ def addon_root() -> Path:
     """Return the addon directory path.
 
     Prefer a directory named `addon` at the repo root. For backward
-    compatibility, fall back to `addon` if present.
+    compatibility, fall back to `registry_rehydration_local_last` if present.
     """
     r = repo_root()
     cand = r / "addon"
     if cand.exists():
         return cand
-    alt = r / "addon"
+    alt = r / "registry_rehydration_local_last"
     return alt if alt.exists() else cand
 
 
