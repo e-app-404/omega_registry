@@ -1,4 +1,3 @@
-import os
 import sys
 import logging
 from pathlib import Path
@@ -37,15 +36,10 @@ per_source_counts = {}
 
 from datetime import datetime
 import json
-from difflib import SequenceMatcher
-from registry.utils.cluster import make_cluster_id, resolve_cluster_metadata
-from registry.utils.inference import infer_role, infer_area_id
-from utils.pre_reboot_entity_loader import load_pre_reboot_entities
-from utils.logger import log_patch_action
+from registry.utils.cluster import make_cluster_id
 import time
 import signal
-import traceback
-from registry.utils.excluded_registry_entities import EXCLUDED_REGISTRY_ENTITY_IDS, is_excluded_entity
+from registry.utils.excluded_registry_entities import is_excluded_entity
 import argparse
 parser = argparse.ArgumentParser(description="Rosetta v5 migration map generator")
 parser.add_argument("--verbose_stdout", action="store_true", help="Enable verbose stdout logging (per-entity progress)")
@@ -71,7 +65,7 @@ def derive_canonical_key(entity):
     return slugify(str(entity))
 
 # --- Import shared canonical key utilities ---
-from shared.utils.canonical_key_utils import derive_shared_canonical_key, normalize_key_for_matching, compare_keys
+from shared.utils.canonical_key_utils import derive_shared_canonical_key, compare_keys
 
 # --- Load post-reboot fingerprint map with sun deduplication ---
 import glob

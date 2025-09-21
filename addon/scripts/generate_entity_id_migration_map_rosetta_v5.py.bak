@@ -3,7 +3,7 @@ import sys
 import logging
 from pathlib import Path
 # --- sys.path patch for registry imports ---
-project_root = "/Users/evertappels/Projects/registry_rehydration_local"
+project_root = "/Users/evertappels/Projects/omega_registry/addon"
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
