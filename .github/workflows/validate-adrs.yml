@@ -25,6 +25,17 @@ jobs:
           curl -sSfL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64" -o /usr/local/bin/yq
           chmod +x /usr/local/bin/yq
 
+      - name: Self-test yq
+        run: |
+          set -euo pipefail
+          YQ_VERSION="v4.30.8"
+          installed="$(yq --version 2>/dev/null || true)"
+          echo "installed: $installed"
+          if ! echo "$installed" | grep -q "${YQ_VERSION}"; then
+            echo "yq version mismatch: expected ${YQ_VERSION}, got: $installed" >&2
+            exit 2
+          fi
+
       - name: Run ADR validator
         run: |
           set -euo pipefail
