@@ -1,0 +1,31 @@
+name: Validate ADRs
+
+on:
+  pull_request:
+    paths:
+      - 'addon/docs/ADR/**'
+      - 'docs/ADR/**'
+      - 'ops/ADR/**'
+  push:
+    branches:
+      - chore/restructure-to-addon
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies (yq)
+        run: |
+          set -euo pipefail
+          # Install mikefarah/yq v4 (go binary) for consistent behavior
+          YQ_VERSION="v4.30.8"
+          curl -sSfL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64" -o /usr/local/bin/yq
+          chmod +x /usr/local/bin/yq
+
+      - name: Run ADR validator
+        run: |
+          set -euo pipefail
+          bash ops/ADR/validate_adrs.sh
