@@ -17,6 +17,12 @@ build/
 
 # Archives
 tarballs/
+
+# Added per workspace-maintenance A2
+canonical/logs/
+_backups/
+*.tar.gz
+*.log
 *.tar.gz
 
 # Logs and scratch
@@ -25,3 +31,14 @@ canonical/logs/scratch/
 
 # Ignore local index venvs
 .indexvenv/
+
+# Phase-1 additions
+venv/
+*.pyc
+*.pyo
+*.pyd
+*.bak
+*.orig
+*~
+__pycache__/
+tarballs/
