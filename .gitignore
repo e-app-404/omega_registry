@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *.pyo
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
 .Python
 env/
 venv/
@@ -23,7 +27,6 @@ canonical/logs/
 _backups/
 *.tar.gz
 *.log
-*.tar.gz
 
 # Logs and scratch
 canonical/logs/scratch/
