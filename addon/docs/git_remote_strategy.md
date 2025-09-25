@@ -1,61 +1,61 @@
-# Git Remote Strategy
+# Git Remote Strategy - Omega Registry Workspace
 
 ## Instructions
 
 Please fill out the YAML (one per project) plus the diagnostics snippets’ outputs, so we can:
 
-	•	Propose the remote topology (which remotes push vs fetch-only, and why)
-	•	Drop in guardrails (validators, CI checks, size/symlink/nested-git gates)
-	•	Provide NAS/Tailnet mirror settings (incl. Synology ACL notes)
-	•	Generate a tailored .env.sample, workspace samples, and acceptance tests
-	•	Specify merge & backup strategy (snapshot branches/tags) aligned with your ADR-0016 rules
+    •	Propose the remote topology (which remotes push vs fetch-only, and why)
+    •	Drop in guardrails (validators, CI checks, size/symlink/nested-git gates)
+    •	Provide NAS/Tailnet mirror settings (incl. Synology ACL notes)
+    •	Generate a tailored .env.sample, workspace samples, and acceptance tests
+    •	Specify merge & backup strategy (snapshot branches/tags) aligned with your ADR-0016 rules
 
 ⸻
 
 ## Requirements checklist
 
-1) Repo basics
-	•	Purpose & runtime context (addon, registry, docs only, etc.)
-	•	Default branch, branching model (trunk, GitFlow, release branches)
-	•	Where it’s hosted now (GitHub/GitLab/Synology bare repo/path)
+1. Repo basics
+   • Purpose & runtime context (addon, registry, docs only, etc.)
+   • Default branch, branching model (trunk, GitFlow, release branches)
+   • Where it’s hosted now (GitHub/GitLab/Synology bare repo/path)
 
-2) Remote topology & network
-	•	All remotes (URLs, which one is primary for push)
-	•	Will a NAS/Tailnet mirror be used? If yes: host/IP, path, shell restrictions (e.g., Synology git-shell)
-	•	Who pushes from where (LAN only? Tailnet allowed? fetch-only mirrors?)
+2. Remote topology & network
+   • All remotes (URLs, which one is primary for push)
+   • Will a NAS/Tailnet mirror be used? If yes: host/IP, path, shell restrictions (e.g., Synology git-shell)
+   • Who pushes from where (LAN only? Tailnet allowed? fetch-only mirrors?)
 
-3) Access & governance
-	•	Users/roles that need push/pull
-	•	Protected branches/tags requirements
-	•	Commit signing (required? GPG/Sigstore?)
-	•	PR requirements (reviewers, checks that must pass)
+3. Access & governance
+   • Users/roles that need push/pull
+   • Protected branches/tags requirements
+   • Commit signing (required? GPG/Sigstore?)
+   • PR requirements (reviewers, checks that must pass)
 
-4) Files & storage
-	•	Expected large/binary artifacts (need Git LFS?)
-	•	Biggest files / size caps you want enforced
-	•	Any submodules / vendored repos
-	•	Symlinks expected or forbidden?
+4. Files & storage
+   • Expected large/binary artifacts (need Git LFS?)
+   • Biggest files / size caps you want enforced
+   • Any submodules / vendored repos
+   • Symlinks expected or forbidden?
 
-5) Workspace & paths
-	•	Any absolute paths hard-coded (e.g., /config, /data, /n/ha) that should be parametric or intentionally literal (containers often require literal /config//data)
-	•	Do you want an .env.sample and validators like we added to HA?
+5. Workspace & paths
+   • Any absolute paths hard-coded (e.g., /config, /data, /n/ha) that should be parametric or intentionally literal (containers often require literal /config//data)
+   • Do you want an .env.sample and validators like we added to HA?
 
-6) CI/CD & automation
-	•	Existing CI (GitHub Actions, etc.) and what must run on PRs
-	•	Build/release packaging (tags/semver), changelog policy, artifact publishing
+6. CI/CD & automation
+   • Existing CI (GitHub Actions, etc.) and what must run on PRs
+   • Build/release packaging (tags/semver), changelog policy, artifact publishing
 
-7) NAS specifics (if mirroring)
-	•	Bare repo path on NAS (e.g., /volume1/git-mirrors/<name>.git)
-	•	Ownership/ACL expectations (gituser:users, g+rx on parents)
-	•	Whether Synology Git package wrappers are in play (fetch-only advisories, etc.)
+7. NAS specifics (if mirroring)
+   • Bare repo path on NAS (e.g., /volume1/git-mirrors/<name>.git)
+   • Ownership/ACL expectations (gituser:users, g+rx on parents)
+   • Whether Synology Git package wrappers are in play (fetch-only advisories, etc.)
 
-8) Backup & recovery
-	•	Mirror/backup cadence (push on every main? nightly? tags only?)
-	•	Snapshot/backup branches/tags you want (e.g., backup/<name>-<ts>)
+8. Backup & recovery
+   • Mirror/backup cadence (push on every main? nightly? tags only?)
+   • Snapshot/backup branches/tags you want (e.g., backup/<name>-<ts>)
 
 ⸻
 
-## Fill-me YAML
+## Workspace Config Info (Omega Registry Workspace)
 
 ```yaml
 project: "Omega Registry (BB8 Addon)"
@@ -76,9 +76,9 @@ network:
   tailnet_ip: "100.x.y.z"
   synology_git_shell_wrapped: true
 governance:
-  protected_branches: ["main","chore/restructure-to-addon"]
+  protected_branches: ["main", "chore/restructure-to-addon"]
   commit_signing_required: false
-  pr_checks_required: ["validate-adrs","ruff"]
+  pr_checks_required: ["validate-adrs", "ruff"]
 files:
   expects_large_binaries: true
   git_lfs_needed: true
@@ -122,47 +122,8 @@ grep -R -n --exclude-dir=".git" -E '/config|/data|/n/ha' . | sed -n '1,120p' || 
 ls -la .github/workflows 2>/dev/null || echo "no-ci"
 ```
 
-```yaml
-
-project: "BB8 Addon | Omega Registry"
-purpose: "addon | registry | mixed"
-default_branch: "chore/restructure-to-addon"
-branch_model: "trunk"
-remotes:
-  primary_push: "ssh://gituser@ds220plus.reverse-beta.ts.net/volume1/git/omega_registry.git"
-  additional:
-    - name: "origin"
-      url: "ssh://gituser@ds220plus.reverse-beta.ts.net/volume1/git/omega_registry.git"
-      push: true
-    - name: "github"
-      url: "https://github.com/e-app-404/omega_registry.git"
-      push: true
-network:
-  lan_ip: "192.168.0.104"
-  tailnet_ip: "100.x.y.z"
-  synology_git_shell_wrapped: true
-governance:
-  protected_branches: ["main","chore/restructure-to-addon"]
-  commit_signing_required: false
-  pr_checks_required: ["validate-adrs","ruff"]
-files:
-  expects_large_binaries: true
-  git_lfs_needed: true
-  allows_symlinks: false
-paths:
-  uses_container_literals: true
-  must_parameterize_host_paths: true
-ci_cd:
-  platform: "github-actions"
-  release_tags: "semver"
-nas_mirror:
-  path: "/volume1/git-mirrors/omega_registry.git"
-  owner: "gituser:users"
-  parents_g_rx: true
-backup_policy:
-  push_to_mirror_on: ["main"]
-  create_backup_tags: true
-
+```text
+...workspace YAML shown earlier (see 'Workspace Config Info')...
 ```
 
 ## Diagnostics
@@ -205,14 +166,8 @@ backup_policy:
     "stderr": ""
   },
   "largest_files": [
-    [
-      5615054,
-      "addon/canonical/logs/diagnostics/trace_overlay.omega.json"
-    ],
-    [
-      4766716,
-      "addon/output/pre_reboot_entities.combined.json"
-    ],
+    [5615054, "addon/canonical/logs/diagnostics/trace_overlay.omega.json"],
+    [4766716, "addon/output/pre_reboot_entities.combined.json"],
     [
       3679607,
       "addon/output/migration_diagnostics/pre_reboot_entities_by_source.json"
@@ -225,18 +180,12 @@ backup_policy:
       3000064,
       "addon/output/alpha_tier/alpha_cluster_schema_validation_report.json"
     ],
-    [
-      2674701,
-      "addon/input/pre-reboot.ha_registries/core.entity_registry"
-    ],
+    [2674701, "addon/input/pre-reboot.ha_registries/core.entity_registry"],
     [
       2674701,
       "addon/canonical/enrichment_sources/ha_registries/pre-reboot/core.entity_registry"
     ],
-    [
-      2228610,
-      "addon/output/alpha_tier/cluster_assignment_trace.json"
-    ],
+    [2228610, "addon/output/alpha_tier/cluster_assignment_trace.json"],
     [
       2005009,
       "addon/canonical/logs/audit/join_path/join_path_audit.pretty.json"
@@ -245,56 +194,27 @@ backup_policy:
       1788294,
       "addon/canonical/logs/audit/contract_compliance/contract_compliance_report.pretty.json"
     ],
-    [
-      1770546,
-      "addon/output/mappings/entity_id_migration_map.rosetta.v5.json"
-    ],
-    [
-      1770546,
-      "addon/input/mappings/entity_id_migration_map.rosetta.v5.json"
-    ],
-    [
-      1622911,
-      "addon/canonical/omega_registry_master.json"
-    ],
-    [
-      1599960,
-      "addon/canonical/logs/audit/join_path/join_path_audit.json"
-    ],
-    [
-      1590038,
-      "addon/output/omega_registry_master.json"
-    ],
+    [1770546, "addon/output/mappings/entity_id_migration_map.rosetta.v5.json"],
+    [1770546, "addon/input/mappings/entity_id_migration_map.rosetta.v5.json"],
+    [1622911, "addon/canonical/omega_registry_master.json"],
+    [1599960, "addon/canonical/logs/audit/join_path/join_path_audit.json"],
+    [1590038, "addon/output/omega_registry_master.json"],
     [
       1416207,
       "addon/canonical/logs/audit/contract_compliance/contract_compliance_report.json"
     ],
-    [
-      1393500,
-      "addon/input/storage_0720/core.entity_registry"
-    ],
-    [
-      1390263,
-      "addon/input/core.entity_registry"
-    ],
-    [
-      1318371,
-      "addon/output/debug_join_graph_omega_registry.jsonl"
-    ],
-    [
-      1292516,
-      "addon/input/post-reboot.ha_registries/core.entity_registry"
-    ]
+    [1393500, "addon/input/storage_0720/core.entity_registry"],
+    [1390263, "addon/input/core.entity_registry"],
+    [1318371, "addon/output/debug_join_graph_omega_registry.jsonl"],
+    [1292516, "addon/input/post-reboot.ha_registries/core.entity_registry"]
   ],
   "symlinks": "/Users/evertappels/Projects/omega_registry/.venv\n/Users/evertappels/Projects/omega_registry/addon/output/debug/venv/bin/python3\n/Users/evertappels/Projects/omega_registry/addon/output/debug/venv/bin/python\n/Users/evertappels/Projects/omega_registry/addon/output/debug/venv/bin/python3.13\n/Users/evertappels/Projects/omega_registry/addon/.venv/bin/python3\n/Users/evertappels/Projects/omega_registry/addon/.venv/bin/python\n/Users/evertappels/Projects/omega_registry/addon/.venv/bin/python3.13\n/Users/evertappels/Projects/omega_registry/addon/.indexvenv/bin/python3\n/Users/evertappels/Projects/omega_registry/addon/.indexvenv/bin/python\n/Users/evertappels/Projects/omega_registry/addon/.indexvenv/bin/python3.13\n/Users/evertappels/Projects/omega_registry/venv/bin/python3\n/Users/evertappels/Projects/omega_registry/venv/bin/python\n/Users/evertappels/Projects/omega_registry/venv/bin/python3.13",
   "nested_git": "",
   "ci": "total 8\ndrwxr-xr-x@ 3 evertappels  staff    96 Sep 22 01:37 .\ndrwxr-xr-x@ 3 evertappels  staff    96 Sep 22 01:37 ..\n-rw-r--r--@ 1 evertappels  staff  1136 Sep 22 12:23 validate-adrs.yml"
 }
-
 ```
 
 ```yaml
-
 project: "BB8 Addon | Omega Registry"
 purpose: "addon | registry | mixed"
 default_branch: "chore/restructure-to-addon"
@@ -313,9 +233,9 @@ network:
   tailnet_ip: "100.x.y.z"
   synology_git_shell_wrapped: true
 governance:
-  protected_branches: ["main","chore/restructure-to-addon"]
+  protected_branches: ["main", "chore/restructure-to-addon"]
   commit_signing_required: false
-  pr_checks_required: ["validate-adrs","ruff"]
+  pr_checks_required: ["validate-adrs", "ruff"]
 files:
   expects_large_binaries: true
   git_lfs_needed: true
@@ -333,7 +253,6 @@ nas_mirror:
 backup_policy:
   push_to_mirror_on: ["main"]
   create_backup_tags: true
-
 ```
 
 ## Diagnostics
@@ -376,14 +295,8 @@ backup_policy:
     "stderr": ""
   },
   "largest_files": [
-    [
-      5615054,
-      "addon/canonical/logs/diagnostics/trace_overlay.omega.json"
-    ],
-    [
-      4766716,
-      "addon/output/pre_reboot_entities.combined.json"
-    ],
+    [5615054, "addon/canonical/logs/diagnostics/trace_overlay.omega.json"],
+    [4766716, "addon/output/pre_reboot_entities.combined.json"],
     [
       3679607,
       "addon/output/migration_diagnostics/pre_reboot_entities_by_source.json"
@@ -396,18 +309,12 @@ backup_policy:
       3000064,
       "addon/output/alpha_tier/alpha_cluster_schema_validation_report.json"
     ],
-    [
-      2674701,
-      "addon/input/pre-reboot.ha_registries/core.entity_registry"
-    ],
+    [2674701, "addon/input/pre-reboot.ha_registries/core.entity_registry"],
     [
       2674701,
       "addon/canonical/enrichment_sources/ha_registries/pre-reboot/core.entity_registry"
     ],
-    [
-      2228610,
-      "addon/output/alpha_tier/cluster_assignment_trace.json"
-    ],
+    [2228610, "addon/output/alpha_tier/cluster_assignment_trace.json"],
     [
       2005009,
       "addon/canonical/logs/audit/join_path/join_path_audit.pretty.json"
@@ -416,46 +323,19 @@ backup_policy:
       1788294,
       "addon/canonical/logs/audit/contract_compliance/contract_compliance_report.pretty.json"
     ],
-    [
-      1770546,
-      "addon/output/mappings/entity_id_migration_map.rosetta.v5.json"
-    ],
-    [
-      1770546,
-      "addon/input/mappings/entity_id_migration_map.rosetta.v5.json"
-    ],
-    [
-      1622911,
-      "addon/canonical/omega_registry_master.json"
-    ],
-    [
-      1599960,
-      "addon/canonical/logs/audit/join_path/join_path_audit.json"
-    ],
-    [
-      1590038,
-      "addon/output/omega_registry_master.json"
-    ],
+    [1770546, "addon/output/mappings/entity_id_migration_map.rosetta.v5.json"],
+    [1770546, "addon/input/mappings/entity_id_migration_map.rosetta.v5.json"],
+    [1622911, "addon/canonical/omega_registry_master.json"],
+    [1599960, "addon/canonical/logs/audit/join_path/join_path_audit.json"],
+    [1590038, "addon/output/omega_registry_master.json"],
     [
       1416207,
       "addon/canonical/logs/audit/contract_compliance/contract_compliance_report.json"
     ],
-    [
-      1393500,
-      "addon/input/storage_0720/core.entity_registry"
-    ],
-    [
-      1390263,
-      "addon/input/core.entity_registry"
-    ],
-    [
-      1318371,
-      "addon/output/debug_join_graph_omega_registry.jsonl"
-    ],
-    [
-      1292516,
-      "addon/input/post-reboot.ha_registries/core.entity_registry"
-    ]
+    [1393500, "addon/input/storage_0720/core.entity_registry"],
+    [1390263, "addon/input/core.entity_registry"],
+    [1318371, "addon/output/debug_join_graph_omega_registry.jsonl"],
+    [1292516, "addon/input/post-reboot.ha_registries/core.entity_registry"]
   ],
   "symlinks": "/Users/evertappels/Projects/omega_registry/.venv\n/Users/evertappels/Projects/omega_registry/addon/output/debug/venv/bin/python3\n/Users/evertappels/Projects/omega_registry/addon/output/debug/venv/bin/python\n/Users/evertappels/Projects/omega_registry/addon/output/debug/venv/bin/python3.13\n/Users/evertappels/Projects/omega_registry/addon/.venv/bin/python3\n/Users/evertappels/Projects/omega_registry/addon/.venv/bin/python\n/Users/evertappels/Projects/omega_registry/addon/.venv/bin/python3.13\n/Users/evertappels/Projects/omega_registry/addon/.indexvenv/bin/python3\n/Users/evertappels/Projects/omega_registry/addon/.indexvenv/bin/python\n/Users/evertappels/Projects/omega_registry/addon/.indexvenv/bin/python3.13\n/Users/evertappels/Projects/omega_registry/venv/bin/python3\n/Users/evertappels/Projects/omega_registry/venv/bin/python\n/Users/evertappels/Projects/omega_registry/venv/bin/python3.13",
   "nested_git": "",
