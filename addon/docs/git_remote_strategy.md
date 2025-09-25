@@ -416,6 +416,12 @@ jobs:
           git push nas main --tags
           echo "Pushed main + tags to NAS"
           git ls-remote nas refs/heads/main refs/tags/* | sed -n '1,50p' || true
+      - name: Preflight: check NAS reachability
+        if: ${{ secrets.NAS_SSH_KEY }}
+        env:
+          GIT_SSH_COMMAND: ssh -o StrictHostKeyChecking=accept-new -o ConnectTimeout=10
+        run: |
+          ssh -o BatchMode=yes gituser@ds220plus.reverse-beta.ts.net 'echo OK_NAS'
       - name: Note if disabled
         if: ${{ !secrets.NAS_SSH_KEY }}
         run: echo "NAS mirror disabled (missing NAS_SSH_KEY secret). Workflow exited cleanly."
