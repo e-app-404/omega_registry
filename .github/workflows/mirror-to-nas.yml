@@ -1,0 +1,37 @@
+name: Mirror main + tags to NAS
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Load NAS deploy key
+        if: ${{ secrets.NAS_SSH_KEY }}
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.NAS_SSH_KEY }}
+      - name: Preflight: check NAS reachability
+        if: ${{ secrets.NAS_SSH_KEY }}
+        env:
+          GIT_SSH_COMMAND: ssh -o StrictHostKeyChecking=accept-new -o ConnectTimeout=10
+        run: |
+          ssh -o BatchMode=yes gituser@ds220plus.reverse-beta.ts.net 'echo OK_NAS'
+      - name: Push to NAS
+        if: ${{ secrets.NAS_SSH_KEY }}
+        env:
+          NAS_URL: ssh://gituser@ds220plus.reverse-beta.ts.net/volume1/git/omega_registry.git
+          GIT_SSH_COMMAND: ssh -o StrictHostKeyChecking=accept-new -o ConnectTimeout=10
+        run: |
+          git remote add nas "$NAS_URL" || true
+          git push nas main --tags
+          echo "Pushed main + tags to NAS"
+          git ls-remote nas refs/heads/main refs/tags/* | sed -n '1,50p' || true
+      - name: Note if disabled
+        if: ${{ !secrets.NAS_SSH_KEY }}
+        run: echo "NAS mirror disabled (missing NAS_SSH_KEY secret). Workflow exited cleanly."
