@@ -1,0 +1,15 @@
+*** Begin Patch
+*** Update File: .gitignore
+@@
+ __pycache__/
+ .venv
++venv/
++*.pyc
++*.pyo
++*.pyd
++*.bak
++*.orig
++*~
++__pycache__/
++tarballs/
+*** End Patch

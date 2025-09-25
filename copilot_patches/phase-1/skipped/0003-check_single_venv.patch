@@ -1,0 +1,9 @@
+*** Begin Patch
+*** Add File: scripts/check_single_venv.py
++#!/usr/bin/env python3
++"""
++Placeholder: original prepared check_single_venv.py was skipped because repository already contains a functionally equivalent script.
++This file is intentionally left as a record and will not be applied.
++"""
++
+*** End Patch

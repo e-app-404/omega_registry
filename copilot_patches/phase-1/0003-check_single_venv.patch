@@ -1,0 +1,63 @@
+*** Begin Patch
+*** Add File: scripts/check_single_venv.py
++#!/usr/bin/env python3
++"""
++scripts/check_single_venv.py
++
++Check for multiple virtual environments in the repository and advise
++on consolidating to a single repo-level `.venv`.
++
++Usage:
++  python3 scripts/check_single_venv.py [--fix]
++
++This script is non-destructive by default. With `--fix` it will print a
++suggested .gitignore snippet to add and will not modify files automatically.
++"""
++from __future__ import annotations
++
++import argparse
++import os
++import sys
++from pathlib import Path
++
++
++def find_venvs(root: Path) -> list[Path]:
++    candidates = []
++    for p in root.rglob('*'):
++        if p.is_dir() and p.name in ('.venv', 'venv', '.env'):
++            # avoid descending into large build dirs
++            candidates.append(p)
++    return sorted(set(candidates))
++
++
++def main() -> int:
++    parser = argparse.ArgumentParser()
++    parser.add_argument('--fix', action='store_true', help='Print suggested .gitignore snippet (non-destructive)')
++    args = parser.parse_args()
++
++    root = Path(os.getcwd())
++    venvs = find_venvs(root)
++    if not venvs:
++        print('No common venv directories found.')
++        return 0
++
++    print('Found virtual environment directories:')
++    for v in venvs:
++        print(' -', v.relative_to(root))
++
++    if len(venvs) == 1 and venvs[0].name == '.venv' and venvs[0].parent == root:
++        print('\nRepository already uses a single repo-level `.venv`.')
++        return 0
++
++    print('\nRecommendation: Consolidate to a single repo-level `.venv` at project root.')
++    if args.fix:
++        print('\nSuggested .gitignore snippet:')
++        print('\n# Repo-level virtualenv\n.venv/\n')
++
++    return 0
++
++
++if __name__ == '__main__':
++    sys.exit(main())
++
+*** End Patch

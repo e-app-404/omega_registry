@@ -1,0 +1,30 @@
+*** Begin Patch
+*** Add File: scripts/clean_worktree.sh
++#!/usr/bin/env bash
++set -euo pipefail
++
++# scripts/clean_worktree.sh
++# Dry-run helper to show candidate files for cleanup (pyc, bak, tmp files)
++
++DRY_RUN=1
++while [ "$#" -gt 0 ]; do
++  case "$1" in
++    --apply) DRY_RUN=0; shift ;;
++    --dry-run) DRY_RUN=1; shift ;;
++    --help|-h) echo "Usage: $0 [--dry-run|--apply]"; exit 0 ;;
++    *) echo "Unknown arg: $1"; exit 2 ;;
++  esac
++done
++
++find_cmd=(find . \( -name "*.pyc" -o -name "*~" -o -name "*.bak" -o -name "*.orig" -o -name "__pycache__" \) -print)
++
++echo "Listing candidate files for cleanup (dry-run=${DRY_RUN})"
++"${find_cmd[@]}"
++
++if [ ${DRY_RUN} -eq 0 ]; then
++  echo "Removing files..."
++  "${find_cmd[@]}" | xargs -r rm -rf
++  echo "Done."
++fi
++
+*** End Patch

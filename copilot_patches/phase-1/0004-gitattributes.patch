@@ -1,0 +1,16 @@
+*** Begin Patch
+*** Add File: .gitattributes
++# Mark common archive and binary formats as binary to avoid CRLF/autocrlf mangling
++*.tar      binary
++*.tgz      binary
++*.tar.gz   binary
++*.zip      binary
++*.whl      binary
++*.gz       binary
++*.bz2      binary
++*.xz       binary
++
++# Large binary bundles — consider Git LFS for these
++tarballs/** binary
++
+*** End Patch

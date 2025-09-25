@@ -1,0 +1,56 @@
+*** Begin Patch
+*** Add File: copilot_patches/phase-1/0005-update_gitignore_temp.patch
+*** Begin Patch
+*** Add File: scripts/append_gitignore_temp.sh
+#!/usr/bin/env bash
+set -euo pipefail
+
+# scripts/append_gitignore_temp.sh
+# Append conservative temp-file patterns to the repository .gitignore
+# Dry-run by default. Use --apply to actually modify .gitignore.
+
+DRY_RUN=1
+while [ "$#" -gt 0 ]; do
+	case "$1" in
+		--apply) DRY_RUN=0; shift ;;
+		--dry-run) DRY_RUN=1; shift ;;
+		--help|-h) echo "Usage: $0 [--dry-run|--apply]"; exit 0 ;;
+		*) echo "Unknown arg: $1"; exit 2 ;;
+	esac
+done
+
+SNIPPET=$(cat <<'EOF'
+# Common temp and editor files
+*~
+*.swp
+*.tmp
+*.bak
+*.orig
+*.pyc
+# macOS
+.DS_Store
+# IDEs
+.idea/
+.vscode/
+# Logs and databases
+*.log
+*.sqlite3
+node_modules/
+EOF
+)
+
+echo "The following .gitignore snippet would be appended (dry-run=${DRY_RUN}):"
+echo
+echo "$SNIPPET"
+
+if [ ${DRY_RUN} -eq 0 ]; then
+	if [ -f .gitignore ]; then
+		cp .gitignore .gitignore.bak
+		echo "$SNIPPET" >> .gitignore
+		echo "Appended to .gitignore and backed up to .gitignore.bak"
+	else
+		echo "$SNIPPET" > .gitignore
+		echo "Created .gitignore with snippet"
+	fi
+fi
+
