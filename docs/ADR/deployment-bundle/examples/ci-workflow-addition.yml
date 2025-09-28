@@ -1,0 +1,379 @@
+# GitHub Actions Workflow Addition for ADR Validation
+# Add this to your existing .github/workflows/ directory or create a new workflow file
+# File name: .github/workflows/adr-validation.yml
+
+name: ADR Cross-Repository Validation
+
+# Trigger the workflow on pull requests that modify ADR files
+on:
+  pull_request:
+    paths:
+      - "docs/ADR/*.md"
+      - "docs/ADR/**/*.md"
+      - ".github/workflows/adr-validation.yml"
+
+  # Also run on pushes to main branch for continuous validation
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "docs/ADR/*.md"
+      - "docs/ADR/**/*.md"
+
+  # Allow manual triggering of the workflow
+  workflow_dispatch:
+
+# Set permissions for the workflow
+permissions:
+  contents: read
+  pull-requests: write # Needed to post PR comments
+  issues: write # Needed to create issues for validation failures
+
+jobs:
+  validate-adrs:
+    name: Validate ADR Cross-Repository Links
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository code
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch full history for better context
+
+      # Setup required tools for validation
+      - name: Setup Validation Tools
+        run: |
+          # Install jq for JSON processing
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+
+          # Verify tools are available
+          echo "✅ jq version: $(jq --version)"
+          echo "✅ curl version: $(curl --version | head -n1)"
+
+      # Check if ADR validation scripts exist
+      - name: Check ADR Validation Scripts
+        id: check-scripts
+        run: |
+          if [ -f "ops/ADR/validate_cross_repo_links.sh" ]; then
+            echo "validation_available=true" >> $GITHUB_OUTPUT
+            echo "✅ ADR validation scripts found"
+          else
+            echo "validation_available=false" >> $GITHUB_OUTPUT
+            echo "⚠️ ADR validation scripts not found"
+          fi
+
+      # Make validation scripts executable
+      - name: Prepare Validation Scripts
+        if: steps.check-scripts.outputs.validation_available == 'true'
+        run: |
+          chmod +x ops/ADR/*.sh
+          echo "✅ Made validation scripts executable"
+
+      # Run ADR template validation
+      - name: Validate ADR Template Compliance
+        if: steps.check-scripts.outputs.validation_available == 'true'
+        run: |
+          echo "🔍 Checking ADR template compliance..."
+
+          # Count ADR files
+          ADR_COUNT=$(find docs/ADR -name "ADR-*.md" -type f | wc -l)
+          echo "Found $ADR_COUNT ADR files to validate"
+
+          # Check for required sections in each ADR
+          TEMPLATE_ISSUES=()
+          for adr_file in docs/ADR/ADR-*.md; do
+            if [ -f "$adr_file" ]; then
+              echo "Validating template compliance: $(basename $adr_file)"
+
+              # Check for required sections
+              required_sections=("Problem Statement" "Decision" "Alternatives Considered")
+              for section in "${required_sections[@]}"; do
+                if ! grep -q "$section" "$adr_file"; then
+                  TEMPLATE_ISSUES+=("$(basename $adr_file): Missing section '$section'")
+                fi
+              done
+
+              # Check for validation block
+              if ! grep -q "Validation Block" "$adr_file"; then
+                TEMPLATE_ISSUES+=("$(basename $adr_file): Missing validation block")
+              fi
+            fi
+          done
+
+          # Report template compliance results
+          if [ ${#TEMPLATE_ISSUES[@]} -eq 0 ]; then
+            echo "✅ All ADRs comply with template requirements"
+          else
+            echo "❌ Template compliance issues found:"
+            printf '%s\n' "${TEMPLATE_ISSUES[@]}"
+            echo "TEMPLATE_COMPLIANCE_FAILED=true" >> $GITHUB_ENV
+          fi
+
+      # Run cross-repository link validation
+      - name: Validate Cross-Repository Links
+        if: steps.check-scripts.outputs.validation_available == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🔍 Validating cross-repository links..."
+
+          # Run the validation script with JSON output
+          if ./ops/ADR/validate_cross_repo_links.sh --json --timeout 15 docs/ADR > validation_results.json; then
+            echo "✅ Cross-repository link validation passed"
+
+            # Extract summary statistics
+            TOTAL_LINKS=$(jq -r '.summary.total_links' validation_results.json)
+            VALID_LINKS=$(jq -r '.summary.valid_links' validation_results.json)
+            INVALID_LINKS=$(jq -r '.summary.invalid_links' validation_results.json)
+
+            echo "📊 Validation Summary:"
+            echo "  Total links: $TOTAL_LINKS"
+            echo "  Valid links: $VALID_LINKS"
+            echo "  Invalid links: $INVALID_LINKS"
+
+            # Set environment variables for later steps
+            echo "TOTAL_LINKS=$TOTAL_LINKS" >> $GITHUB_ENV
+            echo "VALID_LINKS=$VALID_LINKS" >> $GITHUB_ENV
+            echo "INVALID_LINKS=$INVALID_LINKS" >> $GITHUB_ENV
+
+          else
+            echo "❌ Cross-repository link validation failed"
+            echo "LINK_VALIDATION_FAILED=true" >> $GITHUB_ENV
+
+            # Still try to extract results for reporting
+            INVALID_LINKS=$(jq -r '.summary.invalid_links // 0' validation_results.json)
+            echo "INVALID_LINKS=$INVALID_LINKS" >> $GITHUB_ENV
+          fi
+
+      # Generate validation report
+      - name: Generate Validation Report
+        if: steps.check-scripts.outputs.validation_available == 'true'
+        run: |
+          echo "📝 Generating validation report..."
+
+          # Create a detailed report
+          cat > adr_validation_report.md << 'EOF'
+          # ADR Validation Report
+
+          **Repository**: ${{ github.repository }}
+          **Branch**: ${{ github.head_ref || github.ref_name }}
+          **Commit**: ${{ github.sha }}
+          **Validation Date**: $(date --iso-8601=seconds)
+
+          ## Summary
+
+          | Metric | Value |
+          |--------|-------|
+          | Total Cross-Repo Links | ${TOTAL_LINKS:-0} |
+          | Valid Links | ${VALID_LINKS:-0} |
+          | Invalid Links | ${INVALID_LINKS:-0} |
+          | Template Compliance | $([ "$TEMPLATE_COMPLIANCE_FAILED" == "true" ] && echo "❌ Failed" || echo "✅ Passed") |
+          | Link Validation | $([ "$LINK_VALIDATION_FAILED" == "true" ] && echo "❌ Failed" || echo "✅ Passed") |
+
+          EOF
+
+          # Add detailed results if available
+          if [ -f "validation_results.json" ]; then
+            echo "## Detailed Results" >> adr_validation_report.md
+            echo "" >> adr_validation_report.md
+
+            # Add invalid links if any
+            INVALID_COUNT=$(jq -r '.results | map(select(.status != "valid")) | length' validation_results.json)
+            if [ "$INVALID_COUNT" -gt 0 ]; then
+              echo "### Invalid Links" >> adr_validation_report.md
+              echo "" >> adr_validation_report.md
+              jq -r '.results[] | select(.status != "valid") | "- **\(.file)**: \(.url) - \(.status)"' validation_results.json >> adr_validation_report.md
+              echo "" >> adr_validation_report.md
+            fi
+          fi
+
+          echo "✅ Validation report generated"
+
+      # Post PR comment with validation results
+      - name: Post PR Comment
+        if: github.event_name == 'pull_request' && steps.check-scripts.outputs.validation_available == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Read the validation report
+            let reportContent = '# 🔍 ADR Validation Results\n\n';
+
+            if (fs.existsSync('adr_validation_report.md')) {
+              reportContent += fs.readFileSync('adr_validation_report.md', 'utf8');
+            } else {
+              reportContent += 'Validation report not available.';
+            }
+
+            // Determine overall status
+            const templateFailed = process.env.TEMPLATE_COMPLIANCE_FAILED === 'true';
+            const linkFailed = process.env.LINK_VALIDATION_FAILED === 'true';
+            const invalidLinks = parseInt(process.env.INVALID_LINKS || '0');
+
+            if (templateFailed || linkFailed || invalidLinks > 0) {
+              reportContent = '## ❌ ADR Validation Failed\n\n' + reportContent;
+              reportContent += '\n### Next Steps\n';
+              reportContent += '- Review and fix the issues identified above\n';
+              reportContent += '- Ensure all ADRs follow the required template structure\n';
+              reportContent += '- Verify that cross-repository links are accessible\n';
+              reportContent += '- Run validation locally: `./ops/ADR/validate_cross_repo_links.sh docs/ADR`\n';
+            } else {
+              reportContent = '## ✅ ADR Validation Passed\n\n' + reportContent;
+            }
+
+            // Post the comment
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: reportContent
+            });
+
+      # Create issue for validation failures on main branch
+      - name: Create Issue for Validation Failures
+        if: |
+          github.ref == 'refs/heads/main' &&
+          steps.check-scripts.outputs.validation_available == 'true' &&
+          (env.TEMPLATE_COMPLIANCE_FAILED == 'true' || env.LINK_VALIDATION_FAILED == 'true' || env.INVALID_LINKS != '0')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Read the validation report
+            let reportContent = fs.readFileSync('adr_validation_report.md', 'utf8');
+
+            const issueBody = `# 🚨 ADR Validation Failures Detected
+
+            Automated validation has detected issues with Architecture Decision Records in the main branch.
+
+            **Commit**: ${{ github.sha }}
+            **Workflow Run**: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            ${reportContent}
+
+            ## Action Required
+
+            Please review and fix the ADR validation issues identified above. These issues may affect:
+            - Cross-repository architectural alignment
+            - Documentation consistency
+            - Integration with related repositories
+
+            ### How to Fix
+
+            1. **Template Compliance Issues**: Update ADRs to include all required sections
+            2. **Invalid Links**: Update or remove broken cross-repository references
+            3. **Test Locally**: Run \`./ops/ADR/validate_cross_repo_links.sh docs/ADR\`
+
+            This issue was created automatically by the ADR validation workflow.
+            `;
+
+            // Create the issue
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `ADR Validation Failures - ${new Date().toISOString().split('T')[0]}`,
+              body: issueBody,
+              labels: ['documentation', 'adr-validation', 'automated-issue']
+            });
+
+      # Fail the workflow if validation failed
+      - name: Check Validation Results
+        if: steps.check-scripts.outputs.validation_available == 'true'
+        run: |
+          echo "🔍 Checking final validation results..."
+
+          VALIDATION_FAILED=false
+
+          # Check template compliance
+          if [ "$TEMPLATE_COMPLIANCE_FAILED" == "true" ]; then
+            echo "❌ Template compliance validation failed"
+            VALIDATION_FAILED=true
+          fi
+
+          # Check link validation
+          if [ "$LINK_VALIDATION_FAILED" == "true" ]; then
+            echo "❌ Cross-repository link validation failed"
+            VALIDATION_FAILED=true
+          fi
+
+          # Check for invalid links
+          if [ "${INVALID_LINKS:-0}" -gt 0 ]; then
+            echo "❌ Found ${INVALID_LINKS} invalid cross-repository links"
+            VALIDATION_FAILED=true
+          fi
+
+          # Exit with error if validation failed
+          if [ "$VALIDATION_FAILED" == "true" ]; then
+            echo ""
+            echo "🚨 ADR validation failed. Please review the issues above."
+            echo "Run './ops/ADR/validate_cross_repo_links.sh docs/ADR' locally to debug."
+            exit 1
+          else
+            echo "✅ All ADR validations passed successfully!"
+          fi
+
+      # Upload validation artifacts
+      - name: Upload Validation Artifacts
+        if: always() && steps.check-scripts.outputs.validation_available == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: adr-validation-results
+          path: |
+            validation_results.json
+            adr_validation_report.md
+          retention-days: 30
+
+  # Optional: Check for ADR system deployment
+  check-adr-system:
+    name: Check ADR System Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Check ADR System Components
+        run: |
+          echo "🔍 Checking ADR system deployment..."
+
+          # Check for required directories
+          MISSING_COMPONENTS=()
+
+          if [ ! -d "docs/ADR" ]; then
+            MISSING_COMPONENTS+=("docs/ADR directory")
+          fi
+
+          if [ ! -d "ops/ADR" ]; then
+            MISSING_COMPONENTS+=("ops/ADR directory")
+          fi
+
+          # Check for required files
+          REQUIRED_FILES=(
+            "docs/ADR/repository-mapping.yaml"
+            "docs/ADR/alignment-status.yaml"
+            "ops/ADR/validate_cross_repo_links.sh"
+          )
+
+          for file in "${REQUIRED_FILES[@]}"; do
+            if [ ! -f "$file" ]; then
+              MISSING_COMPONENTS+=("$file")
+            fi
+          done
+
+          # Report results
+          if [ ${#MISSING_COMPONENTS[@]} -eq 0 ]; then
+            echo "✅ ADR system is properly deployed"
+          else
+            echo "⚠️ ADR system components missing:"
+            printf '  - %s\n' "${MISSING_COMPONENTS[@]}"
+            echo ""
+            echo "💡 To deploy the ADR system:"
+            echo "  1. Download the deployment bundle from the primary repository"
+            echo "  2. Run: ./deployment-bundle/scripts/deploy.sh"
+            echo "  3. Customize repository-mapping.yaml and alignment-status.yaml"
+          fi

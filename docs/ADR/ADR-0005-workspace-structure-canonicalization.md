@@ -9,6 +9,23 @@ supersedes: []
 tags: ["architecture", "workspace", "structure", "runtime", "project", "separation"]
 ---
 
+## 🌐 Cross-Repository Context
+
+**Related Repositories**:
+- `omega-org/omega_registry` - Primary implementation repository
+- `omega-org/omega_registry_ha_storage` - External HA registry data (symlinked)
+- Related Home Assistant add-on repositories that may adopt this structure
+
+**Cross-References**:
+```yaml
+# Machine-parseable cross-references for validation
+cross_repo_links:
+  - repo: "omega-org/omega_registry"
+    adr: "ADR-0005"
+    status: "implements"
+    relationship: "defines_workspace_standard"
+```
+
 ## Context
 
 The Omega Registry workspace has evolved organically over time, resulting in mixed concerns between runtime components (needed for HA add-on functionality) and project-level metadata (development, operations, documentation). This has led to:
@@ -127,8 +144,10 @@ omega_registry/
 1. Update `io_manifest.json` paths to new structure
 2. Update `config.yaml` and path resolution
 3. Update workspace configurations
-4. Implement automated validation checks (token block compliance)
-5. Run import safety validation from ADR-0003
+4. **Deploy Cross-Repository ADR validation system** using deployment bundle
+5. Implement automated validation checks (token block compliance)
+6. Run import safety validation from ADR-0003
+7. **Add ADR-0005 specific compliance validation** using enhanced validation scripts
 
 ## Assumptions & Preconditions
 
@@ -213,6 +232,16 @@ TOKEN_BLOCK:
 
 ### **CI Integration**
 ```bash
+# ADR-0005 Comprehensive Compliance Validation
+./ops/ADR/validate_adr_0005_compliance.sh
+
+# Cross-Repository ADR Validation
+./ops/ADR/validate_cross_repo_links.sh docs/ADR
+
+# Post-Deployment Validation
+./ops/ADR/post_deploy_validation.sh
+
+# Legacy validations (maintained for compatibility)
 # Addon package validation - no project metadata
 find addon/ -name "*.md" -o -name "workspace*" -o -name "*.code-workspace" \
   && echo "ERROR: Project metadata found in addon/" && exit 1

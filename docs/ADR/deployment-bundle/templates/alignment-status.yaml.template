@@ -1,0 +1,288 @@
+# Cross-Repository ADR Alignment Status
+# This file tracks the alignment status of Architecture Decision Records (ADRs)
+# across related repositories in your ecosystem.
+
+# DEPLOYMENT INSTRUCTIONS:
+# 1. Customize {PLACEHOLDER} values for your organization
+# 2. Save as 'alignment-status.yaml' in your docs/ADR/ directory
+# 3. Update this file whenever ADRs are created, modified, or aligned across repos
+# 4. Use validation scripts to automatically update alignment status
+
+---
+# 🌐 Ecosystem Alignment Overview
+ecosystem:
+  name: "{ORG} Software Ecosystem"
+  alignment_version: "1.0.0"
+  last_updated: "{YYYY-MM-DD}"
+  last_validation: "{YYYY-MM-DD}T{HH:MM:SS}Z"
+  overall_alignment_score: 85  # Percentage of ADRs that are properly aligned
+  critical_misalignments: 0     # Number of critical misalignments requiring attention
+
+# 📊 Repository Alignment Status
+repositories:
+  "{ORG}/{PRIMARY_REPO}":
+    adr_count: 5
+    aligned_adrs: 5
+    misaligned_adrs: 0
+    pending_alignment: 0
+    last_sync: "{YYYY-MM-DD}T{HH:MM:SS}Z"
+    alignment_score: 100
+    status: "fully_aligned"
+
+  "{ORG}/{RELATED_REPO_1}":
+    adr_count: 3
+    aligned_adrs: 2
+    misaligned_adrs: 1
+    pending_alignment: 0
+    last_sync: "{YYYY-MM-DD}T{HH:MM:SS}Z"
+    alignment_score: 67
+    status: "partially_aligned"
+
+  "{ORG}/{RELATED_REPO_2}":
+    adr_count: 2
+    aligned_adrs: 2
+    misaligned_adrs: 0
+    pending_alignment: 0
+    last_sync: "{YYYY-MM-DD}T{HH:MM:SS}Z"
+    alignment_score: 100
+    status: "fully_aligned"
+
+# 🔗 Cross-Repository ADR Alignment Matrix
+adr_alignment:
+  # ADR-0001: ADR Usage Standards
+  "ADR-0001":
+    title: "ADR Usage Standards"
+    primary_repository: "{ORG}/{PRIMARY_REPO}"
+    status: "accepted"
+    alignment_status:
+      "{ORG}/{PRIMARY_REPO}":
+        status: "implemented"
+        version: "1.0.0"
+        last_updated: "{YYYY-MM-DD}"
+        compliance_score: 100
+      "{ORG}/{RELATED_REPO_1}":
+        status: "implemented"
+        version: "1.0.0"
+        last_updated: "{YYYY-MM-DD}"
+        compliance_score: 100
+      "{ORG}/{RELATED_REPO_2}":
+        status: "implemented"
+        version: "1.0.0"
+        last_updated: "{YYYY-MM-DD}"
+        compliance_score: 100
+    cross_repo_impact: "high"
+    requires_alignment: true
+
+  # ADR-0003: Python Import Safety
+  "ADR-0003":
+    title: "Python Import Safety Policies"
+    primary_repository: "{ORG}/{PRIMARY_REPO}"
+    status: "accepted"
+    alignment_status:
+      "{ORG}/{PRIMARY_REPO}":
+        status: "implemented"
+        version: "1.0.0"
+        last_updated: "{YYYY-MM-DD}"
+        compliance_score: 100
+      "{ORG}/{RELATED_REPO_1}":
+        status: "not_applicable"  # Repository doesn't use Python
+        version: "N/A"
+        last_updated: "N/A"
+        compliance_score: 100
+      "{ORG}/{RELATED_REPO_2}":
+        status: "pending_implementation"
+        version: "0.0.0"
+        last_updated: "{YYYY-MM-DD}"
+        compliance_score: 0
+    cross_repo_impact: "medium"
+    requires_alignment: true
+
+  # ADR-0005: Workspace Structure Canonicalization
+  "ADR-0005":
+    title: "Workspace Structure Canonicalization"
+    primary_repository: "{ORG}/{PRIMARY_REPO}"
+    status: "accepted"
+    alignment_status:
+      "{ORG}/{PRIMARY_REPO}":
+        status: "implemented"
+        version: "1.0.0"
+        last_updated: "{YYYY-MM-DD}"
+        compliance_score: 100
+      "{ORG}/{RELATED_REPO_1}":
+        status: "partially_implemented"
+        version: "0.5.0"
+        last_updated: "{YYYY-MM-DD}"
+        compliance_score: 50
+      "{ORG}/{RELATED_REPO_2}":
+        status: "not_applicable"  # Different workspace structure requirements
+        version: "N/A"
+        last_updated: "N/A"
+        compliance_score: 100
+    cross_repo_impact: "low"
+    requires_alignment: false
+
+# 🚨 Misalignment Issues
+misalignments:
+  critical:
+    # No critical misalignments currently
+
+  warning:
+    - adr: "ADR-0003"
+      repository: "{ORG}/{RELATED_REPO_2}"
+      issue: "Python import safety policies not implemented"
+      impact: "medium"
+      action_required: "Implement import safety validation in CI/CD pipeline"
+      assigned_to: "{REPO_2_MAINTAINER_EMAIL}"
+      due_date: "{YYYY-MM-DD + 2 weeks}"
+      tracking_issue: "https://github.com/{ORG}/{RELATED_REPO_2}/issues/{ISSUE_NUMBER}"
+
+    - adr: "ADR-0005"
+      repository: "{ORG}/{RELATED_REPO_1}"
+      issue: "Workspace structure partially implemented"
+      impact: "low"
+      action_required: "Complete migration to canonical structure"
+      assigned_to: "{REPO_1_MAINTAINER_EMAIL}"
+      due_date: "{YYYY-MM-DD + 4 weeks}"
+      tracking_issue: "https://github.com/{ORG}/{RELATED_REPO_1}/issues/{ISSUE_NUMBER}"
+
+  info:
+    # Informational notes about alignment status
+
+# 📈 Alignment Metrics History
+metrics_history:
+  - date: "{YYYY-MM-DD}"
+    overall_alignment_score: 85
+    repositories_fully_aligned: 2
+    repositories_partially_aligned: 1
+    repositories_misaligned: 0
+    critical_issues: 0
+    warning_issues: 2
+    resolved_issues: 1
+
+  - date: "{YYYY-MM-DD - 1 week}"
+    overall_alignment_score: 78
+    repositories_fully_aligned: 1
+    repositories_partially_aligned: 2
+    repositories_misaligned: 0
+    critical_issues: 0
+    warning_issues: 3
+    resolved_issues: 0
+
+# 🎯 Alignment Targets and Goals
+targets:
+  # Short-term goals (next 30 days)
+  short_term:
+    overall_alignment_score: 95
+    critical_issues: 0
+    warning_issues: 1
+    repositories_fully_aligned: 3
+
+  # Long-term goals (next 90 days)
+  long_term:
+    overall_alignment_score: 98
+    critical_issues: 0
+    warning_issues: 0
+    repositories_fully_aligned: 3
+    automated_validation_coverage: 100
+
+# ⚙️ Alignment Validation Configuration
+validation:
+  # Validation schedule
+  schedule:
+    daily_checks: true
+    weekly_deep_validation: true
+    monthly_comprehensive_review: true
+
+  # Validation thresholds
+  thresholds:
+    critical_threshold: 70    # Below this score triggers critical alert
+    warning_threshold: 85     # Below this score triggers warning alert
+    target_threshold: 95      # Target alignment score for ecosystem
+
+  # Automated actions
+  automation:
+    create_issues_for_misalignments: true
+    notify_maintainers: true
+    update_alignment_status: true
+    generate_reports: true
+
+# 📞 Contact Information
+contacts:
+  ecosystem_maintainer:
+    name: "{MAINTAINER_NAME}"
+    email: "{MAINTAINER_EMAIL}"
+    role: "Architecture Governance"
+
+  repository_maintainers:
+    "{ORG}/{PRIMARY_REPO}":
+      name: "{PRIMARY_MAINTAINER_NAME}"
+      email: "{PRIMARY_MAINTAINER_EMAIL}"
+    "{ORG}/{RELATED_REPO_1}":
+      name: "{REPO_1_MAINTAINER_NAME}"
+      email: "{REPO_1_MAINTAINER_EMAIL}"
+    "{ORG}/{RELATED_REPO_2}":
+      name: "{REPO_2_MAINTAINER_NAME}"
+      email: "{REPO_2_MAINTAINER_EMAIL}"
+
+# 🔄 Update History
+update_history:
+  - date: "{YYYY-MM-DD}"
+    updated_by: "{AUTHOR_NAME}"
+    changes: "Initial alignment status configuration"
+    validation_run: true
+    issues_created: 2
+
+  # ADD ENTRIES AS ALIGNMENT STATUS IS UPDATED
+
+---
+# 🎯 STATUS DEFINITIONS
+#
+# Repository Alignment Status:
+# - fully_aligned: All applicable ADRs implemented and up-to-date
+# - partially_aligned: Some ADRs implemented, others pending or outdated
+# - misaligned: Critical ADRs not implemented or significantly outdated
+# - not_tracked: Repository not participating in alignment tracking
+#
+# ADR Implementation Status:
+# - implemented: ADR fully implemented and compliant
+# - partially_implemented: ADR partially implemented, work in progress
+# - pending_implementation: ADR accepted but not yet implemented
+# - not_applicable: ADR does not apply to this repository
+# - outdated: Implementation exists but is outdated
+#
+# Issue Severity Levels:
+# - critical: Blocking issues that must be resolved immediately
+# - warning: Important issues that should be resolved soon
+# - info: Informational items that don't require immediate action
+#
+# Cross-Repository Impact Levels:
+# - high: ADR affects core architecture across multiple repositories
+# - medium: ADR affects specific functionality across repositories
+# - low: ADR has minimal cross-repository impact
+#
+# 📝 CUSTOMIZATION CHECKLIST
+#
+# Before deploying this configuration:
+#
+# ✅ REQUIRED (Replace all placeholders):
+# [ ] {ORG} - Your GitHub organization name
+# [ ] {PRIMARY_REPO}, {RELATED_REPO_*} - Your repository names
+# [ ] {YYYY-MM-DD} - Current date and relevant dates
+# [ ] {HH:MM:SS} - Current time for timestamps
+# [ ] {*_MAINTAINER_EMAIL} - Maintainer email addresses
+# [ ] {*_MAINTAINER_NAME} - Maintainer names
+# [ ] {AUTHOR_NAME} - Your name
+# [ ] {ISSUE_NUMBER} - GitHub issue numbers for tracking
+#
+# ✅ RECOMMENDED (Customize for your ecosystem):
+# [ ] Update ADR alignment matrix with your actual ADRs
+# [ ] Adjust alignment scores based on actual implementation status
+# [ ] Configure validation thresholds based on your quality requirements
+# [ ] Set realistic alignment targets and timelines
+# [ ] Add/remove misalignment issues based on current state
+#
+# ✅ OPTIONAL (Advanced customization):
+# [ ] Add custom metrics tracking for your specific needs
+# [ ] Configure automated actions based on your workflow
+# [ ] Integrate with external tracking systems if needed
+# [ ] Add custom validation rules specific to your architecture

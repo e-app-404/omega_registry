@@ -104,7 +104,8 @@ def minimize_registry_entity(entity: dict, config: dict) -> dict:
             nulls.setdefault(k, True)
     if nulls:
         # place as top-level null_fields so contract_minimize_meta will move it into _meta
-        e["null_fields"] = list(nulls.keys())
+        if isinstance(e, dict):
+            e["null_fields"] = list(nulls.keys())
     entity_id = None
     if isinstance(e, dict):
         entity_id = str(e.get("entity_id", "none"))
