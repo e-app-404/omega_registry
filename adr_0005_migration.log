@@ -2,3 +2,311 @@
 Started: Sun Sep 28 17:06:24 BST 2025
 [2025-09-28 17:06:24] [INFO] Force mode enabled
 [2025-09-28 17:06:24] [INFO] Precondition validation passed
+[2025-09-28 17:06:24] [INFO] Backup branch created successfully
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/addon/src/utils
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/addon/src/registry
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/addon/src/scripts
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/addon/src/tests
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/addon/data/input
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/addon/data/output
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/addon/data/registry
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/addon/support
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/project/docs
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/project/ops/scripts/analytics
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/project/ops/scripts/audit
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/project/ops/scripts/enrich
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/project/ops/scripts/qa
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/project/ops/scripts/transformation
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/project/ops/scripts/legacy
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/project/workspace
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/project/backups
+[2025-09-28 17:06:24] [INFO] Created directory: /Users/evertappels/Projects/omega_registry/project/releases
+[2025-09-28 17:06:24] [INFO] Directory already exists: /Users/evertappels/Projects/omega_registry/addon/src
+[2025-09-28 17:06:24] [INFO] Created file: /Users/evertappels/Projects/omega_registry/addon/src/__init__.py
+[2025-09-28 17:06:24] [INFO] Directory already exists: /Users/evertappels/Projects/omega_registry/addon/src/utils
+[2025-09-28 17:06:24] [INFO] Created file: /Users/evertappels/Projects/omega_registry/addon/src/utils/__init__.py
+[2025-09-28 17:06:24] [INFO] Directory already exists: /Users/evertappels/Projects/omega_registry/addon/src/registry
+[2025-09-28 17:06:24] [INFO] Created file: /Users/evertappels/Projects/omega_registry/addon/src/registry/__init__.py
+[2025-09-28 17:06:24] [INFO] Directory already exists: /Users/evertappels/Projects/omega_registry/addon/src/scripts
+[2025-09-28 17:06:24] [INFO] Created file: /Users/evertappels/Projects/omega_registry/addon/src/scripts/__init__.py
+[2025-09-28 17:06:24] [INFO] Directory already exists: /Users/evertappels/Projects/omega_registry/addon/src/tests
+[2025-09-28 17:06:24] [INFO] Created file: /Users/evertappels/Projects/omega_registry/addon/src/tests/__init__.py
+[2025-09-28 17:06:24] [INFO] Directory already exists: /Users/evertappels/Projects/omega_registry/addon/data
+[2025-09-28 17:06:24] [INFO] Created file: /Users/evertappels/Projects/omega_registry/addon/data/__init__.py
+[2025-09-28 17:06:25] [INFO] Directory already exists: /Users/evertappels/Projects/omega_registry/project
+[2025-09-28 17:06:25] [INFO] Created file: /Users/evertappels/Projects/omega_registry/project/__init__.py
+[2025-09-28 17:06:25] [INFO] Directory already exists: /Users/evertappels/Projects/omega_registry/project/ops
+[2025-09-28 17:06:25] [INFO] Created file: /Users/evertappels/Projects/omega_registry/project/ops/__init__.py
+[2025-09-28 17:06:25] [INFO] Directory already exists: /Users/evertappels/Projects/omega_registry/addon/src/utils
+[2025-09-28 17:06:25] [INFO] Created file: /Users/evertappels/Projects/omega_registry/addon/src/utils/paths.py
+[2025-09-28 17:06:25] [SUCCESS] Phase 1: Directory structure creation completed successfully
+[2025-09-28 17:06:25] [INFO] Directory already exists: addon/src/utils
+[2025-09-28 17:06:25] [ERROR] Failed to move directory: addon/utils -> addon/src/utils/utils
+[2025-09-28 17:06:25] [INFO] Moved 0/1 items matching: addon/utils/*
+[2025-09-28 17:06:25] [INFO] Directory already exists: addon/src/utils
+[2025-09-28 17:06:25] [INFO] Successfully moved: scripts/utils -> addon/src/utils/utils (scripts utilities)
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/logging.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/registry_inputs.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/env_hardening.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/ha_architecture.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/import_path.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/synonyms.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/registry.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/validate_registry_against_mock.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/constants.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/loaders.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/tests
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/__init__.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/README.md
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/subtract_auto_area.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/entity_extract.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/input_list_extract.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/join_utils.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/pre_reboot_entity_loader.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/file_utils.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/output_contract_enforcer.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/pipeline_config.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/ha_core_inputs.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/provenance.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/tagging.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/infer_logic.py
+[2025-09-28 17:06:25] [INFO] Source does not exist, skipping: scripts/utils/compare_duplicate_files.py
+[2025-09-28 17:06:25] [INFO] Moved 27/27 items matching: scripts/utils/*
+[2025-09-28 17:06:25] [INFO] Directory already exists: addon/src/registry
+[2025-09-28 17:06:25] [ERROR] Failed to move directory: addon/registry -> addon/src/registry/registry
+[2025-09-28 17:06:25] [INFO] Directory already exists: addon/src/registry
+[2025-09-28 17:06:26] [ERROR] Failed to move directory: addon/registry/utils -> addon/src/registry/utils
+[2025-09-28 17:06:26] [INFO] Moved 0/2 items matching: addon/registry/*
+[2025-09-28 17:06:26] [INFO] Directory already exists: addon/src/registry
+[2025-09-28 17:06:26] [INFO] Successfully moved: scripts/omega_registry -> addon/src/registry/omega_registry (scripts registry)
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/omega_registry/minimizer.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/omega_registry/audit_writer.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/omega_registry/loaders.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/omega_registry/__init__.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/omega_registry/README.md
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/omega_registry/generator.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/omega_registry/utils.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/omega_registry/writer.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/omega_registry/contract.py
+[2025-09-28 17:06:26] [INFO] Moved 10/10 items matching: scripts/omega_registry/*
+[2025-09-28 17:06:26] [INFO] Directory already exists: addon/src/tests
+[2025-09-28 17:06:26] [ERROR] Failed to move directory: addon/tests -> addon/src/tests/tests
+[2025-09-28 17:06:26] [INFO] Moved 0/1 items matching: addon/tests/*
+[2025-09-28 17:06:26] [INFO] Directory already exists: addon/src/scripts
+[2025-09-28 17:06:26] [INFO] Successfully moved: scripts/generators -> addon/src/scripts/generators (generator scripts)
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/generators/alpha_registry_writer.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/generators/generate_alpha_registry.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/generators/pretty_print_registry.sh
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/generators/tests
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/generators/generate_flatmap.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/generators/README.md
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/generators/sanitize_alpha_room_registry.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/generators/generate_omega_registry.py
+[2025-09-28 17:06:26] [INFO] Moved 9/9 items matching: scripts/generators/*
+[2025-09-28 17:06:26] [INFO] Directory already exists: addon/src/scripts
+[2025-09-28 17:06:26] [INFO] Successfully moved: scripts/addon -> addon/src/scripts/addon (addon CLI scripts)
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/addon/omega_addon_cli.py
+[2025-09-28 17:06:26] [INFO] Moved 2/2 items matching: scripts/addon/*
+[2025-09-28 17:06:26] [INFO] Directory already exists: addon/src/scripts
+[2025-09-28 17:06:26] [INFO] Successfully moved: scripts/tools -> addon/src/scripts/tools (utility tools)
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/tools/meta_build_manifest.py
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/tools/README.md
+[2025-09-28 17:06:26] [INFO] Source does not exist, skipping: scripts/tools/meta_build_readme.py
+[2025-09-28 17:06:26] [INFO] Moved 4/4 items matching: scripts/tools/*
+[2025-09-28 17:06:26] [INFO] Directory already exists: addon/src/scripts
+[2025-09-28 17:06:26] [INFO] Successfully moved: scripts/omega_pipeline_main.py -> addon/src/scripts/omega_pipeline_main.py (main pipeline)
+[2025-09-28 17:06:26] [SUCCESS] Phase 2: Pure library code migration completed successfully
+[2025-09-28 17:06:27] [INFO] Directory already exists: addon/data
+[2025-09-28 17:06:27] [INFO] Successfully moved: canonical -> addon/data/canonical (canonical data)
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/derived_views
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/.DS_Store
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/omega_registry_master.json
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/omega_registry_master.audit.json
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/registry_alias
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/README.md
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/logs
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/support
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/data_export
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/omega_registry_master.provenance.json
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/omega_registry_master.pretty.json
+[2025-09-28 17:06:27] [INFO] Source does not exist, skipping: canonical/enrichment_sources
+[2025-09-28 17:06:27] [INFO] Moved 13/13 items matching: canonical/*
+[2025-09-28 17:06:27] [INFO] Directory already exists: addon/data/input
+[2025-09-28 17:06:27] [ERROR] Failed to move directory: addon/input -> addon/data/input/input
+[2025-09-28 17:06:27] [INFO] Directory already exists: addon/data/input
+[2025-09-28 17:06:27] [ERROR] Failed to move file: addon/input/storage_0720.tar.gz -> addon/data/input/storage_0720.tar.gz
+[2025-09-28 17:06:27] [INFO] Moved 0/2 items matching: addon/input/*
+[2025-09-28 17:06:27] [INFO] Directory already exists: addon/data/output
+[2025-09-28 17:06:27] [ERROR] Failed to move directory: addon/output -> addon/data/output/output
+[2025-09-28 17:06:27] [INFO] Directory already exists: addon/data/output
+[2025-09-28 17:06:27] [ERROR] Failed to move directory: addon/output/pipeline_metrics -> addon/data/output/pipeline_metrics
+[2025-09-28 17:06:27] [INFO] Directory already exists: addon/data/output
+[2025-09-28 17:06:28] [ERROR] Failed to move directory: addon/output/rehydration -> addon/data/output/rehydration
+[2025-09-28 17:06:28] [INFO] Directory already exists: addon/data/output
+[2025-09-28 17:06:28] [ERROR] Failed to move directory: addon/output/omega_room -> addon/data/output/omega_room
+[2025-09-28 17:06:28] [INFO] Directory already exists: addon/data/output
+[2025-09-28 17:06:28] [ERROR] Failed to move directory: addon/output/migration_diagnostics -> addon/data/output/migration_diagnostics
+[2025-09-28 17:06:28] [INFO] Directory already exists: addon/data/output
+[2025-09-28 17:06:28] [ERROR] Failed to move directory: addon/output/fingerprinting_run -> addon/data/output/fingerprinting_run
+[2025-09-28 17:06:28] [INFO] Directory already exists: addon/data/output
+[2025-09-28 17:06:28] [ERROR] Failed to move directory: addon/output/debug -> addon/data/output/debug
+[2025-09-28 17:06:28] [INFO] Moved 0/7 items matching: addon/output/*
+[2025-09-28 17:06:28] [INFO] Directory already exists: addon/support
+[2025-09-28 17:06:28] [INFO] Successfully moved: support -> addon/support/support (support files)
+[2025-09-28 17:06:28] [INFO] Source does not exist, skipping: support/.DS_Store
+[2025-09-28 17:06:28] [INFO] Source does not exist, skipping: support/docs
+[2025-09-28 17:06:28] [INFO] Source does not exist, skipping: support/joins
+[2025-09-28 17:06:28] [INFO] Moved 4/4 items matching: support/*
+[2025-09-28 17:06:28] [SUCCESS] Phase 3: Data and I/O migration completed successfully
+[2025-09-28 17:06:28] [INFO] Directory already exists: project/docs
+[2025-09-28 17:06:28] [INFO] Successfully moved: docs -> project/docs/docs (documentation)
+[2025-09-28 17:06:28] [INFO] Source does not exist, skipping: docs/ADR
+[2025-09-28 17:06:28] [INFO] Source does not exist, skipping: docs/ADDON_CONTRACT.md
+[2025-09-28 17:06:28] [INFO] Moved 3/3 items matching: docs/*
+[2025-09-28 17:06:28] [INFO] Directory already exists: project/ops/scripts/analytics
+[2025-09-28 17:06:28] [INFO] Successfully moved: scripts/analytics -> project/ops/scripts/analytics/analytics (analytics scripts)
+[2025-09-28 17:06:28] [INFO] Source does not exist, skipping: scripts/analytics/repair_alpha_room_registry.py
+[2025-09-28 17:06:28] [INFO] Source does not exist, skipping: scripts/analytics/README.md
+[2025-09-28 17:06:28] [INFO] Source does not exist, skipping: scripts/analytics/validate_registry_quality.py
+[2025-09-28 17:06:28] [INFO] Source does not exist, skipping: scripts/analytics/analyze_omega_registry.py
+[2025-09-28 17:06:28] [INFO] Source does not exist, skipping: scripts/analytics/metrics_diff.py
+[2025-09-28 17:06:28] [INFO] Source does not exist, skipping: scripts/analytics/finalize_alpha_room_registry.py
+[2025-09-28 17:06:28] [INFO] Moved 7/7 items matching: scripts/analytics/*
+[2025-09-28 17:06:29] [INFO] Directory already exists: project/ops/scripts/audit
+[2025-09-28 17:06:29] [INFO] Successfully moved: scripts/audit -> project/ops/scripts/audit/audit (audit scripts)
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/audit/README.md
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/audit/flatmap_inference_signal_audit.py
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/audit/audit_pipeline.py
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/audit/audit_contract_compliance.py
+[2025-09-28 17:06:29] [INFO] Moved 5/5 items matching: scripts/audit/*
+[2025-09-28 17:06:29] [INFO] Directory already exists: project/ops/scripts/enrich
+[2025-09-28 17:06:29] [INFO] Successfully moved: scripts/enrich -> project/ops/scripts/enrich/enrich (enrichment scripts)
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/enrich/enrichers
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/enrich/enrich_config_entry.py
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/enrich/.DS_Store
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/enrich/test_area_floor_enricher.py
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/enrich/normalize.py
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/enrich/test_normalize_entity_fields.py
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/enrich/tests
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/enrich/__init__.py
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/enrich/enrich_orchestrator.py
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/enrich/README.md
+[2025-09-28 17:06:29] [INFO] Source does not exist, skipping: scripts/enrich/field_contracts.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/enrich/label_enricher.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/enrich/test_tier_enricher.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/enrich/test_name_enricher.py
+[2025-09-28 17:06:30] [INFO] Moved 15/15 items matching: scripts/enrich/*
+[2025-09-28 17:06:30] [INFO] Directory already exists: project/ops/scripts/qa
+[2025-09-28 17:06:30] [INFO] Successfully moved: scripts/qa -> project/ops/scripts/qa/qa (QA scripts)
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/qa/test_registry_minimization.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/qa/test_enrichment_engine.py
+[2025-09-28 17:06:30] [INFO] Moved 3/3 items matching: scripts/qa/*
+[2025-09-28 17:06:30] [INFO] Directory already exists: project/ops/scripts/transformation
+[2025-09-28 17:06:30] [INFO] Successfully moved: scripts/transformation -> project/ops/scripts/transformation/transformation (transformation scripts)
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/transformation/refine_enriched_device_registry.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/transformation/omega_enrichment_metadata.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/transformation/data_export.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/transformation/README.md
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/transformation/build_enriched_device_map.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/transformation/hestia_pre_reboot_parser.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/transformation/crossref.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/transformation/tiers_test_harness.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/transformation/tiers.py
+[2025-09-28 17:06:30] [INFO] Moved 10/10 items matching: scripts/transformation/*
+[2025-09-28 17:06:30] [INFO] Directory already exists: project/ops/scripts/legacy
+[2025-09-28 17:06:30] [INFO] Successfully moved: scripts/legacy -> project/ops/scripts/legacy/legacy (legacy scripts)
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/legacy/enrich_config_entry.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/legacy/enrichment_engine.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/legacy/enrich_device_registry.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/legacy/enrich_via_device_id.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/legacy/README.md
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/legacy/enrich_mac.py
+[2025-09-28 17:06:30] [INFO] Source does not exist, skipping: scripts/legacy/enrich_serial.py
+[2025-09-28 17:06:30] [INFO] Moved 8/8 items matching: scripts/legacy/*
+[2025-09-28 17:06:30] [INFO] Directory already exists: project/workspace
+[2025-09-28 17:06:30] [INFO] Successfully moved: ./registry_rehydration_local.code-workspace -> project/workspace/registry_rehydration_local.code-workspace (VS Code workspaces)
+[2025-09-28 17:06:31] [INFO] Directory already exists: project/workspace
+[2025-09-28 17:06:31] [INFO] Successfully moved: ./omega_registry.code-workspace -> project/workspace/omega_registry.code-workspace (VS Code workspaces)
+[2025-09-28 17:06:31] [INFO] Moved 2/2 items matching: *.code-workspace
+[2025-09-28 17:06:31] [INFO] Directory already exists: project/workspace
+[2025-09-28 17:06:31] [INFO] Successfully moved: .vscode -> project/workspace/.vscode (VS Code settings)
+[2025-09-28 17:06:31] [INFO] Directory already exists: project/backups
+[2025-09-28 17:06:31] [ERROR] Failed to move directory: _backups -> project/backups/_backups
+[2025-09-28 17:06:31] [INFO] Directory already exists: project/backups
+[2025-09-28 17:06:31] [ERROR] Failed to move file: _backups/omega_registry_canonical_20250721_190319.tar.gz -> project/backups/omega_registry_canonical_20250721_190319.tar.gz
+[2025-09-28 17:06:31] [INFO] Directory already exists: project/backups
+[2025-09-28 17:06:31] [ERROR] Failed to move file: _backups/omega_registry-pre-scrub.bundle -> project/backups/omega_registry-pre-scrub.bundle
+[2025-09-28 17:06:31] [INFO] Directory already exists: project/backups
+[2025-09-28 17:06:31] [ERROR] Failed to move file: _backups/omega_registry_canonical_20250721_182507.tar.gz -> project/backups/omega_registry_canonical_20250721_182507.tar.gz
+[2025-09-28 17:06:31] [INFO] Directory already exists: project/backups
+[2025-09-28 17:06:31] [ERROR] Failed to move file: _backups/registry_rehydration_local-20250719T1318.tar.gz -> project/backups/registry_rehydration_local-20250719T1318.tar.gz
+[2025-09-28 17:06:32] [INFO] Directory already exists: project/backups
+[2025-09-28 17:06:32] [ERROR] Failed to move file: _backups/omega_registry-cleaned-mirror.bundle -> project/backups/omega_registry-cleaned-mirror.bundle
+[2025-09-28 17:06:32] [INFO] Directory already exists: project/backups
+[2025-09-28 17:06:33] [ERROR] Failed to move file: _backups/omega_registry-before-filter.bundle -> project/backups/omega_registry-before-filter.bundle
+[2025-09-28 17:06:34] [INFO] Directory already exists: project/backups
+[2025-09-28 17:06:35] [ERROR] Failed to move file: _backups/omega_registry-scrubbed.bundle -> project/backups/omega_registry-scrubbed.bundle
+[2025-09-28 17:06:36] [INFO] Directory already exists: project/backups
+[2025-09-28 17:06:36] [ERROR] Failed to move file: _backups/canonical_backup_2025-09-21_06-34-33.tar.gz -> project/backups/canonical_backup_2025-09-21_06-34-33.tar.gz
+[2025-09-28 17:06:36] [INFO] Moved 0/9 items matching: _backups/*
+[2025-09-28 17:06:36] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:37] [ERROR] Failed to move directory: _tarballs -> project/releases/_tarballs
+[2025-09-28 17:06:37] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:38] [ERROR] Failed to move file: _tarballs/registry_rehydration_snapshot_20250720_100725.tar.gz -> project/releases/registry_rehydration_snapshot_20250720_100725.tar.gz
+[2025-09-28 17:06:38] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:38] [ERROR] Failed to move file: _tarballs/registry_rehydration_snapshot_20250717_173038.tar.gz -> project/releases/registry_rehydration_snapshot_20250717_173038.tar.gz
+[2025-09-28 17:06:39] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:39] [ERROR] Failed to move file: _tarballs/TARBALL-ROUNDTRIP-AUDIT-V2-PHASE5-FINALIZED.tar.gz -> project/releases/TARBALL-ROUNDTRIP-AUDIT-V2-PHASE5-FINALIZED.tar.gz
+[2025-09-28 17:06:39] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:39] [ERROR] Failed to move file: _tarballs/TARBALL-OMEGA-ROOM-REGISTRY-STRICT-FINAL-CORRECTED.tar.gz -> project/releases/TARBALL-OMEGA-ROOM-REGISTRY-STRICT-FINAL-CORRECTED.tar.gz
+[2025-09-28 17:06:39] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:39] [ERROR] Failed to move file: _tarballs/registry_rehydration_changes_20250718_191823.tar.gz -> project/releases/registry_rehydration_changes_20250718_191823.tar.gz
+[2025-09-28 17:06:39] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:39] [ERROR] Failed to move file: _tarballs/registry_rehydration_snapshot_20250717_2.tar.gz -> project/releases/registry_rehydration_snapshot_20250717_2.tar.gz
+[2025-09-28 17:06:40] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:40] [ERROR] Failed to move file: _tarballs/TARBALL-ROUNDTRIP-AUDIT-V2-PHASE6.tar.gz -> project/releases/TARBALL-ROUNDTRIP-AUDIT-V2-PHASE6.tar.gz
+[2025-09-28 17:06:40] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:40] [ERROR] Failed to move file: _tarballs/registry_rehydration_project_clean_20250711_0137.tar.gz -> project/releases/registry_rehydration_project_clean_20250711_0137.tar.gz
+[2025-09-28 17:06:40] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:40] [ERROR] Failed to move file: _tarballs/registry_rehydration_project_clean_20250712_1118.tar.gz -> project/releases/registry_rehydration_project_clean_20250712_1118.tar.gz
+[2025-09-28 17:06:40] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:40] [ERROR] Failed to move file: _tarballs/registry_rehydration_project_clean_20250711_0132.tar.gz -> project/releases/registry_rehydration_project_clean_20250711_0132.tar.gz
+[2025-09-28 17:06:40] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:40] [ERROR] Failed to move file: _tarballs/registry_rehydration_local_20250716_144324.tar.gz -> project/releases/registry_rehydration_local_20250716_144324.tar.gz
+[2025-09-28 17:06:40] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:40] [ERROR] Failed to move file: _tarballs/registry_rehydration_project_clean_20250712_1905.tar.gz -> project/releases/registry_rehydration_project_clean_20250712_1905.tar.gz
+[2025-09-28 17:06:40] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:40] [ERROR] Failed to move file: _tarballs/registry_rehydration_local.trimmed.tar.gz -> project/releases/registry_rehydration_local.trimmed.tar.gz
+[2025-09-28 17:06:40] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:41] [ERROR] Failed to move file: _tarballs/registry_rehydration_project_clean_20250713_0046.tar.gz -> project/releases/registry_rehydration_project_clean_20250713_0046.tar.gz
+[2025-09-28 17:06:41] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:41] [ERROR] Failed to move file: _tarballs/TARBALL-ROUNDTRIP-AUDIT-V2-PHASE7-MERGED.tar.gz -> project/releases/TARBALL-ROUNDTRIP-AUDIT-V2-PHASE7-MERGED.tar.gz
+[2025-09-28 17:06:41] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:41] [ERROR] Failed to move file: _tarballs/TARBALL-ROUNDTRIP-AUDIT-V2-PHASE7-MERGED-ACTUAL.tar.gz -> project/releases/TARBALL-ROUNDTRIP-AUDIT-V2-PHASE7-MERGED-ACTUAL.tar.gz
+[2025-09-28 17:06:41] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:41] [ERROR] Failed to move file: _tarballs/TARBALL-AREA-RESOLUTION-DIAGNOSTICS-V1.tar.gz -> project/releases/TARBALL-AREA-RESOLUTION-DIAGNOSTICS-V1.tar.gz
+[2025-09-28 17:06:41] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:41] [ERROR] Failed to move file: _tarballs/STRICT-CLUSTERING-OUTPUTS-20250717-FINAL.tar.gz -> project/releases/STRICT-CLUSTERING-OUTPUTS-20250717-FINAL.tar.gz
+[2025-09-28 17:06:41] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:41] [ERROR] Failed to move file: _tarballs/registry_rehydration_project_clean.tar.gz -> project/releases/registry_rehydration_project_clean.tar.gz
+[2025-09-28 17:06:41] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:41] [ERROR] Failed to move file: _tarballs/registry_rehydration_project_clean_20250711_2228.tar.gz -> project/releases/registry_rehydration_project_clean_20250711_2228.tar.gz
+[2025-09-28 17:06:41] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:41] [ERROR] Failed to move file: _tarballs/STRICT-CLUSTERING-OUTPUTS-20250717.tar.gz -> project/releases/STRICT-CLUSTERING-OUTPUTS-20250717.tar.gz
+[2025-09-28 17:06:41] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:41] [ERROR] Failed to move file: _tarballs/TARBALL-ALPHA-FINGERPRINT-RECON-V3.tar.gz -> project/releases/TARBALL-ALPHA-FINGERPRINT-RECON-V3.tar.gz
+[2025-09-28 17:06:41] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:41] [ERROR] Failed to move file: _tarballs/registry_rehydration_snapshot_20250717_182455.tar.gz -> project/releases/registry_rehydration_snapshot_20250717_182455.tar.gz
+[2025-09-28 17:06:42] [INFO] Directory already exists: project/releases
+[2025-09-28 17:06:42] [ERROR] Failed to move file: _tarballs/TARBALL-OMEGA-ROOM-REGISTRY-STRICT-FINAL-FIXED.tar.gz -> project/releases/TARBALL-OMEGA-ROOM-REGISTRY-STRICT-FINAL-FIXED.tar.gz
+[2025-09-28 17:06:42] [INFO] Moved 0/25 items matching: _tarballs/*
+[2025-09-28 17:06:42] [SUCCESS] Phase 4: Project metadata migration completed successfully
+[2025-09-28 17:06:42] [INFO] Updated import statements in addon/src/
+[2025-09-28 17:06:42] [INFO] Updated pyproject.toml packages configuration
+[2025-09-28 17:06:42] [INFO] Updated .gitignore with new structure patterns
+[2025-09-28 17:06:42] [SUCCESS] Phase 5: Configuration updates completed successfully
+[2025-09-28 17:06:42] [WARN] ADR-0005 compliance validator not found
+[2025-09-28 17:06:42] [SUCCESS] Import safety validation successful
+[2025-09-28 17:06:43] [INFO] Removed empty directory: addon/utils
+[2025-09-28 17:06:43] [INFO] Removed empty directory: addon/tests
+[2025-09-28 17:06:43] [SUCCESS] Phase 6: Validation and cleanup completed successfully
