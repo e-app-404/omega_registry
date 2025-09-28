@@ -1,34 +1,4 @@
 === ADR-0005 Machine-Driven Migration Log ===
-Started: Sun Sep 28 16:51:23 BST 2025
-[2025-09-28 16:51:23] [INFO] Dry-run mode enabled
-[2025-09-28 16:51:23] [INFO] Force mode enabled
-[2025-09-28 16:51:23] [INFO] Precondition validation passed
-[2025-09-28 16:51:23] [SUCCESS] Phase 1: Directory structure creation completed successfully
-[2025-09-28 16:51:23] [INFO] Moved 1/1 items matching: addon/utils/*
-[2025-09-28 16:51:23] [INFO] Moved 27/27 items matching: scripts/utils/*
-[2025-09-28 16:51:23] [INFO] Moved 2/2 items matching: addon/registry/*
-[2025-09-28 16:51:24] [INFO] Moved 10/10 items matching: scripts/omega_registry/*
-[2025-09-28 16:51:24] [INFO] Moved 1/1 items matching: addon/tests/*
-[2025-09-28 16:51:24] [INFO] Moved 9/9 items matching: scripts/generators/*
-[2025-09-28 16:51:24] [INFO] Moved 2/2 items matching: scripts/addon/*
-[2025-09-28 16:51:24] [INFO] Moved 4/4 items matching: scripts/tools/*
-[2025-09-28 16:51:24] [SUCCESS] Phase 2: Pure library code migration completed successfully
-[2025-09-28 16:51:24] [INFO] Moved 13/13 items matching: canonical/*
-[2025-09-28 16:51:24] [INFO] Moved 2/2 items matching: addon/input/*
-[2025-09-28 16:51:24] [INFO] Moved 7/7 items matching: addon/output/*
-[2025-09-28 16:51:24] [INFO] Moved 4/4 items matching: support/*
-[2025-09-28 16:51:24] [SUCCESS] Phase 3: Data and I/O migration completed successfully
-[2025-09-28 16:51:24] [INFO] Moved 3/3 items matching: docs/*
-[2025-09-28 16:51:24] [INFO] Moved 7/7 items matching: scripts/analytics/*
-[2025-09-28 16:51:24] [INFO] Moved 5/5 items matching: scripts/audit/*
-[2025-09-28 16:51:24] [INFO] Moved 15/15 items matching: scripts/enrich/*
-[2025-09-28 16:51:24] [INFO] Moved 3/3 items matching: scripts/qa/*
-[2025-09-28 16:51:24] [INFO] Moved 10/10 items matching: scripts/transformation/*
-[2025-09-28 16:51:24] [INFO] Moved 8/8 items matching: scripts/legacy/*
-[2025-09-28 16:51:24] [INFO] Moved 2/2 items matching: *.code-workspace
-[2025-09-28 16:51:24] [INFO] Moved 9/9 items matching: _backups/*
-[2025-09-28 16:51:24] [INFO] Moved 25/25 items matching: _tarballs/*
-[2025-09-28 16:51:24] [SUCCESS] Phase 4: Project metadata migration completed successfully
-[2025-09-28 16:51:24] [SUCCESS] Phase 5: Configuration updates completed successfully
-[2025-09-28 16:51:24] [SUCCESS] Phase 6: Validation and cleanup completed successfully
-[2025-09-28 16:51:24] [SUCCESS] Migration completed in 1s with 0 errors, 0 warnings
+Started: Sun Sep 28 17:06:24 BST 2025
+[2025-09-28 17:06:24] [INFO] Force mode enabled
+[2025-09-28 17:06:24] [INFO] Precondition validation passed
