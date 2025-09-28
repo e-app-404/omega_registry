@@ -30,7 +30,6 @@
     "editor.defaultFormatter": "keesschollaart.vscode-home-assistant"
   },
   "[yaml]": {
-
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.formatOnSave": true,
@@ -62,6 +61,7 @@
   "editor.formatOnSave": true,
   "editor.unicodeHighlight.includeStrings": false,
   "python.envFile": "${workspaceFolder}/.env",
+  "python.terminal.useEnvFile": true,
   "python.analysis.extraPaths": [
     "src"
   ],

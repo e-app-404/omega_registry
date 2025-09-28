@@ -1,5 +1,6 @@
 ---
-title: "ADR-000x: Example Policy"
+id: ADR-000x
+title: "Example Policy"
 date: 2025-08-27
 authors:
   - "Author 1"

@@ -1,5 +1,6 @@
 ---
-title: "ADR-0003: Workspace Shape and I/O Strategy"
+id: ADR-0003
+title: "Workspace Shape and I/O Strategy"
 date: 2025-09-22
 status: Accepted
 author:

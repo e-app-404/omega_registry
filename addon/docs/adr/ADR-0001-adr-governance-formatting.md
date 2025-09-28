@@ -1,5 +1,6 @@
 ---
-title: "ADR-0001: ADR Governance, Redaction, and Formatting Policy"
+id: ADR-0001
+title: "ADR Governance, Redaction, and Formatting Policy"
 date: 2025-09-21
 status: Accepted
 author:

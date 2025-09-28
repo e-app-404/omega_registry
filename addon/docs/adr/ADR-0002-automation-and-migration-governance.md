@@ -1,5 +1,6 @@
 ---
-title: "ADR-0002: Automation & Migration Governance"
+id: ADR-0002
+title: "Automation & Migration Governance"
 date: 2025-09-22
 status: Accepted
 author:
