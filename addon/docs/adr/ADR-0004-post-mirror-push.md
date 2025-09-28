@@ -2,16 +2,19 @@
 id: ADR-0004
 Title: "Post-mirror push workflow and NAS mirror governance"
 Date: 2025-09-25
-Status: Proposed
+Status: Accepted
 Authors: Evert Appels
 related: []
 supersedes: []
 tags: ["git", "lfs", "mirror", "nas", "github", "workflow", "adr", "policy", "governance"]
+last_updated: 2025-09-28
 ---
 
 ## Context
 
 This ADR documents the conservative, safety-first workflow used to mirror and publish the Omega Registry repository to GitHub and to an on-prem NAS mirror. It records the decisions, commands, and responsibilities created during the migration and scrub work in September 2025. The goal is to provide a clear, repeatable process for pushing cleaned history, managing Git LFS, and mirroring to the NAS while minimizing the risk of leaking secrets or pushing oversized artifacts.
+
+**Operational topology reference**: This ADR implements the "Omega Registry" workspace configuration defined in `./workspace_ops_export.yaml`. The topology file contains the complete network setup, remote configurations, LFS policies, and CI/CD workflow definitions that this ADR documents in detail.
 
 ## Decision
 
@@ -114,7 +117,7 @@ These commands are the exact steps used during the migration. Run them from a se
 
 ## GitHub Actions: Mirror workflow
 
-The key-gated workflow is located at `.github/workflows/mirror-to-nas.yml` and is configured to:
+The key-gated workflow is located at `.github/workflows/mirror-to-nas.yml` (as defined in `workspace_ops_export.yaml` under `ci_cd.workflows`) and is configured to:
 
 - Run on push to `main` (and optionally on push tags).
 - Fetch full history (fetch-depth: 0) to ensure tags and all refs are present.
@@ -149,6 +152,7 @@ If `NAS_SSH_KEY` is not present in the repository secrets, the job exits cleanly
 - `_backups/omega_registry-cleaned-mirror.bundle` — cleaned mirror (~3.3MB)
 - `_backups/omega_registry-scrubbed.bundle` — final scrubbed bundle (~3.3MB)
 - `.github/workflows/mirror-to-nas.yml` — key-gated NAS mirror workflow
+- `workspace_ops_export.yaml` — operational topology configuration (LLM discovery)
 - `addon/docs/git_remote_strategy.md` — remote topology and LFS pin guidance
 
 ## Assumptions & Preconditions (visible & explicit)
@@ -239,4 +243,10 @@ After review and rotations, if everything is green, escalate to an admin to perf
 - Backups (`_backups/`) verified and retained.
 
 Once the above are satisfied, a privileged maintainer can replace `main` with the scrubbed history as agreed by governance.
+
+## See Also
+
+- `./workspace_ops_export.yaml` — Complete operational topology configuration for LLM assistants
+- `README.md` — Project overview with operational topology reference
+- `.github/workflows/mirror-to-nas.yml` — Automated NAS mirroring implementation
 

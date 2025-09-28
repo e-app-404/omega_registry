@@ -15,7 +15,8 @@ workspaces:
         - name: "origin"
           url: "ssh://gituser@192.168.0.104/volume1/git-mirrors/ha-config.git"
           role: "push"
-          push_refspecs: ["+refs/heads/main:refs/heads/main", "+refs/tags/*:refs/tags/*"]
+          push_refspecs:
+            ["+refs/heads/main:refs/heads/main", "+refs/tags/*:refs/tags/*"]
         - name: "tailnet"
           url: "ssh://gituser@100.93.61.53/volume1/git-mirrors/ha-config.git"
           role: "fetch-only"
@@ -84,7 +85,8 @@ workspaces:
         - name: "origin"
           url: "ssh://gituser@ds220plus.reverse-beta.ts.net/volume1/git-mirrors/ha-config.git"
           role: "push"
-          push_refspecs: ["+refs/heads/main:refs/heads/main", "+refs/tags/*:refs/tags/*"]
+          push_refspecs:
+            ["+refs/heads/main:refs/heads/main", "+refs/tags/*:refs/tags/*"]
         # Optional GitHub remote to add via setup steps (kept out of current state to avoid assumptions)
         # - name: "github"
         #   url: "https://github.com/e-app-404/ha-bb8-addon"
@@ -97,7 +99,13 @@ workspaces:
       nas_hostnames: ["ds220plus.reverse-beta.ts.net"]
     governance:
       protected_branches: ["main"]
-      pr_checks_required: ["lint", "tests", "guardrails/index-regeneration", "guard-size-symlinks"]
+      pr_checks_required:
+        [
+          "lint",
+          "tests",
+          "guardrails/index-regeneration",
+          "guard-size-symlinks",
+        ]
       commit_signing_required: false
     files:
       expects_large_binaries: false
@@ -152,11 +160,13 @@ workspaces:
         - name: "origin"
           url: "ssh://gituser@ds220plus.reverse-beta.ts.net/volume1/git/omega_registry.git"
           role: "mirror"
-          push_refspecs: ["+refs/heads/main:refs/heads/main", "+refs/tags/*:refs/tags/*"]
+          push_refspecs:
+            ["+refs/heads/main:refs/heads/main", "+refs/tags/*:refs/tags/*"]
         - name: "github"
           url: "https://github.com/e-app-404/omega_registry.git"
           role: "push"
-          push_refspecs: ["+refs/heads/*:refs/heads/*", "+refs/tags/*:refs/tags/*"]
+          push_refspecs:
+            ["+refs/heads/*:refs/heads/*", "+refs/tags/*:refs/tags/*"]
     network:
       lan_ip: "192.168.0.104"
       tailnet_ip: "100.x.y.z"
@@ -210,7 +220,7 @@ workspaces:
         - symptom: "Mirror job times out"
           cause: "NAS unreachable from GitHub-hosted runners"
           fix: "Use self-hosted runner on LAN/Tailnet or expose NAS over reachable address; ensure NAS_SSH_KEY is configured"
-    notes: "LFS pinned to GitHub; NAS is a mirror via workflow gated by NAS_SSH_KEY."
+    notes: "LFS pinned to GitHub; NAS is a mirror via workflow gated by NAS_SSH_KEY. See ADR-0004 (addon/docs/adr/ADR-0004-post-mirror-push.md) for detailed mirror workflow and security procedures."
 
 embed_files:
   # --- BB-8 Add-on & (optionally) Omega: size/symlink guard ---
