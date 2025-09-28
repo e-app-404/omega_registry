@@ -1,0 +1,82 @@
+# Cross-Repository ADR System - .gitignore Additions
+# Add these patterns to your repository's .gitignore file to exclude
+# temporary files and sensitive information from the ADR system.
+
+# ADR System Generated Files
+docs/ADR/validation-report.json
+docs/ADR/validation-report.yaml
+docs/ADR/validation-report.md
+docs/ADR/.validation-cache/
+docs/ADR/deployment.log
+
+# ADR Operations Directory (contains validation scripts and configs)
+ops/ADR/.cache/
+ops/ADR/logs/
+ops/ADR/temp/
+ops/ADR/*.log
+
+# Temporary ADR Files
+docs/ADR/*~
+docs/ADR/*.tmp
+docs/ADR/*.bak
+docs/ADR/.draft-*
+docs/ADR/temp-adr-*
+
+# Cross-Repository Validation Cache
+.adr-validation-cache
+.cross-repo-cache/
+repository-status.json
+alignment-cache.json
+
+# Editor and IDE Files (ADR-specific)
+docs/ADR/.vscode/
+docs/ADR/.idea/
+docs/ADR/*.swp
+docs/ADR/*.swo
+docs/ADR/*~
+
+# OS-Specific Files in ADR Directory
+docs/ADR/.DS_Store
+docs/ADR/Thumbs.db
+docs/ADR/desktop.ini
+
+# Deployment Bundle Temporary Files
+docs/ADR/deployment-bundle/.deployed
+docs/ADR/deployment-bundle/logs/
+docs/ADR/deployment-bundle/.temp/
+docs/ADR/deployment-bundle/*.log
+
+# Validation Script Outputs
+ops/ADR/link-validation-*.json
+ops/ADR/template-validation-*.json
+ops/ADR/alignment-check-*.json
+ops/ADR/validation-summary-*.html
+
+# Security and Authentication
+ops/ADR/.env
+ops/ADR/.secrets
+ops/ADR/github-token.txt
+docs/ADR/.credentials
+repository-access-tokens.json
+
+# Performance and Debugging
+*.prof
+*.trace
+validation-performance.json
+debug-*.log
+timing-analysis.json
+
+# Platform-Specific ADR Files
+# macOS
+docs/ADR/**/.DS_Store
+ops/ADR/**/.DS_Store
+
+# Windows
+docs/ADR/**/Thumbs.db
+docs/ADR/**/desktop.ini
+ops/ADR/**/Thumbs.db
+ops/ADR/**/desktop.ini
+
+# Linux
+docs/ADR/**/*~
+ops/ADR/**/*~

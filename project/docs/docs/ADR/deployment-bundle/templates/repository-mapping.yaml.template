@@ -1,0 +1,225 @@
+# Cross-Repository ADR Mapping Configuration
+# This file defines the relationships between repositories in your ecosystem
+# for cross-repository Architecture Decision Record (ADR) validation and linking.
+
+# DEPLOYMENT INSTRUCTIONS:
+# 1. Customize all {PLACEHOLDER} values for your organization
+# 2. Save as 'repository-mapping.yaml' in your docs/ADR/ directory
+# 3. Ensure all repository URLs are accessible to validation scripts
+# 4. Test with validation scripts before committing
+
+---
+# 🌐 Ecosystem Configuration
+ecosystem:
+  name: "{ORG} Software Ecosystem"
+  primary_repository: "{ORG}/{PRIMARY_REPO}"
+  adr_standard_version: "2.0.0"
+  last_updated: "{YYYY-MM-DD}"
+  contact: "{MAINTAINER_EMAIL}"
+
+# 📋 Repository Registry
+repositories:
+  # Primary repository - where core architectural decisions are made
+  primary:
+    name: "{ORG}/{PRIMARY_REPO}"
+    url: "https://github.com/{ORG}/{PRIMARY_REPO}"
+    adr_path: "docs/ADR"
+    role: "primary"
+    description: "Primary repository for {PROJECT_DESCRIPTION}"
+    maintainers:
+      - "{MAINTAINER_EMAIL}"
+    validation_enabled: true
+    auto_sync: true
+
+  # Related repositories that implement or depend on primary decisions
+  related:
+    - name: "{ORG}/{RELATED_REPO_1}"
+      url: "https://github.com/{ORG}/{RELATED_REPO_1}"
+      adr_path: "docs/ADR"
+      role: "implementation"
+      description: "{REPO_1_DESCRIPTION}"
+      maintainers:
+        - "{REPO_1_MAINTAINER_EMAIL}"
+      validation_enabled: true
+      auto_sync: false
+      dependencies:
+        - "{ORG}/{PRIMARY_REPO}"
+
+    - name: "{ORG}/{RELATED_REPO_2}"
+      url: "https://github.com/{ORG}/{RELATED_REPO_2}"
+      adr_path: "docs/ADR"
+      role: "configuration"
+      description: "{REPO_2_DESCRIPTION}"
+      maintainers:
+        - "{REPO_2_MAINTAINER_EMAIL}"
+      validation_enabled: true
+      auto_sync: false
+      dependencies:
+        - "{ORG}/{PRIMARY_REPO}"
+
+    # ADD MORE REPOSITORIES AS NEEDED
+    # - name: "{ORG}/{ADDITIONAL_REPO}"
+    #   url: "https://github.com/{ORG}/{ADDITIONAL_REPO}"
+    #   adr_path: "docs/ADR"
+    #   role: "supporting|implementation|configuration|documentation"
+    #   description: "{ADDITIONAL_REPO_DESCRIPTION}"
+    #   maintainers:
+    #     - "{ADDITIONAL_MAINTAINER_EMAIL}"
+    #   validation_enabled: true
+    #   auto_sync: false
+    #   dependencies:
+    #     - "{ORG}/{PRIMARY_REPO}"
+
+# 🔗 Cross-Repository Linking Rules
+linking_rules:
+  # URL patterns for cross-repository ADR references
+  url_patterns:
+    github: "https://github.com/{org}/{repo}/blob/main/docs/ADR/{adr_file}"
+    gitlab: "https://gitlab.com/{org}/{repo}/-/blob/main/docs/ADR/{adr_file}"
+    # ADD CUSTOM PATTERNS AS NEEDED
+
+  # Validation rules for cross-repository links
+  validation:
+    check_url_accessibility: true
+    verify_target_exists: true
+    validate_bidirectional_links: false  # Set to true for strict bidirectional linking
+    allow_external_references: true
+    timeout_seconds: 10
+
+  # Link relationship types
+  relationship_types:
+    - "implements"      # Target ADR implements decisions from source ADR
+    - "depends_on"      # Target ADR depends on decisions from source ADR
+    - "supersedes"      # Target ADR replaces source ADR
+    - "related"         # Target ADR is related to source ADR
+    - "conflicts"       # Target ADR conflicts with source ADR (requires resolution)
+
+# ⚙️ Validation Configuration
+validation:
+  # Validation script settings
+  scripts:
+    link_validator: "ops/ADR/validate_cross_repo_links.sh"
+    status_checker: "ops/ADR/check_alignment_status.sh"
+    template_validator: "ops/ADR/validate_adr_template.sh"
+
+  # Validation triggers
+  triggers:
+    on_pr: true           # Validate on pull requests
+    on_commit: false      # Skip validation on direct commits
+    on_schedule: true     # Run scheduled validation
+    schedule_cron: "0 2 * * 1"  # Weekly on Monday at 2 AM
+
+  # Validation thresholds
+  thresholds:
+    max_broken_links: 0   # Fail if any cross-repo links are broken
+    max_validation_time: 300  # Fail if validation takes more than 5 minutes
+    required_template_compliance: 90  # Require 90% template compliance
+
+# 🚨 Error Handling
+error_handling:
+  # Network error handling
+  network_errors:
+    retry_count: 3
+    retry_delay_seconds: 5
+    fallback_to_cache: true
+
+  # Repository access errors
+  access_errors:
+    skip_inaccessible_repos: false  # Fail validation if repos are inaccessible
+    notify_maintainers: true
+    log_access_failures: true
+
+  # Validation failures
+  validation_failures:
+    fail_fast: false      # Continue validation even if some checks fail
+    detailed_reporting: true
+    generate_report_file: true
+    report_path: "validation-report.json"
+
+# 📊 Reporting Configuration
+reporting:
+  # Validation report settings
+  reports:
+    generate_summary: true
+    include_success_details: false  # Only include failures in reports
+    output_format: "json"           # json|yaml|markdown
+    save_to_file: true
+    file_path: "docs/ADR/validation-report.{format}"
+
+  # Notification settings
+  notifications:
+    email_on_failure: false  # Set to true and configure SMTP if needed
+    slack_webhook: ""        # Add Slack webhook URL if needed
+    github_issue_on_failure: false  # Create GitHub issue on validation failure
+
+# 🔐 Security Configuration
+security:
+  # Access control
+  access_control:
+    require_authentication: false   # Set to true if repositories require auth
+    use_github_token: true         # Use GITHUB_TOKEN environment variable
+    token_env_var: "GITHUB_TOKEN"
+
+  # Validation security
+  validation_security:
+    allow_external_urls: true      # Allow validation of external URLs
+    max_redirect_hops: 3          # Maximum HTTP redirects to follow
+    verify_ssl_certificates: true # Verify SSL certificates for HTTPS URLs
+
+# 🎛️ Advanced Configuration
+advanced:
+  # Performance tuning
+  performance:
+    parallel_validation: true    # Validate multiple repositories in parallel
+    max_concurrent_jobs: 4      # Maximum concurrent validation jobs
+    cache_validation_results: true
+    cache_expiry_hours: 24
+
+  # Custom validation rules
+  custom_rules:
+    enforce_adr_numbering: true    # Enforce sequential ADR numbering
+    require_cross_repo_section: true  # Require cross-repository context section
+    validate_yaml_blocks: true    # Validate YAML metadata blocks
+
+# 📝 Configuration Metadata
+metadata:
+  version: "1.0.0"
+  created: "{YYYY-MM-DD}"
+  last_modified: "{YYYY-MM-DD}"
+  created_by: "{AUTHOR_NAME}"
+  template_source: "omega_registry/deployment-bundle"
+
+---
+# 🎯 CUSTOMIZATION CHECKLIST
+#
+# Before deploying this configuration:
+#
+# ✅ REQUIRED (Replace all placeholders):
+# [ ] {ORG} - Your GitHub organization name
+# [ ] {PRIMARY_REPO} - Your primary repository name
+# [ ] {RELATED_REPO_1}, {RELATED_REPO_2} - Your related repository names
+# [ ] {PROJECT_DESCRIPTION} - Description of your primary project
+# [ ] {REPO_1_DESCRIPTION}, {REPO_2_DESCRIPTION} - Repository descriptions
+# [ ] {MAINTAINER_EMAIL} - Primary maintainer email
+# [ ] {REPO_1_MAINTAINER_EMAIL}, {REPO_2_MAINTAINER_EMAIL} - Repository maintainer emails
+# [ ] {YYYY-MM-DD} - Current date
+# [ ] {AUTHOR_NAME} - Your name
+#
+# ✅ RECOMMENDED (Customize for your needs):
+# [ ] Add additional repositories to the 'related' section
+# [ ] Configure validation thresholds based on your quality requirements
+# [ ] Set up notification endpoints (Slack webhook, email SMTP)
+# [ ] Adjust performance settings based on your ecosystem size
+# [ ] Enable/disable validation features based on your workflow
+#
+# ✅ OPTIONAL (Advanced customization):
+# [ ] Add custom URL patterns for non-GitHub repositories
+# [ ] Configure advanced security settings for private repositories
+# [ ] Set up custom validation rules specific to your architecture
+# [ ] Configure reporting and caching based on your infrastructure
+#
+# 💡 DEPLOYMENT TIPS:
+# - Test this configuration with a small subset of repositories first
+# - Ensure all maintainer email addresses are correct and monitored
+# - Verify that validation scripts have necessary permissions
+# - Consider starting with lenient validation settings and tightening over time

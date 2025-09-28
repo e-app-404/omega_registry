@@ -1,0 +1,5 @@
+=== ADR-0005 Machine-Driven Migration Log ===
+Started: Sun Sep 28 16:40:28 BST 2025
+[2025-09-28 16:40:28] [INFO] Dry-run mode enabled
+[2025-09-28 16:40:28] [INFO] Target phase: 1
+[2025-09-28 16:40:29] [ERROR] Not in a git repository: /Users/evertappels/Projects/omega_registry/docs/ADR

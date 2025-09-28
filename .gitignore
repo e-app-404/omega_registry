@@ -13,3 +13,7 @@ __pycache__/
 /.idea/
 .vscode/
 .env
+
+# ADR-0005 structure patterns
+addon/data/.cache/
+project/workspace/.vscode/settings.json

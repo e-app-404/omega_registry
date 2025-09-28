@@ -1,0 +1,8 @@
+=== Cross-Repository ADR Deployment Log ===
+Started: Sun Sep 28 13:32:38 BST 2025
+[2025-09-28 13:32:38] [INFO] Dry-run mode enabled
+[2025-09-28 13:32:38] [INFO] Force deployment mode enabled
+[2025-09-28 13:32:38] [INFO] Target repository: /Users/evertappels/Projects/omega_registry
+[2025-09-28 13:32:38] [INFO] Bundle integrity check passed
+[2025-09-28 13:32:38] [INFO] Target repository validation passed
+[2025-09-28 13:32:38] [SUCCESS] Deployment completed successfully in 0s

@@ -8,11 +8,11 @@ emit_legacy_voice_assistants: false
 # Emit full, non-minimized registry entries for debugging/audit (overrides minimization)
 emit_full_registry_entries: false
 # Path to authoritative output contract
-default_contract_path: canonical/support/contracts/omega_registry_master.output_contract.yaml
+default_contract_path: addon/support/contracts/omega_registry_master.output_contract.yaml
 # Path to join contract
-join_contract_path: canonical/support/contracts/join_contract.yaml
-# Path to conflict resolution log
-conflict_log_path: canonical/logs/conflicts/conflict_resolution_report.json
+join_contract_path: addon/support/contracts/join_contract.yaml
+# Path to conflict resolution log (moved under addon/data/logs in ADR-0005 shape)
+conflict_log_path: addon/data/logs/conflicts/conflict_resolution_report.json
 # Output JSON in compact mode (no pretty-print)
 compact_json_output: true
 # Additional config flags can be added as needed
