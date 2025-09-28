@@ -220,7 +220,7 @@ workspaces:
         - symptom: "Mirror job times out"
           cause: "NAS unreachable from GitHub-hosted runners"
           fix: "Use self-hosted runner on LAN/Tailnet or expose NAS over reachable address; ensure NAS_SSH_KEY is configured"
-    notes: "LFS pinned to GitHub; NAS is a mirror via workflow gated by NAS_SSH_KEY. See ADR-0004 (docs/adr/ADR-0004-post-mirror-push.md) for detailed mirror workflow and security procedures."
+    notes: "LFS pinned to GitHub; NAS is a mirror via workflow gated by NAS_SSH_KEY. See ADR-0004 (docs/ADR/ADR-0004-post-mirror-push.md) for detailed mirror workflow and security procedures."
 
 embed_files:
   # --- BB-8 Add-on & (optionally) Omega: size/symlink guard ---

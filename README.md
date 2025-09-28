@@ -8,7 +8,7 @@ This repository contains the Omega Registry addon for Home Assistant, providing 
 
 ## Documentation
 
-- **ADRs (Architecture Decision Records)**: See `docs/adr/` for documented decisions and workflows
+- **ADRs (Architecture Decision Records)**: See `docs/ADR/` for documented decisions and workflows
 - **Operational topology**: see `./workspace_ops_export.yaml`
 
 ## Structure
