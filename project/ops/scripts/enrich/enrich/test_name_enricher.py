@@ -2,8 +2,9 @@
 Unit tests for NameEnricher (resolved_name logic)
 """
 
-
-from scripts.enrich.enrichers.name_enricher import NameEnricher
+from project.ops.scripts.enrich.enrich.enrichers.name_enricher import (
+    NameEnricher,
+)
 
 
 def make_entity(**kwargs):
@@ -14,12 +15,15 @@ def make_entity(**kwargs):
 
 def test_name_priority():
     entity = make_entity(
-        name="Kitchen Sensor", original_name="Old Name", entity_id="sensor.kitchen_temp"
+        name="Kitchen Sensor",
+        original_name="Old Name",
+        entity_id="sensor.kitchen_temp",
     )
     enriched = NameEnricher().enrich(entity, {})
     assert enriched["resolved_name"] == "Kitchen Sensor"
     assert (
-        enriched["_meta"]["inferred_fields"]["resolved_name"]["join_origin"] == "name"
+        enriched["_meta"]["inferred_fields"]["resolved_name"]["join_origin"]
+        == "name"
     )
 
 

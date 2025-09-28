@@ -5,12 +5,13 @@ PATCH: METRICS-DIFF-CHECKER-V1
 Compares two pipeline_metrics.json files and surfaces regressions or key metric changes.
 Integrates with shared utils. TODO: Update README and manifest for diagnostics tools.
 """
+
 import json
 import logging
 import sys
 from datetime import datetime, timezone
 
-from scripts.utils.logging import setup_logging
+from project.ops.utils.logging import setup_logging
 
 setup_logging("canonical/logs/diagnostics/metrics_diff.log")
 logging.info("Starting metrics_diff.py run.")

@@ -13,8 +13,10 @@ from pathlib import Path
 
 import yaml
 
-from scripts.enrich.enrich_orchestrator import run_enrichment_pipeline
-from scripts.enrich.normalize import normalize_entity_fields
+from addon.src.scripts.enrich import enrich_orchestrator, normalize
+
+run_enrichment_pipeline = enrich_orchestrator.run_enrichment_pipeline
+normalize_entity_fields = normalize.normalize_entity_fields
 from addon.src.registry.contract import (
     expand_contract_if_missing,
     get_allowlist,

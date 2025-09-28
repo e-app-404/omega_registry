@@ -6,6 +6,7 @@ Script: analyze_omega_registry.py
 Version: 1.0 (2025-07-21)
 Contract-driven reference, join, and decomposition analytics enforced.
 """
+
 import argparse
 import hashlib
 import itertools  # Added for field overlap analytics
@@ -17,8 +18,8 @@ from pathlib import Path
 
 import yaml
 
-from scripts.utils.input_list_extract import extract_data
-from scripts.utils.logging import setup_logging, write_json_log
+from project.ops.utils.input_list_extract import extract_data
+from project.ops.utils.logging import setup_logging, write_json_log
 
 # --- PATCH-SETUP-LOGGING-UTILS-V1: Centralized logging setup ---
 LOG_PATH = Path("canonical/logs/analytics/analyze_omega_registry.log")
@@ -46,7 +47,9 @@ def parse_args():
         help="Path to cumulative analytics log file",
     )
     parser.add_argument(
-        "--entity_registry", required=False, help="Path to core.entity_registry file"
+        "--entity_registry",
+        required=False,
+        help="Path to core.entity_registry file",
     )
     return parser.parse_args()
 
@@ -120,7 +123,9 @@ def analyze_connections_breakdown(entities):
 
 def load_inference_mappings(contract_path):
     """Load room/floor/alias mappings from join_contract.yaml → inference_mappings.rooms"""
-    with open(contract_path) as f:
+    from addon.src.utils.paths import get_contract_str
+
+    with open(get_contract_str("join_contract.yaml")) as f:
         contract = yaml.safe_load(f)
     rooms = contract.get("inference_mappings", {}).get("rooms", {})
     return rooms
@@ -215,7 +220,9 @@ domain_rule = (
     if contract
     else "entity_id.split('.')[0]"
 )
-platform_resolution = contract.get("platform_resolution", {}) if contract else {}
+platform_resolution = (
+    contract.get("platform_resolution", {}) if contract else {}
+)
 decomposition = contract.get("domain_decomposition", {}) if contract else {}
 provenance = contract.get("provenance", "unknown") if contract else "unknown"
 
@@ -298,10 +305,18 @@ def compute_field_presence_stats(data):
             elif val not in ("", [], {}, False):
                 present += 1
         stats[key] = {
-            "percent_with_value": round(100 * present / total, 2) if total else 0.0,
-            "percent_null": round(100 * null_count / total, 2) if total else 0.0,
-            "percent_none": round(100 * none_count / total, 2) if total else 0.0,
-            "percent_zero": round(100 * zero_count / total, 2) if total else 0.0,
+            "percent_with_value": round(100 * present / total, 2)
+            if total
+            else 0.0,
+            "percent_null": round(100 * null_count / total, 2)
+            if total
+            else 0.0,
+            "percent_none": round(100 * none_count / total, 2)
+            if total
+            else 0.0,
+            "percent_zero": round(100 * zero_count / total, 2)
+            if total
+            else 0.0,
             "percent_not_present": (
                 round(100 * not_present / total, 2) if total else 0.0
             ),
@@ -364,7 +379,9 @@ def main():
     for e in data:
         if "entity_id" in e and "domain" not in e:
             try:
-                e["domain"] = eval(domain_rule, {}, {"entity_id": e["entity_id"]})
+                e["domain"] = eval(
+                    domain_rule, {}, {"entity_id": e["entity_id"]}
+                )
             except Exception:
                 e["domain"] = "unknown"
         # Platform resolution
@@ -375,7 +392,9 @@ def main():
         elif "original_domain" in e:
             e["platform"] = e.get("original_domain")
         # Decomposition
-        if decomposition and e.get("domain") in decomposition.get("domains", []):
+        if decomposition and e.get("domain") in decomposition.get(
+            "domains", []
+        ):
             e["device_class_group"] = e.get(
                 decomposition.get("source_field", "device_class")
             )
@@ -391,7 +410,9 @@ def main():
         e.get("join_confidence") for e in data if "join_confidence" in e
     ]
     join_conf_counter = Counter(join_confidences)
-    join_conf_numeric = [jc for jc in join_confidences if isinstance(jc, (int, float))]
+    join_conf_numeric = [
+        jc for jc in join_confidences if isinstance(jc, (int, float))
+    ]
     join_conf_stats = {
         "min": min(join_conf_numeric) if join_conf_numeric else None,
         "max": max(join_conf_numeric) if join_conf_numeric else None,
@@ -467,7 +488,9 @@ def main():
     malformed = []
     for idx, e in enumerate(data):
         missing = [
-            k for k in ["entity_id", "domain", "platform"] if k not in e or e[k] is None
+            k
+            for k in ["entity_id", "domain", "platform"]
+            if k not in e or e[k] is None
         ]
         if missing:
             malformed.append({"index": idx, "missing": missing})
@@ -664,7 +687,8 @@ def main():
         ]
     )
     with open(
-        os.path.join(audit_dir, "omega_report/device_class_distribution.json"), "w"
+        os.path.join(audit_dir, "omega_report/device_class_distribution.json"),
+        "w",
     ) as f:
         json.dump(meta_header, f, indent=2)
         f.write(",\n")
@@ -685,7 +709,9 @@ def main():
         f.write(",\n")
         json.dump(registry_input_summary, f, indent=2)
     # tier_distribution.json
-    with open(os.path.join(audit_dir, "omega_report/tier_distribution.json"), "w") as f:
+    with open(
+        os.path.join(audit_dir, "omega_report/tier_distribution.json"), "w"
+    ) as f:
         json.dump(meta_header, f, indent=2)
         f.write(",\n")
         json.dump(dict(tier_counter), f, indent=2)
@@ -724,7 +750,9 @@ def main():
     # Field population audit
     field_stats = {}
     for field in ["area_id", "floor_id", "room_ref"]:
-        non_null = sum(1 for e in data if e.get(field) not in (None, "", [], {}))
+        non_null = sum(
+            1 for e in data if e.get(field) not in (None, "", [], {})
+        )
         field_stats[field] = {
             "total": entity_count,
             "non_null": non_null,
@@ -732,7 +760,9 @@ def main():
         }
     field_details = []
     for e in data[:1000]:  # Truncate for preview
-        missing = [f for f in ["area_id", "floor_id", "room_ref"] if not e.get(f)]
+        missing = [
+            f for f in ["area_id", "floor_id", "room_ref"] if not e.get(f)
+        ]
         field_details.append(
             {
                 "entity_id": e.get("entity_id"),
@@ -768,7 +798,9 @@ def main():
         f"Entity count: {entity_count}",
         f"Verdict: {verdict}",
     ]
-    with open(os.path.join(audit_dir, "regression_inspection_summary.json"), "w") as f:
+    with open(
+        os.path.join(audit_dir, "regression_inspection_summary.json"), "w"
+    ) as f:
         json.dump(
             {
                 "summary": f"Regression inspection summary for {os.path.basename(args.input)}.",
@@ -803,7 +835,9 @@ def main():
             json.dump(block, f, indent=2)
         print("[INFO] pipeline_metrics.latest.json emitted and overwritten.")
     else:
-        print("[INFO] pipeline_metrics.latest.json already targeted, not duplicated.")
+        print(
+            "[INFO] pipeline_metrics.latest.json already targeted, not duplicated."
+        )
 
     # --- Logging, Validation & Coverage ---
     # Validate join_origin_coverage, join_confidence_stats, field_completeness
@@ -874,9 +908,13 @@ def main():
                 f"[REGRESSION] Output hash changed: prior={prior_hash} current={current_hash}"
             )
         else:
-            logging.info("[REGRESSION] Output hash matches prior known-good hash.")
+            logging.info(
+                "[REGRESSION] Output hash matches prior known-good hash."
+            )
     else:
-        logging.warning("[REGRESSION] No prior audit file found for hash comparison.")
+        logging.warning(
+            "[REGRESSION] No prior audit file found for hash comparison."
+        )
 
 
 if __name__ == "__main__":

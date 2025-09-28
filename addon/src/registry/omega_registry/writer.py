@@ -8,8 +8,9 @@ from pathlib import Path
 import yaml
 
 from addon.src.utils.registry import write_json_compact
+from addon.src.utils.paths import get_contract_path
 
-PROFILE_YAML_PATH = Path("canonical/support/contracts/registry_output_profiles.yaml")
+PROFILE_YAML_PATH = get_contract_path("registry_output_profiles.yaml")
 
 
 def load_output_profiles(profile_yaml_path=PROFILE_YAML_PATH):
@@ -49,14 +50,21 @@ def deduplicate_entities(entities):
 
 
 def write_registry(
-    entities, output_path, profile="default", profile_yaml_path=PROFILE_YAML_PATH
+    entities,
+    output_path,
+    profile="default",
+    profile_yaml_path=PROFILE_YAML_PATH,
 ):
     profiles = load_output_profiles(profile_yaml_path)
     if profile not in profiles:
-        print(f"[WARN] Unknown output profile '{profile}', falling back to 'default'.")
+        print(
+            f"[WARN] Unknown output profile '{profile}', falling back to 'default'."
+        )
         profile = "default"
     profile_spec = profiles[profile]
     print(f"[INFO] Using output profile: {profile}")
     print(f"[INFO] Profile allowlist: {profile_spec.get('allowlist')}")
-    filtered_entities = [filter_entity_by_profile(e, profile_spec) for e in entities]
+    filtered_entities = [
+        filter_entity_by_profile(e, profile_spec) for e in entities
+    ]
     write_json_compact(filtered_entities, output_path)

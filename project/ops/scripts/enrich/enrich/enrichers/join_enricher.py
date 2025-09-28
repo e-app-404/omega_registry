@@ -1,6 +1,6 @@
 import logging
 
-from scripts.enrich.enrichers.base import AbstractEnricher
+from project.ops.scripts.enrich.enrich.enrichers.base import AbstractEnricher
 
 
 # Local utility: is_null_like
@@ -33,9 +33,9 @@ class JoinFieldEnricher(AbstractEnricher):
                     "template",
                     "virtual",
                 ] and to_key in ["device_id", "manufacturer", "serial_number"]:
-                    entity.setdefault("_meta", {}).setdefault("inferred_fields", {})[
-                        to_key
-                    ] = {
+                    entity.setdefault("_meta", {}).setdefault(
+                        "inferred_fields", {}
+                    )[to_key] = {
                         "join_origin": "exemption",
                         "join_confidence": 0.0,
                         "field_contract": f"{to_key} exempted for {entity.get('sensor_type')} sensor",
@@ -54,7 +54,10 @@ class JoinFieldEnricher(AbstractEnricher):
                     )
                     continue
                 # Guarded authoritative stamp for area_id
-                if to_key == "area_id" and source_name == "core.entity_registry":
+                if (
+                    to_key == "area_id"
+                    and source_name == "core.entity_registry"
+                ):
                     meta = entity.setdefault("_meta", {}).setdefault(
                         "inferred_fields", {}
                     )
@@ -86,7 +89,9 @@ class JoinFieldEnricher(AbstractEnricher):
                         self.logger.info(
                             f"[JOIN-PROPAGATE] {chain_name}: {entity.get('entity_id')} area_id propagated from core.entity_registry"
                         )
-                        join_stats[(chain_name, from_key, to_key, "propagate")] = (
+                        join_stats[
+                            (chain_name, from_key, to_key, "propagate")
+                        ] = (
                             join_stats.get(
                                 (chain_name, from_key, to_key, "propagate"), 0
                             )
@@ -98,7 +103,9 @@ class JoinFieldEnricher(AbstractEnricher):
                             f"[JOIN-SKIP] {chain_name}: {entity.get('entity_id')} area_id meta already set with high confidence"
                         )
                         join_stats[(chain_name, from_key, to_key, "skip")] = (
-                            join_stats.get((chain_name, from_key, to_key, "skip"), 0)
+                            join_stats.get(
+                                (chain_name, from_key, to_key, "skip"), 0
+                            )
                             + 1
                         )
                         continue
@@ -107,19 +114,28 @@ class JoinFieldEnricher(AbstractEnricher):
                         f"[JOIN-SKIP] {chain_name}: {entity.get('entity_id')} already has {to_key}"
                     )
                     join_stats[(chain_name, from_key, to_key, "skip")] = (
-                        join_stats.get((chain_name, from_key, to_key, "skip"), 0) + 1
+                        join_stats.get(
+                            (chain_name, from_key, to_key, "skip"), 0
+                        )
+                        + 1
                     )
                     continue
                 source = source_dict.get(entity[from_key])
-                if source and to_key in source and not is_null_like(source[to_key]):
+                if (
+                    source
+                    and to_key in source
+                    and not is_null_like(source[to_key])
+                ):
                     entity[to_key] = source[to_key]
                     # Emit join_origin and join_confidence at root level
                     entity[f"{to_key}_join_origin"] = source_name or "unknown"
-                    entity[f"{to_key}_join_confidence"] = 0.95 if source_name else 0.0
+                    entity[f"{to_key}_join_confidence"] = (
+                        0.95 if source_name else 0.0
+                    )
                     # Inject join metadata in _meta
-                    entity.setdefault("_meta", {}).setdefault("inferred_fields", {})[
-                        to_key
-                    ] = {
+                    entity.setdefault("_meta", {}).setdefault(
+                        "inferred_fields", {}
+                    )[to_key] = {
                         "join_origin": source_name or "unknown",
                         "join_confidence": 0.95 if source_name else 0.0,
                         "field_contract": f"{from_key}->{to_key} via {source_name or 'unknown'}",
@@ -140,11 +156,18 @@ class JoinFieldEnricher(AbstractEnricher):
                         f"[JOIN] {chain_name}: {entity.get('entity_id')} {from_key}→{to_key}={source[to_key]}"
                     )
                     join_stats[(chain_name, from_key, to_key, "success")] = (
-                        join_stats.get((chain_name, from_key, to_key, "success"), 0) + 1
+                        join_stats.get(
+                            (chain_name, from_key, to_key, "success"), 0
+                        )
+                        + 1
                     )
                 else:
                     # If not found, emit exemption if applicable
-                    if entity.get("sensor_type") in ["logic", "template", "virtual"]:
+                    if entity.get("sensor_type") in [
+                        "logic",
+                        "template",
+                        "virtual",
+                    ]:
                         entity.setdefault("_meta", {}).setdefault(
                             "inferred_fields", {}
                         )[to_key] = {
@@ -158,6 +181,9 @@ class JoinFieldEnricher(AbstractEnricher):
                         f"[JOIN-MISS] {chain_name}: {entity.get('entity_id')} {from_key}→{to_key} failed"
                     )
                     join_stats[(chain_name, from_key, to_key, "miss")] = (
-                        join_stats.get((chain_name, from_key, to_key, "miss"), 0) + 1
+                        join_stats.get(
+                            (chain_name, from_key, to_key, "miss"), 0
+                        )
+                        + 1
                     )
         return entity

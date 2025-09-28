@@ -1,6 +1,6 @@
 import unittest
 
-from scripts.enrich.normalize import normalize_entity_fields
+from project.ops.scripts.enrich.enrich.normalize import normalize_entity_fields
 
 
 class TestNormalizeEntityFields(unittest.TestCase):

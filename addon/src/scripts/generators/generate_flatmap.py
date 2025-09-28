@@ -3,6 +3,7 @@
 Run as module: python -m scripts.generators.generate_flatmap
 PATCH ABSOLUTE-IMPORT-UTILS-V1: Refactored for absolute imports, removed sys.path hacks, added run-as-module comment.
 """
+
 """
 PATCH-FLATMAP-MERGE-V1
 Unified flatmap generator for entity and device registries.
@@ -24,6 +25,7 @@ import yaml
 
 from addon.src.utils.import_path import set_workspace_root
 from addon.src.utils.logging import setup_logging
+from addon.src.utils.paths import get_contract_str
 
 set_workspace_root(__file__)
 
@@ -31,15 +33,23 @@ from addon.src.utils.input_list_extract import extract_data
 from addon.src.utils.logging import attach_meta
 
 # Contract alignment
-CONTRACT_PATH = "canonical/support/contracts/join_contract.yaml"
-with open(CONTRACT_PATH) as f:
-    contract = yaml.safe_load(f)
-ref_format = contract.get("reference_format", {}).get("container_reference", {})
-ref_format_keys = ref_format.get("format", ["registry", "id", "name"])
+CONTRACT_PATH = get_contract_str("join_contract.yaml")
+# Attempt to read contract metadata if available, but do not raise on import.
+# This keeps the module import-safe per ADR-0003. If the contract file is
+# missing (e.g., running quick validation or tests), we fall back to sane
+# defaults and defer full contract validation to runtime.
+try:
+    with open(CONTRACT_PATH) as f:
+        _contract = yaml.safe_load(f) or {}
+    _ref_format = _contract.get("reference_format", {}).get(
+        "container_reference", {}
+    )
+    ref_format_keys = _ref_format.get("format", ["registry", "id", "name"])
+except (FileNotFoundError, OSError):
+    ref_format_keys = ["registry", "id", "name"]
 
+# Logging path; logging is initialized at runtime to avoid creating files on import.
 LOG_PATH = Path("canonical/logs/generators/generate_flatmap.log")
-setup_logging(LOG_PATH)
-logging.info("Starting generate_flatmap.py run.")
 
 
 def load_inference_mappings(contract_path):
@@ -78,7 +88,9 @@ def container_ref(registry, obj, id_key, name_key):
 
 
 def build_entity_flatmap(entity_registry_path, output_path, metrics_path):
-    entities = extract_data(entity_registry_path, load_json(entity_registry_path))
+    entities = extract_data(
+        entity_registry_path, load_json(entity_registry_path)
+    )
     inference_map = load_inference_mappings(CONTRACT_PATH)
     flatmap = []
     skipped = 0
@@ -91,7 +103,9 @@ def build_entity_flatmap(entity_registry_path, output_path, metrics_path):
             "entity_id": e["entity_id"],
             # PATCH-DOMAIN-OVERRIDE-V1: Canonicalize domain from entity_id
             "domain": (
-                e["entity_id"].split(".")[0] if e.get("entity_id") else e.get("domain")
+                e["entity_id"].split(".")[0]
+                if e.get("entity_id")
+                else e.get("domain")
             ),
             "tier": e.get("tier"),
             "area_id": e.get("area_id"),
@@ -122,11 +136,15 @@ def build_entity_flatmap(entity_registry_path, output_path, metrics_path):
     }
     with open(metrics_path, "w") as f:
         json.dump(metrics, f, indent=2)
-    print(f"✅ Entity flatmap written to {output_path} | Metrics: {metrics_path}")
+    print(
+        f"✅ Entity flatmap written to {output_path} | Metrics: {metrics_path}"
+    )
 
 
 def build_device_flatmap(device_registry_path, output_path, metrics_path):
-    devices = extract_data(device_registry_path, load_json(device_registry_path))
+    devices = extract_data(
+        device_registry_path, load_json(device_registry_path)
+    )
     flatmap = []
     skipped = 0
     for d in devices:
@@ -138,7 +156,9 @@ def build_device_flatmap(device_registry_path, output_path, metrics_path):
             "name": d.get("name"),
             "area_id": d.get("area_id"),
             "disabled": d.get("disabled", False),
-            "container_ref": container_ref("core.device_registry", d, "id", "name"),
+            "container_ref": container_ref(
+                "core.device_registry", d, "id", "name"
+            ),
         }
         flatmap.append(entry)
     out = {"flatmap": flatmap}
@@ -158,7 +178,9 @@ def build_device_flatmap(device_registry_path, output_path, metrics_path):
     }
     with open(metrics_path, "w") as f:
         json.dump(metrics, f, indent=2)
-    print(f"✅ Device flatmap written to {output_path} | Metrics: {metrics_path}")
+    print(
+        f"✅ Device flatmap written to {output_path} | Metrics: {metrics_path}"
+    )
 
 
 def load_json(path):
@@ -175,6 +197,9 @@ if __name__ == "__main__":
         help="Flatmap type to generate",
     )
     args = parser.parse_args()
+    # Initialize logging at runtime (keeps import-time safe)
+    setup_logging(LOG_PATH)
+    logging.info("Starting generate_flatmap.py run.")
     if args.type == "entity":
         entity_registry_path = "canonical/registry_inputs/core.entity_registry"
         output_path = "canonical/derived_views/flatmaps/entity_flatmap.json"

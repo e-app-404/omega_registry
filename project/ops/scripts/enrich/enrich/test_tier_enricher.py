@@ -2,8 +2,9 @@
 Unit tests for TierEnricher (tier classification and propagation)
 """
 
-
-from scripts.enrich.enrichers.tier_enricher import TierEnricher
+from project.ops.scripts.enrich.enrich.enrichers.tier_enricher import (
+    TierEnricher,
+)
 
 
 def make_entity(**kwargs):
@@ -23,7 +24,8 @@ def test_full_match_by_device_id_and_area_id():
     assert enriched["tier"] in ("α", "β")
     assert "tier" in enriched["_meta"]["inferred_fields"]
     assert (
-        enriched["_meta"]["inferred_fields"]["tier"]["join_origin"] == "tier_enricher"
+        enriched["_meta"]["inferred_fields"]["tier"]["join_origin"]
+        == "tier_enricher"
     )
     assert enriched["_meta"]["inferred_fields"]["tier"]["join_confidence"] > 0
 
@@ -33,7 +35,8 @@ def test_partial_match_platform_only():
     enriched = TierEnricher()(entity)
     assert enriched["tier"] == "β"
     assert (
-        enriched["_meta"]["inferred_fields"]["tier"]["join_origin"] == "tier_enricher"
+        enriched["_meta"]["inferred_fields"]["tier"]["join_origin"]
+        == "tier_enricher"
     )
 
 
@@ -49,7 +52,9 @@ def test_explicit_fallback_to_unclassified():
     entity = make_entity(platform="unknown_platform")
     enriched = TierEnricher()(entity)
     assert enriched["tier"] == "unclassified"
-    assert enriched["_meta"]["inferred_fields"]["tier"]["join_confidence"] == 0.0
+    assert (
+        enriched["_meta"]["inferred_fields"]["tier"]["join_confidence"] == 0.0
+    )
 
 
 def test_multiple_matches_disambiguation():

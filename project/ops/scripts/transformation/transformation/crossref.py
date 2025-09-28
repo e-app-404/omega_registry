@@ -18,8 +18,8 @@ from pathlib import Path
 
 import yaml
 
-from scripts.utils.input_list_extract import extract_data
-from scripts.utils.logging import setup_logging
+from project.ops.utils.input_list_extract import extract_data
+from project.ops.utils.logging import setup_logging
 
 LOG_PATH = Path("canonical/logs/transformation/crossref.log")
 setup_logging(LOG_PATH)
@@ -42,16 +42,25 @@ def main():
     parser.add_argument(
         "--source", required=True, help="Path to source JSON (to be enriched)"
     )
-    parser.add_argument("--target", required=True, help="Path to target JSON (lookup)")
-    parser.add_argument("--field", required=True, help="Field to match on (e.g., mac)")
     parser.add_argument(
-        "--append", nargs="+", required=True, help="Fields from target to append"
+        "--target", required=True, help="Path to target JSON (lookup)"
+    )
+    parser.add_argument(
+        "--field", required=True, help="Field to match on (e.g., mac)"
+    )
+    parser.add_argument(
+        "--append",
+        nargs="+",
+        required=True,
+        help="Fields from target to append",
     )
     parser.add_argument(
         "--log", required=True, help="Path to audit log output (.json or .yaml)"
     )
     parser.add_argument(
-        "--dry-run", action="store_true", help="Preview matches without writing log"
+        "--dry-run",
+        action="store_true",
+        help="Preview matches without writing log",
     )
     parser.add_argument(
         "--fallback-fields",
@@ -74,21 +83,29 @@ def main():
             if isinstance(source_content, dict) and "flatmap" in source_content
             else source_content
         )
-        print(f"[INFO] Using device_flatmap.json as source, {len(source)} entries.")
+        print(
+            f"[INFO] Using device_flatmap.json as source, {len(source)} entries."
+        )
     else:
         source = extract_data(args.source, source_content)
     target_content = load_json(args.target)
     target_entries = extract_data(args.target, target_content)
 
     # CONTRACT-DRIVEN: Load reference format, required fields, and provenance from contract
-    contract_path = "canonical/support/contracts/join_contract.yaml"
+    from addon.src.utils.paths import get_contract_str
+
+    contract_path = get_contract_str("join_contract.yaml")
     with open(contract_path) as f:
         contract = yaml.safe_load(f)
-    ref_format = contract.get("reference_format", {}).get("container_reference", {})
+    ref_format = contract.get("reference_format", {}).get(
+        "container_reference", {}
+    )
     match_fields = ref_format.get("required_fields", [args.field])
     provenance = contract.get("provenance", "unknown")
     # Use first required field as match field if present in source
-    primary_field = match_fields[1] if len(match_fields) > 1 else match_fields[0]
+    primary_field = (
+        match_fields[1] if len(match_fields) > 1 else match_fields[0]
+    )
     lookups = {
         primary_field: {
             entry.get(primary_field): entry
@@ -97,7 +114,9 @@ def main():
         }
     }
     for f in args.fallback_fields:
-        lookups[f] = {entry.get(f): entry for entry in target_entries if entry.get(f)}
+        lookups[f] = {
+            entry.get(f): entry for entry in target_entries if entry.get(f)
+        }
 
     # Optional source filtering
     if args.source_filter:
@@ -155,7 +174,9 @@ def main():
 
     # PATCH-XREF-ENRICHMENT-IMPLICATIONS-V1: Target-driven analytics and enrichment implication annotation
     enrichment_subject_type = (
-        "device" if "device" in args.source or "flatmap" in args.source else "entity"
+        "device"
+        if "device" in args.source or "flatmap" in args.source
+        else "entity"
     )
     crossref_type = "enrichment"
     enrichment_fields_transferred = [f for f in args.append]
@@ -197,7 +218,9 @@ def main():
             enrichment_potential["attach_device_tracker"] = True
             enrichment_potential["transfer_mac"] = bool(match.get("mac"))
             enrichment_potential["transfer_ipv4"] = bool(match.get("ipv4"))
-            enrichment_potential["attach_hostname"] = bool(match.get("hostname"))
+            enrichment_potential["attach_hostname"] = bool(
+                match.get("hostname")
+            )
             for af in args.append:
                 enriched_fields[af] = match.get(af)
             target_entries_enriched += 1

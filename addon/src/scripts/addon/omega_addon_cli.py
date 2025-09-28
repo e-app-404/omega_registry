@@ -44,7 +44,9 @@ def call_generate(
     print(
         f"[addon-cli] Running generate(output={output_path}, contract={contract_path}, inputs={input_paths}, profile={profile}, strict={strict})"
     )
-    generate(output_path, contract_path, input_paths, strict=strict, profile=profile)
+    generate(
+        output_path, contract_path, input_paths, strict=strict, profile=profile
+    )
     # Read back the produced file and print summary
     try:
         with open(output_path, "r", encoding="utf-8") as f:
@@ -69,7 +71,9 @@ def call_dry_run(inputs=None, enable_synthetic=False):
     Uses the enrichment orchestrator to process inputs and prints a small JSON summary to stdout.
     """
     # Lazy imports
-    from scripts.enrich.enrich_orchestrator import run_enrichment_pipeline
+    from addon.src.scripts.enrich import enrich_orchestrator
+
+    run_enrichment_pipeline = enrich_orchestrator.run_enrichment_pipeline
     from addon.src.utils.loaders import load_json_with_extract
 
     # Load inputs
@@ -123,7 +127,9 @@ def main():
     p_gen.add_argument("--contract", help="Contract path")
     p_gen.add_argument("--inputs", nargs="+", help="Input files (override)")
     p_gen.add_argument("--profile", help="Output profile")
-    p_gen.add_argument("--strict", action="store_true", help="Strict validation")
+    p_gen.add_argument(
+        "--strict", action="store_true", help="Strict validation"
+    )
     p_gen.add_argument(
         "--write-output",
         action="store_true",

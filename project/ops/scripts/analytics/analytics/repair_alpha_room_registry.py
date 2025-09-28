@@ -4,6 +4,7 @@
 PATCH-ALPHA-ROOM-REGISTRY-REPAIR-V1
 Repairs alpha_room_registry to comply with output contract and join hierarchy.
 """
+
 import json
 import logging
 from collections import Counter, defaultdict
@@ -12,9 +13,9 @@ from pathlib import Path
 
 import yaml
 
-import scripts.utils.pipeline_config as cfg
-from scripts.utils.input_list_extract import extract_data
-from scripts.utils.logging import setup_logging
+import project.ops.utils.pipeline_config as cfg
+from project.ops.utils.input_list_extract import extract_data
+from project.ops.utils.logging import setup_logging
 
 # Load canonical inputs
 with open(str(cfg.ENTITY_FLATMAP)) as f:
@@ -23,9 +24,13 @@ with open(str(cfg.PIPELINE_METRICS)) as f:
     metrics = json.load(f)
 with open(str(cfg.JOIN_CONTRACT)) as f:
     join_contract = yaml.safe_load(f)
-ref_format = join_contract.get("reference_format", {}).get("container_reference", {})
+ref_format = join_contract.get("reference_format", {}).get(
+    "container_reference", {}
+)
 provenance = join_contract.get("provenance", "unknown")
-with open("canonical/support/contracts/alpha_room_registry.output_contract.yaml") as f:
+with open(
+    "canonical/support/contracts/alpha_room_registry.output_contract.yaml"
+) as f:
     output_contract_raw = yaml.safe_load(f)
 if isinstance(output_contract_raw, list):
     output_contract = next(
@@ -40,11 +45,15 @@ if isinstance(output_contract_raw, list):
     )
     if not output_contract:
         output_contract = (
-            output_contract_raw[-1] if isinstance(output_contract_raw[-1], dict) else {}
+            output_contract_raw[-1]
+            if isinstance(output_contract_raw[-1], dict)
+            else {}
         )
 else:
     output_contract = output_contract_raw
-cluster_threshold = output_contract.get("cluster_threshold", {}).get("min_size", 3)
+cluster_threshold = output_contract.get("cluster_threshold", {}).get(
+    "min_size", 3
+)
 with open(str(cfg.AREA_HIERARCHY)) as f:
     area_hierarchy = yaml.safe_load(f)
 
@@ -89,7 +98,9 @@ for room_id in rooms:
     has_beta = "β" in tiers_by_area[room_id]
     # Gather entities for this room
     entities = [
-        e for e in flatmap if e.get("area_id") == room_id and e.get("tier") == "α"
+        e
+        for e in flatmap
+        if e.get("area_id") == room_id and e.get("tier") == "α"
     ]
     if not entities:
         skipped.append(room_id)
@@ -111,7 +122,9 @@ for room_id in rooms:
         domain = e.get("domain")
         if domain in ["sensor", "binary_sensor"]:
             device_class = (
-                e.get("device_class") or e.get("original_device_class") or "unknown"
+                e.get("device_class")
+                or e.get("original_device_class")
+                or "unknown"
             )
             sensor_device_class_counts[domain][device_class] += 1
         else:
@@ -162,14 +175,16 @@ with open(log_path, "a") as log:
     log.write(f"Rooms processed: {len(output_sorted)}\n")
     log.write(f"Rooms skipped (no α-tier): {len(skipped)}\n")
     log.write(
-        f"Cluster size stats: min={min([r['cluster_size'] for r in output_sorted]) if output_sorted else 0}, max={max([r['cluster_size'] for r in output_sorted]) if output_sorted else 0}, mean={round(sum([r['cluster_size'] for r in output_sorted])/len(output_sorted),2) if output_sorted else 0}\n"
+        f"Cluster size stats: min={min([r['cluster_size'] for r in output_sorted]) if output_sorted else 0}, max={max([r['cluster_size'] for r in output_sorted]) if output_sorted else 0}, mean={round(sum([r['cluster_size'] for r in output_sorted]) / len(output_sorted), 2) if output_sorted else 0}\n"
     )
     log.write(f"Output: {out_path}\n")
     if skipped:
         log.write(f"Skipped rooms: {skipped}\n")
 
 # PATCH-CONTRACT-CANONICALIZATION-V1: Audit log entry for contract-driven refactor
-with open("canonical/logs/scratch/PATCH-CONTRACT-CANONICALIATION-V1.log", "a") as log:
+with open(
+    "canonical/logs/scratch/PATCH-CONTRACT-CANONICALIATION-V1.log", "a"
+) as log:
     log.write(
         f"[{datetime.now(timezone.utc).isoformat()}] Refactored repair_alpha_room_registry.py for contract-driven reference format, provenance, and cluster threshold.\n"
     )

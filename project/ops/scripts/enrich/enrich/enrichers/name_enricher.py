@@ -4,7 +4,7 @@ Name Enricher: Standardizes entity naming with a single authoritative resolved_n
 - Emits provenance in _meta.inferred_fields.resolved_name
 """
 
-from scripts.enrich.enrichers.base import AbstractEnricher
+from project.ops.scripts.enrich.enrich.enrichers.base import AbstractEnricher
 
 
 class NameEnricher(AbstractEnricher):

@@ -2,8 +2,9 @@
 Unit tests for AreaFloorEnricher (area_id and floor_id assignment)
 """
 
-
-from scripts.enrich.enrichers.area_floor_enricher import AreaFloorEnricher
+from project.ops.scripts.enrich.enrich.enrichers.area_floor_enricher import (
+    AreaFloorEnricher,
+)
 
 
 def make_entity(**kwargs):

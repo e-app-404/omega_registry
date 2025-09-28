@@ -1,4 +1,4 @@
-from scripts.enrich.enrichers.base import AbstractEnricher
+from project.ops.scripts.enrich.enrich.enrichers.base import AbstractEnricher
 
 
 def build_device_map(devices):
@@ -9,7 +9,11 @@ def extract_mac(connections):
     if not isinstance(connections, list):
         return None
     for conn in connections:
-        if isinstance(conn, (list, tuple)) and len(conn) == 2 and conn[0] == "mac":
+        if (
+            isinstance(conn, (list, tuple))
+            and len(conn) == 2
+            and conn[0] == "mac"
+        ):
             return conn[1].lower()
     return None
 
@@ -22,32 +26,36 @@ class DeviceRegistryEnricher(AbstractEnricher):
             device_registry = build_device_map(device_registry)
         dev_id = entity.get("device_id")
         device = device_registry.get(dev_id)
-        context.setdefault(
-            "serial_number_missing_count", 0
-        )
+        context.setdefault("serial_number_missing_count", 0)
         if device:
             # MAC
             mac = extract_mac(device.get("connections", []))
             if mac:
                 entity["mac"] = mac
-                entity.setdefault("field_inheritance", {})["mac"] = "device_registry"
+                entity.setdefault("field_inheritance", {})["mac"] = (
+                    "device_registry"
+                )
             # via_device_id
             via = device.get("via_device_id")
             if via is not None:
                 entity["via_device_id"] = via
-                entity.setdefault("field_inheritance", {})[
-                    "via_device_id"
-                ] = "device_registry"
+                entity.setdefault("field_inheritance", {})["via_device_id"] = (
+                    "device_registry"
+                )
             # serial_number
-            serial = device.get("serial_number") if "serial_number" in device else None
+            serial = (
+                device.get("serial_number")
+                if "serial_number" in device
+                else None
+            )
             if serial is not None:
                 entity["serial_number"] = serial
-                entity.setdefault("field_inheritance", {})[
-                    "serial_number"
-                ] = "device_registry"
-                entity.setdefault("_meta", {}).setdefault("inferred_fields", {})[
-                    "serial_number"
-                ] = {
+                entity.setdefault("field_inheritance", {})["serial_number"] = (
+                    "device_registry"
+                )
+                entity.setdefault("_meta", {}).setdefault(
+                    "inferred_fields", {}
+                )["serial_number"] = {
                     "join_origin": "device_registry",
                     "join_confidence": 0.95,
                     "field_contract": "serial_number from device_registry",

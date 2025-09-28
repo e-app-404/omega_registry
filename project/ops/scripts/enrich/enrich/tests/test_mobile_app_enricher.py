@@ -1,4 +1,6 @@
-from scripts.enrich.enrichers.mobile_app_enricher import MobileAppEnricher
+from project.ops.scripts.enrich.enrich.enrichers.mobile_app_enricher import (
+    MobileAppEnricher,
+)
 
 
 def test_mobile_app_match_existing_device():

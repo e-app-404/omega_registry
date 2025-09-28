@@ -6,6 +6,7 @@ PATCH-CONTRACT-CANONICALIZATION-V1
 Finalizes alpha_room_registry with full domain metadata, correct floor_ref, filtering, and logging.
 Contract-driven reference format, tier mapping, and cluster threshold enforced.
 """
+
 import json
 import logging
 from collections import Counter, defaultdict
@@ -14,8 +15,8 @@ from pathlib import Path
 
 import yaml
 
-import scripts.utils.pipeline_config as cfg
-from scripts.utils.logging import setup_logging
+import project.ops.utils.pipeline_config as cfg
+from project.ops.utils.logging import setup_logging
 
 # Load canonical inputs
 with open(str(cfg.ENTITY_FLATMAP)) as f:
@@ -24,7 +25,9 @@ with open(str(cfg.PIPELINE_METRICS)) as f:
     metrics = json.load(f)
 with open(str(cfg.JOIN_CONTRACT)) as f:
     join_contract = yaml.safe_load(f)
-with open("canonical/support/contracts/alpha_room_registry.output_contract.yaml") as f:
+from addon.src.utils.paths import get_contract_str
+
+with open(get_contract_str("alpha_room_registry.output_contract.yaml")) as f:
     output_contract_raw = yaml.safe_load(f)
 if isinstance(output_contract_raw, list):
     output_contract = next(
@@ -39,7 +42,9 @@ if isinstance(output_contract_raw, list):
     )
     if not output_contract:
         output_contract = (
-            output_contract_raw[-1] if isinstance(output_contract_raw[-1], dict) else {}
+            output_contract_raw[-1]
+            if isinstance(output_contract_raw[-1], dict)
+            else {}
         )
 else:
     output_contract = output_contract_raw
@@ -49,9 +54,13 @@ with open(str(cfg.AREA_REGISTRY)) as f:
     area_registry = json.load(f)["data"]["areas"]
 
 # CONTRACT-DRIVEN: Reference format, tier mapping, and cluster threshold
-ref_format = join_contract.get("reference_format", {}).get("container_reference", {})
+ref_format = join_contract.get("reference_format", {}).get(
+    "container_reference", {}
+)
 tier_mapping_source = output_contract.get("tier_mapping_source", {})
-cluster_threshold = output_contract.get("cluster_threshold", {}).get("min_size", 3)
+cluster_threshold = output_contract.get("cluster_threshold", {}).get(
+    "min_size", 3
+)
 provenance = join_contract.get("provenance", "unknown")
 
 # Helper: resolve floor_ref for a room
@@ -71,7 +80,11 @@ def resolve_floor_ref(room_id):
     # CONTRACT-DRIVEN: Use reference format from contract
     node = nodes.get(room_id, {})
     container = node.get("container")
-    if isinstance(container, list) and len(container) == 3 and container[0] == "area":
+    if (
+        isinstance(container, list)
+        and len(container) == 3
+        and container[0] == "area"
+    ):
         return [
             ref_format.get("format", ["core.area_registry", "id", "name"])[0],
             container[1],
@@ -114,7 +127,9 @@ for room_id in rooms:
     has_beta = "β" in tiers_by_area[room_id]
     # Gather entities for this room
     entities = [
-        e for e in flatmap if e.get("area_id") == room_id and e.get("tier") == "α"
+        e
+        for e in flatmap
+        if e.get("area_id") == room_id and e.get("tier") == "α"
     ]
     if not entities:
         filtered_rooms.append(room_id)
@@ -144,7 +159,9 @@ for room_id in rooms:
         domain = e.get("domain")
         if domain in ["sensor", "binary_sensor"]:
             device_class = (
-                e.get("device_class") or e.get("original_device_class") or "unknown"
+                e.get("device_class")
+                or e.get("original_device_class")
+                or "unknown"
             )
             sensor_device_class_counts[domain][device_class] += 1
         else:
@@ -191,7 +208,9 @@ with open(out_path, "w") as f:
     json.dump(output_sorted, f, indent=2)
 
 # Emit summary log
-log_path = "canonical/logs/scratch/PATCH-ALPHA-ROOM-REGISTRY-FINALIZATION-V3.log"
+log_path = (
+    "canonical/logs/scratch/PATCH-ALPHA-ROOM-REGISTRY-FINALIZATION-V3.log"
+)
 Path(log_path).parent.mkdir(parents=True, exist_ok=True)
 with open(log_path, "a") as log:
     log.write(
@@ -204,7 +223,9 @@ with open(log_path, "a") as log:
     log.write(f"Output: {out_path}\n")
 
 # PATCH-CONTRACT-CANONICALIZATION-V1: Audit log entry for contract-driven refactor
-with open("canonical/logs/scratch/PATCH-CONTRACT-CANONICALIATION-V1.log", "a") as log:
+with open(
+    "canonical/logs/scratch/PATCH-CONTRACT-CANONICALIATION-V1.log", "a"
+) as log:
     log.write(
         f"[{datetime.now(timezone.utc).isoformat()}] Refactored finalize_alpha_room_registry.py for contract-driven reference format, tier mapping, and cluster threshold.\n"
     )

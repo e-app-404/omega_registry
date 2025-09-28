@@ -5,6 +5,7 @@ validate_registry_quality.py
 QC-REGISTRY-VALIDATION-V1
 Automated quality control for canonical registry outputs.
 """
+
 import hashlib
 import json
 import logging
@@ -14,8 +15,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from shutil import copy2
 
-import scripts.utils.pipeline_config as cfg
-from scripts.utils.logging import setup_logging
+import project.ops.utils.pipeline_config as cfg
+from project.ops.utils.logging import setup_logging
 
 LOG_PATH = Path("canonical/logs/analytics/validate_registry_quality.log")
 setup_logging(LOG_PATH)
@@ -76,7 +77,9 @@ def save_json(obj, path):
 def field_completeness_score(entity):
     total = len(REQUIRED_FIELDS)
     non_null = sum(
-        1 for k in REQUIRED_FIELDS if k in entity and entity[k] not in [None, ""]
+        1
+        for k in REQUIRED_FIELDS
+        if k in entity and entity[k] not in [None, ""]
     )
     return round(non_null / total, 4) if total else 0.0
 
@@ -84,7 +87,9 @@ def field_completeness_score(entity):
 def validate_structure(registry):
     if not isinstance(registry, (list, dict)):
         return False, "Registry is not a list or dict"
-    entities = registry if isinstance(registry, list) else registry.get("entities", [])
+    entities = (
+        registry if isinstance(registry, list) else registry.get("entities", [])
+    )
     for e in entities:
         for k in REQUIRED_FIELDS:
             if k not in e:
@@ -113,8 +118,12 @@ def main():
     parser = argparse.ArgumentParser(
         description="Validate registry quality and promote best-of versions."
     )
-    parser.add_argument("--registry", required=True, help="Path to registry JSON")
-    parser.add_argument("--reference", required=True, help="Path to best-of JSON")
+    parser.add_argument(
+        "--registry", required=True, help="Path to registry JSON"
+    )
+    parser.add_argument(
+        "--reference", required=True, help="Path to best-of JSON"
+    )
     parser.add_argument(
         "--threshold",
         type=float,
@@ -143,7 +152,9 @@ def main():
         tracked_hashes = load_json(args.hash_store)
     else:
         tracked_hashes = {}
-    prev_hash = tracked_hashes.get(os.path.basename(registry_path), {}).get("sha256")
+    prev_hash = tracked_hashes.get(os.path.basename(registry_path), {}).get(
+        "sha256"
+    )
 
     # Only-if-changed logic
     if args.only_if_changed and prev_hash == latest_sha:
@@ -152,11 +163,15 @@ def main():
 
     # Validate structure
     structure_valid, structure_msg = validate_structure(registry)
-    entities = registry if isinstance(registry, list) else registry.get("entities", [])
+    entities = (
+        registry if isinstance(registry, list) else registry.get("entities", [])
+    )
     total_entities = len(entities)
     completeness_scores = [field_completeness_score(e) for e in entities]
     completeness_score = (
-        round(sum(completeness_scores) / total_entities, 4) if total_entities else 0.0
+        round(sum(completeness_scores) / total_entities, 4)
+        if total_entities
+        else 0.0
     )
 
     # Load reference (best-of)
@@ -164,11 +179,15 @@ def main():
     if os.path.exists(reference_path):
         reference = load_json(reference_path)
         ref_entities = (
-            reference if isinstance(reference, list) else reference.get("entities", [])
+            reference
+            if isinstance(reference, list)
+            else reference.get("entities", [])
         )
         ref_scores = [field_completeness_score(e) for e in ref_entities]
         previous_score = (
-            round(sum(ref_scores) / len(ref_entities), 4) if ref_entities else 0.0
+            round(sum(ref_scores) / len(ref_entities), 4)
+            if ref_entities
+            else 0.0
         )
     else:
         ref_entities = []
@@ -202,13 +221,20 @@ def main():
         for k, t in FIELD_TYPES.items():
             if k in e and not isinstance(e[k], t):
                 type_errors.append(
-                    {"index": idx, "field": k, "value": e[k], "expected_type": str(t)}
+                    {
+                        "index": idx,
+                        "field": k,
+                        "value": e[k],
+                        "expected_type": str(t),
+                    }
                 )
 
     # --- Accuracy Checks ---
     # Tier assignment heuristics
     unresolved_tier = sum(
-        1 for e in entities if e.get("tier") in [None, "unclassified", "unknown"]
+        1
+        for e in entities
+        if e.get("tier") in [None, "unclassified", "unknown"]
     )
     # Device_class/domain/platform consistency
     inconsistent_device_class = sum(
@@ -216,8 +242,10 @@ def main():
         for e in entities
         if e.get("device_class")
         and e.get("domain")
-        and e.get("device_class") not in ["sensor", "binary_sensor", "switch", "light"]
-        and e.get("domain") not in ["sensor", "binary_sensor", "switch", "light"]
+        and e.get("device_class")
+        not in ["sensor", "binary_sensor", "switch", "light"]
+        and e.get("domain")
+        not in ["sensor", "binary_sensor", "switch", "light"]
     )
     inconsistent_platform = sum(
         1
@@ -281,11 +309,14 @@ def main():
     }
     # Content delta < 25%
     content_delta = (
-        abs(total_entities - len(ref_entities)) / max(total_entities, len(ref_entities))
+        abs(total_entities - len(ref_entities))
+        / max(total_entities, len(ref_entities))
         if ref_entities
         else 0.0
     )
-    promote = delta >= args.threshold and structure_valid and content_delta < 0.25
+    promote = (
+        delta >= args.threshold and structure_valid and content_delta < 0.25
+    )
 
     # Backup and promote if improved
     backed_up = False

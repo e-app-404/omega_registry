@@ -20,6 +20,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import yaml
+from addon.src.utils.paths import get_contract_str
 
 from addon.src.utils.import_path import set_workspace_root
 from addon.src.utils.logging import setup_logging
@@ -43,13 +44,11 @@ def load_json(path):
         return json.load(f)
 
 
-# Load inputs using robust extraction
-OMEGA_ROOM_REG = "canonical/omega_registry_master.json"
-omega_rooms = extract_data(OMEGA_ROOM_REG, load_json(OMEGA_ROOM_REG))
-floor_registry = extract_data(str(FLOOR_REGISTRY), load_json(str(FLOOR_REGISTRY)))
-area_registry = extract_data(str(AREA_REGISTRY), load_json(str(AREA_REGISTRY)))
-metrics = load_json(METRICS_FILE)
-entity_data = extract_data(ENTITY_SOURCE, load_json(ENTITY_SOURCE))
+omega_rooms = []
+floor_registry = []
+area_registry = []
+metrics = {}
+entity_data = []
 
 # Tiers by area
 tiers_by_area = metrics.get("area_floor_analytics", {}).get("tiers_by_area", {})
@@ -72,11 +71,14 @@ for e in entity_data:
         entities_by_area[area][domain]["count"] += 1
         if dev_class:
             entities_by_area[area][domain]["device_classes"][dev_class] = (
-                entities_by_area[area][domain]["device_classes"].get(dev_class, 0) + 1
+                entities_by_area[area][domain]["device_classes"].get(
+                    dev_class, 0
+                )
+                + 1
             )
 
 # Load reference format from contract
-contract_path = "canonical/support/contracts/join_contract.yaml"
+contract_path = get_contract_str("join_contract.yaml")
 with open(contract_path) as f:
     contract = yaml.safe_load(f)
 ref_format = contract.get("reference_format", {}).get("container_reference", {})
@@ -109,8 +111,12 @@ def generate_room_registry():
         floor_obj = next(
             (f for f in floor_registry if room_id in f.get("areas", [])), None
         )
-        room_ref = container_ref("core.area_registry", room, "id", "friendly_name")
-        floor_ref = container_ref("core.floor_registry", floor_obj, "floor_id", "name")
+        room_ref = container_ref(
+            "core.area_registry", room, "id", "friendly_name"
+        )
+        floor_ref = container_ref(
+            "core.floor_registry", floor_obj, "floor_id", "name"
+        )
         room_out = {
             "room_id": room_id,
             "room_ref": room_ref,
@@ -135,7 +141,9 @@ def generate_room_registry():
     out = {"rooms": alpha_registry}
     # PATCH PIPELINE-FLAGS-V1: Assign only the inner _meta dict for lineage tracking
     out["_meta"] = attach_meta(
-        __file__, "PATCH PIPELINE-FLAGS-V1", pipeline_stage="alpha_registry_generation"
+        __file__,
+        "PATCH PIPELINE-FLAGS-V1",
+        pipeline_stage="alpha_registry_generation",
     )["_meta"]
     with open("canonical/derived_views/alpha_room_registry.v1.json", "w") as f:
         json.dump(out, f, indent=2)
@@ -149,18 +157,54 @@ def generate_stub_registry():
 
 
 LOG_PATH = Path("canonical/logs/generators/generate_alpha_registry.log")
-setup_logging(LOG_PATH)
-logging.info("Starting generate_alpha_registry.py run.")
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Alpha Registry Generator")
-    parser.add_argument("--type", choices=["room"], help="Registry type to generate")
-    parser.add_argument(
-        "--target", choices=["alpha_room_registry"], help="Target registry output"
+
+def main(argv=None):
+    # Initialize logging at runtime and load required inputs
+    setup_logging(LOG_PATH)
+    logging.info("Starting generate_alpha_registry.py run.")
+
+    # Load inputs using robust extraction
+    OMEGA_ROOM_REG = "canonical/omega_registry_master.json"
+    omega_rooms = extract_data(OMEGA_ROOM_REG, load_json(OMEGA_ROOM_REG))
+    floor_registry_local = extract_data(
+        str(FLOOR_REGISTRY), load_json(str(FLOOR_REGISTRY))
     )
-    args = parser.parse_args()
+    area_registry_local = extract_data(
+        str(AREA_REGISTRY), load_json(str(AREA_REGISTRY))
+    )
+    metrics_local = load_json(METRICS_FILE)
+    entity_data_local = extract_data(ENTITY_SOURCE, load_json(ENTITY_SOURCE))
+
+    # Bind loaded locals into module-level names used by generation functions
+    globals().update(
+        {
+            "omega_rooms": omega_rooms,
+            "floor_registry": floor_registry_local,
+            "area_registry": area_registry_local,
+            "metrics": metrics_local,
+            "entity_data": entity_data_local,
+        }
+    )
+
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Alpha Registry Generator")
+    parser.add_argument(
+        "--type", choices=["room"], help="Registry type to generate"
+    )
+    parser.add_argument(
+        "--target",
+        choices=["alpha_room_registry"],
+        help="Target registry output",
+    )
+    args = parser.parse_args(argv)
     if args.type == "room" or args.target == "alpha_room_registry":
         generate_room_registry()
     else:
         generate_stub_registry()
         print("No valid registry type/target specified. Exiting.")
+
+
+if __name__ == "__main__":
+    main()

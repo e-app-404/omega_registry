@@ -3,16 +3,32 @@ import os
 
 import yaml
 
-from scripts.enrich.enrichers.area_floor_enricher import AreaFloorEnricher
-from scripts.enrich.enrichers.config_entry_enricher import ConfigEntryEnricher
-from scripts.enrich.enrichers.device_enricher import DeviceRegistryEnricher
-from scripts.enrich.enrichers.join_enricher import JoinFieldEnricher
-from scripts.enrich.enrichers.mobile_app_enricher import MobileAppEnricher
-from scripts.enrich.enrichers.name_enricher import NameEnricher
-from scripts.enrich.enrichers.network_tracker_enricher import NetworkTrackerEnricher
-from scripts.enrich.label_enricher import enrich_labels
-from scripts.transformation.tiers import tier_classification
-from scripts.utils import pipeline_config as cfg
+from project.ops.scripts.enrich.enrich.enrichers.area_floor_enricher import (
+    AreaFloorEnricher,
+)
+from project.ops.scripts.enrich.enrich.enrichers.config_entry_enricher import (
+    ConfigEntryEnricher,
+)
+from project.ops.scripts.enrich.enrich.enrichers.device_enricher import (
+    DeviceRegistryEnricher,
+)
+from project.ops.scripts.enrich.enrich.enrichers.join_enricher import (
+    JoinFieldEnricher,
+)
+from project.ops.scripts.enrich.enrich.enrichers.mobile_app_enricher import (
+    MobileAppEnricher,
+)
+from project.ops.scripts.enrich.enrich.enrichers.name_enricher import (
+    NameEnricher,
+)
+from project.ops.scripts.enrich.enrich.enrichers.network_tracker_enricher import (
+    NetworkTrackerEnricher,
+)
+from project.ops.scripts.enrich.enrich.label_enricher import enrich_labels
+from project.ops.scripts.transformation.transformation.tiers import (
+    tier_classification,
+)
+from project.ops.utils import pipeline_config as cfg
 
 
 def load_tier_definitions():
@@ -48,7 +64,8 @@ def run_enrichment_pipeline(entity, context, gap_log=None, summary=None):
     # respect global and per-enricher flags for synthetic device creation
     network_tracker_enricher = NetworkTrackerEnricher(
         create_synthetic=(
-            cfg.ENABLE_SYNTHETIC_DEVICE_CREATION or cfg.SYNTHETIC_NETWORK_TRACKER
+            cfg.ENABLE_SYNTHETIC_DEVICE_CREATION
+            or cfg.SYNTHETIC_NETWORK_TRACKER
         )
     )
     config_enricher = ConfigEntryEnricher()
@@ -79,7 +96,9 @@ def run_enrichment_pipeline(entity, context, gap_log=None, summary=None):
 
     # Enrichment order: device → network_tracker → config → mobile_app → join → area/floor → name
     enriched = apply_enricher(device_enricher, "device_enricher")
-    enriched = apply_enricher(network_tracker_enricher, "network_tracker_enricher")
+    enriched = apply_enricher(
+        network_tracker_enricher, "network_tracker_enricher"
+    )
     enriched = apply_enricher(config_enricher, "config_entry_enricher")
     enriched = apply_enricher(mobile_app_enricher, "mobile_app_enricher")
     enriched = apply_enricher(join_enricher, "join_enricher")
@@ -95,7 +114,9 @@ def run_enrichment_pipeline(entity, context, gap_log=None, summary=None):
     )
     if tier:
         enriched["tier"] = tier
-        enriched.setdefault("_meta", {}).setdefault("inferred_fields", {})["tier"] = {
+        enriched.setdefault("_meta", {}).setdefault("inferred_fields", {})[
+            "tier"
+        ] = {
             "join_origin": "tier_enricher",
             "join_confidence": 0.9,
             "field_contract": f"tier inferred via {origin}",

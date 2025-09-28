@@ -17,27 +17,31 @@ set_workspace_root(__file__)
 # --- CONFIG ---
 PROJECT_ROOT = Path.cwd()
 OUTPUT_PATH = PROJECT_ROOT / "omega_registry_manifest.md"
-CONTRACT_PATH = PROJECT_ROOT / "canonical/support/contracts/manifest_tool.contract.yaml"
-SCHEMA_PATH = PROJECT_ROOT / "canonical/support/contracts/manifest_tool.schema.md"
+from addon.src.utils.paths import get_contract_path
+
+CONTRACT_PATH = get_contract_path("manifest_tool.contract.yaml")
+SCHEMA_PATH = get_contract_path("manifest_tool.schema.md")
 UTILS_PATH = PROJECT_ROOT / "scripts/utils/"
 LOG_PATH = PROJECT_ROOT / "canonical/logs/tools/PATCH-MANIFEST-BUILDER-V2.log"
-CSS_PATH = PROJECT_ROOT / "canonical/support/css/omega_registry.css"
+CSS_PATH = get_contract_path("omega_registry.css")
 
 # Setup logging for PATCH-MANIFEST-BUILDER-V2
 setup_logging(LOG_PATH)
 logging.info("Starting PATCH-MANIFEST-BUILDER-V2 run.")
 
 # Dynamically import compare_duplicate_files
-spec = importlib.util.spec_from_file_location(
-    "compare_duplicate_files",
-    str(PROJECT_ROOT / "scripts/utils/compare_duplicate_files.py"),
-)
-if spec is None or spec.loader is None:
-    raise ImportError(
-        "Failed to load compare_duplicate_files.py for Duplications section."
+spec_path = PROJECT_ROOT / "scripts/utils/compare_duplicate_files.py"
+if spec_path.exists():
+    spec = importlib.util.spec_from_file_location(
+        "compare_duplicate_files", str(spec_path)
     )
-compare_mod = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(compare_mod)
+    if spec is not None and spec.loader is not None:
+        compare_mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(compare_mod)
+    else:
+        compare_mod = None
+else:
+    compare_mod = None
 
 
 # --- LOAD CONTRACT & SCHEMA ---
@@ -75,7 +79,9 @@ def get_file_metadata(rel_path, description=None, actions=None):
         date_str = mtime.strftime("%Y-%m-%d %H:%M:%S")
     # Use utility hash if available
     file_hash = (
-        file_utils.hash_file(abs_path) if hasattr(file_utils, "hash_file") else None
+        file_utils.hash_file(abs_path)
+        if hasattr(file_utils, "hash_file")
+        else None
     )
     # File type badge (default to 'Other')
     if rel_path.endswith(".json"):
@@ -103,7 +109,7 @@ def get_file_metadata(rel_path, description=None, actions=None):
     meta = {
         "filename": os.path.basename(rel_path),
         "full_path": rel_path,
-        "size": f"{size/1024:.1f} KB",
+        "size": f"{size / 1024:.1f} KB",
         "date": date_str,
         "hash": file_hash or "–",
         "type": file_type or "–",
@@ -182,7 +188,9 @@ def get_files_for_section(section):
                     rel_path = os.path.relpath(
                         os.path.join(abs_folder, fname), PROJECT_ROOT
                     )
-                    if os.path.isfile(abs_folder / fname) and not is_excluded(rel_path):
+                    if os.path.isfile(abs_folder / fname) and not is_excluded(
+                        rel_path
+                    ):
                         meta = get_file_metadata(rel_path)
                         files.append(meta)
     return files
@@ -202,9 +210,9 @@ def is_excluded(rel_path):
 # --- MANIFEST GENERATION ---
 def format_size(size_bytes):
     if size_bytes >= 1024 * 1024:
-        return f"{size_bytes/1024/1024:.2f} MB"
+        return f"{size_bytes / 1024 / 1024:.2f} MB"
     else:
-        return f"{size_bytes/1024:.1f} KB"
+        return f"{size_bytes / 1024:.1f} KB"
 
 
 def format_time_diff(mtime):
@@ -236,9 +244,9 @@ def render_badges(file_meta):
     badge_type_class = get_type_badge_class(ext)
     return f"""
     <div class='badge-strip'>
-      <span class='badge {badge_type_class}'>{file_meta.get('type','')}</span>
-      <span class='badge badge-size'>{file_meta.get('size','')}</span>
-      <span class='badge badge-tag'>{file_meta.get('tag','')}</span>
+      <span class='badge {badge_type_class}'>{file_meta.get("type", "")}</span>
+      <span class='badge badge-size'>{file_meta.get("size", "")}</span>
+      <span class='badge badge-tag'>{file_meta.get("tag", "")}</span>
     </div>
     """
 
@@ -272,7 +280,9 @@ def format_entry(meta):
         else ""
     )
     validation_block = summarize_validation(meta)
-    description = f"<li><b>Description:</b> <i>{meta.get('description','')}</i></li>"
+    description = (
+        f"<li><b>Description:</b> <i>{meta.get('description', '')}</i></li>"
+    )
     actions = "<li><b>Actions:</b> <a href='#'>Open</a> | <a href='#'>Download</a> | <a href='#'>View History</a> | <a href='#'>Compare Duplicates</a></li>"
     html = (
         f"<div class='omega-entry'>\n"
@@ -300,7 +310,9 @@ def format_entry(meta):
     def is_safe_for_markdown(block):
         return not any(line.startswith("    ") for line in block.splitlines())
 
-    assert is_safe_for_markdown(html_block), "HTML block contains indented lines."
+    assert is_safe_for_markdown(html_block), (
+        "HTML block contains indented lines."
+    )
     return html_block
 
 
@@ -311,7 +323,7 @@ def render_section(f, section, level=2):
     )
     if (files or has_subsections) and "name" in section:
         section["name"].lower().replace(" ", "-").replace("&", "and")
-        f.write(f"{'#'*level} {section['name']}\n\n")
+        f.write(f"{'#' * level} {section['name']}\n\n")
     if files:
         f.write("<div class='card-grid'>\n")
         for meta in files:
@@ -373,7 +385,12 @@ def generate_manifest(debug=False):
         f.write("## Table of Contents\n\n")
         for section in contract.get("sections", [])[1:]:
             if "name" in section:
-                anchor = section["name"].lower().replace(" ", "-").replace("&", "and")
+                anchor = (
+                    section["name"]
+                    .lower()
+                    .replace(" ", "-")
+                    .replace("&", "and")
+                )
                 f.write(f"- [{section['name']}](#{anchor})\n")
         f.write("\n---\n\n")
         # File Duplications Section
@@ -418,7 +435,11 @@ if __name__ == "__main__":
             f.writelines(cleaned)
     import argparse
 
-    parser = argparse.ArgumentParser(description="Build omega registry manifest.")
-    parser.add_argument("--debug", action="store_true", help="Enable debug output")
+    parser = argparse.ArgumentParser(
+        description="Build omega registry manifest."
+    )
+    parser.add_argument(
+        "--debug", action="store_true", help="Enable debug output"
+    )
     args = parser.parse_args()
     generate_manifest(debug=args.debug)

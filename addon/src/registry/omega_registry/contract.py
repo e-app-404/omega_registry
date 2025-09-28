@@ -7,10 +7,16 @@ PATCH-OMEGA-PIPELINE-DEBUG-LOGGING-V1: Adds get_required_keys and expand_contrac
 import logging
 
 import yaml
+from addon.src.utils.paths import get_contract_path
 
 
 def parse_contract(contract_path):
-    with open(contract_path) as f:
+    # Accept either a string path or a contract filename
+    if not contract_path:
+        contract_path = get_contract_path(
+            "omega_registry_master.output_contract.yaml"
+        )
+    with open(str(contract_path)) as f:
         contract = yaml.safe_load(f)
     required = contract.get("required_keys", [])
     optional = contract.get("optional_keys", [])

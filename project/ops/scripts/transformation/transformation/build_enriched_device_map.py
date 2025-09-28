@@ -5,12 +5,13 @@ Builds enriched_device_map.json by merging device_flatmap.json with enrichment l
 Only merges fields that are present in enrichment and missing/null in the source, excluding join keys.
 Annotates each device with enrichment metadata for audit and provenance.
 """
+
 import datetime
 import json
 
 import yaml
 
-from scripts.utils.logging import attach_meta
+from project.ops.utils.logging import attach_meta
 
 
 def load_json(path):
@@ -23,7 +24,9 @@ def main():
     enrichment_log_path = (
         "canonical/enrichment_sources/generated/omega_registry_enrichment.log"
     )
-    output_path = "canonical/enrichment_sources/generated/enriched_device_map.json"
+    output_path = (
+        "canonical/enrichment_sources/generated/enriched_device_map.json"
+    )
     flatmap = load_json(flatmap_path)
     with open(enrichment_log_path) as f:
         enrichment_log = json.load(f)
@@ -34,13 +37,19 @@ def main():
     )
     enrichment_source = enrichment_log.get("target", "ip_mac_index.json")
     # Load reference format from contract
-    contract_path = "canonical/support/contracts/join_contract.yaml"
+    from addon.src.utils.paths import get_contract_str
+
+    contract_path = get_contract_str("join_contract.yaml")
     with open(contract_path) as f:
         contract = yaml.safe_load(f)
-    ref_format = contract.get("reference_format", {}).get("container_reference", {})
+    ref_format = contract.get("reference_format", {}).get(
+        "container_reference", {}
+    )
     join_key_fields = ref_format.get("required_fields", [join_key])
     # Use first required field as join key if present in device
-    join_key = join_key_fields[1] if len(join_key_fields) > 1 else join_key_fields[0]
+    join_key = (
+        join_key_fields[1] if len(join_key_fields) > 1 else join_key_fields[0]
+    )
     enrichment_lookup = {
         d[join_key]: d
         for d in diffs
@@ -72,7 +81,9 @@ def main():
             device.get("mac")
             if device.get("mac") is not None
             else (
-                enriched_fields.get("mac") if key and key in enrichment_lookup else None
+                enriched_fields.get("mac")
+                if key and key in enrichment_lookup
+                else None
             )
         )
         entry["via_device_id"] = (

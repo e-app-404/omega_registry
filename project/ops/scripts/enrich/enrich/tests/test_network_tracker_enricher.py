@@ -1,4 +1,6 @@
-from scripts.enrich.enrichers.network_tracker_enricher import NetworkTrackerEnricher
+from project.ops.scripts.enrich.enrich.enrichers.network_tracker_enricher import (
+    NetworkTrackerEnricher,
+)
 
 
 def test_network_tracker_match_by_mac():

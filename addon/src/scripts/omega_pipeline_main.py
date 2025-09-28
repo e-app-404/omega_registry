@@ -11,53 +11,47 @@ import traceback
 from addon.src.utils import pipeline_config as cfg
 from addon.src.utils import provenance
 
-print("==== EXECUTION VERIFICATION ====")
-print("Script path:", __file__)
-print("Absolute script path:", os.path.abspath(__file__))
-print("Python executable:", sys.executable)
-print("Args received:", sys.argv)
-print("sys.path:", sys.path)
-print("--- First 40 lines of this script ---")
-with open(os.path.abspath(__file__), "r") as f:
-    for i in range(40):
-        print(f.readline().rstrip())
-print("--- END SCRIPT DUMP ---")
-print("[DIAG] Printing stack trace before argparse setup:")
-traceback.print_stack()
-print("[DIAG] Modules loaded before argparse:")
-for name, mod in sorted(sys.modules.items()):
-    print(f"{name}: {getattr(mod, '__file__', None)}")
-print("Argparse will now parse --contract and --strict correctly.")
-print("================================")
-from addon.src.utils.import_path import set_workspace_root
-
-set_workspace_root(__file__)
+# Keep module import-safe: heavy runtime diagnostics, workspace setup and
+# logging initialization are performed inside `main()` to comply with ADR-0003.
 import argparse
-
-from addon.src.registry.generator import generate
-
-print(
-    "[DIAG] generate function loaded from:",
-    generate.__module__,
-    getattr(generate, "__file__", "NO __file__"),
-)
-import logging
-
-from addon.src.utils.registry_inputs import get_registry_input_files
-
-logging.basicConfig(level=logging.DEBUG)
 import json
+import logging
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
-from addon.src.utils.logging import setup_logging
-
-LOG_PATH = cfg.PIPELINE_LOG
-setup_logging(LOG_PATH)
-
 
 def main():
+    # Run-time diagnostics (only when invoked as script) to help debug execution.
+    print("==== EXECUTION VERIFICATION ====")
+    print("Script path:", __file__)
+    print("Absolute script path:", os.path.abspath(__file__))
+    print("Python executable:", sys.executable)
+    print("Args received:", sys.argv)
+    print("sys.path:", sys.path)
+    print("--- First 40 lines of this script ---")
+    try:
+        with open(os.path.abspath(__file__), "r") as f:
+            for i in range(40):
+                print(f.readline().rstrip())
+    except Exception:
+        pass
+    print("--- END SCRIPT DUMP ---")
+    print("[DIAG] Printing stack trace before argparse setup:")
+    traceback.print_stack()
+    print("[DIAG] Modules loaded before argparse:")
+    for name, mod in sorted(sys.modules.items()):
+        print(f"{name}: {getattr(mod, '__file__', None)}")
+    print("Argparse will now parse --contract and --strict correctly.")
+    print("================================")
+
+    # Ensure workspace is set (import-safe operation)
+    from addon.src.utils.import_path import set_workspace_root
+    from addon.src.utils.paths import get_registry_input_files
+    from addon.src.registry.generator import generate
+    from addon.src.utils.logging import setup_logging
+
+    set_workspace_root(__file__)
     parser = argparse.ArgumentParser(
         description="Generate omega_registry_master.json (future-proof pipeline)"
     )
@@ -122,6 +116,10 @@ def main():
         ),
     )
     args = parser.parse_args()
+
+    # Initialize logging at runtime to avoid creating files at import time
+    LOG_PATH = cfg.PIPELINE_LOG
+    setup_logging(LOG_PATH)
     logging.info("Starting omega_pipeline_main.py run.")
     if args.inputs:
         input_files = args.inputs
